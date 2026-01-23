@@ -158,18 +158,20 @@ function App() {
       price_range: r.price_range || 'RM 10-20',
       // Ensure subStalls is an array of objects
       subStalls: (r.subStalls || []).map(stall => {
+        if (!stall) return null; // Handle null/undefined
         if (typeof stall === 'string') {
             return { name: stall, image: '' };
         }
         return stall;
-      }),
+      }).filter(Boolean), // Remove nulls
       // Ensure branches is an array of objects
       branches: (r.branches || []).map(branch => {
+          if (!branch) return null;
           if (typeof branch === 'string') {
               return { name: branch, address: '' };
           }
           return branch;
-      })
+      }).filter(Boolean)
     }));
   });
 

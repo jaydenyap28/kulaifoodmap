@@ -100,11 +100,17 @@ const HeroCardStack = ({ restaurants, onChoose, onSupportClick }) => {
                 {/* Sub Stalls */}
                 {currentRestaurant.subStalls && currentRestaurant.subStalls.length > 0 && (
                     <div className="flex flex-wrap gap-1 mt-2">
-                        {currentRestaurant.subStalls.slice(0, 3).map((stall, idx) => (
-                            <span key={idx} className="text-[10px] bg-purple-900/60 backdrop-blur-md text-purple-100 px-2 py-0.5 rounded-full border border-purple-500/30">
-                                {stall}
-                            </span>
-                        ))}
+                        {currentRestaurant.subStalls.slice(0, 3).map((stall, idx) => {
+                            if (!stall) return null;
+                            const displayName = typeof stall === 'object' ? stall.name : stall;
+                            if (!displayName) return null;
+                            
+                            return (
+                                <span key={idx} className="text-[10px] bg-purple-900/60 backdrop-blur-md text-purple-100 px-2 py-0.5 rounded-full border border-purple-500/30">
+                                    {displayName}
+                                </span>
+                            );
+                        })}
                     </div>
                 )}
               </div>

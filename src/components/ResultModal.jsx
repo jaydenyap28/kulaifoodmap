@@ -748,13 +748,18 @@ Tuesday: Closed
                             咖啡店档口 (Stalls)
                         </p>
                         <div className="grid grid-cols-2 gap-3">
-                            {restaurant.subStalls.map((stall, idx) => (
+                            {restaurant.subStalls.map((stall, idx) => {
+                                if (!stall) return null;
+                                const stallName = typeof stall === 'object' ? stall.name : stall;
+                                const stallImage = typeof stall === 'object' ? stall.image : null;
+
+                                return (
                                 <div key={idx} className="bg-[#1a1a1a] rounded-lg border border-gray-600 overflow-hidden flex flex-col">
                                     <div className="h-24 w-full bg-gray-800 relative">
-                                        {stall.image ? (
+                                        {stallImage ? (
                                             <ImageWithFallback 
-                                                src={stall.image} 
-                                                alt={stall.name}
+                                                src={stallImage} 
+                                                alt={stallName}
                                                 className="w-full h-full object-cover"
                                             />
                                         ) : (
@@ -764,10 +769,11 @@ Tuesday: Closed
                                         )}
                                     </div>
                                     <div className="p-2">
-                                        <span className="text-gray-200 text-sm font-bold block truncate" title={stall.name}>{stall.name}</span>
+                                        <span className="text-gray-200 text-sm font-bold block truncate" title={stallName}>{stallName}</span>
                                     </div>
                                 </div>
-                            ))}
+                                );
+                            })}
                         </div>
                     </div>
                   )}

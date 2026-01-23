@@ -314,11 +314,16 @@ const RestaurantCard = ({ restaurant, isAdmin, onUpdate, onDelete, onClick, onCa
                 {/* Sub Stalls Preview */}
                 {restaurant.subStalls && restaurant.subStalls.length > 0 && (
                     <div className="flex flex-wrap gap-1">
-                        {restaurant.subStalls.slice(0, 2).map((stall, idx) => (
-                            <span key={idx} className="text-[10px] text-gray-400 bg-[#252525] px-1.5 py-0.5 rounded border border-gray-800">
-                            • {stall.name || stall}
-                            </span>
-                        ))}
+                        {restaurant.subStalls.slice(0, 2).map((stall, idx) => {
+                            if (!stall) return null;
+                            const displayName = typeof stall === 'object' ? stall.name : stall;
+                            if (!displayName) return null;
+                            return (
+                                <span key={idx} className="text-[10px] text-gray-400 bg-[#252525] px-1.5 py-0.5 rounded border border-gray-800">
+                                • {displayName}
+                                </span>
+                            );
+                        })}
                         {restaurant.subStalls.length > 2 && (
                             <span className="text-[10px] text-gray-500 self-center">+{restaurant.subStalls.length - 2}</span>
                         )}
