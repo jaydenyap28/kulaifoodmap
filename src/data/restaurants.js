@@ -703,5 +703,51 @@ export const initialRestaurants = [
     "isVegetarian": false,
     "isNoBeef": false,
     "manualStatus": "auto"
+  },
+  {
+    "id": 33,
+    "desc": "KFC",
+    "desc2": "Kentucky Fried Chicken",
+    "address": "Multiple Locations in Kulai",
+    "opening_hours": "10am - 10pm",
+    "category": ["快餐"],
+    "rating": 0,
+    "image": "https://upload.wikimedia.org/wikipedia/en/thumb/b/bf/KFC_logo.svg/1200px-KFC_logo.svg.png",
+    "subStalls": [
+        { "name": "KFC @ Kulai (Jalan Susur 3)", "address": "No.152 & 153, Jalan Susur 3" },
+        { "name": "KFC IOI Mall Kulai", "address": "Lot G-21, Ground Floor IOI Mall" },
+        { "name": "KFC Kulai Drive Thru", "address": "Lot 5035, Batu 17 1/2 Jalan Air Hitam" }
+    ],
+    "categories": ["快餐"],
+    "price_range": "RM 15-30",
+    "menu_link": "https://kfc.com.my/",
+    "website_link": "https://kfc.com.my/",
+    "delivery_link": "https://kfc.com.my/",
+    "isVegetarian": false,
+    "isNoBeef": false,
+    "manualStatus": "auto"
+  },
+  {
+    "id": 34,
+    "desc": "McDonald's",
+    "desc2": "麦当劳",
+    "address": "Multiple Locations in Kulai",
+    "opening_hours": "24 Hours (Selected Branches)",
+    "category": ["快餐"],
+    "rating": 0,
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/36/McDonald%27s_Golden_Arches.svg/1200px-McDonald%27s_Golden_Arches.svg.png",
+    "subStalls": [
+        { "name": "McDonald's Kulai DT", "address": "Lot 1150, Bandar Indahpura (24 Hours)" },
+        { "name": "McDonald's IOI Mall", "address": "IOI Mall Kulai" },
+        { "name": "McDonald's AEON Kulai", "address": "AEON Mall Kulaijaya" }
+    ],
+    "categories": ["快餐"],
+    "price_range": "RM 15-30",
+    "menu_link": "https://www.mcdonalds.com.my/",
+    "website_link": "https://www.mcdonalds.com.my/",
+    "delivery_link": "https://www.mcdonalds.com.my/",
+    "isVegetarian": false,
+    "isNoBeef": false,
+    "manualStatus": "auto"
   }
 ];

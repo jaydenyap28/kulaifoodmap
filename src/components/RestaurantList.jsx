@@ -1,18 +1,89 @@
 import React, { useState, useEffect } from 'react';
-import { MapPin, Edit2, Trash2, ArrowUp, Search, Plus, Leaf, Ban, Star } from 'lucide-react';
+import { MapPin, Edit2, Trash2, ArrowUp, Search, Plus, Leaf, Ban, Star, GripVertical } from 'lucide-react';
+import {
+  DndContext,
+  closestCenter,
+  KeyboardSensor,
+  PointerSensor,
+  useSensor,
+  useSensors,
+} from '@dnd-kit/core';
+import {
+  arrayMove,
+  SortableContext,
+  sortableKeyboardCoordinates,
+  useSortable,
+  rectSortingStrategy,
+} from '@dnd-kit/sortable';
+import { CSS } from '@dnd-kit/utilities';
 import ImageWithFallback from './ImageWithFallback';
 import { checkOpenStatus } from '../utils/businessHours';
 
-const RestaurantList = ({ restaurants, isAdmin, onUpdateRestaurant, onDeleteRestaurant, onRestaurantClick, onAddRestaurant, onCategoryClick }) => {
+const SortableRestaurantCard = ({ restaurant, ...props }) => {
+  const {
+    attributes,
+    listeners,
+    setNodeRef,
+    transform,
+    transition,
+    isDragging,
+  } = useSortable({ id: restaurant.id });
+
+  const style = {
+    transform: CSS.Transform.toString(transform),
+    transition,
+    zIndex: isDragging ? 50 : 'auto',
+    opacity: isDragging ? 0.5 : 1,
+  };
+
+  return (
+    <div ref={setNodeRef} style={style} {...attributes} {...listeners} className="h-full touch-none">
+      <RestaurantCard restaurant={restaurant} {...props} />
+    </div>
+  );
+};
+
+const RestaurantList = ({ restaurants, allRestaurants, isAdmin, onUpdateRestaurant, onDeleteRestaurant, onRestaurantClick, onAddRestaurant, onCategoryClick, onReorder }) => {
   const [searchTerm, setSearchTerm] = useState('');
   const [showBackToTop, setShowBackToTop] = useState(false);
 
-  // Filter restaurants based on search
-  const filteredRestaurants = restaurants.filter(r => 
-    r.name.toLowerCase().includes(searchTerm.toLowerCase()) || 
-    (r.categories && r.categories.some(cat => cat.toLowerCase().includes(searchTerm.toLowerCase()))) ||
-    (r.subStalls && r.subStalls.some(stall => stall.toLowerCase().includes(searchTerm.toLowerCase())))
+  // Filter logic
+  const filteredRestaurants = restaurants.filter(restaurant => {
+    const term = searchTerm.toLowerCase();
+    return (
+        restaurant.name?.toLowerCase().includes(term) ||
+        restaurant.name_en?.toLowerCase().includes(term) ||
+        (restaurant.categories && restaurant.categories.some(c => c.toLowerCase().includes(term)))
+    );
+  });
+
+  const sensors = useSensors(
+    useSensor(PointerSensor, {
+      activationConstraint: {
+        distance: 8,
+      },
+    }),
+    useSensor(KeyboardSensor, {
+      coordinateGetter: sortableKeyboardCoordinates,
+    })
   );
+
+  const handleDragEnd = (event) => {
+    const { active, over } = event;
+
+    if (active.id !== over.id) {
+      const oldIndex = restaurants.findIndex((r) => r.id === active.id);
+      const newIndex = restaurants.findIndex((r) => r.id === over.id);
+      
+      const newOrder = arrayMove(restaurants, oldIndex, newIndex);
+      onReorder(newOrder);
+    }
+  };
+
+  // Enable drag and drop only when Admin and showing full list (no search, no category filter)
+  // We check if the current displayed list length matches the full list length as a proxy
+  // or explicitly check if filters are active.
+  const isReorderable = isAdmin && allRestaurants && restaurants.length === allRestaurants.length && !searchTerm;
   useEffect(() => {
     const handleScroll = () => {
       if (window.scrollY > 300) {
@@ -85,17 +156,42 @@ const RestaurantList = ({ restaurants, isAdmin, onUpdateRestaurant, onDeleteRest
       
       {/* Responsive Grid */}
       <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 2xl:grid-cols-6 gap-4">
-        {filteredRestaurants.map(restaurant => (
-          <RestaurantCard 
-            key={restaurant.id}
-            restaurant={restaurant} 
-            isAdmin={isAdmin} 
-            onUpdate={onUpdateRestaurant} 
-            onDelete={onDeleteRestaurant}
-            onClick={() => onRestaurantClick(restaurant)}
-            onCategoryClick={onCategoryClick}
-          />
-        ))}
+        {isReorderable ? (
+          <DndContext 
+            sensors={sensors} 
+            collisionDetection={closestCenter} 
+            onDragEnd={handleDragEnd}
+          >
+            <SortableContext 
+              items={filteredRestaurants} 
+              strategy={rectSortingStrategy}
+            >
+              {filteredRestaurants.map(restaurant => (
+                <SortableRestaurantCard 
+                  key={restaurant.id}
+                  restaurant={restaurant} 
+                  isAdmin={isAdmin} 
+                  onUpdate={onUpdateRestaurant} 
+                  onDelete={onDeleteRestaurant}
+                  onClick={() => onRestaurantClick(restaurant)}
+                  onCategoryClick={onCategoryClick}
+                />
+              ))}
+            </SortableContext>
+          </DndContext>
+        ) : (
+          filteredRestaurants.map(restaurant => (
+            <RestaurantCard 
+              key={restaurant.id}
+              restaurant={restaurant} 
+              isAdmin={isAdmin} 
+              onUpdate={onUpdateRestaurant} 
+              onDelete={onDeleteRestaurant}
+              onClick={() => onRestaurantClick(restaurant)}
+              onCategoryClick={onCategoryClick}
+            />
+          ))
+        )}
       </div>
 
       {/* Empty State */}

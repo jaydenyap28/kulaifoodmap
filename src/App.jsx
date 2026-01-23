@@ -392,6 +392,15 @@ function App() {
     window.scrollTo({ top: window.innerHeight * 0.5, behavior: 'smooth' });
   };
 
+  const handleReorder = (newOrder) => {
+      // Automatically reassign IDs based on new order
+      const reorderedWithNewIds = newOrder.map((r, index) => ({
+          ...r,
+          id: index + 1
+      }));
+      setRestaurants(reorderedWithNewIds);
+  };
+
   return (
     <div className="min-h-screen bg-[#121212] font-sans text-gray-100">
       {/* Top Zone: Hero Section */}
@@ -512,6 +521,7 @@ function App() {
             onRestaurantClick={setSelectedRestaurant}
             onAddRestaurant={handleAddRestaurant}
             onCategoryClick={setSelectedCategory} // New Prop
+            onReorder={handleReorder}
         />
         
         {/* Footer */}
