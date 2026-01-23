@@ -106,31 +106,48 @@ function App() {
 
   // Load data: Prioritize Codebase (initialRestaurants) but keep user-added ones from LocalStorage
   const [restaurants, setRestaurants] = useState(() => {
-    let baseData = [...initialRestaurants];
-    
-    // Merge strategy: Codebase is the "Source of Truth" for existing IDs.
-    // LocalStorage is checked ONLY for *new* items that aren't in the code yet.
+    // 1. Load stored data to preserve ORDER and User-Added Items
+    let storedData = [];
     try {
-        const storedData = localStorage.getItem('kulaifood-restaurants');
-        if (storedData) {
-            const parsed = JSON.parse(storedData);
-            if (Array.isArray(parsed) && parsed.length > 0) {
-                // Find items in LocalStorage that have IDs NOT present in initialRestaurants
-                // This preserves any restaurants added via the UI (Admin) that haven't been pushed to code yet
-                const userAddedItems = parsed.filter(p => !initialRestaurants.some(i => i.id === p.id));
-                
-                if (userAddedItems.length > 0) {
-                    console.log(`Merged ${userAddedItems.length} user-added restaurants from LocalStorage`);
-                    baseData = [...baseData, ...userAddedItems];
-                }
-            }
-        }
-    } catch (e) {
-        console.warn("Failed to merge restaurants from LocalStorage", e);
+        const item = localStorage.getItem('kulaifood-restaurants');
+        if (item) storedData = JSON.parse(item);
+    } catch(e) {
+        console.warn("Failed to load restaurants from LocalStorage", e);
     }
 
+    // 2. Create Map of Codebase Data (The Source of Truth for Content)
+    const codeMap = new Map(initialRestaurants.map(r => [r.id, r]));
+    
+    let mergedData = [];
+    const processedIds = new Set();
+
+    if (Array.isArray(storedData) && storedData.length > 0) {
+        // 3. Process stored items (Preserve Order from LocalStorage)
+        storedData.forEach(stored => {
+            if (codeMap.has(stored.id)) {
+                // ID exists in code: Use code content (latest updates) but keep stored order
+                mergedData.push({ ...stored, ...codeMap.get(stored.id) });
+                processedIds.add(stored.id);
+            } else {
+                // ID not in code: User-added item (Admin), keep it
+                mergedData.push(stored);
+                processedIds.add(stored.id);
+            }
+        });
+    }
+
+    // 4. Append any NEW items from code that weren't in storage
+    initialRestaurants.forEach(r => {
+        if (!processedIds.has(r.id)) {
+            mergedData.push(r);
+        }
+    });
+
+    // 5. Fallback if storage was empty
+    if (mergedData.length === 0) mergedData = [...initialRestaurants];
+
     // Normalize Data on Init
-    return baseData.map(r => ({
+    return mergedData.map(r => ({
       ...r,
       // Map desc to name (Primary Display)
       name: r.desc || r.name,
@@ -147,6 +164,13 @@ function App() {
             return { name: stall, image: '' };
         }
         return stall;
+      }),
+      // Ensure branches is an array of objects
+      branches: (r.branches || []).map(branch => {
+          if (typeof branch === 'string') {
+              return { name: branch, address: '' };
+          }
+          return branch;
       })
     }));
   });

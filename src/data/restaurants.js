@@ -713,7 +713,7 @@ export const initialRestaurants = [
     "category": ["快餐"],
     "rating": 0,
     "image": "https://upload.wikimedia.org/wikipedia/en/thumb/b/bf/KFC_logo.svg/1200px-KFC_logo.svg.png",
-    "subStalls": [
+    "branches": [
         { "name": "KFC @ Kulai (Jalan Susur 3)", "address": "No.152 & 153, Jalan Susur 3" },
         { "name": "KFC IOI Mall Kulai", "address": "Lot G-21, Ground Floor IOI Mall" },
         { "name": "KFC Kulai Drive Thru", "address": "Lot 5035, Batu 17 1/2 Jalan Air Hitam" }
@@ -736,7 +736,7 @@ export const initialRestaurants = [
     "category": ["快餐"],
     "rating": 0,
     "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/36/McDonald%27s_Golden_Arches.svg/1200px-McDonald%27s_Golden_Arches.svg.png",
-    "subStalls": [
+    "branches": [
         { "name": "McDonald's Kulai DT", "address": "Lot 1150, Bandar Indahpura (24 Hours)" },
         { "name": "McDonald's IOI Mall", "address": "IOI Mall Kulai" },
         { "name": "McDonald's AEON Kulai", "address": "AEON Mall Kulaijaya" }

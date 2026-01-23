@@ -704,13 +704,35 @@ Tuesday: Closed
                   
 
 
-                  {/* Sub Stalls / Branches Display */}
+                  {/* Branches Display (For Chain Restaurants) */}
+                  {restaurant.branches && restaurant.branches.length > 0 && (
+                    <div className="bg-[#2d2d2d] p-4 rounded-xl border border-gray-700">
+                        <p className="text-xs text-gray-400 font-bold uppercase tracking-wider mb-2 flex items-center gap-2">
+                            <MapPin size={14} className="text-red-500" />
+                            分行列表 (Branches)
+                        </p>
+                        <div className="space-y-2">
+                            {restaurant.branches.map((branch, idx) => (
+                                <div key={idx} className="bg-[#1a1a1a] rounded-lg border border-gray-600 p-3 flex flex-col">
+                                    <span className="text-gray-200 text-sm font-bold block mb-1">{branch.name}</span>
+                                    {branch.address && (
+                                        <div className="flex items-start text-xs text-gray-500">
+                                            <MapPin size={12} className="mt-0.5 mr-1 shrink-0 opacity-70" />
+                                            <span>{branch.address}</span>
+                                        </div>
+                                    )}
+                                </div>
+                            ))}
+                        </div>
+                    </div>
+                  )}
+
+                  {/* Sub Stalls Display (For Kopitiams) */}
                   {restaurant.subStalls && restaurant.subStalls.length > 0 && (
                     <div className="bg-[#2d2d2d] p-4 rounded-xl border border-gray-700">
-                        <p className="text-xs text-gray-400 font-bold uppercase tracking-wider mb-2">
-                            {restaurant.name.toLowerCase().includes('kfc') || restaurant.name.toLowerCase().includes('mcdonald') 
-                                ? '分行列表 (Branches)' 
-                                : '咖啡店档口 (Stalls)'}
+                        <p className="text-xs text-gray-400 font-bold uppercase tracking-wider mb-2 flex items-center gap-2">
+                            <UtensilsCrossed size={14} className="text-yellow-500" />
+                            咖啡店档口 (Stalls)
                         </p>
                         <div className="grid grid-cols-2 gap-3">
                             {restaurant.subStalls.map((stall, idx) => (
@@ -724,13 +746,12 @@ Tuesday: Closed
                                             />
                                         ) : (
                                             <div className="w-full h-full flex items-center justify-center text-gray-600">
-                                                <MapPin size={20} />
+                                                <UtensilsCrossed size={20} />
                                             </div>
                                         )}
                                     </div>
                                     <div className="p-2">
                                         <span className="text-gray-200 text-sm font-bold block truncate" title={stall.name}>{stall.name}</span>
-                                        {stall.address && <span className="text-gray-500 text-[10px] block truncate">{stall.address}</span>}
                                     </div>
                                 </div>
                             ))}

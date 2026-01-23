@@ -48,6 +48,13 @@ const HeroCardStack = ({ restaurants, onChoose, onSupportClick }) => {
 
   const currentRestaurant = restaurants[activeIndex];
 
+  // Reset index if out of bounds (Safety Check)
+  useEffect(() => {
+    if (restaurants && restaurants.length > 0 && activeIndex >= restaurants.length) {
+      setActiveIndex(0);
+    }
+  }, [restaurants, activeIndex]);
+
   // Safety check: If index is out of bounds or restaurant is undefined
   if (!currentRestaurant) return null;
 
