@@ -399,7 +399,7 @@ function App() {
         
         {/* Admin Background Control */}
         {isAdmin && (
-          <div className="absolute top-4 right-4 z-50 flex gap-2">
+          <div className="absolute top-4 right-4 z-50 flex gap-2 bg-black/40 p-1.5 rounded-full backdrop-blur-md border border-white/10 shadow-lg">
             <input 
               type="file" 
               ref={fileInputRef}
@@ -409,21 +409,21 @@ function App() {
             />
             <button 
               onClick={() => fileInputRef.current?.click()}
-              className="p-2 bg-black/50 text-white rounded-full hover:bg-black/80 transition backdrop-blur-sm border border-white/20"
+              className="p-2 bg-gray-700/80 text-white rounded-full hover:bg-gray-600 transition"
               title="更换背景图片 (Change Background)"
             >
               <ImageIcon size={18} />
             </button>
             <button 
               onClick={handleManualSave}
-              className="p-2 bg-blue-600/80 text-white rounded-full hover:bg-blue-700/80 transition backdrop-blur-sm border border-white/20 shadow-[0_0_10px_rgba(37,99,235,0.5)]"
+              className="p-2 bg-blue-600/80 text-white rounded-full hover:bg-blue-700/80 transition shadow-[0_0_10px_rgba(37,99,235,0.3)]"
               title="保存设置 (Save Settings)"
             >
               <Save size={18} />
             </button>
              <button 
               onClick={handleExportData}
-              className="p-2 bg-green-600/80 text-white rounded-full hover:bg-green-700/80 transition backdrop-blur-sm border border-white/20 shadow-[0_0_10px_rgba(22,163,74,0.5)]"
+              className="p-2 bg-green-600/80 text-white rounded-full hover:bg-green-700/80 transition shadow-[0_0_10px_rgba(22,163,74,0.3)]"
               title="导出数据代码 (Export Data Code)"
             >
               <Download size={18} />
@@ -431,7 +431,7 @@ function App() {
             {heroBg !== DEFAULT_HERO_BG && (
                <button 
                onClick={resetHeroBg}
-               className="p-2 bg-red-900/50 text-white rounded-full hover:bg-red-900/80 transition backdrop-blur-sm border border-red-500/20"
+               className="p-2 bg-red-900/50 text-white rounded-full hover:bg-red-800/80 transition"
                title="重置背景 (Reset Background)"
              >
                <X size={18} />
