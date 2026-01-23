@@ -98,7 +98,7 @@ const HeroCardStack = ({ restaurants, onChoose, onSupportClick }) => {
                 )}
 
                 {/* Sub Stalls */}
-                {currentRestaurant.subStalls && currentRestaurant.subStalls.length > 0 && (
+                {currentRestaurant.subStalls && Array.isArray(currentRestaurant.subStalls) && currentRestaurant.subStalls.length > 0 && (
                     <div className="flex flex-wrap gap-1 mt-2">
                         {currentRestaurant.subStalls.slice(0, 3).map((stall, idx) => {
                             if (!stall) return null;

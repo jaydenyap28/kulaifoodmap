@@ -741,7 +741,7 @@ Tuesday: Closed
                   )}
 
                   {/* Sub Stalls Display (For Kopitiams) */}
-                  {restaurant.subStalls && restaurant.subStalls.length > 0 && (
+                  {restaurant.subStalls && Array.isArray(restaurant.subStalls) && restaurant.subStalls.length > 0 && (
                     <div className="bg-[#2d2d2d] p-4 rounded-xl border border-gray-700">
                         <p className="text-xs text-gray-400 font-bold uppercase tracking-wider mb-2 flex items-center gap-2">
                             <UtensilsCrossed size={14} className="text-yellow-500" />

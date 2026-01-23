@@ -312,7 +312,7 @@ const RestaurantCard = ({ restaurant, isAdmin, onUpdate, onDelete, onClick, onCa
             {/* Divider */}
             <div className="mt-auto pt-3 border-t border-gray-800/50 flex flex-col gap-2">
                 {/* Sub Stalls Preview */}
-                {restaurant.subStalls && restaurant.subStalls.length > 0 && (
+                {restaurant.subStalls && Array.isArray(restaurant.subStalls) && restaurant.subStalls.length > 0 && (
                     <div className="flex flex-wrap gap-1">
                         {restaurant.subStalls.slice(0, 2).map((stall, idx) => {
                             if (!stall) return null;
