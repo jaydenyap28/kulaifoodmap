@@ -37,14 +37,16 @@ const ResultModal = ({ restaurant, onClose, onAddReview, isAdmin, onUpdateRestau
 
   // Update form when restaurant changes
   React.useEffect(() => {
+    if (!restaurant) return;
+    
     setEditForm({ 
-        name: restaurant.name,
+        name: restaurant.name || '',
         name_en: restaurant.name_en || '',
-        address: restaurant.address, 
+        address: restaurant.address || '', 
         menu_link: restaurant.menu_link || '',
         website_link: restaurant.website_link || '',
         delivery_link: restaurant.delivery_link || '',
-        opening_hours: restaurant.opening_hours,
+        opening_hours: restaurant.opening_hours || '',
         price_range: restaurant.price_range || '',
         image: restaurant.image || '',
         categories: restaurant.categories || [],
@@ -78,8 +80,9 @@ const ResultModal = ({ restaurant, onClose, onAddReview, isAdmin, onUpdateRestau
 
   // Initialize from existing text
   React.useEffect(() => {
-    if (isEditing && restaurant.opening_hours) {
-        const days = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'];
+    if (isEditing && restaurant?.opening_hours) {
+        try {
+            const days = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'];
         const shortDays = ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun'];
         const closed = [];
         const lines = restaurant.opening_hours.split('\n');
@@ -147,8 +150,11 @@ const ResultModal = ({ restaurant, onClose, onAddReview, isAdmin, onUpdateRestau
             startTime: start,
             endTime: end
         }));
+    } catch (e) {
+        console.warn("Failed to parse opening hours", e);
     }
-  }, [isEditing, restaurant.opening_hours]);
+    }
+  }, [isEditing, restaurant?.opening_hours]);
 
   // Generate string
   React.useEffect(() => {
@@ -164,7 +170,14 @@ const ResultModal = ({ restaurant, onClose, onAddReview, isAdmin, onUpdateRestau
     }
   }, [useSmartSchedule, scheduleSettings, isEditing]);
 
-  const openStatus = checkOpenStatus(restaurant.opening_hours);
+  const openStatus = React.useMemo(() => {
+    try {
+        if (!restaurant || !restaurant.opening_hours) return { isOpen: false, text: '' };
+        return checkOpenStatus(restaurant.opening_hours);
+    } catch (e) {
+        return { isOpen: false, text: '' };
+    }
+  }, [restaurant]);
 
   if (!restaurant) return null;
 

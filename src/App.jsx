@@ -85,11 +85,9 @@ function App() {
     // 1. Prepare Data Format
     const exportData = restaurants.map(({ name, name_en, ...rest }) => ({
         ...rest,
-        // Ensure keys match restaurants.js expected format
-        // Note: The App uses 'name' internally but restaurants.js might originally use 'name' directly now
-        // Let's stick to the structure in restaurants.js
-        name: name,
-        name_en: name_en,
+        // Map back to original format for restaurants.js
+        desc: name,
+        desc2: name_en,
         category: rest.categories // Map categories back to category for compatibility
     }));
 
@@ -97,7 +95,7 @@ function App() {
 
     // 2. Copy to Clipboard
     navigator.clipboard.writeText(fileContent).then(() => {
-        alert("✅ 数据已复制！\n请打开 src/data/restaurants.js 并粘贴覆盖原内容。\n(Data copied! Please paste into src/data/restaurants.js)");
+        alert(`✅ 成功复制 ${exportData.length} 个商家数据！\n请打开 src/data/restaurants.js 并粘贴覆盖原内容。\n(Successfully copied ${exportData.length} items!)`);
     }).catch(err => {
         console.error('Failed to copy: ', err);
         alert("❌ 复制失败，请查看控制台 (Copy failed, check console)");

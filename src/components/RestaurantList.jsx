@@ -101,22 +101,6 @@ const RestaurantList = ({ restaurants, allRestaurants, isAdmin, onUpdateRestaura
     window.scrollTo({ top: 0, behavior: 'smooth' });
   };
 
-  const handleExportData = () => {
-      const exportData = restaurants.map(({ name, name_en, ...rest }) => ({
-          ...rest,
-          desc: name,
-          desc2: name_en
-      }));
-      const jsonString = JSON.stringify(exportData, null, 2);
-      
-      // Copy to clipboard
-      navigator.clipboard.writeText(jsonString).then(() => {
-          alert('数据已复制到剪贴板！请打开 src/data/restaurants.js 并粘贴覆盖原内容。\n(Data copied! Please paste into src/data/restaurants.js)');
-      }).catch(err => {
-          console.error('Failed to copy: ', err);
-          alert('复制失败，请查看控制台 (Failed to copy)');
-      });
-  };
 
   return (
     <div className="w-full px-4 pb-20 relative">
@@ -228,14 +212,14 @@ const RestaurantCard = ({ restaurant, isAdmin, onUpdate, onDelete, onClick, onCa
       onClick={onClick}
       className="bg-[#1e1e1e] rounded-2xl overflow-hidden shadow-xl hover:shadow-2xl hover:shadow-black/60 transition-all duration-300 relative group h-full flex flex-col border border-gray-800 select-none cursor-pointer"
     >
-      {/* Compact Image Header: Aspect Ratio 4/3 */}
-      <div className="aspect-[4/3] w-full relative bg-gray-800 overflow-hidden shadow-inner">
+      {/* Image Header: Aspect Ratio 16/9 for better mobile view */}
+      <div className="aspect-video w-full relative bg-gray-800 overflow-hidden shadow-inner shrink-0">
         <ImageWithFallback 
             src={restaurant.image} 
             alt={restaurant.name}
             className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
         />
-        <div className="absolute inset-0 bg-gradient-to-t from-[#121212] via-[#121212]/30 to-transparent opacity-90"></div>
+        <div className="absolute inset-0 bg-gradient-to-t from-[#121212] via-transparent to-transparent opacity-60"></div>
         
         {/* Admin Controls - Floating Top Right */}
         {isAdmin && (
@@ -268,36 +252,50 @@ const RestaurantCard = ({ restaurant, isAdmin, onUpdate, onDelete, onClick, onCa
             </div>
         )}
 
-        {/* Info Overlay */}
-        <div className="absolute bottom-0 left-0 w-full p-4 text-white">
-            <div className="flex justify-between items-end mb-1.5">
+        {/* Status Badge (Over Image) */}
+        <div className="absolute bottom-2 left-2 flex items-center gap-2">
+            <span className={`px-2 py-0.5 rounded text-[10px] font-bold shadow-sm backdrop-blur-md ${
+                openStatus.isOpen 
+                ? 'bg-emerald-600/90 text-white' 
+                : 'bg-red-600/90 text-white'
+            }`}>
+                {openStatus.isOpen ? '营业中' : '已打烊'}
+            </span>
+        </div>
+      </div>
+
+      {/* Content Section - Separate from Image for Mobile Clarity */}
+      <div className="p-4 flex flex-col flex-1">
+            <div className="flex justify-between items-start mb-1">
                 <div className="flex-1 mr-2">
-                    <h3 className="font-bold text-xl leading-tight text-white drop-shadow-[0_2px_2px_rgba(0,0,0,0.8)]">
+                    <h3 className="font-bold text-lg leading-tight text-white line-clamp-2">
                         {restaurant.name}
                     </h3>
-                    {restaurant.name_en && (
-                        <p className="text-xs text-gray-300 font-medium drop-shadow-[0_1px_1px_rgba(0,0,0,0.8)] leading-tight mt-1">
-                            {restaurant.name_en}
-                        </p>
-                    )}
                 </div>
                 {/* Rating Badge */}
-                <div className="flex items-center bg-white text-black px-2 py-0.5 rounded text-xs font-bold shadow-sm shrink-0 mb-1">
-                    ★ {restaurant.rating}
+                <div className="flex items-center bg-[#2d2d2d] border border-gray-700 text-yellow-400 px-1.5 py-0.5 rounded text-xs font-bold shadow-sm shrink-0">
+                    <Star size={10} className="fill-yellow-400 mr-1" /> {restaurant.rating}
                 </div>
             </div>
 
+            {/* English Name / Desc2 */}
+            {restaurant.name_en && (
+                <p className="text-xs text-gray-400 font-medium leading-tight mb-3 line-clamp-1">
+                    {restaurant.name_en}
+                </p>
+            )}
+
             {/* Tags Row */}
-            <div className="flex flex-wrap gap-1.5 mb-2.5">
+            <div className="flex flex-wrap gap-1.5 mb-3">
                 {/* Categories */}
-                {restaurant.categories && restaurant.categories.map(cat => (
+                {restaurant.categories && restaurant.categories.slice(0, 3).map(cat => (
                     <span 
                         key={cat}
                         onClick={(e) => {
                             e.stopPropagation();
                             if(onCategoryClick) onCategoryClick(cat);
                         }}
-                        className="px-2 py-0.5 bg-white/10 hover:bg-white hover:text-black text-gray-200 text-[10px] rounded backdrop-blur-md cursor-pointer transition-colors border border-white/10"
+                        className="px-2 py-0.5 bg-[#2d2d2d] hover:bg-gray-700 text-gray-300 text-[10px] rounded border border-gray-700 cursor-pointer transition-colors"
                     >
                         {cat}
                     </span>
@@ -305,50 +303,34 @@ const RestaurantCard = ({ restaurant, isAdmin, onUpdate, onDelete, onClick, onCa
                 
                 {/* Features */}
                 {restaurant.isVegetarian && (
-                     <span className="px-2 py-0.5 bg-emerald-500/80 text-white text-[10px] rounded flex items-center gap-1" title="素食友好">
+                     <span className="px-2 py-0.5 bg-emerald-900/50 text-emerald-400 border border-emerald-800 text-[10px] rounded flex items-center gap-1">
                         <Leaf size={10} /> 素食
                      </span>
                 )}
-                {restaurant.isNoBeef && (
-                     <span className="px-2 py-0.5 bg-gray-700 text-white text-[10px] rounded flex items-center gap-1" title="不含牛肉">
-                        <Ban size={10} /> 无牛
-                     </span>
+            </div>
+
+            {/* Divider */}
+            <div className="mt-auto pt-3 border-t border-gray-800/50 flex flex-col gap-2">
+                {/* Sub Stalls Preview */}
+                {restaurant.subStalls && restaurant.subStalls.length > 0 && (
+                    <div className="flex flex-wrap gap-1">
+                        {restaurant.subStalls.slice(0, 2).map((stall, idx) => (
+                            <span key={idx} className="text-[10px] text-gray-400 bg-[#252525] px-1.5 py-0.5 rounded border border-gray-800">
+                            • {stall.name || stall}
+                            </span>
+                        ))}
+                        {restaurant.subStalls.length > 2 && (
+                            <span className="text-[10px] text-gray-500 self-center">+{restaurant.subStalls.length - 2}</span>
+                        )}
+                    </div>
                 )}
-            </div>
-
-            {/* Status & Price Row */}
-            <div className="flex items-center gap-2 text-xs font-medium opacity-90">
-                <span className={`px-2 py-0.5 rounded-md ${
-                    openStatus.isOpen 
-                    ? 'bg-emerald-600 text-white' 
-                    : 'bg-red-600 text-white'
-                }`}>
-                    {openStatus.isOpen ? '营业中' : '已打烊'}
-                </span>
-                <span className="text-gray-400">|</span>
-                <span className="text-gray-300">{restaurant.price_range}</span>
-            </div>
-
-            {/* Sub Stalls Preview */}
-            {restaurant.subStalls && restaurant.subStalls.length > 0 && (
-                <div className="mt-2 flex flex-wrap gap-1">
-                    {restaurant.subStalls.slice(0, 3).map((stall, idx) => (
-                        <span key={idx} className="text-[10px] text-gray-300 bg-gray-800 px-1.5 py-0.5 rounded border border-gray-700">
-                           • {stall.name || stall}
-                        </span>
-                    ))}
-                    {restaurant.subStalls.length > 3 && (
-                        <span className="text-[10px] text-gray-500 self-center">...等</span>
-                    )}
+                
+                {/* Address */}
+                <div className="flex items-start text-[10px] text-gray-500">
+                    <MapPin size={10} className="mt-0.5 mr-1.5 shrink-0 opacity-70" />
+                    <span className="line-clamp-1 leading-normal">{restaurant.address}</span>
                 </div>
-            )}
-            
-            {/* Address - Very subtle */}
-            <div className="mt-2 flex items-start text-[10px] text-gray-400">
-                <MapPin size={10} className="mt-0.5 mr-1.5 shrink-0 opacity-70" />
-                <span className="line-clamp-1 leading-normal">{restaurant.address}</span>
             </div>
-        </div>
       </div>
     </div>
   );
