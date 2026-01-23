@@ -104,26 +104,33 @@ function App() {
     });
   };
 
-  // Load data from LocalStorage if available, otherwise from file
+  // Load data: Prioritize Codebase (initialRestaurants) but keep user-added ones from LocalStorage
   const [restaurants, setRestaurants] = useState(() => {
-    let initialData = initialRestaurants;
+    let baseData = [...initialRestaurants];
     
-    // Try to load from LocalStorage first
+    // Merge strategy: Codebase is the "Source of Truth" for existing IDs.
+    // LocalStorage is checked ONLY for *new* items that aren't in the code yet.
     try {
         const storedData = localStorage.getItem('kulaifood-restaurants');
         if (storedData) {
             const parsed = JSON.parse(storedData);
             if (Array.isArray(parsed) && parsed.length > 0) {
-                console.log("Loaded restaurants from LocalStorage");
-                initialData = parsed;
+                // Find items in LocalStorage that have IDs NOT present in initialRestaurants
+                // This preserves any restaurants added via the UI (Admin) that haven't been pushed to code yet
+                const userAddedItems = parsed.filter(p => !initialRestaurants.some(i => i.id === p.id));
+                
+                if (userAddedItems.length > 0) {
+                    console.log(`Merged ${userAddedItems.length} user-added restaurants from LocalStorage`);
+                    baseData = [...baseData, ...userAddedItems];
+                }
             }
         }
     } catch (e) {
-        console.warn("Failed to load restaurants from LocalStorage", e);
+        console.warn("Failed to merge restaurants from LocalStorage", e);
     }
 
     // Normalize Data on Init
-    return initialData.map(r => ({
+    return baseData.map(r => ({
       ...r,
       // Map desc to name (Primary Display)
       name: r.desc || r.name,
