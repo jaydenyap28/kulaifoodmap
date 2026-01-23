@@ -12,7 +12,7 @@ import { UtensilsCrossed, Lock, X, Coffee, Image as ImageIcon, Upload, Save, Dow
 
 import { checkOpenStatus } from './utils/businessHours';
 
-const DEFAULT_CATEGORIES = ['饭类', '面类', '咖啡店', '点心', '健康餐', '素食', '马来餐'];
+const DEFAULT_CATEGORIES = ['饭类', '面类', '咖啡店', '点心', '健康餐', '素食', '马来餐', '西餐', '韩国餐', '日本餐', '宴会酒楼', '煮炒海鲜楼'];
 const DEFAULT_HERO_BG = "https://images.unsplash.com/photo-1550989460-0adf9ea622e2?q=80&w=1974&auto=format&fit=crop";
 
 function App() {
