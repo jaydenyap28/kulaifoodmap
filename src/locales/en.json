@@ -63,7 +63,6 @@
     "面类": "Noodles",
     "咖啡店": "Kopitiam",
     "点心": "Dim Sum",
-    "健康餐": "Healthy",
     "素食": "Vegetarian",
     "马来餐": "Malay Food",
     "西餐": "Western",
@@ -71,16 +70,8 @@
     "日本餐": "Japanese",
     "宴会酒楼": "Banquet/Restaurant",
     "煮炒海鲜楼": "Seafood/Zi Char",
-    "火锅": "Steamboat",
-    "烧烤": "BBQ",
     "火锅烧烤": "Steamboat/BBQ",
-    "甜品": "Dessert",
     "蛋糕甜点": "Cake & Dessert",
-    "饮品": "Drinks",
-    "奶茶": "Bubble Tea",
-    "小吃": "Snacks",
-    "早餐": "Breakfast",
-    "晚餐": "Dinner",
-    "宵夜": "Supper"
+    "饮品": "Drinks"
   }
 }
