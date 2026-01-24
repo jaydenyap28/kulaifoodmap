@@ -15,7 +15,7 @@ import { checkOpenStatus } from './utils/businessHours';
 import { analytics } from './utils/analytics';
 
 const DEFAULT_CATEGORIES = ['饭类', '面类', '咖啡店', '点心', '健康餐', '素食', '马来餐', '西餐', '韩国餐', '日本餐', '宴会酒楼', '煮炒海鲜楼'];
-const DEFAULT_HERO_BG = "https://images.unsplash.com/photo-1550989460-0adf9ea622e2?q=80&w=1974&auto=format&fit=crop";
+const DEFAULT_HERO_BG = "https://i.ibb.co/7J5qjZtv/image.png";
 
 function App() {
   const { t, i18n } = useTranslation();
