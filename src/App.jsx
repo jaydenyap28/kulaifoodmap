@@ -596,8 +596,8 @@ function App() {
             >
               {t('app_title')}
             </h1>
-            <p className="text-sm md:text-base text-gray-200 font-bold tracking-widest mt-1 drop-shadow-md uppercase">
-              KULAI FOOD MAP
+            <p className="text-xl md:text-2xl text-yellow-400 mt-1 drop-shadow-md" style={{ fontFamily: '"Lobster", cursive' }}>
+              Kulai Food Map
             </p>
           </div>
           
@@ -639,7 +639,7 @@ function App() {
         /> */}
 
         {/* Hero Stack Section */}
-        <div className="relative w-full flex flex-col items-center min-h-[450px] mb-12">
+        <div className="relative w-full flex flex-col items-center min-h-[450px] mb-5">
           {filteredRestaurants.length > 1 ? (
             <HeroCardStack 
               restaurants={filteredRestaurants} 

@@ -9,15 +9,15 @@ const Footer = ({ onAdminLogin }) => {
     <footer className="w-full max-w-[1600px] mx-auto px-4 pb-8 relative z-10 mt-12">
       <div className="bg-[#1e1e1e] rounded-3xl p-8 border border-[#333] flex flex-col items-center gap-6 text-center shadow-2xl">
         
-        <div className="flex flex-col gap-2">
+        <div className="flex flex-col gap-4 items-center">
             <h3 className="text-white font-bold text-lg">{t('footer.recommend')}</h3>
             <a 
-                href="https://www.facebook.com/kulaifoodmap" 
+                href="https://www.facebook.com/jnqjourney/" 
                 target="_blank" 
                 rel="noreferrer"
-                className="text-gray-400 hover:text-white transition-colors flex items-center justify-center gap-2"
+                className="px-6 py-3 bg-gradient-to-r from-blue-600 to-indigo-600 hover:from-blue-500 hover:to-indigo-500 text-white rounded-full font-bold shadow-lg hover:shadow-blue-500/30 hover:-translate-y-0.5 transition-all flex items-center justify-center gap-2 group"
             >
-                <Facebook size={18} />
+                <Facebook size={20} className="group-hover:rotate-12 transition-transform" />
                 {t('footer.contact_fb')}
             </a>
         </div>

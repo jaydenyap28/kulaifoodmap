@@ -291,31 +291,33 @@ const RestaurantCard = ({ restaurant, isAdmin, onUpdate, onDelete, onClick, onCa
             )}
 
             {/* Tags Row */}
-            <div className="flex flex-wrap gap-1.5 mb-3">
-                {/* Categories */}
-                {restaurant.categories && restaurant.categories.slice(0, 3).map(cat => (
-                    <span 
-                        key={cat}
-                        onClick={(e) => {
-                            e.stopPropagation();
-                            if(onCategoryClick) onCategoryClick(cat);
-                        }}
-                        className="px-2 py-0.5 bg-[#2d2d2d] hover:bg-gray-700 text-gray-300 text-[10px] rounded border border-gray-700 cursor-pointer transition-colors"
-                    >
-                        {cat}
-                    </span>
-                ))}
-                
-                {/* Features */}
-                {restaurant.isVegetarian && (
-                     <span className="px-2 py-0.5 bg-emerald-900/50 text-emerald-400 border border-emerald-800 text-[10px] rounded flex items-center gap-1">
-                        <Leaf size={10} /> 素食
-                     </span>
-                )}
-            </div>
+            {(restaurant.categories?.length > 0 || restaurant.isVegetarian) && (
+                <div className="flex flex-wrap gap-1 mb-2">
+                    {/* Categories */}
+                    {restaurant.categories && restaurant.categories.slice(0, 3).map(cat => (
+                        <span 
+                            key={cat}
+                            onClick={(e) => {
+                                e.stopPropagation();
+                                if(onCategoryClick) onCategoryClick(cat);
+                            }}
+                            className="px-1.5 py-0.5 bg-[#2d2d2d] hover:bg-gray-700 text-gray-300 text-[10px] rounded border border-gray-700 cursor-pointer transition-colors leading-none"
+                        >
+                            {cat}
+                        </span>
+                    ))}
+                    
+                    {/* Features */}
+                    {restaurant.isVegetarian && (
+                        <span className="px-1.5 py-0.5 bg-emerald-900/50 text-emerald-400 border border-emerald-800 text-[10px] rounded flex items-center gap-1 leading-none">
+                            <Leaf size={10} /> 素食
+                        </span>
+                    )}
+                </div>
+            )}
 
             {/* Divider */}
-            <div className="mt-auto pt-3 border-t border-gray-800/50 flex flex-col gap-2">
+            <div className="mt-auto pt-2 border-t border-gray-800/50 flex flex-col gap-2">
                 {/* Sub Stalls Preview */}
                 {restaurant.subStalls && Array.isArray(restaurant.subStalls) && restaurant.subStalls.length > 0 && (
                     <div className="flex flex-wrap gap-1">
@@ -324,7 +326,7 @@ const RestaurantCard = ({ restaurant, isAdmin, onUpdate, onDelete, onClick, onCa
                             const displayName = typeof stall === 'object' ? stall.name : stall;
                             if (!displayName) return null;
                             return (
-                                <span key={idx} className="text-[10px] text-gray-400 bg-[#252525] px-1.5 py-0.5 rounded border border-gray-800">
+                                <span key={idx} className="text-[10px] text-gray-400 bg-[#252525] px-1.5 py-0.5 rounded border border-gray-800 leading-none">
                                 • {displayName}
                                 </span>
                             );
@@ -336,9 +338,9 @@ const RestaurantCard = ({ restaurant, isAdmin, onUpdate, onDelete, onClick, onCa
                 )}
                 
                 {/* Address */}
-                <div className="flex items-start text-[10px] text-gray-500">
-                    <MapPin size={10} className="mt-0.5 mr-1.5 shrink-0 opacity-70" />
-                    <span className="line-clamp-1 leading-normal">{restaurant.address}</span>
+                <div className="flex items-start text-xs text-gray-400">
+                    <MapPin size={12} className="mt-0.5 mr-1.5 shrink-0 opacity-70" />
+                    <span className="line-clamp-2 leading-tight">{restaurant.address}</span>
                 </div>
             </div>
       </div>

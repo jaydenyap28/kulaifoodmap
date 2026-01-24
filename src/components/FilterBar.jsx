@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Plus, X, Edit2 } from 'lucide-react';
+import { Plus, X, Edit2, ChevronDown, ChevronUp } from 'lucide-react';
 import { useTranslation } from 'react-i18next';
 import {
   DndContext,
@@ -86,6 +86,7 @@ const FilterBar = ({
 }) => {
   const { t } = useTranslation();
   const [isEditMode, setIsEditMode] = useState(false);
+  const [isExpanded, setIsExpanded] = useState(false);
 
   const sensors = useSensors(
     useSensor(PointerSensor, {
@@ -161,30 +162,41 @@ const FilterBar = ({
         </div>
 
         {/* Right: Sortable Categories (Wrapping) */}
-        <div className="flex flex-wrap gap-2 items-center flex-1">
-          <DndContext 
-              sensors={sensors} 
-              collisionDetection={closestCenter} 
-              onDragEnd={handleDragEnd}
-          >
-              <SortableContext 
-                  items={categories} 
-                  strategy={rectSortingStrategy}
+        <div className="flex flex-col flex-1 min-w-0">
+            <div className={`flex flex-wrap gap-2 items-center w-full transition-all duration-500 ease-in-out ${!isExpanded ? 'max-h-[52px] overflow-hidden' : ''}`}>
+              <DndContext 
+                  sensors={sensors} 
+                  collisionDetection={closestCenter} 
+                  onDragEnd={handleDragEnd}
               >
-                  {categories.map(cat => (
-                     <SortableCategoryChip 
-                          key={cat}
-                          cat={cat}
-                          selectedCategory={selectedCategory}
-                          onSelectCategory={onSelectCategory}
-                          onDeleteCategory={onDeleteCategory}
-                          isEditMode={isEditMode}
-                          t={t}
-                          isAdmin={isAdmin}
-                     />
-                  ))}
-              </SortableContext>
-          </DndContext>
+                  <SortableContext 
+                      items={categories} 
+                      strategy={rectSortingStrategy}
+                  >
+                      {categories.map(cat => (
+                        <SortableCategoryChip 
+                              key={cat}
+                              cat={cat}
+                              selectedCategory={selectedCategory}
+                              onSelectCategory={onSelectCategory}
+                              onDeleteCategory={onDeleteCategory}
+                              isEditMode={isEditMode}
+                              t={t}
+                              isAdmin={isAdmin}
+                        />
+                      ))}
+                  </SortableContext>
+              </DndContext>
+            </div>
+             {categories.length > 5 && (
+                <button
+                    onClick={() => setIsExpanded(!isExpanded)}
+                    className="self-start mt-1 text-xs text-gray-400 hover:text-white flex items-center gap-1 transition-colors py-1"
+                >
+                    {isExpanded ? <ChevronUp size={14} /> : <ChevronDown size={14} />}
+                    {isExpanded ? (t('filter.collapse') || '收起') : (t('filter.expand') || '展开更多')}
+                </button>
+            )}
         </div>
 
       </div>
