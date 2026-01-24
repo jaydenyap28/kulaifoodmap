@@ -4521,30 +4521,6 @@ export const initialRestaurants = [
     "branches": []
   },
   {
-    "id": 186,
-    "name": "突破小食馆",
-    "name_en": "",
-    "address": "36 Breakthrough Restaurant",
-    "opening_hours": "S-36, Jalan Kelapa Sawit 2, Kampung Sri Paya, 81030 Kulai, Johor Darul Ta'zim",
-    "category": [
-      "11 am–8 pm"
-    ],
-    "categories": [
-      "11 am–8 pm"
-    ],
-    "rating": 0,
-    "image": "",
-    "subStalls": [],
-    "price_range": "RM 10-20",
-    "menu_link": "",
-    "website_link": "",
-    "delivery_link": "",
-    "isVegetarian": false,
-    "isNoBeef": false,
-    "manualStatus": "auto",
-    "branches": []
-  },
-  {
     "id": 187,
     "name": "咖啡店",
     "name_en": "",
@@ -4905,54 +4881,6 @@ export const initialRestaurants = [
     "branches": []
   },
   {
-    "id": 202,
-    "name": "23 1, Jalan Desa Baiduri, Taman Desa Baiduri, 81000 Kulai, Johor Darul Ta'zim",
-    "name_en": "好滋味小厨",
-    "address": "Hao Zi Wei Kitchen",
-    "opening_hours": "20, Jalan Pinang, Taman Kota Kulai, 81000 Kulai, Johor Darul Ta'zim",
-    "category": [
-      "6 am–4 pm Sun Closed"
-    ],
-    "categories": [
-      "6 am–4 pm Sun Closed"
-    ],
-    "rating": 0,
-    "image": "",
-    "subStalls": [],
-    "price_range": "RM 10-20",
-    "menu_link": "",
-    "website_link": "",
-    "delivery_link": "",
-    "isVegetarian": false,
-    "isNoBeef": false,
-    "manualStatus": "auto",
-    "branches": []
-  },
-  {
-    "id": 203,
-    "name": "饭类",
-    "name_en": "",
-    "address": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQOvx0Zjkdga-OtIUTlhFUCihiVIUcJ4zXA6g&s",
-    "opening_hours": "",
-    "category": [
-      "P - Loko"
-    ],
-    "categories": [
-      "P - Loko"
-    ],
-    "rating": 0,
-    "image": "",
-    "subStalls": [],
-    "price_range": "RM 10-20",
-    "menu_link": "",
-    "website_link": "",
-    "delivery_link": "",
-    "isVegetarian": false,
-    "isNoBeef": false,
-    "manualStatus": "auto",
-    "branches": []
-  },
-  {
     "id": 204,
     "name": "123, Jalan Kenanga 29/6, Bandar Indahpura, 81000 Kulai, Johor Darul Ta'zim",
     "name_en": "",
@@ -5166,54 +5094,6 @@ export const initialRestaurants = [
     "website_link": "",
     "delivery_link": "",
     "isVegetarian": true,
-    "isNoBeef": false,
-    "manualStatus": "auto",
-    "branches": []
-  },
-  {
-    "id": 213,
-    "name": "新嘉宾",
-    "name_en": "",
-    "address": "Restoran Tropical Garden Kulai",
-    "opening_hours": "36, Jalan Tropika 1, Taman Tropika, 81000 Kulai, Johor Darul Ta'zim",
-    "category": [
-      "11 am–10 pm"
-    ],
-    "categories": [
-      "11 am–10 pm"
-    ],
-    "rating": 0,
-    "image": "",
-    "subStalls": [],
-    "price_range": "RM 10-20",
-    "menu_link": "",
-    "website_link": "",
-    "delivery_link": "",
-    "isVegetarian": false,
-    "isNoBeef": false,
-    "manualStatus": "auto",
-    "branches": []
-  },
-  {
-    "id": 214,
-    "name": "宴会酒楼",
-    "name_en": "",
-    "address": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRMbjyl4xCfEa19KWxtGCreirSqEWMwi11Zag&s",
-    "opening_hours": "",
-    "category": [
-      "Lemon Tree Restaurant"
-    ],
-    "categories": [
-      "Lemon Tree Restaurant"
-    ],
-    "rating": 0,
-    "image": "",
-    "subStalls": [],
-    "price_range": "RM 10-20",
-    "menu_link": "",
-    "website_link": "",
-    "delivery_link": "",
-    "isVegetarian": false,
     "isNoBeef": false,
     "manualStatus": "auto",
     "branches": []

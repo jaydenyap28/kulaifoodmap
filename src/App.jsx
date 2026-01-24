@@ -16,10 +16,7 @@ import { checkOpenStatus } from './utils/businessHours';
 import { analytics } from './utils/analytics';
 
 const DEFAULT_CATEGORIES = [
-  '饭类', '粉类', '咖啡店', 'Cafe', '煮炒海鲜楼', '杂菜饭',
-  '火锅烧烤', '蛋糕甜点', '饮品', 
-  '西餐', '日本餐', '韩国餐', '泰国餐', '中国餐', '马来餐', 
-  '素食', '健康餐', '快餐', '酒吧', '点心', '宴会酒楼'
+  '饭类', '粉类', 'Cafe', '咖啡店', '煮炒海鲜楼', '火锅烧烤', '西餐', '马来餐', '日本餐', '韩国餐', '中国餐', '泰国餐', '快餐', '点心', '杂菜饭', '宴会酒楼', '蛋糕甜点', '饮品', '酒吧'
 ];
 const DEFAULT_HERO_BG = "https://i.ibb.co/7J5qjZtv/image.png";
 
@@ -116,7 +113,7 @@ function App() {
   };
 
   // Version Control for Data (Increment this when adding new hardcoded data to force refresh)
-  const DATA_VERSION = '2025-01-24-v10'; 
+  const DATA_VERSION = '2025-01-24-v11'; 
 
   // Load data: Prioritize Codebase (initialRestaurants) but keep user-added ones from LocalStorage
   const [restaurants, setRestaurants] = useState(() => {
@@ -129,12 +126,9 @@ function App() {
 
     if (shouldClearStorage) {
         console.log(`[App] Data version mismatch (${storedVersion} vs ${DATA_VERSION}). Refreshing data...`);
-        // We only clear restaurants to force reload from code. 
-        // We might want to keep other settings, but for data consistency, let's start fresh with data.
-        // But we want to keep user settings like "Show Open Only" etc if possible.
-        // Actually, logic below handles merging, but if storage has old list, we want to ensure new items appear.
-        // My previous merge logic SHOULD have worked (Step 4), but to be safe, if version changes,
-        // we can assume 'initialRestaurants' is the source of truth for STRUCTURE and COUNT of static items.
+        // Force clear critical storage items to ensure fresh start
+        localStorage.removeItem('kulaifood-restaurants');
+        localStorage.removeItem('kulaifood-categories'); // Clear categories too!
     }
 
     // 1. Load stored data to preserve ORDER and User-Added Items
