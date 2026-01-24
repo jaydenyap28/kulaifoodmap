@@ -2,7 +2,7 @@ import React from 'react';
 import { Facebook, Lock } from 'lucide-react';
 import { useTranslation } from 'react-i18next';
 
-const Footer = ({ onAdminLoginClick }) => {
+const Footer = ({ onAdminLogin }) => {
   const { t } = useTranslation();
 
   return (
@@ -28,7 +28,7 @@ const Footer = ({ onAdminLoginClick }) => {
              <span>© 2026 Kulaifoodmap Made by JNQ Media</span>
              
              <button 
-                onClick={onAdminLoginClick}
+                onClick={onAdminLogin}
                 className="flex items-center gap-1.5 hover:text-gray-300 transition-colors"
              >
                 <Lock size={14} />
