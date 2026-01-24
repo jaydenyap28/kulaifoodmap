@@ -14,7 +14,13 @@ import { useTranslation } from 'react-i18next';
 import { checkOpenStatus } from './utils/businessHours';
 import { analytics } from './utils/analytics';
 
-const DEFAULT_CATEGORIES = ['饭类', '面类', '咖啡店', '点心', '健康餐', '素食', '马来餐', '西餐', '韩国餐', '日本餐', '宴会酒楼', '煮炒海鲜楼'];
+const DEFAULT_CATEGORIES = [
+  '饭类', '面类', '咖啡店', '煮炒海鲜楼', 
+  '火锅烧烤', '蛋糕甜点', '饮品', 
+  '西餐', '日本餐', '韩国餐', '马来餐', 
+  '素食', '点心', '宴会酒楼', 
+  '小吃', '早餐', '晚餐', '宵夜'
+];
 const DEFAULT_HERO_BG = "https://i.ibb.co/7J5qjZtv/image.png";
 
 function App() {
@@ -351,6 +357,10 @@ function App() {
     }
   };
 
+  const handleReorderCategories = (newOrder) => {
+    setCategories(newOrder);
+  };
+
   const handleAddReview = (restaurantId, newReview) => {
     setRestaurants(prev => 
       prev.map(r => {
@@ -562,6 +572,7 @@ function App() {
                 onSelectCategory={handleCategoryClick}
                 onAddCategory={handleAddCategory}
                 onDeleteCategory={handleDeleteCategory}
+                onReorderCategories={handleReorderCategories}
                 isAdmin={isAdmin}
                 showOpenOnly={showOpenOnly}
                 onToggleShowOpenOnly={() => setShowOpenOnly(!showOpenOnly)}

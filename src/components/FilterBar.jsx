@@ -1,6 +1,79 @@
-import React, { useRef, useState } from 'react';
-import { Settings, Plus, X, Edit2, Clock, Coffee, Dessert } from 'lucide-react';
+import React, { useState } from 'react';
+import { Plus, X, Edit2 } from 'lucide-react';
 import { useTranslation } from 'react-i18next';
+import {
+  DndContext,
+  closestCenter,
+  KeyboardSensor,
+  PointerSensor,
+  useSensor,
+  useSensors,
+} from '@dnd-kit/core';
+import {
+  arrayMove,
+  SortableContext,
+  sortableKeyboardCoordinates,
+  useSortable,
+  rectSortingStrategy,
+} from '@dnd-kit/sortable';
+import { CSS } from '@dnd-kit/utilities';
+
+const SortableCategoryChip = ({ cat, selectedCategory, onSelectCategory, onDeleteCategory, isEditMode, t, isAdmin }) => {
+  const {
+    attributes,
+    listeners,
+    setNodeRef,
+    transform,
+    transition,
+    isDragging,
+  } = useSortable({ id: cat, disabled: !isAdmin });
+
+  const style = {
+    transform: CSS.Transform.toString(transform),
+    transition,
+    opacity: isDragging ? 0.5 : 1,
+    cursor: isAdmin ? 'grab' : 'pointer',
+    touchAction: 'none' 
+  };
+
+  return (
+    <div 
+        ref={setNodeRef} 
+        style={style} 
+        {...attributes} 
+        {...listeners}
+        className="relative shrink-0"
+    >
+      <button
+        onClick={(e) => {
+            if (isDragging) return;
+            onSelectCategory(cat);
+        }}
+        className={`px-5 py-2 rounded-full text-base font-medium transition-all ${
+          selectedCategory.includes(cat)
+            ? 'bg-white text-black border-white'
+            : 'bg-[#1e1e1e] text-gray-400 hover:text-white hover:bg-[#2d2d2d] border-[#333]'
+        } shadow-sm border select-none`}
+      >
+        {t(`categories.${cat}`, cat)}
+      </button>
+      {isEditMode && (
+        <button
+          onClick={(e) => {
+            e.stopPropagation();
+            if (window.confirm(t('filter.confirm_delete_cat', { cat }))) {
+              onDeleteCategory(cat);
+            }
+          }}
+          className="absolute -top-1 -right-1 bg-red-500 text-white rounded-full p-0.5 shadow-sm hover:bg-red-600 transition-colors z-10 cursor-pointer"
+          onPointerDown={(e) => e.stopPropagation()} 
+        >
+          <X size={10} />
+        </button>
+      )}
+    </div>
+  );
+};
 
 const FilterBar = ({ 
   categories, 
@@ -8,18 +81,41 @@ const FilterBar = ({
   onSelectCategory, 
   onAddCategory,
   onDeleteCategory,
+  onReorderCategories,
   isAdmin
 }) => {
   const { t } = useTranslation();
-  const scrollContainer = useRef(null);
   const [isEditMode, setIsEditMode] = useState(false);
+
+  const sensors = useSensors(
+    useSensor(PointerSensor, {
+        activationConstraint: {
+            distance: 8, 
+        },
+    }),
+    useSensor(KeyboardSensor, {
+      coordinateGetter: sortableKeyboardCoordinates,
+    })
+  );
+
+  const handleDragEnd = (event) => {
+    const { active, over } = event;
+    if (active.id !== over.id) {
+      const oldIndex = categories.indexOf(active.id);
+      const newIndex = categories.indexOf(over.id);
+      if (onReorderCategories) {
+          onReorderCategories(arrayMove(categories, oldIndex, newIndex));
+      }
+    }
+  };
 
   return (
     <div className="w-full max-w-[1600px] mx-auto px-4 mb-4 relative z-20 flex flex-col gap-3">
       
-      <div className="flex items-center gap-2 overflow-x-auto pb-2 scrollbar-hide" ref={scrollContainer}>
+      {/* Container - Changed to Flex Wrap */}
+      <div className="flex flex-wrap gap-2 pb-2 items-center">
         
-        {/* Admin Tools - Moved to Front for Visibility */}
+        {/* Admin Tools */}
         {isAdmin && (
           <div className="flex items-center gap-1 shrink-0 border-r pr-2 border-gray-700 mr-2">
             <button
@@ -62,39 +158,34 @@ const FilterBar = ({
 
         <div className="w-px h-6 bg-gray-700 mx-2 shrink-0"></div>
 
-        {/* Categories */}
-        {categories.map(cat => (
-          <div key={cat} className="relative shrink-0">
-            <button
-              onClick={() => onSelectCategory(cat)}
-              className={`px-5 py-2 rounded-full text-base font-medium transition-all ${
-                selectedCategory.includes(cat)
-                  ? 'bg-white text-black border-white'
-                  : 'bg-[#1e1e1e] text-gray-400 hover:text-white hover:bg-[#2d2d2d] border-[#333]'
-              } shadow-sm border`}
+        {/* Sortable Categories */}
+        <DndContext 
+            sensors={sensors} 
+            collisionDetection={closestCenter} 
+            onDragEnd={handleDragEnd}
+        >
+            <SortableContext 
+                items={categories} 
+                strategy={rectSortingStrategy}
             >
-              {t(`categories.${cat}`, cat)}
-            </button>
-            {isEditMode && (
-              <button
-                onClick={(e) => {
-                  e.stopPropagation();
-                  if (window.confirm(t('filter.confirm_delete_cat', { cat }))) {
-                    onDeleteCategory(cat);
-                  }
-                }}
-                className="absolute -top-1 -right-1 bg-red-500 text-white rounded-full p-0.5 shadow-sm hover:bg-red-600 transition-colors z-10"
-              >
-                <X size={10} />
-              </button>
-            )}
-          </div>
-        ))}
+                {categories.map(cat => (
+                   <SortableCategoryChip 
+                        key={cat}
+                        cat={cat}
+                        selectedCategory={selectedCategory}
+                        onSelectCategory={onSelectCategory}
+                        onDeleteCategory={onDeleteCategory}
+                        isEditMode={isEditMode}
+                        t={t}
+                        isAdmin={isAdmin}
+                   />
+                ))}
+            </SortableContext>
+        </DndContext>
 
       </div>
     </div>
   );
 };
-
 
 export default FilterBar;

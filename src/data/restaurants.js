@@ -5,15 +5,11 @@ export const initialRestaurants = [
     "name_en": "Restoran Sze Wah Bak Kuh Teh",
     "address": "2 & 3, Jalan Seruling 1, Taman Sri Kulai Baru 2, 81000 Kulai, Johor",
     "opening_hours": "Monday: Closed\nTuesday: 8:30am - 8pm\nWednesday: 8:30am - 8pm\nThursday: 8:30am - 8pm\nFriday: 8:30am - 8pm\nSaturday: 8:30am - 8pm\nSunday: 8:30am - 8pm",
-    "category": [
-      "饭类"
-    ],
+    "category": ["饭类"],
     "rating": 0,
     "image": "https://images.deliveryhero.io/image/fd-my/LH/pwix-listing.jpg",
     "subStalls": [],
-    "categories": [
-      "饭类"
-    ],
+    "categories": ["饭类"],
     "price_range": "RM 10-20",
     "menu_link": "",
     "website_link": "",
@@ -29,15 +25,11 @@ export const initialRestaurants = [
     "name_en": "New Century Claypot Chicken Rice",
     "address": "18, Jalan Raya, Kulai Besar, 81000 Kulai, Johor",
     "opening_hours": "Monday: Closed\nTuesday: 11:30am - 9:45pm\nWednesday: 11:30am - 9:45pm\nThursday: 11:30am - 9:45pm\nFriday: 11:30am - 9:45pm\nSaturday: 11:30am - 9:45pm\nSunday: 11:30am - 9:45pm",
-    "category": [
-      "饭类"
-    ],
+    "category": ["饭类"],
     "rating": 0,
     "image": "https://img5.boatcdn.com/review_img/ee161ce8ed7ff1ea2482f0d31cb10053",
     "subStalls": [],
-    "categories": [
-      "饭类"
-    ],
+    "categories": ["饭类"],
     "price_range": "RM 10-20",
     "menu_link": "",
     "website_link": "",
@@ -53,15 +45,11 @@ export const initialRestaurants = [
     "name_en": "Kulai Mok Gao Beef Noodles",
     "address": "523, Jalan Kenanga 29/17, Bandar Indahpura, 81000 Kulai, Johor",
     "opening_hours": "Monday: 5am - 2pm\nTuesday: 5am - 2pm\nWednesday: 5am - 2pm\nThursday: 5am - 2pm\nFriday: 5am - 2pm\nSaturday: 5am - 2pm\nSunday: 5am - 2pm",
-    "category": [
-      "面类"
-    ],
+    "category": ["面类"],
     "rating": 0,
     "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTh3VGbioYrrksxKWvI4y18UsE5-fJS5BdGjw&s",
     "subStalls": [],
-    "categories": [
-      "面类"
-    ],
+    "categories": ["面类"],
     "price_range": "RM 10-20",
     "menu_link": "",
     "website_link": "",
@@ -77,17 +65,11 @@ export const initialRestaurants = [
     "name_en": "Lei Cha 21 Miles",
     "address": "21, Jalan Manis, Taman Manis, 81000 Kulai, Johor",
     "opening_hours": "Monday: 10am - 3pm\nTuesday: 10am - 3pm\nWednesday: 10am - 3pm\nThursday: Closed\nFriday: 10am - 3pm\nSaturday: 10am - 3pm\nSunday: 10am - 3pm",
-    "category": [
-      "健康餐",
-      "饭类"
-    ],
+    "category": ["饭类"],
     "rating": 0,
     "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ1EBTr6EWNEpZbmsaautNHOet-GHf0uVgscA&s",
     "subStalls": [],
-    "categories": [
-      "健康餐",
-      "饭类"
-    ],
+    "categories": ["饭类"],
     "price_range": "RM 10-20",
     "menu_link": "",
     "website_link": "",
@@ -103,15 +85,11 @@ export const initialRestaurants = [
     "name_en": "Restaurant Hainan Hojiak Corner",
     "address": "548, Jalan Kenanga 29/18, Bandar Indahpura, 81000 Kulai, Johor",
     "opening_hours": "Monday: 6am - 3pm\nTuesday: 6am - 3pm\nWednesday: Closed\nThursday: 6am - 3pm\nFriday: 6am - 3pm\nSaturday: 6am - 3pm\nSunday: 6am - 3pm",
-    "category": [
-      "面类"
-    ],
+    "category": ["面类"],
     "rating": 0,
     "image": "https://lh3.googleusercontent.com/p/AF1QipM7wQO_3D_9K5C04u-yK9vC7q9r3t-8qH_2h5o=s1360-w1360-h1020",
     "subStalls": [],
-    "categories": [
-      "面类"
-    ],
+    "categories": ["面类"],
     "price_range": "RM 10-20",
     "menu_link": "",
     "website_link": "",
@@ -127,15 +105,11 @@ export const initialRestaurants = [
     "name_en": "Kulai Big Street Char Kway Teow",
     "address": "S-5, Jalan Ibrahim, Taman Kulai, 81000 Kulai, Johor",
     "opening_hours": "Monday: Closed\nTuesday: Closed\nWednesday: 8:30am - 3pm\nThursday: 8:30am - 3pm\nFriday: 8:30am - 3pm\nSaturday: 8:30am - 3pm\nSunday: 8:30am - 3pm",
-    "category": [
-      "面类"
-    ],
+    "category": ["面类"],
     "rating": 0,
     "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTMkCI0NcbkauqOuFlnrDqXQoO4Pan7eWeTHg&s",
     "subStalls": [],
-    "categories": [
-      "面类"
-    ],
+    "categories": ["面类"],
     "price_range": "RM 10-20",
     "menu_link": "",
     "website_link": "",
@@ -151,15 +125,11 @@ export const initialRestaurants = [
     "name_en": "Lapan Bintang Chicken Rice",
     "address": "20, Jalan Cermai 2, Taman Mesra, 81400 Kulai, Johor",
     "opening_hours": "Monday: 10am - 5pm\nTuesday: 10am - 5pm\nWednesday: 10am - 5pm\nThursday: Closed\nFriday: 10am - 5pm\nSaturday: 10am - 5pm\nSunday: 10am - 5pm",
-    "category": [
-      "饭类"
-    ],
+    "category": ["饭类"],
     "rating": 0,
     "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQKJezIT3oIqWXe9bM8c0J8HE6urSH3aNzdtw&s",
     "subStalls": [],
-    "categories": [
-      "饭类"
-    ],
+    "categories": ["饭类"],
     "price_range": "RM 10-20",
     "menu_link": "",
     "website_link": "",
@@ -175,17 +145,11 @@ export const initialRestaurants = [
     "name_en": "Restaurant Yuw Meng",
     "address": "44, Jalan Seruling 2, Taman Sri Kulai Baru 2, 81000 Kulai, Johor",
     "opening_hours": "Monday: 5pm - 10pm\nTuesday: 5pm - 10pm\nWednesday: Closed\nThursday: 5pm - 10pm\nFriday: 5pm - 10pm\nSaturday: 5pm - 10pm\nSunday: 5pm - 10pm",
-    "category": [
-      "饭类",
-      "面类"
-    ],
+    "category": ["饭类", "面类"],
     "rating": 0,
     "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS4r-Q5ubndMiAGKt2TQ3tV9rWhDG1K_KOb3A&s",
     "subStalls": [],
-    "categories": [
-      "饭类",
-      "面类"
-    ],
+    "categories": ["饭类", "面类"],
     "price_range": "RM 10-20",
     "menu_link": "",
     "website_link": "",
@@ -201,15 +165,11 @@ export const initialRestaurants = [
     "name_en": "Kulai Ji Noodles",
     "address": "845-855, Jalan Teratai 36/17, Bandar Indahpura, 81000 Kulai, Johor",
     "opening_hours": "Monday: Closed\nTuesday: 7am - 3pm\nWednesday: 7am - 3pm\nThursday: 7am - 3pm\nFriday: 7am - 3pm\nSaturday: 7am - 3pm\nSunday: 7am - 3pm",
-    "category": [
-      "面类"
-    ],
+    "category": ["面类"],
     "rating": 0,
     "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTOow_tC9zYmgbBwDxYDyDAZmUPO4SGIT9Idg&s",
     "subStalls": [],
-    "categories": [
-      "面类"
-    ],
+    "categories": ["面类"],
     "price_range": "RM 10-20",
     "menu_link": "",
     "website_link": "",
@@ -225,17 +185,11 @@ export const initialRestaurants = [
     "name_en": "Daily Wanton Mee",
     "address": "Taman Sri Kulai Baru 2, 81000 Kulai, Johor",
     "opening_hours": "Monday: 5:30pm - 10:30pm\nTuesday: 5:30pm - 10:30pm\nWednesday: 5:30pm - 10:30pm\nThursday: 5:30pm - 10:30pm\nFriday: 5:30pm - 10:30pm\nSaturday: Closed\nSunday: 5:30pm - 10:30pm",
-    "category": [
-      "面类",
-      "老字号"
-    ],
+    "category": ["面类"],
     "rating": 0,
     "image": "https://cdn.prod.website-files.com/64c4be5d67694090d91bc447/64d1164dc5c3ff4ded7218a7_batch_DSC05226.jpeg",
     "subStalls": [],
-    "categories": [
-      "面类",
-      "老字号"
-    ],
+    "categories": ["面类"],
     "price_range": "RM 10-20",
     "menu_link": "",
     "website_link": "",
@@ -251,17 +205,11 @@ export const initialRestaurants = [
     "name_en": "Daily Wanton Mee",
     "address": "Taman Sri Kulai Baru 2, 81000 Kulai, Johor",
     "opening_hours": "Monday: 5:30pm - 10:30pm\nTuesday: 5:30pm - 10:30pm\nWednesday: 5:30pm - 10:30pm\nThursday: 5:30pm - 10:30pm\nFriday: 5:30pm - 10:30pm\nSaturday: Closed\nSunday: 5:30pm - 10:30pm",
-    "category": [
-      "面类",
-      "老字号"
-    ],
+    "category": ["面类"],
     "rating": 0,
     "image": "https://cdn.prod.website-files.com/64c4be5d67694090d91bc447/64d1164dc5c3ff4ded7218a7_batch_DSC05226.jpeg",
     "subStalls": [],
-    "categories": [
-      "面类",
-      "老字号"
-    ],
+    "categories": ["面类"],
     "price_range": "RM 10-20",
     "menu_link": "",
     "website_link": "",
@@ -277,15 +225,11 @@ export const initialRestaurants = [
     "name_en": "Yong Juan Hin",
     "address": "5c, Jalan Ismail, Taman Kulai, 81000 Kulai, Johor Darul Ta'zim",
     "opening_hours": "Monday: Closed\nTuesday: 7am - 3pm\nWednesday: 7am - 3pm\nThursday: 7am - 3pm\nFriday: 7am - 3pm\nSaturday: 7am - 3pm\nSunday: 7am - 3pm",
-    "category": [
-      "咖啡店"
-    ],
+    "category": ["咖啡店"],
     "rating": 0,
     "image": "https://cdn.prod.website-files.com/64c4be5d67694090d91bc447/64ec54aa340c2e1d87d7d583_batch_DSC01257.jpg",
     "subStalls": [],
-    "categories": [
-      "咖啡店"
-    ],
+    "categories": ["咖啡店"],
     "price_range": "RM 10-20",
     "menu_link": "",
     "website_link": "",
@@ -301,10 +245,7 @@ export const initialRestaurants = [
     "name_en": "Restaurant Yon Lai",
     "address": "646, Jalan Gangsa 6, Taman Timur, 81000 Kulai, Johor Darul Ta'zim",
     "opening_hours": "Monday: 6am - 4pm\nTuesday: 6am - 4pm\nWednesday: 6am - 4pm\nThursday: 6am - 4pm\nFriday: 6am - 4pm\nSaturday: 6am - 4pm\nSunday: 6am - 4pm",
-    "category": [
-      "点心",
-      "咖啡店"
-    ],
+    "category": ["点心", "咖啡店"],
     "rating": 0,
     "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcScNU4Dr5Zr7QO3nM_QBjybwubtdg022MlS7g&s",
     "subStalls": [
@@ -337,10 +278,7 @@ export const initialRestaurants = [
         "image": ""
       }
     ],
-    "categories": [
-      "点心",
-      "咖啡店"
-    ],
+    "categories": ["点心", "咖啡店"],
     "price_range": "RM 10-20",
     "menu_link": "",
     "website_link": "",
@@ -356,15 +294,11 @@ export const initialRestaurants = [
     "name_en": "Kedai Makan Man Ting Fong",
     "address": "Lot 8098, Jalan Kelapa Sawit 6, Kelapa Sawit, 81030 Kulai, Johor",
     "opening_hours": "Monday: 7am - 2pm\nTuesday: Closed\nWednesday: 7am - 2pm\nThursday: 7am - 2pm\nFriday: 7am - 2pm\nSaturday: 7am - 2pm\nSunday: 7am - 2pm",
-    "category": [
-      "健康餐"
-    ],
+    "category": [],
     "rating": 0,
     "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQIjZBDRgHdfF9jA-m0zcxKgfORWbSqfrTMQA&s",
     "subStalls": [],
-    "categories": [
-      "健康餐"
-    ],
+    "categories": [],
     "price_range": "RM 10-20",
     "menu_link": "",
     "website_link": "",
@@ -380,15 +314,11 @@ export const initialRestaurants = [
     "name_en": "Chop Pun Heong Dim Sum",
     "address": "398, Jalan Kenanga 29/10, Bandar Indahpura, 81000 Kulai, Johor Darul Ta'zim",
     "opening_hours": "Monday: Closed\nTuesday: 6:30am - 4pm\nWednesday: 6:30am - 4pm\nThursday: 6:30am - 4pm\nFriday: 6:30am - 4pm\nSaturday: 6:30am - 4pm\nSunday: 6:30am - 4pm",
-    "category": [
-      "点心"
-    ],
+    "category": ["点心"],
     "rating": 0,
     "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQMG8VxhaVf4dqISSzTofH3QSsL2QLP0l478A&s",
     "subStalls": [],
-    "categories": [
-      "点心"
-    ],
+    "categories": ["点心"],
     "price_range": "RM 10-20",
     "menu_link": "",
     "website_link": "",
@@ -403,17 +333,11 @@ export const initialRestaurants = [
     "name": "Nasi Lemak Wak Kentut",
     "address": "2130, Jalan Susur Kulai 2, Taman Kulai Besar, 81000 Kulai, Johor Darul Ta'zim",
     "opening_hours": "Monday: 3pm - 11:45pm\nTuesday: 3pm - 11:45pm\nWednesday: 3pm - 11:45pm\nThursday: 3pm - 11:45pm\nFriday: 3pm - 11:45pm\nSaturday: 3pm - 11:45pm\nSunday: 3pm - 11:45pm",
-    "category": [
-      "饭类",
-      "马来餐"
-    ],
+    "category": ["饭类", "马来餐"],
     "rating": 0,
     "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR43RhVvdpeoqerkzf2iClNfe90wIyb4wkuFg&s",
     "subStalls": [],
-    "categories": [
-      "饭类",
-      "马来餐"
-    ],
+    "categories": ["饭类", "马来餐"],
     "price_range": "RM 10-20",
     "menu_link": "",
     "website_link": "",
@@ -428,17 +352,11 @@ export const initialRestaurants = [
     "name": "Yellow Corner",
     "address": "215, Jalan Pinang 1, Taman Kota Kulai, 81000 Kulai, Johor Darul Ta'zim",
     "opening_hours": "Monday: Closed\nTuesday: 5pm - 12am\nWednesday: 5pm - 12am\nThursday: 5pm - 12am\nFriday: 5pm - 12am\nSaturday: 5pm - 12am\nSunday: 5pm - 12am",
-    "category": [
-      "饭类",
-      "马来餐"
-    ],
+    "category": ["饭类", "马来餐"],
     "rating": 0,
     "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRkM_ldySWHym5FFp6E7z3zenffGP8OgVytSg&s",
     "subStalls": [],
-    "categories": [
-      "饭类",
-      "马来餐"
-    ],
+    "categories": ["饭类", "马来餐"],
     "price_range": "RM 10-20",
     "menu_link": "",
     "website_link": "",
@@ -454,15 +372,11 @@ export const initialRestaurants = [
     "name_en": "Restoran Xin Yuan Bak Kut Teh",
     "address": "28, Jalan Pelanduk, Taman Pertama, 81000 Kulai, Johor Darul Ta'zim",
     "opening_hours": "Monday: 11am - 7:30pm\nTuesday: 11am - 7:30pm\nWednesday: Closed\nThursday: Closed\nFriday: 11am - 7:30pm\nSaturday: 11am - 7:30pm\nSunday: 11am - 7:30pm",
-    "category": [
-      "Cafe"
-    ],
+    "category": ["Cafe"],
     "rating": 0,
     "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTapfIawzRAocP9jWaJKJn3MZJeuxiteNnhLA&s",
     "subStalls": [],
-    "categories": [
-      "Cafe"
-    ],
+    "categories": ["Cafe"],
     "price_range": "RM 10-20",
     "menu_link": "",
     "website_link": "",
@@ -478,15 +392,11 @@ export const initialRestaurants = [
     "name_en": "Restoran Xin Yuan Bak Kut Teh",
     "address": "16, Jalan Seruling 1, Taman Sri Kulai Baru 2, 81000 Kulai, Johor Darul Ta'zim",
     "opening_hours": "Monday: Closed\nTuesday: 8:30am - 5pm\nWednesday: 8:30am - 5pm\nThursday: 8:30am - 5pm\nFriday: 8:30am - 5pm\nSaturday: 8:30am - 5pm\nSunday: 8:30am - 5pm",
-    "category": [
-      "饭类"
-    ],
+    "category": ["饭类"],
     "rating": 0,
     "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcShk8euASeRtNG_MhipsHfR_Xuigt41u3xweQ&s",
     "subStalls": [],
-    "categories": [
-      "饭类"
-    ],
+    "categories": ["饭类"],
     "price_range": "RM 10-20",
     "menu_link": "",
     "website_link": "",
@@ -502,15 +412,11 @@ export const initialRestaurants = [
     "name_en": "Restoran Xiang Mann",
     "address": "1, Jln Bunga Mawar 1, Taman Sri Kulai Baru, 81000 Kulai, Johor Darul Ta'zim",
     "opening_hours": "Monday: 11am - 11:30pm\nTuesday: 11am - 11:30pm\nWednesday: 11am - 11:30pm\nThursday: 11am - 11:30pm\nFriday: 11am - 11:30pm\nSaturday: 11am - 11:30pm\nSunday: 11am - 11:30pm",
-    "category": [
-      "煮炒海鲜楼"
-    ],
+    "category": ["煮炒海鲜楼"],
     "rating": 0,
     "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSWej5secnyutIRdIqOXswrDMiJdueUkNnbdg&s",
     "subStalls": [],
-    "categories": [
-      "煮炒海鲜楼"
-    ],
+    "categories": ["煮炒海鲜楼"],
     "price_range": "RM 10-20",
     "menu_link": "",
     "website_link": "",
@@ -525,15 +431,11 @@ export const initialRestaurants = [
     "name": "何妈传承自制手工云吞面",
     "address": "58, Jalan Bunga Santalia, Taman Sri Kulai Baru, 81000 Kulai, Johor Darul Ta'zim",
     "opening_hours": "Monday: Closed\nTuesday: 8am - 6pm\nWednesday: 8am - 6pm\nThursday: 8am - 6pm\nFriday: 8am - 6pm\nSaturday: 8am - 6pm\nSunday: 8am - 6pm",
-    "category": [
-      "面类"
-    ],
+    "category": ["面类"],
     "rating": 0,
     "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQGzz6aLqJ-Elt4oj1W-fy3P8qFHbOwll5YFQ&s",
     "subStalls": [],
-    "categories": [
-      "面类"
-    ],
+    "categories": ["面类"],
     "price_range": "RM 10-20",
     "menu_link": "",
     "website_link": "",
@@ -549,15 +451,11 @@ export const initialRestaurants = [
     "name_en": "Best Flavor Food Restaurant",
     "address": "53, Jalan Bunga Santalia, Taman Sri Kulai Baru, 81000 Kulai, Johor Darul Ta'zim",
     "opening_hours": "Monday: Closed\nTuesday: 7am - 2pm\nWednesday: 7am - 2pm\nThursday: 7am - 2pm\nFriday: 7am - 2pm\nSaturday: 7am - 2pm\nSunday: 7am - 2pm",
-    "category": [
-      "咖啡店"
-    ],
+    "category": ["咖啡店"],
     "rating": 0,
     "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSvGo3QpvV0Rm8Rys5XxbNm7yEvMWawOIiOlQ&s",
     "subStalls": [],
-    "categories": [
-      "咖啡店"
-    ],
+    "categories": ["咖啡店"],
     "price_range": "RM 10-20",
     "menu_link": "",
     "website_link": "",
@@ -573,15 +471,11 @@ export const initialRestaurants = [
     "name_en": "Best Flavor Food Restaurant",
     "address": "42, Jalan Susur Kulai 4, Taman Sri Kulai Baru, 81000 Kulai, Johor Darul Ta'zim",
     "opening_hours": "Monday: 10:30am - 3pm\nTuesday: 10:30am - 3pm\nWednesday: 10:30am - 3pm\nThursday: 10:30am - 3pm\nFriday: 10:30am - 3pm\nSaturday: 10:30am - 3pm\nSunday: Closed",
-    "category": [
-      "饭类"
-    ],
+    "category": ["饭类"],
     "rating": 0,
     "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRdXdd7UnUzpDQ9EcUgg67RO8pV3rcnFERdIg&s",
     "subStalls": [],
-    "categories": [
-      "饭类"
-    ],
+    "categories": ["饭类"],
     "price_range": "RM 10-20",
     "menu_link": "",
     "website_link": "",
@@ -597,15 +491,11 @@ export const initialRestaurants = [
     "name_en": "Boon Kee Hainan Chicken Rice",
     "address": "Jalan Bunga Santalia, Taman Kulai Utama, 81000 Kulai, Johor Darul Ta'zim",
     "opening_hours": "See Google Maps",
-    "category": [
-      "饭类"
-    ],
+    "category": ["饭类"],
     "rating": 0,
     "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1c/Chicken_rice_in_KL_%25282%2529.jpg/330px-Chicken_rice_in_KL_%25282%2529.jpg",
     "subStalls": [],
-    "categories": [
-      "饭类"
-    ],
+    "categories": ["饭类"],
     "price_range": "RM 10-20",
     "menu_link": "",
     "website_link": "",
@@ -621,15 +511,11 @@ export const initialRestaurants = [
     "name_en": "Kwong Guan Lai Restaurant",
     "address": "23, Jalan Susur Kulai 4, Taman Sri Kulai Baru, 81000 Kulai, Johor Darul Ta'zim",
     "opening_hours": "Monday: 8am - 3pm\nTuesday: 8am - 3pm\nWednesday: 8am - 3pm\nThursday: 8am - 3pm\nFriday: Closed\nSaturday: 8am - 3pm\nSunday: 8am - 3pm",
-    "category": [
-      "饭类"
-    ],
+    "category": ["饭类"],
     "rating": 0,
     "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQsFg70T5ra76FHb-stXBbIITFawLlbC9903A&s",
     "subStalls": [],
-    "categories": [
-      "饭类"
-    ],
+    "categories": ["饭类"],
     "price_range": "RM 10-20",
     "menu_link": "",
     "website_link": "",
@@ -645,17 +531,11 @@ export const initialRestaurants = [
     "name_en": "Restoran Lu Tian",
     "address": "Taman Nam Tak, 81000 Kulai, Johor",
     "opening_hours": "See Google Maps",
-    "category": [
-      "饭类",
-      "面类"
-    ],
+    "category": ["饭类", "面类"],
     "rating": 0,
     "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTnq_Cd8IpCART31nXYrEFvGdoyufe8oMz7gQ&s",
     "subStalls": [],
-    "categories": [
-      "饭类",
-      "面类"
-    ],
+    "categories": ["饭类", "面类"],
     "price_range": "RM 10-20",
     "menu_link": "",
     "website_link": "",
@@ -671,17 +551,11 @@ export const initialRestaurants = [
     "name_en": "Khoh Foong Restaurant",
     "address": "1, Jalan Susur Kulai 4, Taman Sri Kulai Baru 2, 81000 Kulai, Johor Darul Ta'zim",
     "opening_hours": "Monday: 10:45am - 8pm\nTuesday: 10:45am - 8pm\nWednesday: 10:45am - 8pm\nThursday: 10:45am - 8pm\nFriday: 10:45am - 8pm\nSaturday: 10:45am - 8pm\nSunday: 10:45am - 8pm",
-    "category": [
-      "饭类",
-      "面类"
-    ],
+    "category": ["饭类", "面类"],
     "rating": 0,
     "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRJ3FxbB4v--RSsF9pYVP8H4U5SId25kgNPAQ&s",
     "subStalls": [],
-    "categories": [
-      "饭类",
-      "面类"
-    ],
+    "categories": ["饭类", "面类"],
     "price_range": "RM 10-20",
     "menu_link": "",
     "website_link": "",
@@ -697,17 +571,11 @@ export const initialRestaurants = [
     "name_en": "Meei Shih Seafood Restaurant",
     "address": "69, Jalan Anggerik 3, Taman Kulai Utama, 81000 Kulai, Johor Darul Ta'zim",
     "opening_hours": "Monday: 4:30pm - 11:30pm\nTuesday: Closed\nWednesday: 4:30pm - 11:30pm\nThursday: 4:30pm - 11:30pm\nFriday: 4:30pm - 11:30pm\nSaturday: 4:30pm - 11:30pm\nSunday: 4:30pm - 11:30pm",
-    "category": [
-      "饭类",
-      "面类"
-    ],
+    "category": ["饭类", "面类"],
     "rating": 0,
     "image": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/16/2c/db/9d/photo5jpg.jpg?w=900&h=500&s=1",
     "subStalls": [],
-    "categories": [
-      "饭类",
-      "面类"
-    ],
+    "categories": ["饭类", "面类"],
     "price_range": "RM 10-20",
     "menu_link": "",
     "website_link": "",
@@ -723,15 +591,11 @@ export const initialRestaurants = [
     "name_en": "Restoran Ji Guan",
     "address": "JALAN MAS 4, TAMAN DESAMAS, TAMAN DESAMAS, 81000 Kulai, Johor Darul Ta'zim",
     "opening_hours": "Monday: 11am - 10pm\nTuesday: Closed\nWednesday: 11am - 10pm\nThursday: 11am - 10pm\nFriday: 11am - 10pm\nSaturday: 11am - 10pm\nSunday: 11am - 10pm",
-    "category": [
-      "宴会酒楼"
-    ],
+    "category": ["宴会酒楼"],
     "rating": 0,
     "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRcFzIP2mGBHaI9SvuC2EgniYRIcm--Y2c-_w&s",
     "subStalls": [],
-    "categories": [
-      "宴会酒楼"
-    ],
+    "categories": ["宴会酒楼"],
     "price_range": "RM 10-20",
     "menu_link": "",
     "website_link": "",
@@ -747,15 +611,11 @@ export const initialRestaurants = [
     "name_en": "Cathay Restaurant",
     "address": "PTD 65010，Jalan, Persiaran Sri Putri Utama, 81000 Kulai, Johor",
     "opening_hours": "Monday: 11am - 2:30pm, 5:30pm - 10:30pm\nTuesday: 11am - 2:30pm, 5:30pm - 10:30pm\nWednesday: 11am - 2:30pm, 5:30pm - 10:30pm\nThursday: 11am - 2:30pm, 5:30pm - 10:30pm\nFriday: 11am - 2:30pm, 5:30pm - 10:30pm\nSaturday: 11am - 2:30pm, 5:30pm - 10:30pm\nSunday: 11am - 2:30pm, 5:30pm - 10:30pm",
-    "category": [
-      "宴会酒楼"
-    ],
+    "category": ["宴会酒楼"],
     "rating": 0,
     "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjTA8Jtmwbd1bMNnXkwCI-W408_AwN6GdIww2uZ32-0OrQhamZq3YV1gyTCudQRujpANI9GkpGBJtw2zrDg26bJqzSddN3uJSNAOamImE3FycD5Hrn_J0fJovYsVDZwOHPMWIY_KDfy8NOl_4peDBtWhRnHh8nrn5Tur8kq50y5Nfj2E9heIH0/s1920/01%2520IMG_9376%2520Cathay%2520Restaurant%2520%25E6%2596%25B0%25E5%259B%25BD%25E6%25B3%25B0%25E5%2586%25B7%25E6%25B0%2594%25E9%2585%2592%25E5%25AE%25B6(%25E5%258F%25A4%25E6%259D%25A5)%2520@%2520Kulai%2520in%2520Johor%2520%255BMalaysia%255D.JPG",
     "subStalls": [],
-    "categories": [
-      "宴会酒楼"
-    ],
+    "categories": ["宴会酒楼"],
     "price_range": "RM 10-20",
     "menu_link": "",
     "website_link": "",
@@ -771,15 +631,11 @@ export const initialRestaurants = [
     "name_en": "Yoon Lai",
     "address": "Sebelah Ptronas, Taman Kulai Permai, 81000 Kulai, Johor Darul Ta'zim",
     "opening_hours": "Monday: 5pm - 11:30pm\nTuesday: 5pm - 11:30pm\nWednesday: 5pm - 11:30pm\nThursday: 5pm - 11:30pm\nFriday: 5pm - 11:30pm\nSaturday: 5pm - 11:30pm\nSunday: 5pm - 11:30pm",
-    "category": [
-      "马来餐"
-    ],
+    "category": ["马来餐"],
     "rating": 0,
     "image": "https://www.dercabin.com.my/wp-content/uploads/2024/12/kulai-scaled.jpg",
     "subStalls": [],
-    "categories": [
-      "马来餐"
-    ],
+    "categories": ["马来餐"],
     "price_range": "RM 10-20",
     "menu_link": "",
     "website_link": "",
@@ -795,15 +651,11 @@ export const initialRestaurants = [
     "name_en": "Yoon Lai",
     "address": "646, Jalan Gangsa 6, Taman Timur, 81000 Kulai, Johor Darul Ta'zim",
     "opening_hours": "Monday: 6am - 4pm\nTuesday: 6am - 4pm\nWednesday: Closed\nThursday: 6am - 4pm\nFriday: 6am - 4pm\nSaturday: 6am - 4pm\nSunday: 6am - 4pm",
-    "category": [
-      "咖啡店"
-    ],
+    "category": ["咖啡店"],
     "rating": 0,
     "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQtPq11lrFOZJsMIVlolr6NQs-ERApp-kIrqA&s",
     "subStalls": [],
-    "categories": [
-      "咖啡店"
-    ],
+    "categories": ["咖啡店"],
     "price_range": "RM 10-20",
     "menu_link": "",
     "website_link": "",
@@ -832,9 +684,7 @@ export const initialRestaurants = [
     "name_en": "KFC",
     "address": "Multiple Locations in Kulai",
     "opening_hours": "10am - 10pm",
-    "category": [
-      "快餐"
-    ],
+    "category": ["快餐"],
     "rating": 0,
     "image": "https://upload.wikimedia.org/wikipedia/en/thumb/b/bf/KFC_logo.svg/1200px-KFC_logo.svg.png",
     "subStalls": [
@@ -851,9 +701,7 @@ export const initialRestaurants = [
         "address": "AEON Mall Kulaijaya"
       }
     ],
-    "categories": [
-      "快餐"
-    ],
+    "categories": ["快餐"],
     "price_range": "RM 15-30",
     "menu_link": "https://kfc.com.my/",
     "website_link": "https://kfc.com.my/",
@@ -882,9 +730,7 @@ export const initialRestaurants = [
     "name_en": "McDonald's",
     "address": "Multiple Locations in Kulai",
     "opening_hours": "24 Hours (Selected Branches)",
-    "category": [
-      "快餐"
-    ],
+    "category": ["快餐"],
     "rating": 0,
     "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/36/McDonald%27s_Golden_Arches.svg/1200px-McDonald%27s_Golden_Arches.svg.png",
     "branches": [
@@ -901,9 +747,7 @@ export const initialRestaurants = [
         "address": "AEON Mall Kulaijaya"
       }
     ],
-    "categories": [
-      "快餐"
-    ],
+    "categories": ["快餐"],
     "price_range": "RM 15-30",
     "menu_link": "https://www.mcdonalds.com.my/",
     "website_link": "https://www.mcdonalds.com.my/",
@@ -918,12 +762,8 @@ export const initialRestaurants = [
     "name": "Nasi Lemak Wak Kentut KTM Kulai",
     "address": "1337, Jalan Lengkongan, Taman Kulai, 81000 Kulai, Johor Darul Ta'zim",
     "opening_hours": "7am – 12:30am",
-    "category": [
-      "马来餐"
-    ],
-    "categories": [
-      "马来餐"
-    ],
+    "category": ["马来餐"],
+    "categories": ["马来餐"],
     "rating": 0,
     "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRLCprBNFU4YVsV8cTGP0o2wbxC1HqVyZyQvA&s",
     "subStalls": [],
@@ -941,12 +781,8 @@ export const initialRestaurants = [
     "name": "Manggo Tree",
     "address": "6, Lorong Ismail, Taman Kulai, 81000 Kulai, Johor Darul Ta'zim",
     "opening_hours": "8:30am – 3pm (Sat Closed)",
-    "category": [
-      "Cafe"
-    ],
-    "categories": [
-      "Cafe"
-    ],
+    "category": ["Cafe"],
+    "categories": ["Cafe"],
     "rating": 0,
     "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTyIcFvUkfv9seTGJuApgVKfuqyM2krTr3mMw&s",
     "subStalls": [],
@@ -965,12 +801,8 @@ export const initialRestaurants = [
     "name_en": "Origin Cafe",
     "address": "41, Lorong Ismail, Taman Kulai, 81000 Kulai, Johor Darul Ta'zim",
     "opening_hours": "11am – 8pm (Mon Closed)",
-    "category": [
-      "Cafe"
-    ],
-    "categories": [
-      "Cafe"
-    ],
+    "category": ["Cafe"],
+    "categories": ["Cafe"],
     "rating": 0,
     "image": "https://cafeculture.my/wp-content/uploads/2021/02/131984701_174523574416191_6495712958041694095_o.jpg",
     "subStalls": [],
@@ -989,12 +821,8 @@ export const initialRestaurants = [
     "name_en": "Three And A Half",
     "address": "38, Lorong Ismail, Taman Kulai, 81000 Kulai, Johor Darul Ta'zim",
     "opening_hours": "8am – 4pm",
-    "category": [
-      "Cafe"
-    ],
-    "categories": [
-      "Cafe"
-    ],
+    "category": ["Cafe"],
+    "categories": ["Cafe"],
     "rating": 0,
     "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRLu4jOW6chZJk3cgFrpM83oRMbOExq_Ed-Wg&s",
     "subStalls": [],
@@ -1013,12 +841,8 @@ export const initialRestaurants = [
     "name_en": "Cafe Jufei",
     "address": "3D, Jalan Ismail, Taman Kulai, 81000 Kulai, Johor Darul Ta'zim",
     "opening_hours": "10am – 6pm (Mon Closed)",
-    "category": [
-      "Cafe"
-    ],
-    "categories": [
-      "Cafe"
-    ],
+    "category": ["Cafe"],
+    "categories": ["Cafe"],
     "rating": 0,
     "image": "https://cdn.prod.website-files.com/64c4be5d67694090d91bc447/64d1158e4c3995ce0b7caa6b_batch_DSC03113.jpeg",
     "subStalls": [],
@@ -1036,12 +860,8 @@ export const initialRestaurants = [
     "name": "远远来古早味云吞面",
     "address": "3D, Jalan Ismail, Taman Kulai, 81000 Kulai, Johor Darul Ta'zim",
     "opening_hours": "6am – 3pm (Tues Closed)",
-    "category": [
-      "面类"
-    ],
-    "categories": [
-      "面类"
-    ],
+    "category": ["面类"],
+    "categories": ["面类"],
     "rating": 0,
     "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTIJVhQtLRQVt_3UFnaTEGhtGCdvLWU-Ku2Eg&s",
     "subStalls": [],
@@ -1059,12 +879,8 @@ export const initialRestaurants = [
     "name": "古来豆富佬招牌咖哩叻沙",
     "address": "S-94, Jalan Sultanah, Kampung Melayu Kulai, 81000 Kulai, Johor Darul Ta'zim",
     "opening_hours": "8am – 3pm (Thursday Closed)",
-    "category": [
-      "面类"
-    ],
-    "categories": [
-      "面类"
-    ],
+    "category": ["面类"],
+    "categories": ["面类"],
     "rating": 0,
     "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQNuLV9kjFLOsQd2BLAkOoWYms9r5x6DDjorQ&s",
     "subStalls": [],
@@ -1082,12 +898,8 @@ export const initialRestaurants = [
     "name": "Kelab Kopi Lama (Kulai)",
     "address": "Jalan Susur Kulai 3, Taman Kulai Besar, 81000 Kulai, Johor Darul Ta'zim",
     "opening_hours": "7:30am – 7pm",
-    "category": [
-      "Cafe"
-    ],
-    "categories": [
-      "Cafe"
-    ],
+    "category": ["Cafe"],
+    "categories": ["Cafe"],
     "rating": 0,
     "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTj1P2qib6vxwjKZIsPqJTjzCYMwA3-rGQdgg&s",
     "subStalls": [],
@@ -1105,14 +917,8 @@ export const initialRestaurants = [
     "name": "Street Crew",
     "address": "5831 & 5832, Jalan Siantan 3, Bandar Indahpura, 81000 Kulai, Johor Darul Ta'zim",
     "opening_hours": "3pm – 11pm (Wed Closed)",
-    "category": [
-      "西餐",
-      "马来餐"
-    ],
-    "categories": [
-      "西餐",
-      "马来餐"
-    ],
+    "category": ["西餐", "马来餐"],
+    "categories": ["西餐", "马来餐"],
     "rating": 0,
     "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcShg4OgChUqDPZeMZ4toRstkWbkHDGoeLdN9g&s",
     "subStalls": [],
@@ -1131,12 +937,8 @@ export const initialRestaurants = [
     "name_en": "Restoran Hock Chin",
     "address": "131-155, Jln. Jambu Mawar, Taman Kulai Besar, 81000 Kulai, Johor Darul Ta'zim",
     "opening_hours": "4pm – 1am (Tues Closed)",
-    "category": [
-      "煮炒海鲜楼"
-    ],
-    "categories": [
-      "煮炒海鲜楼"
-    ],
+    "category": ["煮炒海鲜楼"],
+    "categories": ["煮炒海鲜楼"],
     "rating": 0,
     "image": "https://reviewbah.com/_next/image?url=https%253A%252F%252Fcdn.reviewbah.com%252Fwp-content%252Fuploads%252F2023%252F04%252Frestoran-hock-chin-AF1QipORzr6MLCaVv2RXjPQXPwrIZllA-8CGyKfWkPVlw12000-1024x576.jpg&w=640&q=75",
     "subStalls": [],
@@ -1155,12 +957,8 @@ export const initialRestaurants = [
     "name_en": "Starblu cafe",
     "address": "521, Jalan Susur Kulai 1, Kulai Besar, 81000 Kulai, Johor Darul Ta'zim",
     "opening_hours": "8am – 3pm (Tuesday Closed)",
-    "category": [
-      "Cafe"
-    ],
-    "categories": [
-      "Cafe"
-    ],
+    "category": ["Cafe"],
+    "categories": ["Cafe"],
     "rating": 0,
     "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSQtASK3mWZ950u221azH_Pl6O5TvSyBBCrPw&s",
     "subStalls": [],
@@ -1178,12 +976,8 @@ export const initialRestaurants = [
     "name": "21苦瓜汤（Indahpura)",
     "address": "75, Jln. Kenanga 29/11, Bandar Indahpura, 81000 Kulai, Johor Darul Ta'zim",
     "opening_hours": "11am – 3pm, 5pm – 9pm (Monday Closed)",
-    "category": [
-      "饭类"
-    ],
-    "categories": [
-      "饭类"
-    ],
+    "category": ["饭类"],
+    "categories": ["饭类"],
     "rating": 0,
     "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRQzwHijqPzHZAESYlXvLBngw8Sgk1d-iBVrw&s",
     "subStalls": [],
@@ -1201,12 +995,8 @@ export const initialRestaurants = [
     "name": "MyKori Dessert Cafe Kulai",
     "address": "93, Jln. Kenanga 29/11, Bandar Indahpura, 81000 Kulai, Johor Darul Ta'zim",
     "opening_hours": "12pm – 10pm",
-    "category": [
-      "甜品"
-    ],
-    "categories": [
-      "甜品"
-    ],
+    "category": ["蛋糕甜点"],
+    "categories": ["蛋糕甜点"],
     "rating": 0,
     "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTnwCyYtGfJXEDStPcgyisdTCbfJZRjJhK-UQ&s",
     "subStalls": [],
@@ -1225,12 +1015,8 @@ export const initialRestaurants = [
     "name_en": "Restoran Ah Pang",
     "address": "85, 77, Jln. Kenanga 29/11, Indahpura, 81000 Kulai, Johor",
     "opening_hours": "See Google Maps",
-    "category": [
-      "面类"
-    ],
-    "categories": [
-      "面类"
-    ],
+    "category": ["面类"],
+    "categories": ["面类"],
     "rating": 0,
     "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRARTIRvTyRsVL01jnIAoHVo0G3ufbDC_bIpw&s",
     "subStalls": [],
@@ -1248,14 +1034,8 @@ export const initialRestaurants = [
     "name": "Kopi Saigon Kulai",
     "address": "73, Jln. Kenanga 29/11, Bandar Indahpura, 81000 Kulai, Johor Darul Ta'zim",
     "opening_hours": "10am – 10pm (Wed Closed)",
-    "category": [
-      "Cafe",
-      "马来餐"
-    ],
-    "categories": [
-      "Cafe",
-      "马来餐"
-    ],
+    "category": ["Cafe", "马来餐"],
+    "categories": ["Cafe", "马来餐"],
     "rating": 0,
     "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQhVohFR75Wi7yR34qu1rZsBeCU56V3nXH3IQ&s",
     "subStalls": [],
@@ -1274,12 +1054,8 @@ export const initialRestaurants = [
     "name_en": "Yue Xiang Ting",
     "address": "70, Jln. Kenanga 29/11, Bandar Indahpura, 81000 Kulai, Johor Darul Ta'zim",
     "opening_hours": "11am – 2:30pm, 5pm – 10:30pm",
-    "category": [
-      "宴会酒楼"
-    ],
-    "categories": [
-      "宴会酒楼"
-    ],
+    "category": ["宴会酒楼"],
+    "categories": ["宴会酒楼"],
     "rating": 0,
     "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS8fvkRcj-Md46F3rUeyEWqtiBBPz-KfS24qw&s",
     "subStalls": [],
@@ -1297,12 +1073,8 @@ export const initialRestaurants = [
     "name": "MyKluang Coffee @ Kulai",
     "address": "67, Jln. Kenanga 29/11, Bandar Indahpura, 81000 Kulai, Johor Darul Ta'zim",
     "opening_hours": "8am – 6:30pm",
-    "category": [
-      "Cafe"
-    ],
-    "categories": [
-      "Cafe"
-    ],
+    "category": ["Cafe"],
+    "categories": ["Cafe"],
     "rating": 0,
     "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR3HcsTwKHEpmNyyt6khZ1tuk-8QJX7vtgOwA&s",
     "subStalls": [],
@@ -1320,12 +1092,8 @@ export const initialRestaurants = [
     "name": "UFB - Union Fashion Bar Balcony",
     "address": "66, Jalan Kenanga 29/5, Bandar Indahpura, 81300 Kulai, Johor Darul Ta'zim",
     "opening_hours": "12pm – 12am",
-    "category": [
-      "Cafe"
-    ],
-    "categories": [
-      "Cafe"
-    ],
+    "category": ["Cafe"],
+    "categories": ["Cafe"],
     "rating": 0,
     "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSWi97aeUjiDq1By_SBjOyetGNI2vbBtqQUIQ&s",
     "subStalls": [],
@@ -1343,12 +1111,8 @@ export const initialRestaurants = [
     "name": "Broovies Cafe",
     "address": "55, Jalan Kenanga 29/5, Bandar Indahpura, 81000 Kulai, Johor Darul Ta'zim",
     "opening_hours": "11am – 10pm",
-    "category": [
-      "Cafe"
-    ],
-    "categories": [
-      "Cafe"
-    ],
+    "category": ["Cafe"],
+    "categories": ["Cafe"],
     "rating": 0,
     "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQfwoRaAah5wmYM1MuWVon7bMKQZoMXOAbFdA&s",
     "subStalls": [],
@@ -1367,12 +1131,8 @@ export const initialRestaurants = [
     "name_en": "Wei Palace Chinese Restaurant",
     "address": "No54, Jalan Kenanga 29/5, Bandar Indahpura, 81000 Kulai, Johor Darul Ta'zim",
     "opening_hours": "11:30am – 3pm, 5:30pm – 9pm",
-    "category": [
-      "宴会酒楼"
-    ],
-    "categories": [
-      "宴会酒楼"
-    ],
+    "category": ["宴会酒楼"],
+    "categories": ["宴会酒楼"],
     "rating": 0,
     "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRC6FiUIwC5Zfq_PVwJ-IgsB_6H2STvR-75iQ&s",
     "subStalls": [],
@@ -1391,12 +1151,8 @@ export const initialRestaurants = [
     "name_en": "Wafu Indahpura",
     "address": "192, Jalan Kenanga 29/4, Bandar Indahpura, 81000 Kulai, Johor Darul Ta'zim",
     "opening_hours": "12pm – 10pm",
-    "category": [
-      "Cafe"
-    ],
-    "categories": [
-      "Cafe"
-    ],
+    "category": ["Cafe"],
+    "categories": ["Cafe"],
     "rating": 0,
     "image": "https://images.deliveryhero.io/image/fd-my/LH/i1uc-hero.jpg?width=480&height=360&quality=45",
     "subStalls": [],
@@ -1414,12 +1170,8 @@ export const initialRestaurants = [
     "name": "Jang Won Korean BBQ Restaurant",
     "address": "185, Jalan Kenanga 29/4, Bandar Indahpura, 81000 Kulai, Johor Darul Ta'zim",
     "opening_hours": "11am – 10pm",
-    "category": [
-      "韩国餐"
-    ],
-    "categories": [
-      "韩国餐"
-    ],
+    "category": ["韩国餐"],
+    "categories": ["韩国餐"],
     "rating": 0,
     "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgiHdG6U7YaR97Q_n9oL80t6buPnwLKe_6rYkIOftMtQlubjRf0WBcQRd7hXWtUl5acon0DnF-Wo9AhJy-fJ1mYNAOG_5EdCDL9JwxKfGT0ak7c9mLAfzYicws_81-nHoNlTCCpLy5HuACz/s1600/P2260199.JPG",
     "subStalls": [],
@@ -1437,12 +1189,8 @@ export const initialRestaurants = [
     "name": "Chiyo Sushi",
     "address": "184A, Indahpura, 81000 Kulai, Johor",
     "opening_hours": "11:30am – 10pm",
-    "category": [
-      "日本餐"
-    ],
-    "categories": [
-      "日本餐"
-    ],
+    "category": ["日本餐"],
+    "categories": ["日本餐"],
     "rating": 0,
     "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRtiOeXD82aqy0a393ZSXkJ4CQTs0raL5wi1g&s",
     "subStalls": [],
@@ -1460,12 +1208,8 @@ export const initialRestaurants = [
     "name": "3rd Junction Cafe Indahpura Kulai",
     "address": "181, Jalan Kenanga 29/4, Bandar Indahpura, 81000 Kulai, Johor Darul Ta'zim",
     "opening_hours": "12pm – 12am",
-    "category": [
-      "Cafe"
-    ],
-    "categories": [
-      "Cafe"
-    ],
+    "category": ["Cafe"],
+    "categories": ["Cafe"],
     "rating": 0,
     "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQJjrAd2HpSgD93Bza-9m1gmnu0lBW5iJYLKw&s",
     "subStalls": [],
@@ -1484,8 +1228,8 @@ export const initialRestaurants = [
     "name_en": "LANXI",
     "address": "234, Jln Kenanga 29/8, Taman Indahpura, 81000 Kulai, Johor",
     "opening_hours": "11am-11.30pm",
-    "category": ["西餐", "奶茶"],
-    "categories": ["西餐", "奶茶"],
+    "category": ["西餐"],
+    "categories": ["西餐"],
     "rating": 0,
     "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSLn6wKiifnmUY6mlBBJxnj_CqIdr_tg6FNCA&s",
     "subStalls": [],
@@ -1504,8 +1248,8 @@ export const initialRestaurants = [
     "name_en": "Chuanlai Chuanqu Mala Hotpot Kulai",
     "address": "243A, Jln Kenanga 29/8, Taman Indahpura, 81000 Kulai, Johor",
     "opening_hours": "1pm-11.30pm",
-    "category": ["火锅"],
-    "categories": ["火锅"],
+    "category": ["火锅烧烤"],
+    "categories": ["火锅烧烤"],
     "rating": 0,
     "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSmRXX3E2TQkKxSozm5gaGPzGBvIUjPIi5Pww&s",
     "subStalls": [],
@@ -1524,8 +1268,8 @@ export const initialRestaurants = [
     "name_en": "",
     "address": "247, Jln Kenanga 29/8, Indahpura, 81000 Kulai, Johor",
     "opening_hours": "2pm-10.30pm",
-    "category": ["甜点", "饮品"],
-    "categories": ["甜点", "饮品"],
+    "category": ["蛋糕甜点", "饮品"],
+    "categories": ["蛋糕甜点", "饮品"],
     "rating": 0,
     "image": "https://images.deliveryhero.io/image/fd-my/LH/nrh9-listing.jpg",
     "subStalls": [],
@@ -1624,8 +1368,8 @@ export const initialRestaurants = [
     "name_en": "",
     "address": "583, Jalan Kenanga 29/19, Taman Indahpura, 81000 Kulai, Johor Darul Ta'zim",
     "opening_hours": "12pm-10pm",
-    "category": ["火锅"],
-    "categories": ["火锅"],
+    "category": ["火锅烧烤"],
+    "categories": ["火锅烧烤"],
     "rating": 0,
     "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQDM9OTOxBLd097rDvNZza3NP0GuGxtB3oxXg&s",
     "subStalls": [],
@@ -1664,8 +1408,8 @@ export const initialRestaurants = [
     "name_en": "",
     "address": "590, Jalan Kenanga 29/19, Bandar Indahpura, 81000 Kulai, Johor Darul Ta'zim",
     "opening_hours": "11 am–12 am",
-    "category": ["火锅"],
-    "categories": ["火锅"],
+    "category": ["火锅烧烤"],
+    "categories": ["火锅烧烤"],
     "rating": 0,
     "image": "https://pbs.twimg.com/media/GUOFxfEb0AALGjq.jpg",
     "subStalls": [],
@@ -1924,8 +1668,8 @@ export const initialRestaurants = [
     "name_en": "",
     "address": "No 148, Pusat Komersial Indah, Jalan Kiambang 13, Indahpura, 81000 Kulai, Johor",
     "opening_hours": "11:30 am–9:30 pm",
-    "category": ["甜品"],
-    "categories": ["甜品"],
+    "category": ["蛋糕甜点"],
+    "categories": ["蛋糕甜点"],
     "rating": 0,
     "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSShfaMIe4jMb4n6b3MI1EFLV6h6T3UTRoN4w&s",
     "subStalls": [],
@@ -1984,8 +1728,8 @@ export const initialRestaurants = [
     "name_en": "",
     "address": "Pusat Kormersial Indah 142, 13, Jalan Kiambang, Bandar Indahpura, 81000 Kulai, Johor Darul Ta'zim",
     "opening_hours": "11.30am-8pm Thursday Closed",
-    "category": ["健康餐"],
-    "categories": ["健康餐"],
+    "category": [],
+    "categories": [],
     "rating": 0,
     "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTlIkQX8NMmeXwbe_FjZuUnusspy5fIbzSckg&s",
     "subStalls": [],
@@ -2164,8 +1908,8 @@ export const initialRestaurants = [
     "name_en": "Siao Hong Deng Hotpot",
     "address": "No 128, PUSAT KOMERSIAL INDAH, Jln Kiambang 14, Indahpura, 81000 Kulai, Johor",
     "opening_hours": "11 am–2:30 pm, 5–11 pm",
-    "category": ["火锅"],
-    "categories": ["火锅"],
+    "category": ["火锅烧烤"],
+    "categories": ["火锅烧烤"],
     "rating": 0,
     "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQibbrNp2EUIntp_MzhBTNbv3VtoLoaeyV9ZA&s",
     "subStalls": [],
@@ -2184,8 +1928,8 @@ export const initialRestaurants = [
     "name_en": "Dessert Library",
     "address": "120, Jln Kiambang 14, Bandar Indahpura, 81000 Kulai, Johor Darul Ta'zim",
     "opening_hours": "8.30am-9pm",
-    "category": ["甜品"],
-    "categories": ["甜品"],
+    "category": ["蛋糕甜点"],
+    "categories": ["蛋糕甜点"],
     "rating": 0,
     "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSHHPamuByKxQDmfbcFkkWlE-J98UL62VjkMQ&s",
     "subStalls": [],
@@ -2204,8 +1948,8 @@ export const initialRestaurants = [
     "name_en": "Zen Bee Siang",
     "address": "115, Jln Kiambang 14, Bandar Indahpura, 81000 Kulai, Johor Darul Ta'zim",
     "opening_hours": "11am-11pm",
-    "category": ["火锅"],
-    "categories": ["火锅"],
+    "category": ["火锅烧烤"],
+    "categories": ["火锅烧烤"],
     "rating": 0,
     "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSRkutDIDBFAI8R0gWf_ieaBIMGl9vJgP6b9w&s",
     "subStalls": [],
@@ -2344,8 +2088,8 @@ export const initialRestaurants = [
     "name_en": "K LOLLY STEAMBOAT & BBQ",
     "address": "No.184 & 185, Pusat Komersial Indah, 12, Jalan Kiambang, Bandar Indahpura, 81000 Kulai, Johor Darul Ta'zim",
     "opening_hours": "5–10 pm Monday closed",
-    "category": ["火锅"],
-    "categories": ["火锅"],
+    "category": ["火锅烧烤"],
+    "categories": ["火锅烧烤"],
     "rating": 0,
     "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTJmGK1ETgFSAoj79i1GAsq2zLPN37HiFZj1g&s",
     "subStalls": [],
@@ -2404,8 +2148,8 @@ export const initialRestaurants = [
     "name_en": "LoongKee",
     "address": "Pusat Komersial Indah, 178, Jalan Kiambang 12, Indahpura, 81000 Kulai, Johor",
     "opening_hours": "2–10 pm",
-    "category": ["火锅"],
-    "categories": ["火锅"],
+    "category": ["火锅烧烤"],
+    "categories": ["火锅烧烤"],
     "rating": 0,
     "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSlJSWglDIiBlc9Qn63ZCqVJzjexNzy8WMnJQ&s",
     "subStalls": [],
@@ -2424,8 +2168,8 @@ export const initialRestaurants = [
     "name_en": "Tan Tan Charcoal Steamboat Kulai",
     "address": "238, Pusat Komersial Indah, Jalan Kiambang 15, Bandar Indahpura, 81000 Kulai, Johor Darul Ta'zim",
     "opening_hours": "4 pm–2 am",
-    "category": ["火锅"],
-    "categories": ["火锅"],
+    "category": ["火锅烧烤"],
+    "categories": ["火锅烧烤"],
     "rating": 0,
     "image": "",
     "subStalls": [],
@@ -2464,8 +2208,8 @@ export const initialRestaurants = [
     "name_en": "",
     "address": "207, Jln Kiambang 14, Bandar Indahpura, 81000 Kulai, Johor Darul Ta'zim",
     "opening_hours": "5.30Pm-1am",
-    "category": ["烧烤"],
-    "categories": ["烧烤"],
+    "category": ["火锅烧烤"],
+    "categories": ["火锅烧烤"],
     "rating": 0,
     "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQxxa10BGYK9Jf_Qw9XeAPCcSFYM8VvTPzXWg&s",
     "subStalls": [],
@@ -2504,8 +2248,8 @@ export const initialRestaurants = [
     "name_en": "Yu Min One",
     "address": "198, Jln Kiambang 14, taman Indahpura81000 Kulai, Johor Darul Ta'zim",
     "opening_hours": "4pm-12am",
-    "category": ["饭类", "海鲜"],
-    "categories": ["饭类", "海鲜"],
+    "category": ["饭类", "煮炒海鲜楼"],
+    "categories": ["饭类", "煮炒海鲜楼"],
     "rating": 0,
     "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQS2fbXYMoFdm7Ufji1zZ3QcQ2QvVHCoBAgdg&s",
     "subStalls": [],
@@ -2604,8 +2348,8 @@ export const initialRestaurants = [
     "name_en": "JustWant Dessert",
     "address": "Pusat Komersial Indah, 289, Jln Kiambang 11, Bandar Indahpura, 81000 Kulai, Johor Darul Ta'zim",
     "opening_hours": "12–10 pm Wed Closed",
-    "category": ["甜点"],
-    "categories": ["甜点"],
+    "category": ["蛋糕甜点"],
+    "categories": ["蛋糕甜点"],
     "rating": 0,
     "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSMU-HcRBPCGX_uI2FkynYvM-ytkllDz6upPA&s",
     "subStalls": [],
@@ -2684,8 +2428,8 @@ export const initialRestaurants = [
     "name_en": "Restoran Cuan Yue",
     "address": "281, Jln Kiambang 11, 81000 Kulai, Johor Darul Ta'zim",
     "opening_hours": "11am-10.30pm",
-    "category": ["火锅"],
-    "categories": ["火锅"],
+    "category": ["火锅烧烤"],
+    "categories": ["火锅烧烤"],
     "rating": 0,
     "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQSQyKddGvLgiRtpDaOQjmYvoe__WVShh1ofA&s",
     "subStalls": [],
@@ -2804,8 +2548,8 @@ export const initialRestaurants = [
     "name_en": "Auntea Jenny",
     "address": "269, Jln Kiambang 11, Bandar Indahpura, 81000 Kulai, Johor Darul Ta'zim",
     "opening_hours": "11 am–10 pm",
-    "category": ["饮品店"],
-    "categories": ["饮品店"],
+    "category": ["饮品"],
+    "categories": ["饮品"],
     "rating": 0,
     "image": "",
     "subStalls": [],
@@ -2844,8 +2588,8 @@ export const initialRestaurants = [
     "name_en": "Beans.Factory",
     "address": "Pusat Komersial Indah, 294M, Jalan Kiambang 12, Bandar Indahpura, 81000 Kulai, Johor Darul Ta'zim",
     "opening_hours": "12:30 pm–12 am",
-    "category": ["甜点"],
-    "categories": ["甜点"],
+    "category": ["蛋糕甜点"],
+    "categories": ["蛋糕甜点"],
     "rating": 0,
     "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS07LaaJMLtZX6vx5NUR3VGOk6DChjUavJ16g&s",
     "subStalls": [],
@@ -2904,8 +2648,8 @@ export const initialRestaurants = [
     "name_en": "",
     "address": "Ground floor G-05, The Commune Lifestyle Mall",
     "opening_hours": "11 am–10 pm",
-    "category": ["火锅"],
-    "categories": ["火锅"],
+    "category": ["火锅烧烤"],
+    "categories": ["火锅烧烤"],
     "rating": 0,
     "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSpgKi8T3FMcEUVIL07EOyn9LSJatMTtvHcBA&s",
     "subStalls": [],
@@ -2964,8 +2708,8 @@ export const initialRestaurants = [
     "name_en": "",
     "address": "253a, Jalan Kiambang 10, Bandar Indahpura, 81000 Kulai, Johor Darul Ta'zim",
     "opening_hours": "11 am–7 pm",
-    "category": ["甜点"],
-    "categories": ["甜点"],
+    "category": ["蛋糕甜点"],
+    "categories": ["蛋糕甜点"],
     "rating": 0,
     "image": "",
     "subStalls": [],
@@ -2984,8 +2728,8 @@ export const initialRestaurants = [
     "name_en": "",
     "address": "Pusat Komersial Indah, 252 & 253, Jalan Kiambang 10, Bandar Indahpura, 81000 Kulai, Johor Darul Ta'zim",
     "opening_hours": "9 am–5 pm",
-    "category": ["甜点"],
-    "categories": ["甜点"],
+    "category": ["蛋糕甜点"],
+    "categories": ["蛋糕甜点"],
     "rating": 0,
     "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSWurs479p73vdTZbEdco_Xgo1HC133Zso4QA&s",
     "subStalls": [],
