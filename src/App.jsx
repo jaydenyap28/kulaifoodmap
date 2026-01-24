@@ -19,6 +19,9 @@ import { AVAILABLE_AREAS, DEFAULT_CATEGORIES } from './data/constants';
 
 const DEFAULT_HERO_BG = "https://i.ibb.co/7J5qjZtv/image.png";
 
+// Version Control for Data (Increment this when adding new hardcoded data to force refresh)
+const DATA_VERSION = '2025-01-24-v21';
+
 function App() {
   const { t, i18n } = useTranslation();
   const [lastSaved, setLastSaved] = useState(null);
@@ -26,6 +29,11 @@ function App() {
   // Area Overrides State (for manual fixes)
   const [areaOverrides, setAreaOverrides] = useState(() => {
     try {
+        // Check version first - if mismatch, clear overrides to avoid stale data
+        const storedVersion = localStorage.getItem('kulaifood-data-version');
+        if (storedVersion !== DATA_VERSION) {
+            return {}; 
+        }
         const stored = localStorage.getItem('kulaifood-area-overrides');
         return stored ? JSON.parse(stored) : {};
     } catch(e) { return {}; }
@@ -120,7 +128,7 @@ function App() {
   };
 
   // Version Control for Data (Increment this when adding new hardcoded data to force refresh)
-  const DATA_VERSION = '2025-01-24-v20';  
+  // Moved to top of file as const DATA_VERSION  
 
   // Load data: Prioritize Codebase (initialRestaurants) but keep user-added ones from LocalStorage
   const [restaurants, setRestaurants] = useState(() => {
@@ -136,6 +144,7 @@ function App() {
         // Force clear critical storage items to ensure fresh start
         localStorage.removeItem('kulaifood-restaurants');
         localStorage.removeItem('kulaifood-categories'); // Clear categories too!
+        localStorage.removeItem('kulaifood-area-overrides'); // Clear area overrides!
     }
 
     // 1. Load stored data to preserve ORDER and User-Added Items
