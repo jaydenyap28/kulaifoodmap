@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Shuffle, Star, Coffee } from 'lucide-react';
 import ImageWithFallback from './ImageWithFallback';
+import { analytics } from '../utils/analytics';
 
 const HeroCardStack = ({ restaurants, onChoose, onSupportClick }) => {
   const [isShuffling, setIsShuffling] = useState(false);
@@ -21,10 +22,39 @@ const HeroCardStack = ({ restaurants, onChoose, onSupportClick }) => {
       setTimeout(() => {
         setIsShuffling(false);
         clearInterval(interval);
-        const winnerIndex = Math.floor(Math.random() * restaurants.length);
+
+        // Weighted Random Selection
+        const weightedRestaurants = restaurants.map(r => ({
+            ...r,
+            weight: analytics.getWeight(r.id)
+        }));
+        
+        const totalWeight = weightedRestaurants.reduce((sum, r) => sum + r.weight, 0);
+        
+        let winnerIndex = 0;
+        if (totalWeight > 0) {
+            let random = Math.random() * totalWeight;
+            for (let i = 0; i < weightedRestaurants.length; i++) {
+                random -= weightedRestaurants[i].weight;
+                if (random <= 0) {
+                    winnerIndex = i;
+                    break;
+                }
+            }
+        } else {
+            // Fallback if all weights are 0 (shouldn't happen with default 1)
+            winnerIndex = Math.floor(Math.random() * restaurants.length);
+        }
+
         setActiveIndex(winnerIndex);
         setShowWinner(true);
-        onChoose(restaurants[winnerIndex]);
+        const winner = restaurants[winnerIndex];
+        
+        // Log Pick
+        if (winner) {
+            analytics.incrementPick(winner.id);
+            onChoose(winner);
+        }
       }, stopTime);
     }
     return () => clearInterval(interval);

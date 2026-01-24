@@ -7,10 +7,12 @@ import FilterBar from './components/FilterBar';
 import AdBanner from './components/AdBanner';
 import SupportModal from './components/SupportModal';
 import LoginModal from './components/LoginModal';
+import AdminAnalytics from './components/AdminAnalytics';
 import Footer from './components/Footer';
-import { UtensilsCrossed, Lock, X, Coffee, Image as ImageIcon, Upload, Save, Download } from 'lucide-react';
+import { UtensilsCrossed, Lock, X, Coffee, Image as ImageIcon, Upload, Save, Download, BarChart2 } from 'lucide-react';
 
 import { checkOpenStatus } from './utils/businessHours';
+import { analytics } from './utils/analytics';
 
 const DEFAULT_CATEGORIES = ['饭类', '面类', '咖啡店', '点心', '健康餐', '素食', '马来餐', '西餐', '韩国餐', '日本餐', '宴会酒楼', '煮炒海鲜楼'];
 const DEFAULT_HERO_BG = "https://images.unsplash.com/photo-1550989460-0adf9ea622e2?q=80&w=1974&auto=format&fit=crop";
@@ -21,6 +23,7 @@ function App() {
   // Admin State
   const [isAdmin, setIsAdmin] = useState(false); // Default to false for visitors
   const [showLoginModal, setShowLoginModal] = useState(false);
+  const [showAnalyticsModal, setShowAnalyticsModal] = useState(false);
 
   const handleAdminLoginClick = () => {
     if (isAdmin) {
@@ -425,6 +428,11 @@ function App() {
       setRestaurants(reorderedWithNewIds);
   };
 
+  const handleRestaurantClick = (restaurant) => {
+      analytics.incrementView(restaurant.id);
+      setSelectedRestaurant(restaurant);
+  };
+
   return (
     <div className="min-h-screen bg-[#121212] font-sans text-gray-100">
       {/* Top Zone: Hero Section */}
@@ -453,6 +461,13 @@ function App() {
               title="保存设置 (Save Settings)"
             >
               <Save size={18} />
+            </button>
+            <button 
+              onClick={() => setShowAnalyticsModal(true)}
+              className="p-2 bg-purple-600/80 text-white rounded-full hover:bg-purple-700/80 transition shadow-[0_0_10px_rgba(147,51,234,0.3)]"
+              title="数据统计与权重 (Analytics)"
+            >
+              <BarChart2 size={18} />
             </button>
              <button 
               onClick={handleExportData}
@@ -542,7 +557,7 @@ function App() {
             isAdmin={isAdmin} 
             onUpdateRestaurant={handleUpdateRestaurant} 
             onDeleteRestaurant={handleDeleteRestaurant}
-            onRestaurantClick={setSelectedRestaurant}
+            onRestaurantClick={handleRestaurantClick}
             onAddRestaurant={handleAddRestaurant}
             onCategoryClick={setSelectedCategory} // New Prop
             onReorder={handleReorder}
@@ -584,6 +599,13 @@ function App() {
         onUpdateQR={handleUpdateSupportQR}
       />
       
+      {/* Admin Analytics Modal */}
+      <AdminAnalytics 
+        isOpen={showAnalyticsModal} 
+        onClose={() => setShowAnalyticsModal(false)}
+        restaurants={restaurants}
+      />
+
       {/* Login Modal */}
       <LoginModal 
         isOpen={showLoginModal} 
