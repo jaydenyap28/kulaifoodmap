@@ -675,10 +675,10 @@ function App() {
         <div className="flex justify-center mb-8 relative z-20">
             <button
                 onClick={() => setShowSupportModal(true)}
-                className="flex items-center gap-2 px-6 py-2.5 rounded-full bg-gradient-to-r from-indigo-600 to-purple-600 text-white font-bold shadow-lg hover:scale-105 active:scale-95 transition-all duration-300 border border-white/20"
+                className="flex items-center gap-2 px-6 py-2.5 rounded-full bg-gradient-to-r from-amber-500 to-orange-600 text-white font-bold shadow-lg hover:scale-105 active:scale-95 transition-all duration-300 border border-white/20"
             >
                 <Coffee size={18} />
-                <span>觉得好用？打赏 (Support)</span>
+                <span>觉得好用？请我喝一杯Kopi ☕</span>
             </button>
         </div>
       </div>

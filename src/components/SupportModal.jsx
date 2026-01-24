@@ -49,7 +49,7 @@ const SupportModal = ({ isOpen, onClose, isAdmin, supportQR, onUpdateQR }) => {
             initial={{ scale: 0.9, opacity: 0, y: 20 }}
             animate={{ scale: 1, opacity: 1, y: 0 }}
             exit={{ scale: 0.9, opacity: 0, y: 20 }}
-            className="relative w-full max-w-md bg-[#FFFDF0] rounded-3xl shadow-2xl overflow-hidden"
+            className="relative w-full max-w-lg bg-[#FFFDF0] rounded-3xl shadow-2xl overflow-hidden"
           >
             {/* Header Pattern / Decoration */}
             <div className="absolute top-0 left-0 right-0 h-32 bg-[#3E2723] opacity-10" 
@@ -84,13 +84,13 @@ const SupportModal = ({ isOpen, onClose, isAdmin, supportQR, onUpdateQR }) => {
               <div className="space-y-4">
                 {/* Method A: TNG QR */}
                 <div className="bg-white p-4 rounded-2xl shadow-sm border border-[#3E2723]/10 relative group">
-                  <div className={`aspect-square w-48 mx-auto rounded-xl mb-3 overflow-hidden flex items-center justify-center relative ${imgError ? 'bg-gray-200' : 'bg-gray-100'}`}>
+                  <div className={`aspect-auto w-full max-w-sm mx-auto rounded-xl mb-3 overflow-hidden flex items-center justify-center relative ${imgError ? 'bg-gray-200' : 'bg-gray-100'}`}>
                     {/* QR Code Image */}
                     {!imgError ? (
                         <img 
                             src={supportQR || "https://i.ibb.co/LXb1FHhH/JNQ-MEDIA-TNG.jpg"} 
                             alt="Touch 'n Go QR Code" 
-                            className="w-full h-full object-cover"
+                            className="w-full h-auto object-contain max-h-[400px]"
                             onError={(e) => {
                                 setImgError(true);
                             }}

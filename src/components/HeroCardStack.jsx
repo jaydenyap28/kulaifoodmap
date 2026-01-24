@@ -196,17 +196,6 @@ const HeroCardStack = ({ restaurants, onChoose, onSupportClick }) => {
             )}
           </div>
         </button>
-
-        {/* Secondary Support Button */}
-        <button
-           onClick={onSupportClick}
-           className="group flex items-center gap-2 px-4 py-2 bg-white/10 hover:bg-white/20 backdrop-blur-md rounded-full text-white/80 hover:text-white transition-all text-xs font-medium border border-white/5"
-        >
-            <div className="bg-[#FFDD00] p-1 rounded-full text-[#3E2723]">
-                <Coffee size={12} fill="currentColor" />
-            </div>
-            <span>{t('hero.support_btn')}</span>
-        </button>
       </div>
     </div>
   );
