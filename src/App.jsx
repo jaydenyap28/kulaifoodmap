@@ -16,10 +16,10 @@ import { checkOpenStatus } from './utils/businessHours';
 import { analytics } from './utils/analytics';
 
 const DEFAULT_CATEGORIES = [
-  '饭类', '面类', '咖啡店', '煮炒海鲜楼', 
+  '饭类', '粉类', '咖啡店', 'Cafe', '煮炒海鲜楼', '杂菜饭',
   '火锅烧烤', '蛋糕甜点', '饮品', 
-  '西餐', '日本餐', '韩国餐', '泰国餐', '马来餐', 
-  '素食', '点心', '宴会酒楼'
+  '西餐', '日本餐', '韩国餐', '泰国餐', '中国餐', '马来餐', 
+  '素食', '健康餐', '快餐', '酒吧', '点心', '宴会酒楼'
 ];
 const DEFAULT_HERO_BG = "https://i.ibb.co/7J5qjZtv/image.png";
 
@@ -116,7 +116,7 @@ function App() {
   };
 
   // Version Control for Data (Increment this when adding new hardcoded data to force refresh)
-  const DATA_VERSION = '2025-01-24-v6'; 
+  const DATA_VERSION = '2025-01-24-v10'; 
 
   // Load data: Prioritize Codebase (initialRestaurants) but keep user-added ones from LocalStorage
   const [restaurants, setRestaurants] = useState(() => {
@@ -603,12 +603,8 @@ function App() {
               {t('app_title')}
             </h1>
             <p className="text-sm md:text-base text-gray-200 font-bold tracking-widest mt-1 drop-shadow-md uppercase">
-              Kulai Food Map v4 ({restaurants.length} Items)
+              KULAI FOOD MAP
             </p>
-            {/* DEBUG INFO: REMOVE LATER */}
-            <div className="text-xs text-red-400 font-mono mt-1">
-                Local: {restaurants.length} / Code: {initialRestaurants.length}
-            </div>
           </div>
           
           {/* Language Switcher */}
@@ -649,7 +645,7 @@ function App() {
         /> */}
 
         {/* Hero Stack Section */}
-        <div className="relative w-full flex flex-col items-center min-h-[450px]">
+        <div className="relative w-full flex flex-col items-center min-h-[450px] mb-12">
           {filteredRestaurants.length > 1 ? (
             <HeroCardStack 
               restaurants={filteredRestaurants} 
