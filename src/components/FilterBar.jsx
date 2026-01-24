@@ -112,76 +112,80 @@ const FilterBar = ({
   return (
     <div className="w-full max-w-[1600px] mx-auto px-4 mb-4 relative z-20 flex flex-col gap-3">
       
-      {/* Container - Changed to Flex Wrap */}
-      <div className="flex flex-wrap gap-2 pb-2 items-center">
+      {/* Container - Split into Left (All) and Right (Categories) for alignment */}
+      <div className="flex flex-row items-start gap-2 pb-2">
         
-        {/* Admin Tools */}
-        {isAdmin && (
-          <div className="flex items-center gap-1 shrink-0 border-r pr-2 border-gray-700 mr-2">
-            <button
-              onClick={() => {
-                const newCat = prompt(t('filter.enter_new_cat'));
-                if (newCat && newCat.trim()) {
-                  onAddCategory(newCat.trim());
-                }
-              }}
-              className="flex items-center gap-1 px-3 py-2 rounded-full bg-[#1e1e1e] text-white border border-dashed border-gray-600 hover:border-white transition-colors text-sm font-medium"
-              title={t('filter.add_category')}
-            >
-              <Plus size={14} /> {t('filter.add_category')}
-            </button>
-             <button
-              onClick={() => setIsEditMode(!isEditMode)}
-              className={`p-2 rounded-full border transition-colors ${
-                isEditMode 
-                  ? 'bg-red-900/50 text-red-500 border-red-800' 
-                  : 'bg-[#1e1e1e] text-gray-500 border-gray-700 hover:text-gray-300'
-              }`}
-              title={isEditMode ? t('filter.done_edit') : t('filter.manage_category')}
-            >
-              <Edit2 size={14} />
-            </button>
-          </div>
-        )}
+        {/* Left: Admin Tools + All Button */}
+        <div className="flex items-center gap-2 shrink-0">
+          {isAdmin && (
+            <div className="flex items-center gap-1 border-r pr-2 border-gray-700">
+              <button
+                onClick={() => {
+                  const newCat = prompt(t('filter.enter_new_cat'));
+                  if (newCat && newCat.trim()) {
+                    onAddCategory(newCat.trim());
+                  }
+                }}
+                className="flex items-center gap-1 px-3 py-2 rounded-full bg-[#1e1e1e] text-white border border-dashed border-gray-600 hover:border-white transition-colors text-sm font-medium"
+                title={t('filter.add_category')}
+              >
+                <Plus size={14} />
+              </button>
+               <button
+                onClick={() => setIsEditMode(!isEditMode)}
+                className={`p-2 rounded-full border transition-colors ${
+                  isEditMode 
+                    ? 'bg-red-900/50 text-red-500 border-red-800' 
+                    : 'bg-[#1e1e1e] text-gray-500 border-gray-700 hover:text-gray-300'
+                }`}
+                title={isEditMode ? t('filter.done_edit') : t('filter.manage_category')}
+              >
+                <Edit2 size={14} />
+              </button>
+            </div>
+          )}
 
-        {/* Reset / All */}
-        <button
-          onClick={() => onSelectCategory(null)}
-          className={`shrink-0 px-5 py-2 rounded-full text-base font-medium transition-all ${
-            selectedCategory.length === 0
-              ? 'bg-white text-black border-white'
-              : 'bg-[#1e1e1e] text-gray-400 hover:text-white hover:bg-[#2d2d2d] border-[#333]'
-          } shadow-sm border`}
-        >
-          {t('filter.all')}
-        </button>
+          {/* Reset / All */}
+          <button
+            onClick={() => onSelectCategory(null)}
+            className={`shrink-0 px-5 py-2 rounded-full text-base font-medium transition-all ${
+              selectedCategory.length === 0
+                ? 'bg-white text-black border-white'
+                : 'bg-[#1e1e1e] text-gray-400 hover:text-white hover:bg-[#2d2d2d] border-[#333]'
+            } shadow-sm border`}
+          >
+            {t('filter.all')}
+          </button>
 
-        <div className="w-px h-6 bg-gray-700 mx-2 shrink-0"></div>
+          <div className="w-px h-6 bg-gray-700 mx-1 shrink-0"></div>
+        </div>
 
-        {/* Sortable Categories */}
-        <DndContext 
-            sensors={sensors} 
-            collisionDetection={closestCenter} 
-            onDragEnd={handleDragEnd}
-        >
-            <SortableContext 
-                items={categories} 
-                strategy={rectSortingStrategy}
-            >
-                {categories.map(cat => (
-                   <SortableCategoryChip 
-                        key={cat}
-                        cat={cat}
-                        selectedCategory={selectedCategory}
-                        onSelectCategory={onSelectCategory}
-                        onDeleteCategory={onDeleteCategory}
-                        isEditMode={isEditMode}
-                        t={t}
-                        isAdmin={isAdmin}
-                   />
-                ))}
-            </SortableContext>
-        </DndContext>
+        {/* Right: Sortable Categories (Wrapping) */}
+        <div className="flex flex-wrap gap-2 items-center flex-1">
+          <DndContext 
+              sensors={sensors} 
+              collisionDetection={closestCenter} 
+              onDragEnd={handleDragEnd}
+          >
+              <SortableContext 
+                  items={categories} 
+                  strategy={rectSortingStrategy}
+              >
+                  {categories.map(cat => (
+                     <SortableCategoryChip 
+                          key={cat}
+                          cat={cat}
+                          selectedCategory={selectedCategory}
+                          onSelectCategory={onSelectCategory}
+                          onDeleteCategory={onDeleteCategory}
+                          isEditMode={isEditMode}
+                          t={t}
+                          isAdmin={isAdmin}
+                     />
+                  ))}
+              </SortableContext>
+          </DndContext>
+        </div>
 
       </div>
     </div>

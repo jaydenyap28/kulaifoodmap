@@ -671,6 +671,17 @@ function App() {
                 {t('filter.no_desserts')}
             </button>
         </div>
+
+        {/* Donate / Support Section (Moved here) */}
+        <div className="flex justify-center mb-8 relative z-20">
+            <button
+                onClick={() => setShowSupportModal(true)}
+                className="flex items-center gap-2 px-6 py-2.5 rounded-full bg-gradient-to-r from-indigo-600 to-purple-600 text-white font-bold shadow-lg hover:scale-105 active:scale-95 transition-all duration-300 border border-white/20"
+            >
+                <Coffee size={18} />
+                <span>觉得好用？打赏 (Support)</span>
+            </button>
+        </div>
       </div>
 
       {/* Bottom Zone: Restaurant List */}
@@ -704,15 +715,6 @@ function App() {
           onAddCategory={handleAddCategory} // Allow adding from modal too
         />
       )}
-
-      {/* Floating Action Button - Support */}
-      <button
-        onClick={() => setShowSupportModal(true)}
-        className="fixed bottom-6 left-6 z-40 p-4 bg-gradient-to-r from-indigo-600 to-purple-600 text-white rounded-full shadow-lg hover:scale-110 active:scale-95 transition-all duration-300 group border border-white/20"
-        title="Support Author"
-      >
-        <Coffee size={24} className="group-hover:rotate-12 transition-transform" />
-      </button>
 
       {/* Support Modal */}
       <SupportModal 
