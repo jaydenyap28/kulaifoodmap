@@ -88,7 +88,7 @@ const SupportModal = ({ isOpen, onClose, isAdmin, supportQR, onUpdateQR }) => {
                     {/* QR Code Image */}
                     {!imgError ? (
                         <img 
-                            src={supportQR || "https://i.ibb.co/CpzRJY1M/TNG-QR-JNQ-MEDIA.jpg"} 
+                            src={supportQR || "https://i.ibb.co/C58XqjWB/TNG-QR-JNQ-MEDIA-2.jpg"} 
                             alt="Touch 'n Go QR Code" 
                             className="w-full h-auto"
                             onError={(e) => {
