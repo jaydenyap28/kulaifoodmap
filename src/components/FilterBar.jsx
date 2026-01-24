@@ -93,11 +93,9 @@ const FilterBar = ({
   const AVAILABLE_AREAS = [
     'Indahpura',
     'Bandar Putra',
-    'Kelapa Sawit',
-    'Taman Kulai',
-    'Kulai Besar',
+    'Kulai 21 Miles',
     'Saleng',
-    'Senai'
+    'Kelapa Sawit'
   ];
 
   const sensors = useSensors(
