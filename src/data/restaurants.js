@@ -53,7 +53,7 @@ export const initialRestaurants = [
     "area": "Indahpura",
     "name": "莫搞牛肉面",
     "name_en": "Kulai Mok Gao Beef Noodles",
-    "address": "523, Jalan Kenanga 29/17, Bandar Indahpura, 81000 Kulai, Johor, Kulai 21 Miles",
+    "address": "523, Jalan Kenanga 29/17, Bandar Indahpura, 81000 Kulai, Johor",
     "opening_hours": "Monday: 5am - 2pm\nTuesday: 5am - 2pm\nWednesday: 5am - 2pm\nThursday: 5am - 2pm\nFriday: 5am - 2pm\nSaturday: 5am - 2pm\nSunday: 5am - 2pm",
     "category": [
       "粉类"
@@ -75,7 +75,7 @@ export const initialRestaurants = [
   },
   {
     "id": 4,
-    "area": "Kulai 21 Miles",
+    "area": "",
     "name": "大树下擂茶",
     "name_en": "Lei Cha 21 Miles",
     "address": "21, Jalan Manis, Taman Manis, 81000 Kulai, Johor",
@@ -103,7 +103,7 @@ export const initialRestaurants = [
     "area": "Indahpura",
     "name": "林仙 Hainan Hojiak Corner",
     "name_en": "Restaurant Hainan Hojiak Corner",
-    "address": "548, Jalan Kenanga 29/18, Bandar Indahpura, 81000 Kulai, Johor, Kulai 21 Miles",
+    "address": "548, Jalan Kenanga 29/18, Bandar Indahpura, 81000 Kulai, Johor",
     "opening_hours": "Monday: 6am - 3pm\nTuesday: 6am - 3pm\nWednesday: Closed\nThursday: 6am - 3pm\nFriday: 6am - 3pm\nSaturday: 6am - 3pm\nSunday: 6am - 3pm",
     "category": [
       "粉类"
@@ -204,7 +204,7 @@ export const initialRestaurants = [
     "area": "Indahpura",
     "name": "古來吉麵家",
     "name_en": "Kulai Ji Noodles",
-    "address": "845-855, Jalan Teratai 36/17, Bandar Indahpura, 81000 Kulai, Johor, Kulai 21 Miles",
+    "address": "845-855, Jalan Teratai 36/17, Bandar Indahpura, 81000 Kulai, Johor",
     "opening_hours": "Monday: Closed\nTuesday: 7am - 3pm\nWednesday: 7am - 3pm\nThursday: 7am - 3pm\nFriday: 7am - 3pm\nSaturday: 7am - 3pm\nSunday: 7am - 3pm",
     "category": [
       "粉类"
@@ -299,7 +299,7 @@ export const initialRestaurants = [
   },
   {
     "id": 13,
-    "area": "Kulai 21 Miles",
+    "area": "",
     "name": "云来包点",
     "name_en": "Restaurant Yon Lai",
     "address": "646, Jalan Gangsa 6, Taman Timur, 81000 Kulai, Johor Darul Ta'zim",
@@ -379,7 +379,7 @@ export const initialRestaurants = [
     "area": "Indahpura",
     "name": "品香茶室",
     "name_en": "Chop Pun Heong Dim Sum",
-    "address": "398, Jalan Kenanga 29/10, Bandar Indahpura, 81000 Kulai, Johor Darul Ta'zim, Kulai 21 Miles",
+    "address": "398, Jalan Kenanga 29/10, Bandar Indahpura, 81000 Kulai, Johor Darul Ta'zim",
     "opening_hours": "Monday: Closed\nTuesday: 6:30am - 4pm\nWednesday: 6:30am - 4pm\nThursday: 6:30am - 4pm\nFriday: 6:30am - 4pm\nSaturday: 6:30am - 4pm\nSunday: 6:30am - 4pm",
     "category": [
       "点心"
@@ -426,7 +426,7 @@ export const initialRestaurants = [
   },
   {
     "id": 17,
-    "area": "Kulai 21 Miles",
+    "area": "",
     "name": "Yellow Corner",
     "address": "215, Jalan Pinang 1, Taman Kota Kulai, 81000 Kulai, Johor Darul Ta'zim",
     "opening_hours": "Monday: Closed\nTuesday: 5pm - 12am\nWednesday: 5pm - 12am\nThursday: 5pm - 12am\nFriday: 5pm - 12am\nSaturday: 5pm - 12am\nSunday: 5pm - 12am",
@@ -452,7 +452,7 @@ export const initialRestaurants = [
   },
   {
     "id": 18,
-    "area": "Kulai 21 Miles",
+    "area": "",
     "name": "Delicious Corner",
     "name_en": "Restoran Xin Yuan Bak Kut Teh",
     "address": "28, Jalan Pelanduk, Taman Pertama, 81000 Kulai, Johor Darul Ta'zim",
@@ -604,7 +604,7 @@ export const initialRestaurants = [
     "area": "Kulai 21 Miles",
     "name": "文记海南芽菜鸡饭",
     "name_en": "Boon Kee Hainan Chicken Rice",
-    "address": "Jalan Bunga Santalia, Taman Kulai Utama, 81000 Kulai, Johor Darul Ta'zim, Kulai 21 Miles",
+    "address": "Jalan Bunga Santalia, Taman Kulai Utama, 81000 Kulai, Johor Darul Ta'zim",
     "opening_hours": "See Google Maps",
     "category": [
       "饭类"
@@ -651,7 +651,7 @@ export const initialRestaurants = [
   },
   {
     "id": 26,
-    "area": "Kulai 21 Miles",
+    "area": "",
     "name": "露天海鲜馆",
     "name_en": "Restoran Lu Tian",
     "address": "Taman Nam Tak, 81000 Kulai, Johor",
@@ -708,7 +708,7 @@ export const initialRestaurants = [
     "area": "Kulai 21 Miles",
     "name": "美食海鲜馆",
     "name_en": "Meei Shih Seafood Restaurant",
-    "address": "69, Jalan Anggerik 3, Taman Kulai Utama, 81000 Kulai, Johor Darul Ta'zim, Kulai 21 Miles",
+    "address": "69, Jalan Anggerik 3, Taman Kulai Utama, 81000 Kulai, Johor Darul Ta'zim",
     "opening_hours": "Monday: 4:30pm - 11:30pm\nTuesday: Closed\nWednesday: 4:30pm - 11:30pm\nThursday: 4:30pm - 11:30pm\nFriday: 4:30pm - 11:30pm\nSaturday: 4:30pm - 11:30pm\nSunday: 4:30pm - 11:30pm",
     "category": [
       "饭类",
@@ -853,7 +853,7 @@ export const initialRestaurants = [
     "subStalls": [
       {
         "name": "McDonald's Kulai DT",
-        "address": "Lot 1150, Bandar Indahpura (24 Hours), Kulai 21 Miles"
+        "address": "Lot 1150, Bandar Indahpura (24 Hours)"
       },
       {
         "name": "McDonald's IOI Mall",
@@ -903,7 +903,7 @@ export const initialRestaurants = [
     "branches": [
       {
         "name": "McDonald's Kulai DT",
-        "address": "Lot 1150, Bandar Indahpura (24 Hours), Kulai 21 Miles"
+        "address": "Lot 1150, Bandar Indahpura (24 Hours)"
       },
       {
         "name": "McDonald's IOI Mall",
@@ -1116,7 +1116,7 @@ export const initialRestaurants = [
   {
     "id": 43,
     "name": "Street Crew",
-    "address": "5831 & 5832, Jalan Siantan 3, Bandar Indahpura, 81000 Kulai, Johor Darul Ta'zim, Kulai 21 Miles",
+    "address": "5831 & 5832, Jalan Siantan 3, Bandar Indahpura, 81000 Kulai, Johor Darul Ta'zim",
     "opening_hours": "3pm – 11pm (Wed Closed)",
     "category": [
       "西餐",
@@ -1190,7 +1190,7 @@ export const initialRestaurants = [
     "id": 46,
     "area": "Indahpura",
     "name": "21苦瓜汤（Indahpura)",
-    "address": "75, Jln. Kenanga 29/11, Bandar Indahpura, 81000 Kulai, Johor Darul Ta'zim, Kulai 21 Miles",
+    "address": "75, Jln. Kenanga 29/11, Bandar Indahpura, 81000 Kulai, Johor Darul Ta'zim",
     "opening_hours": "11am – 3pm, 5pm – 9pm (Monday Closed)",
     "category": [
       "饭类"
@@ -1214,7 +1214,7 @@ export const initialRestaurants = [
     "id": 47,
     "area": "Indahpura",
     "name": "MyKori Dessert Cafe Kulai",
-    "address": "93, Jln. Kenanga 29/11, Bandar Indahpura, 81000 Kulai, Johor Darul Ta'zim, Kulai 21 Miles",
+    "address": "93, Jln. Kenanga 29/11, Bandar Indahpura, 81000 Kulai, Johor Darul Ta'zim",
     "opening_hours": "12pm – 10pm",
     "category": [
       "蛋糕甜点"
@@ -1239,7 +1239,7 @@ export const initialRestaurants = [
     "area": "Indahpura",
     "name": "老彭家鱼丸面",
     "name_en": "Restoran Ah Pang",
-    "address": "85, 77, Jln. Kenanga 29/11, Indahpura, 81000 Kulai, Johor, Kulai 21 Miles",
+    "address": "85, 77, Jln. Kenanga 29/11, Indahpura, 81000 Kulai, Johor",
     "opening_hours": "See Google Maps",
     "category": [
       "粉类"
@@ -1263,7 +1263,7 @@ export const initialRestaurants = [
     "id": 49,
     "area": "Indahpura",
     "name": "Kopi Saigon Kulai",
-    "address": "73, Jln. Kenanga 29/11, Bandar Indahpura, 81000 Kulai, Johor Darul Ta'zim, Kulai 21 Miles",
+    "address": "73, Jln. Kenanga 29/11, Bandar Indahpura, 81000 Kulai, Johor Darul Ta'zim",
     "opening_hours": "10am – 10pm (Wed Closed)",
     "category": [
       "咖啡店",
@@ -1290,7 +1290,7 @@ export const initialRestaurants = [
     "area": "Indahpura",
     "name": "悦香亭",
     "name_en": "Yue Xiang Ting",
-    "address": "70, Jln. Kenanga 29/11, Bandar Indahpura, 81000 Kulai, Johor Darul Ta'zim, Kulai 21 Miles",
+    "address": "70, Jln. Kenanga 29/11, Bandar Indahpura, 81000 Kulai, Johor Darul Ta'zim",
     "opening_hours": "11am – 2:30pm, 5pm – 10:30pm",
     "category": [
       "宴会酒楼"
@@ -1314,7 +1314,7 @@ export const initialRestaurants = [
     "id": 51,
     "area": "Indahpura",
     "name": "MyKluang Coffee @ Kulai",
-    "address": "67, Jln. Kenanga 29/11, Bandar Indahpura, 81000 Kulai, Johor Darul Ta'zim, Kulai 21 Miles",
+    "address": "67, Jln. Kenanga 29/11, Bandar Indahpura, 81000 Kulai, Johor Darul Ta'zim",
     "opening_hours": "8am – 6:30pm",
     "category": [
       "咖啡店"
@@ -1338,7 +1338,7 @@ export const initialRestaurants = [
     "id": 52,
     "area": "Indahpura",
     "name": "UFB - Union Fashion Bar Balcony",
-    "address": "66, Jalan Kenanga 29/5, Bandar Indahpura, 81300 Kulai, Johor Darul Ta'zim, Kulai 21 Miles",
+    "address": "66, Jalan Kenanga 29/5, Bandar Indahpura, 81300 Kulai, Johor Darul Ta'zim",
     "opening_hours": "12pm – 12am",
     "category": [
       "西餐"
@@ -1362,7 +1362,7 @@ export const initialRestaurants = [
     "id": 53,
     "area": "Indahpura",
     "name": "Broovies Cafe",
-    "address": "55, Jalan Kenanga 29/5, Bandar Indahpura, 81000 Kulai, Johor Darul Ta'zim, Kulai 21 Miles",
+    "address": "55, Jalan Kenanga 29/5, Bandar Indahpura, 81000 Kulai, Johor Darul Ta'zim",
     "opening_hours": "11am – 10pm",
     "category": [
       "西餐"
@@ -1387,7 +1387,7 @@ export const initialRestaurants = [
     "area": "Indahpura",
     "name": "维府",
     "name_en": "Wei Palace Chinese Restaurant",
-    "address": "No54, Jalan Kenanga 29/5, Bandar Indahpura, 81000 Kulai, Johor Darul Ta'zim, Kulai 21 Miles",
+    "address": "No54, Jalan Kenanga 29/5, Bandar Indahpura, 81000 Kulai, Johor Darul Ta'zim",
     "opening_hours": "11:30am – 3pm, 5:30pm – 9pm",
     "category": [
       "宴会酒楼"
@@ -1412,7 +1412,7 @@ export const initialRestaurants = [
     "area": "Indahpura",
     "name": "发福食堂",
     "name_en": "Wafu Indahpura",
-    "address": "192, Jalan Kenanga 29/4, Bandar Indahpura, 81000 Kulai, Johor Darul Ta'zim, Kulai 21 Miles",
+    "address": "192, Jalan Kenanga 29/4, Bandar Indahpura, 81000 Kulai, Johor Darul Ta'zim",
     "opening_hours": "12pm – 10pm",
     "category": [
       "咖啡店"
@@ -1436,7 +1436,7 @@ export const initialRestaurants = [
     "id": 56,
     "area": "Indahpura",
     "name": "Jang Won Korean BBQ Restaurant",
-    "address": "185, Jalan Kenanga 29/4, Bandar Indahpura, 81000 Kulai, Johor Darul Ta'zim, Kulai 21 Miles",
+    "address": "185, Jalan Kenanga 29/4, Bandar Indahpura, 81000 Kulai, Johor Darul Ta'zim",
     "opening_hours": "11am – 10pm",
     "category": [
       "韩国餐"
@@ -1460,7 +1460,7 @@ export const initialRestaurants = [
     "id": 57,
     "area": "Indahpura",
     "name": "Chiyo Sushi",
-    "address": "184A, Indahpura, 81000 Kulai, Johor, Kulai 21 Miles",
+    "address": "184A, Indahpura, 81000 Kulai, Johor",
     "opening_hours": "11:30am – 10pm",
     "category": [
       "日本餐"
@@ -1484,7 +1484,7 @@ export const initialRestaurants = [
     "id": 58,
     "area": "Indahpura",
     "name": "3rd Junction Cafe Indahpura Kulai",
-    "address": "181, Jalan Kenanga 29/4, Bandar Indahpura, 81000 Kulai, Johor Darul Ta'zim, Kulai 21 Miles",
+    "address": "181, Jalan Kenanga 29/4, Bandar Indahpura, 81000 Kulai, Johor Darul Ta'zim",
     "opening_hours": "12pm – 12am",
     "category": [
       "Cafe"
@@ -1509,7 +1509,7 @@ export const initialRestaurants = [
     "area": "Indahpura",
     "name": "岚囍",
     "name_en": "LANXI",
-    "address": "234, Jln Kenanga 29/8, Taman Indahpura, 81000 Kulai, Johor, Kulai 21 Miles",
+    "address": "234, Jln Kenanga 29/8, Taman Indahpura, 81000 Kulai, Johor",
     "opening_hours": "11am-11.30pm",
     "category": [
       "西餐"
@@ -1534,7 +1534,7 @@ export const initialRestaurants = [
     "area": "Indahpura",
     "name": "串来串去",
     "name_en": "Chuanlai Chuanqu Mala Hotpot Kulai",
-    "address": "243A, Jln Kenanga 29/8, Taman Indahpura, 81000 Kulai, Johor, Kulai 21 Miles",
+    "address": "243A, Jln Kenanga 29/8, Taman Indahpura, 81000 Kulai, Johor",
     "opening_hours": "1pm-11.30pm",
     "category": [
       "火锅烧烤"
@@ -1559,7 +1559,7 @@ export const initialRestaurants = [
     "area": "",
     "name": "Four Beans Soy Desserts Kulai",
     "name_en": "",
-    "address": "247, Jln Kenanga 29/8, Indahpura, 81000 Kulai, Johor, Kulai 21 Miles",
+    "address": "247, Jln Kenanga 29/8, Indahpura, 81000 Kulai, Johor",
     "opening_hours": "2pm-10.30pm",
     "category": [
       "蛋糕甜点",
@@ -1586,7 +1586,7 @@ export const initialRestaurants = [
     "area": "Indahpura",
     "name": "BAR WANG RICE 霸王饭",
     "name_en": "",
-    "address": "Jln Kenanga 29/8, Indahpura, 81000 Kulai, Johor, Kulai 21 Miles",
+    "address": "Jln Kenanga 29/8, Indahpura, 81000 Kulai, Johor",
     "opening_hours": "9:30 am–9 pm",
     "category": [
       "饭类"
@@ -1611,7 +1611,7 @@ export const initialRestaurants = [
     "area": "Indahpura",
     "name": "CHAGEE @ Kulai",
     "name_en": "",
-    "address": "263, Jln Kenanga 29/8, Indahpura, 81000 Kulai, Johor, Kulai 21 Miles",
+    "address": "263, Jln Kenanga 29/8, Indahpura, 81000 Kulai, Johor",
     "opening_hours": "12-11pm",
     "category": [
       "饮品"
@@ -1684,7 +1684,7 @@ export const initialRestaurants = [
     "area": "Indahpura",
     "name": "XIAO XIN HOT RESTAURANT 小心烫·小火锅",
     "name_en": "",
-    "address": "583, Jalan Kenanga 29/19, Taman Indahpura, 81000 Kulai, Johor Darul Ta'zim, Kulai 21 Miles",
+    "address": "583, Jalan Kenanga 29/19, Taman Indahpura, 81000 Kulai, Johor Darul Ta'zim",
     "opening_hours": "12pm-10pm",
     "category": [
       "火锅烧烤"
@@ -1709,7 +1709,7 @@ export const initialRestaurants = [
     "area": "Indahpura",
     "name": "大众美食中心 RESTORAN WEE HUAT (KULAI)",
     "name_en": "",
-    "address": "587, Jalan Kenanga 29/19, Bandar Indahpura, 81000 Kulai, Johor Darul Ta'zim, Kulai 21 Miles",
+    "address": "587, Jalan Kenanga 29/19, Bandar Indahpura, 81000 Kulai, Johor Darul Ta'zim",
     "opening_hours": "6am-4pm",
     "category": [
       "咖啡店"
@@ -1734,7 +1734,7 @@ export const initialRestaurants = [
     "area": "Indahpura",
     "name": "Ma Chin All Steamboat Restaurant",
     "name_en": "",
-    "address": "590, Jalan Kenanga 29/19, Bandar Indahpura, 81000 Kulai, Johor Darul Ta'zim, Kulai 21 Miles",
+    "address": "590, Jalan Kenanga 29/19, Bandar Indahpura, 81000 Kulai, Johor Darul Ta'zim",
     "opening_hours": "11 am–12 am",
     "category": [
       "火锅烧烤"
@@ -1759,7 +1759,7 @@ export const initialRestaurants = [
     "area": "Indahpura",
     "name": "Kulai QIAO DI KOPITIAM 桥底茶室",
     "name_en": "",
-    "address": "593, Jalan Kenanga 29/19, Bandar Indahpura, 81000 Kulai, Johor Darul Ta'zim, Kulai 21 Miles",
+    "address": "593, Jalan Kenanga 29/19, Bandar Indahpura, 81000 Kulai, Johor Darul Ta'zim",
     "opening_hours": "7 am–4:30 pm",
     "category": [
       "粉类"
@@ -1808,7 +1808,7 @@ export const initialRestaurants = [
     "area": "Indahpura",
     "name": "大众茶餐室",
     "name_en": "Popular Tea Room",
-    "address": "542, Jalan Kenanga 29/17, Bandar Indahpura, 81000 Kulai, Johor Darul Ta'zim, Kulai 21 Miles",
+    "address": "542, Jalan Kenanga 29/17, Bandar Indahpura, 81000 Kulai, Johor Darul Ta'zim",
     "opening_hours": "6am-12pm",
     "category": [
       "咖啡店"
@@ -1833,7 +1833,7 @@ export const initialRestaurants = [
     "area": "Indahpura",
     "name": "一品鲜鱼肉汤专卖店",
     "name_en": "EP Xian Restaurant",
-    "address": "553, Jalan Kenanga 29/18, Bandar Indahpura, 81000 Kulai, Johor Darul Ta'zim, Kulai 21 Miles",
+    "address": "553, Jalan Kenanga 29/18, Bandar Indahpura, 81000 Kulai, Johor Darul Ta'zim",
     "opening_hours": "7:30 am–2:30 pm tuesday closed",
     "category": [
       "粉类"
@@ -1858,7 +1858,7 @@ export const initialRestaurants = [
     "area": "Indahpura",
     "name": "江满小食馆",
     "name_en": "Restoran jiang mam",
-    "address": "555, Jalan Kenanga 29/18, Bandar Indahpura, 81000 Kulai, Johor Darul Ta'zim, Kulai 21 Miles",
+    "address": "555, Jalan Kenanga 29/18, Bandar Indahpura, 81000 Kulai, Johor Darul Ta'zim",
     "opening_hours": "5:30 pm–1:30 am Thursday Closed",
     "category": [
       "饭类",
@@ -1885,7 +1885,7 @@ export const initialRestaurants = [
     "area": "Indahpura",
     "name": "源发茶餐室",
     "name_en": "",
-    "address": "566, Jalan Kenanga 29/18, Bandar Indahpura, 81000 Kulai, Johor Darul Ta'zim, Kulai 21 Miles",
+    "address": "566, Jalan Kenanga 29/18, Bandar Indahpura, 81000 Kulai, Johor Darul Ta'zim",
     "opening_hours": "7 am–1:30 pm",
     "category": [
       "咖啡店"
@@ -1910,7 +1910,7 @@ export const initialRestaurants = [
     "area": "Indahpura",
     "name": "新食代",
     "name_en": "Food Generation",
-    "address": "292,JALAN KIAMBANG UTAMA,KOMERSIAL INDAH, KOMERSIAL INDAH, Bandar Indahpura, 81000 Kulai, Johor Darul Ta'zim, Kulai 21 Miles",
+    "address": "292,JALAN KIAMBANG UTAMA,KOMERSIAL INDAH, KOMERSIAL INDAH, Bandar Indahpura, 81000 Kulai, Johor Darul Ta'zim",
     "opening_hours": "5pm-1am",
     "category": [
       "咖啡店"
@@ -1935,7 +1935,7 @@ export const initialRestaurants = [
     "area": "Indahpura",
     "name": "笨珍亞九咖啡",
     "name_en": "Pontian Coffee 9",
-    "address": "No 155, Pusat Komersial Indah, Jalan Kiambang 13, Bandar Indahpura, 81000 Kulai, Johor Darul Ta'zim, Kulai 21 Miles",
+    "address": "No 155, Pusat Komersial Indah, Jalan Kiambang 13, Bandar Indahpura, 81000 Kulai, Johor Darul Ta'zim",
     "opening_hours": "8 am–6 pm",
     "category": [
       "咖啡店"
@@ -1960,7 +1960,7 @@ export const initialRestaurants = [
     "area": "Indahpura",
     "name": "南洋老街粿条仔",
     "name_en": "Nanyang Old Street @ Kulai",
-    "address": "154, Jalan Kiambang 13, Bandar Indahpura, 81000 Kulai, Johor Darul Ta'zim, Kulai 21 Miles",
+    "address": "154, Jalan Kiambang 13, Bandar Indahpura, 81000 Kulai, Johor Darul Ta'zim",
     "opening_hours": "8am-10pm",
     "category": [
       "粉类"
@@ -1985,7 +1985,7 @@ export const initialRestaurants = [
     "area": "Indahpura",
     "name": "Uncle Five Coffee",
     "name_en": "",
-    "address": "160 Jalan Kiambang  Kulai Bandar Indahpura 81000 JOHOR, Kulai 21 Miles",
+    "address": "160 Jalan Kiambang  Kulai Bandar Indahpura 81000 JOHOR",
     "opening_hours": "7am-6pm",
     "category": [
       "咖啡店"
@@ -2010,7 +2010,7 @@ export const initialRestaurants = [
     "area": "Indahpura",
     "name": "平新鲍鱼粿条",
     "name_en": "PS Abalone",
-    "address": "146, Jalan Kiambang 13, Bandar Indahpura, 81000 Kulai, Johor Darul Ta'zim, Kulai 21 Miles",
+    "address": "146, Jalan Kiambang 13, Bandar Indahpura, 81000 Kulai, Johor Darul Ta'zim",
     "opening_hours": "8 am–9 pm",
     "category": [
       "粉类"
@@ -2035,7 +2035,7 @@ export const initialRestaurants = [
     "area": "Indahpura",
     "name": "好運茶室",
     "name_en": "Goodluck Kopitiam",
-    "address": "No.166, Pusat Komersial Indah, Jalan Kiambang 13, Bandar Indahpura, 81000 Kulai, Johor Darul Ta'zim, Kulai 21 Miles",
+    "address": "No.166, Pusat Komersial Indah, Jalan Kiambang 13, Bandar Indahpura, 81000 Kulai, Johor Darul Ta'zim",
     "opening_hours": "7 am–5 pm Tuesday Closed",
     "category": [
       "咖啡店"
@@ -2060,7 +2060,7 @@ export const initialRestaurants = [
     "area": "Indahpura",
     "name": "Mystery Dessertland Cafe 甜秘•糖",
     "name_en": "",
-    "address": "No 148, Pusat Komersial Indah, Jalan Kiambang 13, Indahpura, 81000 Kulai, Johor, Kulai 21 Miles",
+    "address": "No 148, Pusat Komersial Indah, Jalan Kiambang 13, Indahpura, 81000 Kulai, Johor",
     "opening_hours": "11:30 am–9:30 pm",
     "category": [
       "蛋糕甜点"
@@ -2085,7 +2085,7 @@ export const initialRestaurants = [
     "area": "Indahpura",
     "name": "怡保风味馆",
     "name_en": "Taste Of Ipoh",
-    "address": "143, Pusat Komersial Indah, Jalan Kiambang 13, Bandar Indahpura, 81000 Kulai, Johor Darul Ta'zim, Kulai 21 Miles",
+    "address": "143, Pusat Komersial Indah, Jalan Kiambang 13, Bandar Indahpura, 81000 Kulai, Johor Darul Ta'zim",
     "opening_hours": "8 am–5 pm Mon Closed",
     "category": [
       "咖啡店"
@@ -2110,7 +2110,7 @@ export const initialRestaurants = [
     "area": "Indahpura",
     "name": "御寶貴妃雞",
     "name_en": "Yubao Chicken Rice",
-    "address": "Pusat Komersial Kulai, 169, Jalan Kiambang 13, Bandar Indahpura, 81000 Kulai, Johor Darul Ta'zim, Kulai 21 Miles",
+    "address": "Pusat Komersial Kulai, 169, Jalan Kiambang 13, Bandar Indahpura, 81000 Kulai, Johor Darul Ta'zim",
     "opening_hours": "10am-8pm Mon Closed",
     "category": [
       "饭类"
@@ -2135,7 +2135,7 @@ export const initialRestaurants = [
     "area": "Indahpura",
     "name": "Hermeal healthy food",
     "name_en": "",
-    "address": "Pusat Kormersial Indah 142, 13, Jalan Kiambang, Bandar Indahpura, 81000 Kulai, Johor Darul Ta'zim, Kulai 21 Miles",
+    "address": "Pusat Kormersial Indah 142, 13, Jalan Kiambang, Bandar Indahpura, 81000 Kulai, Johor Darul Ta'zim",
     "opening_hours": "11.30am-8pm Thursday Closed",
     "category": [],
     "categories": [],
@@ -2180,7 +2180,7 @@ export const initialRestaurants = [
     "area": "Indahpura",
     "name": "Kopiloco Kulai",
     "name_en": "",
-    "address": "MY Johor Kulai Bandar Indahpura Jalan Kiambang139 &140邮政编码:邮政编码: 81000, Kulai 21 Miles",
+    "address": "MY Johor Kulai Bandar Indahpura Jalan Kiambang139 &140邮政编码:邮政编码: 81000",
     "opening_hours": "7:30 am–5:30 pm",
     "category": [
       "咖啡店"
@@ -2205,7 +2205,7 @@ export const initialRestaurants = [
     "area": "Indahpura",
     "name": "桃源麵家",
     "name_en": "TAO YUAN",
-    "address": "13, Pusat Komersial Indah, 137, Jalan Kiambang, Indahpura, 81000 Kulai, Johor, Kulai 21 Miles",
+    "address": "13, Pusat Komersial Indah, 137, Jalan Kiambang, Indahpura, 81000 Kulai, Johor",
     "opening_hours": "7am-3pm",
     "category": [
       "粉类"
@@ -2230,7 +2230,7 @@ export const initialRestaurants = [
     "area": "Indahpura",
     "name": "Kuching Style Restaurant",
     "name_en": "",
-    "address": "138, Jalan kiambang, 13, Pusat Komersial Indah, Bandar Indahpura, 81000 Kulai, Johor Darul Ta'zim, Kulai 21 Miles",
+    "address": "138, Jalan kiambang, 13, Pusat Komersial Indah, Bandar Indahpura, 81000 Kulai, Johor Darul Ta'zim",
     "opening_hours": "8 am–7 pm",
     "category": [
       "咖啡店"
@@ -2255,7 +2255,7 @@ export const initialRestaurants = [
     "area": "Indahpura",
     "name": "LA PRIMEUR",
     "name_en": "",
-    "address": "PUSAT KOMERSIAL INDAH, 135, 13, Jalan Kiambang, Bandar Indahpura, 81000 Kulai, Johor Darul Ta'zim, Kulai 21 Miles",
+    "address": "PUSAT KOMERSIAL INDAH, 135, 13, Jalan Kiambang, Bandar Indahpura, 81000 Kulai, Johor Darul Ta'zim",
     "opening_hours": "3 pm–1 am",
     "category": [
       "西餐"
@@ -2280,7 +2280,7 @@ export const initialRestaurants = [
     "area": "Indahpura",
     "name": "The Bierhaus",
     "name_en": "",
-    "address": "134, Jln Kiambang 14, Bandar Indahpura, 81000 Kulai, Johor Darul Ta'zim, Kulai 21 Miles",
+    "address": "134, Jln Kiambang 14, Bandar Indahpura, 81000 Kulai, Johor Darul Ta'zim",
     "opening_hours": "3 pm–12:30 am",
     "category": [
       "西餐"
@@ -2305,7 +2305,7 @@ export const initialRestaurants = [
     "area": "Indahpura",
     "name": "Q HOUSE",
     "name_en": "",
-    "address": "Pusat Komersial Indah, 132 & 133, Jln Kiambang 14, Indahpura, 81000 Kulai, Johor, Kulai 21 Miles",
+    "address": "Pusat Komersial Indah, 132 & 133, Jln Kiambang 14, Indahpura, 81000 Kulai, Johor",
     "opening_hours": "11 am–11 pm",
     "category": [
       "西餐"
@@ -2330,7 +2330,7 @@ export const initialRestaurants = [
     "area": "Indahpura",
     "name": "MeatVking Bistro",
     "name_en": "",
-    "address": "Pusat Komersial Indah, 127, Jln Kiambang 14, Bandar Indahpura, 81000 Kulai, Johor Darul Ta'zim, Kulai 21 Miles",
+    "address": "Pusat Komersial Indah, 127, Jln Kiambang 14, Bandar Indahpura, 81000 Kulai, Johor Darul Ta'zim",
     "opening_hours": "12–10 pm Wed Closed",
     "category": [
       "西餐"
@@ -2355,7 +2355,7 @@ export const initialRestaurants = [
     "area": "Indahpura",
     "name": "小红凳老火锅",
     "name_en": "Siao Hong Deng Hotpot",
-    "address": "No 128, PUSAT KOMERSIAL INDAH, Jln Kiambang 14, Indahpura, 81000 Kulai, Johor, Kulai 21 Miles",
+    "address": "No 128, PUSAT KOMERSIAL INDAH, Jln Kiambang 14, Indahpura, 81000 Kulai, Johor",
     "opening_hours": "11 am–2:30 pm, 5–11 pm",
     "category": [
       "火锅烧烤"
@@ -2380,7 +2380,7 @@ export const initialRestaurants = [
     "area": "Indahpura",
     "name": "甜品轩",
     "name_en": "Dessert Library",
-    "address": "120, Jln Kiambang 14, Bandar Indahpura, 81000 Kulai, Johor Darul Ta'zim, Kulai 21 Miles",
+    "address": "120, Jln Kiambang 14, Bandar Indahpura, 81000 Kulai, Johor Darul Ta'zim",
     "opening_hours": "8.30am-9pm",
     "category": [
       "蛋糕甜点"
@@ -2405,7 +2405,7 @@ export const initialRestaurants = [
     "area": "Indahpura",
     "name": "美香龙趸鱼炉",
     "name_en": "Zen Bee Siang",
-    "address": "115, Jln Kiambang 14, Bandar Indahpura, 81000 Kulai, Johor Darul Ta'zim, Kulai 21 Miles",
+    "address": "115, Jln Kiambang 14, Bandar Indahpura, 81000 Kulai, Johor Darul Ta'zim",
     "opening_hours": "11am-11pm",
     "category": [
       "火锅烧烤"
@@ -2430,7 +2430,7 @@ export const initialRestaurants = [
     "area": "Indahpura",
     "name": "八号吐司",
     "name_en": "Eight Toast Nanyang Kopitiam",
-    "address": "196, Jalan Kiambang 12, Bandar Indahpura, 81000 Kulai, Johor Darul Ta'zim, Kulai 21 Miles",
+    "address": "196, Jalan Kiambang 12, Bandar Indahpura, 81000 Kulai, Johor Darul Ta'zim",
     "opening_hours": "7am-5.30pm",
     "category": [
       "咖啡店"
@@ -2527,7 +2527,7 @@ export const initialRestaurants = [
     "area": "Indahpura",
     "name": "芳园",
     "name_en": "Fang Yuan kopitiam",
-    "address": "188, Jalan Kiambang 12, Bandar Indahpura, 81000 Kulai, Johor Darul Ta'zim, Kulai 21 Miles",
+    "address": "188, Jalan Kiambang 12, Bandar Indahpura, 81000 Kulai, Johor Darul Ta'zim",
     "opening_hours": "8 am–5:30 pm Thusday Closed",
     "category": [
       "咖啡店"
@@ -2552,7 +2552,7 @@ export const initialRestaurants = [
     "area": "Indahpura",
     "name": "Dino House Cafe",
     "name_en": "",
-    "address": "Pusat Komersial Indah, 187, Jalan Kiambang 12, Bandar Indahpura, 81000 Kulai, Johor Darul Ta'zim, Kulai 21 Miles",
+    "address": "Pusat Komersial Indah, 187, Jalan Kiambang 12, Bandar Indahpura, 81000 Kulai, Johor Darul Ta'zim",
     "opening_hours": "11 am–11 pm Tuesday Closed",
     "category": [
       "西餐"
@@ -2577,7 +2577,7 @@ export const initialRestaurants = [
     "area": "Indahpura",
     "name": "卡路里烧烤火锅",
     "name_en": "K LOLLY STEAMBOAT & BBQ",
-    "address": "No.184 & 185, Pusat Komersial Indah, 12, Jalan Kiambang, Bandar Indahpura, 81000 Kulai, Johor Darul Ta'zim, Kulai 21 Miles",
+    "address": "No.184 & 185, Pusat Komersial Indah, 12, Jalan Kiambang, Bandar Indahpura, 81000 Kulai, Johor Darul Ta'zim",
     "opening_hours": "5–10 pm Monday closed",
     "category": [
       "火锅烧烤"
@@ -2602,7 +2602,7 @@ export const initialRestaurants = [
     "area": "Indahpura",
     "name": "慷美峰",
     "name_en": "Kang Bee Hong",
-    "address": "182, Jalan Kiambang 12, Bandar Indahpura, 81000 Kulai, Johor Darul Ta'zim, Kulai 21 Miles",
+    "address": "182, Jalan Kiambang 12, Bandar Indahpura, 81000 Kulai, Johor Darul Ta'zim",
     "opening_hours": "8 am–9 pm",
     "category": [
       "咖啡店"
@@ -2627,7 +2627,7 @@ export const initialRestaurants = [
     "area": "Indahpura",
     "name": "新莫九",
     "name_en": "RESTAURANT XIN MO GAO",
-    "address": "PUSAT KOMERSIAL INDAH, 181, Jalan Kiambang 12, Indahpura, 81000 Kulai, Johor, Kulai 21 Miles",
+    "address": "PUSAT KOMERSIAL INDAH, 181, Jalan Kiambang 12, Indahpura, 81000 Kulai, Johor",
     "opening_hours": "7 am–3 pm Thusday closed",
     "category": [
       "咖啡店"
@@ -2652,7 +2652,7 @@ export const initialRestaurants = [
     "area": "Indahpura",
     "name": "榮記魚頭爐",
     "name_en": "LoongKee",
-    "address": "Pusat Komersial Indah, 178, Jalan Kiambang 12, Indahpura, 81000 Kulai, Johor, Kulai 21 Miles",
+    "address": "Pusat Komersial Indah, 178, Jalan Kiambang 12, Indahpura, 81000 Kulai, Johor",
     "opening_hours": "2–10 pm",
     "category": [
       "火锅烧烤"
@@ -2677,7 +2677,7 @@ export const initialRestaurants = [
     "area": "Indahpura",
     "name": "探炭古来",
     "name_en": "Tan Tan Charcoal Steamboat Kulai",
-    "address": "238, Pusat Komersial Indah, Jalan Kiambang 15, Bandar Indahpura, 81000 Kulai, Johor Darul Ta'zim, Kulai 21 Miles",
+    "address": "238, Pusat Komersial Indah, Jalan Kiambang 15, Bandar Indahpura, 81000 Kulai, Johor Darul Ta'zim",
     "opening_hours": "4 pm–2 am",
     "category": [
       "火锅烧烤"
@@ -2702,7 +2702,7 @@ export const initialRestaurants = [
     "area": "Indahpura",
     "name": "东南碰碰胡咖啡店",
     "name_en": "Restoran Tong Nam PPH",
-    "address": "210, Jln Kiambang 14, Bandar Indahpura, 81000 Kulai, Johor Darul Ta'zim, Kulai 21 Miles",
+    "address": "210, Jln Kiambang 14, Bandar Indahpura, 81000 Kulai, Johor Darul Ta'zim",
     "opening_hours": "6am-12am",
     "category": [
       "咖啡店"
@@ -2727,7 +2727,7 @@ export const initialRestaurants = [
     "area": "Indahpura",
     "name": "POWERTEA",
     "name_en": "",
-    "address": "207, Jln Kiambang 14, Bandar Indahpura, 81000 Kulai, Johor Darul Ta'zim, Kulai 21 Miles",
+    "address": "207, Jln Kiambang 14, Bandar Indahpura, 81000 Kulai, Johor Darul Ta'zim",
     "opening_hours": "5.30Pm-1am",
     "category": [
       "火锅烧烤"
@@ -2752,7 +2752,7 @@ export const initialRestaurants = [
     "area": "Indahpura",
     "name": "顺发肉骨茶",
     "name_en": "Restoran Soon Fa Bat Kut Teh",
-    "address": "204 Pusat Komersial Indah, Jln Kiambang 14, Indahpura, 81000 Kulai, Kulai 21 Miles",
+    "address": "204 Pusat Komersial Indah, Jln Kiambang 14, Indahpura, 81000 Kulai",
     "opening_hours": "7:30 am–4 pm, 5:30–9:30 pm Monday Closed",
     "category": [
       "饭类"
@@ -2777,7 +2777,7 @@ export const initialRestaurants = [
     "area": "Indahpura",
     "name": "心友明",
     "name_en": "Yu Min One",
-    "address": "198, Jln Kiambang 14, taman Indahpura81000 Kulai, Johor Darul Ta'zim, Kulai 21 Miles",
+    "address": "198, Jln Kiambang 14, taman Indahpura81000 Kulai, Johor Darul Ta'zim",
     "opening_hours": "4pm-12am",
     "category": [
       "饭类",
@@ -2828,7 +2828,7 @@ export const initialRestaurants = [
     "area": "Indahpura",
     "name": "赞面馆",
     "name_en": "Like Mee Noodle House",
-    "address": "231, Jalan Kiambang 15, Bandar Indahpura, 81000 Kulai, Johor Darul Ta'zim, Kulai 21 Miles",
+    "address": "231, Jalan Kiambang 15, Bandar Indahpura, 81000 Kulai, Johor Darul Ta'zim",
     "opening_hours": "10 am–9:30 pm",
     "category": [
       "粉类"
@@ -2853,7 +2853,7 @@ export const initialRestaurants = [
     "area": "Indahpura",
     "name": "佳香点心茶楼",
     "name_en": "Jiah Xiang Dim Sum",
-    "address": "Pusat komersial Indah, 229 & 230, Jalan Kiambang 15, Bandar Indahpura, 81000 Kulai, Johor Darul Ta'zim, Kulai 21 Miles",
+    "address": "Pusat komersial Indah, 229 & 230, Jalan Kiambang 15, Bandar Indahpura, 81000 Kulai, Johor Darul Ta'zim",
     "opening_hours": "7am-3pm",
     "category": [
       "点心"
@@ -2878,7 +2878,7 @@ export const initialRestaurants = [
     "area": "Indahpura",
     "name": "笨珍风味肉骨茶",
     "name_en": "LNP PONTIAN FLAVOR BAK KUT TEH",
-    "address": "289, Jln Kiambang 11, Bandar Indahpura, 81000 Kulai, Johor Darul Ta'zim, Kulai 21 Miles",
+    "address": "289, Jln Kiambang 11, Bandar Indahpura, 81000 Kulai, Johor Darul Ta'zim",
     "opening_hours": "",
     "category": [
       "饭类"
@@ -2903,7 +2903,7 @@ export const initialRestaurants = [
     "area": "Indahpura",
     "name": "佳旺甜品",
     "name_en": "JustWant Dessert",
-    "address": "Pusat Komersial Indah, 289, Jln Kiambang 11, Bandar Indahpura, 81000 Kulai, Johor Darul Ta'zim, Kulai 21 Miles",
+    "address": "Pusat Komersial Indah, 289, Jln Kiambang 11, Bandar Indahpura, 81000 Kulai, Johor Darul Ta'zim",
     "opening_hours": "12–10 pm Wed Closed",
     "category": [
       "蛋糕甜点"
@@ -2928,7 +2928,7 @@ export const initialRestaurants = [
     "area": "Indahpura",
     "name": "回味生肉面",
     "name_en": "JS Tasty Restaurant",
-    "address": "Pusat Komersial Indah, 285, Jln Kiambang 11, Bandar Indahpura, 81000 Kulai, Johor Darul Ta'zim, Kulai 21 Miles",
+    "address": "Pusat Komersial Indah, 285, Jln Kiambang 11, Bandar Indahpura, 81000 Kulai, Johor Darul Ta'zim",
     "opening_hours": "8 am–3 pm, 5:30–9 pm Mon Closed",
     "category": [
       "粉类"
@@ -2953,7 +2953,7 @@ export const initialRestaurants = [
     "area": "Indahpura",
     "name": "黄凤娣面粉粿专卖店",
     "name_en": "",
-    "address": "No 283, PUSAT KOMERSIAL INDAH, Jln Kiambang 11, Bandar Indahpura, 81000 Kulai, Johor Darul Ta'zim, Kulai 21 Miles",
+    "address": "No 283, PUSAT KOMERSIAL INDAH, Jln Kiambang 11, Bandar Indahpura, 81000 Kulai, Johor Darul Ta'zim",
     "opening_hours": "9 am–3 pm, 5–9 pm",
     "category": [
       "粉类"
@@ -2978,7 +2978,7 @@ export const initialRestaurants = [
     "area": "Indahpura",
     "name": "夫妻坊小厨房",
     "name_en": "Fu Qi Fang",
-    "address": "PTD 110707, Jln Kiambang 11, Bandar Indahpura, 81000 Kulai, Johor Darul Ta'zim, Kulai 21 Miles",
+    "address": "PTD 110707, Jln Kiambang 11, Bandar Indahpura, 81000 Kulai, Johor Darul Ta'zim",
     "opening_hours": "",
     "category": [
       "咖啡店"
@@ -3075,7 +3075,7 @@ export const initialRestaurants = [
     "area": "Indahpura",
     "name": "王奶奶面粉粿",
     "name_en": "Grandma Ong",
-    "address": "NO. 276, Pusat Komersial Indah, Jln Kiambang 11, Bandar Indahpura, 81000 Kulai, Johor Darul Ta'zim, Kulai 21 Miles",
+    "address": "NO. 276, Pusat Komersial Indah, Jln Kiambang 11, Bandar Indahpura, 81000 Kulai, Johor Darul Ta'zim",
     "opening_hours": "9:30 am–3 pm, 5:30–8:30 pm",
     "category": [
       "粉类"
@@ -3100,7 +3100,7 @@ export const initialRestaurants = [
     "area": "Indahpura",
     "name": "村天",
     "name_en": "My Cafe",
-    "address": "No. 273, Pusat Komersial Indah, Jln Kiambang 11, Indahpura, 81000 Kulai, Johor, Kulai 21 Miles",
+    "address": "No. 273, Pusat Komersial Indah, Jln Kiambang 11, Indahpura, 81000 Kulai, Johor",
     "opening_hours": "8 am–8:45 pm",
     "category": [
       "Cafe"
@@ -3125,7 +3125,7 @@ export const initialRestaurants = [
     "area": "Indahpura",
     "name": "马口手工面粉粿专卖店",
     "name_en": "Restoran Bahao",
-    "address": "268, Jln Kiambang 11, virvo city indahpura, 81000 Kulai, Johor Darul Ta'zim, Kulai 21 Miles",
+    "address": "268, Jln Kiambang 11, virvo city indahpura, 81000 Kulai, Johor Darul Ta'zim",
     "opening_hours": "9 am–8:30 pm Tuesday Closed",
     "category": [
       "粉类"
@@ -3150,7 +3150,7 @@ export const initialRestaurants = [
     "area": "Indahpura",
     "name": "沪上阿姨",
     "name_en": "Auntea Jenny",
-    "address": "269, Jln Kiambang 11, Bandar Indahpura, 81000 Kulai, Johor Darul Ta'zim, Kulai 21 Miles",
+    "address": "269, Jln Kiambang 11, Bandar Indahpura, 81000 Kulai, Johor Darul Ta'zim",
     "opening_hours": "11 am–10 pm",
     "category": [
       "饮品"
@@ -3175,7 +3175,7 @@ export const initialRestaurants = [
     "area": "Indahpura",
     "name": "古来花火本屋",
     "name_en": "Hanabi Robata Izakaya Kulai",
-    "address": "No.294H, PUSAT KOMERSIAL INDAH, Jln Kiambang 11, Bandar Indahpura, 81000 Kulai, Johor Darul Ta'zim, Kulai 21 Miles",
+    "address": "No.294H, PUSAT KOMERSIAL INDAH, Jln Kiambang 11, Bandar Indahpura, 81000 Kulai, Johor Darul Ta'zim",
     "opening_hours": "12–11 pm",
     "category": [
       "日本餐"
@@ -3200,7 +3200,7 @@ export const initialRestaurants = [
     "area": "Indahpura",
     "name": "逗工厂",
     "name_en": "Beans.Factory",
-    "address": "Pusat Komersial Indah, 294M, Jalan Kiambang 12, Bandar Indahpura, 81000 Kulai, Johor Darul Ta'zim, Kulai 21 Miles",
+    "address": "Pusat Komersial Indah, 294M, Jalan Kiambang 12, Bandar Indahpura, 81000 Kulai, Johor Darul Ta'zim",
     "opening_hours": "12:30 pm–12 am",
     "category": [
       "蛋糕甜点"
@@ -3225,7 +3225,7 @@ export const initialRestaurants = [
     "area": "Indahpura",
     "name": "琥珀时光",
     "name_en": "Aunt Vicky",
-    "address": "Pusat Komersial Indah, 294N, Jalan Kiambang 12, Indahpura, 81000 Kulai, Johor, Kulai 21 Miles",
+    "address": "Pusat Komersial Indah, 294N, Jalan Kiambang 12, Indahpura, 81000 Kulai, Johor",
     "opening_hours": "8 am–7:30 pm Tuesday Closed",
     "category": [
       "西餐"
@@ -3250,7 +3250,7 @@ export const initialRestaurants = [
     "area": "Indahpura",
     "name": "Hinokage Kulai 火の影",
     "name_en": "",
-    "address": "No.294E, Pusat Komersial Indah, Jln Kiambang 11, Bandar Indahpura, 81000 Kulai, Johor Darul Ta'zim, Kulai 21 Miles",
+    "address": "No.294E, Pusat Komersial Indah, Jln Kiambang 11, Bandar Indahpura, 81000 Kulai, Johor Darul Ta'zim",
     "opening_hours": "12–11 pm",
     "category": [
       "日本餐"
@@ -3323,7 +3323,7 @@ export const initialRestaurants = [
     "area": "Indahpura",
     "name": "川食府",
     "name_en": "",
-    "address": "No 255, Pusat Komersial Indah, Jalan Kiambang 10, Bandar Indahpura, 81000 Kulai, Johor Darul Ta'zim, Kulai 21 Miles",
+    "address": "No 255, Pusat Komersial Indah, Jalan Kiambang 10, Bandar Indahpura, 81000 Kulai, Johor Darul Ta'zim",
     "opening_hours": "11:49 am–3:31 pm, 5:31–10:31 pm",
     "category": [
       "煮炒海鲜楼"
@@ -3348,7 +3348,7 @@ export const initialRestaurants = [
     "area": "Indahpura",
     "name": "K PATISSERIE",
     "name_en": "",
-    "address": "253a, Jalan Kiambang 10, Bandar Indahpura, 81000 Kulai, Johor Darul Ta'zim, Kulai 21 Miles",
+    "address": "253a, Jalan Kiambang 10, Bandar Indahpura, 81000 Kulai, Johor Darul Ta'zim",
     "opening_hours": "11 am–7 pm",
     "category": [
       "蛋糕甜点"
@@ -3373,7 +3373,7 @@ export const initialRestaurants = [
     "area": "Indahpura",
     "name": "Alliews Bakehouse",
     "name_en": "",
-    "address": "Pusat Komersial Indah, 252 & 253, Jalan Kiambang 10, Bandar Indahpura, 81000 Kulai, Johor Darul Ta'zim, Kulai 21 Miles",
+    "address": "Pusat Komersial Indah, 252 & 253, Jalan Kiambang 10, Bandar Indahpura, 81000 Kulai, Johor Darul Ta'zim",
     "opening_hours": "9 am–5 pm",
     "category": [
       "蛋糕甜点"
@@ -3398,7 +3398,7 @@ export const initialRestaurants = [
     "area": "Indahpura",
     "name": "华美",
     "name_en": "Restoran Hua Mui",
-    "address": "251, Pusat Komersial Indah, Jalan Kiambang 10, Bandar Indahpura, 81000 Kulai, Johor Darul Ta'zim, Kulai 21 Miles",
+    "address": "251, Pusat Komersial Indah, Jalan Kiambang 10, Bandar Indahpura, 81000 Kulai, Johor Darul Ta'zim",
     "opening_hours": "8 am–8:30 pm",
     "category": [
       "咖啡店"
@@ -3423,7 +3423,7 @@ export const initialRestaurants = [
     "area": "Indahpura",
     "name": "财记鱼汤",
     "name_en": "Chai Ji Fish Soup",
-    "address": "Pusat Komersial Indah, 250, Jalan Kiambang 10, Bandar Indahpura, 81000 Kulai, Johor Darul Ta'zim, Kulai 21 Miles",
+    "address": "Pusat Komersial Indah, 250, Jalan Kiambang 10, Bandar Indahpura, 81000 Kulai, Johor Darul Ta'zim",
     "opening_hours": "10 am–10 pm",
     "category": [
       "粉类"
@@ -3448,7 +3448,7 @@ export const initialRestaurants = [
     "area": "Indahpura",
     "name": "Uncle Lim Delivery",
     "name_en": "",
-    "address": "249， Pusat Komersial Indah, PTD 110674, Jalan Kiambang 10, Bandar Indahpura, 81000 Kulai, Johor Darul Ta'zim, Kulai 21 Miles",
+    "address": "249， Pusat Komersial Indah, PTD 110674, Jalan Kiambang 10, Bandar Indahpura, 81000 Kulai, Johor Darul Ta'zim",
     "opening_hours": "10 am–9:30 pm",
     "category": [
       "咖啡店"
@@ -3473,7 +3473,7 @@ export const initialRestaurants = [
     "area": "Indahpura",
     "name": "古来99冷气酒家",
     "name_en": "",
-    "address": "41 Jalan SME 2 Kawasan, Perindustrian SME, Bandar Indahpura, 81000 Kulai, Johor Darul Ta'zim, Kulai 21 Miles",
+    "address": "41 Jalan SME 2 Kawasan, Perindustrian SME, Bandar Indahpura, 81000 Kulai, Johor Darul Ta'zim",
     "opening_hours": "10 am–3 pm, 5–10 pm",
     "category": [
       "宴会酒楼"
@@ -3498,7 +3498,7 @@ export const initialRestaurants = [
     "area": "Indahpura",
     "name": "怡沁园素味馆",
     "name_en": "Restaurant Yi Sin (Vegeterian)",
-    "address": "40, Jalan SME 2, Bandar Indahpura, 81000 Kulai, Johor Darul Ta'zim, Kulai 21 Miles",
+    "address": "40, Jalan SME 2, Bandar Indahpura, 81000 Kulai, Johor Darul Ta'zim",
     "opening_hours": "10 am–10 pm",
     "category": [
       "素食"
@@ -3523,7 +3523,7 @@ export const initialRestaurants = [
     "area": "Indahpura",
     "name": "馨馨点心",
     "name_en": "Xin Xin Dian Xin",
-    "address": "Kawasan Perindustrian SME, 33, Jalan SME 2, Indahpura, 81000 Kulai, Johor, Kulai 21 Miles",
+    "address": "Kawasan Perindustrian SME, 33, Jalan SME 2, Indahpura, 81000 Kulai, Johor",
     "opening_hours": "7 am–2 pm Tuesday Closed",
     "category": [
       "咖啡店",
@@ -3550,7 +3550,7 @@ export const initialRestaurants = [
     "area": "Indahpura",
     "name": "潮汕楼",
     "name_en": "Restoran Chao Shan",
-    "address": "23 jalan SME 2, kawansan perindustrian SME, Indahpura, 81000 Kulai, Johor, Kulai 21 Miles",
+    "address": "23 jalan SME 2, kawansan perindustrian SME, Indahpura, 81000 Kulai, Johor",
     "opening_hours": "11:30 am–2:45 pm, 5:15–9:15 pm",
     "category": [
       "宴会酒楼"
@@ -4166,7 +4166,7 @@ export const initialRestaurants = [
     "area": "Indahpura",
     "name": "罗记小食馆",
     "name_en": "Restoran Law Cafe",
-    "address": "488, Jalan Kenanga 29/14, Bandar Indahpura, 81000 Kulai, Johor Darul Ta'zim, Kulai 21 Miles",
+    "address": "488, Jalan Kenanga 29/14, Bandar Indahpura, 81000 Kulai, Johor Darul Ta'zim",
     "opening_hours": "6:45 am–4:15 pm Wed Closed",
     "category": [
       "Cafe"
@@ -4191,7 +4191,7 @@ export const initialRestaurants = [
     "area": "Indahpura",
     "name": "酿品家餐厅",
     "name_en": "酿品家餐厅",
-    "address": "487, Jalan Kenanga 29/14, Bandar Indahpura, 81000 Kulai, Johor Darul Ta'zim, Kulai 21 Miles",
+    "address": "487, Jalan Kenanga 29/14, Bandar Indahpura, 81000 Kulai, Johor Darul Ta'zim",
     "opening_hours": "6:30 am–3 pm Tuesday closed",
     "category": [
       "粉类"
@@ -4216,7 +4216,7 @@ export const initialRestaurants = [
     "area": "Indahpura",
     "name": "鼎點心",
     "name_en": "Ding DimSum",
-    "address": "459, Jalan Kenanga 29/13, Bandar Indahpura, 81000 Kulai, Johor Darul Ta'zim, Kulai 21 Miles",
+    "address": "459, Jalan Kenanga 29/13, Bandar Indahpura, 81000 Kulai, Johor Darul Ta'zim",
     "opening_hours": "7 am–4:30 pm Tue closed",
     "category": [
       "点心"
@@ -4241,7 +4241,7 @@ export const initialRestaurants = [
     "area": "Indahpura",
     "name": "客家小食馆",
     "name_en": "Kejia cafe",
-    "address": "340, Bandar Indahpura, 81000 Kulai, Johor Darul Ta'zim, Kulai 21 Miles",
+    "address": "340, Bandar Indahpura, 81000 Kulai, Johor Darul Ta'zim",
     "opening_hours": "8 am–3 pm Mon closed",
     "category": [
       "Cafe"
@@ -4266,7 +4266,7 @@ export const initialRestaurants = [
     "area": "Indahpura",
     "name": "老巴刹",
     "name_en": "Lao Pa Sat Kopitiam",
-    "address": "306, Jalan Kenanga 29/9, Bandar Indahpura, 81000 Kulai, Johor Darul Ta'zim, Kulai 21 Miles",
+    "address": "306, Jalan Kenanga 29/9, Bandar Indahpura, 81000 Kulai, Johor Darul Ta'zim",
     "opening_hours": "8:30 am–8:30 pm",
     "category": [
       "咖啡店"
@@ -4291,7 +4291,7 @@ export const initialRestaurants = [
     "area": "Indahpura",
     "name": "AkiNo Japanese Restaurant",
     "name_en": "AkiNo Japanese Restaurant",
-    "address": "307, Jalan Kenanga 29/9, Bandar Indahpura, 81000 Kulai, Johor Darul Ta'zim, Kulai 21 Miles",
+    "address": "307, Jalan Kenanga 29/9, Bandar Indahpura, 81000 Kulai, Johor Darul Ta'zim",
     "opening_hours": "12–3 pm, 5:30–9:30 pm",
     "category": [
       "日本餐"
@@ -4316,7 +4316,7 @@ export const initialRestaurants = [
     "area": "Indahpura",
     "name": "六月西餐厅",
     "name_en": "June Coffee Grill & Spaghetti",
-    "address": "303, Jalan Kenanga 29/9, Bandar Indahpura, 81000 Kulai, Johor Darul Ta'zim, Kulai 21 Miles",
+    "address": "303, Jalan Kenanga 29/9, Bandar Indahpura, 81000 Kulai, Johor Darul Ta'zim",
     "opening_hours": "11 am–10 pm",
     "category": [
       "西餐"
@@ -4341,7 +4341,7 @@ export const initialRestaurants = [
     "area": "Indahpura",
     "name": "泰啦啦",
     "name_en": "THAI LALA",
-    "address": "352, Jalan Kenanga 29/9, Bandar Indahpura, 81000 Kulai, Johor Darul Ta'zim, Kulai 21 Miles",
+    "address": "352, Jalan Kenanga 29/9, Bandar Indahpura, 81000 Kulai, Johor Darul Ta'zim",
     "opening_hours": "12 pm–12 am",
     "category": [
       "泰国餐"
@@ -5086,7 +5086,7 @@ export const initialRestaurants = [
     "area": "Indahpura",
     "name": "MeatVking Bistro",
     "name_en": "",
-    "address": "Pusat Komersial Indah, 127, Jln Kiambang 14, Bandar Indahpura, 81000 Kulai, Johor Darul Ta'zim, Kulai 21 Miles",
+    "address": "Pusat Komersial Indah, 127, Jln Kiambang 14, Bandar Indahpura, 81000 Kulai, Johor Darul Ta'zim",
     "opening_hours": "12–10 pm Wed Closed",
     "category": [
       "西餐"
@@ -5135,7 +5135,7 @@ export const initialRestaurants = [
     "area": "Indahpura",
     "name": "Ma Chin All Steamboat Restaurant",
     "name_en": "",
-    "address": "590, Jalan Kenanga 29/19, Bandar Indahpura, 81000 Kulai, Johor Darul Ta'zim, Kulai 21 Miles",
+    "address": "590, Jalan Kenanga 29/19, Bandar Indahpura, 81000 Kulai, Johor Darul Ta'zim",
     "opening_hours": "11 am–12 am",
     "category": [
       "火锅烧烤"
@@ -5329,7 +5329,7 @@ export const initialRestaurants = [
     "id": 219,
     "name": "风川得素食餐厅",
     "name_en": "Restoran Sayur-sayuran Fong Chuan",
-    "address": "56, Jalan Anggerik 3, Taman Kulai Utama, 81000 Kulai, Johor Darul Ta'zim, Kulai 21 Miles",
+    "address": "56, Jalan Anggerik 3, Taman Kulai Utama, 81000 Kulai, Johor Darul Ta'zim",
     "opening_hours": "9 am–9:30 pm",
     "category": [
       "素食"
@@ -5354,7 +5354,7 @@ export const initialRestaurants = [
     "area": "Indahpura",
     "name": "Uncle Don's",
     "name_en": "",
-    "address": "229 & 229-A, Jalan Kenanga 29/2, Bandar Indahpura, 81000 Kulai, Johor Darul Ta'zim, Kulai 21 Miles",
+    "address": "229 & 229-A, Jalan Kenanga 29/2, Bandar Indahpura, 81000 Kulai, Johor Darul Ta'zim",
     "opening_hours": "12 pm–12am",
     "category": [
       "Cafe",
@@ -5381,7 +5381,7 @@ export const initialRestaurants = [
     "area": "Indahpura",
     "name": "罗记小食馆",
     "name_en": "Law Cafe",
-    "address": "488, Jalan Kenanga 29/14, Bandar Indahpura, 81000 Kulai, Johor Darul Ta'zim, Kulai 21 Miles",
+    "address": "488, Jalan Kenanga 29/14, Bandar Indahpura, 81000 Kulai, Johor Darul Ta'zim",
     "opening_hours": "6:45 am–4:15 pm Wed closed",
     "category": [
       "Cafe"
@@ -5454,7 +5454,7 @@ export const initialRestaurants = [
     "area": "Indahpura",
     "name": "Anmour cafe",
     "name_en": "",
-    "address": "227, Jalan Kenanga 29/2, Bandar Indahpura, 81000 Kulai, Johor Darul Ta'zim, Kulai 21 Miles",
+    "address": "227, Jalan Kenanga 29/2, Bandar Indahpura, 81000 Kulai, Johor Darul Ta'zim",
     "opening_hours": "12–9:45 pm",
     "category": [
       "西餐",
@@ -5481,7 +5481,7 @@ export const initialRestaurants = [
     "area": "Indahpura",
     "name": "绿园",
     "name_en": "Restaurant Evergreen",
-    "address": "L1-05 & L1-06, 291, Jalan Kiambang 10, Indahpura, 81000 Kulai, Johor, Kulai 21 Miles",
+    "address": "L1-05 & L1-06, 291, Jalan Kiambang 10, Indahpura, 81000 Kulai, Johor",
     "opening_hours": "8 am–10 pm",
     "category": [
       "煮炒海鲜楼"
@@ -5506,7 +5506,7 @@ export const initialRestaurants = [
     "area": "Indahpura",
     "name": "Nache's Oven Nutri & Wellness Cafe",
     "name_en": "",
-    "address": "238A, Jln Kenanga 29/8, Taman Indahpura, 81000 Kulai, Johor, Kulai 21 Miles",
+    "address": "238A, Jln Kenanga 29/8, Taman Indahpura, 81000 Kulai, Johor",
     "opening_hours": "10:30 am–9:30 pm Tu closed",
     "category": [
       "健康餐",
@@ -5728,7 +5728,7 @@ export const initialRestaurants = [
     "area": "Indahpura",
     "name": "Ai-CHA • Bandar Indahpura",
     "name_en": "",
-    "address": "5239, Jalan Matahari, Bandar Indahpura, 81000 Kulai, Johor Darul Ta'zim, Kulai 21 Miles",
+    "address": "5239, Jalan Matahari, Bandar Indahpura, 81000 Kulai, Johor Darul Ta'zim",
     "opening_hours": "11 am–11:30 pm",
     "category": [
       "饮品"
@@ -5753,7 +5753,7 @@ export const initialRestaurants = [
     "area": "Indahpura",
     "name": "翠竹园海鲜饭馆",
     "name_en": "",
-    "address": "5229, Jalan Matahari, Bandar Indahpura, 81000 Kulai, Johor Darul Ta'zim, Kulai 21 Miles",
+    "address": "5229, Jalan Matahari, Bandar Indahpura, 81000 Kulai, Johor Darul Ta'zim",
     "opening_hours": "3–11 pm",
     "category": [
       "煮炒海鲜楼"
@@ -5778,7 +5778,7 @@ export const initialRestaurants = [
     "area": "Indahpura",
     "name": "一品川香",
     "name_en": "Yi Pin Chuan Xiang",
-    "address": "220, Pusat komercial indah, Jln Kiambang 14, Bandar Indahpura, 81000 Kulai, Johor Darul Ta'zim, Kulai 21 Miles",
+    "address": "220, Pusat komercial indah, Jln Kiambang 14, Bandar Indahpura, 81000 Kulai, Johor Darul Ta'zim",
     "opening_hours": "11 am–11 pm",
     "category": [
       "中国餐"
@@ -5803,7 +5803,7 @@ export const initialRestaurants = [
     "area": "Indahpura",
     "name": "吃潮烧烤",
     "name_en": "Tong Nam",
-    "address": "210, Jln Kiambang 14, Bandar Indahpura, 81000 Kulai, Johor Darul Ta'zim, Kulai 21 Miles",
+    "address": "210, Jln Kiambang 14, Bandar Indahpura, 81000 Kulai, Johor Darul Ta'zim",
     "opening_hours": "6:30 am–4 am",
     "category": [
       "火锅烧烤"
@@ -5828,7 +5828,7 @@ export const initialRestaurants = [
     "area": "Indahpura",
     "name": "嘉延食馆",
     "name_en": "Garden Restaurant",
-    "address": "1, Jln Kiambang 2, Pusat Komersial Indah, Bandar Indahpura, 81000 Kulai, Johor Darul Ta'zim, Kulai 21 Miles",
+    "address": "1, Jln Kiambang 2, Pusat Komersial Indah, Bandar Indahpura, 81000 Kulai, Johor Darul Ta'zim",
     "opening_hours": "11:30 am–3 pm, 5:30–10 pm",
     "category": [
       "煮炒海鲜楼",
@@ -5855,7 +5855,7 @@ export const initialRestaurants = [
     "area": "Indahpura",
     "name": "Kopi Tenggek",
     "name_en": "",
-    "address": "7, Jln Kiambang 2, Bandar Indahpura, 81000 Kulai, Johor Darul Ta'zim, Kulai 21 Miles",
+    "address": "7, Jln Kiambang 2, Bandar Indahpura, 81000 Kulai, Johor Darul Ta'zim",
     "opening_hours": "7 am–11:30 pm Wed closed",
     "category": [
       "马来餐"
@@ -5880,7 +5880,7 @@ export const initialRestaurants = [
     "area": "Indahpura",
     "name": "古来东甲牛腩面",
     "name_en": "Tangkak Beef Kulai",
-    "address": "Johor, Kulai, Indahpura, Jln Kiambang 2, 邮政编码: 81000, Kulai 21 Miles",
+    "address": "Johor, Kulai, Indahpura, Jln Kiambang 2, 邮政编码: 81000",
     "opening_hours": "8 am–5 pm",
     "category": [
       "粉类"
@@ -5905,7 +5905,7 @@ export const initialRestaurants = [
     "area": "Indahpura",
     "name": "简单厨房",
     "name_en": "Simple Recipe",
-    "address": "46, Jln Kiambang 3, Taman Indahpura, 81000 Kulai, Johor Darul Ta'zim, Kulai 21 Miles",
+    "address": "46, Jln Kiambang 3, Taman Indahpura, 81000 Kulai, Johor Darul Ta'zim",
     "opening_hours": "7:30 am–6 pm Mon closed",
     "category": [
       "Cafe"
@@ -5930,7 +5930,7 @@ export const initialRestaurants = [
     "area": "Indahpura",
     "name": "湘渝楼",
     "name_en": "Xiang Yu Lou",
-    "address": "Pusat Komerrsial Indah, 36, Jln Kiambang 3, Indahpura, 81000 Kulai, Johor, Kulai 21 Miles",
+    "address": "Pusat Komerrsial Indah, 36, Jln Kiambang 3, Indahpura, 81000 Kulai, Johor",
     "opening_hours": "11 am–3 pm, 4–10 pm",
     "category": [
       "中国餐"
@@ -5955,7 +5955,7 @@ export const initialRestaurants = [
     "area": "Indahpura",
     "name": "幼龄状元茶楼",
     "name_en": "Champion Tea House",
-    "address": "Pusat Komersial Indah, 101, Jalan Kiambang 5, Bandar Indahpura, 81000 Kulai, Johor Darul Ta'zim, Kulai 21 Miles",
+    "address": "Pusat Komersial Indah, 101, Jalan Kiambang 5, Bandar Indahpura, 81000 Kulai, Johor Darul Ta'zim",
     "opening_hours": "9 am–6 pm Sunday Closed",
     "category": [
       "Cafe"
@@ -5980,7 +5980,7 @@ export const initialRestaurants = [
     "area": "Indahpura",
     "name": "Wallace Kulai Indahpura",
     "name_en": "",
-    "address": "175, Jalan Kenanga 29/4, Bandar Indahpura, 81000 Kulai, Johor Darul Ta'zim, Kulai 21 Miles",
+    "address": "175, Jalan Kenanga 29/4, Bandar Indahpura, 81000 Kulai, Johor Darul Ta'zim",
     "opening_hours": "10 am–10 pm",
     "category": [
       "快餐"
@@ -6005,7 +6005,7 @@ export const initialRestaurants = [
     "area": "Indahpura",
     "name": "小福水饺麻辣烫",
     "name_en": "I'm Star Mala Soup & Dumplings",
-    "address": "187, Jalan Kenanga 29/4, Bandar Indahpura, 81000 Kulai, Johor Darul Ta'zim, Kulai 21 Miles",
+    "address": "187, Jalan Kenanga 29/4, Bandar Indahpura, 81000 Kulai, Johor Darul Ta'zim",
     "opening_hours": "11:30 am–10 pm Tue closed",
     "category": [
       "中国餐"
@@ -6030,7 +6030,7 @@ export const initialRestaurants = [
     "area": "Indahpura",
     "name": "桑拿面，美滋胃 x 养心锅",
     "name_en": "Young Sanna Mee",
-    "address": "186 Jalan Kenanga 29/4, Bandar Indahpura Kulai, 81000 Johor Bahru, Johor Darul Ta'zim, Kulai 21 Miles",
+    "address": "186 Jalan Kenanga 29/4, Bandar Indahpura Kulai, 81000 Johor Bahru, Johor Darul Ta'zim",
     "opening_hours": "11 am–11 pm",
     "category": [
       "火锅烧烤"
@@ -6055,7 +6055,7 @@ export const initialRestaurants = [
     "area": "Indahpura",
     "name": "发喜靓",
     "name_en": "Fatt Hei Len Kulai",
-    "address": "65 64, Jalan Kenanga 29/5, Bandar Indahpura, 81000 Kulai, Johor Darul Ta'zim, Kulai 21 Miles",
+    "address": "65 64, Jalan Kenanga 29/5, Bandar Indahpura, 81000 Kulai, Johor Darul Ta'zim",
     "opening_hours": "11 am–3 pm, 5–10 pm",
     "category": [
       "煮炒海鲜楼"
@@ -6080,7 +6080,7 @@ export const initialRestaurants = [
     "area": "Indahpura",
     "name": "First Class Bar & Club Kulai",
     "name_en": "",
-    "address": "68, Jln. Kenanga 29/11, Bandar Indahpura, 81000 Kulai, Johor Darul Ta'zim, Kulai 21 Miles",
+    "address": "68, Jln. Kenanga 29/11, Bandar Indahpura, 81000 Kulai, Johor Darul Ta'zim",
     "opening_hours": "12–6 am, 8:30 pm–12 am",
     "category": [
       "酒吧"
@@ -6105,7 +6105,7 @@ export const initialRestaurants = [
     "area": "Indahpura",
     "name": "給麵子",
     "name_en": "Noodles Q",
-    "address": "121, Jalan Kenanga 29/6, Taman Indahpura, 81000 Kulai, Johor Darul Ta'zim, Kulai 21 Miles",
+    "address": "121, Jalan Kenanga 29/6, Taman Indahpura, 81000 Kulai, Johor Darul Ta'zim",
     "opening_hours": "9 am–6 pm",
     "category": [
       "粉类"
@@ -6130,7 +6130,7 @@ export const initialRestaurants = [
     "area": "Indahpura",
     "name": "白宫海鲜药膳",
     "name_en": "The East Court",
-    "address": "133, Jalan Kenanga 29/6, Bandar Indahpura, 81000 Kulai, Johor Darul Ta'zim, Kulai 21 Miles",
+    "address": "133, Jalan Kenanga 29/6, Bandar Indahpura, 81000 Kulai, Johor Darul Ta'zim",
     "opening_hours": "11 am–9 pm",
     "category": [
       "煮炒海鲜楼"
@@ -6155,7 +6155,7 @@ export const initialRestaurants = [
     "area": "Indahpura",
     "name": "心聚鲜",
     "name_en": "All Heart Recipe",
-    "address": "62&63, Bandar Indahpura, 81000 johor, Johor Darul Ta'zim, Kulai 21 Miles",
+    "address": "62&63, Bandar Indahpura, 81000 johor, Johor Darul Ta'zim",
     "opening_hours": "11:30 am–2:30 pm, 5:30–11 pm",
     "category": [
       "煮炒海鲜楼"
@@ -6180,7 +6180,7 @@ export const initialRestaurants = [
     "area": "Indahpura",
     "name": "宏业咖啡店",
     "name_en": "Restoran Kopitiam Hong Ye",
-    "address": "Jalan Kenanga 29/9, Bandar Indahpura, 81000 Kulai, Johor Darul Ta'zim, Kulai 21 Miles",
+    "address": "Jalan Kenanga 29/9, Bandar Indahpura, 81000 Kulai, Johor Darul Ta'zim",
     "opening_hours": "6 am–1 pm Wed closed",
     "category": [
       "咖啡店"
@@ -6205,7 +6205,7 @@ export const initialRestaurants = [
     "area": "Indahpura",
     "name": "大顺好食汇",
     "name_en": "Shun Delicious Food Valley",
-    "address": "325, Jalan Kenanga 29/9, Bandar Indahpura, 81000 Kulai, Johor Darul Ta'zim, Kulai 21 Miles",
+    "address": "325, Jalan Kenanga 29/9, Bandar Indahpura, 81000 Kulai, Johor Darul Ta'zim",
     "opening_hours": "8 am–3:30 pm Fri closed",
     "category": [
       "咖啡店"
@@ -6230,7 +6230,7 @@ export const initialRestaurants = [
     "area": "Indahpura",
     "name": "三好餐厅",
     "name_en": "Best 3 Cafe",
-    "address": "330, Jalan Kenanga 29/9, Bandar Indahpura, 81000 Kulai, Johor Darul Ta'zim, Kulai 21 Miles",
+    "address": "330, Jalan Kenanga 29/9, Bandar Indahpura, 81000 Kulai, Johor Darul Ta'zim",
     "opening_hours": "8 am–5 pm",
     "category": [
       "Cafe"
@@ -6255,7 +6255,7 @@ export const initialRestaurants = [
     "area": "Indahpura",
     "name": "广东街",
     "name_en": "",
-    "address": "345, Jalan Kenanga 29/9, Bandar Indahpura, 81000 Kulai, Johor Darul Ta'zim, Kulai 21 Miles",
+    "address": "345, Jalan Kenanga 29/9, Bandar Indahpura, 81000 Kulai, Johor Darul Ta'zim",
     "opening_hours": "7:30 am–4:30 pm",
     "category": [
       "咖啡店"
@@ -6280,7 +6280,7 @@ export const initialRestaurants = [
     "area": "Indahpura",
     "name": "GC Good Coffee",
     "name_en": "",
-    "address": "242, Jln Kenanga 29/8, Indahpura, 81000 Kulai, Johor, Kulai 21 Miles",
+    "address": "242, Jln Kenanga 29/8, Indahpura, 81000 Kulai, Johor",
     "opening_hours": "7:30 am–7:30 pm",
     "category": [
       "Cafe"
@@ -6305,7 +6305,7 @@ export const initialRestaurants = [
     "area": "Indahpura",
     "name": "九億廚房",
     "name_en": "JiuYi Kitchen@Indahpura",
-    "address": "163, Jalan Kenanga 29/4, Bandar Indahpura, 81000 Kulai, Johor Darul Ta'zim, Kulai 21 Miles",
+    "address": "163, Jalan Kenanga 29/4, Bandar Indahpura, 81000 Kulai, Johor Darul Ta'zim",
     "opening_hours": "",
     "category": [],
     "categories": [],
@@ -6326,10 +6326,16 @@ export const initialRestaurants = [
     "area": "Indahpura",
     "name": "Frenche Roast Cafe",
     "name_en": "",
-    "address": "185A, Jalan Kenanga 29/4, Bandar Indahpura, 81000 Kulai, Johor Darul Ta'zim, Kulai 21 Miles",
+    "address": "185A, Jalan Kenanga 29/4, Bandar Indahpura, 81000 Kulai, Johor Darul Ta'zim",
     "opening_hours": "8 am–9 pm",
-    "category": ["Cafe","西餐"],
-    "categories": ["Cafe","西餐"],
+    "category": [
+      "Cafe",
+      "西餐"
+    ],
+    "categories": [
+      "Cafe",
+      "西餐"
+    ],
     "rating": 0,
     "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT_85M8UPyZ5Mmcy6ZKuz6I7vfokr9mCPVlnA&s",
     "subStalls": [],
@@ -6347,10 +6353,16 @@ export const initialRestaurants = [
     "area": "Indahpura",
     "name": "UFB - Union Fashion Bar Balcony",
     "name_en": "",
-    "address": "66, Jalan Kenanga 29/5, Bandar Indahpura, 81300 Kulai, Johor Darul Ta'zim, Kulai 21 Miles",
+    "address": "66, Jalan Kenanga 29/5, Bandar Indahpura, 81300 Kulai, Johor Darul Ta'zim",
     "opening_hours": "12 pm–12 am",
-    "category": ["西餐","Cafe"],
-    "categories": ["西餐","Cafe"],
+    "category": [
+      "西餐",
+      "Cafe"
+    ],
+    "categories": [
+      "西餐",
+      "Cafe"
+    ],
     "rating": 0,
     "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT5M-nzCJjbu1ID_v8cPvtAupV_PZZWOd6k0A&s",
     "subStalls": [],
@@ -6368,10 +6380,14 @@ export const initialRestaurants = [
     "area": "Indahpura",
     "name": "古文茶",
     "name_en": "Tea Garden Bandar Indahpura",
-    "address": "No 52, Jalan Kenanga 29/3, Bandar Indahpura, 81000 Kulai, Johor Darul Ta'zim, Kulai 21 Miles",
+    "address": "No 52, Jalan Kenanga 29/3, Bandar Indahpura, 81000 Kulai, Johor Darul Ta'zim",
     "opening_hours": "8 am–10:30 pm",
-    "category": ["Cafe"],
-    "categories": ["Cafe"],
+    "category": [
+      "Cafe"
+    ],
+    "categories": [
+      "Cafe"
+    ],
     "rating": 0,
     "image": "https://lirp.cdn-website.com/17f4972a/dms3rep/multi/opt/Tiktok+TG+Logo-1920w.png",
     "subStalls": [],
@@ -6389,10 +6405,14 @@ export const initialRestaurants = [
     "area": "Indahpura",
     "name": "黑丸",
     "name_en": "BlackBall Original Taiwanese Tea & Dessert",
-    "address": "No 2, Jalan Kenanga 29/1, Taman Indahpura, 81000 Kulai, Johor Darul Ta'zim, Kulai 21 Miles",
+    "address": "No 2, Jalan Kenanga 29/1, Taman Indahpura, 81000 Kulai, Johor Darul Ta'zim",
     "opening_hours": "12–11:30 pm",
-    "category": ["蛋糕甜点"],
-    "categories": ["蛋糕甜点"],
+    "category": [
+      "蛋糕甜点"
+    ],
+    "categories": [
+      "蛋糕甜点"
+    ],
     "rating": 0,
     "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRHMtrTW_6_AtZtCin3p1hlLn1vbv_JOb4mlQ&s",
     "subStalls": [],
@@ -6410,10 +6430,14 @@ export const initialRestaurants = [
     "area": "Indahpura",
     "name": "北京海鲜饭店",
     "name_en": "Restoran Peking",
-    "address": "13, Jalan Kenanga 29/1, Taman Indahpura, 81000 Kulai, Johor Darul Ta'zim, Kulai 21 Miles",
+    "address": "13, Jalan Kenanga 29/1, Taman Indahpura, 81000 Kulai, Johor Darul Ta'zim",
     "opening_hours": "11:30 am–3 pm, 5–10:30 pm",
-    "category": ["煮炒海鲜楼"],
-    "categories": ["煮炒海鲜楼"],
+    "category": [
+      "煮炒海鲜楼"
+    ],
+    "categories": [
+      "煮炒海鲜楼"
+    ],
     "rating": 0,
     "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRm7StQ8p2Mrdb37Yqj0wqUuu0zlriqaCjUJg&s",
     "subStalls": [],
@@ -6431,10 +6455,14 @@ export const initialRestaurants = [
     "area": "Indahpura",
     "name": "明太寿司",
     "name_en": "Sushi Mentai Kulai",
-    "address": "12, Jalan Kenanga 29/1, Bandar Indahpura, 81000 Kulai, Johor Darul Ta'zim, Kulai 21 Miles",
+    "address": "12, Jalan Kenanga 29/1, Bandar Indahpura, 81000 Kulai, Johor Darul Ta'zim",
     "opening_hours": "12–10 pm",
-    "category": ["日本餐"],
-    "categories": ["日本餐"],
+    "category": [
+      "日本餐"
+    ],
+    "categories": [
+      "日本餐"
+    ],
     "rating": 0,
     "image": "https://i0.wp.com/jbtop10.com/wp-content/uploads/2020/03/sushi-mentai-min.jpg?ssl=1",
     "subStalls": [],
@@ -6452,10 +6480,14 @@ export const initialRestaurants = [
     "area": "Indahpura",
     "name": "金海阁海鲜佳肴餐馆",
     "name_en": "Restoran Jin Hai",
-    "address": "34, Jalan Kenanga 29/1, Bandar Indahpura, 81000 Kulai, Johor Darul Ta'zim, Kulai 21 Miles",
+    "address": "34, Jalan Kenanga 29/1, Bandar Indahpura, 81000 Kulai, Johor Darul Ta'zim",
     "opening_hours": "11 am–2:30 pm, 5–9 pm Mon closed",
-    "category": ["煮炒海鲜楼"],
-    "categories": ["煮炒海鲜楼"],
+    "category": [
+      "煮炒海鲜楼"
+    ],
+    "categories": [
+      "煮炒海鲜楼"
+    ],
     "rating": 0,
     "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQdo0Zc9EXAq3ypuYIo_rKRLZgaDbgZ7J84ag&s",
     "subStalls": [],
@@ -6473,10 +6505,16 @@ export const initialRestaurants = [
     "area": "Indahpura",
     "name": "4Fingers Crispy Chicken",
     "name_en": "",
-    "address": "36, Jalan Kenanga 29/1, Bandar Indahpura, 81000 Kulai, Johor Darul Ta'zim, Kulai 21 Miles",
+    "address": "36, Jalan Kenanga 29/1, Bandar Indahpura, 81000 Kulai, Johor Darul Ta'zim",
     "opening_hours": "10 am–10 pm",
-    "category": ["西餐","快餐"],
-    "categories": ["西餐","快餐"],
+    "category": [
+      "西餐",
+      "快餐"
+    ],
+    "categories": [
+      "西餐",
+      "快餐"
+    ],
     "rating": 0,
     "image": "https://www.sunwaycarnival.com/static/shops/df55040a19a2d81ca536c140ada21b36/w768.png",
     "subStalls": [],
@@ -6495,8 +6533,12 @@ export const initialRestaurants = [
     "name_en": "Beutea",
     "address": "AEON Mall, Lot GK2 & GK2A, 81000 Kulai, Johor Darul Ta'zim",
     "opening_hours": "10 am–10 pm",
-    "category": ["饮品"],
-    "categories": ["饮品"],
+    "category": [
+      "饮品"
+    ],
+    "categories": [
+      "饮品"
+    ],
     "rating": 0,
     "image": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI2MDAiIGhlaWdodD0iNDAwIiB2aWV3Qm94PSIwIDAgNjAwIDQwMCI+PHJlY3QgZmlsbD0iIzFlMWUxZSIgd2lkdGg9IjYwMCIgaGVpZ2h0PSI0MDAiLz48dGV4dCBmaWxsPSIjZmZmZmZmIiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIzMCIgZHk9IjEwLjUiIGZvbnQtd2VpZ2h0PSJib2xkIiB4PSI1MCUiIHk9IjUwJSIgdGV4dC1hbmNob3I9Im1pZGRsZSI+S3VsYWkgRm9vZDwvdGV4dD48L3N2Zz4=",
     "subStalls": [],
@@ -6514,10 +6556,14 @@ export const initialRestaurants = [
     "area": "Indahpura",
     "name": "JCO Donut & Coffee",
     "name_en": "",
-    "address": "Ground Floor, Aeon Mall, Indahpura, 81000 Kulai, Johor, Kulai 21 Miles",
+    "address": "Ground Floor, Aeon Mall, Indahpura, 81000 Kulai, Johor",
     "opening_hours": "10 am–10 pm",
-    "category": ["蛋糕甜点"],
-    "categories": ["蛋糕甜点"],
+    "category": [
+      "蛋糕甜点"
+    ],
+    "categories": [
+      "蛋糕甜点"
+    ],
     "rating": 0,
     "image": "https://images.deliveryhero.io/image/fd-my/my-logos/cw7zl-logo.jpg",
     "subStalls": [],
@@ -6535,10 +6581,14 @@ export const initialRestaurants = [
     "area": "Indahpura",
     "name": "D Laksa",
     "name_en": "",
-    "address": "Aeon Kulaijaya, G-08, Indahpura, 81000 Kulai, Johor, Kulai 21 Miles",
+    "address": "Aeon Kulaijaya, G-08, Indahpura, 81000 Kulai, Johor",
     "opening_hours": "10 am–10 pm",
-    "category": ["粉类"],
-    "categories": ["粉类"],
+    "category": [
+      "粉类"
+    ],
+    "categories": [
+      "粉类"
+    ],
     "rating": 0,
     "image": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI2MDAiIGhlaWdodD0iNDAwIiB2aWV3Qm94PSIwIDAgNjAwIDQwMCI+PHJlY3QgZmlsbD0iIzFlMWUxZSIgd2lkdGg9IjYwMCIgaGVpZ2h0PSI0MDAiLz48dGV4dCBmaWxsPSIjZmZmZmZmIiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIzMCIgZHk9IjEwLjUiIGZvbnQtd2VpZ2h0PSJib2xkIiB4PSI1MCUiIHk9IjUwJSIgdGV4dC1hbmNob3I9Im1pZGRsZSI+S3VsYWkgRm9vZDwvdGV4dD48L3N2Zz4=",
     "subStalls": [],
@@ -6556,10 +6606,14 @@ export const initialRestaurants = [
     "area": "Indahpura",
     "name": "KOI Thé Johor",
     "name_en": "",
-    "address": "g37, Persiaran Indahpura Utama, Bandar Indahpura, 81000 Kulai, Johor Darul Ta'zim, Kulai 21 Miles",
+    "address": "g37, Persiaran Indahpura Utama, Bandar Indahpura, 81000 Kulai, Johor Darul Ta'zim",
     "opening_hours": "10 am–10 pm",
-    "category": ["饮品"],
-    "categories": ["饮品"],
+    "category": [
+      "饮品"
+    ],
+    "categories": [
+      "饮品"
+    ],
     "rating": 0,
     "image": "https://images.deliveryhero.io/image/fd-my/my-logos/n4zx-logo.jpg",
     "subStalls": [],
@@ -6577,10 +6631,16 @@ export const initialRestaurants = [
     "area": "Indahpura",
     "name": "Subway",
     "name_en": "",
-    "address": "C12 Food Avenue, Aeon Mall, f30, Persiaran Indahpura Utama, Indahpura, 81000 Kulai, Johor, Kulai 21 Miles",
+    "address": "C12 Food Avenue, Aeon Mall, f30, Persiaran Indahpura Utama, Indahpura, 81000 Kulai, Johor",
     "opening_hours": "10 am–10 pm",
-    "category": ["西餐","快餐"],
-    "categories": ["西餐","快餐"],
+    "category": [
+      "西餐",
+      "快餐"
+    ],
+    "categories": [
+      "西餐",
+      "快餐"
+    ],
     "rating": 0,
     "image": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI2MDAiIGhlaWdodD0iNDAwIiB2aWV3Qm94PSIwIDAgNjAwIDQwMCI+PHJlY3QgZmlsbD0iIzFlMWUxZSIgd2lkdGg9IjYwMCIgaGVpZ2h0PSI0MDAiLz48dGV4dCBmaWxsPSIjZmZmZmZmIiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIzMCIgZHk9IjEwLjUiIGZvbnQtd2VpZ2h0PSJib2xkIiB4PSI1MCUiIHk9IjUwJSIgdGV4dC1hbmNob3I9Im1pZGRsZSI+S3VsYWkgRm9vZDwvdGV4dD48L3N2Zz4=",
     "subStalls": [],
@@ -6598,10 +6658,16 @@ export const initialRestaurants = [
     "area": "Indahpura",
     "name": "SDS Bakery & Cafe",
     "name_en": "",
-    "address": "Lot G57, Groun Floor, AEON Mall Kulai Jaya, Persiaran Indahpura Utama, Bandar Indahpura, 81000 Kulai, Johor Darul Ta'zim, Kulai 21 Miles",
+    "address": "Lot G57, Groun Floor, AEON Mall Kulai Jaya, Persiaran Indahpura Utama, Bandar Indahpura, 81000 Kulai, Johor Darul Ta'zim",
     "opening_hours": "10 am–10 pm",
-    "category": ["蛋糕甜点","西餐"],
-    "categories": ["蛋糕甜点","西餐"],
+    "category": [
+      "蛋糕甜点",
+      "西餐"
+    ],
+    "categories": [
+      "蛋糕甜点",
+      "西餐"
+    ],
     "rating": 0,
     "image": "https://play-lh.googleusercontent.com/4xyOY1fjr7zJl6D8nMw0eVB1sSDYhq0-FIiOaJ0Tr4ljJlhmYp1qVK019As5AXLS0JU",
     "subStalls": [],
@@ -6619,10 +6685,14 @@ export const initialRestaurants = [
     "area": "Indahpura",
     "name": "民洋茶室",
     "name_en": "Pacific Kopi",
-    "address": "Lot G01, Ground Floor, Aeon Mall Kulaijaya, PTD 106273, Persiaran Indahpura Utama Bandar Indahpura, 81000 Kulai Jaya, 81000 Kulai, Johor Darul Ta'zim, Kulai 21 Miles",
+    "address": "Lot G01, Ground Floor, Aeon Mall Kulaijaya, PTD 106273, Persiaran Indahpura Utama Bandar Indahpura, 81000 Kulai Jaya, 81000 Kulai, Johor Darul Ta'zim",
     "opening_hours": "10 am–10 pm",
-    "category": ["Cafe"],
-    "categories": ["Cafe"],
+    "category": [
+      "Cafe"
+    ],
+    "categories": [
+      "Cafe"
+    ],
     "rating": 0,
     "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTD6iOg5yngtfuzs4yrG98ZK0TuACmFbC7b-A&s",
     "subStalls": [],
@@ -6640,10 +6710,14 @@ export const initialRestaurants = [
     "area": "Indahpura",
     "name": "Oochid Bistro",
     "name_en": "",
-    "address": "Persiaran Indahpura Utama, Bandar Indahpura, 81000 Kulai, Johor Darul Ta'zim, Kulai 21 Miles",
+    "address": "Persiaran Indahpura Utama, Bandar Indahpura, 81000 Kulai, Johor Darul Ta'zim",
     "opening_hours": "10 am–10 pm",
-    "category": ["Cafe"],
-    "categories": ["Cafe"],
+    "category": [
+      "Cafe"
+    ],
+    "categories": [
+      "Cafe"
+    ],
     "rating": 0,
     "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSlh5FJKBoM-nQ8ur0Egeo1sJADkxrZ02A8Kw&s",
     "subStalls": [],
@@ -6661,10 +6735,14 @@ export const initialRestaurants = [
     "area": "Indahpura",
     "name": "Gigi Coffee",
     "name_en": "",
-    "address": "GK3, AEON Mall Kulai, F49, Bandar Indahpura, 81000 Kulai, Johor Kulai, 81000 Johor Bahru, Johor Darul Ta'zim, Kulai 21 Miles",
+    "address": "GK3, AEON Mall Kulai, F49, Bandar Indahpura, 81000 Kulai, Johor Kulai, 81000 Johor Bahru, Johor Darul Ta'zim",
     "opening_hours": "10 am–10 pm",
-    "category": ["饮品"],
-    "categories": ["饮品"],
+    "category": [
+      "饮品"
+    ],
+    "categories": [
+      "饮品"
+    ],
     "rating": 0,
     "image": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI2MDAiIGhlaWdodD0iNDAwIiB2aWV3Qm94PSIwIDAgNjAwIDQwMCI+PHJlY3QgZmlsbD0iIzFlMWUxZSIgd2lkdGg9IjYwMCIgaGVpZ2h0PSI0MDAiLz48dGV4dCBmaWxsPSIjZmZmZmZmIiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIzMCIgZHk9IjEwLjUiIGZvbnQtd2VpZ2h0PSJib2xkIiB4PSI1MCUiIHk9IjUwJSIgdGV4dC1hbmNob3I9Im1pZGRsZSI+S3VsYWkgRm9vZDwvdGV4dD48L3N2Zz4=",
     "subStalls": [],
@@ -6682,10 +6760,14 @@ export const initialRestaurants = [
     "area": "Indahpura",
     "name": "寒舍",
     "name_en": "Hanshe",
-    "address": "Ground Floor G63-G65, AEON Kulaijaya, Bandar Indahpura, 81000 Kulai, Johor Darul Ta'zim, Kulai 21 Miles",
+    "address": "Ground Floor G63-G65, AEON Kulaijaya, Bandar Indahpura, 81000 Kulai, Johor Darul Ta'zim",
     "opening_hours": "10 am–10 pm",
-    "category": ["Cafe"],
-    "categories": ["Cafe"],
+    "category": [
+      "Cafe"
+    ],
+    "categories": [
+      "Cafe"
+    ],
     "rating": 0,
     "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRftlnvYrAAeCIToXl5fZfqAitWC0QuTTEPdw&s",
     "subStalls": [],
@@ -6703,10 +6785,14 @@ export const initialRestaurants = [
     "area": "Indahpura",
     "name": "Choong Man Chicken",
     "name_en": "",
-    "address": "G66, Aeon mall, Kulaijaya Persiaran, Bandar Indahpura, 81000 Johor Bahru, Johor Darul Ta'zim, Kulai 21 Miles",
+    "address": "G66, Aeon mall, Kulaijaya Persiaran, Bandar Indahpura, 81000 Johor Bahru, Johor Darul Ta'zim",
     "opening_hours": "10 am–10 pm",
-    "category": ["韩国餐"],
-    "categories": ["韩国餐"],
+    "category": [
+      "韩国餐"
+    ],
+    "categories": [
+      "韩国餐"
+    ],
     "rating": 0,
     "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTBXK4pQWo26HE4ky7OuBTWgVp9n9pBzqIv1Q&s",
     "subStalls": [],
@@ -6724,10 +6810,14 @@ export const initialRestaurants = [
     "area": "Indahpura",
     "name": "日升咖喱鱼头",
     "name_en": "Yit Sheng Fish Head Curry",
-    "address": "Bandar Indahpura, 81000 Kulai, Johor Darul Ta'zim, Kulai 21 Miles",
+    "address": "Bandar Indahpura, 81000 Kulai, Johor Darul Ta'zim",
     "opening_hours": "11:30 am–10:30 pm",
-    "category": ["煮炒海鲜楼"],
-    "categories": ["煮炒海鲜楼"],
+    "category": [
+      "煮炒海鲜楼"
+    ],
+    "categories": [
+      "煮炒海鲜楼"
+    ],
     "rating": 0,
     "image": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI2MDAiIGhlaWdodD0iNDAwIiB2aWV3Qm94PSIwIDAgNjAwIDQwMCI+PHJlY3QgZmlsbD0iIzFlMWUxZSIgd2lkdGg9IjYwMCIgaGVpZ2h0PSI0MDAiLz48dGV4dCBmaWxsPSIjZmZmZmZmIiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIzMCIgZHk9IjEwLjUiIGZvbnQtd2VpZ2h0PSJib2xkIiB4PSI1MCUiIHk9IjUwJSIgdGV4dC1hbmNob3I9Im1pZGRsZSI+S3VsYWkgRm9vZDwvdGV4dD48L3N2Zz4=",
     "subStalls": [],
@@ -6745,10 +6835,14 @@ export const initialRestaurants = [
     "area": "Indahpura",
     "name": "超级烧腊专卖店",
     "name_en": "828 Restoran Wan Jiao",
-    "address": "839, Jalan Teratai 36/17, Bandar Indahpura, 81000 Kulai, Johor Darul Ta'zim, Kulai 21 Miles",
+    "address": "839, Jalan Teratai 36/17, Bandar Indahpura, 81000 Kulai, Johor Darul Ta'zim",
     "opening_hours": "7:30 am–4 pm",
-    "category": ["饭类"],
-    "categories": ["饭类"],
+    "category": [
+      "饭类"
+    ],
+    "categories": [
+      "饭类"
+    ],
     "rating": 0,
     "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQrVwaUVW6I5idxLzGlrbOkVTs2m--Acb9jDQ&s",
     "subStalls": [],
@@ -6766,10 +6860,14 @@ export const initialRestaurants = [
     "area": "Indahpura",
     "name": "Aunty Ku",
     "name_en": "",
-    "address": "845, Jalan Teratai 36/17, Taman Indahpura, 81000 Kulai, Johor Darul Ta'zim, Kulai 21 Miles",
+    "address": "845, Jalan Teratai 36/17, Taman Indahpura, 81000 Kulai, Johor Darul Ta'zim",
     "opening_hours": "7:30 am–5 pm",
-    "category": ["Cafe"],
-    "categories": ["Cafe"],
+    "category": [
+      "Cafe"
+    ],
+    "categories": [
+      "Cafe"
+    ],
     "rating": 0,
     "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR8awHENYi3iFT3NLsH1MDnZyHArWbv23lGpQ&s",
     "subStalls": [],
@@ -6787,10 +6885,14 @@ export const initialRestaurants = [
     "area": "Indahpura",
     "name": "Restoran Ayam Penyet 3 Abdul",
     "name_en": "",
-    "address": "84, Jalan Kenanga 29/7, Bandar Indahpura, 81000 Kulai, Johor., Kulai 21 Miles",
+    "address": "84, Jalan Kenanga 29/7, Bandar Indahpura, 81000 Kulai, Johor.",
     "opening_hours": "10:15 AM - 10:00 PM",
-    "category": ["马来餐"],
-    "categories": ["马来餐"],
+    "category": [
+      "马来餐"
+    ],
+    "categories": [
+      "马来餐"
+    ],
     "rating": 0,
     "image": "https://scontent.fmkz1-2.fna.fbcdn.net/v/t39.30808-6/312953003_1108795009762546_2795953368015319407_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=6ee11a&_nc_ohc=DXCZyXLdsQoQ7kNvwGmaXEe&_nc_oc=AdmUty7NWGHPpn95jht1gdWz1RpGQiRBEGxlASkpcCOYdgCijDvrWHB5xqEANSVUnYI&_nc_zt=23&_nc_ht=scontent.fmkz1-2.fna&_nc_gid=htKcY5nDlJOcLJ3QqoVL1w&oh=00_AfqmJkRNTTcwjK61j5OvvDpDxFAR1pIpfCN0CIwPzZaA4w&oe=697A5798",
     "subStalls": [],
@@ -6808,10 +6910,14 @@ export const initialRestaurants = [
     "area": "Indahpura",
     "name": "新口味冷气饭店",
     "name_en": "Modern Taste Restaurant",
-    "address": "278, Jalan Kenanga 29/9, Bandar Indahpura, 81000 Kulai, Johor Darul Ta'zim, Kulai 21 Miles",
+    "address": "278, Jalan Kenanga 29/9, Bandar Indahpura, 81000 Kulai, Johor Darul Ta'zim",
     "opening_hours": "",
-    "category": ["煮炒海鲜楼"],
-    "categories": ["煮炒海鲜楼"],
+    "category": [
+      "煮炒海鲜楼"
+    ],
+    "categories": [
+      "煮炒海鲜楼"
+    ],
     "rating": 0,
     "image": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI2MDAiIGhlaWdodD0iNDAwIiB2aWV3Qm94PSIwIDAgNjAwIDQwMCI+PHJlY3QgZmlsbD0iIzFlMWUxZSIgd2lkdGg9IjYwMCIgaGVpZ2h0PSI0MDAiLz48dGV4dCBmaWxsPSIjZmZmZmZmIiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIzMCIgZHk9IjEwLjUiIGZvbnQtd2VpZ2h0PSJib2xkIiB4PSI1MCUiIHk9IjUwJSIgdGV4dC1hbmNob3I9Im1pZGRsZSI+S3VsYWkgRm9vZDwvdGV4dD48L3N2Zz4=",
     "subStalls": [],
@@ -6829,10 +6935,14 @@ export const initialRestaurants = [
     "area": "Indahpura",
     "name": "霸王饭",
     "name_en": "Bar Wang Rice",
-    "address": "Jln Kenanga 29/8, Indahpura, 81000 Kulai, Johor, Kulai 21 Miles",
+    "address": "Jln Kenanga 29/8, Indahpura, 81000 Kulai, Johor",
     "opening_hours": "9:30 am–9 pm",
-    "category": ["杂菜饭"],
-    "categories": ["杂菜饭"],
+    "category": [
+      "杂菜饭"
+    ],
+    "categories": [
+      "杂菜饭"
+    ],
     "rating": 0,
     "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTM8Z3Njt8AWVVPPpsIErb73xxibcaoW8Lf3g&s",
     "subStalls": [],
@@ -6850,10 +6960,14 @@ export const initialRestaurants = [
     "area": "Indahpura",
     "name": "士林台湾小吃",
     "name_en": "Shihlin Taiwan Street Food",
-    "address": "Lot G-71, Kulai Jaya, AEON Mall, Persiaran Indahpura Utama, Bandar Indahpura, 81000 Kulai, Johor Darul Ta'zim, Kulai 21 Miles",
+    "address": "Lot G-71, Kulai Jaya, AEON Mall, Persiaran Indahpura Utama, Bandar Indahpura, 81000 Kulai, Johor Darul Ta'zim",
     "opening_hours": "10 am–10 pm",
-    "category": ["快餐"],
-    "categories": ["快餐"],
+    "category": [
+      "快餐"
+    ],
+    "categories": [
+      "快餐"
+    ],
     "rating": 0,
     "image": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI2MDAiIGhlaWdodD0iNDAwIiB2aWV3Qm94PSIwIDAgNjAwIDQwMCI+PHJlY3QgZmlsbD0iIzFlMWUxZSIgd2lkdGg9IjYwMCIgaGVpZ2h0PSI0MDAiLz48dGV4dCBmaWxsPSIjZmZmZmZmIiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIzMCIgZHk9IjEwLjUiIGZvbnQtd2VpZ2h0PSJib2xkIiB4PSI1MCUiIHk9IjUwJSIgdGV4dC1hbmNob3I9Im1pZGRsZSI+S3VsYWkgRm9vZDwvdGV4dD48L3N2Zz4=",
     "subStalls": [],
@@ -6871,10 +6985,14 @@ export const initialRestaurants = [
     "area": "Indahpura",
     "name": "阿张卤肉饭",
     "name_en": "AhZhang Lobak",
-    "address": "11, Jln Rimbun 1, Taman Indahpura, 81000 Kulai, Johor Darul Ta'zim, Kulai 21 Miles",
+    "address": "11, Jln Rimbun 1, Taman Indahpura, 81000 Kulai, Johor Darul Ta'zim",
     "opening_hours": "11 am–4 pm Mon Closed",
-    "category": ["饭类"],
-    "categories": ["饭类"],
+    "category": [
+      "饭类"
+    ],
+    "categories": [
+      "饭类"
+    ],
     "rating": 0,
     "image": "https://scontent.fmkz1-1.fna.fbcdn.net/v/t39.30808-6/545454805_2557102991315287_6791245248253346049_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=6ee11a&_nc_ohc=MdXj143yC50Q7kNvwFAt97x&_nc_oc=AdnCq3iRlU6C2arK2upNQP2t9hJQZ2W6M9G1eV1fejyc-6qkf9WJ1u5LNRdzav3uC90&_nc_zt=23&_nc_ht=scontent.fmkz1-1.fna&_nc_gid=WKua3ckW9mLIp-528YIFNw&oh=00_Afp6u8yaMh5hxn63-kKXw4xv35ZdAO6Zd6GgP4u5GU-O8Q&oe=697A5619",
     "subStalls": [],
@@ -6893,8 +7011,12 @@ export const initialRestaurants = [
     "name_en": "Restoran Hock Chin",
     "address": "131-155, Jln. Jambu Mawar, Taman Kulai Besar, 81000 Kulai, Johor Darul Ta'zim",
     "opening_hours": "4 pm–1 am Tue Closed",
-    "category": ["煮炒海鲜楼"],
-    "categories": ["煮炒海鲜楼"],
+    "category": [
+      "煮炒海鲜楼"
+    ],
+    "categories": [
+      "煮炒海鲜楼"
+    ],
     "rating": 0,
     "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSw5aQRxxKpDTQTa3RJ2mYx-VVErK1vfasUGg&s",
     "subStalls": [],
@@ -6912,10 +7034,14 @@ export const initialRestaurants = [
     "area": "Indahpura",
     "name": "海外天海鲜饭店",
     "name_en": "Restaurant Hai Vai Tien",
-    "address": "127 Jalan Jambu Bol Indahpura, Taman Iris, 81000 Kulai, Johor Darul Ta'zim, Kulai 21 Miles",
+    "address": "127 Jalan Jambu Bol Indahpura, Taman Iris, 81000 Kulai, Johor Darul Ta'zim",
     "opening_hours": "5–11:30 pm Wed Closed",
-    "category": ["煮炒海鲜楼"],
-    "categories": ["煮炒海鲜楼"],
+    "category": [
+      "煮炒海鲜楼"
+    ],
+    "categories": [
+      "煮炒海鲜楼"
+    ],
     "rating": 0,
     "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQfnVlwwq3mKEQS7S_XH-q9d3C3HKaUP5ODWw&s",
     "subStalls": [],
@@ -6933,10 +7059,14 @@ export const initialRestaurants = [
     "area": "Indahpura",
     "name": "明轩擂茶菜馆",
     "name_en": "Restoran Ming Xuan",
-    "address": "143, Jln. Jambu Mawar, Taman Indahpura, 81000 Kulai, Johor Darul Ta'zim, Kulai 21 Miles",
+    "address": "143, Jln. Jambu Mawar, Taman Indahpura, 81000 Kulai, Johor Darul Ta'zim",
     "opening_hours": "9:30 am–3 pm, 6–8:30 pm Mon Closed",
-    "category": ["饭类"],
-    "categories": ["饭类"],
+    "category": [
+      "饭类"
+    ],
+    "categories": [
+      "饭类"
+    ],
     "rating": 0,
     "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR8nfjNu80r-8zSjnI7qaXp8rmvpCe7YDB3gA&s",
     "subStalls": [],
@@ -6954,10 +7084,14 @@ export const initialRestaurants = [
     "area": "Indahpura",
     "name": "第二美食阁",
     "name_en": "Number Two Food Court",
-    "address": "15, Jalan SME 1, Bandar Indahpura, 81000 Kulai, Johor Darul Ta'zim, Kulai 21 Miles",
+    "address": "15, Jalan SME 1, Bandar Indahpura, 81000 Kulai, Johor Darul Ta'zim",
     "opening_hours": "5:30 am–1 am",
-    "category": ["咖啡店"],
-    "categories": ["咖啡店"],
+    "category": [
+      "咖啡店"
+    ],
+    "categories": [
+      "咖啡店"
+    ],
     "rating": 0,
     "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTqLjuAY28LEL20ep5ll8WodSUnuEtqe-BAMA&s",
     "subStalls": [],
@@ -6975,10 +7109,14 @@ export const initialRestaurants = [
     "area": "Indahpura",
     "name": "Jollibee",
     "name_en": "",
-    "address": "88, Jln SME 3, Bandar Indahpura, 81000 Kulai, Johor Darul Ta'zim, Kulai 21 Miles",
+    "address": "88, Jln SME 3, Bandar Indahpura, 81000 Kulai, Johor Darul Ta'zim",
     "opening_hours": "10 am–11 pm",
-    "category": ["快餐"],
-    "categories": ["快餐"],
+    "category": [
+      "快餐"
+    ],
+    "categories": [
+      "快餐"
+    ],
     "rating": 0,
     "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSNLqkZ3ExZBCuiLhQHInNUu31iwFonfxI-xQ&s",
     "subStalls": [],
@@ -6996,10 +7134,14 @@ export const initialRestaurants = [
     "area": "Indahpura",
     "name": "汤师傅",
     "name_en": "Souper Tang Restaurant",
-    "address": "Jalan Premium Outlets, Bandar Indahpura, 81000 Kulai, Johor Darul Ta'zim, Kulai 21 Miles",
+    "address": "Jalan Premium Outlets, Bandar Indahpura, 81000 Kulai, Johor Darul Ta'zim",
     "opening_hours": "10 am–10 pm",
-    "category": ["Cafe"],
-    "categories": ["Cafe"],
+    "category": [
+      "Cafe"
+    ],
+    "categories": [
+      "Cafe"
+    ],
     "rating": 0,
     "image": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI2MDAiIGhlaWdodD0iNDAwIiB2aWV3Qm94PSIwIDAgNjAwIDQwMCI+PHJlY3QgZmlsbD0iIzFlMWUxZSIgd2lkdGg9IjYwMCIgaGVpZ2h0PSI0MDAiLz48dGV4dCBmaWxsPSIjZmZmZmZmIiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIzMCIgZHk9IjEwLjUiIGZvbnQtd2VpZ2h0PSJib2xkIiB4PSI1MCUiIHk9IjUwJSIgdGV4dC1hbmNob3I9Im1pZGRsZSI+S3VsYWkgRm9vZDwvdGV4dD48L3N2Zz4=",
     "subStalls": [],
@@ -7017,10 +7159,14 @@ export const initialRestaurants = [
     "area": "Indahpura",
     "name": "Absolute Thai",
     "name_en": "",
-    "address": "Jalan Premium Outlets, Indahpura, 81000, Kulaijaya, Johor, 81000, Kulai 21 Miles",
+    "address": "Jalan Premium Outlets, Indahpura, 81000, Kulaijaya, Johor, 81000",
     "opening_hours": "10 am–10 pm",
-    "category": ["泰国餐"],
-    "categories": ["泰国餐"],
+    "category": [
+      "泰国餐"
+    ],
+    "categories": [
+      "泰国餐"
+    ],
     "rating": 0,
     "image": "https://www.rwgenting.com/content/dam/approved/rw-genting/web/things-to-do/shopping/shopping-directory/skyavenue/absolute-thai.jpg",
     "subStalls": [],
@@ -7038,10 +7184,14 @@ export const initialRestaurants = [
     "area": "Indahpura",
     "name": "Madam Kwan's",
     "name_en": "",
-    "address": "Suite 204, Premium Outlets, Johor Premium Outlets, Jalan, Bandar Indahpura, 81000 Kulai, Johor Darul Ta'zim, Kulai 21 Miles",
+    "address": "Suite 204, Premium Outlets, Johor Premium Outlets, Jalan, Bandar Indahpura, 81000 Kulai, Johor Darul Ta'zim",
     "opening_hours": "10 am–10 pm",
-    "category": ["Cafe"],
-    "categories": ["Cafe"],
+    "category": [
+      "Cafe"
+    ],
+    "categories": [
+      "Cafe"
+    ],
     "rating": 0,
     "image": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI2MDAiIGhlaWdodD0iNDAwIiB2aWV3Qm94PSIwIDAgNjAwIDQwMCI+PHJlY3QgZmlsbD0iIzFlMWUxZSIgd2lkdGg9IjYwMCIgaGVpZ2h0PSI0MDAiLz48dGV4dCBmaWxsPSIjZmZmZmZmIiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIzMCIgZHk9IjEwLjUiIGZvbnQtd2VpZ2h0PSJib2xkIiB4PSI1MCUiIHk9IjUwJSIgdGV4dC1hbmNob3I9Im1pZGRsZSI+S3VsYWkgRm9vZDwvdGV4dD48L3N2Zz4=",
     "subStalls": [],
@@ -7060,8 +7210,14 @@ export const initialRestaurants = [
     "name_en": "",
     "address": "Suite No. 633, Johor Premium Outlets, 81000, Johor Darul Ta'zim",
     "opening_hours": "10 am–10 pm",
-    "category": ["西餐","Cafe"],
-    "categories": ["西餐","Cafe"],
+    "category": [
+      "西餐",
+      "Cafe"
+    ],
+    "categories": [
+      "西餐",
+      "Cafe"
+    ],
     "rating": 0,
     "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTGYGm61OnTEVahYuEfeDszYFNwXKPlc_-MPg&s",
     "subStalls": [],
@@ -7080,8 +7236,14 @@ export const initialRestaurants = [
     "name_en": "",
     "address": "Johor Premium Outlets, 81400 Senai, Johor",
     "opening_hours": "10 am–10 pm",
-    "category": ["Cafe","咖啡店"],
-    "categories": ["Cafe","咖啡店"],
+    "category": [
+      "Cafe",
+      "咖啡店"
+    ],
+    "categories": [
+      "Cafe",
+      "咖啡店"
+    ],
     "rating": 0,
     "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTGijjBt15VpfcRuw7abE0TpaVP9L3-mlRBpg&s",
     "subStalls": [],
@@ -7099,10 +7261,16 @@ export const initialRestaurants = [
     "area": "Indahpura",
     "name": "DubuYo Mini",
     "name_en": "",
-    "address": "Lot 504, High Street Jalan Premium Outlets, Johor Premium Outlets, Stall 7 & 8 Food Court, Indahpura, 81000 Kulai, Johor Darul Ta'zim, Kulai 21 Miles",
+    "address": "Lot 504, High Street Jalan Premium Outlets, Johor Premium Outlets, Stall 7 & 8 Food Court, Indahpura, 81000 Kulai, Johor Darul Ta'zim",
     "opening_hours": "10 am–10 pm",
-    "category": ["韩国餐","Cafe"],
-    "categories": ["韩国餐","Cafe"],
+    "category": [
+      "韩国餐",
+      "Cafe"
+    ],
+    "categories": [
+      "韩国餐",
+      "Cafe"
+    ],
     "rating": 0,
     "image": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI2MDAiIGhlaWdodD0iNDAwIiB2aWV3Qm94PSIwIDAgNjAwIDQwMCI+PHJlY3QgZmlsbD0iIzFlMWUxZSIgd2lkdGg9IjYwMCIgaGVpZ2h0PSI0MDAiLz48dGV4dCBmaWxsPSIjZmZmZmZmIiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIzMCIgZHk9IjEwLjUiIGZvbnQtd2VpZ2h0PSJib2xkIiB4PSI1MCUiIHk9IjUwJSIgdGV4dC1hbmNob3I9Im1pZGRsZSI+S3VsYWkgRm9vZDwvdGV4dD48L3N2Zz4=",
     "subStalls": [],
@@ -7120,10 +7288,14 @@ export const initialRestaurants = [
     "area": "Indahpura",
     "name": "Godiva Cafe",
     "name_en": "",
-    "address": "Johor Premium Outlets, Suite 238 01, Indahpura, 81000 Johor Bahru, Johor, Kulai 21 Miles",
+    "address": "Johor Premium Outlets, Suite 238 01, Indahpura, 81000 Johor Bahru, Johor",
     "opening_hours": "10 am–10 pm",
-    "category": ["蛋糕甜点"],
-    "categories": ["蛋糕甜点"],
+    "category": [
+      "蛋糕甜点"
+    ],
+    "categories": [
+      "蛋糕甜点"
+    ],
     "rating": 0,
     "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQctsyyh6wOnEtzUH5vO7MQ6uqzj5BYAn6ZtQ&s",
     "subStalls": [],
@@ -7141,10 +7313,14 @@ export const initialRestaurants = [
     "area": "Indahpura",
     "name": "Bask Bear Coffee",
     "name_en": "",
-    "address": "Stall 1, Gucci - Johor Premium Outlet, Jalan Premium Outlets, Bandar Indahpura, 81000 Kulai, Johor Darul Ta'zim, Kulai 21 Miles",
+    "address": "Stall 1, Gucci - Johor Premium Outlet, Jalan Premium Outlets, Bandar Indahpura, 81000 Kulai, Johor Darul Ta'zim",
     "opening_hours": "10 am–10 pm",
-    "category": ["饮品"],
-    "categories": ["饮品"],
+    "category": [
+      "饮品"
+    ],
+    "categories": [
+      "饮品"
+    ],
     "rating": 0,
     "image": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI2MDAiIGhlaWdodD0iNDAwIiB2aWV3Qm94PSIwIDAgNjAwIDQwMCI+PHJlY3QgZmlsbD0iIzFlMWUxZSIgd2lkdGg9IjYwMCIgaGVpZ2h0PSI0MDAiLz48dGV4dCBmaWxsPSIjZmZmZmZmIiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIzMCIgZHk9IjEwLjUiIGZvbnQtd2VpZ2h0PSJib2xkIiB4PSI1MCUiIHk9IjUwJSIgdGV4dC1hbmNob3I9Im1pZGRsZSI+S3VsYWkgRm9vZDwvdGV4dD48L3N2Zz4=",
     "subStalls": [],
@@ -7162,10 +7338,14 @@ export const initialRestaurants = [
     "area": "Indahpura",
     "name": "Asam Pedas By D Laksa",
     "name_en": "",
-    "address": "Stall No. 12, Premium Outlets, Johor Premium Outlets, Jalan, Indahpura, 81000 Kulai, Johor Darul Ta'zim, Kulai 21 Miles",
+    "address": "Stall No. 12, Premium Outlets, Johor Premium Outlets, Jalan, Indahpura, 81000 Kulai, Johor Darul Ta'zim",
     "opening_hours": "10 am–10 pm",
-    "category": ["粉类"],
-    "categories": ["粉类"],
+    "category": [
+      "粉类"
+    ],
+    "categories": [
+      "粉类"
+    ],
     "rating": 0,
     "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTBXn-yLiIDQJQ6_pSBF-AM-xR_kJ5B1NdQyg&s",
     "subStalls": [],
@@ -7183,10 +7363,14 @@ export const initialRestaurants = [
     "area": "Indahpura",
     "name": "D Laksa JPO",
     "name_en": "",
-    "address": "Stall No. 11, Premium Outlets, Johor Premium Outlets, Jalan, Indahpura, 81000 Kulai, Johor Darul Ta'zim, Kulai 21 Miles",
+    "address": "Stall No. 11, Premium Outlets, Johor Premium Outlets, Jalan, Indahpura, 81000 Kulai, Johor Darul Ta'zim",
     "opening_hours": "10 am–10 pm",
-    "category": ["粉类"],
-    "categories": ["粉类"],
+    "category": [
+      "粉类"
+    ],
+    "categories": [
+      "粉类"
+    ],
     "rating": 0,
     "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQFi5K6kLqYvrXOxonJ1p9bZFe80f2hCRKb7Q&s",
     "subStalls": [],
