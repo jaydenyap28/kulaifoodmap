@@ -18,7 +18,7 @@ import { analytics } from './utils/analytics';
 const DEFAULT_CATEGORIES = [
   '饭类', '面类', '咖啡店', '煮炒海鲜楼', 
   '火锅烧烤', '蛋糕甜点', '饮品', 
-  '西餐', '日本餐', '韩国餐', '马来餐', 
+  '西餐', '日本餐', '韩国餐', '泰国餐', '马来餐', 
   '素食', '点心', '宴会酒楼'
 ];
 const DEFAULT_HERO_BG = "https://i.ibb.co/7J5qjZtv/image.png";
@@ -115,13 +115,35 @@ function App() {
     });
   };
 
+  // Version Control for Data (Increment this when adding new hardcoded data to force refresh)
+  const DATA_VERSION = '2025-01-24-v6'; 
+
   // Load data: Prioritize Codebase (initialRestaurants) but keep user-added ones from LocalStorage
   const [restaurants, setRestaurants] = useState(() => {
+    // Debug Log
+    console.log(`[App] Initializing Data. Codebase has ${initialRestaurants.length} items.`);
+
+    // 1. Check Data Version
+    let storedVersion = localStorage.getItem('kulaifood-data-version');
+    let shouldClearStorage = storedVersion !== DATA_VERSION;
+
+    if (shouldClearStorage) {
+        console.log(`[App] Data version mismatch (${storedVersion} vs ${DATA_VERSION}). Refreshing data...`);
+        // We only clear restaurants to force reload from code. 
+        // We might want to keep other settings, but for data consistency, let's start fresh with data.
+        // But we want to keep user settings like "Show Open Only" etc if possible.
+        // Actually, logic below handles merging, but if storage has old list, we want to ensure new items appear.
+        // My previous merge logic SHOULD have worked (Step 4), but to be safe, if version changes,
+        // we can assume 'initialRestaurants' is the source of truth for STRUCTURE and COUNT of static items.
+    }
+
     // 1. Load stored data to preserve ORDER and User-Added Items
     let storedData = [];
     try {
-        const item = localStorage.getItem('kulaifood-restaurants');
-        if (item) storedData = JSON.parse(item);
+        if (!shouldClearStorage) {
+            const item = localStorage.getItem('kulaifood-restaurants');
+            if (item) storedData = JSON.parse(item);
+        }
     } catch(e) {
         console.warn("Failed to load restaurants from LocalStorage", e);
     }
@@ -191,35 +213,55 @@ function App() {
   // Save Restaurants to LocalStorage on change
   useEffect(() => {
      localStorage.setItem('kulaifood-restaurants', JSON.stringify(restaurants));
+     localStorage.setItem('kulaifood-data-version', DATA_VERSION);
   }, [restaurants]);
 
   const [categories, setCategories] = useState(() => {
-    // 1. Try to load from LocalStorage FIRST (Authoritative)
+    let finalCategories = [];
+    let processedCats = new Set();
+
+    // 1. Try to load from LocalStorage FIRST (Preserve Order)
     try {
       const storedCats = localStorage.getItem('kulaifood-categories');
       if (storedCats && storedCats !== "undefined" && storedCats !== "null") {
         const parsedCats = JSON.parse(storedCats);
         if (Array.isArray(parsedCats) && parsedCats.length > 0) {
-          console.log("Loaded categories from LocalStorage");
-          return parsedCats;
+          finalCategories = [...parsedCats];
+          parsedCats.forEach(c => processedCats.add(c));
         }
       }
     } catch (e) {
       console.warn("Failed to load categories from LocalStorage", e);
     }
 
-    // 2. Fallback: Defaults + Initial Data
-    let initialCats = new Set(DEFAULT_CATEGORIES);
+    // 2. Merge Defaults (Ensure new system categories appear)
+    DEFAULT_CATEGORIES.forEach(c => {
+        if (!processedCats.has(c)) {
+            finalCategories.push(c);
+            processedCats.add(c);
+        }
+    });
 
+    // 3. Merge from Data (Ensure used categories appear)
     initialRestaurants.forEach(r => {
       if (Array.isArray(r.category)) {
-        r.category.forEach(c => initialCats.add(c));
+        r.category.forEach(c => {
+            if (!processedCats.has(c)) {
+                finalCategories.push(c);
+                processedCats.add(c);
+            }
+        });
       } else if (Array.isArray(r.categories)) {
-        r.categories.forEach(c => initialCats.add(c));
+        r.categories.forEach(c => {
+            if (!processedCats.has(c)) {
+                finalCategories.push(c);
+                processedCats.add(c);
+            }
+        });
       }
     });
     
-    return Array.from(initialCats);
+    return finalCategories;
   });
 
   const [selectedRestaurant, setSelectedRestaurant] = useState(null);
@@ -561,8 +603,12 @@ function App() {
               {t('app_title')}
             </h1>
             <p className="text-sm md:text-base text-gray-200 font-bold tracking-widest mt-1 drop-shadow-md uppercase">
-              Kulai Food Map
+              Kulai Food Map v4 ({restaurants.length} Items)
             </p>
+            {/* DEBUG INFO: REMOVE LATER */}
+            <div className="text-xs text-red-400 font-mono mt-1">
+                Local: {restaurants.length} / Code: {initialRestaurants.length}
+            </div>
           </div>
           
           {/* Language Switcher */}
