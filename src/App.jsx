@@ -287,7 +287,27 @@ function App() {
       }
     }
 
-    // 2. Category Filter (Check if restaurant has the selected category tag)
+    // 2. Hide Drinks Filter
+    if (hideDrinks) {
+        // Keywords: 饮品, 饮料, Drink, Beverage, 饮品店
+        if (r.categories && r.categories.some(c => 
+            c.includes('饮品') || c.includes('饮料') || c.toLowerCase().includes('drink') || c.toLowerCase().includes('beverage')
+        )) {
+            return false;
+        }
+    }
+
+    // 3. Hide Desserts Filter
+    if (hideDesserts) {
+        // Keywords: 甜点, 蛋糕, Dessert, Cake
+        if (r.categories && r.categories.some(c => 
+            c.includes('甜点') || c.includes('蛋糕') || c.toLowerCase().includes('dessert') || c.toLowerCase().includes('cake')
+        )) {
+            return false;
+        }
+    }
+
+    // 4. Category Filter (Check if restaurant has the selected category tag)
     if (selectedCategory) {
       if (!r.categories || !r.categories.includes(selectedCategory)) {
         return false;
@@ -526,6 +546,10 @@ function App() {
                 isAdmin={isAdmin}
                 showOpenOnly={showOpenOnly}
                 onToggleShowOpenOnly={() => setShowOpenOnly(!showOpenOnly)}
+                hideDrinks={hideDrinks}
+                onToggleHideDrinks={() => setHideDrinks(!hideDrinks)}
+                hideDesserts={hideDesserts}
+                onToggleHideDesserts={() => setHideDesserts(!hideDesserts)}
             />
         </div>
 

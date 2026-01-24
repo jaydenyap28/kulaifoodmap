@@ -19,6 +19,8 @@
     "manage_category": "Manage Categories",
     "all": "All",
     "open_now": "Open Now",
+    "no_drinks": "No Drinks",
+    "no_desserts": "No Desserts",
     "confirm_delete_cat": "Delete category \"{{cat}}\"?"
   },
   "list": {

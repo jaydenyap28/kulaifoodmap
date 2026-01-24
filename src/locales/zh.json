@@ -19,6 +19,8 @@
     "manage_category": "管理分类",
     "all": "全部",
     "open_now": "只看营业中",
+    "no_drinks": "不看饮品",
+    "no_desserts": "不看甜点",
     "confirm_delete_cat": "确定要删除分类 \"{{cat}}\" 吗？"
   },
   "list": {
