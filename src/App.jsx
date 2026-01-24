@@ -120,7 +120,7 @@ function App() {
   };
 
   // Version Control for Data (Increment this when adding new hardcoded data to force refresh)
-  const DATA_VERSION = '2025-01-24-v17';  
+  const DATA_VERSION = '2025-01-24-v18';  
 
   // Load data: Prioritize Codebase (initialRestaurants) but keep user-added ones from LocalStorage
   const [restaurants, setRestaurants] = useState(() => {

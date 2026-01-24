@@ -1,6 +1,7 @@
 export const initialRestaurants = [
   {
     "id": 1,
+    "area": "Kulai 21 Miles",
     "name": "世华肉骨茶",
     "name_en": "Restoran Sze Wah Bak Kuh Teh",
     "address": "2 & 3, Jalan Seruling 1, Taman Sri Kulai Baru 2, 81000 Kulai, Johor",
@@ -49,6 +50,7 @@ export const initialRestaurants = [
   },
   {
     "id": 3,
+    "area": "Indahpura",
     "name": "莫搞牛肉面",
     "name_en": "Kulai Mok Gao Beef Noodles",
     "address": "523, Jalan Kenanga 29/17, Bandar Indahpura, 81000 Kulai, Johor, Kulai 21 Miles",
@@ -73,6 +75,7 @@ export const initialRestaurants = [
   },
   {
     "id": 4,
+    "area": "Kulai 21 Miles",
     "name": "大树下擂茶",
     "name_en": "Lei Cha 21 Miles",
     "address": "21, Jalan Manis, Taman Manis, 81000 Kulai, Johor",
@@ -97,6 +100,7 @@ export const initialRestaurants = [
   },
   {
     "id": 5,
+    "area": "Indahpura",
     "name": "林仙 Hainan Hojiak Corner",
     "name_en": "Restaurant Hainan Hojiak Corner",
     "address": "548, Jalan Kenanga 29/18, Bandar Indahpura, 81000 Kulai, Johor, Kulai 21 Miles",
@@ -145,6 +149,7 @@ export const initialRestaurants = [
   },
   {
     "id": 7,
+    "area": "Saleng",
     "name": "八星烧腊店",
     "name_en": "Lapan Bintang Chicken Rice",
     "address": "20, Jalan Cermai 2, Taman Mesra, 81400 Kulai, Johor",
@@ -169,6 +174,7 @@ export const initialRestaurants = [
   },
   {
     "id": 8,
+    "area": "Kulai 21 Miles",
     "name": "古来友明",
     "name_en": "Restaurant Yuw Meng",
     "address": "44, Jalan Seruling 2, Taman Sri Kulai Baru 2, 81000 Kulai, Johor",
@@ -195,6 +201,7 @@ export const initialRestaurants = [
   },
   {
     "id": 9,
+    "area": "Indahpura",
     "name": "古來吉麵家",
     "name_en": "Kulai Ji Noodles",
     "address": "845-855, Jalan Teratai 36/17, Bandar Indahpura, 81000 Kulai, Johor, Kulai 21 Miles",
@@ -219,6 +226,7 @@ export const initialRestaurants = [
   },
   {
     "id": 10,
+    "area": "Kulai 21 Miles",
     "name": "日记云吞面",
     "name_en": "Daily Wanton Mee",
     "address": "Taman Sri Kulai Baru 2, 81000 Kulai, Johor",
@@ -291,6 +299,7 @@ export const initialRestaurants = [
   },
   {
     "id": 13,
+    "area": "Kulai 21 Miles",
     "name": "云来包点",
     "name_en": "Restaurant Yon Lai",
     "address": "646, Jalan Gangsa 6, Taman Timur, 81000 Kulai, Johor Darul Ta'zim",
@@ -346,6 +355,7 @@ export const initialRestaurants = [
   },
   {
     "id": 14,
+    "area": "Kelapa Sawit",
     "name": "满庭芳菜板",
     "name_en": "Kedai Makan Man Ting Fong",
     "address": "Lot 8098, Jalan Kelapa Sawit 6, Kelapa Sawit, 81030 Kulai, Johor",
@@ -366,6 +376,7 @@ export const initialRestaurants = [
   },
   {
     "id": 15,
+    "area": "Indahpura",
     "name": "品香茶室",
     "name_en": "Chop Pun Heong Dim Sum",
     "address": "398, Jalan Kenanga 29/10, Bandar Indahpura, 81000 Kulai, Johor Darul Ta'zim, Kulai 21 Miles",
@@ -415,6 +426,7 @@ export const initialRestaurants = [
   },
   {
     "id": 17,
+    "area": "Kulai 21 Miles",
     "name": "Yellow Corner",
     "address": "215, Jalan Pinang 1, Taman Kota Kulai, 81000 Kulai, Johor Darul Ta'zim",
     "opening_hours": "Monday: Closed\nTuesday: 5pm - 12am\nWednesday: 5pm - 12am\nThursday: 5pm - 12am\nFriday: 5pm - 12am\nSaturday: 5pm - 12am\nSunday: 5pm - 12am",
@@ -440,6 +452,7 @@ export const initialRestaurants = [
   },
   {
     "id": 18,
+    "area": "Kulai 21 Miles",
     "name": "Delicious Corner",
     "name_en": "Restoran Xin Yuan Bak Kut Teh",
     "address": "28, Jalan Pelanduk, Taman Pertama, 81000 Kulai, Johor Darul Ta'zim",
@@ -464,6 +477,7 @@ export const initialRestaurants = [
   },
   {
     "id": 19,
+    "area": "Kulai 21 Miles",
     "name": "古来鑫源砂锅肉骨茶",
     "name_en": "Restoran Xin Yuan Bak Kut Teh",
     "address": "16, Jalan Seruling 1, Taman Sri Kulai Baru 2, 81000 Kulai, Johor Darul Ta'zim",
@@ -488,6 +502,7 @@ export const initialRestaurants = [
   },
   {
     "id": 20,
+    "area": "Kulai 21 Miles",
     "name": "香满城",
     "name_en": "Restoran Xiang Mann",
     "address": "1, Jln Bunga Mawar 1, Taman Sri Kulai Baru, 81000 Kulai, Johor Darul Ta'zim",
@@ -512,6 +527,7 @@ export const initialRestaurants = [
   },
   {
     "id": 21,
+    "area": "Kulai 21 Miles",
     "name": "何妈传承自制手工云吞面",
     "address": "58, Jalan Bunga Santalia, Taman Sri Kulai Baru, 81000 Kulai, Johor Darul Ta'zim",
     "opening_hours": "Monday: Closed\nTuesday: 8am - 6pm\nWednesday: 8am - 6pm\nThursday: 8am - 6pm\nFriday: 8am - 6pm\nSaturday: 8am - 6pm\nSunday: 8am - 6pm",
@@ -535,6 +551,7 @@ export const initialRestaurants = [
   },
   {
     "id": 22,
+    "area": "Kulai 21 Miles",
     "name": "CJ21 KOPITIAM",
     "name_en": "Best Flavor Food Restaurant",
     "address": "53, Jalan Bunga Santalia, Taman Sri Kulai Baru, 81000 Kulai, Johor Darul Ta'zim",
@@ -559,6 +576,7 @@ export const initialRestaurants = [
   },
   {
     "id": 23,
+    "area": "Kulai 21 Miles",
     "name": "帝皇饭",
     "name_en": "Best Flavor Food Restaurant",
     "address": "42, Jalan Susur Kulai 4, Taman Sri Kulai Baru, 81000 Kulai, Johor Darul Ta'zim",
@@ -583,6 +601,7 @@ export const initialRestaurants = [
   },
   {
     "id": 24,
+    "area": "Kulai 21 Miles",
     "name": "文记海南芽菜鸡饭",
     "name_en": "Boon Kee Hainan Chicken Rice",
     "address": "Jalan Bunga Santalia, Taman Kulai Utama, 81000 Kulai, Johor Darul Ta'zim, Kulai 21 Miles",
@@ -607,6 +626,7 @@ export const initialRestaurants = [
   },
   {
     "id": 25,
+    "area": "Kulai 21 Miles",
     "name": "广源来肉骨茶",
     "name_en": "Kwong Guan Lai Restaurant",
     "address": "23, Jalan Susur Kulai 4, Taman Sri Kulai Baru, 81000 Kulai, Johor Darul Ta'zim",
@@ -631,6 +651,7 @@ export const initialRestaurants = [
   },
   {
     "id": 26,
+    "area": "Kulai 21 Miles",
     "name": "露天海鲜馆",
     "name_en": "Restoran Lu Tian",
     "address": "Taman Nam Tak, 81000 Kulai, Johor",
@@ -657,6 +678,7 @@ export const initialRestaurants = [
   },
   {
     "id": 27,
+    "area": "Kulai 21 Miles",
     "name": "可豐酒家",
     "name_en": "Khoh Foong Restaurant",
     "address": "1, Jalan Susur Kulai 4, Taman Sri Kulai Baru 2, 81000 Kulai, Johor Darul Ta'zim",
@@ -683,6 +705,7 @@ export const initialRestaurants = [
   },
   {
     "id": 28,
+    "area": "Kulai 21 Miles",
     "name": "美食海鲜馆",
     "name_en": "Meei Shih Seafood Restaurant",
     "address": "69, Jalan Anggerik 3, Taman Kulai Utama, 81000 Kulai, Johor Darul Ta'zim, Kulai 21 Miles",
@@ -1165,6 +1188,7 @@ export const initialRestaurants = [
   },
   {
     "id": 46,
+    "area": "Indahpura",
     "name": "21苦瓜汤（Indahpura)",
     "address": "75, Jln. Kenanga 29/11, Bandar Indahpura, 81000 Kulai, Johor Darul Ta'zim, Kulai 21 Miles",
     "opening_hours": "11am – 3pm, 5pm – 9pm (Monday Closed)",
@@ -1188,6 +1212,7 @@ export const initialRestaurants = [
   },
   {
     "id": 47,
+    "area": "Indahpura",
     "name": "MyKori Dessert Cafe Kulai",
     "address": "93, Jln. Kenanga 29/11, Bandar Indahpura, 81000 Kulai, Johor Darul Ta'zim, Kulai 21 Miles",
     "opening_hours": "12pm – 10pm",
@@ -1211,6 +1236,7 @@ export const initialRestaurants = [
   },
   {
     "id": 48,
+    "area": "Indahpura",
     "name": "老彭家鱼丸面",
     "name_en": "Restoran Ah Pang",
     "address": "85, 77, Jln. Kenanga 29/11, Indahpura, 81000 Kulai, Johor, Kulai 21 Miles",
@@ -1235,6 +1261,7 @@ export const initialRestaurants = [
   },
   {
     "id": 49,
+    "area": "Indahpura",
     "name": "Kopi Saigon Kulai",
     "address": "73, Jln. Kenanga 29/11, Bandar Indahpura, 81000 Kulai, Johor Darul Ta'zim, Kulai 21 Miles",
     "opening_hours": "10am – 10pm (Wed Closed)",
@@ -1260,6 +1287,7 @@ export const initialRestaurants = [
   },
   {
     "id": 50,
+    "area": "Indahpura",
     "name": "悦香亭",
     "name_en": "Yue Xiang Ting",
     "address": "70, Jln. Kenanga 29/11, Bandar Indahpura, 81000 Kulai, Johor Darul Ta'zim, Kulai 21 Miles",
@@ -1284,6 +1312,7 @@ export const initialRestaurants = [
   },
   {
     "id": 51,
+    "area": "Indahpura",
     "name": "MyKluang Coffee @ Kulai",
     "address": "67, Jln. Kenanga 29/11, Bandar Indahpura, 81000 Kulai, Johor Darul Ta'zim, Kulai 21 Miles",
     "opening_hours": "8am – 6:30pm",
@@ -1307,6 +1336,7 @@ export const initialRestaurants = [
   },
   {
     "id": 52,
+    "area": "Indahpura",
     "name": "UFB - Union Fashion Bar Balcony",
     "address": "66, Jalan Kenanga 29/5, Bandar Indahpura, 81300 Kulai, Johor Darul Ta'zim, Kulai 21 Miles",
     "opening_hours": "12pm – 12am",
@@ -1330,6 +1360,7 @@ export const initialRestaurants = [
   },
   {
     "id": 53,
+    "area": "Indahpura",
     "name": "Broovies Cafe",
     "address": "55, Jalan Kenanga 29/5, Bandar Indahpura, 81000 Kulai, Johor Darul Ta'zim, Kulai 21 Miles",
     "opening_hours": "11am – 10pm",
@@ -1353,6 +1384,7 @@ export const initialRestaurants = [
   },
   {
     "id": 54,
+    "area": "Indahpura",
     "name": "维府",
     "name_en": "Wei Palace Chinese Restaurant",
     "address": "No54, Jalan Kenanga 29/5, Bandar Indahpura, 81000 Kulai, Johor Darul Ta'zim, Kulai 21 Miles",
@@ -1377,6 +1409,7 @@ export const initialRestaurants = [
   },
   {
     "id": 55,
+    "area": "Indahpura",
     "name": "发福食堂",
     "name_en": "Wafu Indahpura",
     "address": "192, Jalan Kenanga 29/4, Bandar Indahpura, 81000 Kulai, Johor Darul Ta'zim, Kulai 21 Miles",
@@ -1401,6 +1434,7 @@ export const initialRestaurants = [
   },
   {
     "id": 56,
+    "area": "Indahpura",
     "name": "Jang Won Korean BBQ Restaurant",
     "address": "185, Jalan Kenanga 29/4, Bandar Indahpura, 81000 Kulai, Johor Darul Ta'zim, Kulai 21 Miles",
     "opening_hours": "11am – 10pm",
@@ -1424,6 +1458,7 @@ export const initialRestaurants = [
   },
   {
     "id": 57,
+    "area": "Indahpura",
     "name": "Chiyo Sushi",
     "address": "184A, Indahpura, 81000 Kulai, Johor, Kulai 21 Miles",
     "opening_hours": "11:30am – 10pm",
@@ -1447,6 +1482,7 @@ export const initialRestaurants = [
   },
   {
     "id": 58,
+    "area": "Indahpura",
     "name": "3rd Junction Cafe Indahpura Kulai",
     "address": "181, Jalan Kenanga 29/4, Bandar Indahpura, 81000 Kulai, Johor Darul Ta'zim, Kulai 21 Miles",
     "opening_hours": "12pm – 12am",
@@ -1470,6 +1506,7 @@ export const initialRestaurants = [
   },
   {
     "id": 59,
+    "area": "Indahpura",
     "name": "岚囍",
     "name_en": "LANXI",
     "address": "234, Jln Kenanga 29/8, Taman Indahpura, 81000 Kulai, Johor, Kulai 21 Miles",
@@ -1494,6 +1531,7 @@ export const initialRestaurants = [
   },
   {
     "id": 60,
+    "area": "Indahpura",
     "name": "串来串去",
     "name_en": "Chuanlai Chuanqu Mala Hotpot Kulai",
     "address": "243A, Jln Kenanga 29/8, Taman Indahpura, 81000 Kulai, Johor, Kulai 21 Miles",
@@ -1518,6 +1556,7 @@ export const initialRestaurants = [
   },
   {
     "id": 61,
+    "area": "",
     "name": "Four Beans Soy Desserts Kulai",
     "name_en": "",
     "address": "247, Jln Kenanga 29/8, Indahpura, 81000 Kulai, Johor, Kulai 21 Miles",
@@ -1544,6 +1583,7 @@ export const initialRestaurants = [
   },
   {
     "id": 62,
+    "area": "Indahpura",
     "name": "BAR WANG RICE 霸王饭",
     "name_en": "",
     "address": "Jln Kenanga 29/8, Indahpura, 81000 Kulai, Johor, Kulai 21 Miles",
@@ -1568,6 +1608,7 @@ export const initialRestaurants = [
   },
   {
     "id": 63,
+    "area": "Indahpura",
     "name": "CHAGEE @ Kulai",
     "name_en": "",
     "address": "263, Jln Kenanga 29/8, Indahpura, 81000 Kulai, Johor, Kulai 21 Miles",
@@ -1640,6 +1681,7 @@ export const initialRestaurants = [
   },
   {
     "id": 66,
+    "area": "Indahpura",
     "name": "XIAO XIN HOT RESTAURANT 小心烫·小火锅",
     "name_en": "",
     "address": "583, Jalan Kenanga 29/19, Taman Indahpura, 81000 Kulai, Johor Darul Ta'zim, Kulai 21 Miles",
@@ -1664,6 +1706,7 @@ export const initialRestaurants = [
   },
   {
     "id": 67,
+    "area": "Indahpura",
     "name": "大众美食中心 RESTORAN WEE HUAT (KULAI)",
     "name_en": "",
     "address": "587, Jalan Kenanga 29/19, Bandar Indahpura, 81000 Kulai, Johor Darul Ta'zim, Kulai 21 Miles",
@@ -1688,6 +1731,7 @@ export const initialRestaurants = [
   },
   {
     "id": 68,
+    "area": "Indahpura",
     "name": "Ma Chin All Steamboat Restaurant",
     "name_en": "",
     "address": "590, Jalan Kenanga 29/19, Bandar Indahpura, 81000 Kulai, Johor Darul Ta'zim, Kulai 21 Miles",
@@ -1712,6 +1756,7 @@ export const initialRestaurants = [
   },
   {
     "id": 69,
+    "area": "Indahpura",
     "name": "Kulai QIAO DI KOPITIAM 桥底茶室",
     "name_en": "",
     "address": "593, Jalan Kenanga 29/19, Bandar Indahpura, 81000 Kulai, Johor Darul Ta'zim, Kulai 21 Miles",
@@ -1760,6 +1805,7 @@ export const initialRestaurants = [
   },
   {
     "id": 71,
+    "area": "Indahpura",
     "name": "大众茶餐室",
     "name_en": "Popular Tea Room",
     "address": "542, Jalan Kenanga 29/17, Bandar Indahpura, 81000 Kulai, Johor Darul Ta'zim, Kulai 21 Miles",
@@ -1784,6 +1830,7 @@ export const initialRestaurants = [
   },
   {
     "id": 72,
+    "area": "Indahpura",
     "name": "一品鲜鱼肉汤专卖店",
     "name_en": "EP Xian Restaurant",
     "address": "553, Jalan Kenanga 29/18, Bandar Indahpura, 81000 Kulai, Johor Darul Ta'zim, Kulai 21 Miles",
@@ -1808,6 +1855,7 @@ export const initialRestaurants = [
   },
   {
     "id": 73,
+    "area": "Indahpura",
     "name": "江满小食馆",
     "name_en": "Restoran jiang mam",
     "address": "555, Jalan Kenanga 29/18, Bandar Indahpura, 81000 Kulai, Johor Darul Ta'zim, Kulai 21 Miles",
@@ -1834,6 +1882,7 @@ export const initialRestaurants = [
   },
   {
     "id": 74,
+    "area": "Indahpura",
     "name": "源发茶餐室",
     "name_en": "",
     "address": "566, Jalan Kenanga 29/18, Bandar Indahpura, 81000 Kulai, Johor Darul Ta'zim, Kulai 21 Miles",
@@ -1858,6 +1907,7 @@ export const initialRestaurants = [
   },
   {
     "id": 75,
+    "area": "Indahpura",
     "name": "新食代",
     "name_en": "Food Generation",
     "address": "292,JALAN KIAMBANG UTAMA,KOMERSIAL INDAH, KOMERSIAL INDAH, Bandar Indahpura, 81000 Kulai, Johor Darul Ta'zim, Kulai 21 Miles",
@@ -1882,6 +1932,7 @@ export const initialRestaurants = [
   },
   {
     "id": 76,
+    "area": "Indahpura",
     "name": "笨珍亞九咖啡",
     "name_en": "Pontian Coffee 9",
     "address": "No 155, Pusat Komersial Indah, Jalan Kiambang 13, Bandar Indahpura, 81000 Kulai, Johor Darul Ta'zim, Kulai 21 Miles",
@@ -1906,6 +1957,7 @@ export const initialRestaurants = [
   },
   {
     "id": 77,
+    "area": "Indahpura",
     "name": "南洋老街粿条仔",
     "name_en": "Nanyang Old Street @ Kulai",
     "address": "154, Jalan Kiambang 13, Bandar Indahpura, 81000 Kulai, Johor Darul Ta'zim, Kulai 21 Miles",
@@ -1930,6 +1982,7 @@ export const initialRestaurants = [
   },
   {
     "id": 78,
+    "area": "Indahpura",
     "name": "Uncle Five Coffee",
     "name_en": "",
     "address": "160 Jalan Kiambang  Kulai Bandar Indahpura 81000 JOHOR, Kulai 21 Miles",
@@ -1954,6 +2007,7 @@ export const initialRestaurants = [
   },
   {
     "id": 79,
+    "area": "Indahpura",
     "name": "平新鲍鱼粿条",
     "name_en": "PS Abalone",
     "address": "146, Jalan Kiambang 13, Bandar Indahpura, 81000 Kulai, Johor Darul Ta'zim, Kulai 21 Miles",
@@ -1978,6 +2032,7 @@ export const initialRestaurants = [
   },
   {
     "id": 80,
+    "area": "Indahpura",
     "name": "好運茶室",
     "name_en": "Goodluck Kopitiam",
     "address": "No.166, Pusat Komersial Indah, Jalan Kiambang 13, Bandar Indahpura, 81000 Kulai, Johor Darul Ta'zim, Kulai 21 Miles",
@@ -2002,6 +2057,7 @@ export const initialRestaurants = [
   },
   {
     "id": 81,
+    "area": "Indahpura",
     "name": "Mystery Dessertland Cafe 甜秘•糖",
     "name_en": "",
     "address": "No 148, Pusat Komersial Indah, Jalan Kiambang 13, Indahpura, 81000 Kulai, Johor, Kulai 21 Miles",
@@ -2026,6 +2082,7 @@ export const initialRestaurants = [
   },
   {
     "id": 82,
+    "area": "Indahpura",
     "name": "怡保风味馆",
     "name_en": "Taste Of Ipoh",
     "address": "143, Pusat Komersial Indah, Jalan Kiambang 13, Bandar Indahpura, 81000 Kulai, Johor Darul Ta'zim, Kulai 21 Miles",
@@ -2050,6 +2107,7 @@ export const initialRestaurants = [
   },
   {
     "id": 83,
+    "area": "Indahpura",
     "name": "御寶貴妃雞",
     "name_en": "Yubao Chicken Rice",
     "address": "Pusat Komersial Kulai, 169, Jalan Kiambang 13, Bandar Indahpura, 81000 Kulai, Johor Darul Ta'zim, Kulai 21 Miles",
@@ -2074,6 +2132,7 @@ export const initialRestaurants = [
   },
   {
     "id": 84,
+    "area": "Indahpura",
     "name": "Hermeal healthy food",
     "name_en": "",
     "address": "Pusat Kormersial Indah 142, 13, Jalan Kiambang, Bandar Indahpura, 81000 Kulai, Johor Darul Ta'zim, Kulai 21 Miles",
@@ -2118,6 +2177,7 @@ export const initialRestaurants = [
   },
   {
     "id": 86,
+    "area": "Indahpura",
     "name": "Kopiloco Kulai",
     "name_en": "",
     "address": "MY Johor Kulai Bandar Indahpura Jalan Kiambang139 &140邮政编码:邮政编码: 81000, Kulai 21 Miles",
@@ -2142,6 +2202,7 @@ export const initialRestaurants = [
   },
   {
     "id": 87,
+    "area": "Indahpura",
     "name": "桃源麵家",
     "name_en": "TAO YUAN",
     "address": "13, Pusat Komersial Indah, 137, Jalan Kiambang, Indahpura, 81000 Kulai, Johor, Kulai 21 Miles",
@@ -2166,6 +2227,7 @@ export const initialRestaurants = [
   },
   {
     "id": 88,
+    "area": "Indahpura",
     "name": "Kuching Style Restaurant",
     "name_en": "",
     "address": "138, Jalan kiambang, 13, Pusat Komersial Indah, Bandar Indahpura, 81000 Kulai, Johor Darul Ta'zim, Kulai 21 Miles",
@@ -2190,6 +2252,7 @@ export const initialRestaurants = [
   },
   {
     "id": 89,
+    "area": "Indahpura",
     "name": "LA PRIMEUR",
     "name_en": "",
     "address": "PUSAT KOMERSIAL INDAH, 135, 13, Jalan Kiambang, Bandar Indahpura, 81000 Kulai, Johor Darul Ta'zim, Kulai 21 Miles",
@@ -2214,6 +2277,7 @@ export const initialRestaurants = [
   },
   {
     "id": 90,
+    "area": "Indahpura",
     "name": "The Bierhaus",
     "name_en": "",
     "address": "134, Jln Kiambang 14, Bandar Indahpura, 81000 Kulai, Johor Darul Ta'zim, Kulai 21 Miles",
@@ -2238,6 +2302,7 @@ export const initialRestaurants = [
   },
   {
     "id": 91,
+    "area": "Indahpura",
     "name": "Q HOUSE",
     "name_en": "",
     "address": "Pusat Komersial Indah, 132 & 133, Jln Kiambang 14, Indahpura, 81000 Kulai, Johor, Kulai 21 Miles",
@@ -2262,6 +2327,7 @@ export const initialRestaurants = [
   },
   {
     "id": 92,
+    "area": "Indahpura",
     "name": "MeatVking Bistro",
     "name_en": "",
     "address": "Pusat Komersial Indah, 127, Jln Kiambang 14, Bandar Indahpura, 81000 Kulai, Johor Darul Ta'zim, Kulai 21 Miles",
@@ -2286,6 +2352,7 @@ export const initialRestaurants = [
   },
   {
     "id": 93,
+    "area": "Indahpura",
     "name": "小红凳老火锅",
     "name_en": "Siao Hong Deng Hotpot",
     "address": "No 128, PUSAT KOMERSIAL INDAH, Jln Kiambang 14, Indahpura, 81000 Kulai, Johor, Kulai 21 Miles",
@@ -2310,6 +2377,7 @@ export const initialRestaurants = [
   },
   {
     "id": 94,
+    "area": "Indahpura",
     "name": "甜品轩",
     "name_en": "Dessert Library",
     "address": "120, Jln Kiambang 14, Bandar Indahpura, 81000 Kulai, Johor Darul Ta'zim, Kulai 21 Miles",
@@ -2334,6 +2402,7 @@ export const initialRestaurants = [
   },
   {
     "id": 95,
+    "area": "Indahpura",
     "name": "美香龙趸鱼炉",
     "name_en": "Zen Bee Siang",
     "address": "115, Jln Kiambang 14, Bandar Indahpura, 81000 Kulai, Johor Darul Ta'zim, Kulai 21 Miles",
@@ -2358,6 +2427,7 @@ export const initialRestaurants = [
   },
   {
     "id": 96,
+    "area": "Indahpura",
     "name": "八号吐司",
     "name_en": "Eight Toast Nanyang Kopitiam",
     "address": "196, Jalan Kiambang 12, Bandar Indahpura, 81000 Kulai, Johor Darul Ta'zim, Kulai 21 Miles",
@@ -2454,6 +2524,7 @@ export const initialRestaurants = [
   },
   {
     "id": 100,
+    "area": "Indahpura",
     "name": "芳园",
     "name_en": "Fang Yuan kopitiam",
     "address": "188, Jalan Kiambang 12, Bandar Indahpura, 81000 Kulai, Johor Darul Ta'zim, Kulai 21 Miles",
@@ -2478,6 +2549,7 @@ export const initialRestaurants = [
   },
   {
     "id": 101,
+    "area": "Indahpura",
     "name": "Dino House Cafe",
     "name_en": "",
     "address": "Pusat Komersial Indah, 187, Jalan Kiambang 12, Bandar Indahpura, 81000 Kulai, Johor Darul Ta'zim, Kulai 21 Miles",
@@ -2502,6 +2574,7 @@ export const initialRestaurants = [
   },
   {
     "id": 102,
+    "area": "Indahpura",
     "name": "卡路里烧烤火锅",
     "name_en": "K LOLLY STEAMBOAT & BBQ",
     "address": "No.184 & 185, Pusat Komersial Indah, 12, Jalan Kiambang, Bandar Indahpura, 81000 Kulai, Johor Darul Ta'zim, Kulai 21 Miles",
@@ -2526,6 +2599,7 @@ export const initialRestaurants = [
   },
   {
     "id": 103,
+    "area": "Indahpura",
     "name": "慷美峰",
     "name_en": "Kang Bee Hong",
     "address": "182, Jalan Kiambang 12, Bandar Indahpura, 81000 Kulai, Johor Darul Ta'zim, Kulai 21 Miles",
@@ -2550,6 +2624,7 @@ export const initialRestaurants = [
   },
   {
     "id": 104,
+    "area": "Indahpura",
     "name": "新莫九",
     "name_en": "RESTAURANT XIN MO GAO",
     "address": "PUSAT KOMERSIAL INDAH, 181, Jalan Kiambang 12, Indahpura, 81000 Kulai, Johor, Kulai 21 Miles",
@@ -2574,6 +2649,7 @@ export const initialRestaurants = [
   },
   {
     "id": 105,
+    "area": "Indahpura",
     "name": "榮記魚頭爐",
     "name_en": "LoongKee",
     "address": "Pusat Komersial Indah, 178, Jalan Kiambang 12, Indahpura, 81000 Kulai, Johor, Kulai 21 Miles",
@@ -2598,6 +2674,7 @@ export const initialRestaurants = [
   },
   {
     "id": 106,
+    "area": "Indahpura",
     "name": "探炭古来",
     "name_en": "Tan Tan Charcoal Steamboat Kulai",
     "address": "238, Pusat Komersial Indah, Jalan Kiambang 15, Bandar Indahpura, 81000 Kulai, Johor Darul Ta'zim, Kulai 21 Miles",
@@ -2622,6 +2699,7 @@ export const initialRestaurants = [
   },
   {
     "id": 107,
+    "area": "Indahpura",
     "name": "东南碰碰胡咖啡店",
     "name_en": "Restoran Tong Nam PPH",
     "address": "210, Jln Kiambang 14, Bandar Indahpura, 81000 Kulai, Johor Darul Ta'zim, Kulai 21 Miles",
@@ -2646,6 +2724,7 @@ export const initialRestaurants = [
   },
   {
     "id": 108,
+    "area": "Indahpura",
     "name": "POWERTEA",
     "name_en": "",
     "address": "207, Jln Kiambang 14, Bandar Indahpura, 81000 Kulai, Johor Darul Ta'zim, Kulai 21 Miles",
@@ -2670,6 +2749,7 @@ export const initialRestaurants = [
   },
   {
     "id": 109,
+    "area": "Indahpura",
     "name": "顺发肉骨茶",
     "name_en": "Restoran Soon Fa Bat Kut Teh",
     "address": "204 Pusat Komersial Indah, Jln Kiambang 14, Indahpura, 81000 Kulai, Kulai 21 Miles",
@@ -2694,6 +2774,7 @@ export const initialRestaurants = [
   },
   {
     "id": 110,
+    "area": "Indahpura",
     "name": "心友明",
     "name_en": "Yu Min One",
     "address": "198, Jln Kiambang 14, taman Indahpura81000 Kulai, Johor Darul Ta'zim, Kulai 21 Miles",
@@ -2744,6 +2825,7 @@ export const initialRestaurants = [
   },
   {
     "id": 112,
+    "area": "Indahpura",
     "name": "赞面馆",
     "name_en": "Like Mee Noodle House",
     "address": "231, Jalan Kiambang 15, Bandar Indahpura, 81000 Kulai, Johor Darul Ta'zim, Kulai 21 Miles",
@@ -2768,6 +2850,7 @@ export const initialRestaurants = [
   },
   {
     "id": 113,
+    "area": "Indahpura",
     "name": "佳香点心茶楼",
     "name_en": "Jiah Xiang Dim Sum",
     "address": "Pusat komersial Indah, 229 & 230, Jalan Kiambang 15, Bandar Indahpura, 81000 Kulai, Johor Darul Ta'zim, Kulai 21 Miles",
@@ -2792,6 +2875,7 @@ export const initialRestaurants = [
   },
   {
     "id": 114,
+    "area": "Indahpura",
     "name": "笨珍风味肉骨茶",
     "name_en": "LNP PONTIAN FLAVOR BAK KUT TEH",
     "address": "289, Jln Kiambang 11, Bandar Indahpura, 81000 Kulai, Johor Darul Ta'zim, Kulai 21 Miles",
@@ -2816,6 +2900,7 @@ export const initialRestaurants = [
   },
   {
     "id": 115,
+    "area": "Indahpura",
     "name": "佳旺甜品",
     "name_en": "JustWant Dessert",
     "address": "Pusat Komersial Indah, 289, Jln Kiambang 11, Bandar Indahpura, 81000 Kulai, Johor Darul Ta'zim, Kulai 21 Miles",
@@ -2840,6 +2925,7 @@ export const initialRestaurants = [
   },
   {
     "id": 116,
+    "area": "Indahpura",
     "name": "回味生肉面",
     "name_en": "JS Tasty Restaurant",
     "address": "Pusat Komersial Indah, 285, Jln Kiambang 11, Bandar Indahpura, 81000 Kulai, Johor Darul Ta'zim, Kulai 21 Miles",
@@ -2864,6 +2950,7 @@ export const initialRestaurants = [
   },
   {
     "id": 117,
+    "area": "Indahpura",
     "name": "黄凤娣面粉粿专卖店",
     "name_en": "",
     "address": "No 283, PUSAT KOMERSIAL INDAH, Jln Kiambang 11, Bandar Indahpura, 81000 Kulai, Johor Darul Ta'zim, Kulai 21 Miles",
@@ -2888,6 +2975,7 @@ export const initialRestaurants = [
   },
   {
     "id": 118,
+    "area": "Indahpura",
     "name": "夫妻坊小厨房",
     "name_en": "Fu Qi Fang",
     "address": "PTD 110707, Jln Kiambang 11, Bandar Indahpura, 81000 Kulai, Johor Darul Ta'zim, Kulai 21 Miles",
@@ -2984,6 +3072,7 @@ export const initialRestaurants = [
   },
   {
     "id": 122,
+    "area": "Indahpura",
     "name": "王奶奶面粉粿",
     "name_en": "Grandma Ong",
     "address": "NO. 276, Pusat Komersial Indah, Jln Kiambang 11, Bandar Indahpura, 81000 Kulai, Johor Darul Ta'zim, Kulai 21 Miles",
@@ -3008,6 +3097,7 @@ export const initialRestaurants = [
   },
   {
     "id": 123,
+    "area": "Indahpura",
     "name": "村天",
     "name_en": "My Cafe",
     "address": "No. 273, Pusat Komersial Indah, Jln Kiambang 11, Indahpura, 81000 Kulai, Johor, Kulai 21 Miles",
@@ -3032,6 +3122,7 @@ export const initialRestaurants = [
   },
   {
     "id": 124,
+    "area": "Indahpura",
     "name": "马口手工面粉粿专卖店",
     "name_en": "Restoran Bahao",
     "address": "268, Jln Kiambang 11, virvo city indahpura, 81000 Kulai, Johor Darul Ta'zim, Kulai 21 Miles",
@@ -3056,6 +3147,7 @@ export const initialRestaurants = [
   },
   {
     "id": 125,
+    "area": "Indahpura",
     "name": "沪上阿姨",
     "name_en": "Auntea Jenny",
     "address": "269, Jln Kiambang 11, Bandar Indahpura, 81000 Kulai, Johor Darul Ta'zim, Kulai 21 Miles",
@@ -3080,6 +3172,7 @@ export const initialRestaurants = [
   },
   {
     "id": 126,
+    "area": "Indahpura",
     "name": "古来花火本屋",
     "name_en": "Hanabi Robata Izakaya Kulai",
     "address": "No.294H, PUSAT KOMERSIAL INDAH, Jln Kiambang 11, Bandar Indahpura, 81000 Kulai, Johor Darul Ta'zim, Kulai 21 Miles",
@@ -3104,6 +3197,7 @@ export const initialRestaurants = [
   },
   {
     "id": 127,
+    "area": "Indahpura",
     "name": "逗工厂",
     "name_en": "Beans.Factory",
     "address": "Pusat Komersial Indah, 294M, Jalan Kiambang 12, Bandar Indahpura, 81000 Kulai, Johor Darul Ta'zim, Kulai 21 Miles",
@@ -3128,6 +3222,7 @@ export const initialRestaurants = [
   },
   {
     "id": 128,
+    "area": "Indahpura",
     "name": "琥珀时光",
     "name_en": "Aunt Vicky",
     "address": "Pusat Komersial Indah, 294N, Jalan Kiambang 12, Indahpura, 81000 Kulai, Johor, Kulai 21 Miles",
@@ -3152,6 +3247,7 @@ export const initialRestaurants = [
   },
   {
     "id": 129,
+    "area": "Indahpura",
     "name": "Hinokage Kulai 火の影",
     "name_en": "",
     "address": "No.294E, Pusat Komersial Indah, Jln Kiambang 11, Bandar Indahpura, 81000 Kulai, Johor Darul Ta'zim, Kulai 21 Miles",
@@ -3224,6 +3320,7 @@ export const initialRestaurants = [
   },
   {
     "id": 132,
+    "area": "Indahpura",
     "name": "川食府",
     "name_en": "",
     "address": "No 255, Pusat Komersial Indah, Jalan Kiambang 10, Bandar Indahpura, 81000 Kulai, Johor Darul Ta'zim, Kulai 21 Miles",
@@ -3248,6 +3345,7 @@ export const initialRestaurants = [
   },
   {
     "id": 133,
+    "area": "Indahpura",
     "name": "K PATISSERIE",
     "name_en": "",
     "address": "253a, Jalan Kiambang 10, Bandar Indahpura, 81000 Kulai, Johor Darul Ta'zim, Kulai 21 Miles",
@@ -3272,6 +3370,7 @@ export const initialRestaurants = [
   },
   {
     "id": 134,
+    "area": "Indahpura",
     "name": "Alliews Bakehouse",
     "name_en": "",
     "address": "Pusat Komersial Indah, 252 & 253, Jalan Kiambang 10, Bandar Indahpura, 81000 Kulai, Johor Darul Ta'zim, Kulai 21 Miles",
@@ -3296,6 +3395,7 @@ export const initialRestaurants = [
   },
   {
     "id": 135,
+    "area": "Indahpura",
     "name": "华美",
     "name_en": "Restoran Hua Mui",
     "address": "251, Pusat Komersial Indah, Jalan Kiambang 10, Bandar Indahpura, 81000 Kulai, Johor Darul Ta'zim, Kulai 21 Miles",
@@ -3320,6 +3420,7 @@ export const initialRestaurants = [
   },
   {
     "id": 136,
+    "area": "Indahpura",
     "name": "财记鱼汤",
     "name_en": "Chai Ji Fish Soup",
     "address": "Pusat Komersial Indah, 250, Jalan Kiambang 10, Bandar Indahpura, 81000 Kulai, Johor Darul Ta'zim, Kulai 21 Miles",
@@ -3344,6 +3445,7 @@ export const initialRestaurants = [
   },
   {
     "id": 137,
+    "area": "Indahpura",
     "name": "Uncle Lim Delivery",
     "name_en": "",
     "address": "249， Pusat Komersial Indah, PTD 110674, Jalan Kiambang 10, Bandar Indahpura, 81000 Kulai, Johor Darul Ta'zim, Kulai 21 Miles",
@@ -3368,6 +3470,7 @@ export const initialRestaurants = [
   },
   {
     "id": 138,
+    "area": "Indahpura",
     "name": "古来99冷气酒家",
     "name_en": "",
     "address": "41 Jalan SME 2 Kawasan, Perindustrian SME, Bandar Indahpura, 81000 Kulai, Johor Darul Ta'zim, Kulai 21 Miles",
@@ -3392,6 +3495,7 @@ export const initialRestaurants = [
   },
   {
     "id": 139,
+    "area": "Indahpura",
     "name": "怡沁园素味馆",
     "name_en": "Restaurant Yi Sin (Vegeterian)",
     "address": "40, Jalan SME 2, Bandar Indahpura, 81000 Kulai, Johor Darul Ta'zim, Kulai 21 Miles",
@@ -3416,6 +3520,7 @@ export const initialRestaurants = [
   },
   {
     "id": 140,
+    "area": "Indahpura",
     "name": "馨馨点心",
     "name_en": "Xin Xin Dian Xin",
     "address": "Kawasan Perindustrian SME, 33, Jalan SME 2, Indahpura, 81000 Kulai, Johor, Kulai 21 Miles",
@@ -3442,6 +3547,7 @@ export const initialRestaurants = [
   },
   {
     "id": 141,
+    "area": "Indahpura",
     "name": "潮汕楼",
     "name_en": "Restoran Chao Shan",
     "address": "23 jalan SME 2, kawansan perindustrian SME, Indahpura, 81000 Kulai, Johor, Kulai 21 Miles",
@@ -3538,6 +3644,7 @@ export const initialRestaurants = [
   },
   {
     "id": 145,
+    "area": "Bandar Putra",
     "name": "福临门",
     "name_en": "Defortune Restaurant",
     "address": "PTD 82181, Lebuh Putra Utama, Bandar Putra Kulai, 81000 Kulai, Johor Darul Ta'zim",
@@ -3562,6 +3669,7 @@ export const initialRestaurants = [
   },
   {
     "id": 146,
+    "area": "Bandar Putra",
     "name": "AiCHA",
     "name_en": "AiCHA",
     "address": "2915, Jalan Merbau 3, Bandar Putra Kulai, 81000 Kulai, Johor Darul Ta'zim",
@@ -3586,6 +3694,7 @@ export const initialRestaurants = [
   },
   {
     "id": 147,
+    "area": "Bandar Putra",
     "name": "Verbena Patisserie Shop",
     "name_en": "Verbena Patisserie Shop",
     "address": "2918, Jalan Merbau 3, Bandar Putra Kulai, 81000 Kulai, Johor Darul Ta'zim",
@@ -3706,6 +3815,7 @@ export const initialRestaurants = [
   },
   {
     "id": 152,
+    "area": "Bandar Putra",
     "name": "家香咖啡馆",
     "name_en": "Home Taste Coffee",
     "address": "5013, Jalan Kenari, Bandar Putra Kulai, 81000 Kulai, Johor Darul Ta'zim",
@@ -3730,6 +3840,7 @@ export const initialRestaurants = [
   },
   {
     "id": 153,
+    "area": "Bandar Putra",
     "name": "Classic Coffee",
     "name_en": "Classic Coffee",
     "address": "5011, Jalan Kenari, Bandar Putra Kulai, 81000 Kulai, Johor Darul Ta'zim",
@@ -3754,6 +3865,7 @@ export const initialRestaurants = [
   },
   {
     "id": 154,
+    "area": "Bandar Putra",
     "name": "Madam LoqLoq Kulai",
     "name_en": "Madam LoqLoq Kulai",
     "address": "5448A, Jalan Kenari 20, Bandar Putra Kulai, 81000 Kulai, Johor Darul Ta'zim",
@@ -3778,6 +3890,7 @@ export const initialRestaurants = [
   },
   {
     "id": 155,
+    "area": "Bandar Putra",
     "name": "MKe Harmony Cafe",
     "name_en": "MKe Harmony Cafe",
     "address": "5457A, Jalan Kenari 20, Bandar Putra Kulai, 81000 Kulai, Johor Darul Ta'zim",
@@ -3802,6 +3915,7 @@ export const initialRestaurants = [
   },
   {
     "id": 156,
+    "area": "Bandar Putra",
     "name": "MON DELICE PATISSERIE",
     "name_en": "MON DELICE PATISSERIE",
     "address": "5383, Jalan Kenari 20, Bandar Putra Kulai, 81000 Kulai, Johor Darul Ta'zim",
@@ -3850,6 +3964,7 @@ export const initialRestaurants = [
   },
   {
     "id": 158,
+    "area": "Bandar Putra",
     "name": "金霸王餐厅",
     "name_en": "Kimbarking Cafe",
     "address": "5481, Jalan Kenari 19, Bandar Putra Kulai, 81000 Kulai, Johor Darul Ta'zim",
@@ -3874,6 +3989,7 @@ export const initialRestaurants = [
   },
   {
     "id": 159,
+    "area": "Bandar Putra",
     "name": "咖啡好美食阁",
     "name_en": "Good Coffee Restaurant",
     "address": "5484, Jalan Kenari 19, Bandar Putra Kulai, 81000 Kulai, Johor Darul Ta'zim",
@@ -3898,6 +4014,7 @@ export const initialRestaurants = [
   },
   {
     "id": 160,
+    "area": "Bandar Putra",
     "name": "品记全蛋云吞面",
     "name_en": "Yue Shan Cafe",
     "address": "5427, Jalan Kenari 18, Bandar Putra Kulai, 81000 Kulai, Johor Darul Ta'zim",
@@ -3922,6 +4039,7 @@ export const initialRestaurants = [
   },
   {
     "id": 161,
+    "area": "Bandar Putra",
     "name": "#7 Beradik Restaurant",
     "name_en": "#7 Beradik Restaurant",
     "address": "5432, Jalan Kenari 18, Bandar Putra Kulai, 81000 Kulai, Johor Darul Ta'zim",
@@ -3946,6 +4064,7 @@ export const initialRestaurants = [
   },
   {
     "id": 162,
+    "area": "Bandar Putra",
     "name": "REDY.CAFE",
     "name_en": "REDY.CAFE",
     "address": "K1, IOI GALLERIA, Jalan Putra 4, Bandar Putra Kulai, 81000 Kulai, Johor",
@@ -3970,6 +4089,7 @@ export const initialRestaurants = [
   },
   {
     "id": 163,
+    "area": "Bandar Putra",
     "name": "Nasi Ayam Angah",
     "name_en": "Nasi Ayam Angah",
     "address": "17147, Jalan Murai 4, Bandar Putra Kulai, 81000 Kulai, Johor Darul Ta'zim",
@@ -4018,6 +4138,7 @@ export const initialRestaurants = [
   },
   {
     "id": 165,
+    "area": "Bandar Putra",
     "name": "古来欢乐炸鸡桶",
     "name_en": "Chicky Don Ayam Goreng Paprika",
     "address": "34, Jalan Seri Putra 1, Bandar Putra Kulai, 81000 Kulai, Johor Darul Ta'zim",
@@ -4042,6 +4163,7 @@ export const initialRestaurants = [
   },
   {
     "id": 166,
+    "area": "Indahpura",
     "name": "罗记小食馆",
     "name_en": "Restoran Law Cafe",
     "address": "488, Jalan Kenanga 29/14, Bandar Indahpura, 81000 Kulai, Johor Darul Ta'zim, Kulai 21 Miles",
@@ -4066,6 +4188,7 @@ export const initialRestaurants = [
   },
   {
     "id": 167,
+    "area": "Indahpura",
     "name": "酿品家餐厅",
     "name_en": "酿品家餐厅",
     "address": "487, Jalan Kenanga 29/14, Bandar Indahpura, 81000 Kulai, Johor Darul Ta'zim, Kulai 21 Miles",
@@ -4090,6 +4213,7 @@ export const initialRestaurants = [
   },
   {
     "id": 168,
+    "area": "Indahpura",
     "name": "鼎點心",
     "name_en": "Ding DimSum",
     "address": "459, Jalan Kenanga 29/13, Bandar Indahpura, 81000 Kulai, Johor Darul Ta'zim, Kulai 21 Miles",
@@ -4114,6 +4238,7 @@ export const initialRestaurants = [
   },
   {
     "id": 169,
+    "area": "Indahpura",
     "name": "客家小食馆",
     "name_en": "Kejia cafe",
     "address": "340, Bandar Indahpura, 81000 Kulai, Johor Darul Ta'zim, Kulai 21 Miles",
@@ -4138,6 +4263,7 @@ export const initialRestaurants = [
   },
   {
     "id": 170,
+    "area": "Indahpura",
     "name": "老巴刹",
     "name_en": "Lao Pa Sat Kopitiam",
     "address": "306, Jalan Kenanga 29/9, Bandar Indahpura, 81000 Kulai, Johor Darul Ta'zim, Kulai 21 Miles",
@@ -4162,6 +4288,7 @@ export const initialRestaurants = [
   },
   {
     "id": 171,
+    "area": "Indahpura",
     "name": "AkiNo Japanese Restaurant",
     "name_en": "AkiNo Japanese Restaurant",
     "address": "307, Jalan Kenanga 29/9, Bandar Indahpura, 81000 Kulai, Johor Darul Ta'zim, Kulai 21 Miles",
@@ -4186,6 +4313,7 @@ export const initialRestaurants = [
   },
   {
     "id": 172,
+    "area": "Indahpura",
     "name": "六月西餐厅",
     "name_en": "June Coffee Grill & Spaghetti",
     "address": "303, Jalan Kenanga 29/9, Bandar Indahpura, 81000 Kulai, Johor Darul Ta'zim, Kulai 21 Miles",
@@ -4210,6 +4338,7 @@ export const initialRestaurants = [
   },
   {
     "id": 173,
+    "area": "Indahpura",
     "name": "泰啦啦",
     "name_en": "THAI LALA",
     "address": "352, Jalan Kenanga 29/9, Bandar Indahpura, 81000 Kulai, Johor Darul Ta'zim, Kulai 21 Miles",
@@ -4954,6 +5083,7 @@ export const initialRestaurants = [
   },
   {
     "id": 207,
+    "area": "Indahpura",
     "name": "MeatVking Bistro",
     "name_en": "",
     "address": "Pusat Komersial Indah, 127, Jln Kiambang 14, Bandar Indahpura, 81000 Kulai, Johor Darul Ta'zim, Kulai 21 Miles",
@@ -5002,6 +5132,7 @@ export const initialRestaurants = [
   },
   {
     "id": 209,
+    "area": "Indahpura",
     "name": "Ma Chin All Steamboat Restaurant",
     "name_en": "",
     "address": "590, Jalan Kenanga 29/19, Bandar Indahpura, 81000 Kulai, Johor Darul Ta'zim, Kulai 21 Miles",
@@ -5220,6 +5351,7 @@ export const initialRestaurants = [
   },
   {
     "id": 220,
+    "area": "Indahpura",
     "name": "Uncle Don's",
     "name_en": "",
     "address": "229 & 229-A, Jalan Kenanga 29/2, Bandar Indahpura, 81000 Kulai, Johor Darul Ta'zim, Kulai 21 Miles",
@@ -5246,6 +5378,7 @@ export const initialRestaurants = [
   },
   {
     "id": 221,
+    "area": "Indahpura",
     "name": "罗记小食馆",
     "name_en": "Law Cafe",
     "address": "488, Jalan Kenanga 29/14, Bandar Indahpura, 81000 Kulai, Johor Darul Ta'zim, Kulai 21 Miles",
@@ -5318,6 +5451,7 @@ export const initialRestaurants = [
   },
   {
     "id": 224,
+    "area": "Indahpura",
     "name": "Anmour cafe",
     "name_en": "",
     "address": "227, Jalan Kenanga 29/2, Bandar Indahpura, 81000 Kulai, Johor Darul Ta'zim, Kulai 21 Miles",
@@ -5344,6 +5478,7 @@ export const initialRestaurants = [
   },
   {
     "id": 225,
+    "area": "Indahpura",
     "name": "绿园",
     "name_en": "Restaurant Evergreen",
     "address": "L1-05 & L1-06, 291, Jalan Kiambang 10, Indahpura, 81000 Kulai, Johor, Kulai 21 Miles",
@@ -5368,6 +5503,7 @@ export const initialRestaurants = [
   },
   {
     "id": 226,
+    "area": "Indahpura",
     "name": "Nache's Oven Nutri & Wellness Cafe",
     "name_en": "",
     "address": "238A, Jln Kenanga 29/8, Taman Indahpura, 81000 Kulai, Johor, Kulai 21 Miles",
@@ -5394,6 +5530,7 @@ export const initialRestaurants = [
   },
   {
     "id": 227,
+    "area": "Bandar Putra",
     "name": "JLL Brotherhoods",
     "name_en": "",
     "address": "320, Jln Lagenda 21, Taman Lagenda Putra, 81000 Kulai, Johor Darul Ta'zim",
@@ -5588,6 +5725,7 @@ export const initialRestaurants = [
   },
   {
     "id": 235,
+    "area": "Indahpura",
     "name": "Ai-CHA • Bandar Indahpura",
     "name_en": "",
     "address": "5239, Jalan Matahari, Bandar Indahpura, 81000 Kulai, Johor Darul Ta'zim, Kulai 21 Miles",
@@ -5612,6 +5750,7 @@ export const initialRestaurants = [
   },
   {
     "id": 236,
+    "area": "Indahpura",
     "name": "翠竹园海鲜饭馆",
     "name_en": "",
     "address": "5229, Jalan Matahari, Bandar Indahpura, 81000 Kulai, Johor Darul Ta'zim, Kulai 21 Miles",
@@ -5636,6 +5775,7 @@ export const initialRestaurants = [
   },
   {
     "id": 237,
+    "area": "Indahpura",
     "name": "一品川香",
     "name_en": "Yi Pin Chuan Xiang",
     "address": "220, Pusat komercial indah, Jln Kiambang 14, Bandar Indahpura, 81000 Kulai, Johor Darul Ta'zim, Kulai 21 Miles",
@@ -5660,6 +5800,7 @@ export const initialRestaurants = [
   },
   {
     "id": 238,
+    "area": "Indahpura",
     "name": "吃潮烧烤",
     "name_en": "Tong Nam",
     "address": "210, Jln Kiambang 14, Bandar Indahpura, 81000 Kulai, Johor Darul Ta'zim, Kulai 21 Miles",
@@ -5684,6 +5825,7 @@ export const initialRestaurants = [
   },
   {
     "id": 239,
+    "area": "Indahpura",
     "name": "嘉延食馆",
     "name_en": "Garden Restaurant",
     "address": "1, Jln Kiambang 2, Pusat Komersial Indah, Bandar Indahpura, 81000 Kulai, Johor Darul Ta'zim, Kulai 21 Miles",
@@ -5710,6 +5852,7 @@ export const initialRestaurants = [
   },
   {
     "id": 240,
+    "area": "Indahpura",
     "name": "Kopi Tenggek",
     "name_en": "",
     "address": "7, Jln Kiambang 2, Bandar Indahpura, 81000 Kulai, Johor Darul Ta'zim, Kulai 21 Miles",
@@ -5734,6 +5877,7 @@ export const initialRestaurants = [
   },
   {
     "id": 241,
+    "area": "Indahpura",
     "name": "古来东甲牛腩面",
     "name_en": "Tangkak Beef Kulai",
     "address": "Johor, Kulai, Indahpura, Jln Kiambang 2, 邮政编码: 81000, Kulai 21 Miles",
@@ -5758,6 +5902,7 @@ export const initialRestaurants = [
   },
   {
     "id": 242,
+    "area": "Indahpura",
     "name": "简单厨房",
     "name_en": "Simple Recipe",
     "address": "46, Jln Kiambang 3, Taman Indahpura, 81000 Kulai, Johor Darul Ta'zim, Kulai 21 Miles",
@@ -5782,6 +5927,7 @@ export const initialRestaurants = [
   },
   {
     "id": 243,
+    "area": "Indahpura",
     "name": "湘渝楼",
     "name_en": "Xiang Yu Lou",
     "address": "Pusat Komerrsial Indah, 36, Jln Kiambang 3, Indahpura, 81000 Kulai, Johor, Kulai 21 Miles",
@@ -5806,6 +5952,7 @@ export const initialRestaurants = [
   },
   {
     "id": 244,
+    "area": "Indahpura",
     "name": "幼龄状元茶楼",
     "name_en": "Champion Tea House",
     "address": "Pusat Komersial Indah, 101, Jalan Kiambang 5, Bandar Indahpura, 81000 Kulai, Johor Darul Ta'zim, Kulai 21 Miles",
@@ -5830,6 +5977,7 @@ export const initialRestaurants = [
   },
   {
     "id": 245,
+    "area": "Indahpura",
     "name": "Wallace Kulai Indahpura",
     "name_en": "",
     "address": "175, Jalan Kenanga 29/4, Bandar Indahpura, 81000 Kulai, Johor Darul Ta'zim, Kulai 21 Miles",
@@ -5854,6 +6002,7 @@ export const initialRestaurants = [
   },
   {
     "id": 246,
+    "area": "Indahpura",
     "name": "小福水饺麻辣烫",
     "name_en": "I'm Star Mala Soup & Dumplings",
     "address": "187, Jalan Kenanga 29/4, Bandar Indahpura, 81000 Kulai, Johor Darul Ta'zim, Kulai 21 Miles",
@@ -5878,6 +6027,7 @@ export const initialRestaurants = [
   },
   {
     "id": 247,
+    "area": "Indahpura",
     "name": "桑拿面，美滋胃 x 养心锅",
     "name_en": "Young Sanna Mee",
     "address": "186 Jalan Kenanga 29/4, Bandar Indahpura Kulai, 81000 Johor Bahru, Johor Darul Ta'zim, Kulai 21 Miles",
@@ -5902,6 +6052,7 @@ export const initialRestaurants = [
   },
   {
     "id": 248,
+    "area": "Indahpura",
     "name": "发喜靓",
     "name_en": "Fatt Hei Len Kulai",
     "address": "65 64, Jalan Kenanga 29/5, Bandar Indahpura, 81000 Kulai, Johor Darul Ta'zim, Kulai 21 Miles",
@@ -5926,6 +6077,7 @@ export const initialRestaurants = [
   },
   {
     "id": 249,
+    "area": "Indahpura",
     "name": "First Class Bar & Club Kulai",
     "name_en": "",
     "address": "68, Jln. Kenanga 29/11, Bandar Indahpura, 81000 Kulai, Johor Darul Ta'zim, Kulai 21 Miles",
@@ -5950,6 +6102,7 @@ export const initialRestaurants = [
   },
   {
     "id": 250,
+    "area": "Indahpura",
     "name": "給麵子",
     "name_en": "Noodles Q",
     "address": "121, Jalan Kenanga 29/6, Taman Indahpura, 81000 Kulai, Johor Darul Ta'zim, Kulai 21 Miles",
@@ -5974,6 +6127,7 @@ export const initialRestaurants = [
   },
   {
     "id": 251,
+    "area": "Indahpura",
     "name": "白宫海鲜药膳",
     "name_en": "The East Court",
     "address": "133, Jalan Kenanga 29/6, Bandar Indahpura, 81000 Kulai, Johor Darul Ta'zim, Kulai 21 Miles",
@@ -5998,6 +6152,7 @@ export const initialRestaurants = [
   },
   {
     "id": 252,
+    "area": "Indahpura",
     "name": "心聚鲜",
     "name_en": "All Heart Recipe",
     "address": "62&63, Bandar Indahpura, 81000 johor, Johor Darul Ta'zim, Kulai 21 Miles",
@@ -6022,6 +6177,7 @@ export const initialRestaurants = [
   },
   {
     "id": 253,
+    "area": "Indahpura",
     "name": "宏业咖啡店",
     "name_en": "Restoran Kopitiam Hong Ye",
     "address": "Jalan Kenanga 29/9, Bandar Indahpura, 81000 Kulai, Johor Darul Ta'zim, Kulai 21 Miles",
@@ -6046,6 +6202,7 @@ export const initialRestaurants = [
   },
   {
     "id": 254,
+    "area": "Indahpura",
     "name": "大顺好食汇",
     "name_en": "Shun Delicious Food Valley",
     "address": "325, Jalan Kenanga 29/9, Bandar Indahpura, 81000 Kulai, Johor Darul Ta'zim, Kulai 21 Miles",
@@ -6070,6 +6227,7 @@ export const initialRestaurants = [
   },
   {
     "id": 255,
+    "area": "Indahpura",
     "name": "三好餐厅",
     "name_en": "Best 3 Cafe",
     "address": "330, Jalan Kenanga 29/9, Bandar Indahpura, 81000 Kulai, Johor Darul Ta'zim, Kulai 21 Miles",
@@ -6094,6 +6252,7 @@ export const initialRestaurants = [
   },
   {
     "id": 256,
+    "area": "Indahpura",
     "name": "广东街",
     "name_en": "",
     "address": "345, Jalan Kenanga 29/9, Bandar Indahpura, 81000 Kulai, Johor Darul Ta'zim, Kulai 21 Miles",
@@ -6118,6 +6277,7 @@ export const initialRestaurants = [
   },
   {
     "id": 257,
+    "area": "Indahpura",
     "name": "GC Good Coffee",
     "name_en": "",
     "address": "242, Jln Kenanga 29/8, Indahpura, 81000 Kulai, Johor, Kulai 21 Miles",
@@ -6142,6 +6302,7 @@ export const initialRestaurants = [
   },
   {
     "id": 258,
+    "area": "Indahpura",
     "name": "九億廚房",
     "name_en": "JiuYi Kitchen@Indahpura",
     "address": "163, Jalan Kenanga 29/4, Bandar Indahpura, 81000 Kulai, Johor Darul Ta'zim, Kulai 21 Miles",
@@ -6162,6 +6323,7 @@ export const initialRestaurants = [
   },
   {
     "id": 259,
+    "area": "Indahpura",
     "name": "Frenche Roast Cafe",
     "name_en": "",
     "address": "185A, Jalan Kenanga 29/4, Bandar Indahpura, 81000 Kulai, Johor Darul Ta'zim, Kulai 21 Miles",
@@ -6182,6 +6344,7 @@ export const initialRestaurants = [
   },
   {
     "id": 260,
+    "area": "Indahpura",
     "name": "UFB - Union Fashion Bar Balcony",
     "name_en": "",
     "address": "66, Jalan Kenanga 29/5, Bandar Indahpura, 81300 Kulai, Johor Darul Ta'zim, Kulai 21 Miles",
@@ -6202,6 +6365,7 @@ export const initialRestaurants = [
   },
   {
     "id": 261,
+    "area": "Indahpura",
     "name": "古文茶",
     "name_en": "Tea Garden Bandar Indahpura",
     "address": "No 52, Jalan Kenanga 29/3, Bandar Indahpura, 81000 Kulai, Johor Darul Ta'zim, Kulai 21 Miles",
@@ -6222,6 +6386,7 @@ export const initialRestaurants = [
   },
   {
     "id": 262,
+    "area": "Indahpura",
     "name": "黑丸",
     "name_en": "BlackBall Original Taiwanese Tea & Dessert",
     "address": "No 2, Jalan Kenanga 29/1, Taman Indahpura, 81000 Kulai, Johor Darul Ta'zim, Kulai 21 Miles",
@@ -6242,6 +6407,7 @@ export const initialRestaurants = [
   },
   {
     "id": 263,
+    "area": "Indahpura",
     "name": "北京海鲜饭店",
     "name_en": "Restoran Peking",
     "address": "13, Jalan Kenanga 29/1, Taman Indahpura, 81000 Kulai, Johor Darul Ta'zim, Kulai 21 Miles",
@@ -6262,6 +6428,7 @@ export const initialRestaurants = [
   },
   {
     "id": 264,
+    "area": "Indahpura",
     "name": "明太寿司",
     "name_en": "Sushi Mentai Kulai",
     "address": "12, Jalan Kenanga 29/1, Bandar Indahpura, 81000 Kulai, Johor Darul Ta'zim, Kulai 21 Miles",
@@ -6282,6 +6449,7 @@ export const initialRestaurants = [
   },
   {
     "id": 265,
+    "area": "Indahpura",
     "name": "金海阁海鲜佳肴餐馆",
     "name_en": "Restoran Jin Hai",
     "address": "34, Jalan Kenanga 29/1, Bandar Indahpura, 81000 Kulai, Johor Darul Ta'zim, Kulai 21 Miles",
@@ -6302,6 +6470,7 @@ export const initialRestaurants = [
   },
   {
     "id": 266,
+    "area": "Indahpura",
     "name": "4Fingers Crispy Chicken",
     "name_en": "",
     "address": "36, Jalan Kenanga 29/1, Bandar Indahpura, 81000 Kulai, Johor Darul Ta'zim, Kulai 21 Miles",
@@ -6342,6 +6511,7 @@ export const initialRestaurants = [
   },
   {
     "id": 268,
+    "area": "Indahpura",
     "name": "JCO Donut & Coffee",
     "name_en": "",
     "address": "Ground Floor, Aeon Mall, Indahpura, 81000 Kulai, Johor, Kulai 21 Miles",
@@ -6362,6 +6532,7 @@ export const initialRestaurants = [
   },
   {
     "id": 269,
+    "area": "Indahpura",
     "name": "D Laksa",
     "name_en": "",
     "address": "Aeon Kulaijaya, G-08, Indahpura, 81000 Kulai, Johor, Kulai 21 Miles",
@@ -6382,6 +6553,7 @@ export const initialRestaurants = [
   },
   {
     "id": 270,
+    "area": "Indahpura",
     "name": "KOI Thé Johor",
     "name_en": "",
     "address": "g37, Persiaran Indahpura Utama, Bandar Indahpura, 81000 Kulai, Johor Darul Ta'zim, Kulai 21 Miles",
@@ -6402,6 +6574,7 @@ export const initialRestaurants = [
   },
   {
     "id": 271,
+    "area": "Indahpura",
     "name": "Subway",
     "name_en": "",
     "address": "C12 Food Avenue, Aeon Mall, f30, Persiaran Indahpura Utama, Indahpura, 81000 Kulai, Johor, Kulai 21 Miles",
@@ -6422,6 +6595,7 @@ export const initialRestaurants = [
   },
   {
     "id": 272,
+    "area": "Indahpura",
     "name": "SDS Bakery & Cafe",
     "name_en": "",
     "address": "Lot G57, Groun Floor, AEON Mall Kulai Jaya, Persiaran Indahpura Utama, Bandar Indahpura, 81000 Kulai, Johor Darul Ta'zim, Kulai 21 Miles",
@@ -6442,6 +6616,7 @@ export const initialRestaurants = [
   },
   {
     "id": 273,
+    "area": "Indahpura",
     "name": "民洋茶室",
     "name_en": "Pacific Kopi",
     "address": "Lot G01, Ground Floor, Aeon Mall Kulaijaya, PTD 106273, Persiaran Indahpura Utama Bandar Indahpura, 81000 Kulai Jaya, 81000 Kulai, Johor Darul Ta'zim, Kulai 21 Miles",
@@ -6462,6 +6637,7 @@ export const initialRestaurants = [
   },
   {
     "id": 274,
+    "area": "Indahpura",
     "name": "Oochid Bistro",
     "name_en": "",
     "address": "Persiaran Indahpura Utama, Bandar Indahpura, 81000 Kulai, Johor Darul Ta'zim, Kulai 21 Miles",
@@ -6482,6 +6658,7 @@ export const initialRestaurants = [
   },
   {
     "id": 275,
+    "area": "Indahpura",
     "name": "Gigi Coffee",
     "name_en": "",
     "address": "GK3, AEON Mall Kulai, F49, Bandar Indahpura, 81000 Kulai, Johor Kulai, 81000 Johor Bahru, Johor Darul Ta'zim, Kulai 21 Miles",
@@ -6502,6 +6679,7 @@ export const initialRestaurants = [
   },
   {
     "id": 276,
+    "area": "Indahpura",
     "name": "寒舍",
     "name_en": "Hanshe",
     "address": "Ground Floor G63-G65, AEON Kulaijaya, Bandar Indahpura, 81000 Kulai, Johor Darul Ta'zim, Kulai 21 Miles",
@@ -6522,6 +6700,7 @@ export const initialRestaurants = [
   },
   {
     "id": 277,
+    "area": "Indahpura",
     "name": "Choong Man Chicken",
     "name_en": "",
     "address": "G66, Aeon mall, Kulaijaya Persiaran, Bandar Indahpura, 81000 Johor Bahru, Johor Darul Ta'zim, Kulai 21 Miles",
@@ -6542,6 +6721,7 @@ export const initialRestaurants = [
   },
   {
     "id": 278,
+    "area": "Indahpura",
     "name": "日升咖喱鱼头",
     "name_en": "Yit Sheng Fish Head Curry",
     "address": "Bandar Indahpura, 81000 Kulai, Johor Darul Ta'zim, Kulai 21 Miles",
@@ -6562,6 +6742,7 @@ export const initialRestaurants = [
   },
   {
     "id": 279,
+    "area": "Indahpura",
     "name": "超级烧腊专卖店",
     "name_en": "828 Restoran Wan Jiao",
     "address": "839, Jalan Teratai 36/17, Bandar Indahpura, 81000 Kulai, Johor Darul Ta'zim, Kulai 21 Miles",
@@ -6582,6 +6763,7 @@ export const initialRestaurants = [
   },
   {
     "id": 280,
+    "area": "Indahpura",
     "name": "Aunty Ku",
     "name_en": "",
     "address": "845, Jalan Teratai 36/17, Taman Indahpura, 81000 Kulai, Johor Darul Ta'zim, Kulai 21 Miles",
@@ -6602,6 +6784,7 @@ export const initialRestaurants = [
   },
   {
     "id": 281,
+    "area": "Indahpura",
     "name": "Restoran Ayam Penyet 3 Abdul",
     "name_en": "",
     "address": "84, Jalan Kenanga 29/7, Bandar Indahpura, 81000 Kulai, Johor., Kulai 21 Miles",
@@ -6622,6 +6805,7 @@ export const initialRestaurants = [
   },
   {
     "id": 282,
+    "area": "Indahpura",
     "name": "新口味冷气饭店",
     "name_en": "Modern Taste Restaurant",
     "address": "278, Jalan Kenanga 29/9, Bandar Indahpura, 81000 Kulai, Johor Darul Ta'zim, Kulai 21 Miles",
@@ -6642,6 +6826,7 @@ export const initialRestaurants = [
   },
   {
     "id": 283,
+    "area": "Indahpura",
     "name": "霸王饭",
     "name_en": "Bar Wang Rice",
     "address": "Jln Kenanga 29/8, Indahpura, 81000 Kulai, Johor, Kulai 21 Miles",
@@ -6662,6 +6847,7 @@ export const initialRestaurants = [
   },
   {
     "id": 284,
+    "area": "Indahpura",
     "name": "士林台湾小吃",
     "name_en": "Shihlin Taiwan Street Food",
     "address": "Lot G-71, Kulai Jaya, AEON Mall, Persiaran Indahpura Utama, Bandar Indahpura, 81000 Kulai, Johor Darul Ta'zim, Kulai 21 Miles",
@@ -6682,6 +6868,7 @@ export const initialRestaurants = [
   },
   {
     "id": 285,
+    "area": "Indahpura",
     "name": "阿张卤肉饭",
     "name_en": "AhZhang Lobak",
     "address": "11, Jln Rimbun 1, Taman Indahpura, 81000 Kulai, Johor Darul Ta'zim, Kulai 21 Miles",
@@ -6722,6 +6909,7 @@ export const initialRestaurants = [
   },
   {
     "id": 287,
+    "area": "Indahpura",
     "name": "海外天海鲜饭店",
     "name_en": "Restaurant Hai Vai Tien",
     "address": "127 Jalan Jambu Bol Indahpura, Taman Iris, 81000 Kulai, Johor Darul Ta'zim, Kulai 21 Miles",
@@ -6742,6 +6930,7 @@ export const initialRestaurants = [
   },
   {
     "id": 288,
+    "area": "Indahpura",
     "name": "明轩擂茶菜馆",
     "name_en": "Restoran Ming Xuan",
     "address": "143, Jln. Jambu Mawar, Taman Indahpura, 81000 Kulai, Johor Darul Ta'zim, Kulai 21 Miles",
@@ -6762,6 +6951,7 @@ export const initialRestaurants = [
   },
   {
     "id": 289,
+    "area": "Indahpura",
     "name": "第二美食阁",
     "name_en": "Number Two Food Court",
     "address": "15, Jalan SME 1, Bandar Indahpura, 81000 Kulai, Johor Darul Ta'zim, Kulai 21 Miles",
@@ -6782,6 +6972,7 @@ export const initialRestaurants = [
   },
   {
     "id": 290,
+    "area": "Indahpura",
     "name": "Jollibee",
     "name_en": "",
     "address": "88, Jln SME 3, Bandar Indahpura, 81000 Kulai, Johor Darul Ta'zim, Kulai 21 Miles",
@@ -6802,6 +6993,7 @@ export const initialRestaurants = [
   },
   {
     "id": 291,
+    "area": "Indahpura",
     "name": "汤师傅",
     "name_en": "Souper Tang Restaurant",
     "address": "Jalan Premium Outlets, Bandar Indahpura, 81000 Kulai, Johor Darul Ta'zim, Kulai 21 Miles",
@@ -6822,6 +7014,7 @@ export const initialRestaurants = [
   },
   {
     "id": 292,
+    "area": "Indahpura",
     "name": "Absolute Thai",
     "name_en": "",
     "address": "Jalan Premium Outlets, Indahpura, 81000, Kulaijaya, Johor, 81000, Kulai 21 Miles",
@@ -6842,6 +7035,7 @@ export const initialRestaurants = [
   },
   {
     "id": 293,
+    "area": "Indahpura",
     "name": "Madam Kwan's",
     "name_en": "",
     "address": "Suite 204, Premium Outlets, Johor Premium Outlets, Jalan, Bandar Indahpura, 81000 Kulai, Johor Darul Ta'zim, Kulai 21 Miles",
@@ -6902,6 +7096,7 @@ export const initialRestaurants = [
   },
   {
     "id": 296,
+    "area": "Indahpura",
     "name": "DubuYo Mini",
     "name_en": "",
     "address": "Lot 504, High Street Jalan Premium Outlets, Johor Premium Outlets, Stall 7 & 8 Food Court, Indahpura, 81000 Kulai, Johor Darul Ta'zim, Kulai 21 Miles",
@@ -6922,6 +7117,7 @@ export const initialRestaurants = [
   },
   {
     "id": 297,
+    "area": "Indahpura",
     "name": "Godiva Cafe",
     "name_en": "",
     "address": "Johor Premium Outlets, Suite 238 01, Indahpura, 81000 Johor Bahru, Johor, Kulai 21 Miles",
@@ -6942,6 +7138,7 @@ export const initialRestaurants = [
   },
   {
     "id": 298,
+    "area": "Indahpura",
     "name": "Bask Bear Coffee",
     "name_en": "",
     "address": "Stall 1, Gucci - Johor Premium Outlet, Jalan Premium Outlets, Bandar Indahpura, 81000 Kulai, Johor Darul Ta'zim, Kulai 21 Miles",
@@ -6962,6 +7159,7 @@ export const initialRestaurants = [
   },
   {
     "id": 299,
+    "area": "Indahpura",
     "name": "Asam Pedas By D Laksa",
     "name_en": "",
     "address": "Stall No. 12, Premium Outlets, Johor Premium Outlets, Jalan, Indahpura, 81000 Kulai, Johor Darul Ta'zim, Kulai 21 Miles",
@@ -6982,6 +7180,7 @@ export const initialRestaurants = [
   },
   {
     "id": 300,
+    "area": "Indahpura",
     "name": "D Laksa JPO",
     "name_en": "",
     "address": "Stall No. 11, Premium Outlets, Johor Premium Outlets, Jalan, Indahpura, 81000 Kulai, Johor Darul Ta'zim, Kulai 21 Miles",
