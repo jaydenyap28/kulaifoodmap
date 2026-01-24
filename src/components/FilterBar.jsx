@@ -8,13 +8,7 @@ const FilterBar = ({
   onSelectCategory, 
   onAddCategory,
   onDeleteCategory,
-  isAdmin,
-  showOpenOnly,
-  onToggleShowOpenOnly,
-  hideDrinks,
-  onToggleHideDrinks,
-  hideDesserts,
-  onToggleHideDesserts
+  isAdmin
 }) => {
   const { t } = useTranslation();
   const scrollContainer = useRef(null);
@@ -23,48 +17,6 @@ const FilterBar = ({
   return (
     <div className="w-full max-w-[1600px] mx-auto px-4 mb-4 relative z-20 flex flex-col gap-3">
       
-      {/* Special Filters Row (Centered) */}
-      <div className="flex flex-wrap justify-center gap-3">
-          {/* Show Open Only */}
-          <button
-            onClick={onToggleShowOpenOnly}
-            className={`flex items-center gap-1.5 px-4 py-2 rounded-full text-sm font-bold transition-all ${
-              showOpenOnly
-                ? 'bg-emerald-900/50 text-emerald-400 border-emerald-500/50 ring-1 ring-emerald-500/50'
-                : 'bg-[#1e1e1e] text-gray-400 hover:bg-[#2d2d2d] border-[#333]'
-            } border shadow-sm`}
-          >
-            <Clock size={16} className={showOpenOnly ? "fill-current" : ""} />
-            {t('filter.open_now')}
-          </button>
-
-          {/* No Drinks */}
-          <button
-            onClick={onToggleHideDrinks}
-            className={`flex items-center gap-1.5 px-4 py-2 rounded-full text-sm font-bold transition-all ${
-              hideDrinks
-                ? 'bg-orange-900/50 text-orange-400 border-orange-500/50 ring-1 ring-orange-500/50'
-                : 'bg-[#1e1e1e] text-gray-400 hover:bg-[#2d2d2d] border-[#333]'
-            } border shadow-sm`}
-          >
-            <Coffee size={16} />
-            {t('filter.no_drinks')}
-          </button>
-
-          {/* No Desserts */}
-          <button
-            onClick={onToggleHideDesserts}
-            className={`flex items-center gap-1.5 px-4 py-2 rounded-full text-sm font-bold transition-all ${
-              hideDesserts
-                ? 'bg-pink-900/50 text-pink-400 border-pink-500/50 ring-1 ring-pink-500/50'
-                : 'bg-[#1e1e1e] text-gray-400 hover:bg-[#2d2d2d] border-[#333]'
-            } border shadow-sm`}
-          >
-            <Dessert size={16} />
-            {t('filter.no_desserts')}
-          </button>
-      </div>
-
       <div className="flex items-center gap-2 overflow-x-auto pb-2 scrollbar-hide" ref={scrollContainer}>
         
         {/* Admin Tools - Moved to Front for Visibility */}
@@ -100,7 +52,7 @@ const FilterBar = ({
         <button
           onClick={() => onSelectCategory(null)}
           className={`shrink-0 px-5 py-2 rounded-full text-base font-medium transition-all ${
-            selectedCategory === null
+            selectedCategory.length === 0
               ? 'bg-white text-black border-white'
               : 'bg-[#1e1e1e] text-gray-400 hover:text-white hover:bg-[#2d2d2d] border-[#333]'
           } shadow-sm border`}
@@ -114,9 +66,9 @@ const FilterBar = ({
         {categories.map(cat => (
           <div key={cat} className="relative shrink-0">
             <button
-              onClick={() => onSelectCategory(cat === selectedCategory ? null : cat)}
+              onClick={() => onSelectCategory(cat)}
               className={`px-5 py-2 rounded-full text-base font-medium transition-all ${
-                selectedCategory === cat
+                selectedCategory.includes(cat)
                   ? 'bg-white text-black border-white'
                   : 'bg-[#1e1e1e] text-gray-400 hover:text-white hover:bg-[#2d2d2d] border-[#333]'
               } shadow-sm border`}

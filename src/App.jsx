@@ -8,7 +8,7 @@ import AdBanner from './components/AdBanner';
 import SupportModal from './components/SupportModal';
 import LoginModal from './components/LoginModal';
 import AdminAnalytics from './components/AdminAnalytics';
-import { UtensilsCrossed, Lock, X, Coffee, Image as ImageIcon, Upload, Save, Download, BarChart2, Globe } from 'lucide-react';
+import { UtensilsCrossed, Lock, X, Coffee, Image as ImageIcon, Upload, Save, Download, BarChart2, Globe, Clock, Dessert } from 'lucide-react';
 import { useTranslation } from 'react-i18next';
 
 import { checkOpenStatus } from './utils/businessHours';
@@ -217,7 +217,7 @@ function App() {
   });
 
   const [selectedRestaurant, setSelectedRestaurant] = useState(null);
-  const [selectedCategory, setSelectedCategory] = useState(null);
+  const [selectedCategory, setSelectedCategory] = useState([]); // Changed to array for multi-select
   const [showOpenOnly, setShowOpenOnly] = useState(false);
   const [hideDrinks, setHideDrinks] = useState(false);
   const [hideDesserts, setHideDesserts] = useState(false);
@@ -308,9 +308,9 @@ function App() {
         }
     }
 
-    // 4. Category Filter (Check if restaurant has the selected category tag)
-    if (selectedCategory) {
-      if (!r.categories || !r.categories.includes(selectedCategory)) {
+    // 4. Category Filter (Multi-select)
+    if (selectedCategory && selectedCategory.length > 0) {
+      if (!r.categories || !selectedCategory.some(cat => r.categories.includes(cat))) {
         return false;
       }
     }
@@ -330,10 +330,24 @@ function App() {
     }
   };
 
+  const handleCategoryClick = (category) => {
+    if (category === null) {
+      setSelectedCategory([]);
+      return;
+    }
+    setSelectedCategory(prev => {
+        if (prev.includes(category)) {
+            return prev.filter(c => c !== category);
+        } else {
+            return [...prev, category];
+        }
+    });
+  };
+
   const handleDeleteCategory = (catToDelete) => {
     setCategories(prev => prev.filter(c => c !== catToDelete));
-    if (selectedCategory === catToDelete) {
-        setSelectedCategory(null);
+    if (selectedCategory.includes(catToDelete)) {
+        setSelectedCategory(prev => prev.filter(c => c !== catToDelete));
     }
   };
 
@@ -545,7 +559,7 @@ function App() {
             <FilterBar 
                 categories={categories}
                 selectedCategory={selectedCategory}
-                onSelectCategory={setSelectedCategory}
+                onSelectCategory={handleCategoryClick}
                 onAddCategory={handleAddCategory}
                 onDeleteCategory={handleDeleteCategory}
                 isAdmin={isAdmin}
@@ -582,7 +596,7 @@ function App() {
                 </p>
                 <button 
                     onClick={() => {
-                        setSelectedCategory(null);
+                        setSelectedCategory([]);
                     }}
                     className="mt-6 px-8 py-3 bg-white text-black rounded-full font-bold shadow-md hover:bg-gray-200 transition"
                 >
@@ -590,6 +604,48 @@ function App() {
                 </button>
              </div>
           )}
+        </div>
+
+        {/* Special Filters Row (Below Hero Stack) */}
+        <div className="flex flex-wrap justify-center gap-3 mb-8 relative z-20">
+            {/* Show Open Only */}
+            <button
+                onClick={() => setShowOpenOnly(!showOpenOnly)}
+                className={`flex items-center gap-1.5 px-4 py-2 rounded-full text-sm font-bold transition-all ${
+                showOpenOnly
+                    ? 'bg-emerald-900/50 text-emerald-400 border-emerald-500/50 ring-1 ring-emerald-500/50'
+                    : 'bg-[#1e1e1e] text-gray-400 hover:bg-[#2d2d2d] border-[#333]'
+                } border shadow-sm`}
+            >
+                <Clock size={16} className={showOpenOnly ? "fill-current" : ""} />
+                {t('filter.open_now')}
+            </button>
+
+            {/* No Drinks */}
+            <button
+                onClick={() => setHideDrinks(!hideDrinks)}
+                className={`flex items-center gap-1.5 px-4 py-2 rounded-full text-sm font-bold transition-all ${
+                hideDrinks
+                    ? 'bg-orange-900/50 text-orange-400 border-orange-500/50 ring-1 ring-orange-500/50'
+                    : 'bg-[#1e1e1e] text-gray-400 hover:bg-[#2d2d2d] border-[#333]'
+                } border shadow-sm`}
+            >
+                <Coffee size={16} />
+                {t('filter.no_drinks')}
+            </button>
+
+            {/* No Desserts */}
+            <button
+                onClick={() => setHideDesserts(!hideDesserts)}
+                className={`flex items-center gap-1.5 px-4 py-2 rounded-full text-sm font-bold transition-all ${
+                hideDesserts
+                    ? 'bg-pink-900/50 text-pink-400 border-pink-500/50 ring-1 ring-pink-500/50'
+                    : 'bg-[#1e1e1e] text-gray-400 hover:bg-[#2d2d2d] border-[#333]'
+                } border shadow-sm`}
+            >
+                <Dessert size={16} />
+                {t('filter.no_desserts')}
+            </button>
         </div>
       </div>
 
