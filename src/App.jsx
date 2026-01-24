@@ -596,7 +596,7 @@ function App() {
             >
               {t('app_title')}
             </h1>
-            <p className="text-xl md:text-2xl text-yellow-400 mt-1 drop-shadow-md" style={{ fontFamily: '"Lobster", cursive' }}>
+            <p className="text-2xl md:text-3xl text-orange-400 mt-1 drop-shadow-md" style={{ fontFamily: '"Lobster", cursive' }}>
               Kulai Food Map
             </p>
           </div>
