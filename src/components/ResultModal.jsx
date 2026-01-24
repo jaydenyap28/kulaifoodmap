@@ -5,6 +5,7 @@ import { useTranslation } from 'react-i18next';
 import ImageWithFallback from './ImageWithFallback';
 import { checkOpenStatus } from '../utils/businessHours';
 import { compressImage } from '../utils/imageUtils';
+import { AVAILABLE_AREAS } from '../data/constants';
 
 const ResultModal = ({ restaurant, onClose, onAddReview, isAdmin, onUpdateRestaurant, onDeleteReview, categories = [], onAddCategory }) => {
   const { t, i18n } = useTranslation();
@@ -26,7 +27,8 @@ const ResultModal = ({ restaurant, onClose, onAddReview, isAdmin, onUpdateRestau
     isNoBeef: restaurant.isNoBeef || false,
     manualStatus: restaurant.manualStatus || 'auto', // 'auto', 'open', 'closed'
     subStalls: restaurant.subStalls || [],
-    rating: restaurant.rating !== undefined ? restaurant.rating : 0
+    rating: restaurant.rating !== undefined ? restaurant.rating : 0,
+    area: restaurant.area || ''
   });
 
   // Smart Schedule State
@@ -56,7 +58,8 @@ const ResultModal = ({ restaurant, onClose, onAddReview, isAdmin, onUpdateRestau
         isNoBeef: restaurant.isNoBeef || false,
         manualStatus: restaurant.manualStatus || 'auto',
         subStalls: restaurant.subStalls || [],
-        rating: restaurant.rating !== undefined ? restaurant.rating : 0
+        rating: restaurant.rating !== undefined ? restaurant.rating : 0,
+        area: restaurant.area || ''
     });
   }, [restaurant]);
 
@@ -367,6 +370,19 @@ const ResultModal = ({ restaurant, onClose, onAddReview, isAdmin, onUpdateRestau
                       onChange={e => setEditForm({...editForm, address: e.target.value})}
                       className="w-full bg-[#1a1a1a] border-b border-gray-600 py-1 text-sm text-white focus:border-white outline-none"
                     />
+                  </div>
+                  <div>
+                    <label className="text-xs text-gray-400">地区 (Area)</label>
+                    <select
+                        value={editForm.area || ''}
+                        onChange={(e) => setEditForm({...editForm, area: e.target.value})}
+                        className="w-full bg-[#1a1a1a] border-b border-gray-600 py-1 text-sm text-white focus:border-white outline-none"
+                    >
+                        <option value="">Select Area...</option>
+                        {AVAILABLE_AREAS.map(area => (
+                            <option key={area} value={area}>{t(`areas.${area}`, area)}</option>
+                        ))}
+                    </select>
                   </div>
                   <div>
                     <label className="text-xs text-gray-400">价格范围 (Price Range)</label>

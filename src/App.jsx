@@ -15,15 +15,22 @@ import { useTranslation } from 'react-i18next';
 import { checkOpenStatus } from './utils/businessHours';
 import { analytics } from './utils/analytics';
 
-const DEFAULT_CATEGORIES = [
-  '饭类', '粉类', 'Cafe', '咖啡店', '煮炒海鲜楼', '火锅烧烤', '西餐', '马来餐', '日本餐', '韩国餐', '中国餐', '泰国餐', '快餐', '点心', '杂菜饭', '宴会酒楼', '蛋糕甜点', '饮品', '酒吧'
-];
+import { AVAILABLE_AREAS, DEFAULT_CATEGORIES } from './data/constants';
+
 const DEFAULT_HERO_BG = "https://i.ibb.co/7J5qjZtv/image.png";
 
 function App() {
   const { t, i18n } = useTranslation();
   const [lastSaved, setLastSaved] = useState(null);
   
+  // Area Overrides State (for manual fixes)
+  const [areaOverrides, setAreaOverrides] = useState(() => {
+    try {
+        const stored = localStorage.getItem('kulaifood-area-overrides');
+        return stored ? JSON.parse(stored) : {};
+    } catch(e) { return {}; }
+  });
+
   const toggleLanguage = () => {
     const newLang = i18n.language === 'zh' ? 'en' : 'zh';
     i18n.changeLanguage(newLang);
@@ -153,7 +160,15 @@ function App() {
         storedData.forEach(stored => {
             if (codeMap.has(stored.id)) {
                 // ID exists in code: Use code content (latest updates) but keep stored order
-                mergedData.push({ ...stored, ...codeMap.get(stored.id) });
+                // BUT: Check for Area Overrides
+                const codeData = codeMap.get(stored.id);
+                let area = codeData.area;
+                const overrides = JSON.parse(localStorage.getItem('kulaifood-area-overrides') || '{}');
+                if (overrides[stored.id]) {
+                    area = overrides[stored.id];
+                }
+
+                mergedData.push({ ...stored, ...codeData, area });
                 processedIds.add(stored.id);
             } else {
                 // ID not in code: User-added item (Admin), keep it
@@ -166,7 +181,12 @@ function App() {
     // 4. Append any NEW items from code that weren't in storage
     initialRestaurants.forEach(r => {
         if (!processedIds.has(r.id)) {
-            mergedData.push(r);
+            let area = r.area;
+            const overrides = JSON.parse(localStorage.getItem('kulaifood-area-overrides') || '{}');
+            if (overrides[r.id]) {
+                area = overrides[r.id];
+            }
+            mergedData.push({ ...r, area });
         }
     });
 
@@ -368,6 +388,26 @@ function App() {
     return true;
   });
 
+  const handleUpdateArea = (id, newArea) => {
+    // 1. Update State
+    setRestaurants(prev => prev.map(r => r.id === id ? { ...r, area: newArea } : r));
+    
+    // 2. Update Overrides
+    const newOverrides = { ...areaOverrides, [id]: newArea };
+    setAreaOverrides(newOverrides);
+    localStorage.setItem('kulaifood-area-overrides', JSON.stringify(newOverrides));
+  };
+
+  const handleExportAreaFixes = () => {
+    const fixes = Object.entries(areaOverrides).map(([id, area]) => ({ id, area }));
+    if (fixes.length === 0) {
+        alert(t('no_fixes_to_export'));
+        return;
+    }
+    const json = JSON.stringify(fixes, null, 2);
+    navigator.clipboard.writeText(json).then(() => alert("Copied area fixes to clipboard! Send this to the developer."));
+  };
+
   const handleChoose = (result) => {
     setTimeout(() => {
       setSelectedRestaurant(result);
@@ -475,6 +515,13 @@ function App() {
   };
 
   const handleUpdateRestaurant = (restaurantId, updatedFields) => {
+    // Check if area is changing
+    if (updatedFields.area !== undefined) {
+        const overrides = { ...areaOverrides, [restaurantId]: updatedFields.area };
+        setAreaOverrides(overrides);
+        localStorage.setItem('kulaifood-area-overrides', JSON.stringify(overrides));
+    }
+
     setRestaurants(prev => 
       prev.map(r => r.id === restaurantId ? { ...r, ...updatedFields } : r)
     );
@@ -632,6 +679,7 @@ function App() {
                 onDeleteCategory={handleDeleteCategory}
                 onReorderCategories={handleReorderCategories}
                 isAdmin={isAdmin}
+                onExportAreaFixes={handleExportAreaFixes}
                 showOpenOnly={showOpenOnly}
                 onToggleShowOpenOnly={() => setShowOpenOnly(!showOpenOnly)}
                 hideDrinks={hideDrinks}
@@ -743,6 +791,7 @@ function App() {
             onAddRestaurant={handleAddRestaurant}
             onCategoryClick={setSelectedCategory} // New Prop
             onReorder={handleReorder}
+            onUpdateArea={handleUpdateArea}
         />
         
       </div>

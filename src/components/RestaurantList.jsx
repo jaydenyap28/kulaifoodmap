@@ -20,6 +20,8 @@ import { useTranslation } from 'react-i18next';
 import ImageWithFallback from './ImageWithFallback';
 import { checkOpenStatus } from '../utils/businessHours';
 
+import { AVAILABLE_AREAS } from '../data/constants';
+
 const SortableRestaurantCard = ({ restaurant, ...props }) => {
   const {
     attributes,
@@ -44,7 +46,7 @@ const SortableRestaurantCard = ({ restaurant, ...props }) => {
   );
 };
 
-const RestaurantList = ({ restaurants, allRestaurants, isAdmin, onUpdateRestaurant, onDeleteRestaurant, onRestaurantClick, onAddRestaurant, onCategoryClick, onReorder }) => {
+const RestaurantList = ({ restaurants, allRestaurants, isAdmin, onUpdateRestaurant, onDeleteRestaurant, onRestaurantClick, onAddRestaurant, onCategoryClick, onReorder, onUpdateArea }) => {
   const { t } = useTranslation();
   const [searchTerm, setSearchTerm] = useState('');
   const [showBackToTop, setShowBackToTop] = useState(false);
@@ -161,6 +163,7 @@ const RestaurantList = ({ restaurants, allRestaurants, isAdmin, onUpdateRestaura
                   onDelete={onDeleteRestaurant}
                   onClick={() => onRestaurantClick(restaurant)}
                   onCategoryClick={onCategoryClick}
+                  onUpdateArea={onUpdateArea}
                 />
               ))}
             </SortableContext>
@@ -175,6 +178,7 @@ const RestaurantList = ({ restaurants, allRestaurants, isAdmin, onUpdateRestaura
               onDelete={onDeleteRestaurant}
               onClick={() => onRestaurantClick(restaurant)}
               onCategoryClick={onCategoryClick}
+              onUpdateArea={onUpdateArea}
             />
           ))
         )}
@@ -203,7 +207,7 @@ const RestaurantList = ({ restaurants, allRestaurants, isAdmin, onUpdateRestaura
   );
 };
 
-const RestaurantCard = ({ restaurant, isAdmin, onUpdate, onDelete, onClick, onCategoryClick }) => {
+const RestaurantCard = ({ restaurant, isAdmin, onUpdate, onDelete, onClick, onCategoryClick, onUpdateArea }) => {
   const { t, i18n } = useTranslation();
   const openStatus = restaurant.manualStatus && restaurant.manualStatus !== 'auto'
     ? { 
@@ -313,6 +317,22 @@ const RestaurantCard = ({ restaurant, isAdmin, onUpdate, onDelete, onClick, onCa
                             <Leaf size={10} /> 素食
                         </span>
                     )}
+                </div>
+            )}
+
+            {/* Admin Area Selector */}
+            {isAdmin && onUpdateArea && (
+                <div className="mb-2" onClick={e => e.stopPropagation()}>
+                    <select
+                        value={restaurant.area || ''}
+                        onChange={(e) => onUpdateArea(restaurant.id, e.target.value)}
+                        className="w-full bg-[#333] text-white text-xs p-1 rounded border border-gray-600 focus:outline-none focus:border-white"
+                    >
+                        <option value="">Select Area...</option>
+                        {AVAILABLE_AREAS.map(area => (
+                            <option key={area} value={area}>{t(`areas.${area}`, area)}</option>
+                        ))}
+                    </select>
                 </div>
             )}
 

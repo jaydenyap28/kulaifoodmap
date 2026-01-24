@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Plus, X, Edit2, MapPin } from 'lucide-react';
+import { Plus, X, Edit2, MapPin, Download } from 'lucide-react';
 import { useTranslation } from 'react-i18next';
 import {
   DndContext,
@@ -17,6 +17,8 @@ import {
   rectSortingStrategy,
 } from '@dnd-kit/sortable';
 import { CSS } from '@dnd-kit/utilities';
+
+import { AVAILABLE_AREAS } from '../data/constants';
 
 const SortableCategoryChip = ({ cat, selectedCategory, onSelectCategory, onDeleteCategory, isEditMode, t, isAdmin }) => {
   const {
@@ -84,19 +86,11 @@ const FilterBar = ({
   onAddCategory,
   onDeleteCategory,
   onReorderCategories,
-  isAdmin
+  isAdmin,
+  onExportAreaFixes
 }) => {
   const { t } = useTranslation();
   const [isEditMode, setIsEditMode] = useState(false);
-
-  // Common Areas from Data Analysis
-  const AVAILABLE_AREAS = [
-    'Indahpura',
-    'Bandar Putra',
-    'Kulai 21 Miles',
-    'Saleng',
-    'Kelapa Sawit'
-  ];
 
   const sensors = useSensors(
     useSensor(PointerSensor, {
@@ -188,6 +182,15 @@ const FilterBar = ({
               >
                 <Edit2 size={14} />
               </button>
+              {onExportAreaFixes && (
+                <button
+                    onClick={onExportAreaFixes}
+                    className="p-2 rounded-full bg-[#1e1e1e] text-blue-400 border border-blue-900/50 hover:bg-blue-900/20 transition-colors"
+                    title="Export Area Fixes"
+                >
+                    <Download size={14} />
+                </button>
+              )}
             </div>
           )}
 
