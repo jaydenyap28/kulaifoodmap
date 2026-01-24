@@ -237,6 +237,7 @@ const FilterBar = ({
 
       </div>
     </div>
+    </div>
   );
 };
 
