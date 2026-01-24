@@ -22,7 +22,7 @@ const Footer = ({ onAdminLogin }) => {
 
       {/* Copyright */}
       <div className="mt-4 text-xs text-gray-500 text-center font-medium flex items-center gap-2">
-        <span>© 2026 KulaiFood. Made by Jayden&Qing一起看世界</span>
+        <span>© 2026 Kulaifoodmap Made by JNQ Media</span>
         {onAdminLogin && (
             <button 
                 onClick={onAdminLogin}
