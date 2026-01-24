@@ -1,5 +1,6 @@
 import React, { useRef, useState } from 'react';
 import { Settings, Plus, X, Edit2, Clock } from 'lucide-react';
+import { useTranslation } from 'react-i18next';
 
 const FilterBar = ({ 
   categories, 
@@ -11,6 +12,7 @@ const FilterBar = ({
   showOpenOnly,
   onToggleShowOpenOnly
 }) => {
+  const { t } = useTranslation();
   const scrollContainer = useRef(null);
   const [isEditMode, setIsEditMode] = useState(false);
 
@@ -23,15 +25,15 @@ const FilterBar = ({
           <div className="flex items-center gap-1 shrink-0 border-r pr-2 border-gray-700 mr-2">
             <button
               onClick={() => {
-                const newCat = prompt("请输入新分类名称 (Enter new category name):");
+                const newCat = prompt(t('filter.enter_new_cat'));
                 if (newCat && newCat.trim()) {
                   onAddCategory(newCat.trim());
                 }
               }}
               className="flex items-center gap-1 px-3 py-2 rounded-full bg-[#1e1e1e] text-white border border-dashed border-gray-600 hover:border-white transition-colors text-sm font-medium"
-              title="添加分类 (Add Category)"
+              title={t('filter.add_category')}
             >
-              <Plus size={14} /> 添加
+              <Plus size={14} /> {t('filter.add_category')}
             </button>
              <button
               onClick={() => setIsEditMode(!isEditMode)}
@@ -40,7 +42,7 @@ const FilterBar = ({
                   ? 'bg-red-900/50 text-red-500 border-red-800' 
                   : 'bg-[#1e1e1e] text-gray-500 border-gray-700 hover:text-gray-300'
               }`}
-              title={isEditMode ? "完成编辑 (Done)" : "管理分类 (Manage)"}
+              title={isEditMode ? t('filter.done_edit') : t('filter.manage_category')}
             >
               <Edit2 size={14} />
             </button>
@@ -56,7 +58,7 @@ const FilterBar = ({
               : 'bg-[#1e1e1e] text-gray-400 hover:text-white hover:bg-[#2d2d2d] border-[#333]'
           } shadow-sm border`}
         >
-          全部 (All)
+          {t('filter.all')}
         </button>
 
         {/* Show Open Only */}
@@ -69,7 +71,7 @@ const FilterBar = ({
           } border`}
         >
           <Clock size={14} className={showOpenOnly ? "fill-current" : ""} />
-          只看营业中 (Open Now)
+          {t('filter.open_now')}
         </button>
 
         <div className="w-px h-6 bg-gray-700 mx-2 shrink-0"></div>
@@ -85,13 +87,13 @@ const FilterBar = ({
                   : 'bg-[#1e1e1e] text-gray-400 hover:text-white hover:bg-[#2d2d2d] border-[#333]'
               } shadow-sm border`}
             >
-              {cat}
+              {t(`categories.${cat}`, cat)}
             </button>
             {isEditMode && (
               <button
                 onClick={(e) => {
                   e.stopPropagation();
-                  if (window.confirm(`确定要删除分类 "${cat}" 吗？`)) {
+                  if (window.confirm(t('filter.confirm_delete_cat', { cat }))) {
                     onDeleteCategory(cat);
                   }
                 }}

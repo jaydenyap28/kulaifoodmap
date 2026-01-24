@@ -1,0 +1,81 @@
+{
+  "app_title": "Kulai Food Map",
+  "confirm_logout": "Logout Admin Mode?",
+  "confirm_reset_bg": "Reset to default background?",
+  "settings_saved": "✅ Settings Saved!",
+  "copy_success": "✅ Successfully copied {{count}} items!\nPlease paste into src/data/restaurants.js.",
+  "copy_failed": "❌ Copy failed, check console",
+  "hero": {
+    "shuffling": "Shuffling...",
+    "not_enough": "Need 2+ Restaurants",
+    "what_to_eat": "What to Eat?",
+    "winner_badge": "Today's Pick!",
+    "support_btn": "Buy me a Kopi ☕️"
+  },
+  "filter": {
+    "enter_new_cat": "Enter new category name:",
+    "add_category": "Add Category",
+    "done_edit": "Done Editing",
+    "manage_category": "Manage Categories",
+    "all": "All",
+    "open_now": "Open Now",
+    "confirm_delete_cat": "Delete category \"{{cat}}\"?"
+  },
+  "list": {
+    "title": "All Restaurants",
+    "add_restaurant": "Add Restaurant",
+    "search_placeholder": "Search restaurants / food...",
+    "no_results": "No restaurants found...",
+    "status_open": "Open",
+    "status_closed": "Closed",
+    "edit": "Edit",
+    "delete": "Delete",
+    "confirm_delete": "Delete this restaurant?"
+  },
+  "footer": {
+    "recommend": "Welcome to recommend local food!",
+    "contact_fb": "Contact Facebook: Kulai Food Map",
+    "admin_login": "Admin Login"
+  },
+  "modal": {
+    "menu_links": "Menu / Links",
+    "price_range": "Price Range",
+    "branches": "Branches",
+    "stalls": "Stalls",
+    "navigate": "Navigate",
+    "close": "Close",
+    "menu": "Menu",
+    "website": "Website",
+    "delivery": "Delivery"
+  },
+  "analytics": {
+    "title": "Analytics & Weights",
+    "weight_hint": "* Higher weight = Higher chance to be picked",
+    "search_placeholder": "Search restaurants...",
+    "views_tooltip": "Total Views",
+    "picks_tooltip": "Total Picks",
+    "weight_label": "Weight"
+  },
+  "categories": {
+    "饭类": "Rice",
+    "面类": "Noodles",
+    "咖啡店": "Kopitiam",
+    "点心": "Dim Sum",
+    "健康餐": "Healthy",
+    "素食": "Vegetarian",
+    "马来餐": "Malay Food",
+    "西餐": "Western",
+    "韩国餐": "Korean",
+    "日本餐": "Japanese",
+    "宴会酒楼": "Banquet/Restaurant",
+    "煮炒海鲜楼": "Seafood/Zi Char",
+    "火锅": "Steamboat",
+    "烧烤": "BBQ",
+    "甜品": "Dessert",
+    "奶茶": "Bubble Tea",
+    "小吃": "Snacks",
+    "早餐": "Breakfast",
+    "晚餐": "Dinner",
+    "宵夜": "Supper"
+  }
+}

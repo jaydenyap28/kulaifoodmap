@@ -9,7 +9,8 @@ import SupportModal from './components/SupportModal';
 import LoginModal from './components/LoginModal';
 import AdminAnalytics from './components/AdminAnalytics';
 import Footer from './components/Footer';
-import { UtensilsCrossed, Lock, X, Coffee, Image as ImageIcon, Upload, Save, Download, BarChart2 } from 'lucide-react';
+import { UtensilsCrossed, Lock, X, Coffee, Image as ImageIcon, Upload, Save, Download, BarChart2, Globe } from 'lucide-react';
+import { useTranslation } from 'react-i18next';
 
 import { checkOpenStatus } from './utils/businessHours';
 import { analytics } from './utils/analytics';
@@ -18,7 +19,13 @@ const DEFAULT_CATEGORIES = ['饭类', '面类', '咖啡店', '点心', '健康�
 const DEFAULT_HERO_BG = "https://images.unsplash.com/photo-1550989460-0adf9ea622e2?q=80&w=1974&auto=format&fit=crop";
 
 function App() {
+  const { t, i18n } = useTranslation();
   const [lastSaved, setLastSaved] = useState(null);
+  
+  const toggleLanguage = () => {
+    const newLang = i18n.language === 'zh' ? 'en' : 'zh';
+    i18n.changeLanguage(newLang);
+  };
 
   // Admin State
   const [isAdmin, setIsAdmin] = useState(false); // Default to false for visitors
@@ -27,7 +34,7 @@ function App() {
 
   const handleAdminLoginClick = () => {
     if (isAdmin) {
-        if (window.confirm("确定退出管理员模式吗？(Logout Admin?)")) {
+        if (window.confirm(t('confirm_logout'))) {
             setIsAdmin(false);
         }
         return;
@@ -69,7 +76,7 @@ function App() {
   };
 
   const resetHeroBg = () => {
-      if (window.confirm("确定要重置回默认背景吗？(Reset to default?)")) {
+      if (window.confirm(t('confirm_reset_bg'))) {
         setHeroBg(DEFAULT_HERO_BG);
         localStorage.removeItem('kulaifood-hero-bg');
       }
@@ -81,16 +88,14 @@ function App() {
       localStorage.setItem('kulaifood-categories', JSON.stringify(categories));
       localStorage.setItem('kulaifood-hero-bg', heroBg);
       
-      alert("✅ 设置已保存！(Settings Saved!)");
+      alert(t('settings_saved'));
   };
 
   const handleExportData = () => {
     // 1. Prepare Data Format
-    const exportData = restaurants.map(({ name, name_en, ...rest }) => ({
+    const exportData = restaurants.map(({ ...rest }) => ({
         ...rest,
-        // Map back to original format for restaurants.js
-        desc: name,
-        desc2: name_en,
+        // No need to map desc/desc2 anymore, use standard name/name_en
         category: rest.categories // Map categories back to category for compatibility
     }));
 
@@ -98,10 +103,10 @@ function App() {
 
     // 2. Copy to Clipboard
     navigator.clipboard.writeText(fileContent).then(() => {
-        alert(`✅ 成功复制 ${exportData.length} 个商家数据！\n请打开 src/data/restaurants.js 并粘贴覆盖原内容。\n(Successfully copied ${exportData.length} items!)`);
+        alert(t('copy_success', { count: exportData.length }));
     }).catch(err => {
         console.error('Failed to copy: ', err);
-        alert("❌ 复制失败，请查看控制台 (Copy failed, check console)");
+        alert(t('copy_failed'));
     });
   };
 
@@ -150,10 +155,10 @@ function App() {
     // Normalize Data on Init
     return mergedData.map(r => ({
       ...r,
-      // Map desc to name (Primary Display)
-      name: r.desc || r.name,
-      // Map desc2 to name_en (Secondary Display)
-      name_en: r.desc2 || r.name_en,
+      // Map desc to name (Primary Display) - Prioritize name (New standard) over desc (Old standard)
+      name: r.name || r.desc,
+      // Map desc2 to name_en (Secondary Display) - Prioritize name_en over desc2
+      name_en: r.name_en || r.desc2,
       // Ensure categories exists (map from category if needed)
       categories: r.categories || r.category || [],
 
@@ -491,13 +496,23 @@ function App() {
         {/* Header */}
         <header className="flex justify-between items-center mb-6 relative z-10">
           <div>
-            <h1 className="text-5xl font-black tracking-tight text-white drop-shadow-[0_5px_5px_rgba(0,0,0,0.8)]" style={{ textShadow: '2px 2px 4px rgba(0,0,0,0.7)' }}>
-              古来美食地图
+            <h1 className="text-4xl md:text-5xl font-black tracking-tight text-white drop-shadow-[0_5px_5px_rgba(0,0,0,0.8)]" style={{ textShadow: '2px 2px 4px rgba(0,0,0,0.7)' }}>
+              {t('app_title')}
             </h1>
-            <p className="text-base text-gray-200 font-bold tracking-widest mt-1 drop-shadow-md uppercase">
+            <p className="text-sm md:text-base text-gray-200 font-bold tracking-widest mt-1 drop-shadow-md uppercase">
               Kulai Food Map
             </p>
           </div>
+          
+          {/* Language Switcher */}
+          <button 
+            onClick={toggleLanguage}
+            className="flex items-center gap-2 px-3 py-1.5 bg-white/10 hover:bg-white/20 backdrop-blur-md rounded-full text-white border border-white/20 transition-all shadow-lg"
+            title="Switch Language"
+          >
+            <Globe size={18} />
+            <span className="font-bold text-sm">{i18n.language === 'zh' ? 'EN' : '中'}</span>
+          </button>
         </header>
 
         {/* Filter Bar */}

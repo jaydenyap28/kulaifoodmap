@@ -1,10 +1,12 @@
 import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Shuffle, Star, Coffee } from 'lucide-react';
+import { useTranslation } from 'react-i18next';
 import ImageWithFallback from './ImageWithFallback';
 import { analytics } from '../utils/analytics';
 
 const HeroCardStack = ({ restaurants, onChoose, onSupportClick }) => {
+  const { t, i18n } = useTranslation();
   const [isShuffling, setIsShuffling] = useState(false);
   const [activeIndex, setActiveIndex] = useState(0);
   const [showWinner, setShowWinner] = useState(false);
@@ -117,7 +119,7 @@ const HeroCardStack = ({ restaurants, onChoose, onSupportClick }) => {
               {/* Gradient Overlay */}
               <div className="absolute inset-0 bg-gradient-to-t from-black via-black/40 to-transparent flex flex-col justify-end p-6">
                 <h3 className="text-white text-2xl font-bold leading-tight drop-shadow-lg">
-                  {currentRestaurant.name}
+                  {i18n.language === 'en' && currentRestaurant.name_en ? currentRestaurant.name_en : currentRestaurant.name}
                 </h3>
                 {/* Rating */}
                 {currentRestaurant.rating && (
@@ -153,7 +155,7 @@ const HeroCardStack = ({ restaurants, onChoose, onSupportClick }) => {
                 animate={{ scale: 1 }}
                 className="absolute top-4 right-4 bg-gradient-to-r from-indigo-600 to-purple-600 text-white text-xs font-bold px-3 py-1 rounded-full shadow-lg border border-white/20"
               >
-                今日之选!
+                {t('hero.winner_badge')}
               </motion.div>
             )}
           </motion.div>
@@ -183,13 +185,13 @@ const HeroCardStack = ({ restaurants, onChoose, onSupportClick }) => {
         >
           <div className="flex items-center gap-2">
             {isShuffling ? (
-              <span>洗牌中...</span>
+              <span>{t('hero.shuffling')}</span>
             ) : isNotEnough ? (
-              <span className="text-sm">商家不足以转动 (Need 2+)</span>
+              <span className="text-sm">{t('hero.not_enough')}</span>
             ) : (
               <>
                 <Shuffle size={24} />
-                <span>今天吃什么？</span>
+                <span>{t('hero.what_to_eat')}</span>
               </>
             )}
           </div>
@@ -203,7 +205,7 @@ const HeroCardStack = ({ restaurants, onChoose, onSupportClick }) => {
             <div className="bg-[#FFDD00] p-1 rounded-full text-[#3E2723]">
                 <Coffee size={12} fill="currentColor" />
             </div>
-            <span>觉得好用？请我喝杯 Kopi ☕️</span>
+            <span>{t('hero.support_btn')}</span>
         </button>
       </div>
     </div>

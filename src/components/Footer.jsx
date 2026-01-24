@@ -1,37 +1,41 @@
 import React from 'react';
-import { Facebook } from 'lucide-react';
+import { Facebook, Lock } from 'lucide-react';
+import { useTranslation } from 'react-i18next';
 
-const Footer = ({ onAdminLogin }) => {
+const Footer = ({ onAdminLoginClick }) => {
+  const { t } = useTranslation();
+
   return (
-    <footer className="w-full bg-[#121212] text-gray-300 py-10 flex flex-col items-center justify-center gap-6 mt-12 relative z-20 border-t border-gray-800">
-      {/* Main Title */}
-      <h2 className="text-xl md:text-2xl font-bold text-center px-4 leading-relaxed text-white">
-        欢迎推荐您喜爱的商家
-      </h2>
-
-      {/* Facebook Button */}
-      <a 
-        href="https://www.facebook.com/jnqjourney" 
-        target="_blank" 
-        rel="noopener noreferrer"
-        className="flex items-center gap-2 px-6 py-3 bg-[#1877F2] hover:bg-[#166fe5] text-white rounded-full font-bold shadow-lg transition-all transform hover:scale-105 active:scale-95"
-      >
-        <Facebook size={20} fill="currentColor" />
-        <span>联系 Facebook 专页</span>
-      </a>
-
-      {/* Copyright */}
-      <div className="mt-4 text-xs text-gray-500 text-center font-medium flex items-center gap-2">
-        <span>© 2026 Kulaifoodmap Made by JNQ Media</span>
-        {onAdminLogin && (
-            <button 
-                onClick={onAdminLogin}
-                className="opacity-10 hover:opacity-50 transition-opacity p-1"
-                title="Admin Login"
+    <footer className="w-full max-w-[1600px] mx-auto px-4 pb-8 relative z-10 mt-12">
+      <div className="bg-[#1e1e1e] rounded-3xl p-8 border border-[#333] flex flex-col items-center gap-6 text-center shadow-2xl">
+        
+        <div className="flex flex-col gap-2">
+            <h3 className="text-white font-bold text-lg">{t('footer.recommend')}</h3>
+            <a 
+                href="https://www.facebook.com/kulaifoodmap" 
+                target="_blank" 
+                rel="noreferrer"
+                className="text-gray-400 hover:text-white transition-colors flex items-center justify-center gap-2"
             >
-                🔒
-            </button>
-        )}
+                <Facebook size={18} />
+                {t('footer.contact_fb')}
+            </a>
+        </div>
+
+        <div className="w-full h-px bg-[#333]"></div>
+
+        <div className="flex flex-col md:flex-row justify-between items-center w-full gap-4 text-sm text-gray-500">
+             <span>© 2026 Kulaifoodmap Made by JNQ Media</span>
+             
+             <button 
+                onClick={onAdminLoginClick}
+                className="flex items-center gap-1.5 hover:text-gray-300 transition-colors"
+             >
+                <Lock size={14} />
+                {t('footer.admin_login')}
+             </button>
+        </div>
+
       </div>
     </footer>
   );

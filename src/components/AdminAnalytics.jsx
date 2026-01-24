@@ -3,8 +3,10 @@ import React, { useState, useEffect } from 'react';
 import { X, TrendingUp, Eye, MousePointer, RefreshCw, ChevronUp, ChevronDown } from 'lucide-react';
 import { analytics } from '../utils/analytics';
 import { motion, AnimatePresence } from 'framer-motion';
+import { useTranslation } from 'react-i18next';
 
 const AdminAnalytics = ({ isOpen, onClose, restaurants }) => {
+    const { t, i18n } = useTranslation();
     const [stats, setStats] = useState({ views: {}, picks: {} });
     const [weights, setWeights] = useState({});
     const [searchTerm, setSearchTerm] = useState('');
@@ -66,10 +68,10 @@ const AdminAnalytics = ({ isOpen, onClose, restaurants }) => {
                         <div>
                             <h2 className="text-xl font-bold text-white flex items-center gap-2">
                                 <TrendingUp className="text-blue-400" />
-                                商家数据与权重设置 (Analytics & Weights)
+                                {t('analytics.title')}
                             </h2>
                             <p className="text-xs text-gray-400 mt-1">
-                                * 权重越高，被抽中的几率越大 (Higher weight = Higher chance)
+                                {t('analytics.weight_hint')}
                             </p>
                         </div>
                         <button onClick={onClose} className="text-gray-400 hover:text-white p-2 hover:bg-white/10 rounded-full transition">
@@ -81,7 +83,7 @@ const AdminAnalytics = ({ isOpen, onClose, restaurants }) => {
                     <div className="p-4 border-b border-gray-800 flex gap-4">
                         <input 
                             type="text" 
-                            placeholder="搜索商家 / Search..." 
+                            placeholder={t('analytics.search_placeholder')}
                             value={searchTerm}
                             onChange={e => setSearchTerm(e.target.value)}
                             className="flex-1 bg-[#121212] border border-gray-700 rounded-lg px-4 py-2 text-white text-sm focus:border-blue-500 outline-none"
@@ -100,19 +102,23 @@ const AdminAnalytics = ({ isOpen, onClose, restaurants }) => {
                                         <ImageWithFallback src={item.image} alt="" className="w-full h-full object-cover" />
                                     </div>
                                     <div className="min-w-0">
-                                        <h3 className="text-white font-bold text-sm truncate">{item.desc || item.name}</h3>
-                                        <p className="text-xs text-gray-500 truncate">{item.desc2 || item.name_en}</p>
+                                        <h3 className="text-white font-bold text-sm truncate">
+                                            {i18n.language === 'en' && (item.desc2 || item.name_en) ? (item.desc2 || item.name_en) : (item.desc || item.name)}
+                                        </h3>
+                                        <p className="text-xs text-gray-500 truncate">
+                                            {i18n.language === 'en' ? (item.desc || item.name) : (item.desc2 || item.name_en)}
+                                        </p>
                                     </div>
                                 </div>
 
                                 <div className="flex items-center gap-6 shrink-0">
                                     {/* Stats */}
                                     <div className="flex items-center gap-4 text-xs">
-                                        <div className="flex items-center gap-1 text-gray-400" title="详情点击次数">
+                                        <div className="flex items-center gap-1 text-gray-400" title={t('analytics.views_tooltip')}>
                                             <Eye size={14} className="text-blue-400" />
                                             <span>{item.views}</span>
                                         </div>
-                                        <div className="flex items-center gap-1 text-gray-400" title="抽中次数">
+                                        <div className="flex items-center gap-1 text-gray-400" title={t('analytics.picks_tooltip')}>
                                             <MousePointer size={14} className="text-green-400" />
                                             <span>{item.picks}</span>
                                         </div>
@@ -120,7 +126,7 @@ const AdminAnalytics = ({ isOpen, onClose, restaurants }) => {
 
                                     {/* Weight Control */}
                                     <div className="flex items-center gap-2 bg-[#121212] px-2 py-1 rounded-lg border border-gray-700">
-                                        <span className="text-xs text-gray-500 font-bold uppercase mr-1">权重</span>
+                                        <span className="text-xs text-gray-500 font-bold uppercase mr-1">{t('analytics.weight_label')}</span>
                                         <button 
                                             onClick={() => handleWeightChange(item.id, -1)}
                                             className="p-1 hover:bg-gray-700 rounded text-gray-400 hover:text-red-400 disabled:opacity-30"

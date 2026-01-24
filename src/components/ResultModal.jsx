@@ -1,11 +1,13 @@
 import React, { useState } from 'react';
 import { X, Star, MapPin, ExternalLink, Send, Save, Clock, Info, UtensilsCrossed, Upload, BookOpen, Globe, Bike } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
+import { useTranslation } from 'react-i18next';
 import ImageWithFallback from './ImageWithFallback';
 import { checkOpenStatus } from '../utils/businessHours';
 import { compressImage } from '../utils/imageUtils';
 
 const ResultModal = ({ restaurant, onClose, onAddReview, isAdmin, onUpdateRestaurant, onDeleteReview, categories = [], onAddCategory }) => {
+  const { t, i18n } = useTranslation();
   const [reviewerName, setReviewerName] = useState('');
   const [reviewComment, setReviewComment] = useState('');
   const [isEditing, setIsEditing] = useState(false);
@@ -265,11 +267,11 @@ const ResultModal = ({ restaurant, onClose, onAddReview, isAdmin, onUpdateRestau
             
             <div className="absolute bottom-0 left-0 p-6 w-full">
                 <h2 className="text-3xl font-bold text-white drop-shadow-md leading-tight mb-1">
-                {restaurant.name}
+                {i18n.language === 'en' && restaurant.name_en ? restaurant.name_en : restaurant.name}
                 </h2>
                 {restaurant.name_en && (
                     <p className="text-white/90 text-lg font-medium drop-shadow-md mb-2">
-                        {restaurant.name_en}
+                        {i18n.language === 'en' ? restaurant.name : restaurant.name_en}
                     </p>
                 )}
                 <div className="flex items-center text-white/90 text-sm">
@@ -722,7 +724,7 @@ Tuesday: Closed
                     <div className="bg-[#2d2d2d] p-4 rounded-xl border border-gray-700">
                         <p className="text-xs text-gray-400 font-bold uppercase tracking-wider mb-2 flex items-center gap-2">
                             <MapPin size={14} className="text-red-500" />
-                            分行列表 (Branches)
+                            {t('modal.branches', '分行列表 (Branches)')}
                         </p>
                         <div className="space-y-2">
                             {restaurant.branches.map((branch, idx) => (
@@ -745,7 +747,7 @@ Tuesday: Closed
                     <div className="bg-[#2d2d2d] p-4 rounded-xl border border-gray-700">
                         <p className="text-xs text-gray-400 font-bold uppercase tracking-wider mb-2 flex items-center gap-2">
                             <UtensilsCrossed size={14} className="text-yellow-500" />
-                            咖啡店档口 (Stalls)
+                            {t('modal.stalls', '咖啡店档口 (Stalls)')}
                         </p>
                         <div className="grid grid-cols-2 gap-3">
                             {restaurant.subStalls.map((stall, idx) => {
@@ -784,19 +786,19 @@ Tuesday: Closed
                  {restaurant.menu_link && (
                     <a href={restaurant.menu_link} target="_blank" rel="noopener noreferrer" className="flex-1 flex flex-col items-center justify-center py-3 bg-[#2d2d2d] hover:bg-[#3d3d3d] rounded-xl text-white transition border border-gray-700">
                         <BookOpen size={18} className="mb-1 text-blue-400"/>
-                        <span className="text-[10px] font-bold">菜单 (Menu)</span>
+                        <span className="text-[10px] font-bold">{t('modal.menu', '菜单 (Menu)')}</span>
                     </a>
                  )}
                  {restaurant.website_link && (
                     <a href={restaurant.website_link} target="_blank" rel="noopener noreferrer" className="flex-1 flex flex-col items-center justify-center py-3 bg-[#2d2d2d] hover:bg-[#3d3d3d] rounded-xl text-white transition border border-gray-700">
                         <Globe size={18} className="mb-1 text-purple-400"/>
-                        <span className="text-[10px] font-bold">网站 (Web)</span>
+                        <span className="text-[10px] font-bold">{t('modal.website', '网站 (Web)')}</span>
                     </a>
                  )}
                  {restaurant.delivery_link && (
                     <a href={restaurant.delivery_link} target="_blank" rel="noopener noreferrer" className="flex-1 flex flex-col items-center justify-center py-3 bg-[#2d2d2d] hover:bg-[#3d3d3d] rounded-xl text-white transition border border-gray-700">
                         <Bike size={18} className="mb-1 text-green-400"/>
-                        <span className="text-[10px] font-bold">外卖 (Order)</span>
+                        <span className="text-[10px] font-bold">{t('modal.delivery', '外卖 (Order)')}</span>
                     </a>
                  )}
               </div>
@@ -808,7 +810,7 @@ Tuesday: Closed
                 className="flex items-center justify-center w-full py-3 bg-white hover:bg-gray-200 text-black rounded-xl font-bold transition shadow-lg shadow-white/10"
               >
                 <ExternalLink size={18} className="mr-2" />
-                Google Maps 导航
+                {t('modal.navigate', 'Google Maps 导航')}
               </a>
             </div>
 

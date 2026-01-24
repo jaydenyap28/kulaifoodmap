@@ -16,6 +16,7 @@ import {
   rectSortingStrategy,
 } from '@dnd-kit/sortable';
 import { CSS } from '@dnd-kit/utilities';
+import { useTranslation } from 'react-i18next';
 import ImageWithFallback from './ImageWithFallback';
 import { checkOpenStatus } from '../utils/businessHours';
 
@@ -44,6 +45,7 @@ const SortableRestaurantCard = ({ restaurant, ...props }) => {
 };
 
 const RestaurantList = ({ restaurants, allRestaurants, isAdmin, onUpdateRestaurant, onDeleteRestaurant, onRestaurantClick, onAddRestaurant, onCategoryClick, onReorder }) => {
+  const { t } = useTranslation();
   const [searchTerm, setSearchTerm] = useState('');
   const [showBackToTop, setShowBackToTop] = useState(false);
 
@@ -110,7 +112,7 @@ const RestaurantList = ({ restaurants, allRestaurants, isAdmin, onUpdateRestaura
           <div className="flex items-center gap-3">
              <div className="h-8 w-1.5 bg-white rounded-full"></div>
              <h3 className="text-white font-bold text-2xl">
-                全商家列表 <span className="text-base text-gray-500 font-normal">({filteredRestaurants.length})</span>
+                {t('list.title')} <span className="text-base text-gray-500 font-normal">({filteredRestaurants.length})</span>
              </h3>
              {isAdmin && (
                 <div className="flex gap-2">
@@ -118,7 +120,7 @@ const RestaurantList = ({ restaurants, allRestaurants, isAdmin, onUpdateRestaura
                       onClick={onAddRestaurant}
                       className="ml-3 flex items-center gap-1.5 px-4 py-1.5 bg-white text-black text-sm rounded-full hover:bg-gray-200 transition-colors shadow-sm font-medium"
                     >
-                      <Plus size={16} /> 添加商家
+                      <Plus size={16} /> {t('list.add_restaurant')}
                     </button>
                 </div>
              )}
@@ -129,7 +131,7 @@ const RestaurantList = ({ restaurants, allRestaurants, isAdmin, onUpdateRestaura
             <Search className="absolute left-4 top-1/2 transform -translate-y-1/2 text-gray-500" size={18} />
             <input 
               type="text" 
-              placeholder="搜索商家 / 菜品..." 
+              placeholder={t('list.search_placeholder')} 
               value={searchTerm}
               onChange={(e) => setSearchTerm(e.target.value)}
               className="w-full pl-11 pr-4 py-3 bg-[#1e1e1e] border border-gray-700 rounded-full text-base text-gray-200 focus:outline-none focus:border-white focus:ring-1 focus:ring-white transition-all placeholder-gray-600"
@@ -180,8 +182,10 @@ const RestaurantList = ({ restaurants, allRestaurants, isAdmin, onUpdateRestaura
 
       {/* Empty State */}
       {filteredRestaurants.length === 0 && (
-        <div className="text-center py-20 text-gray-400">
-          <p>没有找到相关商家...</p>
+        <div className="text-center py-20 bg-[#1e1e1e] rounded-3xl border border-[#333]">
+          <div className="text-6xl mb-4">🔍</div>
+          <h3 className="text-xl font-bold text-white mb-2">{t('list.no_results')}</h3>
+          <p className="text-gray-400">Try adjusting your search or filters</p>
         </div>
       )}
 
@@ -200,6 +204,7 @@ const RestaurantList = ({ restaurants, allRestaurants, isAdmin, onUpdateRestaura
 };
 
 const RestaurantCard = ({ restaurant, isAdmin, onUpdate, onDelete, onClick, onCategoryClick }) => {
+  const { t, i18n } = useTranslation();
   const openStatus = restaurant.manualStatus && restaurant.manualStatus !== 'auto'
     ? { 
         isOpen: restaurant.manualStatus === 'open', 
@@ -233,19 +238,19 @@ const RestaurantCard = ({ restaurant, isAdmin, onUpdate, onDelete, onClick, onCa
                       onClick(); // Open Modal
                     }}
                     className="bg-black/50 p-2 rounded-full text-gray-300 hover:text-white shadow-sm backdrop-blur-sm"
-                    title="编辑 (Open Details to Edit)"
+                    title={t('list.edit')}
                 >
                     <Edit2 size={14} />
                 </button>
                 <button 
                     onClick={(e) => {
                       e.stopPropagation();
-                      if(window.confirm('确定删除这个商家吗？(Confirm delete?)')) {
+                      if(window.confirm(t('list.confirm_delete'))) {
                         onDelete(restaurant.id);
                       }
                     }}
                     className="bg-black/50 p-2 rounded-full text-red-400 hover:text-red-600 shadow-sm backdrop-blur-sm"
-                    title="删除"
+                    title={t('list.delete')}
                 >
                     <Trash2 size={14} />
                 </button>
@@ -259,7 +264,7 @@ const RestaurantCard = ({ restaurant, isAdmin, onUpdate, onDelete, onClick, onCa
                 ? 'bg-emerald-600/90 text-white' 
                 : 'bg-red-600/90 text-white'
             }`}>
-                {openStatus.isOpen ? '营业中' : '已打烊'}
+                {openStatus.isOpen ? t('list.status_open') : t('list.status_closed')}
             </span>
         </div>
       </div>
@@ -269,7 +274,7 @@ const RestaurantCard = ({ restaurant, isAdmin, onUpdate, onDelete, onClick, onCa
             <div className="flex justify-between items-start mb-1">
                 <div className="flex-1 mr-2">
                     <h3 className="font-bold text-lg leading-tight text-white line-clamp-2">
-                        {restaurant.name}
+                        {i18n.language === 'en' && restaurant.name_en ? restaurant.name_en : restaurant.name}
                     </h3>
                 </div>
                 {/* Rating Badge */}

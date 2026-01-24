@@ -1,0 +1,81 @@
+{
+  "app_title": "古来吃什么",
+  "confirm_logout": "确定退出管理员模式吗？",
+  "confirm_reset_bg": "确定要重置回默认背景吗？",
+  "settings_saved": "✅ 设置已保存！",
+  "copy_success": "✅ 成功复制 {{count}} 个商家数据！\n请打开 src/data/restaurants.js 并粘贴覆盖原内容。",
+  "copy_failed": "❌ 复制失败，请查看控制台",
+  "hero": {
+    "shuffling": "洗牌中...",
+    "not_enough": "商家不足以转动 (Need 2+)",
+    "what_to_eat": "今天吃什么？",
+    "winner_badge": "今日之选!",
+    "support_btn": "觉得好用？请我喝杯 Kopi ☕️"
+  },
+  "filter": {
+    "enter_new_cat": "请输入新分类名称:",
+    "add_category": "添加分类",
+    "done_edit": "完成编辑",
+    "manage_category": "管理分类",
+    "all": "全部",
+    "open_now": "只看营业中",
+    "confirm_delete_cat": "确定要删除分类 \"{{cat}}\" 吗？"
+  },
+  "list": {
+    "title": "全商家列表",
+    "add_restaurant": "添加商家",
+    "search_placeholder": "搜索商家 / 菜品...",
+    "no_results": "没有找到相关商家...",
+    "status_open": "营业中",
+    "status_closed": "已打烊",
+    "edit": "编辑",
+    "delete": "删除",
+    "confirm_delete": "确定删除这个商家吗？"
+  },
+  "footer": {
+    "recommend": "欢迎推荐古来好吃的",
+    "contact_fb": "联系 Facebook: Kulai Food Map",
+    "admin_login": "管理员登录"
+  },
+  "modal": {
+    "menu_links": "菜单/链接",
+    "price_range": "价格范围",
+    "branches": "分行",
+    "stalls": "档口",
+    "navigate": "导航",
+    "close": "关闭",
+    "menu": "菜单",
+    "website": "网站",
+    "delivery": "外卖"
+  },
+  "analytics": {
+    "title": "商家数据与权重设置",
+    "weight_hint": "* 权重越高，被抽中的几率越大",
+    "search_placeholder": "搜索商家...",
+    "views_tooltip": "详情点击次数",
+    "picks_tooltip": "抽中次数",
+    "weight_label": "权重"
+  },
+  "categories": {
+    "饭类": "饭类",
+    "面类": "面类",
+    "咖啡店": "咖啡店",
+    "点心": "点心",
+    "健康餐": "健康餐",
+    "素食": "素食",
+    "马来餐": "马来餐",
+    "西餐": "西餐",
+    "韩国餐": "韩国餐",
+    "日本餐": "日本餐",
+    "宴会酒楼": "宴会酒楼",
+    "煮炒海鲜楼": "煮炒海鲜楼",
+    "火锅": "火锅",
+    "烧烤": "烧烤",
+    "甜品": "甜品",
+    "奶茶": "奶茶",
+    "小吃": "小吃",
+    "早餐": "早餐",
+    "晚餐": "晚餐",
+    "宵夜": "宵夜"
+  }
+}
