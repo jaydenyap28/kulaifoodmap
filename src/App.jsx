@@ -4,6 +4,7 @@ import HeroCardStack from './components/HeroCardStack';
 import ResultModal from './components/ResultModal';
 import RestaurantList from './components/RestaurantList';
 import FilterBar from './components/FilterBar';
+import Footer from './components/Footer';
 import AdBanner from './components/AdBanner';
 import SupportModal from './components/SupportModal';
 import LoginModal from './components/LoginModal';
@@ -687,6 +688,8 @@ function App() {
         />
         
       </div>
+
+      <Footer onAdminLogin={() => setShowLoginModal(true)} />
 
       {/* Result Modal */}
       {selectedRestaurant && (
