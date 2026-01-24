@@ -8,7 +8,6 @@ import AdBanner from './components/AdBanner';
 import SupportModal from './components/SupportModal';
 import LoginModal from './components/LoginModal';
 import AdminAnalytics from './components/AdminAnalytics';
-import Footer from './components/Footer';
 import { UtensilsCrossed, Lock, X, Coffee, Image as ImageIcon, Upload, Save, Download, BarChart2, Globe } from 'lucide-react';
 import { useTranslation } from 'react-i18next';
 
@@ -516,7 +515,11 @@ function App() {
         {/* Header */}
         <header className="flex justify-between items-center mb-6 relative z-10">
           <div>
-            <h1 className="text-4xl md:text-5xl font-black tracking-tight text-white drop-shadow-[0_5px_5px_rgba(0,0,0,0.8)]" style={{ textShadow: '2px 2px 4px rgba(0,0,0,0.7)' }}>
+            <h1 
+              onClick={handleAdminLoginClick}
+              className="text-4xl md:text-5xl font-black tracking-tight text-white drop-shadow-[0_5px_5px_rgba(0,0,0,0.8)] cursor-pointer hover:opacity-90 transition-opacity" 
+              style={{ textShadow: '2px 2px 4px rgba(0,0,0,0.7)' }}
+            >
               {t('app_title')}
             </h1>
             <p className="text-sm md:text-base text-gray-200 font-bold tracking-widest mt-1 drop-shadow-md uppercase">
@@ -602,8 +605,6 @@ function App() {
             onReorder={handleReorder}
         />
         
-        {/* Footer */}
-        <Footer onAdminLogin={handleAdminLoginClick} />
       </div>
 
       {/* Result Modal */}
