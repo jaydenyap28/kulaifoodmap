@@ -8,7 +8,7 @@ import AdBanner from './components/AdBanner';
 import SupportModal from './components/SupportModal';
 import LoginModal from './components/LoginModal';
 import AdminAnalytics from './components/AdminAnalytics';
-import { UtensilsCrossed, Lock, X, Coffee, Image as ImageIcon, Upload, Save, Download, BarChart2, Globe, Clock, Dessert } from 'lucide-react';
+import { UtensilsCrossed, Lock, X, Coffee, Image as ImageIcon, Upload, Save, Download, BarChart2, Globe, Clock, Dessert, RefreshCw } from 'lucide-react';
 import { useTranslation } from 'react-i18next';
 
 import { checkOpenStatus } from './utils/businessHours';
@@ -525,6 +525,18 @@ function App() {
               title="导出数据代码 (Export Data Code)"
             >
               <Download size={18} />
+            </button>
+            <button 
+              onClick={() => {
+                if(window.confirm("确定要重置所有本地数据吗？这将清除缓存并刷新页面。\nAre you sure to reset all local data?")) {
+                    localStorage.clear();
+                    window.location.reload();
+                }
+              }}
+              className="p-2 bg-red-600/80 text-white rounded-full hover:bg-red-700/80 transition shadow-[0_0_10px_rgba(220,38,38,0.3)]"
+              title="重置数据 & 修复 (Reset Data & Fix)"
+            >
+              <RefreshCw size={18} />
             </button>
             {heroBg !== DEFAULT_HERO_BG && (
                <button 
