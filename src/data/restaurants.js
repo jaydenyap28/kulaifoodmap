@@ -1,7 +1,7 @@
 export const initialRestaurants = [
   {
     "id": 1,
-    "area": "Kulai 21 Miles",
+    "area": "",
     "name": "世华肉骨茶",
     "name_en": "Restoran Sze Wah Bak Kuh Teh",
     "address": "2 & 3, Jalan Seruling 1, Taman Sri Kulai Baru 2, 81000 Kulai, Johor",
@@ -75,7 +75,7 @@ export const initialRestaurants = [
   },
   {
     "id": 4,
-    "area": "",
+    "area": "Kelapa Sawit",
     "name": "大树下擂茶",
     "name_en": "Lei Cha 21 Miles",
     "address": "21, Jalan Manis, Taman Manis, 81000 Kulai, Johor",
