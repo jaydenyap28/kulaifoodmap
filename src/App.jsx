@@ -398,14 +398,58 @@ function App() {
     localStorage.setItem('kulaifood-area-overrides', JSON.stringify(newOverrides));
   };
 
-  const handleExportAreaFixes = () => {
-    const fixes = Object.entries(areaOverrides).map(([id, area]) => ({ id, area }));
-    if (fixes.length === 0) {
-        alert(t('no_fixes_to_export'));
+  const handleExportChanges = () => {
+    // 1. Identify Changed or New Restaurants
+    const changes = restaurants.filter(current => {
+        const original = initialRestaurants.find(init => init.id === current.id);
+        
+        // Case A: New Restaurant (Not in initial data)
+        if (!original) return true;
+
+        // Case B: Modified Restaurant
+        // We compare key editable fields. 
+        // Note: 'categories' needs careful array comparison.
+        const keysToCheck = [
+            'name', 'name_en', 'address', 'opening_hours', 
+            'price_range', 'image', 'rating', 'area',
+            'menu_link', 'website_link', 'delivery_link',
+            'isVegetarian', 'isNoBeef', 'manualStatus'
+        ];
+
+        return keysToCheck.some(key => {
+            const valCurrent = current[key];
+            const valOriginal = original[key];
+
+            // Handle Arrays (Categories, SubStalls - though subStalls is complex, we skip for now or JSON stringify)
+            if (Array.isArray(valCurrent) || Array.isArray(valOriginal)) {
+                return JSON.stringify(valCurrent) !== JSON.stringify(valOriginal);
+            }
+
+            // Handle normal values (strings, numbers, booleans)
+            // specific normalization for undefined/null/empty string
+            const normCurrent = valCurrent === undefined || valCurrent === null ? '' : valCurrent;
+            const normOriginal = valOriginal === undefined || valOriginal === null ? '' : valOriginal;
+            
+            return normCurrent != normOriginal;
+        });
+    });
+
+    if (changes.length === 0) {
+        alert(t('no_changes_to_export') || "没有检测到更改 (No changes detected)");
         return;
     }
-    const json = JSON.stringify(fixes, null, 2);
-    navigator.clipboard.writeText(json).then(() => alert("Copied area fixes to clipboard! Send this to the developer."));
+
+    // 2. Format Output
+    const json = JSON.stringify(changes, null, 2);
+    
+    // 3. Copy
+    navigator.clipboard.writeText(json).then(() => {
+        const msg = `已复制 ${changes.length} 个商家的修改数据！\n\n请直接粘贴发送给我 (Trae)。\nCopied ${changes.length} modified items. Paste them to the chat.`;
+        alert(msg);
+    }).catch(err => {
+        console.error('Failed to copy: ', err);
+        alert("复制失败 (Copy Failed)");
+    });
   };
 
   const handleChoose = (result) => {
@@ -678,9 +722,9 @@ function App() {
                 onAddCategory={handleAddCategory}
                 onDeleteCategory={handleDeleteCategory}
                 onReorderCategories={handleReorderCategories}
-                isAdmin={isAdmin}
-                onExportAreaFixes={handleExportAreaFixes}
-                showOpenOnly={showOpenOnly}
+            isAdmin={isAdmin}
+            onExportChanges={handleExportChanges}
+            showOpenOnly={showOpenOnly}
                 onToggleShowOpenOnly={() => setShowOpenOnly(!showOpenOnly)}
                 hideDrinks={hideDrinks}
                 onToggleHideDrinks={() => setHideDrinks(!hideDrinks)}

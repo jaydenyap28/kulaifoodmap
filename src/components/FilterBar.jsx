@@ -87,7 +87,7 @@ const FilterBar = ({
   onDeleteCategory,
   onReorderCategories,
   isAdmin,
-  onExportAreaFixes
+  onExportChanges
 }) => {
   const { t } = useTranslation();
   const [isEditMode, setIsEditMode] = useState(false);
@@ -182,11 +182,11 @@ const FilterBar = ({
               >
                 <Edit2 size={14} />
               </button>
-              {onExportAreaFixes && (
+              {onExportChanges && (
                 <button
-                    onClick={onExportAreaFixes}
+                    onClick={onExportChanges}
                     className="p-2 rounded-full bg-[#1e1e1e] text-blue-400 border border-blue-900/50 hover:bg-blue-900/20 transition-colors"
-                    title="Export Area Fixes"
+                    title="Export Changes (Diff Only)"
                 >
                     <Download size={14} />
                 </button>
