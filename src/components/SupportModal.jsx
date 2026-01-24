@@ -84,13 +84,13 @@ const SupportModal = ({ isOpen, onClose, isAdmin, supportQR, onUpdateQR }) => {
               <div className="space-y-4">
                 {/* Method A: TNG QR */}
                 <div className="bg-white p-4 rounded-2xl shadow-sm border border-[#3E2723]/10 relative group">
-                  <div className={`aspect-auto w-full max-w-sm mx-auto rounded-xl mb-3 overflow-hidden flex items-center justify-center relative ${imgError ? 'bg-gray-200' : 'bg-gray-100'}`}>
+                  <div className={`w-full mx-auto rounded-xl mb-3 overflow-hidden relative ${imgError ? 'bg-gray-200' : 'bg-gray-100'}`}>
                     {/* QR Code Image */}
                     {!imgError ? (
                         <img 
                             src={supportQR || "https://i.ibb.co/CpzRJY1M/TNG-QR-JNQ-MEDIA.jpg"} 
                             alt="Touch 'n Go QR Code" 
-                            className="w-full h-auto object-contain max-h-[400px]"
+                            className="w-full h-auto"
                             onError={(e) => {
                                 setImgError(true);
                             }}
