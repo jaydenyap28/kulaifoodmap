@@ -219,6 +219,8 @@ function App() {
   const [selectedRestaurant, setSelectedRestaurant] = useState(null);
   const [selectedCategory, setSelectedCategory] = useState(null);
   const [showOpenOnly, setShowOpenOnly] = useState(false);
+  const [hideDrinks, setHideDrinks] = useState(false);
+  const [hideDesserts, setHideDesserts] = useState(false);
   const [showSupportModal, setShowSupportModal] = useState(false);
   const [supportQR, setSupportQR] = useState(() => {
     try {
