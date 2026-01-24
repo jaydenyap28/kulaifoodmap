@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Plus, X, Edit2 } from 'lucide-react';
+import { Plus, X, Edit2, MapPin } from 'lucide-react';
 import { useTranslation } from 'react-i18next';
 import {
   DndContext,
@@ -78,7 +78,9 @@ const SortableCategoryChip = ({ cat, selectedCategory, onSelectCategory, onDelet
 const FilterBar = ({ 
   categories, 
   selectedCategory, 
-  onSelectCategory, 
+  onSelectCategory,
+  selectedArea,
+  onSelectArea,
   onAddCategory,
   onDeleteCategory,
   onReorderCategories,
@@ -86,6 +88,17 @@ const FilterBar = ({
 }) => {
   const { t } = useTranslation();
   const [isEditMode, setIsEditMode] = useState(false);
+
+  // Common Areas from Data Analysis
+  const AVAILABLE_AREAS = [
+    'Indahpura',
+    'Bandar Putra',
+    'Kelapa Sawit',
+    'Taman Kulai',
+    'Kulai Besar',
+    'Saleng',
+    'Senai'
+  ];
 
   const sensors = useSensors(
     useSensor(PointerSensor, {
@@ -113,7 +126,42 @@ const FilterBar = ({
     <div className="w-full max-w-[1600px] mx-auto px-4 mb-4 relative z-20 flex flex-col gap-3">
       
       {/* Container - Split into Left (All) and Right (Categories) for alignment */}
-      <div className="flex flex-row items-start gap-2 pb-2">
+      <div className="flex flex-col gap-3">
+        
+        {/* Area Filter Row (New) */}
+        <div className="flex items-center gap-2 overflow-x-auto pb-1 scrollbar-hide">
+            <div className="flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-[#1e1e1e] border border-[#333] text-sm text-gray-400 shrink-0">
+                <MapPin size={14} className="text-orange-400" />
+                <span className="font-bold">{t('filter.area_label')}</span>
+            </div>
+            
+            <button
+                onClick={() => onSelectArea(null)}
+                className={`shrink-0 px-4 py-1.5 rounded-full text-sm font-bold transition-all ${
+                    !selectedArea
+                    ? 'bg-orange-500 text-white border-orange-500'
+                    : 'bg-[#1e1e1e] text-gray-400 hover:text-white border-[#333]'
+                } border shadow-sm`}
+            >
+                {t('filter.all_areas')}
+            </button>
+
+            {AVAILABLE_AREAS.map(area => (
+                <button
+                    key={area}
+                    onClick={() => onSelectArea(area === selectedArea ? null : area)}
+                    className={`shrink-0 px-4 py-1.5 rounded-full text-sm font-bold transition-all ${
+                        selectedArea === area
+                        ? 'bg-orange-500 text-white border-orange-500'
+                        : 'bg-[#1e1e1e] text-gray-400 hover:text-white border-[#333]'
+                    } border shadow-sm`}
+                >
+                    {t(`areas.${area}`, area)}
+                </button>
+            ))}
+        </div>
+
+        <div className="flex flex-row items-start gap-2 pb-2">
         
         {/* Left: Admin Tools + All Button */}
         <div className="flex items-center gap-2 shrink-0">

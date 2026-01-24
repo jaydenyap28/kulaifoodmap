@@ -260,6 +260,7 @@ function App() {
 
   const [selectedRestaurant, setSelectedRestaurant] = useState(null);
   const [selectedCategory, setSelectedCategory] = useState([]); // Changed to array for multi-select
+  const [selectedArea, setSelectedArea] = useState(null); // New Area State
   const [showOpenOnly, setShowOpenOnly] = useState(false);
   const [hideDrinks, setHideDrinks] = useState(false);
   const [hideDesserts, setHideDesserts] = useState(false);
@@ -355,6 +356,13 @@ function App() {
       if (!r.categories || !selectedCategory.some(cat => r.categories.includes(cat))) {
         return false;
       }
+    }
+
+    // 5. Area Filter
+    if (selectedArea) {
+        if (!r.address || !r.address.includes(selectedArea)) {
+            return false;
+        }
     }
 
     return true;
@@ -618,6 +626,8 @@ function App() {
                 categories={categories}
                 selectedCategory={selectedCategory}
                 onSelectCategory={handleCategoryClick}
+                selectedArea={selectedArea}
+                onSelectArea={setSelectedArea}
                 onAddCategory={handleAddCategory}
                 onDeleteCategory={handleDeleteCategory}
                 onReorderCategories={handleReorderCategories}
@@ -651,11 +661,13 @@ function App() {
                 <div className="text-6xl mb-4">🍽️</div>
                 <h3 className="text-2xl font-bold text-white mb-2">商家不足以转动</h3>
                 <p className="text-gray-400 text-base max-w-xs mx-auto">
-                    当前筛选条件下商家少于2家，请尝试选择其他分类或清除筛选。
+                    当前筛选条件下商家少于2家，请尝试选择其他分类/地区或清除筛选。
                 </p>
                 <button 
                     onClick={() => {
                         setSelectedCategory([]);
+                        setSelectedArea(null);
+                        setShowOpenOnly(false);
                     }}
                     className="mt-6 px-8 py-3 bg-white text-black rounded-full font-bold shadow-md hover:bg-gray-200 transition"
                 >

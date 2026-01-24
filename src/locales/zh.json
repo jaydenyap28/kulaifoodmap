@@ -21,6 +21,8 @@
     "open_now": "只看营业中",
     "no_drinks": "不看饮品",
     "no_desserts": "不看甜点",
+    "area_label": "地区筛选",
+    "all_areas": "全古来 (All Areas)",
     "confirm_delete_cat": "确定要删除分类 \"{{cat}}\" 吗？"
   },
   "list": {
@@ -80,5 +82,15 @@
     "火锅烧烤": "火锅烧烤",
     "蛋糕甜点": "蛋糕甜点",
     "饮品": "饮品"
+  },
+  "areas": {
+    "Indahpura": "优美城 (Indahpura)",
+    "Bandar Putra": "太子城 (Bandar Putra)",
+    "Kelapa Sawit": "加拉巴沙威 (Kelapa Sawit)",
+    "Taman Kulai": "古来花园 (Taman Kulai)",
+    "Kulai Besar": "古来大街 (Kulai Besar)",
+    "Saleng": "沙令 (Saleng)",
+    "Senai": "士乃 (Senai)",
+    "Other": "其他地区"
   }
 }

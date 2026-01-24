@@ -21,6 +21,8 @@
     "open_now": "Open Now",
     "no_drinks": "No Drinks",
     "no_desserts": "No Desserts",
+    "area_label": "Filter Area",
+    "all_areas": "All Areas",
     "confirm_delete_cat": "Delete category \"{{cat}}\"?"
   },
   "list": {
@@ -80,5 +82,15 @@
     "火锅烧烤": "Steamboat/BBQ",
     "蛋糕甜点": "Cake & Dessert",
     "饮品": "Drinks"
+  },
+  "areas": {
+    "Indahpura": "Indahpura",
+    "Bandar Putra": "Bandar Putra",
+    "Kelapa Sawit": "Kelapa Sawit",
+    "Taman Kulai": "Taman Kulai",
+    "Kulai Besar": "Kulai Besar",
+    "Saleng": "Saleng",
+    "Senai": "Senai",
+    "Other": "Others"
   }
 }
