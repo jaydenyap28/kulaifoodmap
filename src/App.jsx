@@ -290,7 +290,7 @@ function App() {
     if (hideDrinks) {
         // Keywords: 饮品, 饮料, Drink, Beverage, 饮品店
         if (r.categories && r.categories.some(c => 
-            c.includes('饮品') || c.includes('饮料') || c.toLowerCase().includes('drink') || c.toLowerCase().includes('beverage')
+            c && typeof c === 'string' && (c.includes('饮品') || c.includes('饮料') || c.toLowerCase().includes('drink') || c.toLowerCase().includes('beverage'))
         )) {
             return false;
         }
@@ -300,7 +300,7 @@ function App() {
     if (hideDesserts) {
         // Keywords: 甜点, 蛋糕, Dessert, Cake
         if (r.categories && r.categories.some(c => 
-            c.includes('甜点') || c.includes('蛋糕') || c.toLowerCase().includes('dessert') || c.toLowerCase().includes('cake')
+            c && typeof c === 'string' && (c.includes('甜点') || c.includes('蛋糕') || c.toLowerCase().includes('dessert') || c.toLowerCase().includes('cake'))
         )) {
             return false;
         }
