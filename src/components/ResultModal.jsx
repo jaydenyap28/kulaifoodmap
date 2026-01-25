@@ -28,7 +28,9 @@ const ResultModal = ({ restaurant, onClose, onAddReview, isAdmin, onUpdateRestau
     manualStatus: restaurant.manualStatus || 'auto', // 'auto', 'open', 'closed'
     subStalls: restaurant.subStalls || [],
     rating: restaurant.rating !== undefined ? restaurant.rating : 0,
-    area: restaurant.area || ''
+    area: restaurant.area || '',
+    intro_zh: restaurant.intro_zh || '',
+    intro_en: restaurant.intro_en || ''
   });
 
   // Smart Schedule State
@@ -319,6 +321,27 @@ const ResultModal = ({ restaurant, onClose, onAddReview, isAdmin, onUpdateRestau
                       placeholder="Enter English Name"
                     />
                   </div>
+
+                  {/* Introduction Fields */}
+                  <div>
+                    <label className="text-xs text-gray-400">简介 (Chinese Intro)</label>
+                    <textarea 
+                      value={editForm.intro_zh}
+                      onChange={e => setEditForm({...editForm, intro_zh: e.target.value})}
+                      className="w-full bg-[#1a1a1a] border-b border-gray-600 py-1 text-sm text-white focus:border-white outline-none min-h-[60px]"
+                      placeholder="输入中文简介..."
+                    />
+                  </div>
+                  <div>
+                    <label className="text-xs text-gray-400">Introduction (English)</label>
+                    <textarea 
+                      value={editForm.intro_en}
+                      onChange={e => setEditForm({...editForm, intro_en: e.target.value})}
+                      className="w-full bg-[#1a1a1a] border-b border-gray-600 py-1 text-sm text-white focus:border-white outline-none min-h-[60px]"
+                      placeholder="Enter English Introduction..."
+                    />
+                  </div>
+
                   <div>
                     <label className="text-xs text-gray-400">图片链接 (Image URL)</label>
                     <div className="flex gap-2 items-end">
@@ -702,6 +725,27 @@ Tuesday: Closed
                 </div>
               ) : (
                 <>
+                  {/* Introduction Display */}
+                  {(restaurant.intro_zh || restaurant.intro_en) && (
+                    <div className="bg-[#2d2d2d] p-4 rounded-xl border border-gray-700 mb-4">
+                        <div className="flex items-start gap-3">
+                            <Info size={18} className="text-blue-400 mt-1 shrink-0" />
+                            <div className="space-y-2">
+                                {restaurant.intro_zh && (
+                                    <p className="text-gray-200 text-sm leading-relaxed">
+                                        {restaurant.intro_zh}
+                                    </p>
+                                )}
+                                {restaurant.intro_en && (
+                                    <p className="text-gray-400 text-xs leading-relaxed italic border-t border-gray-600 pt-2 mt-2">
+                                        {restaurant.intro_en}
+                                    </p>
+                                )}
+                            </div>
+                        </div>
+                    </div>
+                  )}
+
                   <div className="flex items-start text-gray-300">
                     <MapPin size={18} className="mt-1 mr-3 text-gray-400 shrink-0" />
                     <p className="leading-relaxed">{restaurant.address}</p>
