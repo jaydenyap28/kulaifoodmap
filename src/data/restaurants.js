@@ -5089,11 +5089,11 @@ export const initialRestaurants = [
   {
     "id": 191,
     "name": "蜜雪冰城",
-    "name_en": "MIXUE Kelapa Sawit",
+    "name_en": "Mixue Kelapa Sawit",
     "intro_zh": "源自中国的知名茶饮品牌，以其高性价比的冰淇淋和茶饮闻名。招牌新鲜冰淇淋和柠檬水深受欢迎。",
     "intro_en": "A famous tea brand from China, known for its cost-effective ice cream and tea drinks. The signature fresh ice cream and lemonade are very popular.",
     "address": "10, Lorong Susur Kelapa Sawit, Kelapa Sawit, 81000 Kulai, Johor Darul Ta'zim",
-    "opening_hours": "Tuesday, 10 am–10:30 pm",
+    "opening_hours": "Monday: 10am - 10:30pm\nTuesday: 10am - 10:30pm\nWednesday: 10am - 10:30pm\nThursday: 10am - 10:30pm\nFriday: 10am - 10:30pm\nSaturday: 10am - 10:30pm\nSunday: 10am - 10:30pm",
     "category": [
       "饮品"
     ],
@@ -5101,7 +5101,7 @@ export const initialRestaurants = [
       "饮品"
     ],
     "rating": 0,
-    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRhNx28yNDcr1uNIBi1ryXr7Exx3vrC289Qcg&s",
+    "image": "https://cdn.prod.website-files.com/63ea45ebaef615f2a548607b/68d169b4d64da826ee795932_mixue.webp",
     "subStalls": [],
     "price_range": "RM 10-20",
     "menu_link": "",
@@ -5110,7 +5110,8 @@ export const initialRestaurants = [
     "isVegetarian": false,
     "isNoBeef": false,
     "manualStatus": "auto",
-    "branches": []
+    "branches": [],
+    "area": "Kelapa Sawit"
   },
   {
     "id": 192,
@@ -5353,7 +5354,7 @@ export const initialRestaurants = [
     "intro_zh": "提供各类煮炒和海鲜料理，锅气十足。环境宽敞，适合家庭聚餐和朋友聚会。",
     "intro_en": "Offers various Zhu Chao and seafood dishes with great 'Wok Hei'. Spacious environment, suitable for family dinners and friend gatherings.",
     "address": "23 1, Jalan Desa Baiduri, Taman Desa Baiduri, 81000 Kulai, Johor Darul Ta'zim",
-    "opening_hours": "11:30 am–10:30 pm",
+    "opening_hours": "Monday: 11:30am - 10:30pm\nTuesday: 11:30am - 10:30pm\nWednesday: 11:30am - 10:30pm\nThursday: 11:30am - 10:30pm\nFriday: 11:30am - 10:30pm\nSaturday: 11:30am - 10:30pm\nSunday: 11:30am - 10:30pm",
     "category": [
       "煮炒海鲜楼"
     ],
@@ -5361,7 +5362,7 @@ export const initialRestaurants = [
       "煮炒海鲜楼"
     ],
     "rating": 0,
-    "image": "",
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQk2-R9268qbNi_uqJLOCDolwk7K-31kacqvg&s",
     "subStalls": [],
     "price_range": "RM 10-20",
     "menu_link": "",
@@ -5375,11 +5376,11 @@ export const initialRestaurants = [
   {
     "id": 204,
     "name": "P-Loko Café",
-    "name_en": "P-Loko Café",
+    "name_en": "",
     "intro_zh": "Indahpura 的一家温馨咖啡馆，环境优美，氛围轻松。提供西式餐点、特色饮料和甜品，是打卡拍照的好地方。",
     "intro_en": "A cozy cafe in Indahpura with a beautiful environment and relaxing atmosphere. Offers Western meals, specialty drinks, and desserts. A great place for photos.",
     "address": "123, Jalan Kenanga 29/6, Bandar Indahpura, 81000 Kulai, Johor Darul Ta'zim",
-    "opening_hours": "11 am–10 pm",
+    "opening_hours": "Monday: 11am - 10pm\nTuesday: 11am - 10pm\nWednesday: 11am - 10pm\nThursday: 11am - 10pm\nFriday: 11am - 10pm\nSaturday: 11am - 10pm\nSunday: 11am - 10pm",
     "category": [
       "咖啡店",
       "西餐"
@@ -5456,11 +5457,11 @@ export const initialRestaurants = [
     "id": 207,
     "area": "Indahpura",
     "name": "MeatVking Bistro",
-    "name_en": "MeatVking Bistro",
+    "name_en": "",
     "intro_zh": "主打得克萨斯烧烤（Texas BBQ）和汉堡的西餐厅，肉食爱好者的天堂。",
     "intro_en": "Specializes in Texas Barbecue and Burgers. A paradise for meat lovers.",
     "address": "Pusat Komersial Indah, 127, Jln Kiambang 14, Bandar Indahpura, 81000 Kulai, Johor Darul Ta'zim",
-    "opening_hours": "12–10 pm Wed Closed",
+    "opening_hours": "Monday: 10am - 10pm\nTuesday: 10am - 10pm\nWednesday: Closed\nThursday: 10am - 10pm\nFriday: 10am - 10pm\nSaturday: 10am - 10pm\nSunday: 10am - 10pm",
     "category": [
       "西餐"
     ],
@@ -5482,11 +5483,11 @@ export const initialRestaurants = [
   {
     "id": 208,
     "name": "Rasa Sayang Kopitiam",
-    "name_en": "Rasa Sayang Kopitiam",
+    "name_en": "",
     "intro_zh": "传统咖啡店，提供南洋咖啡、烤面包和半熟蛋，以及各式本地面食。",
     "intro_en": "Traditional kopitiam serving Nanyang coffee, toast, half-boiled eggs, and local noodles.",
     "address": "S58, Jalan Sultanah, Taman Kulai, 81000 Kulai, Johor Darul Ta'zim",
-    "opening_hours": "7:30 am–5 pm",
+    "opening_hours": "Monday: 7:30am - 5pm\nTuesday: 7:30am - 5pm\nWednesday: 7:30am - 5pm\nThursday: 7:30am - 5pm\nFriday: 7:30am - 5pm\nSaturday: 7:30am - 5pm\nSunday: 7:30am - 5pm",
     "category": [
       "Cafe"
     ],
@@ -5494,7 +5495,7 @@ export const initialRestaurants = [
       "Cafe"
     ],
     "rating": 0,
-    "image": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI2MDAiIGhlaWdodD0iNDAwIiB2aWV3Qm94PSIwIDAgNjAwIDQwMCI+CjxyZWN0IHdpZHRoPSI2MDAiIGhlaWdodD0iNDAwIiBmaWxsPSIjMWUxZTFlIi8+Cjx0ZXh0IHg9IjUwJSIgeT0iNTAlIiBkb21pbmFudC1iYXNlbGluZT0ibWlkZGxlIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSI0MCIgZmlsbD0iI2ZmZmZmZiI+S3VsYWkgRm9vZDwvdGV4dD4KPC9zdmc+",
+    "image": "https://d208quqxsjalxm.cloudfront.net/restaurant_image/e79aed175a0b444a8fa2e2fb3cbbcc08_1661146251.jpeg",
     "subStalls": [],
     "price_range": "RM 10-20",
     "menu_link": "",
@@ -5508,12 +5509,12 @@ export const initialRestaurants = [
   {
     "id": 209,
     "area": "Indahpura",
-    "name": "Ma Chin All Steamboat Restaurant",
+    "name": "马丞锅",
     "name_en": "Ma Chin All Steamboat Restaurant",
     "intro_zh": "提供火锅和烧烤的餐厅，食材新鲜，汤底选择多样。",
     "intro_en": "Offers steamboat and BBQ dining with fresh ingredients and various soup bases.",
     "address": "590, Jalan Kenanga 29/19, Bandar Indahpura, 81000 Kulai, Johor Darul Ta'zim",
-    "opening_hours": "11 am–12 am",
+    "opening_hours": "Monday: 11am - 12am\nTuesday: 11am - 12am\nWednesday: 11am - 12am\nThursday: 11am - 12am\nFriday: 11am - 12am\nSaturday: 11am - 12am\nSunday: 11am - 12am",
     "category": [
       "火锅烧烤"
     ],
@@ -5539,7 +5540,7 @@ export const initialRestaurants = [
     "intro_zh": "售卖传统糖水和糕点，如红豆汤、番薯汤等，充满古早味。",
     "intro_en": "Sells traditional tong sui (dessert soups) and pastries like red bean soup and sweet potato soup.",
     "address": "Taman Kota Kulai, 81000 Kulai, Johor",
-    "opening_hours": "6 am–6 pm",
+    "opening_hours": "Monday: 6am - 6pm\nTuesday: 6am - 6pm\nWednesday: 6am - 6pm\nThursday: 6am - 6pm\nFriday: 6am - 6pm\nSaturday: 6am - 6pm\nSunday: 6am - 6pm",
     "category": [
       "咖啡店"
     ],
@@ -5547,7 +5548,7 @@ export const initialRestaurants = [
       "咖啡店"
     ],
     "rating": 0,
-    "image": "",
+    "image": "https://cdn.sinchew.com.my/wp-content/uploads/2025/04/efbc88e5b7b2e7adbee58f91efbc89e69f94efbc9ae78988e4ba8ce5a4b4e69cace68aa5e6b4bbe58aa8efbc9ae6989fe6b4b2e68385e789b5e5a4a7e58fa4.jpg",
     "subStalls": [],
     "price_range": "RM 10-20",
     "menu_link": "",
@@ -5619,7 +5620,7 @@ export const initialRestaurants = [
     "intro_zh": "经济实惠的杂菜饭专卖店，菜肴选择丰富，是午餐和晚餐的热门选择。",
     "intro_en": "Affordable economy rice (mixed rice) shop with a wide variety of dishes. A popular choice for lunch and dinner.",
     "address": "20, Jalan Susur Kulai 4, Taman Sri Kulai Baru, 81000 Kulai, Johor Darul Ta'zim",
-    "opening_hours": "7 am–6 pm",
+    "opening_hours": "Monday: 7am - 6pm\nTuesday: 7am - 6pm\nWednesday: 7am - 6pm\nThursday: 7am - 6pm\nFriday: 7am - 6pm\nSaturday: 7am - 6pm\nSunday: 7am - 6pm",
     "category": [
       "杂菜饭"
     ],
@@ -5671,7 +5672,7 @@ export const initialRestaurants = [
     "intro_zh": "提供新鲜海鲜和煮炒菜肴，适合家庭聚餐。",
     "intro_en": "Offers fresh seafood and Zhu Chao dishes, suitable for family gatherings.",
     "address": "8 & 9, Jalan Tropika 1, Taman Tropika, 81000 Kulai, Johor Darul Ta'zim",
-    "opening_hours": "11:30 am–12 am",
+    "opening_hours": "Monday: 11:30am - 12am\nTuesday: 11:30am - 12am\nWednesday: 11:30am - 12am\nThursday: 11:30am - 12am\nFriday: 11:30am - 12am\nSaturday: 11:30am - 12am\nSunday: 11:30am - 12am",
     "category": [
       "煮炒海鲜楼"
     ],
@@ -5679,7 +5680,7 @@ export const initialRestaurants = [
       "煮炒海鲜楼"
     ],
     "rating": 0,
-    "image": "",
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQfQSurIviSNAYoUP3veHkTjgASU6HQvCXiKg&s",
     "subStalls": [],
     "price_range": "RM 10-20",
     "menu_link": "",
@@ -5720,11 +5721,11 @@ export const initialRestaurants = [
     "id": 220,
     "area": "Indahpura",
     "name": "Uncle Don's",
-    "name_en": "Uncle Don's",
+    "name_en": "",
     "intro_zh": "知名连锁餐厅，主打实惠的西餐和冷冻啤酒。推荐鸡排、披萨和意大利面。",
     "intro_en": "Famous chain restaurant known for affordable Western food and frozen beer mugs. Recommended for chicken chop, pizza, and pasta.",
     "address": "229 & 229-A, Jalan Kenanga 29/2, Bandar Indahpura, 81000 Kulai, Johor Darul Ta'zim",
-    "opening_hours": "12 pm–12am",
+    "opening_hours": "Monday: 12pm - 12am\nTuesday: 12pm - 12am\nWednesday: 12pm - 12am\nThursday: 12pm - 12am\nFriday: 12pm - 12am\nSaturday: 12pm - 12am\nSunday: 12pm - 12am",
     "category": [
       "Cafe",
       "西餐"
@@ -5734,7 +5735,7 @@ export const initialRestaurants = [
       "西餐"
     ],
     "rating": 0,
-    "image": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI2MDAiIGhlaWdodD0iNDAwIiB2aWV3Qm94PSIwIDAgNjAwIDQwMCI+CjxyZWN0IHdpZHRoPSI2MDAiIGhlaWdodD0iNDAwIiBmaWxsPSIjMWUxZTFlIi8+Cjx0ZXh0IHg9IjUwJSIgeT0iNTAlIiBkb21pbmFudC1iYXNlbGluZT0ibWlkZGxlIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSI0MCIgZmlsbD0iI2ZmZmZmZiI+S3VsYWkgRm9vZDwvdGV4dD4KPC9zdmc+",
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTECWC1gv7PYBM8QihUxdoPxv7rHLvid7NlIg&s",
     "subStalls": [],
     "price_range": "RM 10-20",
     "menu_link": "",
@@ -5775,11 +5776,11 @@ export const initialRestaurants = [
   {
     "id": 222,
     "name": "Asam Pedas Madu Tiga",
-    "name_en": "Asam Pedas Madu Tiga",
+    "name_en": "",
     "intro_zh": "古来著名的Asam Pedas餐厅，酸辣适中，鱼肉新鲜。拥有乡村风味的用餐环境。",
     "intro_en": "Famous Asam Pedas restaurant in Kulai, known for fresh fish and perfectly balanced sour and spicy flavors. Features a kampung-style dining ambiance.",
     "address": "Jln Alor Bukit, 81000 Kulai, Johor Darul Ta'zim",
-    "opening_hours": "9 am–5 pm",
+    "opening_hours": "Monday: 9am - 5pm\nTuesday: 9am - 5pm\nWednesday: 9am - 5pm\nThursday: 9am - 5pm\nFriday: 9am - 5pm\nSaturday: 9am - 5pm\nSunday: 9am - 5pm",
     "category": [
       "煮炒海鲜楼"
     ],
@@ -5828,11 +5829,11 @@ export const initialRestaurants = [
     "id": 224,
     "area": "Indahpura",
     "name": "Anmour cafe",
-    "name_en": "Anmour Cafe",
+    "name_en": "",
     "intro_zh": "本土美式餐厅概念，提供高品质且价格亲民的西餐。招牌汉堡、牛排和意大利面深受喜爱。",
     "intro_en": "Homegrown American restaurant concept offering quality Western food at affordable prices. Famous for burgers, steaks, and pasta.",
     "address": "227, Jalan Kenanga 29/2, Bandar Indahpura, 81000 Kulai, Johor Darul Ta'zim",
-    "opening_hours": "12–9:45 pm",
+    "opening_hours": "Monday: 12pm - 9:45pm\nTuesday: 12pm - 9:45pm\nWednesday: 12pm - 9:45pm\nThursday: 12pm - 9:45pm\nFriday: 12pm - 9:45pm\nSaturday: 12pm - 9:45pm\nSunday: 12pm - 9:45pm",
     "category": [
       "西餐",
       "Cafe"
@@ -5884,11 +5885,11 @@ export const initialRestaurants = [
     "id": 226,
     "area": "Indahpura",
     "name": "Nache's Oven Nutri & Wellness Cafe",
-    "name_en": "Nache's Oven Nutri & Wellness Cafe",
+    "name_en": "",
     "intro_zh": "主打健康与养生的咖啡馆，提供酸种面包和植物性料理。环境舒适，适合追求健康的食客。",
     "intro_en": "A wellness cafe specializing in sourdough and plant-based cuisine. Comfortable environment, perfect for health-conscious diners.",
     "address": "238A, Jln Kenanga 29/8, Taman Indahpura, 81000 Kulai, Johor",
-    "opening_hours": "10:30 am–9:30 pm Tu closed",
+    "opening_hours": "Monday: 10am - 10pm\nTuesday: 10am - 10pm\nWednesday: 10am - 10pm\nThursday: 10am - 10pm\nFriday: 10am - 10pm\nSaturday: 10am - 10pm\nSunday: 10am - 10pm",
     "category": [
       "健康餐",
       "Cafe"
@@ -5913,11 +5914,11 @@ export const initialRestaurants = [
     "id": 227,
     "area": "Bandar Putra",
     "name": "JLL Brotherhoods",
-    "name_en": "JLL Brotherhoods",
+    "name_en": "",
     "intro_zh": "位于Bandar Putra的西式咖啡馆，提供各类扒类和休闲美食。适合朋友聚会。",
     "intro_en": "Western cafe located in Bandar Putra, offering various chops and casual dining. Great for gatherings with friends.",
     "address": "320, Jln Lagenda 21, Taman Lagenda Putra, 81000 Kulai, Johor Darul Ta'zim",
-    "opening_hours": "6:30–11:30 pm",
+    "opening_hours": "Monday: 6:30am - 11:30pm\nTuesday: 6:30am - 11:30pm\nWednesday: 6:30am - 11:30pm\nThursday: 6:30am - 11:30pm\nFriday: 6:30am - 11:30pm\nSaturday: 6:30am - 11:30pm\nSunday: 6:30am - 11:30pm",
     "category": [
       "Cafe",
       "西餐"
@@ -5967,11 +5968,11 @@ export const initialRestaurants = [
   {
     "id": 229,
     "name": "Win Win 炸鸡扒",
-    "name_en": "Win Win Chick-N",
+    "name_en": "",
     "intro_zh": "主打炸鸡扒和双重炸薯条的特色小吃店。鸡肉鲜嫩多汁，外皮酥脆。",
     "intro_en": "Specializes in Fried Chicken Chop and double-fried fries. Juicy chicken with crispy skin.",
     "address": "336, Jalan Saga 2, Taman Saga, 81000 Kulai, Johor Darul Ta'zim",
-    "opening_hours": "6–11 pm",
+    "opening_hours": "Monday: 6am - 11pm\nTuesday: 6am - 11pm\nWednesday: 6am - 11pm\nThursday: 6am - 11pm\nFriday: 6am - 11pm\nSaturday: 6am - 11pm\nSunday: 6am - 11pm",
     "category": [
       "西餐"
     ],
@@ -6123,12 +6124,12 @@ export const initialRestaurants = [
   {
     "id": 235,
     "area": "Indahpura",
-    "name": "Ai-CHA • Bandar Indahpura",
-    "name_en": "Ai-CHA Bandar Indahpura",
+    "name": "Ai-CHA ",
+    "name_en": "",
     "intro_zh": "源自印尼的知名茶饮品牌，主打平价且高品质的冰淇淋、奶茶和果茶，深受年轻族群喜爱。",
     "intro_en": "A popular tea brand from Indonesia known for its affordable yet high-quality ice cream, milk tea, and fruit teas, loved by the younger crowd.",
     "address": "5239, Jalan Matahari, Bandar Indahpura, 81000 Kulai, Johor Darul Ta'zim",
-    "opening_hours": "11 am–11:30 pm",
+    "opening_hours": "Monday: 11am - 11:30pm\nTuesday: 11am - 11:30pm\nWednesday: 11am - 11:30pm\nThursday: 11am - 11:30pm\nFriday: 11am - 11:30pm\nSaturday: 11am - 11:30pm\nSunday: 11am - 11:30pm",
     "category": [
       "饮品"
     ],
@@ -6155,7 +6156,7 @@ export const initialRestaurants = [
     "intro_zh": "位于Indahpura的海鲜饭馆，提供各类新鲜海鲜煮炒，价格公道，适合家庭聚餐。",
     "intro_en": "A seafood restaurant in Indahpura offering a variety of fresh seafood stir-fry dishes at reasonable prices, suitable for family gatherings.",
     "address": "5229, Jalan Matahari, Bandar Indahpura, 81000 Kulai, Johor Darul Ta'zim",
-    "opening_hours": "3–11 pm",
+    "opening_hours": "Monday: 3am - 11pm\nTuesday: 3am - 11pm\nWednesday: 3am - 11pm\nThursday: 3am - 11pm\nFriday: 3am - 11pm\nSaturday: 3am - 11pm\nSunday: 3am - 11pm",
     "category": [
       "煮炒海鲜楼"
     ],
@@ -6163,7 +6164,7 @@ export const initialRestaurants = [
       "煮炒海鲜楼"
     ],
     "rating": 0,
-    "image": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI2MDAiIGhlaWdodD0iNDAwIiB2aWV3Qm94PSIwIDAgNjAwIDQwMCI+PHJlY3QgZmlsbD0iIzFlMWUxZSIgd2lkdGg9IjYwMCIgaGVpZ2h0PSI0MDAiLz48dGV4dCBmaWxsPSIjZmZmZmZmIiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIzMCIgZHk9IjEwLjUiIGZvbnQtd2VpZ2h0PSJib2xkIiB4PSI1MCUiIHk9IjUwJSIgdGV4dC1hbmNob3I9Im1pZGRsZSI+S3VsYWkgRm9vZDwvdGV4dD48L3N2Zz4=",
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS_LJAZ__Ke5Q2P2KlOhldj92c0a8KBS4KJvw&s",
     "subStalls": [],
     "price_range": "RM 10-20",
     "menu_link": "",
@@ -6362,12 +6363,12 @@ export const initialRestaurants = [
   {
     "id": 245,
     "area": "Indahpura",
-    "name": "Wallace Kulai Indahpura",
-    "name_en": "Wallace",
+    "name": "Wallace ",
+    "name_en": "",
     "intro_zh": "来自中国的快餐连锁品牌，提供炸鸡、汉堡和各种小吃，价格实惠。",
     "intro_en": "A Chinese fast food chain offering fried chicken, burgers, and snacks at competitive prices.",
     "address": "175, Jalan Kenanga 29/4, Bandar Indahpura, 81000 Kulai, Johor Darul Ta'zim",
-    "opening_hours": "10 am–10 pm",
+    "opening_hours": "Monday: 10am - 10pm\nTuesday: 10am - 10pm\nWednesday: 10am - 10pm\nThursday: 10am - 10pm\nFriday: 10am - 10pm\nSaturday: 10am - 10pm\nSunday: 10am - 10pm",
     "category": [
       "快餐"
     ],
@@ -6421,15 +6422,16 @@ export const initialRestaurants = [
     "intro_zh": "特色桑拿面和养心锅，主打健康养生的汤底和新鲜食材，桑拿面口感独特，是暖胃的首选。",
     "intro_en": "Features signature Sauna Mee and nourishing hotpots, known for healthy broths and fresh ingredients, offering a unique and warming dining experience.",
     "address": "186 Jalan Kenanga 29/4, Bandar Indahpura Kulai, 81000 Johor Bahru, Johor Darul Ta'zim",
-    "opening_hours": "11 am–11 pm",
+    "opening_hours": "Monday: 11am - 11pm\nTuesday: 11am - 11pm\nWednesday: 11am - 11pm\nThursday: 11am - 11pm\nFriday: 11am - 11pm\nSaturday: 11am - 11pm\nSunday: 11am - 11pm",
     "category": [
       "火锅烧烤"
     ],
     "categories": [
-      "火锅烧烤"
+      "火锅烧烤",
+      "健康餐"
     ],
     "rating": 0,
-    "image": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI2MDAiIGhlaWdodD0iNDAwIiB2aWV3Qm94PSIwIDAgNjAwIDQwMCI+PHJlY3QgZmlsbD0iIzFlMWUxZSIgd2lkdGg9IjYwMCIgaGVpZ2h0PSI0MDAiLz48dGV4dCBmaWxsPSIjZmZmZmZmIiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIzMCIgZHk9IjEwLjUiIGZvbnQtd2VpZ2h0PSJib2xkIiB4PSI1MCUiIHk9IjUwJSIgdGV4dC1hbmNob3I9Im1pZGRsZSI+S3VsYWkgRm9vZDwvdGV4dD48L3N2Zz4=",
+    "image": "https://scontent.fmkz1-1.fna.fbcdn.net/v/t39.30808-6/457450078_818352520413807_2850482837353781938_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=6ee11a&_nc_ohc=jb3v6WcistIQ7kNvwFLsCg3&_nc_oc=AdkmtPOdzRAx-jTzlkWh5NF5G2Wctpt0rjaa29_tjpuIiT5eoNkLn7ZDYD2Iq9q6KIk&_nc_zt=23&_nc_ht=scontent.fmkz1-1.fna&_nc_gid=uZPOGMfqCGVLZQjK_dkX0w&oh=00_Afrz6FZzVIXaXngjrIuTdVJVsPtwMBeB1hr7RZ2yj3KzuA&oe=697C1304",
     "subStalls": [],
     "price_range": "RM 10-20",
     "menu_link": "",
