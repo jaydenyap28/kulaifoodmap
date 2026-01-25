@@ -2173,15 +2173,8 @@ export const initialRestaurants = [
     "manualStatus": "auto",
     "branches": []
   },
-    "website_link": "",
-    "delivery_link": "",
-    "isVegetarian": false,
-    "isNoBeef": false,
-    "manualStatus": "auto",
-    "branches": []
-  },
   {
-    "id": 71,
+    "id": 711,
     "area": "Indahpura",
     "name": "大众茶餐室",
     "name_en": "Popular Tea Room",
