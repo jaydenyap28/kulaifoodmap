@@ -884,7 +884,7 @@ export const initialRestaurants = [
       "西餐"
     ],
     "rating": 0,
-    "image": "https://upload.wikimedia.org/wikipedia/en/thumb/b/bf/KFC_logo.svg/1200px-KFC_logo.svg.png",
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQCHD9uVr8KYu4po51Mz7YEvZGIIEkCMUSeUg&s",
     "subStalls": [],
     "categories": [
       "西餐"
@@ -1164,9 +1164,9 @@ export const initialRestaurants = [
   {
     "id": 43,
     "name": "Street Crew",
-    "name_en": "Street Crew",
+    "name_en": "",
     "address": "5831 & 5832, Jalan Siantan 3, Bandar Indahpura, 81000 Kulai, Johor Darul Ta'zim",
-    "opening_hours": "3pm – 11pm (Wed Closed)",
+    "opening_hours": "Monday: 10am - 10pm\nTuesday: 10am - 10pm\nWednesday: Closed\nThursday: 10am - 10pm\nFriday: 10am - 10pm\nSaturday: 10am - 10pm\nSunday: 10am - 10pm",
     "intro_zh": "位于 Indahpura 的西餐厅，以其丰富的大份量西餐闻名。推荐尝试他们的扒类拼盘，环境适合朋友聚会。",
     "intro_en": "A popular Western restaurant in Indahpura known for its generous portions. Famous for their mixed grill platters and lively atmosphere, perfect for gathering with friends.",
     "category": [
@@ -1541,10 +1541,10 @@ export const initialRestaurants = [
   {
     "id": 57,
     "area": "Indahpura",
-    "name": "Chiyo Sushi",
+    "name": "千代寿司",
     "name_en": "Chiyo Sushi",
     "address": "184A, Indahpura, 81000 Kulai, Johor",
-    "opening_hours": "11:30am – 10pm",
+    "opening_hours": "Monday: 11:30am - 10pm\nTuesday: 11:30am - 10pm\nWednesday: 11:30am - 10pm\nThursday: 11:30am - 10pm\nFriday: 11:30am - 10pm\nSaturday: 11:30am - 10pm\nSunday: 11:30am - 10pm",
     "intro_zh": "Indahpura 人气的日本餐厅，提供新鲜寿司和多样化的日式料理。以优质食材和温馨的用餐氛围著称。",
     "intro_en": "A popular Japanese restaurant in Indahpura offering fresh sushi and a wide variety of Japanese dishes. Known for its quality ingredients and cozy atmosphere.",
     "category": [
@@ -1663,7 +1663,7 @@ export const initialRestaurants = [
       "饮品"
     ],
     "rating": 0,
-    "image": "https://images.deliveryhero.io/image/fd-my/LH/nrh9-listing.jpg",
+    "image": "https://i.ibb.co/ksWC2zc8/four-beans.jpg",
     "subStalls": [],
     "price_range": "RM 10-20",
     "menu_link": "",
@@ -1672,7 +1672,8 @@ export const initialRestaurants = [
     "isVegetarian": false,
     "isNoBeef": false,
     "manualStatus": "auto",
-    "branches": []
+    "branches": [],
+    "name_en": "Four Beans"
   },
   {
     "id": 62,
@@ -1757,10 +1758,10 @@ export const initialRestaurants = [
   },
   {
     "id": 65,
-    "name": "Vivo Pizza AEON Mall Kulaijaya",
-    "name_en": "Vivo Pizza",
+    "name": "Vivo Pizza ",
+    "name_en": "",
     "address": "Lot G-70, AEON Mall Kulaijaya",
-    "opening_hours": "10am-10pm",
+    "opening_hours": "Monday: 10am - 10pm\nTuesday: 10am - 10pm\nWednesday: 10am - 10pm\nThursday: 10am - 10pm\nFriday: 10am - 10pm\nSaturday: 10am - 10pm\nSunday: 10am - 10pm",
     "intro_zh": "结合了西式快餐与休闲餐饮的披萨专卖店。主打美式披萨、意大利面、焗饭以及大份量的鸡扒。其披萨饼皮厚实，馅料丰富，是聚餐的好去处。",
     "intro_en": "A casual dining pizza specialist combining Western fast food elements. Famous for American-style pizzas, pasta, baked rice, and generous chicken chops. Their pizzas feature thick crusts and abundant toppings, making it a great spot for gatherings.",
     "category": [
@@ -1770,7 +1771,7 @@ export const initialRestaurants = [
       "西餐"
     ],
     "rating": 0,
-    "image": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI2MDAiIGhlaWdodD0iNDAwIiB2aWV3Qm94PSIwIDAgNjAwIDQwMCI+PHJlY3QgZmlsbD0iIzFlMWUxZSIgd2lkdGg9IjYwMCIgaGVpZ2h0PSI0MDAiLz48dGV4dCBmaWxsPSIjZmZmZmZmIiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIzMCIgZHk9IjEwLjUiIGZvbnQtd2VpZ2h0PSJib2xkIiB4PSI1MCUiIHk9IjUwJSIgdGV4dC1hbmNob3I9Im1pZGRsZSI+S3VsYWkgRm9vZDwvdGV4dD48L3N2Zz4=",
+    "image": "https://i.ibb.co/zhY8g3Cf/Vivo-Pizza.jpg",
     "subStalls": [],
     "price_range": "RM 10-20",
     "menu_link": "",
@@ -1784,10 +1785,10 @@ export const initialRestaurants = [
   {
     "id": 66,
     "area": "Indahpura",
-    "name": "XIAO XIN HOT RESTAURANT 小心烫·小火锅",
+    "name": "小心烫·小火锅",
     "name_en": "Xiao Xin Hot Restaurant",
     "address": "583, Jalan Kenanga 29/19, Taman Indahpura, 81000 Kulai, Johor Darul Ta'zim",
-    "opening_hours": "12pm-10pm",
+    "opening_hours": "Monday: 12pm - 10pm\nTuesday: 12pm - 10pm\nWednesday: 12pm - 10pm\nThursday: 12pm - 10pm\nFriday: 12pm - 10pm\nSaturday: 12pm - 10pm\nSunday: 12pm - 10pm",
     "intro_zh": "主打个人小火锅，提供多种汤底选择如番茄、麻辣、药材等。食材新鲜，一人一锅的形式干净卫生，适合想吃火锅又不想太隆重的食客。",
     "intro_en": "Specializes in individual mini hotpots, offering various soup bases like tomato, mala, and herbal. Fresh ingredients and a hygienic individual pot concept, perfect for diners craving hotpot in a casual setting.",
     "category": [
@@ -1811,10 +1812,10 @@ export const initialRestaurants = [
   {
     "id": 67,
     "area": "Indahpura",
-    "name": "大众美食中心 RESTORAN WEE HUAT (KULAI)",
+    "name": "大众美食中心",
     "name_en": "Restoran Wee Huat",
     "address": "587, Jalan Kenanga 29/19, Bandar Indahpura, 81000 Kulai, Johor Darul Ta'zim",
-    "opening_hours": "6am-4pm",
+    "opening_hours": "Monday: 6am - 4pm\nTuesday: 6am - 4pm\nWednesday: 6am - 4pm\nThursday: 6am - 4pm\nFriday: 6am - 4pm\nSaturday: 6am - 4pm\nSunday: 6am - 4pm",
     "intro_zh": "Indahpura 著名的美食中心，汇集了多个档口。早市有著名的猪肠粉、云吞面、鸡饭等。环境宽敞，是当地居民早餐和午餐的热门选择。",
     "intro_en": "A popular food court in Indahpura hosting various stalls. The morning market features famous Chee Cheong Fun, Wanton Mee, and Chicken Rice. Spacious environment and a hot spot for locals' breakfast and lunch.",
     "category": [
@@ -1839,9 +1840,9 @@ export const initialRestaurants = [
     "id": 68,
     "area": "Indahpura",
     "name": "Ma Chin All Steamboat Restaurant",
-    "name_en": "Ma Chin All Steamboat Restaurant",
+    "name_en": "",
     "address": "590, Jalan Kenanga 29/19, Bandar Indahpura, 81000 Kulai, Johor Darul Ta'zim",
-    "opening_hours": "11 am–12 am",
+    "opening_hours": "Monday: 11am - 12am\nTuesday: 11am - 12am\nWednesday: 11am - 12am\nThursday: 11am - 12am\nFriday: 11am - 12am\nSaturday: 11am - 12am\nSunday: 11am - 12am",
     "intro_zh": "古来马丞锅，以海鲜粥底火锅闻名。汤头鲜甜，海鲜食材如虾、鱼片、啦啦都很新鲜。除了火锅，也提供多种煮炒和小吃。环境有特色，适合家庭聚餐。",
     "intro_en": "Known as Ma Chin All, famous for its seafood porridge steamboat. The broth is sweet and savory, with fresh seafood like prawns, fish slices, and clams. Besides hotpot, they also offer various stir-fry dishes and snacks. A distinctive environment suitable for family dinners.",
     "category": [
@@ -1865,10 +1866,10 @@ export const initialRestaurants = [
   {
     "id": 69,
     "area": "Indahpura",
-    "name": "Kulai QIAO DI KOPITIAM 桥底茶室",
+    "name": "桥底茶室",
     "name_en": "Qiao Di Kopitiam",
     "address": "593, Jalan Kenanga 29/19, Bandar Indahpura, 81000 Kulai, Johor Darul Ta'zim",
-    "opening_hours": "7 am–4:30 pm",
+    "opening_hours": "Monday: 7am - 4:30pm\nTuesday: 7am - 4:30pm\nWednesday: 7am - 4:30pm\nThursday: 7am - 4:30pm\nFriday: 7am - 4:30pm\nSaturday: 7am - 4:30pm\nSunday: 7am - 4:30pm",
     "intro_zh": "这里的招牌是霹雳怡保风味的云吞面。面条弹牙，配上独特的黑酱油和叉烧。除了云吞面，还有多款传统咖啡店饮料和小吃。",
     "intro_en": "Famous for its Perak Ipoh-style Wanton Mee. The noodles are springy, served with unique dark soy sauce and char siew. Besides Wanton Mee, they offer a variety of traditional kopitiam drinks and snacks.",
     "category": [
@@ -1942,7 +1943,6 @@ export const initialRestaurants = [
     "manualStatus": "auto",
     "branches": []
   },
-
   {
     "id": 72,
     "area": "Indahpura",
@@ -2084,9 +2084,9 @@ export const initialRestaurants = [
     "id": 77,
     "area": "Indahpura",
     "name": "南洋老街粿条仔",
-    "name_en": "Nanyang Old Street @ Kulai",
+    "name_en": "Nanyang Old Street",
     "address": "154, Jalan Kiambang 13, Bandar Indahpura, 81000 Kulai, Johor Darul Ta'zim",
-    "opening_hours": "8am-10pm",
+    "opening_hours": "Monday: 8am - 10pm\nTuesday: 8am - 10pm\nWednesday: 8am - 10pm\nThursday: 8am - 10pm\nFriday: 8am - 10pm\nSaturday: 8am - 10pm\nSunday: 8am - 10pm",
     "intro_zh": "专卖传统粿条仔。配有卤肉、粉肠、卤蛋等多种卤味小菜。药材汤底香气扑鼻，味道浓郁。",
     "intro_en": "Specializes in traditional Kway Teow Kia. Served with a variety of braised side dishes like braised pork, intestine, and egg. The herbal soup is aromatic and flavorful.",
     "category": [
@@ -2111,9 +2111,9 @@ export const initialRestaurants = [
     "id": 78,
     "area": "Indahpura",
     "name": "Uncle Five Coffee",
-    "name_en": "Uncle Five Coffee",
+    "name_en": "",
     "address": "160 Jalan Kiambang  Kulai Bandar Indahpura 81000 JOHOR",
-    "opening_hours": "7am-6pm",
+    "opening_hours": "Monday: 7am - 6pm\nTuesday: 7am - 6pm\nWednesday: 7am - 6pm\nThursday: 7am - 6pm\nFriday: 7am - 6pm\nSaturday: 7am - 6pm\nSunday: 7am - 6pm",
     "intro_zh": "环境舒适的咖啡厅，提供各类西式早餐、意大利面和精品咖啡。招牌包括大早餐和特色拿铁，是享受悠闲早午餐的好去处。",
     "intro_en": "A cozy cafe offering Western-style breakfasts, pasta, and specialty coffee. Signatures include their Big Breakfast and specialty lattes, making it a great spot for a relaxing brunch.",
     "category": [
@@ -2191,10 +2191,10 @@ export const initialRestaurants = [
   {
     "id": 81,
     "area": "Indahpura",
-    "name": "Mystery Dessertland Cafe 甜秘•糖",
+    "name": "甜秘•糖",
     "name_en": "Mystery Dessertland Cafe",
     "address": "No 148, Pusat Komersial Indah, Jalan Kiambang 13, Indahpura, 81000 Kulai, Johor",
-    "opening_hours": "11:30 am–9:30 pm",
+    "opening_hours": "Monday: 11:30am - 9:30pm\nTuesday: 11:30am - 9:30pm\nWednesday: 11:30am - 9:30pm\nThursday: 11:30am - 9:30pm\nFriday: 11:30am - 9:30pm\nSaturday: 11:30am - 9:30pm\nSunday: 11:30am - 9:30pm",
     "intro_zh": "梦幻甜点屋，主打各式精致蛋糕和特色甜品。环境布置温馨可爱，非常适合拍照打卡和享受甜蜜时光。",
     "intro_en": "A dreamy dessert house specializing in exquisite cakes and specialty desserts. The cozy and cute decor makes it perfect for photos and enjoying sweet treats.",
     "category": [
@@ -2273,13 +2273,15 @@ export const initialRestaurants = [
     "id": 84,
     "area": "Indahpura",
     "name": "Hermeal healthy food",
-    "name_en": "Hermeal Healthy Food",
+    "name_en": "",
     "address": "Pusat Kormersial Indah 142, 13, Jalan Kiambang, Bandar Indahpura, 81000 Kulai, Johor Darul Ta'zim",
-    "opening_hours": "11.30am-8pm Thursday Closed",
+    "opening_hours": "Monday: 10am - 10pm\nTuesday: 10am - 10pm\nWednesday: 10am - 10pm\nThursday: Closed\nFriday: 10am - 10pm\nSaturday: 10am - 10pm\nSunday: 10am - 10pm",
     "intro_zh": "主打健康饮食，提供低卡路里、营养均衡的便当。适合健身人士或追求健康饮食的顾客，菜品清淡但不失美味。",
     "intro_en": "Focused on healthy dining, offering low-calorie, nutritionally balanced bento boxes. Perfect for fitness enthusiasts or health-conscious diners, serving light yet tasty meals.",
     "category": [],
-    "categories": [],
+    "categories": [
+      "健康餐"
+    ],
     "rating": 0,
     "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTlIkQX8NMmeXwbe_FjZuUnusspy5fIbzSckg&s",
     "subStalls": [],
@@ -2295,16 +2297,17 @@ export const initialRestaurants = [
   {
     "id": 85,
     "name": "Chicken Delights",
-    "name_en": "Chicken Delights",
+    "name_en": "",
     "address": "170 & 171, 13, Jalan Kiambang, Pusat Komercial Indah, 81000 Kulai, Johor Darul Ta'zim",
-    "opening_hours": "10 am–9:30 pm",
+    "opening_hours": "Monday: 10am - 9:30pm\nTuesday: 10am - 9:30pm\nWednesday: 10am - 9:30pm\nThursday: 10am - 9:30pm\nFriday: 10am - 9:30pm\nSaturday: 10am - 9:30pm\nSunday: 10am - 9:30pm",
     "intro_zh": "主打各式西式鸡肉料理，包括炸鸡、鸡扒和意大利面。份量足，价格亲民，适合家庭聚餐。",
     "intro_en": "Specializes in Western chicken dishes, including fried chicken, chicken chops, and pasta. Generous portions and affordable prices make it great for family dining.",
     "category": [
       "西餐"
     ],
     "categories": [
-      "西餐"
+      "西餐",
+      "Cafe"
     ],
     "rating": 0,
     "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSz6k991hUfT9h3-l9WjvuXQQSRMrJjlTT2Eg&s",
@@ -2316,15 +2319,16 @@ export const initialRestaurants = [
     "isVegetarian": false,
     "isNoBeef": false,
     "manualStatus": "auto",
-    "branches": []
+    "branches": [],
+    "area": "Indahpura"
   },
   {
     "id": 86,
     "area": "Indahpura",
-    "name": "Kopiloco Kulai",
-    "name_en": "Kopiloco Kulai",
+    "name": "Kopiloco",
+    "name_en": "",
     "address": "MY Johor Kulai Bandar Indahpura Jalan Kiambang139 &140邮政编码:邮政编码: 81000",
-    "opening_hours": "7:30 am–5:30 pm",
+    "opening_hours": "Monday: 7:30am - 5:30pm\nTuesday: 7:30am - 5:30pm\nWednesday: 7:30am - 5:30pm\nThursday: 7:30am - 5:30pm\nFriday: 7:30am - 5:30pm\nSaturday: 7:30am - 5:30pm\nSunday: 7:30am - 5:30pm",
     "intro_zh": "古来热门的复古风格咖啡馆，环境舒适。提供各式本地风味早餐和西式餐点，是聚会聊天的理想场所。",
     "intro_en": "A popular retro-style cafe in Kulai with a cozy atmosphere. Offers a variety of local breakfast favorites and Western dishes, ideal for gatherings.",
     "category": [
@@ -2375,10 +2379,10 @@ export const initialRestaurants = [
   {
     "id": 88,
     "area": "Indahpura",
-    "name": "Kuching Style Restaurant",
+    "name": "猫城茶餐厅",
     "name_en": "Kuching Style Restaurant",
     "address": "138, Jalan kiambang, 13, Pusat Komersial Indah, Bandar Indahpura, 81000 Kulai, Johor Darul Ta'zim",
-    "opening_hours": "8 am–7 pm",
+    "opening_hours": "Monday: 8am - 7pm\nTuesday: 8am - 7pm\nWednesday: 8am - 7pm\nThursday: 8am - 7pm\nFriday: 8am - 7pm\nSaturday: 8am - 7pm\nSunday: 8am - 7pm",
     "intro_zh": "提供正宗砂拉越古晋美食，如哥罗面（Kolo Mee）和砂拉越叻沙。味道道地，让人在柔佛也能吃到东马风味。",
     "intro_en": "Offers authentic Sarawak Kuching cuisine, such as Kolo Mee and Sarawak Laksa. Authentic flavors that bring the taste of East Malaysia to Johor.",
     "category": [
@@ -2388,7 +2392,7 @@ export const initialRestaurants = [
       "咖啡店"
     ],
     "rating": 0,
-    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRAJ8lGpjy81Lpi65NLDaXtzizsX0CLq0Zc0A&s",
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRNZRNCjciIKncODXygtUCAATIh26XV-rVg8A&s",
     "subStalls": [],
     "price_range": "RM 10-20",
     "menu_link": "",
@@ -2403,15 +2407,16 @@ export const initialRestaurants = [
     "id": 89,
     "area": "Indahpura",
     "name": "LA PRIMEUR",
-    "name_en": "La Primeur",
+    "name_en": "",
     "address": "PUSAT KOMERSIAL INDAH, 135, 13, Jalan Kiambang, Bandar Indahpura, 81000 Kulai, Johor Darul Ta'zim",
-    "opening_hours": "3 pm–1 am",
+    "opening_hours": "Monday: 3pm - 1am\nTuesday: 3pm - 1am\nWednesday: 3pm - 1am\nThursday: 3pm - 1am\nFriday: 3pm - 1am\nSaturday: 3pm - 1am\nSunday: 3pm - 1am",
     "intro_zh": "环境优雅的西餐厅酒吧，提供高品质的扒类、意大利面和美酒。适合约会、庆祝纪念日或与朋友小酌。",
     "intro_en": "Elegant Western restaurant and bar offering high-quality steaks, pasta, and fine wines. Perfect for dates, celebrations, or drinks with friends.",
     "category": [
       "西餐"
     ],
     "categories": [
+      "酒吧",
       "西餐"
     ],
     "rating": 0,
@@ -2430,9 +2435,9 @@ export const initialRestaurants = [
     "id": 90,
     "area": "Indahpura",
     "name": "The Bierhaus",
-    "name_en": "The Bierhaus",
+    "name_en": "",
     "address": "134, Jln Kiambang 14, Bandar Indahpura, 81000 Kulai, Johor Darul Ta'zim",
-    "opening_hours": "3 pm–12:30 am",
+    "opening_hours": "Monday: 3pm - 12:30am\nTuesday: 3pm - 12:30am\nWednesday: 3pm - 12:30am\nThursday: 3pm - 12:30am\nFriday: 3pm - 12:30am\nSaturday: 3pm - 12:30am\nSunday: 3pm - 12:30am",
     "intro_zh": "德国风味餐厅酒吧，提供各式德国啤酒、猪手、香肠拼盘及西式餐点。环境宽敞舒适，是聚会畅饮的好地方。",
     "intro_en": "German-style restaurant and bar offering a variety of German beers, pork knuckles, sausage platters, and Western dishes. Spacious and comfortable, perfect for gatherings and drinks.",
     "category": [
@@ -2456,17 +2461,17 @@ export const initialRestaurants = [
   {
     "id": 91,
     "area": "Indahpura",
-    "name": "Q HOUSE",
-    "name_en": "Q House",
+    "name": "港湾茶餐厅",
+    "name_en": "Restoran Q HOUSE",
     "address": "Pusat Komersial Indah, 132 & 133, Jln Kiambang 14, Indahpura, 81000 Kulai, Johor",
-    "opening_hours": "11 am–11 pm",
+    "opening_hours": "Monday: 11am - 11pm\nTuesday: 11am - 11pm\nWednesday: 11am - 11pm\nThursday: 11am - 11pm\nFriday: 11am - 11pm\nSaturday: 11am - 11pm\nSunday: 11am - 11pm",
     "intro_zh": "适合一家大小的家庭式餐厅，提供多样化的港式与台式料理，环境温馨，价格亲民。",
     "intro_en": "Family-friendly restaurant offering a variety of Hong Kong and Taiwanese style cuisine. Cozy atmosphere with affordable prices.",
     "category": [
       "西餐"
     ],
     "categories": [
-      "西餐"
+      "Cafe"
     ],
     "rating": 0,
     "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRXCZ93L3zY5-tW-vzmwZHQPdyd1qxcbdsetA&s",
@@ -2484,16 +2489,16 @@ export const initialRestaurants = [
     "id": 92,
     "area": "Indahpura",
     "name": "MeatVking Bistro",
-    "name_en": "MeatVking Bistro",
+    "name_en": "",
     "address": "Pusat Komersial Indah, 127, Jln Kiambang 14, Bandar Indahpura, 81000 Kulai, Johor Darul Ta'zim",
-    "opening_hours": "12–10 pm Wed Closed",
+    "opening_hours": "Monday: 10am - 10pm\nTuesday: 10am - 10pm\nWednesday: Closed\nThursday: 10am - 10pm\nFriday: 10am - 10pm\nSaturday: 10am - 10pm\nSunday: 10am - 10pm",
     "intro_zh": "主打各类扒类和西式料理的餐厅，食物份量足，价格合理。推荐他们的鸡扒和意大利面。",
     "intro_en": "Bistro specializing in various steaks and Western cuisine. Generous portions at reasonable prices. Chicken chop and pasta are recommended.",
     "category": [
       "西餐"
     ],
     "categories": [
-      "西餐"
+      "酒吧"
     ],
     "rating": 0,
     "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRoeRskVtQ_nDXKKaC2D9PDVgyiaJ5Z6G4nmA&s",
@@ -2594,14 +2599,14 @@ export const initialRestaurants = [
     "name": "八号吐司",
     "name_en": "Eight Toast Nanyang Kopitiam",
     "address": "196, Jalan Kiambang 12, Bandar Indahpura, 81000 Kulai, Johor Darul Ta'zim",
-    "opening_hours": "7am-5.30pm",
+    "opening_hours": "Monday: 7am - 5am\nTuesday: 7am - 5am\nWednesday: 7am - 5am\nThursday: 7am - 5am\nFriday: 7am - 5am\nSaturday: 7am - 5am\nSunday: 7am - 5am",
     "intro_zh": "南洋风味咖啡店，提供传统烤面包、半生熟蛋和香浓咖啡。早餐和午餐的经典选择。",
     "intro_en": "Nanyang-style kopitiam serving traditional toast, soft-boiled eggs, and aromatic coffee. A classic choice for breakfast and lunch.",
     "category": [
       "咖啡店"
     ],
     "categories": [
-      "咖啡店"
+      "Cafe"
     ],
     "rating": 0,
     "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTz5zOFvutjGUCQ9SF1bAnyilP1RkG4w8qNTw&s",
