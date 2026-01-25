@@ -361,6 +361,21 @@ const RestaurantCard = ({ restaurant, isAdmin, onUpdate, onDelete, onClick, onCa
                         )}
                     </div>
                 )}
+
+                {/* Branches Preview */}
+                {restaurant.branches && Array.isArray(restaurant.branches) && restaurant.branches.length > 0 && (
+                    <div className="flex flex-col gap-1 mt-1">
+                        {restaurant.branches.slice(0, 2).map((branch, idx) => (
+                            <div key={idx} className="flex items-start gap-1 text-[10px] text-gray-400">
+                                <MapPin size={10} className="mt-0.5 shrink-0" />
+                                <span className="line-clamp-1">{branch.name}</span>
+                            </div>
+                        ))}
+                         {restaurant.branches.length > 2 && (
+                            <span className="text-[10px] text-gray-500 ml-3.5">+{restaurant.branches.length - 2} more branches</span>
+                        )}
+                    </div>
+                )}
                 
                 {/* Address */}
                 <div className="flex items-start text-xs text-gray-400">

@@ -60,6 +60,7 @@ const ResultModal = ({ restaurant, onClose, onAddReview, isAdmin, onUpdateRestau
         isNoBeef: restaurant.isNoBeef || false,
         manualStatus: restaurant.manualStatus || 'auto',
         subStalls: restaurant.subStalls || [],
+        branches: restaurant.branches || [],
         rating: restaurant.rating !== undefined ? restaurant.rating : 0,
         area: restaurant.area || ''
     });
@@ -584,6 +585,60 @@ const ResultModal = ({ restaurant, onClose, onAddReview, isAdmin, onUpdateRestau
                         className="w-full py-2 border border-dashed border-gray-600 text-gray-400 text-xs rounded hover:border-white hover:text-white transition"
                     >
                         + 添加档口 (Add Stall)
+                    </button>
+                  </div>
+
+                  {/* Branches Editor */}
+                  <div>
+                    <label className="text-xs text-gray-400">分店 (Branches)</label>
+                    <div className="space-y-3 mb-3">
+                        {editForm.branches && editForm.branches.map((branch, idx) => (
+                            <div key={idx} className="bg-[#333] p-2 rounded border border-gray-600 flex gap-2 items-start">
+                                <div className="flex-1 space-y-1">
+                                    <input 
+                                        value={branch.name}
+                                        onChange={(e) => {
+                                            const newBranches = [...(editForm.branches || [])];
+                                            newBranches[idx] = { ...newBranches[idx], name: e.target.value };
+                                            setEditForm({...editForm, branches: newBranches});
+                                        }}
+                                        className="w-full bg-[#1a1a1a] border-b border-gray-600 py-1 text-xs text-white focus:border-white outline-none"
+                                        placeholder="分店名称 (Branch Name)"
+                                    />
+                                    <input 
+                                        value={branch.address}
+                                        onChange={(e) => {
+                                            const newBranches = [...(editForm.branches || [])];
+                                            newBranches[idx] = { ...newBranches[idx], address: e.target.value };
+                                            setEditForm({...editForm, branches: newBranches});
+                                        }}
+                                        className="w-full bg-[#1a1a1a] border-b border-gray-600 py-1 text-xs text-white focus:border-white outline-none"
+                                        placeholder="分店地址 (Branch Address)"
+                                    />
+                                </div>
+                                <button 
+                                    onClick={() => {
+                                        const newBranches = [...(editForm.branches || [])];
+                                        newBranches.splice(idx, 1);
+                                        setEditForm({...editForm, branches: newBranches});
+                                    }}
+                                    className="text-gray-500 hover:text-red-400 p-1"
+                                >
+                                    <X size={14} />
+                                </button>
+                            </div>
+                        ))}
+                    </div>
+                    <button
+                        onClick={() => {
+                            setEditForm(prev => ({
+                                ...prev,
+                                branches: [...(prev.branches || []), { name: '新分店', address: '' }]
+                            }));
+                        }}
+                        className="w-full py-2 border border-dashed border-gray-600 text-gray-400 text-xs rounded hover:border-white hover:text-white transition"
+                    >
+                        + 添加分店 (Add Branch)
                     </button>
                   </div>
 

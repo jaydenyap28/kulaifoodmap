@@ -271,32 +271,6 @@ export const initialRestaurants = [
     "branches": []
   },
   {
-    "id": 11,
-    "name": "日记云吞面",
-    "name_en": "Daily Wanton Mee",
-    "address": "Taman Sri Kulai Baru 2, 81000 Kulai, Johor",
-    "opening_hours": "Monday: 5:30pm - 10:30pm\nTuesday: 5:30pm - 10:30pm\nWednesday: 5:30pm - 10:30pm\nThursday: 5:30pm - 10:30pm\nFriday: 5:30pm - 10:30pm\nSaturday: Closed\nSunday: 5:30pm - 10:30pm",
-    "intro_zh": "古来著名的云吞面档口之一。面条烫得刚刚好，口感筋道，搭配叉烧和云吞，是许多当地人晚餐和宵夜的常驻地。",
-    "intro_en": "One of the famous Wanton Mee spots in Kulai. The noodles are blanched to perfection with a springy texture, served with char siew and wantons. A regular dinner and supper spot for many locals.",
-    "category": [
-      "粉类"
-    ],
-    "rating": 0,
-    "image": "https://cdn.prod.website-files.com/64c4be5d67694090d91bc447/64d1164dc5c3ff4ded7218a7_batch_DSC05226.jpeg",
-    "subStalls": [],
-    "categories": [
-      "粉类"
-    ],
-    "price_range": "RM 10-20",
-    "menu_link": "",
-    "website_link": "",
-    "delivery_link": "",
-    "isVegetarian": false,
-    "isNoBeef": false,
-    "manualStatus": "auto",
-    "branches": []
-  },
-  {
     "id": 12,
     "name": "永泉兴咖啡店",
     "name_en": "Yong Juan Hin",
