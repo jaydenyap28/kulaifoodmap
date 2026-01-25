@@ -19,11 +19,24 @@ import { AVAILABLE_AREAS, DEFAULT_CATEGORIES } from './data/constants';
 
 const DEFAULT_HERO_BG = "https://i.ibb.co/7J5qjZtv/image.png";
 
-// Version Control for Data (Increment this when adding new hardcoded data to force refresh)
-const DATA_VERSION = 'v26';
+// Version control for data structure changes
+// Increment this when you make breaking changes to data structure to force a reset
+const DATA_VERSION = 'v27';
 
 function App() {
   const { t, i18n } = useTranslation();
+
+  useEffect(() => {
+    // Check version and clear if needed
+    const currentVersion = localStorage.getItem('kulaifood-data-version');
+    if (currentVersion !== DATA_VERSION) {
+      console.log(`Version mismatch: ${currentVersion} vs ${DATA_VERSION}. Clearing storage.`);
+      localStorage.clear();
+      localStorage.setItem('kulaifood-data-version', DATA_VERSION);
+      // Reload to ensure clean state
+      window.location.reload();
+    }
+  }, []);
   const [lastSaved, setLastSaved] = useState(null);
   
   // Area Overrides State (for manual fixes)
@@ -221,7 +234,12 @@ function App() {
                     area = overrides[stored.id];
                 }
 
-                mergedData.push({ ...stored, ...codeData, area });
+                // Preserve user branches if code branches are empty
+                const mergedItem = { ...stored, ...codeData, area };
+                if ((!codeData.branches || codeData.branches.length === 0) && stored.branches && stored.branches.length > 0) {
+                    mergedItem.branches = stored.branches;
+                }
+                mergedData.push(mergedItem);
                 processedIds.add(stored.id);
             } else {
                 // ID not in code: User-added item (Admin), keep it
