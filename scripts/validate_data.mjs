@@ -24,10 +24,10 @@ if (duplicates.length > 0) {
 const lastId = initialRestaurants[initialRestaurants.length - 1].id;
 console.log(`Last ID: ${lastId}`);
 
-if (lastId !== 173) {
-    console.error(`Expected last ID to be 173, but got ${lastId}`);
+if (lastId !== 307) {
+    console.error(`Expected last ID to be 307, but got ${lastId}`);
 } else {
-    console.log('Last ID matches expected (173).');
+    console.log('Last ID matches expected (307).');
 }
 
 // Check specifically for "Thai Lala"

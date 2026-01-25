@@ -61,6 +61,11 @@ const RestaurantList = ({ restaurants, allRestaurants, isAdmin, onUpdateRestaura
     );
   });
 
+  // Enforce ID sorting for non-admins to ensure consistent display order
+  if (!isAdmin) {
+    filteredRestaurants.sort((a, b) => a.id - b.id);
+  }
+
   const sensors = useSensors(
     useSensor(PointerSensor, {
       activationConstraint: {

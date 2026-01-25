@@ -20,7 +20,7 @@ import { AVAILABLE_AREAS, DEFAULT_CATEGORIES } from './data/constants';
 const DEFAULT_HERO_BG = "https://i.ibb.co/7J5qjZtv/image.png";
 
 // Version Control for Data (Increment this when adding new hardcoded data to force refresh)
-const DATA_VERSION = '2025-01-25-v22';
+const DATA_VERSION = '2025-01-25-v23';
 
 function App() {
   const { t, i18n } = useTranslation();
@@ -409,39 +409,62 @@ function App() {
 
   const handleExportChanges = () => {
     // 1. Identify Changed or New Restaurants
-    const changes = restaurants.filter(current => {
+    const changes = restaurants.reduce((acc, current) => {
         const original = initialRestaurants.find(init => init.id === current.id);
         
         // Case A: New Restaurant (Not in initial data)
-        if (!original) return true;
+        if (!original) {
+            acc.push(current);
+            return acc;
+        }
 
         // Case B: Modified Restaurant
-        // We compare key editable fields. 
-        // Note: 'categories' needs careful array comparison.
+        const diff = { id: current.id };
+        let hasChanges = false;
+        
         const keysToCheck = [
             'name', 'name_en', 'address', 'opening_hours', 
             'price_range', 'image', 'rating', 'area',
             'menu_link', 'website_link', 'delivery_link',
-            'isVegetarian', 'isNoBeef', 'manualStatus'
+            'isVegetarian', 'isNoBeef', 'manualStatus',
+            'intro_zh', 'intro_en', 'categories', 'subStalls'
         ];
 
-        return keysToCheck.some(key => {
+        keysToCheck.forEach(key => {
             const valCurrent = current[key];
             const valOriginal = original[key];
 
-            // Handle Arrays (Categories, SubStalls - though subStalls is complex, we skip for now or JSON stringify)
+            // Handle Arrays (Categories, SubStalls)
             if (Array.isArray(valCurrent) || Array.isArray(valOriginal)) {
-                return JSON.stringify(valCurrent) !== JSON.stringify(valOriginal);
+                // Use JSON stringify for simple array comparison
+                // Treat undefined/null as empty array for comparison if needed, 
+                // but usually data consistency implies they are arrays.
+                const arrCurrent = Array.isArray(valCurrent) ? valCurrent : [];
+                const arrOriginal = Array.isArray(valOriginal) ? valOriginal : [];
+                
+                if (JSON.stringify(arrCurrent) !== JSON.stringify(arrOriginal)) {
+                    diff[key] = valCurrent;
+                    hasChanges = true;
+                }
+                return;
             }
 
             // Handle normal values (strings, numbers, booleans)
-            // specific normalization for undefined/null/empty string
             const normCurrent = valCurrent === undefined || valCurrent === null ? '' : valCurrent;
             const normOriginal = valOriginal === undefined || valOriginal === null ? '' : valOriginal;
             
-            return normCurrent != normOriginal;
+            if (normCurrent != normOriginal) {
+                diff[key] = valCurrent;
+                hasChanges = true;
+            }
         });
-    });
+
+        if (hasChanges) {
+            acc.push(diff);
+        }
+        
+        return acc;
+    }, []);
 
     if (changes.length === 0) {
         alert(t('no_changes_to_export') || "没有检测到更改 (No changes detected)");
@@ -453,7 +476,7 @@ function App() {
     
     // 3. Copy
     navigator.clipboard.writeText(json).then(() => {
-        const msg = `已复制 ${changes.length} 个商家的修改数据！\n\n请直接粘贴发送给我 (Trae)。\nCopied ${changes.length} modified items. Paste them to the chat.`;
+        const msg = `已复制 ${changes.length} 个商家的修改数据！(仅包含变动部分)\nCopied ${changes.length} modified items (Diff Only).`;
         alert(msg);
     }).catch(err => {
         console.error('Failed to copy: ', err);
