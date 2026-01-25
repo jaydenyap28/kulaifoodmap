@@ -62,7 +62,9 @@ const ResultModal = ({ restaurant, onClose, onAddReview, isAdmin, onUpdateRestau
         subStalls: restaurant.subStalls || [],
         branches: restaurant.branches || [],
         rating: restaurant.rating !== undefined ? restaurant.rating : 0,
-        area: restaurant.area || ''
+        area: restaurant.area || '',
+        intro_zh: restaurant.intro_zh || '',
+        intro_en: restaurant.intro_en || ''
     });
   }, [restaurant]);
 

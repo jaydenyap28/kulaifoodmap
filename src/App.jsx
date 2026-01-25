@@ -471,7 +471,7 @@ function App() {
             'price_range', 'image', 'rating', 'area',
             'menu_link', 'website_link', 'delivery_link',
             'isVegetarian', 'isNoBeef', 'manualStatus',
-            'intro_zh', 'intro_en', 'categories', 'subStalls'
+            'intro_zh', 'intro_en', 'categories', 'subStalls', 'branches'
         ];
 
         keysToCheck.forEach(key => {

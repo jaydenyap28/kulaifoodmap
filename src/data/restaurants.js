@@ -1942,33 +1942,7 @@ export const initialRestaurants = [
     "manualStatus": "auto",
     "branches": []
   },
-  {
-    "id": 711,
-    "area": "Indahpura",
-    "name": "大众茶餐室",
-    "name_en": "Popular Tea Room",
-    "address": "542, Jalan Kenanga 29/17, Bandar Indahpura, 81000 Kulai, Johor Darul Ta'zim",
-    "opening_hours": "6am-12pm",
-    "intro_zh": "传统的华人茶餐室，提供经济实惠的早餐选择。有经济粉、椰浆饭、糕点和传统咖啡。是附近上班族和居民解决早餐的好地方。",
-    "intro_en": "A traditional Chinese coffee shop offering affordable breakfast options. Features economy noodles, Nasi Lemak, kuih, and traditional coffee. A great place for nearby office workers and residents to grab breakfast.",
-    "category": [
-      "咖啡店"
-    ],
-    "categories": [
-      "咖啡店"
-    ],
-    "rating": 0,
-    "image": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI2MDAiIGhlaWdodD0iNDAwIiB2aWV3Qm94PSIwIDAgNjAwIDQwMCI+PHJlY3QgZmlsbD0iIzFlMWUxZSIgd2lkdGg9IjYwMCIgaGVpZ2h0PSI0MDAiLz48dGV4dCBmaWxsPSIjZmZmZmZmIiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIzMCIgZHk9IjEwLjUiIGZvbnQtd2VpZ2h0PSJib2xkIiB4PSI1MCUiIHk9IjUwJSIgdGV4dC1hbmNob3I9Im1pZGRsZSI+S3VsYWkgRm9vZDwvdGV4dD48L3N2Zz4=",
-    "subStalls": [],
-    "price_range": "RM 10-20",
-    "menu_link": "",
-    "website_link": "",
-    "delivery_link": "",
-    "isVegetarian": false,
-    "isNoBeef": false,
-    "manualStatus": "auto",
-    "branches": []
-  },
+
   {
     "id": 72,
     "area": "Indahpura",
