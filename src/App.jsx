@@ -136,48 +136,57 @@ function App() {
     const initialMap = new Map(normalizedInitial.map(r => [r.id, r]));
 
     // 2. Identify Changed or New Items
-    const changedRestaurants = restaurants.filter(r => {
+    const changedRestaurants = restaurants.map(r => {
         const original = initialMap.get(r.id);
-        if (!original) return true; // New item
-
-        // Helper to safely compare fields
-        const isDifferent = (key) => JSON.stringify(r[key]) !== JSON.stringify(original[key]);
         
-        return (
-            isDifferent('name') || 
-            isDifferent('name_en') || 
-            isDifferent('image') || 
-            isDifferent('opening_hours') || 
-            isDifferent('address') ||
-            isDifferent('intro_zh') ||
-            isDifferent('intro_en') ||
-            isDifferent('categories') ||
-            isDifferent('price_range') ||
-            isDifferent('subStalls') ||
-            isDifferent('branches') ||
-            isDifferent('isVegetarian') ||
-            isDifferent('isNoBeef') ||
-            isDifferent('area')
-        );
-    });
+        // New item: Export full object
+        if (!original) return r;
 
-    const exportData = changedRestaurants.length > 0 ? changedRestaurants : restaurants;
+        // Existing item: Check for changes
+        const changes = { id: r.id };
+        let hasChanges = false;
+        
+        const check = (key) => {
+             // Simple equality check for primitives, JSON stringify for objects/arrays
+             const val1 = r[key];
+             const val2 = original[key];
+             const str1 = typeof val1 === 'object' ? JSON.stringify(val1) : val1;
+             const str2 = typeof val2 === 'object' ? JSON.stringify(val2) : val2;
+
+             if (str1 !== str2) {
+                 changes[key] = val1;
+                 hasChanges = true;
+             }
+        };
+
+        ['name', 'name_en', 'image', 'opening_hours', 'address', 'intro_zh', 'intro_en', 
+         'categories', 'price_range', 'subStalls', 'branches', 'isVegetarian', 'isNoBeef', 'area']
+        .forEach(check);
+
+        return hasChanges ? changes : null;
+    }).filter(Boolean);
+
+    const exportData = changedRestaurants.length > 0 ? changedRestaurants : [];
+
+    if (exportData.length === 0) {
+        alert(t('no_changes', '没有检测到更改 (No changes detected)'));
+        return;
+    }
 
     // 3. Prepare Data Format
-    const formattedData = exportData.map(({ ...rest }) => ({
-        ...rest,
-        category: rest.categories // Map categories back to category for compatibility
-    }));
+    // For partial updates, we don't need to map category back unless it changed
+    const formattedData = exportData.map(item => {
+        if (item.categories) {
+            return { ...item, category: item.categories };
+        }
+        return item;
+    });
 
-    const fileContent = `export const initialRestaurants = ${JSON.stringify(formattedData, null, 2)};`;
+    const fileContent = `// ⚠️ PATCH DATA: Contains only changed fields. DO NOT REPLACE initialRestaurants directly.\n// Use this to update specific fields or send to developer.\nexport const restaurantUpdates = ${JSON.stringify(formattedData, null, 2)};`;
 
     // 4. Copy to Clipboard
     navigator.clipboard.writeText(fileContent).then(() => {
-        if (changedRestaurants.length > 0) {
-             alert(t('copy_success_changes', { count: changedRestaurants.length }));
-        } else {
-             alert(t('copy_success', { count: formattedData.length }));
-        }
+         alert(t('copy_success_changes', { count: formattedData.length }));
     }).catch(err => {
         console.error('Failed to copy: ', err);
         alert(t('copy_failed'));
