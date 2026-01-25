@@ -109,18 +109,62 @@ function App() {
   };
 
   const handleExportData = () => {
-    // 1. Prepare Data Format
-    const exportData = restaurants.map(({ ...rest }) => ({
+    // 1. Normalize Initial Data for fair comparison
+    const normalizedInitial = initialRestaurants.map(r => ({
+      ...r,
+      name: r.name || r.desc,
+      name_en: r.name_en || r.desc2,
+      categories: r.categories || r.category || [],
+      price_range: r.price_range || 'RM 10-20',
+      subStalls: (r.subStalls || []).map(s => typeof s === 'string' ? {name: s, image: ''} : s).filter(Boolean),
+      branches: (r.branches || []).map(b => typeof b === 'string' ? {name: b, address: ''} : b).filter(Boolean),
+    }));
+
+    const initialMap = new Map(normalizedInitial.map(r => [r.id, r]));
+
+    // 2. Identify Changed or New Items
+    const changedRestaurants = restaurants.filter(r => {
+        const original = initialMap.get(r.id);
+        if (!original) return true; // New item
+
+        // Helper to safely compare fields
+        const isDifferent = (key) => JSON.stringify(r[key]) !== JSON.stringify(original[key]);
+        
+        return (
+            isDifferent('name') || 
+            isDifferent('name_en') || 
+            isDifferent('image') || 
+            isDifferent('opening_hours') || 
+            isDifferent('address') ||
+            isDifferent('intro_zh') ||
+            isDifferent('intro_en') ||
+            isDifferent('categories') ||
+            isDifferent('price_range') ||
+            isDifferent('subStalls') ||
+            isDifferent('branches') ||
+            isDifferent('isVegetarian') ||
+            isDifferent('isNoBeef') ||
+            isDifferent('area')
+        );
+    });
+
+    const exportData = changedRestaurants.length > 0 ? changedRestaurants : restaurants;
+
+    // 3. Prepare Data Format
+    const formattedData = exportData.map(({ ...rest }) => ({
         ...rest,
-        // No need to map desc/desc2 anymore, use standard name/name_en
         category: rest.categories // Map categories back to category for compatibility
     }));
 
-    const fileContent = `export const initialRestaurants = ${JSON.stringify(exportData, null, 2)};`;
+    const fileContent = `export const initialRestaurants = ${JSON.stringify(formattedData, null, 2)};`;
 
-    // 2. Copy to Clipboard
+    // 4. Copy to Clipboard
     navigator.clipboard.writeText(fileContent).then(() => {
-        alert(t('copy_success', { count: exportData.length }));
+        if (changedRestaurants.length > 0) {
+             alert(t('copy_success_changes', { count: changedRestaurants.length }));
+        } else {
+             alert(t('copy_success', { count: formattedData.length }));
+        }
     }).catch(err => {
         console.error('Failed to copy: ', err);
         alert(t('copy_failed'));

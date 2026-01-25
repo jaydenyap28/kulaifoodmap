@@ -653,14 +653,14 @@ export const initialRestaurants = [
     "name": "文记海南芽菜鸡饭",
     "name_en": "Boon Kee Hainan Chicken Rice",
     "address": "Jalan Bunga Santalia, Taman Kulai Utama, 81000 Kulai, Johor Darul Ta'zim",
-    "opening_hours": "See Google Maps",
+    "opening_hours": "Monday: 10am - 10pm\nTuesday: 10am - 10pm\nWednesday: 10am - 10pm\nThursday: 10am - 10pm\nFriday: 10am - 10pm\nSaturday: 10am - 10pm\nSunday: 10am - 10pm",
     "intro_zh": "专注于传统海南鸡饭。鸡肉滑嫩多汁，油饭香气扑鼻。搭配特制辣椒酱和姜蓉，味道正宗。",
     "intro_en": "Specializes in traditional Hainan Chicken Rice. The chicken is tender and juicy, served with fragrant oily rice. Authentic taste with special chili sauce and ginger paste.",
     "category": [
       "饭类"
     ],
     "rating": 0,
-    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1c/Chicken_rice_in_KL_%25282%2529.jpg/330px-Chicken_rice_in_KL_%25282%2529.jpg",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1c/Chicken_rice_in_KL_%282%29.jpg/330px-Chicken_rice_in_KL_%282%29.jpg",
     "subStalls": [],
     "categories": [
       "饭类"

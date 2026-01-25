@@ -4,6 +4,7 @@
   "confirm_reset_bg": "确定要重置回默认背景吗？",
   "settings_saved": "✅ 设置已保存！",
   "copy_success": "✅ 成功复制 {{count}} 个商家数据！\n请打开 src/data/restaurants.js 并粘贴覆盖原内容。",
+  "copy_success_changes": "✅ 成功复制 {{count}} 个已修改的商家数据！\n请发给开发人员进行更新。",
   "copy_failed": "❌ 复制失败，请查看控制台",
   "hero": {
     "shuffling": "洗牌中...",
