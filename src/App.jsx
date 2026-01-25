@@ -20,7 +20,7 @@ import { AVAILABLE_AREAS, DEFAULT_CATEGORIES } from './data/constants';
 const DEFAULT_HERO_BG = "https://i.ibb.co/7J5qjZtv/image.png";
 
 // Version Control for Data (Increment this when adding new hardcoded data to force refresh)
-const DATA_VERSION = 'v25';
+const DATA_VERSION = 'v26';
 
 function App() {
   const { t, i18n } = useTranslation();

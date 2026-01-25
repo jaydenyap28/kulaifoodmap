@@ -12,14 +12,7 @@ const newItemsRaw = [
         category: ["西餐"],
         image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ6mhxNzpWBVZnjKix8gpP17igjAwiSpf0a7A&s"
     },
-    {
-        name: "大众茶餐室",
-        name_en: "Restoran Tai Chiang",
-        address: "7, Jalan Jelawat, Taman Sri Saleng, 81400 Kulai, Johor Darul Ta'zim",
-        opening_hours: "7 am–2 pm Tuesday Closed",
-        category: ["咖啡店"],
-        image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRPy8YHiWIMRguQ_cyHNllpB3eX0TJTdrq-Mg&s"
-    },
+
     {
         name: "Roti King Saleng",
         name_en: "Roti King Saleng",

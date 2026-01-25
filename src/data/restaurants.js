@@ -172,7 +172,7 @@ export const initialRestaurants = [
       "饭类"
     ],
     "rating": 0,
-    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQKJezIT3oIqWXe9bM8c0J8HE6urSH3aNzdtw&s",
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRu8Prx5DvjkYD88X5E-ObNOQrXhafAT5zT2w&s",
     "subStalls": [],
     "categories": [
       "饭类"
@@ -272,7 +272,7 @@ export const initialRestaurants = [
   },
   {
     "id": 12,
-    "name": "永泉兴咖啡店",
+    "name": "永泉兴传统海南咖啡店",
     "name_en": "Yong Juan Hin",
     "address": "5c, Jalan Ismail, Taman Kulai, 81000 Kulai, Johor Darul Ta'zim",
     "opening_hours": "Monday: Closed\nTuesday: 7am - 3pm\nWednesday: 7am - 3pm\nThursday: 7am - 3pm\nFriday: 7am - 3pm\nSaturday: 7am - 3pm\nSunday: 7am - 3pm",
@@ -282,7 +282,7 @@ export const initialRestaurants = [
       "咖啡店"
     ],
     "rating": 0,
-    "image": "https://cdn.prod.website-files.com/64c4be5d67694090d91bc447/64ec54aa340c2e1d87d7d583_batch_DSC01257.jpg",
+    "image": "https://scontent.fmkz1-2.fna.fbcdn.net/v/t39.30808-6/237482257_1241570576319493_1119263468831903382_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=6ee11a&_nc_ohc=xt8q0PtNL20Q7kNvwG0jgVM&_nc_oc=AdnFxPbU9Ob896S7xTlCfUTHkRpZWu-p21FUgvpuwXOXVd9xelFsHJJhGatKxRGHE44&_nc_zt=23&_nc_ht=scontent.fmkz1-2.fna&_nc_gid=oQWLGX8FgtCGNxwouuq29w&oh=00_AfoojL7saSPbj6l6t3qxXRt0k88Ur2R5zAAr_eONpmpywQ&oe=697BD58B",
     "subStalls": [],
     "categories": [
       "咖啡店"
@@ -310,7 +310,7 @@ export const initialRestaurants = [
       "咖啡店"
     ],
     "rating": 0,
-    "image": "https://i.ibb.co/YFPwnCV7/image.jpg",
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTS4IT7xvF0wJvbCe_ChlCt8E7nKEEDeQFB-g&s",
     "subStalls": [
       {
         "name": "兴兴鸡饭",
@@ -416,7 +416,7 @@ export const initialRestaurants = [
       "马来餐"
     ],
     "rating": 0,
-    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR43RhVvdpeoqerkzf2iClNfe90wIyb4wkuFg&s",
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSKaL11_-yxI6mKX8Vzb-YcoPJN9I3CSGB-Vg&s",
     "subStalls": [],
     "categories": [
       "饭类",
@@ -553,7 +553,7 @@ export const initialRestaurants = [
       "粉类"
     ],
     "rating": 0,
-    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQGzz6aLqJ-Elt4oj1W-fy3P8qFHbOwll5YFQ&s",
+    "image": "https://scontent.fmkz1-2.fna.fbcdn.net/v/t39.30808-6/306158499_539125361502108_3747463199871027682_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=6ee11a&_nc_ohc=wJN-NeqfT0AQ7kNvwFt1b0-&_nc_oc=AdkIE8IS1Af4g5HHMYeGjFnu89B7_BYpthLNncjMAv5fQrm2k2jR1fr45CjndE_Si88&_nc_zt=23&_nc_ht=scontent.fmkz1-2.fna&_nc_gid=kMJLwZpy0hF-_DxKIxtkOQ&oh=00_AfqHG0VWN7fHli6eVLHbdkSJW7pb_Zzv6-KkpmcyPuo6VQ&oe=697BD84F",
     "subStalls": [],
     "categories": [
       "粉类"
@@ -776,7 +776,7 @@ export const initialRestaurants = [
       "宴会酒楼"
     ],
     "rating": 0,
-    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRcFzIP2mGBHaI9SvuC2EgniYRIcm--Y2c-_w&s",
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRlQMTbsoQp3oUwzFdqaPm01LSenOFuX2lLdg&s",
     "subStalls": [],
     "categories": [
       "宴会酒楼"
@@ -955,7 +955,7 @@ export const initialRestaurants = [
     "name": "Nasi Lemak Wak Kentut KTM Kulai",
     "name_en": "Nasi Lemak Wak Kentut",
     "address": "1337, Jalan Lengkongan, Taman Kulai, 81000 Kulai, Johor Darul Ta'zim",
-    "opening_hours": "7am – 12:30am",
+    "opening_hours": "Monday: 7am - 12:30am\nTuesday: 7am - 12:30am\nWednesday: 7am - 12:30am\nThursday: 7am - 12:30am\nFriday: 7am - 12:30am\nSaturday: 7am - 12:30am\nSunday: 7am - 12:30am",
     "intro_zh": "古来传奇椰浆饭，以其独特的炸鸡和参巴辣椒酱闻名。炸鸡皮脆肉嫩，参巴酱香辣开胃，是古来必吃的地标性美食。",
     "intro_en": "Legendary Nasi Lemak in Kulai, famous for its unique fried chicken and sambal sauce. The chicken is crispy and tender, while the sambal is spicy and appetizing. A must-try landmark food in Kulai.",
     "category": [
@@ -965,7 +965,7 @@ export const initialRestaurants = [
       "马来餐"
     ],
     "rating": 0,
-    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRLCprBNFU4YVsV8cTGP0o2wbxC1HqVyZyQvA&s",
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS4LJ1WH9dHQu3dpiBZsb7C2ZePFJV90LQd8w&s",
     "subStalls": [],
     "price_range": "RM 10-20",
     "menu_link": "",
@@ -2032,7 +2032,7 @@ export const initialRestaurants = [
     "name": "新食代",
     "name_en": "Food Generation",
     "address": "292,JALAN KIAMBANG UTAMA,KOMERSIAL INDAH, KOMERSIAL INDAH, Bandar Indahpura, 81000 Kulai, Johor Darul Ta'zim",
-    "opening_hours": "5pm-1am",
+    "opening_hours": "Monday: 5pm - 1am\nTuesday: 5pm - 1am\nWednesday: 5pm - 1am\nThursday: 5pm - 1am\nFriday: 5pm - 1am\nSaturday: 5pm - 1am\nSunday: 5pm - 1am",
     "intro_zh": "汇集多种本地美食的现代化美食中心。提供从面食到饭类的多样化选择。环境舒适，适合日常用餐。",
     "intro_en": "A modern food court gathering various local delicacies. Offers a wide range of choices from noodles to rice dishes. Comfortable environment for daily dining.",
     "category": [
@@ -2042,7 +2042,7 @@ export const initialRestaurants = [
       "咖啡店"
     ],
     "rating": 0,
-    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQHl9rynLT48IV7CP-hvsm6eXiIMhb7Hhe4Vw&s",
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSbD1tkAE1LF70FntiSYgZoGpaEYPNosne3_Q&s",
     "subStalls": [],
     "price_range": "RM 10-20",
     "menu_link": "",
@@ -2675,9 +2675,9 @@ export const initialRestaurants = [
   {
     "id": 99,
     "name": "Khunya Thai Kitchen",
-    "name_en": "Khunya Thai Kitchen",
+    "name_en": "",
     "address": "189, Jalan Kiambang 12, 81000 Kulai, Johor Darul Ta'zim",
-    "opening_hours": "12pm-10pm Tuesday Closed",
+    "opening_hours": "Monday: 10am - 10pm\nTuesday: Closed\nWednesday: 10am - 10pm\nThursday: 10am - 10pm\nFriday: 10am - 10pm\nSaturday: 10am - 10pm\nSunday: 10am - 10pm",
     "intro_zh": "正宗泰国料理，由泰国厨师掌厨。东炎汤、青咖喱和泰式猪脚饭都是人气必点。",
     "intro_en": "Authentic Thai cuisine prepared by Thai chefs. Tom Yum soup, Green Curry, and Thai Pork Leg Rice are popular must-tries.",
     "category": [
@@ -2687,7 +2687,7 @@ export const initialRestaurants = [
       "泰国餐"
     ],
     "rating": 0,
-    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTh9Ztrwwppr01lfPf_4HltxP8sAzK8RHZY-A&s",
+    "image": "https://www.shipba.biz/wp-content/uploads/2024/06/Khunya-Thai-Kitchen-M-Sdn-Bhd-Logo.jpg",
     "subStalls": [],
     "price_range": "RM 10-20",
     "menu_link": "",
@@ -2704,7 +2704,7 @@ export const initialRestaurants = [
     "name": "芳园",
     "name_en": "Fang Yuan kopitiam",
     "address": "188, Jalan Kiambang 12, Bandar Indahpura, 81000 Kulai, Johor Darul Ta'zim",
-    "opening_hours": "8 am–5:30 pm Thusday Closed",
+    "opening_hours": "Monday: 10am - 10pm\nTuesday: 10am - 10pm\nWednesday: 10am - 10pm\nThursday: Closed\nFriday: 10am - 10pm\nSaturday: 10am - 10pm\nSunday: 10am - 10pm",
     "intro_zh": "传统海南咖啡店，保留了古早味的咖啡香和烤面包。是体验古来传统早餐的好地方。",
     "intro_en": "Traditional Hainanese kopitiam preserving the old-school aroma of coffee and toast. A great place to experience traditional Kulai breakfast.",
     "category": [
