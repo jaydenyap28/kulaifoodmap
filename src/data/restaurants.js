@@ -4130,11 +4130,11 @@ export const initialRestaurants = [
     "id": 154,
     "area": "Bandar Putra",
     "name": "Madam LoqLoq Kulai",
-    "name_en": "Madam LoqLoq Kulai",
+    "name_en": "",
     "intro_zh": "专营碌碌（Lok-lok）的特色餐厅。提供多种新鲜串串，搭配特制酱料，是宵夜和聚餐的热门选择。",
     "intro_en": "A specialty restaurant focusing on Lok-lok (skewers). Offers a wide variety of fresh skewers with special dipping sauces, a popular choice for supper and gatherings.",
     "address": "5448A, Jalan Kenari 20, Bandar Putra Kulai, 81000 Kulai, Johor Darul Ta'zim",
-    "opening_hours": "5 pm–1:30 am",
+    "opening_hours": "Monday: 5pm - 1:30am\nTuesday: 5pm - 1:30am\nWednesday: 5pm - 1:30am\nThursday: 5pm - 1:30am\nFriday: 5pm - 1:30am\nSaturday: 5pm - 1:30am\nSunday: 5pm - 1:30am",
     "category": [
       "火锅烧烤"
     ],
@@ -4157,11 +4157,11 @@ export const initialRestaurants = [
     "id": 155,
     "area": "Bandar Putra",
     "name": "MKe Harmony Cafe",
-    "name_en": "MKe Harmony Cafe",
+    "name_en": "",
     "intro_zh": "融合多种美食的休闲咖啡馆。提供西餐、本地餐点和特色饮料，环境温馨舒适。",
     "intro_en": "A casual cafe blending various cuisines. Offers Western food, local dishes, and specialty drinks in a warm and comfortable setting.",
     "address": "5457A, Jalan Kenari 20, Bandar Putra Kulai, 81000 Kulai, Johor Darul Ta'zim",
-    "opening_hours": "11 am–9 pm",
+    "opening_hours": "Monday: 11am - 9pm\nTuesday: 11am - 9pm\nWednesday: 11am - 9pm\nThursday: 11am - 9pm\nFriday: 11am - 9pm\nSaturday: 11am - 9pm\nSunday: 11am - 9pm",
     "category": [
       "Cafe"
     ],
@@ -4183,12 +4183,12 @@ export const initialRestaurants = [
   {
     "id": 156,
     "area": "Bandar Putra",
-    "name": "MON DELICE PATISSERIE",
-    "name_en": "MON DELICE PATISSERIE",
+    "name": "Mon Delice Patisserie",
+    "name_en": "",
     "intro_zh": "精致的法式甜点店。提供各式手工蛋糕、甜塔和下午茶，甜点造型精美，口味细腻。",
     "intro_en": "An exquisite French patisserie. Offers a variety of handmade cakes, tarts, and high tea sets, with beautifully crafted and delicate desserts.",
     "address": "5383, Jalan Kenari 20, Bandar Putra Kulai, 81000 Kulai, Johor Darul Ta'zim",
-    "opening_hours": "10 am–7 pm",
+    "opening_hours": "Monday: 10am - 7pm\nTuesday: 10am - 7pm\nWednesday: 10am - 7pm\nThursday: 10am - 7pm\nFriday: 10am - 7pm\nSaturday: 10am - 7pm\nSunday: 10am - 7pm",
     "category": [
       "蛋糕甜点"
     ],
@@ -4196,7 +4196,7 @@ export const initialRestaurants = [
       "蛋糕甜点"
     ],
     "rating": 0,
-    "image": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI2MDAiIGhlaWdodD0iNDAwIiB2aWV3Qm94PSIwIDAgNjAwIDQwMCI+PHJlY3QgZmlsbD0iIzFlMWUxZSIgd2lkdGg9IjYwMCIgaGVpZ2h0PSI0MDAiLz48dGV4dCBmaWxsPSIjZmZmZmZmIiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIzMCIgZHk9IjEwLjUiIGZvbnQtd2VpZ2h0PSJib2xkIiB4PSI1MCUiIHk9IjUwJSIgdGV4dC1hbmNob3I9Im1pZGRsZSI+S3VsYWkgRm9vZDwvdGV4dD48L3N2Zz4=",
+    "image": "https://scontent.fmkz1-2.fna.fbcdn.net/v/t39.30808-6/291879620_507006064557323_7328180247096977716_n.png?_nc_cat=108&ccb=1-7&_nc_sid=6ee11a&_nc_ohc=kWs4dpMBk2UQ7kNvwEnmC6r&_nc_oc=Adle9hmOqMaIzofHNLWHFDu6vMNyGeET-059qsujcN6G9UAmi8_zEB2BCVWqs52TDuY&_nc_zt=23&_nc_ht=scontent.fmkz1-2.fna&_nc_gid=37eEkfxbCVFCeQT5ZJryEQ&oh=00_AfpacLUdKUKKR3L14s192z1g7_3JKY1b0AVdZIty7kIp-Q&oe=697BF6A5",
     "subStalls": [],
     "price_range": "RM 10-20",
     "menu_link": "",
@@ -4344,12 +4344,12 @@ export const initialRestaurants = [
   {
     "id": 162,
     "area": "Bandar Putra",
-    "name": "REDY.CAFE",
-    "name_en": "REDY.CAFE",
+    "name": "Redy.Cafe",
+    "name_en": "",
     "intro_zh": "位于IOI Galleria的现代风格咖啡馆。提供舒适的用餐环境，适合享用咖啡和轻食，是休闲聚会的好去处。",
     "intro_en": "A modern cafe located in IOI Galleria. Offers a comfortable dining environment, perfect for enjoying coffee and light meals, making it a great spot for gatherings.",
     "address": "K1, IOI GALLERIA, Jalan Putra 4, Bandar Putra Kulai, 81000 Kulai, Johor",
-    "opening_hours": "4:30pm–11:30 pm Mon Closed",
+    "opening_hours": "Monday: Closed\nTuesday: 10am - 10pm\nWednesday: 10am - 10pm\nThursday: 10am - 10pm\nFriday: 10am - 10pm\nSaturday: 10am - 10pm\nSunday: 10am - 10pm",
     "category": [
       "Cafe"
     ],
@@ -4357,7 +4357,7 @@ export const initialRestaurants = [
       "Cafe"
     ],
     "rating": 0,
-    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSkW8azMhW2MLk1GYNscnRMeWPJJSRfZHWwzw&s",
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR5YON6vgHovbACXS5_9qJO-YaR318DvgCpLQ&s",
     "subStalls": [],
     "price_range": "RM 10-20",
     "menu_link": "",
@@ -4376,7 +4376,7 @@ export const initialRestaurants = [
     "intro_zh": "古来著名的鸡饭店，被誉为“古来最好吃的鸡饭”之一。招牌海南鸡饭香滑嫩口，甘榜炒饭和椰浆饭也广受好评。",
     "intro_en": "A famous chicken rice shop in Kulai, often praised as one of the best. Signature Hainanese Chicken Rice is tender and smooth, while Kampung Fried Rice and Nasi Lemak are also highly rated.",
     "address": "17147, Jalan Murai 4, Bandar Putra Kulai, 81000 Kulai, Johor Darul Ta'zim",
-    "opening_hours": "11 am-3:30 pm Friday Closed",
+    "opening_hours": "Monday: 10am - 10pm\nTuesday: 10am - 10pm\nWednesday: 10am - 10pm\nThursday: 10am - 10pm\nFriday: Closed\nSaturday: 10am - 10pm\nSunday: 10am - 10pm",
     "category": [
       "马来餐"
     ],
@@ -4671,15 +4671,16 @@ export const initialRestaurants = [
     "intro_zh": "古来加拉巴沙威著名的客家美食店，主打菜板（Choy Ban）、酿豆腐和擂茶，保留传统客家风味。",
     "intro_en": "A famous Hakka restaurant in Kelapa Sawit, specializing in Choy Ban (vegetable dumplings), Yong Tau Foo, and Lei Cha, preserving traditional Hakka flavors.",
     "address": "S65, Jalan Kelapa Sawit 3, Kelapa Sawit, 81030 Kulai, Johor Darul Ta'zim",
-    "opening_hours": "8 am–2 pm Mon Closed",
+    "opening_hours": "Monday: Closed\nTuesday: 10am - 10pm\nWednesday: 10am - 10pm\nThursday: 10am - 10pm\nFriday: 10am - 10pm\nSaturday: 10am - 10pm\nSunday: 10am - 10pm",
     "category": [
       "饭类"
     ],
     "categories": [
-      "饭类"
+      "饭类",
+      "点心"
     ],
     "rating": 0,
-    "image": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI2MDAiIGhlaWdodD0iNDAwIiB2aWV3Qm94PSIwIDAgNjAwIDQwMCI+CjxyZWN0IHdpZHRoPSI2MDAiIGhlaWdodD0iNDAwIiBmaWxsPSIjMWUxZTFlIi8+Cjx0ZXh0IHg9IjUwJSIgeT0iNTAlIiBkb21pbmFudC1iYXNlbGluZT0ibWlkZGxlIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSI0MCIgZmlsbD0iI2ZmZmZmZiI+S3VsYWkgRm9vZDwvdGV4dD4KPC9zdmc+",
+    "image": "https://i.ibb.co/qYssZcp0/image.jpg",
     "subStalls": [],
     "price_range": "RM 10-20",
     "menu_link": "",
@@ -4688,7 +4689,8 @@ export const initialRestaurants = [
     "isVegetarian": false,
     "isNoBeef": false,
     "manualStatus": "auto",
-    "branches": []
+    "branches": [],
+    "area": "Kelapa Sawit"
   },
   {
     "id": 175,
@@ -4879,15 +4881,16 @@ export const initialRestaurants = [
     "intro_zh": "沙威老字号酒楼，以烧猪和各类煮炒闻名。适合大型聚餐和宴席，菜色丰富，锅气十足。",
     "intro_en": "A long-established restaurant in Sawit, famous for its roasted pig and various zi char dishes. Suitable for large gatherings and banquets, offering a wide variety of dishes with 'wok hei'.",
     "address": "14, Jalan Manis 2, Kelapa Sawit, 81000 Kulai, Johor Darul Ta'zim",
-    "opening_hours": "11 am–10:30 pm Wed Closed",
+    "opening_hours": "Monday: 10am - 10pm\nTuesday: 10am - 10pm\nWednesday: Closed\nThursday: 10am - 10pm\nFriday: 10am - 10pm\nSaturday: 10am - 10pm\nSunday: 10am - 10pm",
     "category": [
       "宴会酒楼"
     ],
     "categories": [
-      "宴会酒楼"
+      "宴会酒楼",
+      "煮炒海鲜楼"
     ],
     "rating": 0,
-    "image": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI2MDAiIGhlaWdodD0iNDAwIiB2aWV3Qm94PSIwIDAgNjAwIDQwMCI+CjxyZWN0IHdpZHRoPSI2MDAiIGhlaWdodD0iNDAwIiBmaWxsPSIjMWUxZTFlIi8+Cjx0ZXh0IHg9IjUwJSIgeT0iNTAlIiBkb21pbmFudC1iYXNlbGluZT0ibWlkZGxlIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSI0MCIgZmlsbD0iI2ZmZmZmZiI+S3VsYWkgRm9vZDwvdGV4dD4KPC9zdmc+",
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRz49jLBxBJ-qZt_qKWgOLOeLfs73IpZezlmQ&s",
     "subStalls": [],
     "price_range": "RM 10-20",
     "menu_link": "",
@@ -4957,7 +4960,7 @@ export const initialRestaurants = [
     "intro_zh": "著名的英记海南鸡饭分行，以滑嫩的白斩鸡和爽脆的芽菜闻名。米饭香气扑鼻，是沙威不可错过的美食。",
     "intro_en": "A branch of the famous Yin Ji Hainanese Chicken Rice, known for its tender poached chicken and crunchy bean sprouts. The aromatic rice makes it a must-try in Sawit.",
     "address": "Johor, Kulai, Kelapa Sawit, Jalan Air Hitam, 81030，Kulai",
-    "opening_hours": "6 am–4 pm",
+    "opening_hours": "Monday: 6am - 4pm\nTuesday: 6am - 4pm\nWednesday: 6am - 4pm\nThursday: 6am - 4pm\nFriday: 6am - 4pm\nSaturday: 6am - 4pm\nSunday: 6am - 4pm",
     "category": [
       "饭类"
     ],
@@ -4965,7 +4968,7 @@ export const initialRestaurants = [
       "饭类"
     ],
     "rating": 0,
-    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSouhq-GlV5v7sJ7EOOtvyNke9keajBzjiOVA&s",
+    "image": "https://scontent.fmkz1-2.fna.fbcdn.net/v/t39.30808-6/565122025_1278719297602539_3350786168098136248_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=6ee11a&_nc_ohc=BVO5Cv4bSvYQ7kNvwG2Lh9t&_nc_oc=AdmijvBtZY_o91WdZhHumF5awU1SKHJguwgdetsLd1_RENn-LgvjYPkxWUnEa5Zwdlw&_nc_zt=23&_nc_ht=scontent.fmkz1-2.fna&_nc_gid=qMqBQoYeVNhDQLXTIqGYjw&oh=00_Afr5sQ8v16p0jPpRdVvMhguWzK6-J55CTSDBx5LRHhRWKQ&oe=697C04EC",
     "subStalls": [],
     "price_range": "RM 10-20",
     "menu_link": "",
@@ -4978,12 +4981,12 @@ export const initialRestaurants = [
   },
   {
     "id": 187,
-    "name": "咖啡店",
+    "name": "突破咖啡店",
     "name_en": "Coffee Shop",
     "intro_zh": "本地传统咖啡店，提供经济实惠的餐饮选择。",
     "intro_en": "A local traditional coffee shop offering affordable dining options.",
     "address": "Kelapa Sawit, Kulai",
-    "opening_hours": "",
+    "opening_hours": "Monday: 10am - 10pm\nTuesday: 10am - 10pm\nWednesday: 10am - 10pm\nThursday: 10am - 10pm\nFriday: 10am - 10pm\nSaturday: 10am - 10pm\nSunday: 10am - 10pm",
     "category": [
       "咖啡店"
     ],
@@ -5004,20 +5007,21 @@ export const initialRestaurants = [
   },
   {
     "id": 188,
-    "name": "S-71, Jalan Kelapa Sawit 3",
+    "name": "乡村咖啡馆",
     "name_en": "",
     "intro_zh": "沙威当地传统的茶餐室，提供各类面食、经济米粉和茶水。是当地居民享用早餐的好去处。",
     "intro_en": "A traditional local kopitiam in Sawit, offering various noodles, economy mee hoon, and drinks. A good spot for locals to have breakfast.",
     "address": "S-71, Jalan Kelapa Sawit 3, Kampung Sri Paya, 81000 Kulai, Johor Darul Ta'zim",
-    "opening_hours": "7:30 am–5 pm",
+    "opening_hours": "Monday: 7:30am - 5pm\nTuesday: 7:30am - 5pm\nWednesday: 7:30am - 5pm\nThursday: 7:30am - 5pm\nFriday: 7:30am - 5pm\nSaturday: 7:30am - 5pm\nSunday: 7:30am - 5pm",
     "category": [
       "咖啡店"
     ],
     "categories": [
-      "咖啡店"
+      "咖啡店",
+      "Cafe"
     ],
     "rating": 0,
-    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTi4ULxrCgldfCNtuX5mpdRFSendlJ6QAVWEQ&s",
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQmc4we8pOSVc6Qg1b8D168iwneb2NgMPGe0w&s",
     "subStalls": [],
     "price_range": "RM 10-20",
     "menu_link": "",
@@ -5026,16 +5030,17 @@ export const initialRestaurants = [
     "isVegetarian": false,
     "isNoBeef": false,
     "manualStatus": "auto",
-    "branches": []
+    "branches": [],
+    "area": "Kelapa Sawit"
   },
   {
     "id": 189,
-    "name": "ZUS Coffee • Kelapa Sawit • Kulai",
+    "name": "ZUS Coffee Kelapa Sawit ",
     "name_en": "",
     "intro_zh": "本地知名的精品咖啡连锁店，主打高品质且价格亲民的咖啡。蓝色标志性的Logo随处可见，是年轻人喜爱的打卡点。",
     "intro_en": "A well-known local specialty coffee chain, focusing on high-quality yet affordable coffee. Its iconic blue logo is everywhere, making it a favorite spot for the younger crowd.",
     "address": "No 18(GF, Jln Impiana 1, Taman Impiana, Kelapa Sawi, 81030 Kulai, Johor Darul Ta'zim",
-    "opening_hours": "7 am–10:40 pm",
+    "opening_hours": "Monday: 7am - 10:40pm\nTuesday: 7am - 10:40pm\nWednesday: 7am - 10:40pm\nThursday: 7am - 10:40pm\nFriday: 7am - 10:40pm\nSaturday: 7am - 10:40pm\nSunday: 7am - 10:40pm",
     "category": [
       "饮品"
     ],
@@ -5043,7 +5048,7 @@ export const initialRestaurants = [
       "饮品"
     ],
     "rating": 0,
-    "image": "https://zuscoffee.com/wp-content/uploads/2022/03/coffee_cups.jpg",
+    "image": "https://cloud.shopback.com/c_scale,c_auto,q_70,f_webp/media-production-aps1/_LtTYr4GF0s/aHR0cHM6Ly9pbWFnZXMuYmFubmVyYmVhci5jb20vZGlyZWN0L0VHQnFwQVo1T2U5MTg5VkROSi9yZXF1ZXN0cy8wMDAvMDY5LzMxMi85ODAvUHdBVjVyTU5xNk9MQmtSMFFrQm0yNzRPcC8zNjVlYzE4NDM0ZTMxMTVmNjlkN2U4YTExOGM2ZjE0Y2YzNWQ4NDMyLnBuZw.jpg",
     "subStalls": [],
     "price_range": "RM 10-20",
     "menu_link": "",
@@ -5052,7 +5057,8 @@ export const initialRestaurants = [
     "isVegetarian": false,
     "isNoBeef": false,
     "manualStatus": "auto",
-    "branches": []
+    "branches": [],
+    "area": "Kelapa Sawit"
   },
   {
     "id": 190,
