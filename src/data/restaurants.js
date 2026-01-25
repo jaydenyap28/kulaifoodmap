@@ -3856,7 +3856,6 @@ export const initialRestaurants = [
     "manualStatus": "auto",
     "branches": []
   },
-
   {
     "id": 144,
     "name": "Roti King Saleng",
@@ -6995,7 +6994,7 @@ export const initialRestaurants = [
     "intro_zh": "现代茶饮品牌，主打新鲜萃取的中国茶饮，结合了传统茶文化与现代美学，提供高品质的纯茶和鲜奶茶。",
     "intro_en": "A modern tea beverage brand specializing in freshly brewed Chinese tea, combining traditional tea culture with modern aesthetics to offer high-quality pure tea and fresh milk tea.",
     "address": "AEON Mall, Lot GK2 & GK2A, 81000 Kulai, Johor Darul Ta'zim",
-    "opening_hours": "10 am–10 pm",
+    "opening_hours": "Monday: 10am - 10pm\nTuesday: 10am - 10pm\nWednesday: 10am - 10pm\nThursday: 10am - 10pm\nFriday: 10am - 10pm\nSaturday: 10am - 10pm\nSunday: 10am - 10pm",
     "category": [
       "饮品"
     ],
@@ -7003,7 +7002,7 @@ export const initialRestaurants = [
       "饮品"
     ],
     "rating": 0,
-    "image": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI2MDAiIGhlaWdodD0iNDAwIiB2aWV3Qm94PSIwIDAgNjAwIDQwMCI+PHJlY3QgZmlsbD0iIzFlMWUxZSIgd2lkdGg9IjYwMCIgaGVpZ2h0PSI0MDAiLz48dGV4dCBmaWxsPSIjZmZmZmZmIiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIzMCIgZHk9IjEwLjUiIGZvbnQtd2VpZ2h0PSJib2xkIiB4PSI1MCUiIHk9IjUwJSIgdGV4dC1hbmNob3I9Im1pZGRsZSI+S3VsYWkgRm9vZDwvdGV4dD48L3N2Zz4=",
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS2KmmgU6PzMCORkuhAbrdihSg4BL1X7Kl6qw&s",
     "subStalls": [],
     "price_range": "RM 10-20",
     "menu_link": "",
@@ -7012,7 +7011,8 @@ export const initialRestaurants = [
     "isVegetarian": false,
     "isNoBeef": false,
     "manualStatus": "auto",
-    "branches": []
+    "branches": [],
+    "area": "Indahpura"
   },
   {
     "id": 268,
@@ -7045,11 +7045,11 @@ export const initialRestaurants = [
     "id": 269,
     "area": "Indahpura",
     "name": "D Laksa",
-    "name_en": "D'Laksa",
+    "name_en": "",
     "intro_zh": "专营正宗槟城亚参叻沙（Asam Laksa）的连锁店，酸辣开胃，汤头浓郁，是喜爱叻沙食客的首选。",
     "intro_en": "A chain specializing in authentic Penang Asam Laksa, offering a sour and spicy appetizing taste with a rich broth, a top choice for laksa lovers.",
     "address": "Aeon Kulaijaya, G-08, Indahpura, 81000 Kulai, Johor",
-    "opening_hours": "10 am–10 pm",
+    "opening_hours": "Monday: 10am - 10pm\nTuesday: 10am - 10pm\nWednesday: 10am - 10pm\nThursday: 10am - 10pm\nFriday: 10am - 10pm\nSaturday: 10am - 10pm\nSunday: 10am - 10pm",
     "category": [
       "粉类"
     ],
@@ -7057,7 +7057,7 @@ export const initialRestaurants = [
       "粉类"
     ],
     "rating": 0,
-    "image": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI2MDAiIGhlaWdodD0iNDAwIiB2aWV3Qm94PSIwIDAgNjAwIDQwMCI+PHJlY3QgZmlsbD0iIzFlMWUxZSIgd2lkdGg9IjYwMCIgaGVpZ2h0PSI0MDAiLz48dGV4dCBmaWxsPSIjZmZmZmZmIiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIzMCIgZHk9IjEwLjUiIGZvbnQtd2VpZ2h0PSJib2xkIiB4PSI1MCUiIHk9IjUwJSIgdGV4dC1hbmNob3I9Im1pZGRsZSI+S3VsYWkgRm9vZDwvdGV4dD48L3N2Zz4=",
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSx2o7T1bdDNnpdYLBRDssggLgK5XIXM5Rfbg&s",
     "subStalls": [],
     "price_range": "RM 10-20",
     "menu_link": "",
@@ -7076,7 +7076,7 @@ export const initialRestaurants = [
     "intro_zh": "源自台湾的知名手摇饮料品牌，以其黄金珍珠奶茶和玛奇朵系列闻名，茶香浓郁，口感顺滑。",
     "intro_en": "A well-known bubble tea brand from Taiwan, famous for its Golden Bubble Milk Tea and Macchiato series, featuring rich tea aroma and smooth texture.",
     "address": "g37, Persiaran Indahpura Utama, Bandar Indahpura, 81000 Kulai, Johor Darul Ta'zim",
-    "opening_hours": "10 am–10 pm",
+    "opening_hours": "Monday: 10am - 10pm\nTuesday: 10am - 10pm\nWednesday: 10am - 10pm\nThursday: 10am - 10pm\nFriday: 10am - 10pm\nSaturday: 10am - 10pm\nSunday: 10am - 10pm",
     "category": [
       "饮品"
     ],
@@ -7084,7 +7084,7 @@ export const initialRestaurants = [
       "饮品"
     ],
     "rating": 0,
-    "image": "https://images.deliveryhero.io/image/fd-my/my-logos/n4zx-logo.jpg",
+    "image": "https://images.deliveryhero.io/image/fd-my/my-logos/ce2xi-logo.jpg",
     "subStalls": [],
     "price_range": "RM 10-20",
     "menu_link": "",
@@ -7099,21 +7099,22 @@ export const initialRestaurants = [
     "id": 271,
     "area": "Indahpura",
     "name": "Subway",
-    "name_en": "Subway",
+    "name_en": "",
     "intro_zh": "全球知名的三明治连锁店，提供新鲜烘焙的面包、多样化的蔬菜和肉类选择，顾客可根据口味自由搭配。",
     "intro_en": "Globally renowned sandwich chain offering fresh baked bread, diverse vegetable and meat choices, allowing customers to customize to their taste.",
     "address": "C12 Food Avenue, Aeon Mall, f30, Persiaran Indahpura Utama, Indahpura, 81000 Kulai, Johor",
-    "opening_hours": "10 am–10 pm",
+    "opening_hours": "Monday: 10am - 10pm\nTuesday: 10am - 10pm\nWednesday: 10am - 10pm\nThursday: 10am - 10pm\nFriday: 10am - 10pm\nSaturday: 10am - 10pm\nSunday: 10am - 10pm",
     "category": [
       "西餐",
       "快餐"
     ],
     "categories": [
       "西餐",
-      "快餐"
+      "快餐",
+      "小吃"
     ],
     "rating": 0,
-    "image": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI2MDAiIGhlaWdodD0iNDAwIiB2aWV3Qm94PSIwIDAgNjAwIDQwMCI+PHJlY3QgZmlsbD0iIzFlMWUxZSIgd2lkdGg9IjYwMCIgaGVpZ2h0PSI0MDAiLz48dGV4dCBmaWxsPSIjZmZmZmZmIiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIzMCIgZHk9IjEwLjUiIGZvbnQtd2VpZ2h0PSJib2xkIiB4PSI1MCUiIHk9IjUwJSIgdGV4dC1hbmNob3I9Im1pZGRsZSI+S3VsYWkgRm9vZDwvdGV4dD48L3N2Zz4=",
+    "image": "https://logo.com/image-cdn/images/kts928pd/production/5c1d76ffdcbf8506baba6ab77d68ca89ead0a6cb-1536x864.png?w=1920&q=72&fm=webp",
     "subStalls": [],
     "price_range": "RM 10-20",
     "menu_link": "",
@@ -7211,11 +7212,11 @@ export const initialRestaurants = [
     "id": 275,
     "area": "Indahpura",
     "name": "Gigi Coffee",
-    "name_en": "Gigi Coffee",
+    "name_en": "",
     "intro_zh": "知名精品咖啡连锁店，以其高品质的咖啡豆和时尚的品牌形象著称，特别是其招牌拿铁和创意特调深受年轻人喜爱。",
     "intro_en": "A well-known boutique coffee chain known for its high-quality coffee beans and stylish brand image, especially popular among young people for its signature lattes and creative blends.",
     "address": "GK3, AEON Mall Kulai, F49, Bandar Indahpura, 81000 Kulai, Johor Kulai, 81000 Johor Bahru, Johor Darul Ta'zim",
-    "opening_hours": "10 am–10 pm",
+    "opening_hours": "Monday: 10am - 10pm\nTuesday: 10am - 10pm\nWednesday: 10am - 10pm\nThursday: 10am - 10pm\nFriday: 10am - 10pm\nSaturday: 10am - 10pm\nSunday: 10am - 10pm",
     "category": [
       "饮品"
     ],
@@ -7223,7 +7224,7 @@ export const initialRestaurants = [
       "饮品"
     ],
     "rating": 0,
-    "image": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI2MDAiIGhlaWdodD0iNDAwIiB2aWV3Qm94PSIwIDAgNjAwIDQwMCI+PHJlY3QgZmlsbD0iIzFlMWUxZSIgd2lkdGg9IjYwMCIgaGVpZ2h0PSI0MDAiLz48dGV4dCBmaWxsPSIjZmZmZmZmIiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIzMCIgZHk9IjEwLjUiIGZvbnQtd2VpZ2h0PSJib2xkIiB4PSI1MCUiIHk9IjUwJSIgdGV4dC1hbmNob3I9Im1pZGRsZSI+S3VsYWkgRm9vZDwvdGV4dD48L3N2Zz4=",
+    "image": "https://www.klgatewaymall.com/data/editor/stores/gigi-coffee.jpg?v=1617785931541",
     "subStalls": [],
     "price_range": "RM 10-20",
     "menu_link": "",
@@ -7290,13 +7291,13 @@ export const initialRestaurants = [
   },
   {
     "id": 278,
-    "area": "Indahpura",
+    "area": "",
     "name": "日升咖喱鱼头",
     "name_en": "Yit Sheng Fish Head Curry",
     "intro_zh": "日升咖喱鱼头以其浓郁辛辣的咖喱鱼头闻名，鱼肉鲜嫩，酱汁下饭，是古来深受喜爱的煮炒店之一。",
     "intro_en": "Yit Sheng Fish Head Curry is famous for its rich and spicy fish head curry, with tender fish and appetizing sauce, making it a beloved zi char spot in Kulai.",
     "address": "Bandar Indahpura, 81000 Kulai, Johor Darul Ta'zim",
-    "opening_hours": "11:30 am–10:30 pm",
+    "opening_hours": "Monday: 11:30am - 10:30pm\nTuesday: 11:30am - 10:30pm\nWednesday: 11:30am - 10:30pm\nThursday: 11:30am - 10:30pm\nFriday: 11:30am - 10:30pm\nSaturday: 11:30am - 10:30pm\nSunday: 11:30am - 10:30pm",
     "category": [
       "煮炒海鲜楼"
     ],
@@ -7304,7 +7305,7 @@ export const initialRestaurants = [
       "煮炒海鲜楼"
     ],
     "rating": 0,
-    "image": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI2MDAiIGhlaWdodD0iNDAwIiB2aWV3Qm94PSIwIDAgNjAwIDQwMCI+PHJlY3QgZmlsbD0iIzFlMWUxZSIgd2lkdGg9IjYwMCIgaGVpZ2h0PSI0MDAiLz48dGV4dCBmaWxsPSIjZmZmZmZmIiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIzMCIgZHk9IjEwLjUiIGZvbnQtd2VpZ2h0PSJib2xkIiB4PSI1MCUiIHk9IjUwJSIgdGV4dC1hbmNob3I9Im1pZGRsZSI+S3VsYWkgRm9vZDwvdGV4dD48L3N2Zz4=",
+    "image": "https://cdn.reviewbah.com/wp-content/uploads/2023/04/%E6%97%A5%E5%8D%87%E5%92%96%E5%96%B1%E9%B1%BC%E5%A4%B4-yit-sheng-fish-head-curry-AF1QipNoKm9gN4qHTxOuk34AcTLHoNKeE27gHVio30Gsw12001.jpg",
     "subStalls": [],
     "price_range": "RM 10-20",
     "menu_link": "",
@@ -7398,13 +7399,13 @@ export const initialRestaurants = [
   },
   {
     "id": 282,
-    "area": "Indahpura",
+    "area": "",
     "name": "新口味冷气饭店",
     "name_en": "Modern Taste Restaurant",
     "intro_zh": "古来知名的煮炒店，提供各式美味的海鲜和肉类料理，环境舒适，适合家庭聚餐。",
     "intro_en": "A well-known Zi Char restaurant in Kulai, offering a variety of delicious seafood and meat dishes in a comfortable environment, suitable for family dining.",
     "address": "278, Jalan Kenanga 29/9, Bandar Indahpura, 81000 Kulai, Johor Darul Ta'zim",
-    "opening_hours": "",
+    "opening_hours": "Monday: 10am - 10pm\nTuesday: 10am - 10pm\nWednesday: 10am - 10pm\nThursday: 10am - 10pm\nFriday: 10am - 10pm\nSaturday: 10am - 10pm\nSunday: 10am - 10pm",
     "category": [
       "煮炒海鲜楼"
     ],
@@ -7412,7 +7413,7 @@ export const initialRestaurants = [
       "煮炒海鲜楼"
     ],
     "rating": 0,
-    "image": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI2MDAiIGhlaWdodD0iNDAwIiB2aWV3Qm94PSIwIDAgNjAwIDQwMCI+PHJlY3QgZmlsbD0iIzFlMWUxZSIgd2lkdGg9IjYwMCIgaGVpZ2h0PSI0MDAiLz48dGV4dCBmaWxsPSIjZmZmZmZmIiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIzMCIgZHk9IjEwLjUiIGZvbnQtd2VpZ2h0PSJib2xkIiB4PSI1MCUiIHk9IjUwJSIgdGV4dC1hbmNob3I9Im1pZGRsZSI+S3VsYWkgRm9vZDwvdGV4dD48L3N2Zz4=",
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTMCppT3n4us7gHcOJ4bUCzr-xnKmIYTraOEw&s",
     "subStalls": [],
     "price_range": "RM 10-20",
     "menu_link": "",
@@ -7458,7 +7459,7 @@ export const initialRestaurants = [
     "intro_zh": "主打台湾夜市小吃，如超大鸡排、蚵仔面线和甜不辣，让顾客在马来西亚也能品尝道地台湾风味。",
     "intro_en": "Specializes in Taiwanese night market snacks such as XXL Crispy Chicken, Oyster Mee Sua, and Tempura, allowing customers to taste authentic Taiwanese flavors in Malaysia.",
     "address": "Lot G-71, Kulai Jaya, AEON Mall, Persiaran Indahpura Utama, Bandar Indahpura, 81000 Kulai, Johor Darul Ta'zim",
-    "opening_hours": "10 am–10 pm",
+    "opening_hours": "Monday: 10am - 10pm\nTuesday: 10am - 10pm\nWednesday: 10am - 10pm\nThursday: 10am - 10pm\nFriday: 10am - 10pm\nSaturday: 10am - 10pm\nSunday: 10am - 10pm",
     "category": [
       "快餐"
     ],
@@ -7466,7 +7467,7 @@ export const initialRestaurants = [
       "快餐"
     ],
     "rating": 0,
-    "image": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI2MDAiIGhlaWdodD0iNDAwIiB2aWV3Qm94PSIwIDAgNjAwIDQwMCI+PHJlY3QgZmlsbD0iIzFlMWUxZSIgd2lkdGg9IjYwMCIgaGVpZ2h0PSI0MDAiLz48dGV4dCBmaWxsPSIjZmZmZmZmIiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIzMCIgZHk9IjEwLjUiIGZvbnQtd2VpZ2h0PSJib2xkIiB4PSI1MCUiIHk9IjUwJSIgdGV4dC1hbmNob3I9Im1pZGRsZSI+S3VsYWkgRm9vZDwvdGV4dD48L3N2Zz4=",
+    "image": "https://scontent.fmkz1-1.fna.fbcdn.net/v/t39.30808-6/329815846_2060095307528023_6061706467649116564_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=a5f93a&_nc_ohc=byMnvRMpVssQ7kNvwGwcgc0&_nc_oc=AdnLHMNRks_xpE8GPUID4zBvhFKXzFe-ijcpLZnUd1OWRa35E8eIbECwH07v8Xx8bhE&_nc_zt=23&_nc_ht=scontent.fmkz1-1.fna&_nc_gid=0M5ErdI46WyVo0B9uw8-Sg&oh=00_Afo786Fqow7NHnyy8sWXTfo3EtYJNlMaes9DyxPgdAqJZg&oe=697BDD11",
     "subStalls": [],
     "price_range": "RM 10-20",
     "menu_link": "",
@@ -7646,7 +7647,7 @@ export const initialRestaurants = [
     "intro_zh": "专注于滋补养生汤品的餐厅，传承古早味，结合现代饮食理念。招牌汤品浓郁滋补，搭配各式精致中式料理，是健康美味的选择。",
     "intro_en": "A restaurant specializing in nourishing herbal soups, inheriting traditional flavors combined with modern dietary concepts. Signature soups are rich and nutritious, served with various exquisite Chinese dishes.",
     "address": "Jalan Premium Outlets, Bandar Indahpura, 81000 Kulai, Johor Darul Ta'zim",
-    "opening_hours": "10 am–10 pm",
+    "opening_hours": "Monday: 10am - 10pm\nTuesday: 10am - 10pm\nWednesday: 10am - 10pm\nThursday: 10am - 10pm\nFriday: 10am - 10pm\nSaturday: 10am - 10pm\nSunday: 10am - 10pm",
     "category": [
       "Cafe"
     ],
@@ -7654,7 +7655,7 @@ export const initialRestaurants = [
       "Cafe"
     ],
     "rating": 0,
-    "image": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI2MDAiIGhlaWdodD0iNDAwIiB2aWV3Qm94PSIwIDAgNjAwIDQwMCI+PHJlY3QgZmlsbD0iIzFlMWUxZSIgd2lkdGg9IjYwMCIgaGVpZ2h0PSI0MDAiLz48dGV4dCBmaWxsPSIjZmZmZmZmIiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIzMCIgZHk9IjEwLjUiIGZvbnQtd2VpZ2h0PSJib2xkIiB4PSI1MCUiIHk9IjUwJSIgdGV4dC1hbmNob3I9Im1pZGRsZSI+S3VsYWkgRm9vZDwvdGV4dD48L3N2Zz4=",
+    "image": "https://img2.cdn.91app.com.my/webapi/images/t/512/512/ShopIcon/200129/0/01241336",
     "subStalls": [],
     "price_range": "RM 10-20",
     "menu_link": "",
@@ -7696,11 +7697,11 @@ export const initialRestaurants = [
     "id": 293,
     "area": "Indahpura",
     "name": "Madam Kwan's",
-    "name_en": "Madam Kwan's",
+    "name_en": "",
     "intro_zh": "马来西亚著名的本土美食餐厅，以其招牌椰浆饭（Nasi Lemak）闻名遐迩。提供多种地道的马来西亚风味佳肴，是品尝大马美食的必去之地。",
     "intro_en": "Malaysia's famous local cuisine restaurant, renowned for its signature Nasi Lemak. Offers a variety of authentic Malaysian dishes, making it a must-visit for tasting Malaysian food.",
     "address": "Suite 204, Premium Outlets, Johor Premium Outlets, Jalan, Bandar Indahpura, 81000 Kulai, Johor Darul Ta'zim",
-    "opening_hours": "10 am–10 pm",
+    "opening_hours": "Monday: 10am - 10pm\nTuesday: 10am - 10pm\nWednesday: 10am - 10pm\nThursday: 10am - 10pm\nFriday: 10am - 10pm\nSaturday: 10am - 10pm\nSunday: 10am - 10pm",
     "category": [
       "Cafe"
     ],
@@ -7708,7 +7709,7 @@ export const initialRestaurants = [
       "Cafe"
     ],
     "rating": 0,
-    "image": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI2MDAiIGhlaWdodD0iNDAwIiB2aWV3Qm94PSIwIDAgNjAwIDQwMCI+PHJlY3QgZmlsbD0iIzFlMWUxZSIgd2lkdGg9IjYwMCIgaGVpZ2h0PSI0MDAiLz48dGV4dCBmaWxsPSIjZmZmZmZmIiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIzMCIgZHk9IjEwLjUiIGZvbnQtd2VpZ2h0PSJib2xkIiB4PSI1MCUiIHk9IjUwJSIgdGV4dC1hbmNob3I9Im1pZGRsZSI+S3VsYWkgRm9vZDwvdGV4dD48L3N2Zz4=",
+    "image": "https://www.madamkwans.com.my/images/madamkwan-logo.png",
     "subStalls": [],
     "price_range": "RM 10-20",
     "menu_link": "",
@@ -7750,11 +7751,11 @@ export const initialRestaurants = [
   {
     "id": 295,
     "name": "Oldtown White Coffee JPO",
-    "name_en": "OldTown White Coffee",
+    "name_en": "",
     "intro_zh": "马来西亚著名的白咖啡连锁店，以其浓郁香滑的怡保白咖啡和经典的烤面包、半生熟蛋及面食系列著称，充满南洋传统咖啡店风情。",
     "intro_en": "Malaysia's famous white coffee chain, known for its rich and smooth Ipoh white coffee and classic toast, soft-boiled eggs, and noodle series, full of Nanyang traditional coffee shop vibes.",
     "address": "Johor Premium Outlets, 81400 Senai, Johor",
-    "opening_hours": "10 am–10 pm",
+    "opening_hours": "Monday: 10am - 10pm\nTuesday: 10am - 10pm\nWednesday: 10am - 10pm\nThursday: 10am - 10pm\nFriday: 10am - 10pm\nSaturday: 10am - 10pm\nSunday: 10am - 10pm",
     "category": [
       "Cafe",
       "咖啡店"
@@ -7777,13 +7778,13 @@ export const initialRestaurants = [
   },
   {
     "id": 296,
-    "area": "Indahpura",
+    "area": "",
     "name": "DubuYo Mini",
-    "name_en": "DubuYo Mini",
+    "name_en": "",
     "intro_zh": "主打现代韩式料理的餐厅，提供美味的韩式豆腐锅（Soondubu Jigae）、石锅拌饭和韩式炸鸡，口味正宗，适合喜爱韩国美食的食客。",
     "intro_en": "A restaurant specializing in modern Korean cuisine, offering delicious Soondubu Jigae (tofu stew), Bibimbap, and Korean fried chicken. Authentic flavors suitable for Korean food lovers.",
     "address": "Lot 504, High Street Jalan Premium Outlets, Johor Premium Outlets, Stall 7 & 8 Food Court, Indahpura, 81000 Kulai, Johor Darul Ta'zim",
-    "opening_hours": "10 am–10 pm",
+    "opening_hours": "Monday: 10am - 10pm\nTuesday: 10am - 10pm\nWednesday: 10am - 10pm\nThursday: 10am - 10pm\nFriday: 10am - 10pm\nSaturday: 10am - 10pm\nSunday: 10am - 10pm",
     "category": [
       "韩国餐",
       "Cafe"
@@ -7793,7 +7794,7 @@ export const initialRestaurants = [
       "Cafe"
     ],
     "rating": 0,
-    "image": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI2MDAiIGhlaWdodD0iNDAwIiB2aWV3Qm94PSIwIDAgNjAwIDQwMCI+PHJlY3QgZmlsbD0iIzFlMWUxZSIgd2lkdGg9IjYwMCIgaGVpZ2h0PSI0MDAiLz48dGV4dCBmaWxsPSIjZmZmZmZmIiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIzMCIgZHk9IjEwLjUiIGZvbnQtd2VpZ2h0PSJib2xkIiB4PSI1MCUiIHk9IjUwJSIgdGV4dC1hbmNob3I9Im1pZGRsZSI+S3VsYWkgRm9vZDwvdGV4dD48L3N2Zz4=",
+    "image": "https://www.dubuyo.com/images/find/dubuyo-logo-location.jpg",
     "subStalls": [],
     "price_range": "RM 10-20",
     "menu_link": "",
@@ -7806,13 +7807,13 @@ export const initialRestaurants = [
   },
   {
     "id": 297,
-    "area": "Indahpura",
+    "area": "",
     "name": "Godiva Cafe",
     "name_en": "Godiva Café",
     "intro_zh": "享誉世界的比利时皇室御用巧克力品牌，提供顶级巧克力、香浓的软雪糕和特制巧克力饮品，是巧克力爱好者的奢华享受。",
     "intro_en": "World-renowned Belgian royal chocolate brand, offering premium chocolates, rich soft serve, and signature chocolate drinks. A luxurious treat for chocolate lovers.",
     "address": "Johor Premium Outlets, Suite 238 01, Indahpura, 81000 Johor Bahru, Johor",
-    "opening_hours": "10 am–10 pm",
+    "opening_hours": "Monday: 10am - 10pm\nTuesday: 10am - 10pm\nWednesday: 10am - 10pm\nThursday: 10am - 10pm\nFriday: 10am - 10pm\nSaturday: 10am - 10pm\nSunday: 10am - 10pm",
     "category": [
       "蛋糕甜点"
     ],
@@ -7833,13 +7834,13 @@ export const initialRestaurants = [
   },
   {
     "id": 298,
-    "area": "Indahpura",
+    "area": "",
     "name": "Bask Bear Coffee",
-    "name_en": "Bask Bear Coffee",
+    "name_en": "",
     "intro_zh": "以其独特的咖啡特调和美味的烤吐司（Toasties）闻名。提供多种创新口味的咖啡和茶饮，搭配酥脆热腾的吐司，是轻食首选。",
     "intro_en": "Known for its unique coffee blends and delicious Toasties. Offers a variety of innovative coffee and tea flavors paired with crispy hot toast, making it a top choice for light meals.",
     "address": "Stall 1, Gucci - Johor Premium Outlet, Jalan Premium Outlets, Bandar Indahpura, 81000 Kulai, Johor Darul Ta'zim",
-    "opening_hours": "10 am–10 pm",
+    "opening_hours": "Monday: 10am - 10pm\nTuesday: 10am - 10pm\nWednesday: 10am - 10pm\nThursday: 10am - 10pm\nFriday: 10am - 10pm\nSaturday: 10am - 10pm\nSunday: 10am - 10pm",
     "category": [
       "饮品"
     ],
@@ -7847,7 +7848,7 @@ export const initialRestaurants = [
       "饮品"
     ],
     "rating": 0,
-    "image": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI2MDAiIGhlaWdodD0iNDAwIiB2aWV3Qm94PSIwIDAgNjAwIDQwMCI+PHJlY3QgZmlsbD0iIzFlMWUxZSIgd2lkdGg9IjYwMCIgaGVpZ2h0PSI0MDAiLz48dGV4dCBmaWxsPSIjZmZmZmZmIiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIzMCIgZHk9IjEwLjUiIGZvbnQtd2VpZ2h0PSJib2xkIiB4PSI1MCUiIHk9IjUwJSIgdGV4dC1hbmNob3I9Im1pZGRsZSI+S3VsYWkgRm9vZDwvdGV4dD48L3N2Zz4=",
+    "image": "https://static.wixstatic.com/media/aa5d41_423e534bbeda4c9a9eca31db3ae2bd61~mv2.png/v1/fill/w_250,h_153,al_c,q_95,enc_auto/aa5d41_423e534bbeda4c9a9eca31db3ae2bd61~mv2.png",
     "subStalls": [],
     "price_range": "RM 10-20",
     "menu_link": "",
@@ -7918,7 +7919,7 @@ export const initialRestaurants = [
     "name": "茗芳粿条仔",
     "name_en": "Ming Fang Kway Teow Kia",
     "address": "Kulai, Johor",
-    "opening_hours": "7am-3pm",
+    "opening_hours": "Monday: 7am - 3pm\nTuesday: 7am - 3pm\nWednesday: 7am - 3pm\nThursday: 7am - 3pm\nFriday: 7am - 3pm\nSaturday: 7am - 3pm\nSunday: 7am - 3pm",
     "intro_zh": "古来著名的粿条仔，以药材汤底和新鲜卤味闻名。卤肉、粉肠、卤蛋等入味十足，是当地人的早餐首选。",
     "intro_en": "Famous Kway Teow Kia in Kulai, known for its herbal soup and fresh braised dishes. The braised meat, intestines, and eggs are flavorful, making it a top breakfast choice for locals.",
     "category": [
@@ -7928,7 +7929,7 @@ export const initialRestaurants = [
       "粉类"
     ],
     "rating": 0,
-    "image": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI2MDAiIGhlaWdodD0iNDAwIiB2aWV3Qm94PSIwIDAgNjAwIDQwMCI+PHJlY3QgZmlsbD0iIzFlMWUxZSIgd2lkdGg9IjYwMCIgaGVpZ2h0PSI0MDAiLz48dGV4dCBmaWxsPSIjZmZmZmZmIiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIzMCIgZHk9IjEwLjUiIGZvbnQtd2VpZ2h0PSJib2xkIiB4PSI1MCUiIHk9IjUwJSIgdGV4dC1hbmNob3I9Im1pZGRsZSI+S3VsYWkgRm9vZDwvdGV4dD48L3N2Zz4=",
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQVgFjqLLyfGJrkqXDfaBKJ-RY7VIYq2N2ENQ&s",
     "subStalls": [],
     "price_range": "RM 10-20",
     "menu_link": "",
@@ -7997,9 +7998,9 @@ export const initialRestaurants = [
     "id": 304,
     "area": "Kulai",
     "name": "聚园酒家",
-    "name_en": "Restoran Ju Yuan",
+    "name_en": "Restoran Chi Yuen",
     "address": "Kulai, Johor",
-    "opening_hours": "11am-10pm",
+    "opening_hours": "Monday: 11am - 10pm\nTuesday: 11am - 10pm\nWednesday: 11am - 10pm\nThursday: 11am - 10pm\nFriday: 11am - 10pm\nSaturday: 11am - 10pm\nSunday: 11am - 10pm",
     "intro_zh": "深受当地人喜爱的中餐厅，提供各类海鲜和肉类料理。菜色丰富，锅气十足，价格公道。",
     "intro_en": "A Chinese restaurant loved by locals, offering various seafood and meat dishes. Rich menu, good 'wok hei', and reasonable prices.",
     "category": [
