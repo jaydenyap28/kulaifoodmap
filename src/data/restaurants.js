@@ -3856,32 +3856,7 @@ export const initialRestaurants = [
     "manualStatus": "auto",
     "branches": []
   },
-  {
-    "id": 143,
-    "name": "大众茶餐室",
-    "name_en": "Restoran Tai Chiang",
-    "intro_zh": "始于1970年的怀旧老字号茶餐室。坚持使用炭烤面包和自制咖椰（Kaya），搭配自家烘焙的咖啡，保留了古早味的传统早餐体验。",
-    "intro_en": "A nostalgic kopitiam established in 1970. Famous for charcoal-toasted bread with homemade Kaya and in-house roasted coffee, preserving the traditional breakfast experience.",
-    "address": "7, Jalan Jelawat, Taman Sri Saleng, 81400 Kulai, Johor Darul Ta'zim",
-    "opening_hours": "7 am–2 pm Tuesday Closed",
-    "category": [
-      "咖啡店"
-    ],
-    "categories": [
-      "咖啡店"
-    ],
-    "rating": 0,
-    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRPy8YHiWIMRguQ_cyHNllpB3eX0TJTdrq-Mg&s",
-    "subStalls": [],
-    "price_range": "RM 10-20",
-    "menu_link": "",
-    "website_link": "",
-    "delivery_link": "",
-    "isVegetarian": false,
-    "isNoBeef": false,
-    "manualStatus": "auto",
-    "branches": []
-  },
+
   {
     "id": 144,
     "name": "Roti King Saleng",
