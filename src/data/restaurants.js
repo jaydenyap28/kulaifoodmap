@@ -6502,7 +6502,7 @@ export const initialRestaurants = [
     "name": "給麵子",
     "name_en": "Noodles Q",
     "address": "121, Jalan Kenanga 29/6, Taman Indahpura, 81000 Kulai, Johor Darul Ta'zim",
-    "opening_hours": "9 am–6 pm",
+    "opening_hours": "Monday: 9am - 6pm\nTuesday: 9am - 6pm\nWednesday: 9am - 6pm\nThursday: 9am - 6pm\nFriday: 9am - 6pm\nSaturday: 9am - 6pm\nSunday: 9am - 6pm",
     "category": [
       "粉类"
     ],
@@ -6510,7 +6510,7 @@ export const initialRestaurants = [
       "粉类"
     ],
     "rating": 0,
-    "image": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI2MDAiIGhlaWdodD0iNDAwIiB2aWV3Qm94PSIwIDAgNjAwIDQwMCI+CjxyZWN0IHdpZHRoPSI2MDAiIGhlaWdodD0iNDAwIiBmaWxsPSIjMWUxZTFlIi8+Cjx0ZXh0IHg9IjUwJSIgeT0iNTAlIiBkb21pbmFudC1iYXNlbGluZT0ibWlkZGxlIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSI0MCIgZmlsbD0iI2ZmZmZmZiI+S3VsYWkgRm9vZDwvdGV4dD4KPC9zdmc+",
+    "image": "https://obs.line-scdn.net/0hku_En8OGNFpiPCANeb9LDVd-KzQKEjISOSAQRRFqYz8WDHteCVp4O0V5az1IXnFZDF8/r.400x0",
     "subStalls": [],
     "price_range": "RM 10-20",
     "menu_link": "",
@@ -6685,11 +6685,11 @@ export const initialRestaurants = [
     "id": 257,
     "area": "Indahpura",
     "name": "GC Good Coffee",
-    "name_en": "GC Good Coffee",
+    "name_en": "",
     "intro_zh": "专注于高品质咖啡的咖啡馆，提供各种手冲咖啡和特调饮品，环境清幽。",
     "intro_en": "A cafe focused on high-quality coffee, offering various pour-over coffees and specialty drinks in a quiet and relaxing environment.",
     "address": "242, Jln Kenanga 29/8, Indahpura, 81000 Kulai, Johor",
-    "opening_hours": "7:30 am–7:30 pm",
+    "opening_hours": "Monday: 7:30am - 7:30pm\nTuesday: 7:30am - 7:30pm\nWednesday: 7:30am - 7:30pm\nThursday: 7:30am - 7:30pm\nFriday: 7:30am - 7:30pm\nSaturday: 7:30am - 7:30pm\nSunday: 7:30am - 7:30pm",
     "category": [
       "Cafe"
     ],
@@ -6714,11 +6714,13 @@ export const initialRestaurants = [
     "name": "九億廚房",
     "name_en": "JiuYi Kitchen@Indahpura",
     "address": "163, Jalan Kenanga 29/4, Bandar Indahpura, 81000 Kulai, Johor Darul Ta'zim",
-    "opening_hours": "",
+    "opening_hours": "Monday: 10am - 10pm\nTuesday: 10am - 10pm\nWednesday: 10am - 10pm\nThursday: 10am - 10pm\nFriday: 10am - 10pm\nSaturday: 10am - 10pm\nSunday: 10am - 10pm",
     "category": [],
-    "categories": [],
+    "categories": [
+      "煮炒海鲜楼"
+    ],
     "rating": 0,
-    "image": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI2MDAiIGhlaWdodD0iNDAwIiB2aWV3Qm94PSIwIDAgNjAwIDQwMCI+CjxyZWN0IHdpZHRoPSI2MDAiIGhlaWdodD0iNDAwIiBmaWxsPSIjMWUxZTFlIi8+Cjx0ZXh0IHg9IjUwJSIgeT0iNTAlIiBkb21pbmFudC1iYXNlbGluZT0ibWlkZGxlIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSI0MCIgZmlsbD0iI2ZmZmZmZiI+S3VsYWkgRm9vZDwvdGV4dD4KPC9zdmc+",
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQCIr_Osn9HRAjL5FDQlT0TWE6XCVHvCdGrkA&s",
     "subStalls": [],
     "price_range": "RM 10-20",
     "menu_link": "",
@@ -6760,11 +6762,11 @@ export const initialRestaurants = [
     "id": 260,
     "area": "Indahpura",
     "name": "UFB - Union Fashion Bar Balcony",
-    "name_en": "Union Fashion Bar",
+    "name_en": "",
     "intro_zh": "结合时尚与美食的餐厅酒吧，以其创意甜点、西餐和舒适的氛围而闻名。",
     "intro_en": "A restaurant and bar combining fashion and food, known for its creative desserts, Western cuisine, and comfortable atmosphere.",
     "address": "66, Jalan Kenanga 29/5, Bandar Indahpura, 81300 Kulai, Johor Darul Ta'zim",
-    "opening_hours": "12 pm–12 am",
+    "opening_hours": "Monday: 12pm - 12am\nTuesday: 12pm - 12am\nWednesday: 12pm - 12am\nThursday: 12pm - 12am\nFriday: 12pm - 12am\nSaturday: 12pm - 12am\nSunday: 12pm - 12am",
     "category": [
       "西餐",
       "Cafe"
@@ -6820,7 +6822,7 @@ export const initialRestaurants = [
     "intro_zh": "台湾著名甜品连锁店，主打嫩仙草、芋圆和各式台式甜点，口感Q弹，清凉解暑。",
     "intro_en": "A famous Taiwanese dessert chain specializing in grass jelly, taro balls, and various Taiwanese desserts, known for their chewy texture and refreshing taste.",
     "address": "No 2, Jalan Kenanga 29/1, Taman Indahpura, 81000 Kulai, Johor Darul Ta'zim",
-    "opening_hours": "12–11:30 pm",
+    "opening_hours": "Monday: 12pm - 11:30pm\nTuesday: 12pm - 11:30pm\nWednesday: 12pm - 11:30pm\nThursday: 12pm - 11:30pm\nFriday: 12pm - 11:30pm\nSaturday: 12pm - 11:30pm\nSunday: 12pm - 11:30pm",
     "category": [
       "蛋糕甜点"
     ],
@@ -6828,7 +6830,7 @@ export const initialRestaurants = [
       "蛋糕甜点"
     ],
     "rating": 0,
-    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRHMtrTW_6_AtZtCin3p1hlLn1vbv_JOb4mlQ&s",
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT8XutL8p5zV0z5CM8uzCRp0ZFdtqO6DP_NMA&s",
     "subStalls": [],
     "price_range": "RM 10-20",
     "menu_link": "",
@@ -6924,11 +6926,11 @@ export const initialRestaurants = [
     "id": 266,
     "area": "Indahpura",
     "name": "4Fingers Crispy Chicken",
-    "name_en": "4Fingers Crispy Chicken",
+    "name_en": "",
     "intro_zh": "新加坡著名韩式炸鸡品牌，以其香脆的炸鸡和独特的酱料（大蒜酱油和香辣味）而闻名。",
     "intro_en": "A famous Singaporean Korean-style fried chicken brand, known for its crispy chicken and unique sauces (Soy Garlic and Hot).",
     "address": "36, Jalan Kenanga 29/1, Bandar Indahpura, 81000 Kulai, Johor Darul Ta'zim",
-    "opening_hours": "10 am–10 pm",
+    "opening_hours": "Monday: 10am - 10pm\nTuesday: 10am - 10pm\nWednesday: 10am - 10pm\nThursday: 10am - 10pm\nFriday: 10am - 10pm\nSaturday: 10am - 10pm\nSunday: 10am - 10pm",
     "category": [
       "西餐",
       "快餐"
@@ -6980,11 +6982,11 @@ export const initialRestaurants = [
     "id": 268,
     "area": "Indahpura",
     "name": "JCO Donut & Coffee",
-    "name_en": "J.CO Donuts & Coffee",
+    "name_en": "",
     "intro_zh": "国际知名的甜甜圈和咖啡连锁店，提供口味丰富的软绵甜甜圈、咖啡和冷冻酸奶。",
     "intro_en": "An internationally renowned donut and coffee chain offering a wide variety of soft donuts, coffee, and frozen yogurt.",
     "address": "Ground Floor, Aeon Mall, Indahpura, 81000 Kulai, Johor",
-    "opening_hours": "10 am–10 pm",
+    "opening_hours": "Monday: 10am - 10pm\nTuesday: 10am - 10pm\nWednesday: 10am - 10pm\nThursday: 10am - 10pm\nFriday: 10am - 10pm\nSaturday: 10am - 10pm\nSunday: 10am - 10pm",
     "category": [
       "蛋糕甜点"
     ],
@@ -6992,7 +6994,7 @@ export const initialRestaurants = [
       "蛋糕甜点"
     ],
     "rating": 0,
-    "image": "https://images.deliveryhero.io/image/fd-my/my-logos/cw7zl-logo.jpg",
+    "image": "https://mir-s3-cdn-cf.behance.net/project_modules/fs/36fa2e90517039.5e192702511e0.jpg",
     "subStalls": [],
     "price_range": "RM 10-20",
     "menu_link": "",
@@ -7034,7 +7036,7 @@ export const initialRestaurants = [
     "id": 270,
     "area": "Indahpura",
     "name": "KOI Thé Johor",
-    "name_en": "KOI Thé",
+    "name_en": "",
     "intro_zh": "源自台湾的知名手摇饮料品牌，以其黄金珍珠奶茶和玛奇朵系列闻名，茶香浓郁，口感顺滑。",
     "intro_en": "A well-known bubble tea brand from Taiwan, famous for its Golden Bubble Milk Tea and Macchiato series, featuring rich tea aroma and smooth texture.",
     "address": "g37, Persiaran Indahpura Utama, Bandar Indahpura, 81000 Kulai, Johor Darul Ta'zim",
@@ -7046,7 +7048,7 @@ export const initialRestaurants = [
       "饮品"
     ],
     "rating": 0,
-    "image": "https://images.deliveryhero.io/image/fd-my/my-logos/ce2xi-logo.jpg",
+    "image": "https://www.midvalleysouthkey.com/img/tenant/logo-mobile08Jul2019180329.jpg",
     "subStalls": [],
     "price_range": "RM 10-20",
     "menu_link": "",
@@ -7071,12 +7073,11 @@ export const initialRestaurants = [
       "快餐"
     ],
     "categories": [
-      "西餐",
       "快餐",
       "小吃"
     ],
     "rating": 0,
-    "image": "https://logo.com/image-cdn/images/kts928pd/production/5c1d76ffdcbf8506baba6ab77d68ca89ead0a6cb-1536x864.png?w=1920&q=72&fm=webp",
+    "image": "https://newsroom.subway.com/image/Subway+Hi-Res+Logo_asset_thumbnail.png",
     "subStalls": [],
     "price_range": "RM 10-20",
     "menu_link": "",
@@ -7091,11 +7092,11 @@ export const initialRestaurants = [
     "id": 272,
     "area": "Indahpura",
     "name": "SDS Bakery & Cafe",
-    "name_en": "SDS Bakery & Cafe",
+    "name_en": "",
     "intro_zh": "柔佛本土著名的烘焙与餐饮品牌，提供新鲜面包、蛋糕以及舒适的堂食环境，主打西餐和本地美食。",
     "intro_en": "A famous Johor-based bakery and dining brand offering fresh bread, cakes, and a comfortable dining environment, specializing in Western and local cuisine.",
     "address": "Lot G57, Groun Floor, AEON Mall Kulai Jaya, Persiaran Indahpura Utama, Bandar Indahpura, 81000 Kulai, Johor Darul Ta'zim",
-    "opening_hours": "10 am–10 pm",
+    "opening_hours": "Monday: 10am - 10pm\nTuesday: 10am - 10pm\nWednesday: 10am - 10pm\nThursday: 10am - 10pm\nFriday: 10am - 10pm\nSaturday: 10am - 10pm\nSunday: 10am - 10pm",
     "category": [
       "蛋糕甜点",
       "西餐"
@@ -7147,11 +7148,11 @@ export const initialRestaurants = [
     "id": 274,
     "area": "Indahpura",
     "name": "Oochid Bistro",
-    "name_en": "Oochid Bistro",
+    "name_en": "",
     "intro_zh": "提供各式西餐和本地美食的休闲餐厅，环境舒适，适合朋友聚餐。",
     "intro_en": "A casual restaurant offering a variety of Western and local dishes, with a comfortable environment suitable for gatherings.",
     "address": "Persiaran Indahpura Utama, Bandar Indahpura, 81000 Kulai, Johor Darul Ta'zim",
-    "opening_hours": "10 am–10 pm",
+    "opening_hours": "Monday: 10am - 10pm\nTuesday: 10am - 10pm\nWednesday: 10am - 10pm\nThursday: 10am - 10pm\nFriday: 10am - 10pm\nSaturday: 10am - 10pm\nSunday: 10am - 10pm",
     "category": [
       "Cafe"
     ],
@@ -7186,7 +7187,7 @@ export const initialRestaurants = [
       "饮品"
     ],
     "rating": 0,
-    "image": "https://www.klgatewaymall.com/data/editor/stores/gigi-coffee.jpg?v=1617785931541",
+    "image": "https://www.midvalleysouthkey.com/img/tenant/Gigi-Coffee-Logo-Mobile28Aug2023082248.jpg",
     "subStalls": [],
     "price_range": "RM 10-20",
     "menu_link": "",
@@ -7228,11 +7229,11 @@ export const initialRestaurants = [
     "id": 277,
     "area": "Indahpura",
     "name": "Choong Man Chicken",
-    "name_en": "Choong Man Chicken",
+    "name_en": "",
     "intro_zh": "韩国著名炸鸡品牌，以独特的‘Tikkudak’（炸后烤）烹饪方式闻名，外皮酥脆，肉质鲜嫩，口味丰富。",
     "intro_en": "A famous Korean fried chicken brand known for its unique 'Tikkudak' (fried then baked) cooking method, featuring crispy skin, tender meat, and rich flavors.",
     "address": "G66, Aeon mall, Kulaijaya Persiaran, Bandar Indahpura, 81000 Johor Bahru, Johor Darul Ta'zim",
-    "opening_hours": "10 am–10 pm",
+    "opening_hours": "Monday: 10am - 10pm\nTuesday: 10am - 10pm\nWednesday: 10am - 10pm\nThursday: 10am - 10pm\nFriday: 10am - 10pm\nSaturday: 10am - 10pm\nSunday: 10am - 10pm",
     "category": [
       "韩国餐"
     ],
@@ -7578,11 +7579,11 @@ export const initialRestaurants = [
     "id": 290,
     "area": "Indahpura",
     "name": "Jollibee",
-    "name_en": "Jollibee",
+    "name_en": "",
     "intro_zh": "享誉全球的菲律宾快餐品牌，以其酥脆多汁的Chickenjoy炸鸡和独特的Jolly Spaghetti意大利面闻名。甜咸口味的意面搭配热狗片，深受喜爱。",
     "intro_en": "Globally renowned Filipino fast food brand, famous for its crispy and juicy Chickenjoy fried chicken and unique Jolly Spaghetti. The sweet and savory spaghetti with hot dog slices is a crowd favorite.",
     "address": "88, Jln SME 3, Bandar Indahpura, 81000 Kulai, Johor Darul Ta'zim",
-    "opening_hours": "10 am–11 pm",
+    "opening_hours": "Monday: 10am - 11pm\nTuesday: 10am - 11pm\nWednesday: 10am - 11pm\nThursday: 10am - 11pm\nFriday: 10am - 11pm\nSaturday: 10am - 11pm\nSunday: 10am - 11pm",
     "category": [
       "快餐"
     ],
@@ -7617,7 +7618,7 @@ export const initialRestaurants = [
       "Cafe"
     ],
     "rating": 0,
-    "image": "https://img2.cdn.91app.com.my/webapi/images/t/512/512/ShopIcon/200129/0/01241336",
+    "image": "https://scontent.fmkz1-1.fna.fbcdn.net/v/t39.30808-6/284823391_1922054301325602_7832913948863569527_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=6ee11a&_nc_ohc=XEnHWDDLA7EQ7kNvwE5AmXF&_nc_oc=Adm3_mgfILcVihdhhAz4oPaUUbxdjlc6x0h5Ji1J4Vm4EemgZiQwaZTKum4nuLzOyPY&_nc_zt=23&_nc_ht=scontent.fmkz1-1.fna&_nc_gid=urQ3v_qW8QvIxUGiw2ySvA&oh=00_AfrY58WVCt5A6usOaSkqLAAP2Y076UqrUszTiq7eRk8ZPA&oe=697BEA62",
     "subStalls": [],
     "price_range": "RM 10-20",
     "menu_link": "",
@@ -7671,7 +7672,7 @@ export const initialRestaurants = [
       "Cafe"
     ],
     "rating": 0,
-    "image": "https://www.madamkwans.com.my/images/madamkwan-logo.png",
+    "image": "https://scontent.fmkz1-2.fna.fbcdn.net/v/t39.30808-6/476876116_8913801565412037_5198401098019856791_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=a5f93a&_nc_ohc=chj6vJvZa7AQ7kNvwE3VDax&_nc_oc=Adl3HxEZ4cKY0oOzY7cfCwFIdqLHj_T3D-ds1Wqd5j7b5X44ELVhQ2Vh-aUl-y3IQ8o&_nc_zt=23&_nc_ht=scontent.fmkz1-2.fna&_nc_gid=j2bK7DkqZfh_05oBEWGcpw&oh=00_AfoNk0iiFPE-rXXWOkn5T_k8h261gV8yXeUlYL-QJhJ-zg&oe=697C0764",
     "subStalls": [],
     "price_range": "RM 10-20",
     "menu_link": "",
@@ -7685,11 +7686,11 @@ export const initialRestaurants = [
   {
     "id": 294,
     "name": "DÔME",
-    "name_en": "DÔME Café",
+    "name_en": "",
     "intro_zh": "源自澳洲的高端咖啡厅品牌，提供优质咖啡和多样化的西式及亚洲风味餐点。环境优雅舒适，是享受早午餐或下午茶的理想场所。",
     "intro_en": "A premium café brand from Australia, offering quality coffee and a diverse range of Western and Asian meals. With an elegant and comfortable environment, it's an ideal place for brunch or afternoon tea.",
     "address": "Suite No. 633, Johor Premium Outlets, 81000, Johor Darul Ta'zim",
-    "opening_hours": "10 am–10 pm",
+    "opening_hours": "Monday: 10am - 10pm\nTuesday: 10am - 10pm\nWednesday: 10am - 10pm\nThursday: 10am - 10pm\nFriday: 10am - 10pm\nSaturday: 10am - 10pm\nSunday: 10am - 10pm",
     "category": [
       "西餐",
       "Cafe"
@@ -7756,7 +7757,7 @@ export const initialRestaurants = [
       "Cafe"
     ],
     "rating": 0,
-    "image": "https://www.dubuyo.com/images/find/dubuyo-logo-location.jpg",
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRygsabvojFh1cKZ2OKLOdwQlTi3uQDvm1smw&s",
     "subStalls": [],
     "price_range": "RM 10-20",
     "menu_link": "",
@@ -7771,7 +7772,7 @@ export const initialRestaurants = [
     "id": 297,
     "area": "",
     "name": "Godiva Cafe",
-    "name_en": "Godiva Café",
+    "name_en": "",
     "intro_zh": "享誉世界的比利时皇室御用巧克力品牌，提供顶级巧克力、香浓的软雪糕和特制巧克力饮品，是巧克力爱好者的奢华享受。",
     "intro_en": "World-renowned Belgian royal chocolate brand, offering premium chocolates, rich soft serve, and signature chocolate drinks. A luxurious treat for chocolate lovers.",
     "address": "Johor Premium Outlets, Suite 238 01, Indahpura, 81000 Johor Bahru, Johor",
@@ -7825,11 +7826,11 @@ export const initialRestaurants = [
     "id": 299,
     "area": "Indahpura",
     "name": "Asam Pedas By D Laksa",
-    "name_en": "Asam Pedas By D Laksa",
+    "name_en": "",
     "intro_zh": "D Laksa旗下的新概念，主打酸辣开胃的Asam Pedas。汤头浓郁辛辣，搭配新鲜鱼肉或海鲜，让人胃口大开。",
     "intro_en": "A new concept by D Laksa, specializing in appetizing Asam Pedas. The broth is rich and spicy, served with fresh fish or seafood, sure to whet your appetite.",
     "address": "Stall No. 12, Premium Outlets, Johor Premium Outlets, Jalan, Indahpura, 81000 Kulai, Johor Darul Ta'zim",
-    "opening_hours": "10 am–10 pm",
+    "opening_hours": "Monday: 10am - 10pm\nTuesday: 10am - 10pm\nWednesday: 10am - 10pm\nThursday: 10am - 10pm\nFriday: 10am - 10pm\nSaturday: 10am - 10pm\nSunday: 10am - 10pm",
     "category": [
       "粉类"
     ],
@@ -7852,11 +7853,11 @@ export const initialRestaurants = [
     "id": 300,
     "area": "Indahpura",
     "name": "D Laksa JPO",
-    "name_en": "D Laksa",
+    "name_en": "",
     "intro_zh": "专注于提供正宗槟城亚参叻沙（Asam Laksa）的连锁品牌。酸辣浓郁的鱼汤底搭配Q弹的赖粉，味道地道，方便快捷。",
     "intro_en": "A chain brand specializing in authentic Penang Asam Laksa. The rich and spicy fish broth paired with chewy noodles offers an authentic taste that is convenient and quick.",
     "address": "Stall No. 11, Premium Outlets, Johor Premium Outlets, Jalan, Indahpura, 81000 Kulai, Johor Darul Ta'zim",
-    "opening_hours": "10 am–10 pm",
+    "opening_hours": "Monday: 10am - 10pm\nTuesday: 10am - 10pm\nWednesday: 10am - 10pm\nThursday: 10am - 10pm\nFriday: 10am - 10pm\nSaturday: 10am - 10pm\nSunday: 10am - 10pm",
     "category": [
       "粉类"
     ],
@@ -7945,7 +7946,7 @@ export const initialRestaurants = [
       "中餐"
     ],
     "rating": 0,
-    "image": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI2MDAiIGhlaWdodD0iNDAwIiB2aWV3Qm94PSIwIDAgNjAwIDQwMCI+PHJlY3QgZmlsbD0iIzFlMWUxZSIgd2lkdGg9IjYwMCIgaGVpZ2h0PSI0MDAiLz48dGV4dCBmaWxsPSIjZmZmZmZmIiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIzMCIgZHk9IjEwLjUiIGZvbnQtd2VpZ2h0PSJib2xkIiB4PSI1MCUiIHk9IjUwJSIgdGV4dC1hbmNob3I9Im1pZGRsZSI+S3VsYWkgRm9vZDwvdGV4dD48L3N2Zz4=",
+    "image": "https://i.ibb.co/gMCt4cKv/image.jpg",
     "subStalls": [],
     "price_range": "RM 10-30",
     "menu_link": "",
@@ -7989,7 +7990,7 @@ export const initialRestaurants = [
     "name": "欢乐园红豆冰",
     "name_en": "Happy Land Ice Kacang",
     "address": "Jalan Pinang, Taman Kota Kulai, 81000 Kulai, Johor",
-    "opening_hours": "11am-4:30pm",
+    "opening_hours": "Monday: 11am - 4:30pm\nTuesday: 11am - 4:30pm\nWednesday: 11am - 4:30pm\nThursday: 11am - 4:30pm\nFriday: 11am - 4:30pm\nSaturday: 11am - 4:30pm\nSunday: 11am - 4:30pm",
     "intro_zh": "古来传奇红豆冰店，营业超过20年。招牌红豆冰淋上浓郁的巧克力酱或草莓酱，搭配炸鸡排和Rojak，是古来人的集体回忆。",
     "intro_en": "A legendary Ice Kacang shop in Kulai, operating for over 20 years. Signature Ice Kacang topped with rich chocolate or strawberry sauce, paired with fried chicken chop and Rojak. A collective memory for Kulai people.",
     "category": [
@@ -7997,11 +7998,10 @@ export const initialRestaurants = [
       "小吃"
     ],
     "categories": [
-      "甜点",
-      "小吃"
+      "蛋糕甜点"
     ],
     "rating": 0,
-    "image": "https://lh3.googleusercontent.com/p/AF1QipN3y1l5y1y1y1y1y1y1y1y1y1y1y1y1y1y1y1y1",
+    "image": "https://cdn.prod.website-files.com/64c4be5d67694090d91bc447/64d115403af2016f22eb5b25_batch_DSC04776.jpeg",
     "subStalls": [],
     "price_range": "RM 5-15",
     "menu_link": "",
@@ -8018,17 +8018,17 @@ export const initialRestaurants = [
     "name": "瑞记海南鸡饭",
     "name_en": "Swee Kee Hainanese Chicken Rice",
     "address": "98, Jalan Bintang, Taman Bintang, 81400 Senai, Johor",
-    "opening_hours": "8am-5pm",
+    "opening_hours": "Monday: 8am - 5pm\nTuesday: 8am - 5pm\nWednesday: 8am - 5pm\nThursday: 8am - 5pm\nFriday: 8am - 5pm\nSaturday: 8am - 5pm\nSunday: 8am - 5pm",
     "intro_zh": "正宗海南鸡饭，源自新加坡瑞记传统。白斩鸡皮滑肉嫩，烧鸡香气四溢。饭粒粒分明，充满鸡油香。配上特制辣椒酱和姜蓉，味道一流。",
     "intro_en": "Authentic Hainanese Chicken Rice, originating from the traditional Swee Kee in Singapore. Poached chicken is smooth and tender, while roasted chicken is aromatic. Rice is fragrant with chicken oil. Served with special chili sauce and ginger paste, the taste is first-class.",
     "category": [
       "鸡饭"
     ],
     "categories": [
-      "鸡饭"
+      "饭类"
     ],
     "rating": 0,
-    "image": "https://lh3.googleusercontent.com/p/AF1QipN3y1l5y1y1y1y1y1y1y1y1y1y1y1y1y1y1y1y1",
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQTbhAruBhUC9rrLc-Eti1l1FGyj5c-OfpOLQ&s",
     "subStalls": [],
     "price_range": "RM 10-20",
     "menu_link": "",
