@@ -1,33 +1,13 @@
 import React, { useState, useRef, useEffect } from 'react';
 import { Send, Bot, Sparkles, X, User, MapPin } from 'lucide-react';
-import { checkOpenStatus } from '../utils/businessHours';
+import { getGeminiResponse } from '../services/chatService';
 
-const KEYWORD_MAPPING = [
-  // 身体不适 / 健康需求
-  { keywords: ["痛", "病", "不舒服", "咳", "养生", "喉咙"], targetTags: ["清淡", "粥", "汤", "补身"] },
-  { keywords: ["孕", "怀", "大肚子"], targetTags: ["孕妇友善", "健康", "有冷气"] },
-  
-  // 人群与环境
-  { keywords: ["孩子", "小孩", "宝宝", "儿"], targetTags: ["适合小孩", "不辣", "有冷气"] },
-  { keywords: ["老", "长辈", "牙"], targetTags: ["适合老人", "清淡", "软"] },
-  { keywords: ["热", "晒", "凉快", "冷气"], targetTags: ["有冷气"] },
-  
-  // 价格与口味
-  { keywords: ["穷", "没钱", "便宜", "抵", "经济"], targetTags: ["平价"] },
-  { keywords: ["干", "捞"], targetTags: ["干", "干捞"] },
-  { keywords: ["汤", "水"], targetTags: ["汤", "热"] },
-  { keywords: ["素", "斋"], targetTags: ["素食", "健康"] },
-  { keywords: ["肉骨茶", "bak kut teh", "bkt"], targetTags: ["肉骨茶", "汤"] },
-  { keywords: ["擂茶", "lei cha"], targetTags: ["客家菜", "健康"] },
-  { keywords: ["辣", "curry", "咖喱"], targetTags: ["重口味", "辣"] }
-];
-
-const AiFoodAssistant = ({ isOpen, onClose, restaurants }) => {
+const AiFoodAssistant = ({ isOpen, onClose, restaurants, onRestaurantClick }) => {
   const [messages, setMessages] = useState([
     { 
       id: 1, 
       type: 'bot', 
-      content: '你好！我是你的 AI 觅食助手。告诉我你的需求，比如“喉咙痛想吃点清淡的”或“带孩子去有冷气的地方”。' 
+      content: '你好！我是古来美食专家。告诉我你的需求，比如“喉咙痛想吃点清淡的”或“带孩子去有冷气的地方”。' 
     }
   ]);
   const [inputValue, setInputValue] = useState('');
@@ -44,6 +24,26 @@ const AiFoodAssistant = ({ isOpen, onClose, restaurants }) => {
     messagesEndRef.current?.scrollIntoView({ behavior: "smooth" });
   };
 
+  const parseResponse = (text) => {
+    // Extract restaurant IDs from format [[ID:Name]]
+    const regex = /\[\[(\d+):([^\]]+)\]\]/g;
+    let match;
+    const cards = [];
+    const cleanText = text.replace(regex, (match, id, name) => {
+        const restaurant = restaurants.find(r => r.id === parseInt(id));
+        if (restaurant) {
+            if (!cards.find(c => c.id === restaurant.id)) {
+                cards.push(restaurant);
+            }
+            // Make clickable link
+            return `<button class="text-blue-400 hover:underline font-medium" data-restaurant-id="${id}">${name}</button>`;
+        }
+        return name;
+    });
+
+    return { cleanText, cards };
+  };
+
   const handleSend = async () => {
     if (!inputValue.trim()) return;
 
@@ -51,79 +51,47 @@ const AiFoodAssistant = ({ isOpen, onClose, restaurants }) => {
     setInputValue('');
     
     // Add user message
-    setMessages(prev => [...prev, { id: Date.now(), type: 'user', content: userText }]);
+    const newMessages = [...messages, { id: Date.now(), type: 'user', content: userText }];
+    setMessages(newMessages);
     setIsTyping(true);
 
-    // Simulate thinking delay
-    setTimeout(() => {
-      const results = processQuery(userText);
-      
-      const botResponse = {
-        id: Date.now() + 1,
-        type: 'bot',
-        content: results.length > 0 
-          ? `为你找到了 ${results.length} 家符合“${userText}”的餐厅：` 
-          : `抱歉，没有找到完全符合“${userText}”的推荐。试试换个说法？`,
-        cards: results.slice(0, 5) // Limit to top 5
-      };
+    // Call Gemini API
+    const chatHistory = messages.slice(1).map(msg => ({
+        role: msg.type,
+        content: msg.content // Note: We are sending raw content, ideally should send plain text without HTML
+    }));
 
-      setMessages(prev => [...prev, botResponse]);
-      setIsTyping(false);
-    }, 800);
+    const result = await getGeminiResponse(userText, chatHistory);
+    
+    setIsTyping(false);
+
+    if (result.error) {
+        setMessages(prev => [...prev, {
+            id: Date.now() + 1,
+            type: 'bot',
+            content: result.text,
+            isError: true
+        }]);
+    } else {
+        const { cleanText, cards } = parseResponse(result.text);
+        setMessages(prev => [...prev, {
+            id: Date.now() + 1,
+            type: 'bot',
+            content: cleanText,
+            cards: cards
+        }]);
+    }
   };
 
-  const processQuery = (text) => {
-    const targetTags = new Set();
-    
-    // Pre-process text: Remove common conversational fillers for better fallback matching
-    // But keep them for keyword mapping as mappings might rely on them (though current ones don't)
-    const cleanText = text.replace(/想吃|我要吃|去哪里吃|有没有|推荐|介绍|什么/g, '').trim();
-
-    // 1. Keyword Matching (Use original text to capture nuances if any)
-    KEYWORD_MAPPING.forEach(rule => {
-      if (rule.keywords.some(k => text.toLowerCase().includes(k))) {
-        rule.targetTags.forEach(t => targetTags.add(t));
-      }
-    });
-
-    // 2. Filter Restaurants
-    let filtered = restaurants.filter(r => {
-      // If no tags inferred, fall back to name/category search using CLEANED text
-      if (targetTags.size === 0) {
-        if (!cleanText) return false; // Avoid matching empty string
-        return (
-            r.name.toLowerCase().includes(cleanText.toLowerCase()) || 
-            (r.category && r.category.some(c => c.toLowerCase().includes(cleanText.toLowerCase()))) ||
-            (r.tags && r.tags.some(t => t.toLowerCase().includes(cleanText.toLowerCase())))
-        );
-      }
-
-      // Check intersection of restaurant tags with target tags
-      // We look for ANY match currently
-      const rTags = r.tags || [];
-      const hasTagMatch = rTags.some(t => targetTags.has(t));
-      
-      // Also allow direct name match even if tags exist (using cleaned text)
-      // e.g. User asks for "Spicy" (Tag) but specifically "Nasi Lemak" (Name)
-      // This is a simple OR logic. For complex AND logic, we'd need more steps.
-      // Here we assume if tag matches, it's good. If name matches cleanText, it's also good.
-      const hasNameMatch = cleanText && r.name.toLowerCase().includes(cleanText.toLowerCase());
-
-      return hasTagMatch || hasNameMatch;
-    });
-
-    // 3. Simple Ranking (Optional: prioritize those with MORE matching tags)
-    if (targetTags.size > 0) {
-        filtered.sort((a, b) => {
-            const aTags = a.tags || [];
-            const bTags = b.tags || [];
-            const aCount = aTags.filter(t => targetTags.has(t)).length;
-            const bCount = bTags.filter(t => targetTags.has(t)).length;
-            return bCount - aCount;
-        });
+  const handleContentClick = (e) => {
+    const btn = e.target.closest('button[data-restaurant-id]');
+    if (btn) {
+        const id = parseInt(btn.dataset.restaurantId);
+        const restaurant = restaurants.find(r => r.id === id);
+        if (restaurant && onRestaurantClick) {
+            onRestaurantClick(restaurant);
+        }
     }
-
-    return filtered;
   };
 
   if (!isOpen) return null;
@@ -139,10 +107,10 @@ const AiFoodAssistant = ({ isOpen, onClose, restaurants }) => {
               <Sparkles size={16} className="text-white" />
             </div>
             <div>
-              <h3 className="font-bold text-white text-sm">AI 觅食助手</h3>
+              <h3 className="font-bold text-white text-sm">古来美食智能助手</h3>
               <p className="text-xs text-green-400 flex items-center gap-1">
                 <span className="w-1.5 h-1.5 rounded-full bg-green-400 animate-pulse"></span>
-                Online
+                Powered by Gemini
               </p>
             </div>
           </div>
@@ -165,19 +133,27 @@ const AiFoodAssistant = ({ isOpen, onClose, restaurants }) => {
 
                 {/* Bubble */}
                 <div className="flex flex-col gap-2">
-                    <div className={`px-4 py-2.5 rounded-2xl text-sm leading-relaxed ${
-                    msg.type === 'user' 
-                        ? 'bg-blue-600 text-white rounded-tr-sm' 
-                        : 'bg-[#2a2a2a] text-gray-200 rounded-tl-sm border border-gray-700'
-                    }`}>
-                    {msg.content}
+                    <div 
+                        className={`px-4 py-2.5 rounded-2xl text-sm leading-relaxed ${
+                        msg.type === 'user' 
+                            ? 'bg-blue-600 text-white rounded-tr-sm' 
+                            : 'bg-[#2a2a2a] text-gray-200 rounded-tl-sm border border-gray-700'
+                        } ${msg.isError ? 'border-red-500/50 bg-red-900/20 text-red-200' : ''}`}
+                        onClick={msg.type === 'bot' ? handleContentClick : undefined}
+                        dangerouslySetInnerHTML={msg.type === 'bot' ? { __html: msg.content } : undefined}
+                    >
+                        {msg.type === 'user' ? msg.content : undefined}
                     </div>
 
                     {/* Restaurant Cards */}
                     {msg.cards && (
                         <div className="flex flex-col gap-2 mt-1">
                             {msg.cards.map(r => (
-                                <div key={r.id} className="bg-[#1e1e1e] border border-gray-700 rounded-xl p-3 flex gap-3 hover:border-gray-500 transition-colors cursor-pointer group">
+                                <div 
+                                    key={r.id} 
+                                    onClick={() => onRestaurantClick && onRestaurantClick(r)}
+                                    className="bg-[#1e1e1e] border border-gray-700 rounded-xl p-3 flex gap-3 hover:border-gray-500 transition-colors cursor-pointer group"
+                                >
                                     <div className="w-16 h-16 rounded-lg bg-gray-800 overflow-hidden shrink-0">
                                         <img src={r.image} alt={r.name} className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" />
                                     </div>
@@ -220,6 +196,7 @@ const AiFoodAssistant = ({ isOpen, onClose, restaurants }) => {
                     <span className="w-1.5 h-1.5 bg-gray-400 rounded-full animate-bounce delay-100"></span>
                     <span className="w-1.5 h-1.5 bg-gray-400 rounded-full animate-bounce delay-200"></span>
                  </div>
+                 <span className="text-xs text-gray-500 self-center">AI 正在思考...</span>
                </div>
             </div>
           )}
@@ -236,12 +213,12 @@ const AiFoodAssistant = ({ isOpen, onClose, restaurants }) => {
               type="text"
               value={inputValue}
               onChange={(e) => setInputValue(e.target.value)}
-              placeholder="试着输入：'今天喉咙痛想吃点清淡的' 或 '想找有冷气适合带小孩的地方'"
+              placeholder="问问 AI：'今天喉咙痛吃什么？' 或 '推荐个适合聚餐的地方'"
               className="flex-1 bg-[#1a1a1a] text-white text-sm px-4 py-3 rounded-xl border border-gray-700 focus:border-blue-500 focus:outline-none placeholder:text-gray-500"
             />
             <button 
               type="submit"
-              disabled={!inputValue.trim()}
+              disabled={!inputValue.trim() || isTyping}
               className="bg-blue-600 hover:bg-blue-500 disabled:opacity-50 disabled:cursor-not-allowed text-white p-3 rounded-xl transition-colors"
             >
               <Send size={18} />

@@ -38,7 +38,6 @@ function App() {
       window.location.reload();
     }
   }, []);
-  const [lastSaved, setLastSaved] = useState(null);
   const [showAiAssistant, setShowAiAssistant] = useState(false);
   
   // Area Overrides State (for manual fixes)
@@ -960,6 +959,25 @@ function App() {
         
       </div>
 
+      {/* AI Assistant Floating Button */}
+      <button 
+        onClick={() => setShowAiAssistant(true)}
+        className="fixed bottom-6 right-6 z-40 bg-gradient-to-tr from-purple-600 to-blue-600 text-white p-4 rounded-full shadow-2xl hover:scale-105 hover:shadow-purple-500/50 transition-all duration-300 group flex items-center gap-2 border border-white/20"
+      >
+        <Sparkles size={24} className="group-hover:rotate-12 transition-transform" />
+        <span className="max-w-0 overflow-hidden group-hover:max-w-xs transition-all duration-500 ease-in-out whitespace-nowrap text-sm font-bold">
+            {t('ask_ai', 'AI 助手')}
+        </span>
+      </button>
+
+      {/* AI Assistant Modal */}
+      <AiFoodAssistant 
+        isOpen={showAiAssistant} 
+        onClose={() => setShowAiAssistant(false)}
+        restaurants={restaurants}
+        onRestaurantClick={handleRestaurantClick}
+      />
+
       <Footer onAdminLogin={() => setShowLoginModal(true)} />
 
       {/* Result Modal */}
@@ -989,12 +1007,6 @@ function App() {
       <AdminAnalytics 
         isOpen={showAnalyticsModal} 
         onClose={() => setShowAnalyticsModal(false)}
-        restaurants={restaurants}
-      />
-
-      <AiFoodAssistant 
-        isOpen={showAiAssistant}
-        onClose={() => setShowAiAssistant(false)}
         restaurants={restaurants}
       />
 
