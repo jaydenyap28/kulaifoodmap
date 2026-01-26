@@ -21,7 +21,7 @@ export const initialRestaurants = [
       "饭类"
     ],
     "rating": 0,
-    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQNO2XTL1bq7hjVeewnmuJDeJGk6YZ5fxlFTg&s",
+    "image": "https://i.ibb.co/kg366nD9/image.avif",
     "subStalls": [],
     "categories": [
       "饭类"
@@ -253,7 +253,7 @@ export const initialRestaurants = [
       "粉类"
     ],
     "rating": 0,
-    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRYMakNRxwi5lB3t5wA7QRMO2qtvE6iKM6G-w&s",
+    "image": "https://i.ibb.co/5gDrDbfc/image.jpg",
     "subStalls": [],
     "categories": [
       "饭类",
@@ -477,7 +477,7 @@ export const initialRestaurants = [
       "点心"
     ],
     "rating": 0,
-    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQMG8VxhaVf4dqISSzTofH3QSsL2QLP0l478A&s",
+    "image": "https://i.ibb.co/99TTCtzz/image.jpg",
     "subStalls": [],
     "categories": [
       "点心"
@@ -537,7 +537,7 @@ export const initialRestaurants = [
       "马来餐"
     ],
     "rating": 0,
-    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRkM_ldySWHym5FFp6E7z3zenffGP8OgVytSg&s",
+    "image": "https://i.ibb.co/cSppDRmr/Yellow-Corner.webp",
     "subStalls": [],
     "categories": [
       "饭类",
@@ -599,7 +599,7 @@ export const initialRestaurants = [
       "饭类"
     ],
     "rating": 0,
-    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcShk8euASeRtNG_MhipsHfR_Xuigt41u3xweQ&s",
+    "image": "https://i.ibb.co/CpjRsykX/image.jpg",
     "subStalls": [],
     "categories": [
       "饭类"
@@ -631,7 +631,7 @@ export const initialRestaurants = [
       "煮炒海鲜楼"
     ],
     "rating": 0,
-    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSWej5secnyutIRdIqOXswrDMiJdueUkNnbdg&s",
+    "image": "https://i.ibb.co/Kj93NkPz/image.jpg",
     "subStalls": [],
     "categories": [
       "煮炒海鲜楼"
@@ -780,7 +780,7 @@ export const initialRestaurants = [
       "饭类"
     ],
     "rating": 0,
-    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQsFg70T5ra76FHb-stXBbIITFawLlbC9903A&s",
+    "image": "https://i.ibb.co/G3Jg7YbV/image.jpg",
     "subStalls": [],
     "categories": [
       "饭类"
@@ -846,7 +846,7 @@ export const initialRestaurants = [
       "粉类"
     ],
     "rating": 0,
-    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRJ3FxbB4v--RSsF9pYVP8H4U5SId25kgNPAQ&s",
+    "image": "https://i.ibb.co/Q7cPg3d8/image.jpg",
     "subStalls": [],
     "categories": [
       "饭类",
@@ -879,7 +879,7 @@ export const initialRestaurants = [
       "粉类"
     ],
     "rating": 0,
-    "image": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/16/2c/db/9d/photo5jpg.jpg?w=900&h=500&s=1",
+    "image": "https://i.ibb.co/7JqMSXYT/image.jpg",
     "subStalls": [],
     "categories": [
       "饭类",
@@ -1181,7 +1181,7 @@ export const initialRestaurants = [
       "Cafe"
     ],
     "rating": 0,
-    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSy2I0ccNJ26faGlXn2BEQx56Y1ScGGHifRcQ&s",
+    "image": "https://i.ibb.co/Jw6Cpvkv/Origin-Cafe.jpg",
     "subStalls": [],
     "price_range": "RM 10-20",
     "menu_link": "",
@@ -1212,7 +1212,7 @@ export const initialRestaurants = [
       "Cafe"
     ],
     "rating": 0,
-    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRLu4jOW6chZJk3cgFrpM83oRMbOExq_Ed-Wg&s",
+    "image": "https://i.ibb.co/8nTcrDK2/image.jpg",
     "subStalls": [],
     "price_range": "RM 10-20",
     "menu_link": "",
@@ -1242,7 +1242,7 @@ export const initialRestaurants = [
       "Cafe"
     ],
     "rating": 0,
-    "image": "https://cdn.prod.website-files.com/64c4be5d67694090d91bc447/64d1158e4c3995ce0b7caa6b_batch_DSC03113.jpeg",
+    "image": "https://i.ibb.co/1fbQKMHk/image.jpg",
     "subStalls": [],
     "price_range": "RM 10-20",
     "menu_link": "",
@@ -1272,7 +1272,7 @@ export const initialRestaurants = [
       "粉类"
     ],
     "rating": 0,
-    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTIJVhQtLRQVt_3UFnaTEGhtGCdvLWU-Ku2Eg&s",
+    "image": "https://i.ibb.co/ds98JK5c/image.jpg",
     "subStalls": [],
     "price_range": "RM 10-20",
     "menu_link": "",
@@ -1299,7 +1299,7 @@ export const initialRestaurants = [
       "粉类"
     ],
     "rating": 0,
-    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQNuLV9kjFLOsQd2BLAkOoWYms9r5x6DDjorQ&s",
+    "image": "https://i.ibb.co/Q3P0y1d9/image.jpg",
     "subStalls": [],
     "price_range": "RM 10-20",
     "menu_link": "",
@@ -1362,7 +1362,7 @@ export const initialRestaurants = [
       "马来餐"
     ],
     "rating": 0,
-    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcShg4OgChUqDPZeMZ4toRstkWbkHDGoeLdN9g&s",
+    "image": "https://i.ibb.co/60LQM3GH/Street-Crew.jpg",
     "subStalls": [],
     "price_range": "RM 10-20",
     "menu_link": "",
@@ -1393,7 +1393,7 @@ export const initialRestaurants = [
       "煮炒海鲜楼"
     ],
     "rating": 0,
-    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ-efPdFDpgIrs6_t_pIDTP1MbprbBk2BOAqA&s",
+    "image": "https://i.ibb.co/mrDQL6Kb/image.jpg",
     "subStalls": [],
     "price_range": "RM 10-20",
     "menu_link": "",
@@ -1440,7 +1440,7 @@ export const initialRestaurants = [
   {
     "id": 46,
     "area": "Indahpura",
-    "name": "21苦瓜汤",
+    "name": "21苦瓜汤 (Indahpura)",
     "name_en": "",
     "address": "75, Jln. Kenanga 29/11, Bandar Indahpura, 81000 Kulai, Johor Darul Ta'zim",
     "opening_hours": "Monday: Closed\nTuesday: 10am - 10pm\nWednesday: 10am - 10pm\nThursday: 10am - 10pm\nFriday: 10am - 10pm\nSaturday: 10am - 10pm\nSunday: 10am - 10pm",
@@ -1484,7 +1484,7 @@ export const initialRestaurants = [
       "蛋糕甜点"
     ],
     "rating": 0,
-    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTnwCyYtGfJXEDStPcgyisdTCbfJZRjJhK-UQ&s",
+    "image": "https://i.ibb.co/gLhM04Cc/My-Kori-Dessert-Cafe.jpg",
     "subStalls": [],
     "price_range": "RM 10-20",
     "menu_link": "",
@@ -1515,7 +1515,7 @@ export const initialRestaurants = [
       "粉类"
     ],
     "rating": 0,
-    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRARTIRvTyRsVL01jnIAoHVo0G3ufbDC_bIpw&s",
+    "image": "https://i.ibb.co/Kzh0JtJJ/image.jpg",
     "subStalls": [],
     "price_range": "RM 10-20",
     "menu_link": "",
@@ -1545,7 +1545,7 @@ export const initialRestaurants = [
       "马来餐"
     ],
     "rating": 0,
-    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQhVohFR75Wi7yR34qu1rZsBeCU56V3nXH3IQ&s",
+    "image": "https://i.ibb.co/B534LYzt/Kopi-Saigon-Kulai.jpg",
     "subStalls": [],
     "price_range": "RM 10-20",
     "menu_link": "",
@@ -1575,7 +1575,7 @@ export const initialRestaurants = [
       "宴会酒楼"
     ],
     "rating": 0,
-    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS8fvkRcj-Md46F3rUeyEWqtiBBPz-KfS24qw&s",
+    "image": "https://i.ibb.co/m56QrQfq/image.jpg",
     "subStalls": [],
     "price_range": "RM 10-20",
     "menu_link": "",
@@ -1634,7 +1634,7 @@ export const initialRestaurants = [
       "西餐"
     ],
     "rating": 0,
-    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSWi97aeUjiDq1By_SBjOyetGNI2vbBtqQUIQ&s",
+    "image": "https://i.ibb.co/gFyLtg9V/UFB-Union-Fashion-Bar-Balcony.jpg",
     "subStalls": [],
     "price_range": "RM 10-20",
     "menu_link": "",
@@ -1664,7 +1664,7 @@ export const initialRestaurants = [
       "西餐"
     ],
     "rating": 0,
-    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQfwoRaAah5wmYM1MuWVon7bMKQZoMXOAbFdA&s",
+    "image": "https://i.ibb.co/KcL7mvw4/Broovies-Cafe.jpg",
     "subStalls": [],
     "price_range": "RM 10-20",
     "menu_link": "",
@@ -1695,7 +1695,7 @@ export const initialRestaurants = [
       "宴会酒楼"
     ],
     "rating": 0,
-    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRC6FiUIwC5Zfq_PVwJ-IgsB_6H2STvR-75iQ&s",
+    "image": "https://i.ibb.co/7dcZF2TB/image.jpg",
     "subStalls": [],
     "price_range": "RM 10-20",
     "menu_link": "",
@@ -1752,7 +1752,7 @@ export const initialRestaurants = [
       "韩国餐"
     ],
     "rating": 0,
-    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTfg6Mgw9iFmsLHkrQ2Rb_VYOUVXgf6GXnu9A&s",
+    "image": "https://i.ibb.co/PZHH69s0/Jang-Won-Korean-BBQ-Restaurant.jpg",
     "subStalls": [],
     "price_range": "RM 10-20",
     "menu_link": "",
@@ -1781,7 +1781,7 @@ export const initialRestaurants = [
       "日本餐"
     ],
     "rating": 0,
-    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRtiOeXD82aqy0a393ZSXkJ4CQTs0raL5wi1g&s",
+    "image": "https://i.ibb.co/8gDfnZRs/image.jpg",
     "subStalls": [],
     "price_range": "RM 10-20",
     "menu_link": "",
@@ -1796,7 +1796,7 @@ export const initialRestaurants = [
   {
     "id": 58,
     "area": "Indahpura",
-    "name": "3rd Junction Cafe",
+    "name": "3rd Junction Cafe (Indahpura)",
     "name_en": "",
     "address": "181, Jalan Kenanga 29/4, Bandar Indahpura, 81000 Kulai, Johor Darul Ta'zim",
     "opening_hours": "Monday: 12pm - 12am\nTuesday: 12pm - 12am\nWednesday: 12pm - 12am\nThursday: 12pm - 12am\nFriday: 12pm - 12am\nSaturday: 12pm - 12am\nSunday: 12pm - 12am",
@@ -1809,7 +1809,7 @@ export const initialRestaurants = [
       "Cafe"
     ],
     "rating": 0,
-    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQJjrAd2HpSgD93Bza-9m1gmnu0lBW5iJYLKw&s",
+    "image": "https://i.ibb.co/zWDScfn2/3rd-Junction-Cafe.jpg",
     "subStalls": [],
     "price_range": "RM 10-20",
     "menu_link": "",
@@ -1831,13 +1831,15 @@ export const initialRestaurants = [
     "name_en": "Lanxi",
     "address": "234, Jln Kenanga 29/8, Taman Indahpura, 81000 Kulai, Johor",
     "opening_hours": "Monday: 11am - 11am\nTuesday: 11am - 11am\nWednesday: 11am - 11am\nThursday: 11am - 11am\nFriday: 11am - 11am\nSaturday: 11am - 11am\nSunday: 11am - 11am",
-    "intro_zh": "环境优美的西餐厅，提供精致的西式料理和特调饮品。氛围浪漫舒适，适合情侣约会和庆祝特别节日。",
-    "intro_en": "A beautiful Western restaurant offering exquisite Western cuisine and specialty drinks. The romantic and cozy atmosphere makes it perfect for dates and celebrating special occasions.",
+    "intro_zh": "古来非常受年轻人欢迎的现代奶茶休闲店。这里不仅有各式高颜值的特调饮品和奶茶，其炸得酥脆多汁的招牌鸡扒更是惊喜，是下午茶、晚餐或同学聚会的绝佳去处，环境简约舒适。",
+    "intro_en": "A popular modern bubble tea and leisure cafe in Kulai. Known for its stylish specialty drinks and surprisingly delicious signature chicken chop. A great hangout spot for afternoon tea or casual dinner with friends.",
     "category": [
-      "西餐"
+      "西餐",
+      "饮品"
     ],
     "categories": [
-      "西餐"
+      "西餐",
+      "饮品"
     ],
     "rating": 0,
     "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSLn6wKiifnmUY6mlBBJxnj_CqIdr_tg6FNCA&s",
@@ -1851,8 +1853,13 @@ export const initialRestaurants = [
     "manualStatus": "auto",
     "branches": [],
     "tags": [
-      "有冷气",
-      "适合聚餐"
+      "奶茶",
+      "特调饮品",
+      "炸鸡扒",
+      "西餐小吃",
+      "年轻人聚会",
+      "下午茶",
+      "舒适环境"
     ]
   },
   {
@@ -1963,7 +1970,7 @@ export const initialRestaurants = [
       "饮品"
     ],
     "rating": 0,
-    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT7SFJ0O_CwZxL7d5FJl5Adn5vtTz5Wb2uzSg&s",
+    "image": "https://i.ibb.co/4nwFmctV/image.png",
     "subStalls": [],
     "price_range": "RM 10-20",
     "menu_link": "",
@@ -1990,7 +1997,7 @@ export const initialRestaurants = [
       "咖啡店"
     ],
     "rating": 0,
-    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSJY07oAnxu9m940HiImKxSDGKyK_MAUJqCeQ&s",
+    "image": "https://i.ibb.co/60CtjfNr/image.jpg",
     "subStalls": [],
     "price_range": "RM 10-20",
     "menu_link": "",
@@ -2050,7 +2057,7 @@ export const initialRestaurants = [
       "火锅烧烤"
     ],
     "rating": 0,
-    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQDM9OTOxBLd097rDvNZza3NP0GuGxtB3oxXg&s",
+    "image": "https://i.ibb.co/sJvvbVxx/image.jpg",
     "subStalls": [],
     "price_range": "RM 10-20",
     "menu_link": "",
@@ -2142,7 +2149,7 @@ export const initialRestaurants = [
       "粉类"
     ],
     "rating": 0,
-    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRYTvHDmxx7X0GukhRyd0mwUBoRG2LRTpJHUQ&s",
+    "image": "https://i.ibb.co/DfG7hpDz/image.jpg",
     "subStalls": [],
     "price_range": "RM 10-20",
     "menu_link": "",
@@ -2171,7 +2178,7 @@ export const initialRestaurants = [
       "粉类"
     ],
     "rating": 0,
-    "image": "https://cdn.prod.website-files.com/64c4be5d67694090d91bc447/64d11533fb4da9d2ffd6c874_batch_DSC06522.jpeg",
+    "image": "https://i.ibb.co/Lz0VvR6M/image.jpg",
     "subStalls": [],
     "price_range": "RM 10-20",
     "menu_link": "",
@@ -2262,7 +2269,7 @@ export const initialRestaurants = [
       "粉类"
     ],
     "rating": 0,
-    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRDiehFT54PKwk8hAclRgdeydiI81J6xRo8qw&s",
+    "image": "https://i.ibb.co/N2pr5RcX/image.jpg",
     "subStalls": [],
     "price_range": "RM 10-20",
     "menu_link": "",
@@ -2384,7 +2391,7 @@ export const initialRestaurants = [
       "粉类"
     ],
     "rating": 0,
-    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQiU65eYbB0UsKJkYXDM0N66Kts-oU_aEbCOA&s",
+    "image": "https://i.ibb.co/ch8gg5QW/image.jpg",
     "subStalls": [],
     "price_range": "RM 10-20",
     "menu_link": "",
@@ -2533,7 +2540,7 @@ export const initialRestaurants = [
       "咖啡店"
     ],
     "rating": 0,
-    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTbm2yPv_XWiLnKuKOBslTX45xHnAPkhyPctQ&s",
+    "image": "https://i.ibb.co/d4X0pBqs/image.jpg",
     "subStalls": [],
     "price_range": "RM 10-20",
     "menu_link": "",
@@ -2619,7 +2626,7 @@ export const initialRestaurants = [
       "Cafe"
     ],
     "rating": 0,
-    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSz6k991hUfT9h3-l9WjvuXQQSRMrJjlTT2Eg&s",
+    "image": "https://i.ibb.co/j9WhgjSv/Chicken-Delights.png",
     "subStalls": [],
     "price_range": "RM 10-20",
     "menu_link": "",
@@ -2651,7 +2658,7 @@ export const initialRestaurants = [
       "咖啡店"
     ],
     "rating": 0,
-    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR0c7YXxcUsg46OQ0V5Lh94zHKMaH_ce6mBjw&s",
+    "image": "https://i.ibb.co/1YZ4fxrn/Kopiloco.jpg",
     "subStalls": [],
     "price_range": "RM 10-20",
     "menu_link": "",
@@ -2681,7 +2688,7 @@ export const initialRestaurants = [
       "粉类"
     ],
     "rating": 0,
-    "image": "https://cdn.prod.website-files.com/64c4be5d67694090d91bc447/668ac4d66c4ff020010c168a_DSC04757-Edit.jpg",
+    "image": "https://i.ibb.co/YTdrQmKB/image.jpg",
     "subStalls": [],
     "price_range": "RM 10-20",
     "menu_link": "",
@@ -2740,7 +2747,7 @@ export const initialRestaurants = [
       "西餐"
     ],
     "rating": 0,
-    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRPAifMqu-zwH_S4SvJ__mlQ--4rQDGDtZs6Q&s",
+    "image": "https://i.ibb.co/8DQZGqQt/La-Primeur.jpg",
     "subStalls": [],
     "price_range": "RM 10-20",
     "menu_link": "",
@@ -2771,7 +2778,7 @@ export const initialRestaurants = [
       "西餐"
     ],
     "rating": 0,
-    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQCsahTSsfd-tvYTDH9g9nk_j_lkwgVjgElQw&s",
+    "image": "https://i.ibb.co/pBDCB7g9/The-Bierhaus.jpg",
     "subStalls": [],
     "price_range": "RM 10-20",
     "menu_link": "",
@@ -2895,7 +2902,7 @@ export const initialRestaurants = [
       "蛋糕甜点"
     ],
     "rating": 0,
-    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSHHPamuByKxQDmfbcFkkWlE-J98UL62VjkMQ&s",
+    "image": "https://i.ibb.co/CKwXcJN2/image.jpg",
     "subStalls": [],
     "price_range": "RM 10-20",
     "menu_link": "",
@@ -2923,7 +2930,7 @@ export const initialRestaurants = [
       "火锅烧烤"
     ],
     "rating": 0,
-    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSRkutDIDBFAI8R0gWf_ieaBIMGl9vJgP6b9w&s",
+    "image": "https://i.ibb.co/0R0CJyT1/image.jpg",
     "subStalls": [],
     "price_range": "RM 10-20",
     "menu_link": "",
@@ -2954,7 +2961,7 @@ export const initialRestaurants = [
       "Cafe"
     ],
     "rating": 0,
-    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTz5zOFvutjGUCQ9SF1bAnyilP1RkG4w8qNTw&s",
+    "image": "https://i.ibb.co/B5nh7ktp/image.png",
     "subStalls": [],
     "price_range": "RM 10-20",
     "menu_link": "",
@@ -3011,7 +3018,7 @@ export const initialRestaurants = [
       "粉类"
     ],
     "rating": 0,
-    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTYgtedTHc6hlZ37gZiZGqKbmcYX2gVnF-KRw&s",
+    "image": "https://i.ibb.co/VpVggq1L/image.jpg",
     "subStalls": [],
     "price_range": "RM 10-20",
     "menu_link": "",
@@ -3038,7 +3045,7 @@ export const initialRestaurants = [
       "泰国餐"
     ],
     "rating": 0,
-    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSj9Gh8hUNPOvEn1F3UOAo5NBl2rSle_raGzw&s",
+    "image": "https://i.ibb.co/wh6q31q4/Khunya-Thai-Kitchen.jpg",
     "subStalls": [],
     "price_range": "RM 10-20",
     "menu_link": "",
@@ -3158,7 +3165,7 @@ export const initialRestaurants = [
       "咖啡店"
     ],
     "rating": 0,
-    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKGp6PyOGT1cJv3dyVH90f4isj7NwBGKu_eg&s",
+    "image": "https://i.ibb.co/WWpzpRt5/image.jpg",
     "subStalls": [],
     "price_range": "RM 10-20",
     "menu_link": "",
@@ -3280,7 +3287,7 @@ export const initialRestaurants = [
       "咖啡店"
     ],
     "rating": 0,
-    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT55NoQ3JpArtM2nPQsA9gssIoT2ARyx4UrSQ&s",
+    "image": "https://i.ibb.co/S4FfmjtZ/image.jpg",
     "subStalls": [],
     "price_range": "RM 10-20",
     "menu_link": "",
@@ -4336,9 +4343,9 @@ export const initialRestaurants = [
   {
     "id": 144,
     "name": "Roti King Saleng",
-    "name_en": "",
-    "intro_zh": "沙令著名的印度煎饼（Roti Canai）宵夜好去处。煎饼口感酥脆蓬松，另有马来卤面（Mee Rebus）和椰浆饭等美味选择。",
-    "intro_en": "Famous supper spot in Saleng for crispy and fluffy Roti Canai. Also offers delicious Mee Rebus and Nasi Lemak.",
+    "name_en": "Roti King Saleng",
+    "intro_zh": "沙令著名的 Mamak 宵夜圣地。这里的 Roti Canai 以皮薄酥脆闻名，不少人专门深夜驱车前来。此外，他们的 Mee Goreng Mamak（印度炒面） 镬气十足，配上一杯 Teh Tarik（拉茶），是古来人最经典的深夜食堂体验。",
+    "intro_en": "A famous Mamak spot in Saleng for late-night cravings. Renowned for its crispy Roti Canai and flavorful Mee Goreng Mamak. The go-to place for locals to chill with a glass of Teh Tarik until late at night.",
     "address": "Jalan Saleng 7, Kampung Baru Saleng, 81400 Senai, Johor Darul Ta'zim",
     "opening_hours": "6 pm–1:30 am",
     "category": [
@@ -4358,7 +4365,15 @@ export const initialRestaurants = [
     "isNoBeef": false,
     "manualStatus": "auto",
     "branches": [],
-    "tags": []
+    "tags": [
+      "Roti Canai",
+      "印度炒面",
+      "宵夜",
+      "Mamak",
+      "沙令",
+      "Teh Tarik",
+      "深夜食堂"
+    ]
   },
   {
     "id": 145,
@@ -5656,7 +5671,7 @@ export const initialRestaurants = [
     "name_en": "",
     "intro_zh": "本地知名的精品咖啡连锁店，主打高品质且价格亲民的咖啡。蓝色标志性的Logo随处可见，是年轻人喜爱的打卡点。",
     "intro_en": "A well-known local specialty coffee chain, focusing on high-quality yet affordable coffee. Its iconic blue logo is everywhere, making it a favorite spot for the younger crowd.",
-    "address": "No 18(GF, Jln Impiana 1, Taman Impiana, Kelapa Sawi, 81030 Kulai, Johor Darul Ta'zim",
+    "address": "Multiple Locations in Kulai",
     "opening_hours": "Monday: 7am - 10:40pm\nTuesday: 7am - 10:40pm\nWednesday: 7am - 10:40pm\nThursday: 7am - 10:40pm\nFriday: 7am - 10:40pm\nSaturday: 7am - 10:40pm\nSunday: 7am - 10:40pm",
     "category": [
       "饮品"
@@ -5674,8 +5689,17 @@ export const initialRestaurants = [
     "isVegetarian": false,
     "isNoBeef": false,
     "manualStatus": "auto",
-    "branches": [],
-    "area": "Kelapa Sawit",
+    "branches": [
+      {
+        "name": "ZUS Coffee Bandar Indahpura",
+        "address": "No 221 (Ground Floor), Jalan Kiambang 14, Pusat Komersial Indah, Bandar Indahpura, 81000 Kulai, Johor"
+      },
+      {
+        "name": "ZUS Coffee Kelapa Sawit",
+        "address": "No 18(GF), Jalan Impiana 1, Taman Impiana, Kelapa Sawit, 81030 Kulai, Johor"
+      }
+    ],
+    "area": "",
     "tags": [
       "有冷气",
       "适合聚餐"
@@ -5713,10 +5737,10 @@ export const initialRestaurants = [
   {
     "id": 191,
     "name": "蜜雪冰城",
-    "name_en": "Mixue Kelapa Sawit",
+    "name_en": "Mixue",
     "intro_zh": "源自中国的知名茶饮品牌，以其高性价比的冰淇淋和茶饮闻名。招牌新鲜冰淇淋和柠檬水深受欢迎。",
     "intro_en": "A famous tea brand from China, known for its cost-effective ice cream and tea drinks. The signature fresh ice cream and lemonade are very popular.",
-    "address": "10, Lorong Susur Kelapa Sawit, Kelapa Sawit, 81000 Kulai, Johor Darul Ta'zim",
+    "address": "Multiple Locations in Kulai",
     "opening_hours": "Monday: 10am - 10:30pm\nTuesday: 10am - 10:30pm\nWednesday: 10am - 10:30pm\nThursday: 10am - 10:30pm\nFriday: 10am - 10:30pm\nSaturday: 10am - 10:30pm\nSunday: 10am - 10:30pm",
     "category": [
       "饮品"
@@ -5734,8 +5758,17 @@ export const initialRestaurants = [
     "isVegetarian": false,
     "isNoBeef": false,
     "manualStatus": "auto",
-    "branches": [],
-    "area": "Kelapa Sawit",
+    "branches": [
+      {
+        "name": "Mixue Kelapa Sawit",
+        "address": "10, Lorong Susur Kelapa Sawit, Kelapa Sawit, 81000 Kulai, Johor"
+      },
+      {
+        "name": "Mixue AEON Mall Kulaijaya",
+        "address": "KF1, AEON Mall Kulaijaya, Persiaran Indahpura Utama, Bandar Indahpura, 81000 Kulai, Johor"
+      }
+    ],
+    "area": "",
     "tags": []
   },
   {
@@ -6103,7 +6136,7 @@ export const initialRestaurants = [
   },
   {
     "id": 206,
-    "name": "3rd Junction Cafe • Tropika Kulai",
+    "name": "3rd Junction Cafe (Tropika Kulai)",
     "name_en": "3rd Junction Cafe",
     "intro_zh": "主打中西式美食的餐厅，提供XO酱炒饭、娘惹鱼片饭、辣味海鲜面等特色菜肴。环境舒适，适合聚餐。",
     "intro_en": "Specializes in Chinese & Western cuisine. Famous for XO Sauce Fried Rice, Nyonya Sliced Fish Rice, and Spicy Tornado Seafood Noodle. A cozy place for gatherings.",
@@ -6194,8 +6227,8 @@ export const initialRestaurants = [
     "id": 211,
     "name": "欢乐园饮冰室",
     "name_en": "Happy Land Cafeteria",
-    "intro_zh": "古来著名的老字号冰室，以红豆冰（Ice Kachang）和罗惹（Rojak）闻名。炸鸡皮也是必点小吃。",
-    "intro_en": "A famous traditional cafeteria in Kulai, best known for its Ice Kachang and Rojak. Fried chicken skin is also a must-try snack.",
+    "intro_zh": "古来传奇红豆冰店，营业超过20年。招牌红豆冰淋上浓郁的巧克力酱或草莓酱，搭配炸鸡排和Rojak，是古来人的集体回忆。",
+    "intro_en": "A legendary Ice Kacang shop in Kulai, operating for over 20 years. Signature Ice Kacang topped with rich chocolate or strawberry sauce, paired with fried chicken chop and Rojak. A collective memory for Kulai people.",
     "address": "16, Jalan Pinang, Taman Kota Kulai, 81000 Kulai, Johor Darul Ta'zim",
     "opening_hours": "11:30 am–6:30 pm Mon Closed",
     "category": [
@@ -6207,7 +6240,7 @@ export const initialRestaurants = [
       "蛋糕甜点"
     ],
     "rating": 0,
-    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSEsvJdNIAtpFUQtraCbTZmQa7ux3Ch00ialA&s",
+    "image": "https://cdn.prod.website-files.com/64c4be5d67694090d91bc447/64d115403af2016f22eb5b25_batch_DSC04776.jpeg",
     "subStalls": [],
     "price_range": "RM 10-20",
     "menu_link": "",
@@ -6221,7 +6254,12 @@ export const initialRestaurants = [
       "有冷气",
       "适合聚餐",
       "干",
-      "平价"
+      "平价",
+      "适合小孩",
+      "甜点",
+      "炸鸡",
+      "不辣",
+      "下午茶"
     ]
   },
   {
@@ -6705,7 +6743,7 @@ export const initialRestaurants = [
   },
   {
     "id": 232,
-    "name": "21苦瓜汤",
+    "name": "21苦瓜汤 (Taman Nam Tak)",
     "name_en": "21 Ku Gua Tang",
     "intro_zh": "专营苦瓜汤和各类中式小炒，汤头甘甜清热，是享用健康家常菜的好去处。",
     "intro_en": "Specializes in bitter gourd soup and various Chinese stir-fry dishes, offering a healthy and comforting dining experience.",
@@ -8678,42 +8716,6 @@ export const initialRestaurants = [
     ]
   },
   {
-    "id": 306,
-    "area": "Kulai",
-    "name": "欢乐园红豆冰",
-    "name_en": "Happy Land Ice Kacang",
-    "tags": [
-      "适合小孩",
-      "平价",
-      "甜点",
-      "炸鸡",
-      "不辣",
-      "下午茶"
-    ],
-    "address": "Jalan Pinang, Taman Kota Kulai, 81000 Kulai, Johor",
-    "opening_hours": "Monday: 11am - 4:30pm\nTuesday: 11am - 4:30pm\nWednesday: 11am - 4:30pm\nThursday: 11am - 4:30pm\nFriday: 11am - 4:30pm\nSaturday: 11am - 4:30pm\nSunday: 11am - 4:30pm",
-    "intro_zh": "古来传奇红豆冰店，营业超过20年。招牌红豆冰淋上浓郁的巧克力酱或草莓酱，搭配炸鸡排和Rojak，是古来人的集体回忆。",
-    "intro_en": "A legendary Ice Kacang shop in Kulai, operating for over 20 years. Signature Ice Kacang topped with rich chocolate or strawberry sauce, paired with fried chicken chop and Rojak. A collective memory for Kulai people.",
-    "category": [
-      "甜点",
-      "小吃"
-    ],
-    "categories": [
-      "蛋糕甜点"
-    ],
-    "rating": 0,
-    "image": "https://cdn.prod.website-files.com/64c4be5d67694090d91bc447/64d115403af2016f22eb5b25_batch_DSC04776.jpeg",
-    "subStalls": [],
-    "price_range": "RM 5-15",
-    "menu_link": "",
-    "website_link": "",
-    "delivery_link": "",
-    "isVegetarian": false,
-    "isNoBeef": false,
-    "manualStatus": "auto",
-    "branches": []
-  },
-  {
     "id": 307,
     "area": "Senai",
     "name": "瑞记海南鸡饭",
@@ -8894,5 +8896,114 @@ export const initialRestaurants = [
     "isNoBeef": false,
     "manualStatus": "auto",
     "rating": 0
+  },
+  {
+    "id": 311,
+    "name": "深夜过桥小煮(大古来城无招牌虾面)",
+    "name_en": "Late Night Bridge Cooking (Kota Kulai No Signboard Prawn Noodles)",
+    "address": "Taman Kota Kulai, 81000 Kulai, Johor",
+    "opening_hours": "Monday: 7pm - 3am\nTuesday: 7pm - 3am\nWednesday: 7pm - 3am\nThursday: 7pm - 3am\nFriday: 7pm - 3am\nSaturday: 7pm - 3am\nSunday: 7pm - 3am",
+    "intro_zh": "这是古来人才懂的深夜小炒档口，有卖炒虾面，炒果条，面粉果等等。",
+    "intro_en": "A late-night stir-fry stall known only to Kulai locals, serving fried prawn noodles, char kway teow, mee hoon kueh, and more.",
+    "tags": [
+      "炒虾面",
+      "炒果条",
+      "面粉果",
+      "深夜食堂",
+      "古来老味道",
+      "无招牌",
+      "大古来城",
+      "晚餐",
+      "宵夜"
+    ],
+    "category": [
+      "无招牌美食"
+    ],
+    "categories": [
+      "无招牌美食"
+    ],
+    "rating": 0,
+    "image": "https://i.ibb.co/4wm2YxZd/image.jpg",
+    "subStalls": [],
+    "price_range": "RM 10-20",
+    "menu_link": "",
+    "website_link": "",
+    "delivery_link": "",
+    "isVegetarian": false,
+    "isNoBeef": false,
+    "manualStatus": "auto",
+    "branches": []
+  },
+  {
+    "id": 312,
+    "name": "大古来城糖水铺",
+    "name_en": "Kota Kulai Tong Sui Stall",
+    "address": "Taman Kota Kulai, 81000 Kulai, Johor",
+    "opening_hours": "Monday: 6am - 6pm\nTuesday: 6am - 6pm\nWednesday: 6am - 6pm\nThursday: 6am - 6pm\nFriday: 6am - 6pm\nSaturday: 6am - 6pm\nSunday: 6am - 6pm",
+    "intro_zh": "售卖经济粉、早餐糕点、糖水等，是附近居民喜欢吃早餐的去处。",
+    "intro_en": "Selling economic noodles, breakfast pastries, tong sui, etc. A favorite breakfast spot for nearby residents.",
+    "tags": [
+      "经济粉",
+      "糖水",
+      "早餐",
+      "糕点",
+      "平价",
+      "无招牌",
+      "大古来城",
+      "下午茶"
+    ],
+    "category": [
+      "无招牌美食",
+      "蛋糕甜点"
+    ],
+    "categories": [
+      "无招牌美食",
+      "蛋糕甜点"
+    ],
+    "rating": 0,
+    "image": "https://i.ibb.co/x4bn4np/image.jpg",
+    "subStalls": [],
+    "price_range": "RM 10-20",
+    "menu_link": "",
+    "website_link": "",
+    "delivery_link": "",
+    "isVegetarian": false,
+    "isNoBeef": false,
+    "manualStatus": "auto",
+    "branches": []
+  },
+  {
+    "id": 313,
+    "name": "初茶",
+    "name_en": "Chuchat",
+    "intro_zh": "位于 Indahpura 的舒适茶饮店，提供各类清新茶饮和特调饮料。环境优美，是朋友聚会聊天的理想场所。",
+    "intro_en": "A cozy tea spot in Indahpura offering a variety of refreshing teas and specialty drinks. A perfect place for friends to gather and chat.",
+    "address": "Pusat Komersial Indah, 157, Jalan Kiambang 13, Bandar Indahpura, 81000 Kulai, Johor Darul Ta'zim",
+    "opening_hours": "Monday: 10am - 11pm\nTuesday: 10am - 11pm\nWednesday: 10am - 11pm\nThursday: 10am - 11pm\nFriday: 10am - 11pm\nSaturday: 10am - 11pm\nSunday: 10am - 11pm",
+    "category": [
+      "饮品"
+    ],
+    "categories": [
+      "饮品"
+    ],
+    "rating": 0,
+    "image": "https://i.ibb.co/Mx4T3N4g/Chuchat.jpg",
+    "subStalls": [],
+    "price_range": "RM 10-20",
+    "menu_link": "",
+    "website_link": "",
+    "delivery_link": "",
+    "isVegetarian": false,
+    "isNoBeef": false,
+    "manualStatus": "auto",
+    "branches": [],
+    "area": "Indahpura",
+    "tags": [
+      "奶茶",
+      "饮料",
+      "下午茶",
+      "有冷气",
+      "适合聚餐"
+    ]
   }
 ];

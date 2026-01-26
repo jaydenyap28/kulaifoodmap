@@ -42,6 +42,9 @@ const ResultModal = ({ restaurant, onClose, onAddReview, isAdmin, onUpdateRestau
     closedDays: []
   });
 
+  // State for zoomed image
+  const [zoomedImage, setZoomedImage] = useState(null);
+
   // Update form when restaurant changes
   React.useEffect(() => {
     if (!restaurant) return;
@@ -893,14 +896,26 @@ Tuesday: Closed
                                 const stallImage = typeof stall === 'object' ? stall.image : null;
 
                                 return (
-                                <div key={idx} className="bg-[#1a1a1a] rounded-lg border border-gray-600 overflow-hidden flex flex-col">
-                                    <div className="h-24 w-full bg-gray-800 relative">
+                                <div 
+                                    key={idx} 
+                                    className="bg-[#1a1a1a] rounded-lg border border-gray-600 overflow-hidden flex flex-col group/stall"
+                                    onDoubleClick={() => stallImage && setZoomedImage(stallImage)}
+                                    title={stallImage ? "双击放大查看菜单 (Double click to zoom)" : ""}
+                                >
+                                    <div className="h-24 w-full bg-gray-800 relative cursor-pointer">
                                         {stallImage ? (
-                                            <ImageWithFallback 
-                                                src={stallImage} 
-                                                alt={stallName}
-                                                className="w-full h-full object-cover"
-                                            />
+                                            <>
+                                                <ImageWithFallback 
+                                                    src={stallImage} 
+                                                    alt={stallName}
+                                                    className="w-full h-full object-cover transition-transform duration-300 group-hover/stall:scale-105"
+                                                />
+                                                <div className="absolute inset-0 bg-black/0 group-hover/stall:bg-black/20 transition-colors flex items-center justify-center">
+                                                    <span className="opacity-0 group-hover/stall:opacity-100 text-white text-[10px] bg-black/60 px-2 py-1 rounded-full backdrop-blur-sm transition-opacity">
+                                                        双击放大 (Double Click)
+                                                    </span>
+                                                </div>
+                                            </>
                                         ) : (
                                             <div className="w-full h-full flex items-center justify-center text-gray-600">
                                                 <UtensilsCrossed size={20} />
@@ -1020,6 +1035,35 @@ Tuesday: Closed
           </div>
         </motion.div>
       </motion.div>
+
+      {/* Zoomed Image Overlay */}
+      {zoomedImage && (
+        <motion.div 
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+            className="fixed inset-0 z-[60] flex items-center justify-center bg-black/90 p-4 backdrop-blur-sm"
+            onClick={() => setZoomedImage(null)}
+        >
+            <div className="relative max-w-full max-h-full flex flex-col items-center">
+                <img 
+                    src={zoomedImage} 
+                    alt="Zoomed Stall" 
+                    className="max-w-full max-h-[85vh] object-contain rounded-lg shadow-2xl border border-gray-700"
+                    onClick={(e) => e.stopPropagation()} // Prevent closing when clicking image
+                />
+                <p className="text-white/70 text-sm mt-4 font-medium bg-black/50 px-4 py-2 rounded-full backdrop-blur-md">
+                    点击任意处关闭 (Click anywhere to close)
+                </p>
+                <button 
+                    onClick={() => setZoomedImage(null)}
+                    className="absolute top-[-40px] right-0 md:top-4 md:right-4 bg-white/10 hover:bg-white/20 text-white p-2 rounded-full transition backdrop-blur-md"
+                >
+                    <X size={24} />
+                </button>
+            </div>
+        </motion.div>
+      )}
     </AnimatePresence>
   );
 };
