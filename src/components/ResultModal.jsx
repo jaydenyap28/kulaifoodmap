@@ -30,7 +30,8 @@ const ResultModal = ({ restaurant, onClose, onAddReview, isAdmin, onUpdateRestau
     rating: restaurant.rating !== undefined ? restaurant.rating : 0,
     area: restaurant.area || '',
     intro_zh: restaurant.intro_zh || '',
-    intro_en: restaurant.intro_en || ''
+    intro_en: restaurant.intro_en || '',
+    tags: restaurant.tags || []
   });
 
   // Smart Schedule State
@@ -64,7 +65,8 @@ const ResultModal = ({ restaurant, onClose, onAddReview, isAdmin, onUpdateRestau
         rating: restaurant.rating !== undefined ? restaurant.rating : 0,
         area: restaurant.area || '',
         intro_zh: restaurant.intro_zh || '',
-        intro_en: restaurant.intro_en || ''
+        intro_en: restaurant.intro_en || '',
+        tags: restaurant.tags || []
     });
   }, [restaurant]);
 
@@ -496,6 +498,24 @@ const ResultModal = ({ restaurant, onClose, onAddReview, isAdmin, onUpdateRestau
                       >
                         + Add New
                       </button>
+                    </div>
+                  </div>
+
+                  {/* Tags Editor (Hidden magic) */}
+                  <div>
+                    <label className="text-xs text-gray-400">AI 标签 (Tags - Comma separated)</label>
+                    <input 
+                      value={editForm.tags ? editForm.tags.join(', ') : ''}
+                      onChange={e => setEditForm({...editForm, tags: e.target.value.split(/[,，]/).map(t => t.trim()).filter(Boolean)})}
+                      className="w-full bg-[#1a1a1a] border-b border-gray-600 py-1 text-sm text-white focus:border-white outline-none"
+                      placeholder="例如: 适合小孩, 平价, 冷气 (e.g. Kids Friendly, Cheap)"
+                    />
+                    <div className="flex flex-wrap gap-2 mt-2">
+                        {editForm.tags && editForm.tags.map((tag, idx) => (
+                            <span key={idx} className="px-2 py-1 bg-purple-900/30 text-purple-300 border border-purple-800/50 text-xs rounded-lg flex items-center gap-1">
+                                ✨ {tag}
+                            </span>
+                        ))}
                     </div>
                   </div>
 

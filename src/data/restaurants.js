@@ -6,8 +6,17 @@ export const initialRestaurants = [
     "name_en": "Restoran Sze Wah Bak Kuh Teh",
     "address": "2 & 3, Jalan Seruling 1, Taman Sri Kulai Baru 2, 81000 Kulai, Johor",
     "opening_hours": "Monday: Closed\nTuesday: 8:30am - 8pm\nWednesday: 8:30am - 8pm\nThursday: 8:30am - 8pm\nFriday: 8:30am - 8pm\nSaturday: 8:30am - 8pm\nSunday: 8:30am - 8pm",
-    "intro_zh": "古来最负盛名的肉骨茶老店，创立于1958年。汤头浓郁甘香，药材味适中，保留了传统的炭火熬煮风味，是古来必吃的美食地标。",
-    "intro_en": "The most famous Bak Kut Teh in Kulai, established in 1958. Known for its rich and aromatic herbal broth cooked over charcoal, preserving the traditional authentic flavor. A must-visit culinary landmark in Kulai.",
+    "intro_zh": "古来肉骨茶的代名词，家喻户晓的老字号。汤头色泽深沉，药材味与蒜香完美平衡，口感咸香浓郁。每日清晨高朋满座，迟来常常吃不到。",
+    "intro_en": "The legendary name for Bak Kut Teh in Kulai. Known for its dark, savory broth that strikes a perfect balance between herbal flavors and garlic notes. A crowded breakfast spot where it often sells out early.",
+    "tags": [
+      "汤",
+      "肉骨茶",
+      "老字号",
+      "早午餐",
+      "适合老人",
+      "重口味",
+      "补身"
+    ],
     "category": [
       "饭类"
     ],
@@ -30,10 +39,18 @@ export const initialRestaurants = [
     "id": 2,
     "name": "新世纪砂锅鸡饭",
     "name_en": "New Century Claypot Chicken Rice",
+    "tags": [
+      "炭火",
+      "热",
+      "重口味",
+      "晚餐",
+      "排队美食",
+      "适合聚餐"
+    ],
     "address": "18, Jalan Raya, Kulai Besar, 81000 Kulai, Johor",
     "opening_hours": "Monday: Closed\nTuesday: 11:30am - 9:45pm\nWednesday: 11:30am - 9:45pm\nThursday: 11:30am - 9:45pm\nFriday: 11:30am - 9:45pm\nSaturday: 11:30am - 9:45pm\nSunday: 11:30am - 9:45pm",
-    "intro_zh": "位于古来大街的知名砂锅鸡饭，以炭火烹煮闻名。鸡肉嫩滑入味，米饭焦香四溢，搭配特制黑酱油，每一口都充满古早味。",
-    "intro_en": "Famous claypot chicken rice located on Kulai Main Road, known for its charcoal cooking method. Tender chicken, fragrant rice with crispy edges, and special dark soy sauce create a nostalgic and delicious taste.",
+    "intro_zh": "位于古来大路旁 (Kulai Besar) 的人气老店。坚持使用炭火焖煮，锅气十足。鸡肉嫩滑，米饭有焦香锅巴，建议提前预订以免久等。",
+    "intro_en": "Located along the main road of Kulai Besar, this popular spot insists on traditional charcoal cooking. Famous for its tender chicken and the aromatic, crispy rice crust at the bottom of the pot. Pre-ordering is recommended to avoid long waits.",
     "category": [
       "饭类"
     ],
@@ -57,10 +74,20 @@ export const initialRestaurants = [
     "area": "Indahpura",
     "name": "莫搞牛肉面",
     "name_en": "Kulai Mok Gao Beef Noodles",
+    "tags": [
+      "面",
+      "牛肉",
+      "猪肉",
+      "老字号",
+      "早午餐",
+      "汤",
+      "干捞",
+      "排队美食"
+    ],
     "address": "523, Jalan Kenanga 29/17, Bandar Indahpura, 81000 Kulai, Johor",
     "opening_hours": "Monday: 5am - 2pm\nTuesday: 5am - 2pm\nWednesday: 5am - 2pm\nThursday: 5am - 2pm\nFriday: 5am - 2pm\nSaturday: 5am - 2pm\nSunday: 5am - 2pm",
-    "intro_zh": "古来老字号牛肉面，深受本地人喜爱。汤头清甜不油腻，牛肉鲜嫩，牛筋软糯，搭配自制辣椒酱更是绝配。",
-    "intro_en": "A legendary beef noodle spot in Kulai, loved by locals. Features a clear, sweet, non-greasy broth with tender beef and soft tendon. Perfectly paired with their homemade chili sauce.",
+    "intro_zh": "古来家喻户晓的老字号，搬迁至 Indahpura 后依然人气火爆。虽然招牌是牛肉面，但也贴心提供猪肉粉和海鲜粉，照顾不吃牛的食客。生意极好，属于道地的排队美食。",
+    "intro_en": "A household name in Kulai, now located in Indahpura. While famous for their Beef Noodles, they also serve Pork and Seafood noodles, making it suitable for everyone. A truly local spot that is always packed and often requires queuing.",
     "category": [
       "粉类"
     ],
@@ -84,10 +111,19 @@ export const initialRestaurants = [
     "area": "Kulai 21 Miles",
     "name": "大树下擂茶",
     "name_en": "Lei Cha 21 Miles",
+    "tags": [
+      "客家菜",
+      "擂茶",
+      "健康",
+      "素食",
+      "老字号",
+      "午餐",
+      "清淡"
+    ],
     "address": "21, Jalan Manis, Taman Manis, 81000 Kulai, Johor",
     "opening_hours": "Monday: 10am - 3pm\nTuesday: 10am - 3pm\nWednesday: 10am - 3pm\nThursday: Closed\nFriday: 10am - 3pm\nSaturday: 10am - 3pm\nSunday: 10am - 3pm",
-    "intro_zh": "位于加拉巴沙威（Kelapa Sawit）的超人气擂茶。汤底浓郁翠绿，充满花生和芝麻的香气，配菜丰富健康，是客家美食的代表作。",
-    "intro_en": "Extremely popular Lei Cha in Kelapa Sawit. The soup is rich and green, full of peanut and sesame aroma, served with generous healthy toppings. A masterpiece of Hakka cuisine.",
+    "intro_zh": "位于古来21哩 (Taman Manis) 的地标性美食。这里的客家擂茶汤底浓郁，带有浓厚的花生与芝麻香，配菜丰富新鲜，是许多古来人心中最正宗的客家味道。",
+    "intro_en": "A landmark delicacy located at Kulai 21 Miles (Taman Manis). Their signature Hakka Lei Cha features a rich, green broth fragrant with peanuts and sesame seeds. Served with generous fresh toppings, it's the authentic taste of Hakka cuisine.",
     "category": [
       "饭类"
     ],
@@ -113,8 +149,8 @@ export const initialRestaurants = [
     "name_en": "Restaurant Hainan Hojiak Corner",
     "address": "548, Jalan Kenanga 29/18, Bandar Indahpura, 81000 Kulai, Johor",
     "opening_hours": "Monday: 6am - 3pm\nTuesday: 6am - 3pm\nWednesday: Closed\nThursday: 6am - 3pm\nFriday: 6am - 3pm\nSaturday: 6am - 3pm\nSunday: 6am - 3pm",
-    "intro_zh": "古来知名的海南美食角落，提供正宗的海南鸡饭和传统咖啡。环境舒适，是享受早餐和午餐的好去处。",
-    "intro_en": "A well-known Hainanese food corner in Kulai, offering authentic Hainanese Chicken Rice and traditional coffee. A comfortable spot for breakfast and lunch.",
+    "intro_zh": "Indahpura 的实力派面馆。这里不卖海南鸡饭，招牌是海南牛肉粉与猪肉粉。牛肉片烫得非常滑嫩，汤头清甜。许多本地人认为这里的味道足以媲美老字号名店。",
+    "intro_en": "A hidden gem in Indahpura. Note that they do not serve Chicken Rice! The stars here are the Hainanese Beef Noodles and Pork Noodles. The meat is incredibly tender and the soup is sweet and flavorful. Highly rated by locals as a top-tier noodle spot.",
     "category": [
       "粉类"
     ],
@@ -131,7 +167,17 @@ export const initialRestaurants = [
     "isVegetarian": false,
     "isNoBeef": false,
     "manualStatus": "auto",
-    "branches": []
+    "branches": [],
+    "tags": [
+      "面",
+      "牛肉",
+      "猪肉",
+      "海南餐",
+      "早午餐",
+      "汤",
+      "干捞",
+      "平价"
+    ]
   },
   {
     "id": 6,
@@ -157,7 +203,10 @@ export const initialRestaurants = [
     "isVegetarian": false,
     "isNoBeef": false,
     "manualStatus": "auto",
-    "branches": []
+    "branches": [],
+    "tags": [
+      "干"
+    ]
   },
   {
     "id": 7,
@@ -184,7 +233,11 @@ export const initialRestaurants = [
     "isVegetarian": false,
     "isNoBeef": false,
     "manualStatus": "auto",
-    "branches": []
+    "branches": [],
+    "tags": [
+      "干",
+      "适合小孩"
+    ]
   },
   {
     "id": 8,
@@ -193,8 +246,8 @@ export const initialRestaurants = [
     "name_en": "Restaurant Yuw Meng",
     "address": "44, Jalan Seruling 2, Taman Sri Kulai Baru 2, 81000 Kulai, Johor",
     "opening_hours": "Monday: 5pm - 10pm\nTuesday: 5pm - 10pm\nWednesday: Closed\nThursday: 5pm - 10pm\nFriday: 5pm - 10pm\nSaturday: 5pm - 10pm\nSunday: 5pm - 10pm",
-    "intro_zh": "这里的招牌是野味和海鲜，同时也提供各种煮炒美食。福建面和烧鸭也是必点的美味。适合家庭聚餐。",
-    "intro_en": "Specializes in exotic wild meat and seafood dishes. Also offers a variety of 'Zhu Chao' (cook-fry) dishes. Their Hokkien Mee and Roast Duck are highly recommended. Great for family dinners.",
+    "intro_zh": "古来老字号煮炒店。最出名的是干咖喱山猪肉，肉质紧实入味。另外这里的大碌面 (KL福建面) 炒得锅气十足，猪油渣给得大方，是每桌必点的招牌。",
+    "intro_en": "A classic 'Zhu Chao' spot preferred by locals for dinner. Famous for their Dry Curry Wild Boar, which is flavorful and savory. Their KL-style Hokkien Mee is also a must-order, full of 'Wok Hei' and generous pork lard.",
     "category": [
       "饭类",
       "粉类"
@@ -214,13 +267,22 @@ export const initialRestaurants = [
     "isVegetarian": false,
     "isNoBeef": false,
     "manualStatus": "auto",
-    "branches": []
+    "branches": [],
+    "tags": [
+      "干",
+      "老字号",
+      "煮炒",
+      "晚餐",
+      "重口味",
+      "福建面",
+      "咖喱"
+    ]
   },
   {
     "id": 9,
     "area": "Indahpura",
-    "name": "古來吉麵家",
-    "name_en": "Kulai Ji Noodles",
+    "name": "吉麵家",
+    "name_en": "Ji Noodles",
     "address": "845-855, Jalan Teratai 36/17, Bandar Indahpura, 81000 Kulai, Johor",
     "opening_hours": "Monday: Closed\nTuesday: 7am - 3pm\nWednesday: 7am - 3pm\nThursday: 7am - 3pm\nFriday: 7am - 3pm\nSaturday: 7am - 3pm\nSunday: 7am - 3pm",
     "intro_zh": "吉面家的面条采用全蛋制作，口感Q弹且散发淡淡蛋香。无须过多调味，简单的酱汁就能衬托出面条的鲜美，是追求原汁原味食客的首选。",
@@ -241,7 +303,8 @@ export const initialRestaurants = [
     "isVegetarian": false,
     "isNoBeef": false,
     "manualStatus": "auto",
-    "branches": []
+    "branches": [],
+    "tags": []
   },
   {
     "id": 10,
@@ -250,8 +313,8 @@ export const initialRestaurants = [
     "name_en": "Daily Wanton Mee",
     "address": "Taman Sri Kulai Baru 2, 81000 Kulai, Johor",
     "opening_hours": "Monday: 5:30pm - 10:30pm\nTuesday: 5:30pm - 10:30pm\nWednesday: 5:30pm - 10:30pm\nThursday: 5:30pm - 10:30pm\nFriday: 5:30pm - 10:30pm\nSaturday: Closed\nSunday: 5:30pm - 10:30pm",
-    "intro_zh": "古来著名的云吞面档口之一。面条烫得刚刚好，口感筋道，搭配叉烧和云吞，是许多当地人晚餐和宵夜的常驻地。",
-    "intro_en": "One of the famous Wanton Mee spots in Kulai. The noodles are blanched to perfection with a springy texture, served with char siew and wantons. A regular dinner and supper spot for many locals.",
+    "intro_zh": "古来拥有超过40年历史的老字号，现由第二代传人经营。老板每日清晨手工制作面条与云吞，面条偏粗且极具嚼劲。搭配秘制酱汁、份量十足的叉烧和爽口云吞，是当地人晚餐与宵夜的必吃古早味。",
+    "intro_en": "A legendary wanton mee stall in Kulai with over 40 years of history. Now run by the second generation, they persist in making their thick, springy noodles and wantons by hand daily. A local favorite for a satisfying dinner or late-night supper.",
     "category": [
       "粉类"
     ],
@@ -268,7 +331,16 @@ export const initialRestaurants = [
     "isVegetarian": false,
     "isNoBeef": false,
     "manualStatus": "auto",
-    "branches": []
+    "branches": [],
+    "tags": [
+      "云吞面",
+      "古早味",
+      "自制面条",
+      "40年老字号",
+      "晚餐",
+      "宵夜",
+      "分量大"
+    ]
   },
   {
     "id": 12,
@@ -294,7 +366,10 @@ export const initialRestaurants = [
     "isVegetarian": false,
     "isNoBeef": false,
     "manualStatus": "auto",
-    "branches": []
+    "branches": [],
+    "tags": [
+      "平价"
+    ]
   },
   {
     "id": 13,
@@ -303,8 +378,8 @@ export const initialRestaurants = [
     "name_en": "Restaurant Yon Lai",
     "address": "646, Jalan Gangsa 6, Taman Timur, 81000 Kulai, Johor Darul Ta'zim",
     "opening_hours": "Monday: 6am - 4pm\nTuesday: 6am - 4pm\nWednesday: 6am - 4pm\nThursday: 6am - 4pm\nFriday: 6am - 4pm\nSaturday: 6am - 4pm\nSunday: 6am - 4pm",
-    "intro_zh": "古来著名的点心楼，提供各种手工制作的包点和点心。大包和叉烧包是这里的招牌，深受食客欢迎。",
-    "intro_en": "A famous Dim Sum restaurant in Kulai, offering a wide variety of handmade buns and dim sum. Their Big Pau and Char Siew Pau are signature items and very popular among diners.",
+    "intro_zh": "古来 21 哩极具代表性的传统早市咖啡店。除了以手工制作、皮薄馅靓的“大包”和“叉烧包”闻名外，店内还聚集了许多优质档口，如著名的猪肉粉、干捞面等，是古来人享受丰富多样化早餐的热门聚集地。",
+    "intro_en": "An iconic traditional breakfast spot at Batu 21, Kulai. While famous for its handmade 'Big Pao' and BBQ Pork Buns, it also houses various popular stalls offering pork noodles and konlo mee, making it a perfect hub for a diverse local breakfast.",
     "category": [
       "点心",
       "咖啡店"
@@ -352,7 +427,16 @@ export const initialRestaurants = [
     "isVegetarian": false,
     "isNoBeef": false,
     "manualStatus": "auto",
-    "branches": []
+    "branches": [],
+    "tags": [
+      "手工包点",
+      "点心",
+      "猪肉粉",
+      "早餐",
+      "多样化选择",
+      "地标老店",
+      "21哩"
+    ]
   },
   {
     "id": 14,
@@ -375,7 +459,10 @@ export const initialRestaurants = [
     "isVegetarian": false,
     "isNoBeef": false,
     "manualStatus": "auto",
-    "branches": []
+    "branches": [],
+    "tags": [
+      "平价"
+    ]
   },
   {
     "id": 15,
@@ -402,7 +489,10 @@ export const initialRestaurants = [
     "isVegetarian": false,
     "isNoBeef": false,
     "manualStatus": "auto",
-    "branches": []
+    "branches": [],
+    "tags": [
+      "平价"
+    ]
   },
   {
     "id": 16,
@@ -429,7 +519,10 @@ export const initialRestaurants = [
     "isVegetarian": false,
     "isNoBeef": false,
     "manualStatus": "auto",
-    "branches": []
+    "branches": [],
+    "tags": [
+      "干"
+    ]
   },
   {
     "id": 17,
@@ -457,7 +550,10 @@ export const initialRestaurants = [
     "isVegetarian": false,
     "isNoBeef": false,
     "manualStatus": "auto",
-    "branches": []
+    "branches": [],
+    "tags": [
+      "干"
+    ]
   },
   {
     "id": 18,
@@ -484,12 +580,16 @@ export const initialRestaurants = [
     "isVegetarian": false,
     "isNoBeef": false,
     "manualStatus": "auto",
-    "branches": []
+    "branches": [],
+    "tags": [
+      "有冷气",
+      "适合聚餐"
+    ]
   },
   {
     "id": 19,
     "area": "Kulai 21 Miles",
-    "name": "古来鑫源砂锅肉骨茶",
+    "name": "鑫源砂锅肉骨茶",
     "name_en": "Restoran Xin Yuan Bak Kut Teh",
     "address": "16, Jalan Seruling 1, Taman Sri Kulai Baru 2, 81000 Kulai, Johor Darul Ta'zim",
     "opening_hours": "Monday: Closed\nTuesday: 8:30am - 5pm\nWednesday: 8:30am - 5pm\nThursday: 8:30am - 5pm\nFriday: 8:30am - 5pm\nSaturday: 8:30am - 5pm\nSunday: 8:30am - 5pm",
@@ -511,7 +611,12 @@ export const initialRestaurants = [
     "isVegetarian": false,
     "isNoBeef": false,
     "manualStatus": "auto",
-    "branches": []
+    "branches": [],
+    "tags": [
+      "汤",
+      "热",
+      "干"
+    ]
   },
   {
     "id": 20,
@@ -538,7 +643,10 @@ export const initialRestaurants = [
     "isVegetarian": false,
     "isNoBeef": false,
     "manualStatus": "auto",
-    "branches": []
+    "branches": [],
+    "tags": [
+      "干"
+    ]
   },
   {
     "id": 21,
@@ -565,7 +673,8 @@ export const initialRestaurants = [
     "isVegetarian": false,
     "isNoBeef": false,
     "manualStatus": "auto",
-    "branches": []
+    "branches": [],
+    "tags": []
   },
   {
     "id": 22,
@@ -592,7 +701,10 @@ export const initialRestaurants = [
     "isVegetarian": false,
     "isNoBeef": false,
     "manualStatus": "auto",
-    "branches": []
+    "branches": [],
+    "tags": [
+      "平价"
+    ]
   },
   {
     "id": 23,
@@ -619,7 +731,10 @@ export const initialRestaurants = [
     "isVegetarian": false,
     "isNoBeef": false,
     "manualStatus": "auto",
-    "branches": []
+    "branches": [],
+    "tags": [
+      "干"
+    ]
   },
   {
     "id": 24,
@@ -646,7 +761,11 @@ export const initialRestaurants = [
     "isVegetarian": false,
     "isNoBeef": false,
     "manualStatus": "auto",
-    "branches": []
+    "branches": [],
+    "tags": [
+      "干",
+      "平价"
+    ]
   },
   {
     "id": 25,
@@ -673,7 +792,12 @@ export const initialRestaurants = [
     "isVegetarian": false,
     "isNoBeef": false,
     "manualStatus": "auto",
-    "branches": []
+    "branches": [],
+    "tags": [
+      "汤",
+      "热",
+      "干"
+    ]
   },
   {
     "id": 26,
@@ -703,7 +827,10 @@ export const initialRestaurants = [
     "isVegetarian": false,
     "isNoBeef": false,
     "manualStatus": "auto",
-    "branches": []
+    "branches": [],
+    "tags": [
+      "干"
+    ]
   },
   {
     "id": 27,
@@ -733,7 +860,10 @@ export const initialRestaurants = [
     "isVegetarian": false,
     "isNoBeef": false,
     "manualStatus": "auto",
-    "branches": []
+    "branches": [],
+    "tags": [
+      "干"
+    ]
   },
   {
     "id": 28,
@@ -762,7 +892,10 @@ export const initialRestaurants = [
     "isVegetarian": false,
     "isNoBeef": false,
     "manualStatus": "auto",
-    "branches": []
+    "branches": [],
+    "tags": [
+      "干"
+    ]
   },
   {
     "id": 29,
@@ -788,7 +921,8 @@ export const initialRestaurants = [
     "isVegetarian": false,
     "isNoBeef": false,
     "manualStatus": "auto",
-    "branches": []
+    "branches": [],
+    "tags": []
   },
   {
     "id": 30,
@@ -815,7 +949,8 @@ export const initialRestaurants = [
     "isVegetarian": false,
     "isNoBeef": false,
     "manualStatus": "auto",
-    "branches": []
+    "branches": [],
+    "tags": []
   },
   {
     "id": 31,
@@ -842,7 +977,8 @@ export const initialRestaurants = [
     "isVegetarian": false,
     "isNoBeef": false,
     "manualStatus": "auto",
-    "branches": []
+    "branches": [],
+    "tags": []
   },
   {
     "id": 32,
@@ -869,7 +1005,10 @@ export const initialRestaurants = [
     "isVegetarian": false,
     "isNoBeef": false,
     "manualStatus": "auto",
-    "branches": []
+    "branches": [],
+    "tags": [
+      "平价"
+    ]
   },
   {
     "id": 33,
@@ -881,13 +1020,15 @@ export const initialRestaurants = [
     "intro_zh": "享誉全球的炸鸡快餐连锁店。提供原味和香辣炸鸡、汉堡、薯泥等经典美食。适合家庭用餐和快速填饱肚子。",
     "intro_en": "World-renowned fried chicken fast food chain. Offers classic Original Recipe and Hot & Spicy fried chicken, burgers, and mashed potatoes. Great for family dining and quick meals.",
     "category": [
-      "西餐"
+      "西餐",
+      "快餐"
     ],
     "rating": 0,
     "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQCHD9uVr8KYu4po51Mz7YEvZGIIEkCMUSeUg&s",
     "subStalls": [],
     "categories": [
-      "西餐"
+      "西餐",
+      "快餐"
     ],
     "price_range": "RM 15-30",
     "menu_link": "",
@@ -908,7 +1049,19 @@ export const initialRestaurants = [
       {
         "name": "KFC Kulai Drive Thru",
         "address": "Lot 5035, Batu 17 1/2 Jalan Air Hitam"
+      },
+      {
+        "name": "KFC AEON Kulaijaya",
+        "address": "Lot G53, Ground Floor, AEON Mall Kulaijaya"
+      },
+      {
+        "name": "KFC Lotus's Kulai",
+        "address": "Lot No. M19, Lotus's Kulai, Batu 22 1/2"
       }
+    ],
+    "tags": [
+      "有冷气",
+      "适合聚餐"
     ]
   },
   {
@@ -920,7 +1073,8 @@ export const initialRestaurants = [
     "intro_zh": "全球知名的快餐品牌，提供经典的巨无霸汉堡、薯条和麦乐鸡。快捷便利，是随时随地享受美味的最佳选择。",
     "intro_en": "World-famous fast food brand offering classic Big Mac burgers, fries, and McNuggets. Quick and convenient, it's the best choice for a delicious meal anytime, anywhere.",
     "category": [
-      "西餐"
+      "西餐",
+      "快餐"
     ],
     "rating": 0,
     "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/36/McDonald%27s_Golden_Arches.svg/1200px-McDonald%27s_Golden_Arches.svg.png",
@@ -931,7 +1085,7 @@ export const initialRestaurants = [
       },
       {
         "name": "McDonald's IOI Mall",
-        "address": "IOI Mall Kulai"
+        "address": "Lot G-21, IOI Mall Kulai"
       },
       {
         "name": "McDonald's AEON Kulai",
@@ -939,7 +1093,8 @@ export const initialRestaurants = [
       }
     ],
     "categories": [
-      "西餐"
+      "西餐",
+      "快餐"
     ],
     "price_range": "RM 15-30",
     "menu_link": "https://www.mcdonalds.com.my/",
@@ -948,7 +1103,11 @@ export const initialRestaurants = [
     "isVegetarian": false,
     "isNoBeef": false,
     "manualStatus": "auto",
-    "subStalls": []
+    "subStalls": [],
+    "tags": [
+      "有冷气",
+      "适合聚餐"
+    ]
   },
   {
     "id": 35,
@@ -974,7 +1133,8 @@ export const initialRestaurants = [
     "isVegetarian": false,
     "isNoBeef": false,
     "manualStatus": "auto",
-    "branches": []
+    "branches": [],
+    "tags": []
   },
   {
     "id": 36,
@@ -1000,7 +1160,10 @@ export const initialRestaurants = [
     "isVegetarian": false,
     "isNoBeef": false,
     "manualStatus": "auto",
-    "branches": []
+    "branches": [],
+    "tags": [
+      "平价"
+    ]
   },
   {
     "id": 37,
@@ -1027,7 +1190,11 @@ export const initialRestaurants = [
     "isVegetarian": false,
     "isNoBeef": false,
     "manualStatus": "auto",
-    "branches": []
+    "branches": [],
+    "tags": [
+      "有冷气",
+      "适合聚餐"
+    ]
   },
   {
     "id": 38,
@@ -1054,7 +1221,11 @@ export const initialRestaurants = [
     "isVegetarian": false,
     "isNoBeef": false,
     "manualStatus": "auto",
-    "branches": []
+    "branches": [],
+    "tags": [
+      "有冷气",
+      "适合聚餐"
+    ]
   },
   {
     "id": 39,
@@ -1080,7 +1251,11 @@ export const initialRestaurants = [
     "isVegetarian": false,
     "isNoBeef": false,
     "manualStatus": "auto",
-    "branches": []
+    "branches": [],
+    "tags": [
+      "有冷气",
+      "适合聚餐"
+    ]
   },
   {
     "id": 40,
@@ -1106,11 +1281,12 @@ export const initialRestaurants = [
     "isVegetarian": false,
     "isNoBeef": false,
     "manualStatus": "auto",
-    "branches": []
+    "branches": [],
+    "tags": []
   },
   {
     "id": 41,
-    "name": "古来豆富佬招牌咖哩叻沙",
+    "name": "豆富佬招牌咖哩叻沙",
     "name_en": "Tofu Lao Curry Laksa",
     "address": "S-94, Jalan Sultanah, Kampung Melayu Kulai, 81000 Kulai, Johor Darul Ta'zim",
     "opening_hours": "8am – 3pm (Thursday Closed)",
@@ -1132,12 +1308,16 @@ export const initialRestaurants = [
     "isVegetarian": false,
     "isNoBeef": false,
     "manualStatus": "auto",
-    "branches": []
+    "branches": [],
+    "tags": [
+      "重口味",
+      "辣"
+    ]
   },
   {
     "id": 42,
     "area": "",
-    "name": "Kelab Kopi Lama (Kulai)",
+    "name": "Kelab Kopi Lama",
     "name_en": "",
     "address": "Jalan Susur Kulai 3, Taman Kulai Besar, 81000 Kulai, Johor Darul Ta'zim",
     "opening_hours": "Monday: 7:30am - 7pm\nTuesday: 7:30am - 7pm\nWednesday: 7:30am - 7pm\nThursday: 7:30am - 7pm\nFriday: 7:30am - 7pm\nSaturday: 7:30am - 7pm\nSunday: 7:30am - 7pm",
@@ -1159,7 +1339,11 @@ export const initialRestaurants = [
     "isVegetarian": false,
     "isNoBeef": false,
     "manualStatus": "auto",
-    "branches": []
+    "branches": [],
+    "tags": [
+      "有冷气",
+      "适合聚餐"
+    ]
   },
   {
     "id": 43,
@@ -1187,7 +1371,11 @@ export const initialRestaurants = [
     "isVegetarian": false,
     "isNoBeef": false,
     "manualStatus": "auto",
-    "branches": []
+    "branches": [],
+    "tags": [
+      "有冷气",
+      "适合聚餐"
+    ]
   },
   {
     "id": 44,
@@ -1214,7 +1402,10 @@ export const initialRestaurants = [
     "isVegetarian": false,
     "isNoBeef": false,
     "manualStatus": "auto",
-    "branches": []
+    "branches": [],
+    "tags": [
+      "干"
+    ]
   },
   {
     "id": 45,
@@ -1240,13 +1431,17 @@ export const initialRestaurants = [
     "isVegetarian": false,
     "isNoBeef": false,
     "manualStatus": "auto",
-    "branches": []
+    "branches": [],
+    "tags": [
+      "有冷气",
+      "适合聚餐"
+    ]
   },
   {
     "id": 46,
     "area": "Indahpura",
-    "name": "21苦瓜汤 Indahpura",
-    "name_en": "21 Bitter Gourd Soup",
+    "name": "21苦瓜汤",
+    "name_en": "",
     "address": "75, Jln. Kenanga 29/11, Bandar Indahpura, 81000 Kulai, Johor Darul Ta'zim",
     "opening_hours": "Monday: Closed\nTuesday: 10am - 10pm\nWednesday: 10am - 10pm\nThursday: 10am - 10pm\nFriday: 10am - 10pm\nSaturday: 10am - 10pm\nSunday: 10am - 10pm",
     "intro_zh": "著名的苦瓜汤专卖店，汤头清甜回甘，苦瓜薄片爽口。搭配客家炸肉、梅菜扣肉等经典配菜，是健康美味的住家饭首选。",
@@ -1267,7 +1462,12 @@ export const initialRestaurants = [
     "isVegetarian": false,
     "isNoBeef": false,
     "manualStatus": "auto",
-    "branches": []
+    "branches": [],
+    "tags": [
+      "汤",
+      "热",
+      "干"
+    ]
   },
   {
     "id": 47,
@@ -1293,7 +1493,11 @@ export const initialRestaurants = [
     "isVegetarian": false,
     "isNoBeef": false,
     "manualStatus": "auto",
-    "branches": []
+    "branches": [],
+    "tags": [
+      "有冷气",
+      "适合聚餐"
+    ]
   },
   {
     "id": 48,
@@ -1320,13 +1524,14 @@ export const initialRestaurants = [
     "isVegetarian": false,
     "isNoBeef": false,
     "manualStatus": "auto",
-    "branches": []
+    "branches": [],
+    "tags": []
   },
   {
     "id": 49,
     "area": "Indahpura",
-    "name": "Kopi Saigon Kulai",
-    "name_en": "Kopi Saigon",
+    "name": "Kopi Saigon",
+    "name_en": "",
     "address": "73, Jln. Kenanga 29/11, Bandar Indahpura, 81000 Kulai, Johor Darul Ta'zim",
     "opening_hours": "10am – 10pm (Wed Closed)",
     "intro_zh": "来自越南的超人气咖啡品牌，主打香浓的越南咖啡。推荐招牌 Kopi Saigon 和 Kopi Buttercream，咖啡香气浓郁，口感顺滑。",
@@ -1349,7 +1554,10 @@ export const initialRestaurants = [
     "isVegetarian": false,
     "isNoBeef": false,
     "manualStatus": "auto",
-    "branches": []
+    "branches": [],
+    "tags": [
+      "平价"
+    ]
   },
   {
     "id": 50,
@@ -1376,7 +1584,8 @@ export const initialRestaurants = [
     "isVegetarian": false,
     "isNoBeef": false,
     "manualStatus": "auto",
-    "branches": []
+    "branches": [],
+    "tags": []
   },
   {
     "id": 51,
@@ -1403,7 +1612,12 @@ export const initialRestaurants = [
     "isVegetarian": false,
     "isNoBeef": false,
     "manualStatus": "auto",
-    "branches": []
+    "branches": [],
+    "tags": [
+      "有冷气",
+      "适合聚餐",
+      "平价"
+    ]
   },
   {
     "id": 52,
@@ -1429,7 +1643,11 @@ export const initialRestaurants = [
     "isVegetarian": false,
     "isNoBeef": false,
     "manualStatus": "auto",
-    "branches": []
+    "branches": [],
+    "tags": [
+      "有冷气",
+      "适合聚餐"
+    ]
   },
   {
     "id": 53,
@@ -1455,7 +1673,11 @@ export const initialRestaurants = [
     "isVegetarian": false,
     "isNoBeef": false,
     "manualStatus": "auto",
-    "branches": []
+    "branches": [],
+    "tags": [
+      "有冷气",
+      "适合聚餐"
+    ]
   },
   {
     "id": 54,
@@ -1482,7 +1704,8 @@ export const initialRestaurants = [
     "isVegetarian": false,
     "isNoBeef": false,
     "manualStatus": "auto",
-    "branches": []
+    "branches": [],
+    "tags": []
   },
   {
     "id": 55,
@@ -1509,7 +1732,10 @@ export const initialRestaurants = [
     "isVegetarian": false,
     "isNoBeef": false,
     "manualStatus": "auto",
-    "branches": []
+    "branches": [],
+    "tags": [
+      "平价"
+    ]
   },
   {
     "id": 56,
@@ -1536,7 +1762,8 @@ export const initialRestaurants = [
     "isNoBeef": false,
     "manualStatus": "auto",
     "branches": [],
-    "name_en": ""
+    "name_en": "",
+    "tags": []
   },
   {
     "id": 57,
@@ -1563,13 +1790,14 @@ export const initialRestaurants = [
     "isVegetarian": false,
     "isNoBeef": false,
     "manualStatus": "auto",
-    "branches": []
+    "branches": [],
+    "tags": []
   },
   {
     "id": 58,
     "area": "Indahpura",
-    "name": "3rd Junction Cafe Indahpura",
-    "name_en": "3rd Junction Cafe",
+    "name": "3rd Junction Cafe",
+    "name_en": "",
     "address": "181, Jalan Kenanga 29/4, Bandar Indahpura, 81000 Kulai, Johor Darul Ta'zim",
     "opening_hours": "Monday: 12pm - 12am\nTuesday: 12pm - 12am\nWednesday: 12pm - 12am\nThursday: 12pm - 12am\nFriday: 12pm - 12am\nSaturday: 12pm - 12am\nSunday: 12pm - 12am",
     "intro_zh": "提供西餐和本地美食的舒适咖啡馆。招牌鸡扒和意大利面深受食客喜爱。环境轻松，是朋友聚会的好去处。",
@@ -1590,7 +1818,11 @@ export const initialRestaurants = [
     "isVegetarian": false,
     "isNoBeef": false,
     "manualStatus": "auto",
-    "branches": []
+    "branches": [],
+    "tags": [
+      "有冷气",
+      "适合聚餐"
+    ]
   },
   {
     "id": 59,
@@ -1617,7 +1849,11 @@ export const initialRestaurants = [
     "isVegetarian": false,
     "isNoBeef": false,
     "manualStatus": "auto",
-    "branches": []
+    "branches": [],
+    "tags": [
+      "有冷气",
+      "适合聚餐"
+    ]
   },
   {
     "id": 60,
@@ -1644,7 +1880,11 @@ export const initialRestaurants = [
     "isVegetarian": false,
     "isNoBeef": false,
     "manualStatus": "auto",
-    "branches": []
+    "branches": [],
+    "tags": [
+      "汤",
+      "热"
+    ]
   },
   {
     "id": 61,
@@ -1673,7 +1913,8 @@ export const initialRestaurants = [
     "isNoBeef": false,
     "manualStatus": "auto",
     "branches": [],
-    "name_en": "Four Beans"
+    "name_en": "Four Beans",
+    "tags": []
   },
   {
     "id": 62,
@@ -1701,7 +1942,10 @@ export const initialRestaurants = [
     "isVegetarian": false,
     "isNoBeef": false,
     "manualStatus": "auto",
-    "branches": []
+    "branches": [],
+    "tags": [
+      "干"
+    ]
   },
   {
     "id": 63,
@@ -1728,7 +1972,8 @@ export const initialRestaurants = [
     "isVegetarian": false,
     "isNoBeef": false,
     "manualStatus": "auto",
-    "branches": []
+    "branches": [],
+    "tags": []
   },
   {
     "id": 64,
@@ -1754,7 +1999,10 @@ export const initialRestaurants = [
     "isVegetarian": false,
     "isNoBeef": false,
     "manualStatus": "auto",
-    "branches": []
+    "branches": [],
+    "tags": [
+      "平价"
+    ]
   },
   {
     "id": 65,
@@ -1780,7 +2028,11 @@ export const initialRestaurants = [
     "isVegetarian": false,
     "isNoBeef": false,
     "manualStatus": "auto",
-    "branches": []
+    "branches": [],
+    "tags": [
+      "有冷气",
+      "适合聚餐"
+    ]
   },
   {
     "id": 66,
@@ -1807,7 +2059,11 @@ export const initialRestaurants = [
     "isVegetarian": false,
     "isNoBeef": false,
     "manualStatus": "auto",
-    "branches": []
+    "branches": [],
+    "tags": [
+      "汤",
+      "热"
+    ]
   },
   {
     "id": 67,
@@ -1834,7 +2090,10 @@ export const initialRestaurants = [
     "isVegetarian": false,
     "isNoBeef": false,
     "manualStatus": "auto",
-    "branches": []
+    "branches": [],
+    "tags": [
+      "平价"
+    ]
   },
   {
     "id": 68,
@@ -1861,7 +2120,11 @@ export const initialRestaurants = [
     "isVegetarian": false,
     "isNoBeef": false,
     "manualStatus": "auto",
-    "branches": []
+    "branches": [],
+    "tags": [
+      "汤",
+      "热"
+    ]
   },
   {
     "id": 69,
@@ -1888,7 +2151,10 @@ export const initialRestaurants = [
     "isVegetarian": false,
     "isNoBeef": false,
     "manualStatus": "auto",
-    "branches": []
+    "branches": [],
+    "tags": [
+      "平价"
+    ]
   },
   {
     "id": 70,
@@ -1914,7 +2180,8 @@ export const initialRestaurants = [
     "isVegetarian": false,
     "isNoBeef": false,
     "manualStatus": "auto",
-    "branches": []
+    "branches": [],
+    "tags": []
   },
   {
     "id": 71,
@@ -1941,7 +2208,10 @@ export const initialRestaurants = [
     "isVegetarian": false,
     "isNoBeef": false,
     "manualStatus": "auto",
-    "branches": []
+    "branches": [],
+    "tags": [
+      "平价"
+    ]
   },
   {
     "id": 72,
@@ -1968,7 +2238,11 @@ export const initialRestaurants = [
     "isVegetarian": false,
     "isNoBeef": false,
     "manualStatus": "auto",
-    "branches": []
+    "branches": [],
+    "tags": [
+      "汤",
+      "热"
+    ]
   },
   {
     "id": 73,
@@ -1997,7 +2271,10 @@ export const initialRestaurants = [
     "isVegetarian": false,
     "isNoBeef": false,
     "manualStatus": "auto",
-    "branches": []
+    "branches": [],
+    "tags": [
+      "干"
+    ]
   },
   {
     "id": 74,
@@ -2024,7 +2301,10 @@ export const initialRestaurants = [
     "isVegetarian": false,
     "isNoBeef": false,
     "manualStatus": "auto",
-    "branches": []
+    "branches": [],
+    "tags": [
+      "平价"
+    ]
   },
   {
     "id": 75,
@@ -2051,7 +2331,10 @@ export const initialRestaurants = [
     "isVegetarian": false,
     "isNoBeef": false,
     "manualStatus": "auto",
-    "branches": []
+    "branches": [],
+    "tags": [
+      "平价"
+    ]
   },
   {
     "id": 76,
@@ -2078,7 +2361,12 @@ export const initialRestaurants = [
     "isVegetarian": false,
     "isNoBeef": false,
     "manualStatus": "auto",
-    "branches": []
+    "branches": [],
+    "tags": [
+      "有冷气",
+      "适合聚餐",
+      "平价"
+    ]
   },
   {
     "id": 77,
@@ -2105,7 +2393,8 @@ export const initialRestaurants = [
     "isVegetarian": false,
     "isNoBeef": false,
     "manualStatus": "auto",
-    "branches": []
+    "branches": [],
+    "tags": []
   },
   {
     "id": 78,
@@ -2132,7 +2421,12 @@ export const initialRestaurants = [
     "isVegetarian": false,
     "isNoBeef": false,
     "manualStatus": "auto",
-    "branches": []
+    "branches": [],
+    "tags": [
+      "有冷气",
+      "适合聚餐",
+      "平价"
+    ]
   },
   {
     "id": 79,
@@ -2159,7 +2453,8 @@ export const initialRestaurants = [
     "isVegetarian": false,
     "isNoBeef": false,
     "manualStatus": "auto",
-    "branches": []
+    "branches": [],
+    "tags": []
   },
   {
     "id": 80,
@@ -2186,7 +2481,10 @@ export const initialRestaurants = [
     "isVegetarian": false,
     "isNoBeef": false,
     "manualStatus": "auto",
-    "branches": []
+    "branches": [],
+    "tags": [
+      "平价"
+    ]
   },
   {
     "id": 81,
@@ -2213,7 +2511,11 @@ export const initialRestaurants = [
     "isVegetarian": false,
     "isNoBeef": false,
     "manualStatus": "auto",
-    "branches": []
+    "branches": [],
+    "tags": [
+      "有冷气",
+      "适合聚餐"
+    ]
   },
   {
     "id": 82,
@@ -2240,7 +2542,10 @@ export const initialRestaurants = [
     "isVegetarian": false,
     "isNoBeef": false,
     "manualStatus": "auto",
-    "branches": []
+    "branches": [],
+    "tags": [
+      "平价"
+    ]
   },
   {
     "id": 83,
@@ -2267,7 +2572,10 @@ export const initialRestaurants = [
     "isVegetarian": false,
     "isNoBeef": false,
     "manualStatus": "auto",
-    "branches": []
+    "branches": [],
+    "tags": [
+      "干"
+    ]
   },
   {
     "id": 84,
@@ -2292,7 +2600,8 @@ export const initialRestaurants = [
     "isVegetarian": false,
     "isNoBeef": false,
     "manualStatus": "auto",
-    "branches": []
+    "branches": [],
+    "tags": []
   },
   {
     "id": 85,
@@ -2320,7 +2629,11 @@ export const initialRestaurants = [
     "isNoBeef": false,
     "manualStatus": "auto",
     "branches": [],
-    "area": "Indahpura"
+    "area": "Indahpura",
+    "tags": [
+      "有冷气",
+      "适合聚餐"
+    ]
   },
   {
     "id": 86,
@@ -2347,7 +2660,10 @@ export const initialRestaurants = [
     "isVegetarian": false,
     "isNoBeef": false,
     "manualStatus": "auto",
-    "branches": []
+    "branches": [],
+    "tags": [
+      "平价"
+    ]
   },
   {
     "id": 87,
@@ -2374,7 +2690,8 @@ export const initialRestaurants = [
     "isVegetarian": false,
     "isNoBeef": false,
     "manualStatus": "auto",
-    "branches": []
+    "branches": [],
+    "tags": []
   },
   {
     "id": 88,
@@ -2401,7 +2718,10 @@ export const initialRestaurants = [
     "isVegetarian": false,
     "isNoBeef": false,
     "manualStatus": "auto",
-    "branches": []
+    "branches": [],
+    "tags": [
+      "平价"
+    ]
   },
   {
     "id": 89,
@@ -2429,7 +2749,11 @@ export const initialRestaurants = [
     "isVegetarian": false,
     "isNoBeef": false,
     "manualStatus": "auto",
-    "branches": []
+    "branches": [],
+    "tags": [
+      "有冷气",
+      "适合聚餐"
+    ]
   },
   {
     "id": 90,
@@ -2456,7 +2780,11 @@ export const initialRestaurants = [
     "isVegetarian": false,
     "isNoBeef": false,
     "manualStatus": "auto",
-    "branches": []
+    "branches": [],
+    "tags": [
+      "有冷气",
+      "适合聚餐"
+    ]
   },
   {
     "id": 91,
@@ -2483,7 +2811,11 @@ export const initialRestaurants = [
     "isVegetarian": false,
     "isNoBeef": false,
     "manualStatus": "auto",
-    "branches": []
+    "branches": [],
+    "tags": [
+      "有冷气",
+      "适合聚餐"
+    ]
   },
   {
     "id": 92,
@@ -2510,7 +2842,11 @@ export const initialRestaurants = [
     "isVegetarian": false,
     "isNoBeef": false,
     "manualStatus": "auto",
-    "branches": []
+    "branches": [],
+    "tags": [
+      "有冷气",
+      "适合聚餐"
+    ]
   },
   {
     "id": 93,
@@ -2537,7 +2873,11 @@ export const initialRestaurants = [
     "isVegetarian": false,
     "isNoBeef": false,
     "manualStatus": "auto",
-    "branches": []
+    "branches": [],
+    "tags": [
+      "汤",
+      "热"
+    ]
   },
   {
     "id": 94,
@@ -2564,7 +2904,8 @@ export const initialRestaurants = [
     "isVegetarian": false,
     "isNoBeef": false,
     "manualStatus": "auto",
-    "branches": []
+    "branches": [],
+    "tags": []
   },
   {
     "id": 95,
@@ -2591,7 +2932,11 @@ export const initialRestaurants = [
     "isVegetarian": false,
     "isNoBeef": false,
     "manualStatus": "auto",
-    "branches": []
+    "branches": [],
+    "tags": [
+      "汤",
+      "热"
+    ]
   },
   {
     "id": 96,
@@ -2618,7 +2963,11 @@ export const initialRestaurants = [
     "isVegetarian": false,
     "isNoBeef": false,
     "manualStatus": "auto",
-    "branches": []
+    "branches": [],
+    "tags": [
+      "有冷气",
+      "适合聚餐"
+    ]
   },
   {
     "id": 97,
@@ -2644,7 +2993,8 @@ export const initialRestaurants = [
     "isVegetarian": false,
     "isNoBeef": false,
     "manualStatus": "auto",
-    "branches": []
+    "branches": [],
+    "tags": []
   },
   {
     "id": 98,
@@ -2670,7 +3020,8 @@ export const initialRestaurants = [
     "isVegetarian": false,
     "isNoBeef": false,
     "manualStatus": "auto",
-    "branches": []
+    "branches": [],
+    "tags": []
   },
   {
     "id": 99,
@@ -2696,7 +3047,8 @@ export const initialRestaurants = [
     "isVegetarian": false,
     "isNoBeef": false,
     "manualStatus": "auto",
-    "branches": []
+    "branches": [],
+    "tags": []
   },
   {
     "id": 100,
@@ -2723,13 +3075,16 @@ export const initialRestaurants = [
     "isVegetarian": false,
     "isNoBeef": false,
     "manualStatus": "auto",
-    "branches": []
+    "branches": [],
+    "tags": [
+      "平价"
+    ]
   },
   {
     "id": 101,
     "area": "Indahpura",
     "name": "Dino House Cafe",
-    "name_en": "Dino House Cafe",
+    "name_en": "",
     "address": "Pusat Komersial Indah, 187, Jalan Kiambang 12, Bandar Indahpura, 81000 Kulai, Johor Darul Ta'zim",
     "opening_hours": "11 am–11 pm Tuesday Closed",
     "intro_zh": "以恐龙为主题的特色咖啡厅，环境充满童趣。提供西餐、小吃和特色饮料，适合亲子用餐。",
@@ -2750,7 +3105,11 @@ export const initialRestaurants = [
     "isVegetarian": false,
     "isNoBeef": false,
     "manualStatus": "auto",
-    "branches": []
+    "branches": [],
+    "tags": [
+      "有冷气",
+      "适合聚餐"
+    ]
   },
   {
     "id": 102,
@@ -2777,7 +3136,11 @@ export const initialRestaurants = [
     "isVegetarian": false,
     "isNoBeef": false,
     "manualStatus": "auto",
-    "branches": []
+    "branches": [],
+    "tags": [
+      "汤",
+      "热"
+    ]
   },
   {
     "id": 103,
@@ -2804,7 +3167,10 @@ export const initialRestaurants = [
     "isVegetarian": false,
     "isNoBeef": false,
     "manualStatus": "auto",
-    "branches": []
+    "branches": [],
+    "tags": [
+      "平价"
+    ]
   },
   {
     "id": 104,
@@ -2831,7 +3197,10 @@ export const initialRestaurants = [
     "isVegetarian": false,
     "isNoBeef": false,
     "manualStatus": "auto",
-    "branches": []
+    "branches": [],
+    "tags": [
+      "平价"
+    ]
   },
   {
     "id": 105,
@@ -2858,7 +3227,11 @@ export const initialRestaurants = [
     "isVegetarian": false,
     "isNoBeef": false,
     "manualStatus": "auto",
-    "branches": []
+    "branches": [],
+    "tags": [
+      "汤",
+      "热"
+    ]
   },
   {
     "id": 106,
@@ -2885,7 +3258,11 @@ export const initialRestaurants = [
     "isVegetarian": false,
     "isNoBeef": false,
     "manualStatus": "auto",
-    "branches": []
+    "branches": [],
+    "tags": [
+      "汤",
+      "热"
+    ]
   },
   {
     "id": 107,
@@ -2912,13 +3289,16 @@ export const initialRestaurants = [
     "isVegetarian": false,
     "isNoBeef": false,
     "manualStatus": "auto",
-    "branches": []
+    "branches": [],
+    "tags": [
+      "平价"
+    ]
   },
   {
     "id": 108,
     "area": "Indahpura",
     "name": "POWERTEA",
-    "name_en": "PowerTea",
+    "name_en": "",
     "address": "207, Jln Kiambang 14, Bandar Indahpura, 81000 Kulai, Johor Darul Ta'zim",
     "opening_hours": "5.30Pm-1am",
     "intro_zh": "主打各类特色茶饮和台式小吃，环境休闲。适合年轻人聚会喝茶聊天的舒适空间。",
@@ -2939,7 +3319,11 @@ export const initialRestaurants = [
     "isVegetarian": false,
     "isNoBeef": false,
     "manualStatus": "auto",
-    "branches": []
+    "branches": [],
+    "tags": [
+      "汤",
+      "热"
+    ]
   },
   {
     "id": 109,
@@ -2966,7 +3350,12 @@ export const initialRestaurants = [
     "isVegetarian": false,
     "isNoBeef": false,
     "manualStatus": "auto",
-    "branches": []
+    "branches": [],
+    "tags": [
+      "汤",
+      "热",
+      "干"
+    ]
   },
   {
     "id": 110,
@@ -2995,7 +3384,10 @@ export const initialRestaurants = [
     "isVegetarian": false,
     "isNoBeef": false,
     "manualStatus": "auto",
-    "branches": []
+    "branches": [],
+    "tags": [
+      "干"
+    ]
   },
   {
     "id": 111,
@@ -3021,7 +3413,12 @@ export const initialRestaurants = [
     "isVegetarian": false,
     "isNoBeef": false,
     "manualStatus": "auto",
-    "branches": []
+    "branches": [],
+    "tags": [
+      "汤",
+      "热",
+      "干"
+    ]
   },
   {
     "id": 112,
@@ -3048,7 +3445,8 @@ export const initialRestaurants = [
     "isVegetarian": false,
     "isNoBeef": false,
     "manualStatus": "auto",
-    "branches": []
+    "branches": [],
+    "tags": []
   },
   {
     "id": 113,
@@ -3075,7 +3473,8 @@ export const initialRestaurants = [
     "isVegetarian": false,
     "isNoBeef": false,
     "manualStatus": "auto",
-    "branches": []
+    "branches": [],
+    "tags": []
   },
   {
     "id": 114,
@@ -3102,7 +3501,12 @@ export const initialRestaurants = [
     "isVegetarian": false,
     "isNoBeef": false,
     "manualStatus": "auto",
-    "branches": []
+    "branches": [],
+    "tags": [
+      "汤",
+      "热",
+      "干"
+    ]
   },
   {
     "id": 115,
@@ -3129,7 +3533,8 @@ export const initialRestaurants = [
     "isVegetarian": false,
     "isNoBeef": false,
     "manualStatus": "auto",
-    "branches": []
+    "branches": [],
+    "tags": []
   },
   {
     "id": 116,
@@ -3156,7 +3561,8 @@ export const initialRestaurants = [
     "isVegetarian": false,
     "isNoBeef": false,
     "manualStatus": "auto",
-    "branches": []
+    "branches": [],
+    "tags": []
   },
   {
     "id": 117,
@@ -3183,7 +3589,8 @@ export const initialRestaurants = [
     "isVegetarian": false,
     "isNoBeef": false,
     "manualStatus": "auto",
-    "branches": []
+    "branches": [],
+    "tags": []
   },
   {
     "id": 118,
@@ -3210,7 +3617,10 @@ export const initialRestaurants = [
     "isVegetarian": false,
     "isNoBeef": false,
     "manualStatus": "auto",
-    "branches": []
+    "branches": [],
+    "tags": [
+      "平价"
+    ]
   },
   {
     "id": 119,
@@ -3236,7 +3646,13 @@ export const initialRestaurants = [
     "isVegetarian": false,
     "isNoBeef": false,
     "manualStatus": "auto",
-    "branches": []
+    "branches": [],
+    "tags": [
+      "汤",
+      "热",
+      "重口味",
+      "辣"
+    ]
   },
   {
     "id": 120,
@@ -3262,12 +3678,18 @@ export const initialRestaurants = [
     "isVegetarian": false,
     "isNoBeef": false,
     "manualStatus": "auto",
-    "branches": []
+    "branches": [],
+    "tags": [
+      "重口味",
+      "辣",
+      "清淡",
+      "健康"
+    ]
   },
   {
     "id": 121,
     "name": "Lemon Tree Restaurant",
-    "name_en": "Lemon Tree",
+    "name_en": "",
     "address": "276, Jln Kiambang 11, 81000 Kulai, Johor Darul Ta'zim",
     "opening_hours": "11am-10pm",
     "intro_zh": "环境舒适的西餐厅，提供大份量的扒类、披萨和意大利面。适合家庭聚餐和庆祝生日，性价比高。",
@@ -3288,7 +3710,11 @@ export const initialRestaurants = [
     "isVegetarian": false,
     "isNoBeef": false,
     "manualStatus": "auto",
-    "branches": []
+    "branches": [],
+    "tags": [
+      "有冷气",
+      "适合聚餐"
+    ]
   },
   {
     "id": 122,
@@ -3315,7 +3741,8 @@ export const initialRestaurants = [
     "isVegetarian": false,
     "isNoBeef": false,
     "manualStatus": "auto",
-    "branches": []
+    "branches": [],
+    "tags": []
   },
   {
     "id": 123,
@@ -3342,7 +3769,11 @@ export const initialRestaurants = [
     "isVegetarian": false,
     "isNoBeef": false,
     "manualStatus": "auto",
-    "branches": []
+    "branches": [],
+    "tags": [
+      "有冷气",
+      "适合聚餐"
+    ]
   },
   {
     "id": 124,
@@ -3369,7 +3800,8 @@ export const initialRestaurants = [
     "isVegetarian": false,
     "isNoBeef": false,
     "manualStatus": "auto",
-    "branches": []
+    "branches": [],
+    "tags": []
   },
   {
     "id": 125,
@@ -3396,7 +3828,8 @@ export const initialRestaurants = [
     "isVegetarian": false,
     "isNoBeef": false,
     "manualStatus": "auto",
-    "branches": []
+    "branches": [],
+    "tags": []
   },
   {
     "id": 126,
@@ -3423,7 +3856,8 @@ export const initialRestaurants = [
     "isVegetarian": false,
     "isNoBeef": false,
     "manualStatus": "auto",
-    "branches": []
+    "branches": [],
+    "tags": []
   },
   {
     "id": 127,
@@ -3450,7 +3884,8 @@ export const initialRestaurants = [
     "isVegetarian": false,
     "isNoBeef": false,
     "manualStatus": "auto",
-    "branches": []
+    "branches": [],
+    "tags": []
   },
   {
     "id": 128,
@@ -3477,7 +3912,11 @@ export const initialRestaurants = [
     "isVegetarian": false,
     "isNoBeef": false,
     "manualStatus": "auto",
-    "branches": []
+    "branches": [],
+    "tags": [
+      "有冷气",
+      "适合聚餐"
+    ]
   },
   {
     "id": 129,
@@ -3504,7 +3943,8 @@ export const initialRestaurants = [
     "isVegetarian": false,
     "isNoBeef": false,
     "manualStatus": "auto",
-    "branches": []
+    "branches": [],
+    "tags": []
   },
   {
     "id": 130,
@@ -3530,7 +3970,11 @@ export const initialRestaurants = [
     "isVegetarian": false,
     "isNoBeef": false,
     "manualStatus": "auto",
-    "branches": []
+    "branches": [],
+    "tags": [
+      "汤",
+      "热"
+    ]
   },
   {
     "id": 131,
@@ -3556,7 +4000,8 @@ export const initialRestaurants = [
     "isVegetarian": false,
     "isNoBeef": false,
     "manualStatus": "auto",
-    "branches": []
+    "branches": [],
+    "tags": []
   },
   {
     "id": 132,
@@ -3583,7 +4028,10 @@ export const initialRestaurants = [
     "isVegetarian": false,
     "isNoBeef": false,
     "manualStatus": "auto",
-    "branches": []
+    "branches": [],
+    "tags": [
+      "干"
+    ]
   },
   {
     "id": 133,
@@ -3610,7 +4058,8 @@ export const initialRestaurants = [
     "isVegetarian": false,
     "isNoBeef": false,
     "manualStatus": "auto",
-    "branches": []
+    "branches": [],
+    "tags": []
   },
   {
     "id": 134,
@@ -3637,7 +4086,8 @@ export const initialRestaurants = [
     "isVegetarian": false,
     "isNoBeef": false,
     "manualStatus": "auto",
-    "branches": []
+    "branches": [],
+    "tags": []
   },
   {
     "id": 135,
@@ -3664,7 +4114,10 @@ export const initialRestaurants = [
     "isVegetarian": false,
     "isNoBeef": false,
     "manualStatus": "auto",
-    "branches": []
+    "branches": [],
+    "tags": [
+      "平价"
+    ]
   },
   {
     "id": 136,
@@ -3691,7 +4144,13 @@ export const initialRestaurants = [
     "isVegetarian": false,
     "isNoBeef": false,
     "manualStatus": "auto",
-    "branches": []
+    "branches": [],
+    "tags": [
+      "汤",
+      "热",
+      "干",
+      "平价"
+    ]
   },
   {
     "id": 137,
@@ -3718,7 +4177,10 @@ export const initialRestaurants = [
     "isVegetarian": false,
     "isNoBeef": false,
     "manualStatus": "auto",
-    "branches": []
+    "branches": [],
+    "tags": [
+      "平价"
+    ]
   },
   {
     "id": 138,
@@ -3745,7 +4207,8 @@ export const initialRestaurants = [
     "isVegetarian": false,
     "isNoBeef": false,
     "manualStatus": "auto",
-    "branches": []
+    "branches": [],
+    "tags": []
   },
   {
     "id": 139,
@@ -3772,7 +4235,10 @@ export const initialRestaurants = [
     "isVegetarian": false,
     "isNoBeef": false,
     "manualStatus": "auto",
-    "branches": []
+    "branches": [],
+    "tags": [
+      "平价"
+    ]
   },
   {
     "id": 140,
@@ -3801,7 +4267,10 @@ export const initialRestaurants = [
     "isVegetarian": false,
     "isNoBeef": false,
     "manualStatus": "auto",
-    "branches": []
+    "branches": [],
+    "tags": [
+      "平价"
+    ]
   },
   {
     "id": 141,
@@ -3829,7 +4298,10 @@ export const initialRestaurants = [
     "isVegetarian": false,
     "isNoBeef": false,
     "manualStatus": "auto",
-    "branches": []
+    "branches": [],
+    "tags": [
+      "干"
+    ]
   },
   {
     "id": 142,
@@ -3855,12 +4327,16 @@ export const initialRestaurants = [
     "isVegetarian": false,
     "isNoBeef": false,
     "manualStatus": "auto",
-    "branches": []
+    "branches": [],
+    "tags": [
+      "有冷气",
+      "适合聚餐"
+    ]
   },
   {
     "id": 144,
     "name": "Roti King Saleng",
-    "name_en": "Roti King Saleng",
+    "name_en": "",
     "intro_zh": "沙令著名的印度煎饼（Roti Canai）宵夜好去处。煎饼口感酥脆蓬松，另有马来卤面（Mee Rebus）和椰浆饭等美味选择。",
     "intro_en": "Famous supper spot in Saleng for crispy and fluffy Roti Canai. Also offers delicious Mee Rebus and Nasi Lemak.",
     "address": "Jalan Saleng 7, Kampung Baru Saleng, 81400 Senai, Johor Darul Ta'zim",
@@ -3881,7 +4357,8 @@ export const initialRestaurants = [
     "isVegetarian": false,
     "isNoBeef": false,
     "manualStatus": "auto",
-    "branches": []
+    "branches": [],
+    "tags": []
   },
   {
     "id": 145,
@@ -3908,7 +4385,8 @@ export const initialRestaurants = [
     "isVegetarian": false,
     "isNoBeef": false,
     "manualStatus": "auto",
-    "branches": []
+    "branches": [],
+    "tags": []
   },
   {
     "id": 146,
@@ -3935,7 +4413,8 @@ export const initialRestaurants = [
     "isVegetarian": false,
     "isNoBeef": false,
     "manualStatus": "auto",
-    "branches": []
+    "branches": [],
+    "tags": []
   },
   {
     "id": 147,
@@ -3962,21 +4441,24 @@ export const initialRestaurants = [
     "isVegetarian": false,
     "isNoBeef": false,
     "manualStatus": "auto",
-    "branches": []
+    "branches": [],
+    "tags": []
   },
   {
     "id": 148,
     "name": "Nando's",
-    "name_en": "Nando's",
+    "name_en": "",
     "intro_zh": "源自南非的国际烤鸡连锁店，以其特制的Peri-Peri辣椒酱烤鸡闻名。提供多种辣度选择，搭配薯条或香料饭。",
     "intro_en": "International Afro-Portuguese chain famous for its flame-grilled Peri-Peri chicken. Offers various spice levels, served with sides like chips or spicy rice.",
     "address": "G-25, IOI Mall Kulai",
     "opening_hours": "Monday: 10am - 10pm\nTuesday: 10am - 10pm\nWednesday: 10am - 10pm\nThursday: 10am - 10pm\nFriday: 10am - 10pm\nSaturday: 10am - 10pm\nSunday: 10am - 10pm",
     "category": [
-      "西餐"
+      "西餐",
+      "快餐"
     ],
     "categories": [
-      "西餐"
+      "西餐",
+      "快餐"
     ],
     "rating": 0,
     "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQIWv7_xVcfrBx5BtZHfz_ZVWb3swDBD5byGA&s",
@@ -3989,7 +4471,11 @@ export const initialRestaurants = [
     "isNoBeef": false,
     "manualStatus": "auto",
     "branches": [],
-    "area": "Bandar Putra"
+    "area": "Bandar Putra",
+    "tags": [
+      "有冷气",
+      "适合聚餐"
+    ]
   },
   {
     "id": 149,
@@ -4016,7 +4502,8 @@ export const initialRestaurants = [
     "isNoBeef": false,
     "manualStatus": "auto",
     "branches": [],
-    "area": "Bandar Putra"
+    "area": "Bandar Putra",
+    "tags": []
   },
   {
     "id": 150,
@@ -4043,7 +4530,12 @@ export const initialRestaurants = [
     "isNoBeef": false,
     "manualStatus": "auto",
     "branches": [],
-    "area": "Bandar Putra"
+    "area": "Bandar Putra",
+    "tags": [
+      "有冷气",
+      "适合聚餐",
+      "平价"
+    ]
   },
   {
     "id": 151,
@@ -4054,10 +4546,12 @@ export const initialRestaurants = [
     "address": "Lot No.G-29/30/30a/G-K-15, Ground Floor I0I Mall",
     "opening_hours": "Monday: 10am - 10pm\nTuesday: 10am - 10pm\nWednesday: 10am - 10pm\nThursday: 10am - 10pm\nFriday: 10am - 10pm\nSaturday: 10am - 10pm\nSunday: 10am - 10pm",
     "category": [
-      "饭类"
+      "饭类",
+      "快餐"
     ],
     "categories": [
-      "饭类"
+      "饭类",
+      "快餐"
     ],
     "rating": 0,
     "image": "https://scontent.fmkz1-2.fna.fbcdn.net/v/t39.30808-6/351499236_645514067085177_3364422854381515643_n.png?_nc_cat=109&ccb=1-7&_nc_sid=6ee11a&_nc_ohc=YgUGfO6IUZ4Q7kNvwHmpuS-&_nc_oc=AdkWGBWcfwq4RuNnRvYV1pA1SdT1P-C9VX4xuvPUPUGb-02XQ2vC-z2lIOXmPv5attE&_nc_zt=23&_nc_ht=scontent.fmkz1-2.fna&_nc_gid=VQy6ajWNawSrcQCDHuhikQ&oh=00_Afrxw2ArQ8jqqHvKXcAoyHls-vzwJxaKdsjcx42Py06EGw&oe=697BECCB",
@@ -4070,7 +4564,10 @@ export const initialRestaurants = [
     "isNoBeef": false,
     "manualStatus": "auto",
     "branches": [],
-    "area": "Indahpura"
+    "area": "Indahpura",
+    "tags": [
+      "干"
+    ]
   },
   {
     "id": 152,
@@ -4097,7 +4594,12 @@ export const initialRestaurants = [
     "isVegetarian": false,
     "isNoBeef": false,
     "manualStatus": "auto",
-    "branches": []
+    "branches": [],
+    "tags": [
+      "有冷气",
+      "适合聚餐",
+      "平价"
+    ]
   },
   {
     "id": 153,
@@ -4124,12 +4626,17 @@ export const initialRestaurants = [
     "isVegetarian": false,
     "isNoBeef": false,
     "manualStatus": "auto",
-    "branches": []
+    "branches": [],
+    "tags": [
+      "有冷气",
+      "适合聚餐",
+      "平价"
+    ]
   },
   {
     "id": 154,
     "area": "Bandar Putra",
-    "name": "Madam LoqLoq Kulai",
+    "name": "Madam LoqLoq",
     "name_en": "",
     "intro_zh": "专营碌碌（Lok-lok）的特色餐厅。提供多种新鲜串串，搭配特制酱料，是宵夜和聚餐的热门选择。",
     "intro_en": "A specialty restaurant focusing on Lok-lok (skewers). Offers a wide variety of fresh skewers with special dipping sauces, a popular choice for supper and gatherings.",
@@ -4151,7 +4658,11 @@ export const initialRestaurants = [
     "isVegetarian": false,
     "isNoBeef": false,
     "manualStatus": "auto",
-    "branches": []
+    "branches": [],
+    "tags": [
+      "汤",
+      "热"
+    ]
   },
   {
     "id": 155,
@@ -4178,7 +4689,11 @@ export const initialRestaurants = [
     "isVegetarian": false,
     "isNoBeef": false,
     "manualStatus": "auto",
-    "branches": []
+    "branches": [],
+    "tags": [
+      "有冷气",
+      "适合聚餐"
+    ]
   },
   {
     "id": 156,
@@ -4205,7 +4720,8 @@ export const initialRestaurants = [
     "isVegetarian": false,
     "isNoBeef": false,
     "manualStatus": "auto",
-    "branches": []
+    "branches": [],
+    "tags": []
   },
   {
     "id": 157,
@@ -4231,7 +4747,8 @@ export const initialRestaurants = [
     "isVegetarian": false,
     "isNoBeef": false,
     "manualStatus": "auto",
-    "branches": []
+    "branches": [],
+    "tags": []
   },
   {
     "id": 158,
@@ -4258,7 +4775,11 @@ export const initialRestaurants = [
     "isVegetarian": false,
     "isNoBeef": false,
     "manualStatus": "auto",
-    "branches": []
+    "branches": [],
+    "tags": [
+      "有冷气",
+      "适合聚餐"
+    ]
   },
   {
     "id": 159,
@@ -4285,7 +4806,12 @@ export const initialRestaurants = [
     "isVegetarian": false,
     "isNoBeef": false,
     "manualStatus": "auto",
-    "branches": []
+    "branches": [],
+    "tags": [
+      "有冷气",
+      "适合聚餐",
+      "平价"
+    ]
   },
   {
     "id": 160,
@@ -4312,7 +4838,12 @@ export const initialRestaurants = [
     "isVegetarian": false,
     "isNoBeef": false,
     "manualStatus": "auto",
-    "branches": []
+    "branches": [],
+    "tags": [
+      "有冷气",
+      "适合聚餐",
+      "平价"
+    ]
   },
   {
     "id": 161,
@@ -4339,7 +4870,8 @@ export const initialRestaurants = [
     "isVegetarian": false,
     "isNoBeef": false,
     "manualStatus": "auto",
-    "branches": []
+    "branches": [],
+    "tags": []
   },
   {
     "id": 162,
@@ -4366,7 +4898,11 @@ export const initialRestaurants = [
     "isVegetarian": false,
     "isNoBeef": false,
     "manualStatus": "auto",
-    "branches": []
+    "branches": [],
+    "tags": [
+      "有冷气",
+      "适合聚餐"
+    ]
   },
   {
     "id": 163,
@@ -4393,7 +4929,8 @@ export const initialRestaurants = [
     "isVegetarian": false,
     "isNoBeef": false,
     "manualStatus": "auto",
-    "branches": []
+    "branches": [],
+    "tags": []
   },
   {
     "id": 164,
@@ -4419,7 +4956,10 @@ export const initialRestaurants = [
     "isVegetarian": false,
     "isNoBeef": false,
     "manualStatus": "auto",
-    "branches": []
+    "branches": [],
+    "tags": [
+      "干"
+    ]
   },
   {
     "id": 165,
@@ -4446,7 +4986,13 @@ export const initialRestaurants = [
     "isVegetarian": false,
     "isNoBeef": false,
     "manualStatus": "auto",
-    "branches": []
+    "branches": [],
+    "tags": [
+      "有冷气",
+      "适合聚餐",
+      "干",
+      "适合小孩"
+    ]
   },
   {
     "id": 166,
@@ -4473,13 +5019,17 @@ export const initialRestaurants = [
     "isVegetarian": false,
     "isNoBeef": false,
     "manualStatus": "auto",
-    "branches": []
+    "branches": [],
+    "tags": [
+      "有冷气",
+      "适合聚餐"
+    ]
   },
   {
     "id": 167,
     "area": "Indahpura",
     "name": "酿品家餐厅",
-    "name_en": "酿品家餐厅",
+    "name_en": "Restoran Niang Pin Jia",
     "intro_zh": "专营酿豆腐（Yong Tau Foo）的餐厅。每日新鲜制作，馅料饱满，汤头清甜，是健康美味的选择。",
     "intro_en": "A restaurant specializing in Yong Tau Foo. Freshly made daily with generous fillings and clear, sweet soup, offering a healthy and delicious choice.",
     "address": "487, Jalan Kenanga 29/14, Bandar Indahpura, 81000 Kulai, Johor Darul Ta'zim",
@@ -4500,7 +5050,8 @@ export const initialRestaurants = [
     "isVegetarian": false,
     "isNoBeef": false,
     "manualStatus": "auto",
-    "branches": []
+    "branches": [],
+    "tags": []
   },
   {
     "id": 168,
@@ -4527,7 +5078,8 @@ export const initialRestaurants = [
     "isVegetarian": false,
     "isNoBeef": false,
     "manualStatus": "auto",
-    "branches": []
+    "branches": [],
+    "tags": []
   },
   {
     "id": 169,
@@ -4554,7 +5106,11 @@ export const initialRestaurants = [
     "isVegetarian": false,
     "isNoBeef": false,
     "manualStatus": "auto",
-    "branches": []
+    "branches": [],
+    "tags": [
+      "有冷气",
+      "适合聚餐"
+    ]
   },
   {
     "id": 170,
@@ -4581,7 +5137,10 @@ export const initialRestaurants = [
     "isVegetarian": false,
     "isNoBeef": false,
     "manualStatus": "auto",
-    "branches": []
+    "branches": [],
+    "tags": [
+      "平价"
+    ]
   },
   {
     "id": 171,
@@ -4608,7 +5167,8 @@ export const initialRestaurants = [
     "isVegetarian": false,
     "isNoBeef": false,
     "manualStatus": "auto",
-    "branches": []
+    "branches": [],
+    "tags": []
   },
   {
     "id": 172,
@@ -4635,7 +5195,11 @@ export const initialRestaurants = [
     "isVegetarian": false,
     "isNoBeef": false,
     "manualStatus": "auto",
-    "branches": []
+    "branches": [],
+    "tags": [
+      "有冷气",
+      "适合聚餐"
+    ]
   },
   {
     "id": 173,
@@ -4662,7 +5226,11 @@ export const initialRestaurants = [
     "isVegetarian": false,
     "isNoBeef": false,
     "manualStatus": "auto",
-    "branches": []
+    "branches": [],
+    "tags": [
+      "汤",
+      "热"
+    ]
   },
   {
     "id": 174,
@@ -4690,7 +5258,11 @@ export const initialRestaurants = [
     "isNoBeef": false,
     "manualStatus": "auto",
     "branches": [],
-    "area": "Kelapa Sawit"
+    "area": "Kelapa Sawit",
+    "tags": [
+      "干",
+      "平价"
+    ]
   },
   {
     "id": 175,
@@ -4716,7 +5288,11 @@ export const initialRestaurants = [
     "isVegetarian": false,
     "isNoBeef": false,
     "manualStatus": "auto",
-    "branches": []
+    "branches": [],
+    "tags": [
+      "有冷气",
+      "适合聚餐"
+    ]
   },
   {
     "id": 176,
@@ -4742,7 +5318,8 @@ export const initialRestaurants = [
     "isVegetarian": false,
     "isNoBeef": false,
     "manualStatus": "auto",
-    "branches": []
+    "branches": [],
+    "tags": []
   },
   {
     "id": 177,
@@ -4768,7 +5345,10 @@ export const initialRestaurants = [
     "isVegetarian": false,
     "isNoBeef": false,
     "manualStatus": "auto",
-    "branches": []
+    "branches": [],
+    "tags": [
+      "平价"
+    ]
   },
   {
     "id": 178,
@@ -4794,7 +5374,11 @@ export const initialRestaurants = [
     "isVegetarian": false,
     "isNoBeef": false,
     "manualStatus": "auto",
-    "branches": []
+    "branches": [],
+    "tags": [
+      "有冷气",
+      "适合聚餐"
+    ]
   },
   {
     "id": 179,
@@ -4820,7 +5404,8 @@ export const initialRestaurants = [
     "isVegetarian": false,
     "isNoBeef": false,
     "manualStatus": "auto",
-    "branches": []
+    "branches": [],
+    "tags": []
   },
   {
     "id": 180,
@@ -4846,7 +5431,11 @@ export const initialRestaurants = [
     "isVegetarian": false,
     "isNoBeef": false,
     "manualStatus": "auto",
-    "branches": []
+    "branches": [],
+    "tags": [
+      "有冷气",
+      "适合聚餐"
+    ]
   },
   {
     "id": 181,
@@ -4872,7 +5461,14 @@ export const initialRestaurants = [
     "isVegetarian": false,
     "isNoBeef": false,
     "manualStatus": "auto",
-    "branches": []
+    "branches": [],
+    "tags": [
+      "有冷气",
+      "适合聚餐",
+      "干",
+      "清淡",
+      "健康"
+    ]
   },
   {
     "id": 182,
@@ -4899,7 +5495,11 @@ export const initialRestaurants = [
     "isVegetarian": false,
     "isNoBeef": false,
     "manualStatus": "auto",
-    "branches": []
+    "branches": [],
+    "tags": [
+      "干",
+      "平价"
+    ]
   },
   {
     "id": 183,
@@ -4925,7 +5525,8 @@ export const initialRestaurants = [
     "isVegetarian": false,
     "isNoBeef": false,
     "manualStatus": "auto",
-    "branches": []
+    "branches": [],
+    "tags": []
   },
   {
     "id": 184,
@@ -4951,7 +5552,10 @@ export const initialRestaurants = [
     "isVegetarian": false,
     "isNoBeef": false,
     "manualStatus": "auto",
-    "branches": []
+    "branches": [],
+    "tags": [
+      "平价"
+    ]
   },
   {
     "id": 185,
@@ -4977,7 +5581,11 @@ export const initialRestaurants = [
     "isVegetarian": false,
     "isNoBeef": false,
     "manualStatus": "auto",
-    "branches": []
+    "branches": [],
+    "tags": [
+      "干",
+      "平价"
+    ]
   },
   {
     "id": 187,
@@ -5003,7 +5611,12 @@ export const initialRestaurants = [
     "isVegetarian": false,
     "isNoBeef": false,
     "manualStatus": "auto",
-    "branches": []
+    "branches": [],
+    "tags": [
+      "有冷气",
+      "适合聚餐",
+      "平价"
+    ]
   },
   {
     "id": 188,
@@ -5031,11 +5644,15 @@ export const initialRestaurants = [
     "isNoBeef": false,
     "manualStatus": "auto",
     "branches": [],
-    "area": "Kelapa Sawit"
+    "area": "Kelapa Sawit",
+    "tags": [
+      "有冷气",
+      "适合聚餐"
+    ]
   },
   {
     "id": 189,
-    "name": "ZUS Coffee Kelapa Sawit ",
+    "name": "ZUS Coffee",
     "name_en": "",
     "intro_zh": "本地知名的精品咖啡连锁店，主打高品质且价格亲民的咖啡。蓝色标志性的Logo随处可见，是年轻人喜爱的打卡点。",
     "intro_en": "A well-known local specialty coffee chain, focusing on high-quality yet affordable coffee. Its iconic blue logo is everywhere, making it a favorite spot for the younger crowd.",
@@ -5058,7 +5675,11 @@ export const initialRestaurants = [
     "isNoBeef": false,
     "manualStatus": "auto",
     "branches": [],
-    "area": "Kelapa Sawit"
+    "area": "Kelapa Sawit",
+    "tags": [
+      "有冷气",
+      "适合聚餐"
+    ]
   },
   {
     "id": 190,
@@ -5084,7 +5705,10 @@ export const initialRestaurants = [
     "isVegetarian": false,
     "isNoBeef": false,
     "manualStatus": "auto",
-    "branches": []
+    "branches": [],
+    "tags": [
+      "平价"
+    ]
   },
   {
     "id": 191,
@@ -5111,7 +5735,8 @@ export const initialRestaurants = [
     "isNoBeef": false,
     "manualStatus": "auto",
     "branches": [],
-    "area": "Kelapa Sawit"
+    "area": "Kelapa Sawit",
+    "tags": []
   },
   {
     "id": 192,
@@ -5137,7 +5762,12 @@ export const initialRestaurants = [
     "isVegetarian": false,
     "isNoBeef": false,
     "manualStatus": "auto",
-    "branches": []
+    "branches": [],
+    "tags": [
+      "有冷气",
+      "适合聚餐",
+      "平价"
+    ]
   },
   {
     "id": 193,
@@ -5163,7 +5793,12 @@ export const initialRestaurants = [
     "isVegetarian": false,
     "isNoBeef": false,
     "manualStatus": "auto",
-    "branches": []
+    "branches": [],
+    "tags": [
+      "有冷气",
+      "适合聚餐",
+      "平价"
+    ]
   },
   {
     "id": 194,
@@ -5189,7 +5824,8 @@ export const initialRestaurants = [
     "isVegetarian": true,
     "isNoBeef": false,
     "manualStatus": "auto",
-    "branches": []
+    "branches": [],
+    "tags": []
   },
   {
     "id": 195,
@@ -5215,7 +5851,10 @@ export const initialRestaurants = [
     "isVegetarian": false,
     "isNoBeef": false,
     "manualStatus": "auto",
-    "branches": []
+    "branches": [],
+    "tags": [
+      "平价"
+    ]
   },
   {
     "id": 196,
@@ -5241,7 +5880,10 @@ export const initialRestaurants = [
     "isVegetarian": false,
     "isNoBeef": false,
     "manualStatus": "auto",
-    "branches": []
+    "branches": [],
+    "tags": [
+      "平价"
+    ]
   },
   {
     "id": 197,
@@ -5267,7 +5909,11 @@ export const initialRestaurants = [
     "isVegetarian": false,
     "isNoBeef": false,
     "manualStatus": "auto",
-    "branches": []
+    "branches": [],
+    "tags": [
+      "有冷气",
+      "适合聚餐"
+    ]
   },
   {
     "id": 198,
@@ -5293,7 +5939,10 @@ export const initialRestaurants = [
     "isVegetarian": false,
     "isNoBeef": false,
     "manualStatus": "auto",
-    "branches": []
+    "branches": [],
+    "tags": [
+      "平价"
+    ]
   },
   {
     "id": 199,
@@ -5319,14 +5968,19 @@ export const initialRestaurants = [
     "isVegetarian": false,
     "isNoBeef": false,
     "manualStatus": "auto",
-    "branches": []
+    "branches": [],
+    "tags": [
+      "有冷气",
+      "适合聚餐",
+      "平价"
+    ]
   },
   {
     "id": 200,
     "name": "麦可乐炸鸡",
     "name_en": "Mc Cola",
-    "intro_zh": "古来老字号快餐店，以其独特的炸鸡风味闻名。是许多古来人童年的味道，价格亲民。",
-    "intro_en": "A long-established fast food shop in Kulai, famous for its unique fried chicken flavor. It is the taste of childhood for many Kulai people, with affordable prices.",
+    "intro_zh": "古来独一无二的老字号炸鸡茶室，也是许多当地人的童年回忆。这里主打充满南洋风味的脆皮炸鸡，外酥里嫩。最经典的吃法是点一份炸鸡，再配上一碗堆满配料的红豆冰（ABC）或煎蕊（Cendol），是古来最地道的消暑美食组合。",
+    "intro_en": "A legendary vintage fried chicken spot in Kulai. Known for its unique local-style crispy fried chicken. The ultimate Kulai experience is pairing their signature chicken with a refreshing bowl of Ais Kacang (ABC) or Cendol.",
     "address": "15, Jalan Pinang, Taman Kota Kulai, 81000 Kulai, Johor Darul Ta'zim",
     "opening_hours": "11 am–8 pm",
     "category": [
@@ -5345,7 +5999,16 @@ export const initialRestaurants = [
     "isVegetarian": false,
     "isNoBeef": false,
     "manualStatus": "auto",
-    "branches": []
+    "branches": [],
+    "tags": [
+      "本地炸鸡",
+      "红豆冰",
+      "ABC",
+      "下午茶",
+      "童年回忆",
+      "消暑",
+      "平价美食"
+    ]
   },
   {
     "id": 201,
@@ -5371,7 +6034,10 @@ export const initialRestaurants = [
     "isVegetarian": false,
     "isNoBeef": false,
     "manualStatus": "auto",
-    "branches": []
+    "branches": [],
+    "tags": [
+      "干"
+    ]
   },
   {
     "id": 204,
@@ -5399,7 +6065,12 @@ export const initialRestaurants = [
     "isVegetarian": false,
     "isNoBeef": false,
     "manualStatus": "auto",
-    "branches": []
+    "branches": [],
+    "tags": [
+      "有冷气",
+      "适合聚餐",
+      "平价"
+    ]
   },
   {
     "id": 205,
@@ -5425,7 +6096,10 @@ export const initialRestaurants = [
     "isVegetarian": false,
     "isNoBeef": false,
     "manualStatus": "auto",
-    "branches": []
+    "branches": [],
+    "tags": [
+      "干"
+    ]
   },
   {
     "id": 206,
@@ -5451,34 +6125,11 @@ export const initialRestaurants = [
     "isVegetarian": false,
     "isNoBeef": false,
     "manualStatus": "auto",
-    "branches": []
-  },
-  {
-    "id": 207,
-    "area": "Indahpura",
-    "name": "MeatVking Bistro",
-    "name_en": "",
-    "intro_zh": "主打得克萨斯烧烤（Texas BBQ）和汉堡的西餐厅，肉食爱好者的天堂。",
-    "intro_en": "Specializes in Texas Barbecue and Burgers. A paradise for meat lovers.",
-    "address": "Pusat Komersial Indah, 127, Jln Kiambang 14, Bandar Indahpura, 81000 Kulai, Johor Darul Ta'zim",
-    "opening_hours": "Monday: 10am - 10pm\nTuesday: 10am - 10pm\nWednesday: Closed\nThursday: 10am - 10pm\nFriday: 10am - 10pm\nSaturday: 10am - 10pm\nSunday: 10am - 10pm",
-    "category": [
-      "西餐"
-    ],
-    "categories": [
-      "西餐"
-    ],
-    "rating": 0,
-    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRoeRskVtQ_nDXKKaC2D9PDVgyiaJ5Z6G4nmA&s",
-    "subStalls": [],
-    "price_range": "RM 10-20",
-    "menu_link": "",
-    "website_link": "",
-    "delivery_link": "",
-    "isVegetarian": false,
-    "isNoBeef": false,
-    "manualStatus": "auto",
-    "branches": []
+    "branches": [],
+    "tags": [
+      "有冷气",
+      "适合聚餐"
+    ]
   },
   {
     "id": 208,
@@ -5504,34 +6155,11 @@ export const initialRestaurants = [
     "isVegetarian": false,
     "isNoBeef": false,
     "manualStatus": "auto",
-    "branches": []
-  },
-  {
-    "id": 209,
-    "area": "Indahpura",
-    "name": "马丞锅",
-    "name_en": "Ma Chin All Steamboat Restaurant",
-    "intro_zh": "提供火锅和烧烤的餐厅，食材新鲜，汤底选择多样。",
-    "intro_en": "Offers steamboat and BBQ dining with fresh ingredients and various soup bases.",
-    "address": "590, Jalan Kenanga 29/19, Bandar Indahpura, 81000 Kulai, Johor Darul Ta'zim",
-    "opening_hours": "Monday: 11am - 12am\nTuesday: 11am - 12am\nWednesday: 11am - 12am\nThursday: 11am - 12am\nFriday: 11am - 12am\nSaturday: 11am - 12am\nSunday: 11am - 12am",
-    "category": [
-      "火锅烧烤"
-    ],
-    "categories": [
-      "火锅烧烤"
-    ],
-    "rating": 0,
-    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQF2dCLXD9PWYCGfBPEPKVZ_XFXUn5ZWn3Qgg&s",
-    "subStalls": [],
-    "price_range": "RM 10-20",
-    "menu_link": "",
-    "website_link": "",
-    "delivery_link": "",
-    "isVegetarian": false,
-    "isNoBeef": false,
-    "manualStatus": "auto",
-    "branches": []
+    "branches": [],
+    "tags": [
+      "有冷气",
+      "适合聚餐"
+    ]
   },
   {
     "id": 210,
@@ -5557,7 +6185,10 @@ export const initialRestaurants = [
     "isVegetarian": false,
     "isNoBeef": false,
     "manualStatus": "auto",
-    "branches": []
+    "branches": [],
+    "tags": [
+      "平价"
+    ]
   },
   {
     "id": 211,
@@ -5585,7 +6216,13 @@ export const initialRestaurants = [
     "isVegetarian": false,
     "isNoBeef": false,
     "manualStatus": "auto",
-    "branches": []
+    "branches": [],
+    "tags": [
+      "有冷气",
+      "适合聚餐",
+      "干",
+      "平价"
+    ]
   },
   {
     "id": 212,
@@ -5611,7 +6248,8 @@ export const initialRestaurants = [
     "isVegetarian": true,
     "isNoBeef": false,
     "manualStatus": "auto",
-    "branches": []
+    "branches": [],
+    "tags": []
   },
   {
     "id": 216,
@@ -5637,7 +6275,10 @@ export const initialRestaurants = [
     "isVegetarian": false,
     "isNoBeef": false,
     "manualStatus": "auto",
-    "branches": []
+    "branches": [],
+    "tags": [
+      "干"
+    ]
   },
   {
     "id": 217,
@@ -5663,7 +6304,8 @@ export const initialRestaurants = [
     "isVegetarian": true,
     "isNoBeef": false,
     "manualStatus": "auto",
-    "branches": []
+    "branches": [],
+    "tags": []
   },
   {
     "id": 218,
@@ -5689,7 +6331,10 @@ export const initialRestaurants = [
     "isVegetarian": false,
     "isNoBeef": false,
     "manualStatus": "auto",
-    "branches": []
+    "branches": [],
+    "tags": [
+      "干"
+    ]
   },
   {
     "id": 219,
@@ -5715,7 +6360,8 @@ export const initialRestaurants = [
     "isVegetarian": true,
     "isNoBeef": false,
     "manualStatus": "auto",
-    "branches": []
+    "branches": [],
+    "tags": []
   },
   {
     "id": 220,
@@ -5744,34 +6390,11 @@ export const initialRestaurants = [
     "isVegetarian": false,
     "isNoBeef": false,
     "manualStatus": "auto",
-    "branches": []
-  },
-  {
-    "id": 221,
-    "area": "Indahpura",
-    "name": "罗记小食馆",
-    "name_en": "Law Cafe",
-    "intro_zh": "温馨的小食馆，提供本地风味美食和咖啡。适合早餐和午餐聚会。",
-    "intro_en": "A cozy cafe offering local delights and coffee. Suitable for breakfast and lunch gatherings.",
-    "address": "488, Jalan Kenanga 29/14, Bandar Indahpura, 81000 Kulai, Johor Darul Ta'zim",
-    "opening_hours": "6:45 am–4:15 pm Wed closed",
-    "category": [
-      "Cafe"
-    ],
-    "categories": [
-      "Cafe"
-    ],
-    "rating": 0,
-    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTi3-4gYrXPEPovN33QYrE-sOb6o2_XBBu08A&s",
-    "subStalls": [],
-    "price_range": "RM 10-20",
-    "menu_link": "",
-    "website_link": "",
-    "delivery_link": "",
-    "isVegetarian": false,
-    "isNoBeef": false,
-    "manualStatus": "auto",
-    "branches": []
+    "branches": [],
+    "tags": [
+      "有冷气",
+      "适合聚餐"
+    ]
   },
   {
     "id": 222,
@@ -5797,7 +6420,10 @@ export const initialRestaurants = [
     "isVegetarian": false,
     "isNoBeef": false,
     "manualStatus": "auto",
-    "branches": []
+    "branches": [],
+    "tags": [
+      "干"
+    ]
   },
   {
     "id": 223,
@@ -5823,7 +6449,11 @@ export const initialRestaurants = [
     "isVegetarian": false,
     "isNoBeef": false,
     "manualStatus": "auto",
-    "branches": []
+    "branches": [],
+    "tags": [
+      "干",
+      "平价"
+    ]
   },
   {
     "id": 224,
@@ -5852,7 +6482,11 @@ export const initialRestaurants = [
     "isVegetarian": false,
     "isNoBeef": false,
     "manualStatus": "auto",
-    "branches": []
+    "branches": [],
+    "tags": [
+      "有冷气",
+      "适合聚餐"
+    ]
   },
   {
     "id": 225,
@@ -5879,7 +6513,11 @@ export const initialRestaurants = [
     "isVegetarian": false,
     "isNoBeef": false,
     "manualStatus": "auto",
-    "branches": []
+    "branches": [],
+    "tags": [
+      "干",
+      "平价"
+    ]
   },
   {
     "id": 226,
@@ -5908,7 +6546,11 @@ export const initialRestaurants = [
     "isVegetarian": true,
     "isNoBeef": false,
     "manualStatus": "auto",
-    "branches": []
+    "branches": [],
+    "tags": [
+      "有冷气",
+      "适合聚餐"
+    ]
   },
   {
     "id": 227,
@@ -5937,7 +6579,11 @@ export const initialRestaurants = [
     "isVegetarian": false,
     "isNoBeef": false,
     "manualStatus": "auto",
-    "branches": []
+    "branches": [],
+    "tags": [
+      "有冷气",
+      "适合聚餐"
+    ]
   },
   {
     "id": 228,
@@ -5963,7 +6609,11 @@ export const initialRestaurants = [
     "isVegetarian": false,
     "isNoBeef": false,
     "manualStatus": "auto",
-    "branches": []
+    "branches": [],
+    "tags": [
+      "有冷气",
+      "适合聚餐"
+    ]
   },
   {
     "id": 229,
@@ -5989,7 +6639,13 @@ export const initialRestaurants = [
     "isVegetarian": false,
     "isNoBeef": false,
     "manualStatus": "auto",
-    "branches": []
+    "branches": [],
+    "tags": [
+      "有冷气",
+      "适合聚餐",
+      "干",
+      "适合小孩"
+    ]
   },
   {
     "id": 230,
@@ -6015,7 +6671,8 @@ export const initialRestaurants = [
     "isVegetarian": true,
     "isNoBeef": false,
     "manualStatus": "auto",
-    "branches": []
+    "branches": [],
+    "tags": []
   },
   {
     "id": 231,
@@ -6041,7 +6698,10 @@ export const initialRestaurants = [
     "isVegetarian": false,
     "isNoBeef": false,
     "manualStatus": "auto",
-    "branches": []
+    "branches": [],
+    "tags": [
+      "平价"
+    ]
   },
   {
     "id": 232,
@@ -6067,7 +6727,12 @@ export const initialRestaurants = [
     "isVegetarian": false,
     "isNoBeef": false,
     "manualStatus": "auto",
-    "branches": []
+    "branches": [],
+    "tags": [
+      "汤",
+      "热",
+      "干"
+    ]
   },
   {
     "id": 233,
@@ -6093,7 +6758,8 @@ export const initialRestaurants = [
     "isVegetarian": false,
     "isNoBeef": false,
     "manualStatus": "auto",
-    "branches": []
+    "branches": [],
+    "tags": []
   },
   {
     "id": 234,
@@ -6119,7 +6785,10 @@ export const initialRestaurants = [
     "isVegetarian": false,
     "isNoBeef": false,
     "manualStatus": "auto",
-    "branches": []
+    "branches": [],
+    "tags": [
+      "平价"
+    ]
   },
   {
     "id": 235,
@@ -6146,7 +6815,8 @@ export const initialRestaurants = [
     "isVegetarian": false,
     "isNoBeef": false,
     "manualStatus": "auto",
-    "branches": []
+    "branches": [],
+    "tags": []
   },
   {
     "id": 236,
@@ -6173,7 +6843,11 @@ export const initialRestaurants = [
     "isVegetarian": false,
     "isNoBeef": false,
     "manualStatus": "auto",
-    "branches": []
+    "branches": [],
+    "tags": [
+      "干",
+      "平价"
+    ]
   },
   {
     "id": 237,
@@ -6200,7 +6874,8 @@ export const initialRestaurants = [
     "isVegetarian": false,
     "isNoBeef": false,
     "manualStatus": "auto",
-    "branches": []
+    "branches": [],
+    "tags": []
   },
   {
     "id": 239,
@@ -6229,13 +6904,16 @@ export const initialRestaurants = [
     "isVegetarian": false,
     "isNoBeef": false,
     "manualStatus": "auto",
-    "branches": []
+    "branches": [],
+    "tags": [
+      "干"
+    ]
   },
   {
     "id": 240,
     "area": "Indahpura",
     "name": "Kopi Tenggek",
-    "name_en": "Kopi Tenggek",
+    "name_en": "",
     "intro_zh": "这里的招牌“Kopi Tenggek”咖啡香浓独特，搭配传统的烤面包和生熟蛋，是体验地道柔佛早餐的好地方。",
     "intro_en": "Famous for its signature \"Kopi Tenggek\", served with traditional toast and soft-boiled eggs, a great place to experience authentic Johor breakfast.",
     "address": "7, Jln Kiambang 2, Bandar Indahpura, 81000 Kulai, Johor Darul Ta'zim",
@@ -6256,7 +6934,8 @@ export const initialRestaurants = [
     "isVegetarian": false,
     "isNoBeef": false,
     "manualStatus": "auto",
-    "branches": []
+    "branches": [],
+    "tags": []
   },
   {
     "id": 241,
@@ -6283,7 +6962,8 @@ export const initialRestaurants = [
     "isVegetarian": false,
     "isNoBeef": false,
     "manualStatus": "auto",
-    "branches": []
+    "branches": [],
+    "tags": []
   },
   {
     "id": 242,
@@ -6308,7 +6988,11 @@ export const initialRestaurants = [
     "isVegetarian": false,
     "isNoBeef": false,
     "manualStatus": "auto",
-    "branches": []
+    "branches": [],
+    "tags": [
+      "有冷气",
+      "适合聚餐"
+    ]
   },
   {
     "id": 243,
@@ -6333,7 +7017,8 @@ export const initialRestaurants = [
     "isVegetarian": false,
     "isNoBeef": false,
     "manualStatus": "auto",
-    "branches": []
+    "branches": [],
+    "tags": []
   },
   {
     "id": 244,
@@ -6358,7 +7043,11 @@ export const initialRestaurants = [
     "isVegetarian": false,
     "isNoBeef": false,
     "manualStatus": "auto",
-    "branches": []
+    "branches": [],
+    "tags": [
+      "有冷气",
+      "适合聚餐"
+    ]
   },
   {
     "id": 245,
@@ -6385,7 +7074,8 @@ export const initialRestaurants = [
     "isVegetarian": false,
     "isNoBeef": false,
     "manualStatus": "auto",
-    "branches": []
+    "branches": [],
+    "tags": []
   },
   {
     "id": 246,
@@ -6412,7 +7102,11 @@ export const initialRestaurants = [
     "isVegetarian": false,
     "isNoBeef": false,
     "manualStatus": "auto",
-    "branches": []
+    "branches": [],
+    "tags": [
+      "重口味",
+      "辣"
+    ]
   },
   {
     "id": 247,
@@ -6440,7 +7134,11 @@ export const initialRestaurants = [
     "isVegetarian": false,
     "isNoBeef": false,
     "manualStatus": "auto",
-    "branches": []
+    "branches": [],
+    "tags": [
+      "汤",
+      "热"
+    ]
   },
   {
     "id": 248,
@@ -6467,7 +7165,10 @@ export const initialRestaurants = [
     "isVegetarian": false,
     "isNoBeef": false,
     "manualStatus": "auto",
-    "branches": []
+    "branches": [],
+    "tags": [
+      "干"
+    ]
   },
   {
     "id": 249,
@@ -6494,7 +7195,8 @@ export const initialRestaurants = [
     "isVegetarian": false,
     "isNoBeef": false,
     "manualStatus": "auto",
-    "branches": []
+    "branches": [],
+    "tags": []
   },
   {
     "id": 250,
@@ -6519,7 +7221,8 @@ export const initialRestaurants = [
     "isVegetarian": false,
     "isNoBeef": false,
     "manualStatus": "auto",
-    "branches": []
+    "branches": [],
+    "tags": []
   },
   {
     "id": 251,
@@ -6544,7 +7247,10 @@ export const initialRestaurants = [
     "isVegetarian": false,
     "isNoBeef": false,
     "manualStatus": "auto",
-    "branches": []
+    "branches": [],
+    "tags": [
+      "干"
+    ]
   },
   {
     "id": 252,
@@ -6571,7 +7277,10 @@ export const initialRestaurants = [
     "isVegetarian": false,
     "isNoBeef": false,
     "manualStatus": "auto",
-    "branches": []
+    "branches": [],
+    "tags": [
+      "干"
+    ]
   },
   {
     "id": 253,
@@ -6598,7 +7307,10 @@ export const initialRestaurants = [
     "isVegetarian": false,
     "isNoBeef": false,
     "manualStatus": "auto",
-    "branches": []
+    "branches": [],
+    "tags": [
+      "平价"
+    ]
   },
   {
     "id": 254,
@@ -6625,7 +7337,10 @@ export const initialRestaurants = [
     "isVegetarian": false,
     "isNoBeef": false,
     "manualStatus": "auto",
-    "branches": []
+    "branches": [],
+    "tags": [
+      "平价"
+    ]
   },
   {
     "id": 255,
@@ -6652,7 +7367,11 @@ export const initialRestaurants = [
     "isVegetarian": false,
     "isNoBeef": false,
     "manualStatus": "auto",
-    "branches": []
+    "branches": [],
+    "tags": [
+      "有冷气",
+      "适合聚餐"
+    ]
   },
   {
     "id": 256,
@@ -6679,7 +7398,10 @@ export const initialRestaurants = [
     "isVegetarian": false,
     "isNoBeef": false,
     "manualStatus": "auto",
-    "branches": []
+    "branches": [],
+    "tags": [
+      "平价"
+    ]
   },
   {
     "id": 257,
@@ -6706,7 +7428,11 @@ export const initialRestaurants = [
     "isVegetarian": false,
     "isNoBeef": false,
     "manualStatus": "auto",
-    "branches": []
+    "branches": [],
+    "tags": [
+      "有冷气",
+      "适合聚餐"
+    ]
   },
   {
     "id": 258,
@@ -6729,7 +7455,10 @@ export const initialRestaurants = [
     "isVegetarian": false,
     "isNoBeef": false,
     "manualStatus": "auto",
-    "branches": []
+    "branches": [],
+    "tags": [
+      "干"
+    ]
   },
   {
     "id": 259,
@@ -6756,36 +7485,11 @@ export const initialRestaurants = [
     "isVegetarian": false,
     "isNoBeef": false,
     "manualStatus": "auto",
-    "branches": []
-  },
-  {
-    "id": 260,
-    "area": "Indahpura",
-    "name": "UFB - Union Fashion Bar Balcony",
-    "name_en": "",
-    "intro_zh": "结合时尚与美食的餐厅酒吧，以其创意甜点、西餐和舒适的氛围而闻名。",
-    "intro_en": "A restaurant and bar combining fashion and food, known for its creative desserts, Western cuisine, and comfortable atmosphere.",
-    "address": "66, Jalan Kenanga 29/5, Bandar Indahpura, 81300 Kulai, Johor Darul Ta'zim",
-    "opening_hours": "Monday: 12pm - 12am\nTuesday: 12pm - 12am\nWednesday: 12pm - 12am\nThursday: 12pm - 12am\nFriday: 12pm - 12am\nSaturday: 12pm - 12am\nSunday: 12pm - 12am",
-    "category": [
-      "西餐",
-      "Cafe"
-    ],
-    "categories": [
-      "西餐",
-      "Cafe"
-    ],
-    "rating": 0,
-    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT5M-nzCJjbu1ID_v8cPvtAupV_PZZWOd6k0A&s",
-    "subStalls": [],
-    "price_range": "RM 10-20",
-    "menu_link": "",
-    "website_link": "",
-    "delivery_link": "",
-    "isVegetarian": false,
-    "isNoBeef": false,
-    "manualStatus": "auto",
-    "branches": []
+    "branches": [],
+    "tags": [
+      "有冷气",
+      "适合聚餐"
+    ]
   },
   {
     "id": 261,
@@ -6812,7 +7516,11 @@ export const initialRestaurants = [
     "isVegetarian": false,
     "isNoBeef": false,
     "manualStatus": "auto",
-    "branches": []
+    "branches": [],
+    "tags": [
+      "有冷气",
+      "适合聚餐"
+    ]
   },
   {
     "id": 262,
@@ -6839,7 +7547,8 @@ export const initialRestaurants = [
     "isVegetarian": false,
     "isNoBeef": false,
     "manualStatus": "auto",
-    "branches": []
+    "branches": [],
+    "tags": []
   },
   {
     "id": 263,
@@ -6866,7 +7575,10 @@ export const initialRestaurants = [
     "isVegetarian": false,
     "isNoBeef": false,
     "manualStatus": "auto",
-    "branches": []
+    "branches": [],
+    "tags": [
+      "干"
+    ]
   },
   {
     "id": 264,
@@ -6893,7 +7605,8 @@ export const initialRestaurants = [
     "isVegetarian": false,
     "isNoBeef": false,
     "manualStatus": "auto",
-    "branches": []
+    "branches": [],
+    "tags": []
   },
   {
     "id": 265,
@@ -6920,7 +7633,10 @@ export const initialRestaurants = [
     "isVegetarian": false,
     "isNoBeef": false,
     "manualStatus": "auto",
-    "branches": []
+    "branches": [],
+    "tags": [
+      "干"
+    ]
   },
   {
     "id": 266,
@@ -6949,7 +7665,11 @@ export const initialRestaurants = [
     "isVegetarian": false,
     "isNoBeef": false,
     "manualStatus": "auto",
-    "branches": []
+    "branches": [],
+    "tags": [
+      "有冷气",
+      "适合聚餐"
+    ]
   },
   {
     "id": 267,
@@ -6976,7 +7696,8 @@ export const initialRestaurants = [
     "isNoBeef": false,
     "manualStatus": "auto",
     "branches": [],
-    "area": "Indahpura"
+    "area": "Indahpura",
+    "tags": []
   },
   {
     "id": 268,
@@ -7003,7 +7724,11 @@ export const initialRestaurants = [
     "isVegetarian": false,
     "isNoBeef": false,
     "manualStatus": "auto",
-    "branches": []
+    "branches": [],
+    "tags": [
+      "有冷气",
+      "适合聚餐"
+    ]
   },
   {
     "id": 269,
@@ -7030,7 +7755,11 @@ export const initialRestaurants = [
     "isVegetarian": false,
     "isNoBeef": false,
     "manualStatus": "auto",
-    "branches": []
+    "branches": [],
+    "tags": [
+      "重口味",
+      "辣"
+    ]
   },
   {
     "id": 270,
@@ -7057,7 +7786,8 @@ export const initialRestaurants = [
     "isVegetarian": false,
     "isNoBeef": false,
     "manualStatus": "auto",
-    "branches": []
+    "branches": [],
+    "tags": []
   },
   {
     "id": 271,
@@ -7086,7 +7816,11 @@ export const initialRestaurants = [
     "isVegetarian": false,
     "isNoBeef": false,
     "manualStatus": "auto",
-    "branches": []
+    "branches": [],
+    "tags": [
+      "有冷气",
+      "适合聚餐"
+    ]
   },
   {
     "id": 272,
@@ -7115,34 +7849,11 @@ export const initialRestaurants = [
     "isVegetarian": false,
     "isNoBeef": false,
     "manualStatus": "auto",
-    "branches": []
-  },
-  {
-    "id": 273,
-    "area": "Indahpura",
-    "name": "民洋茶室",
-    "name_en": "Pacific Kopi",
-    "intro_zh": "民洋茶室是一家结合传统与现代的南洋咖啡馆，提供经典的烤面包、半熟蛋和浓郁咖啡，是享用早餐和下午茶的好去处。",
-    "intro_en": "Pacific Kopi is a Nanyang-style cafe blending tradition and modernity, offering classic toast, soft-boiled eggs, and rich coffee, a great spot for breakfast and tea time.",
-    "address": "Lot G01, Ground Floor, Aeon Mall Kulaijaya, PTD 106273, Persiaran Indahpura Utama Bandar Indahpura, 81000 Kulai Jaya, 81000 Kulai, Johor Darul Ta'zim",
-    "opening_hours": "10 am–10 pm",
-    "category": [
-      "Cafe"
-    ],
-    "categories": [
-      "Cafe"
-    ],
-    "rating": 0,
-    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTD6iOg5yngtfuzs4yrG98ZK0TuACmFbC7b-A&s",
-    "subStalls": [],
-    "price_range": "RM 10-20",
-    "menu_link": "",
-    "website_link": "",
-    "delivery_link": "",
-    "isVegetarian": false,
-    "isNoBeef": false,
-    "manualStatus": "auto",
-    "branches": []
+    "branches": [],
+    "tags": [
+      "有冷气",
+      "适合聚餐"
+    ]
   },
   {
     "id": 274,
@@ -7169,7 +7880,11 @@ export const initialRestaurants = [
     "isVegetarian": false,
     "isNoBeef": false,
     "manualStatus": "auto",
-    "branches": []
+    "branches": [],
+    "tags": [
+      "有冷气",
+      "适合聚餐"
+    ]
   },
   {
     "id": 275,
@@ -7196,7 +7911,11 @@ export const initialRestaurants = [
     "isVegetarian": false,
     "isNoBeef": false,
     "manualStatus": "auto",
-    "branches": []
+    "branches": [],
+    "tags": [
+      "有冷气",
+      "适合聚餐"
+    ]
   },
   {
     "id": 276,
@@ -7223,7 +7942,11 @@ export const initialRestaurants = [
     "isVegetarian": false,
     "isNoBeef": false,
     "manualStatus": "auto",
-    "branches": []
+    "branches": [],
+    "tags": [
+      "有冷气",
+      "适合聚餐"
+    ]
   },
   {
     "id": 277,
@@ -7250,7 +7973,8 @@ export const initialRestaurants = [
     "isVegetarian": false,
     "isNoBeef": false,
     "manualStatus": "auto",
-    "branches": []
+    "branches": [],
+    "tags": []
   },
   {
     "id": 278,
@@ -7277,7 +8001,12 @@ export const initialRestaurants = [
     "isVegetarian": false,
     "isNoBeef": false,
     "manualStatus": "auto",
-    "branches": []
+    "branches": [],
+    "tags": [
+      "干",
+      "重口味",
+      "辣"
+    ]
   },
   {
     "id": 279,
@@ -7304,7 +8033,11 @@ export const initialRestaurants = [
     "isVegetarian": false,
     "isNoBeef": false,
     "manualStatus": "auto",
-    "branches": []
+    "branches": [],
+    "tags": [
+      "干",
+      "适合小孩"
+    ]
   },
   {
     "id": 280,
@@ -7331,7 +8064,11 @@ export const initialRestaurants = [
     "isVegetarian": false,
     "isNoBeef": false,
     "manualStatus": "auto",
-    "branches": []
+    "branches": [],
+    "tags": [
+      "有冷气",
+      "适合聚餐"
+    ]
   },
   {
     "id": 281,
@@ -7358,7 +8095,8 @@ export const initialRestaurants = [
     "isVegetarian": false,
     "isNoBeef": false,
     "manualStatus": "auto",
-    "branches": []
+    "branches": [],
+    "tags": []
   },
   {
     "id": 282,
@@ -7385,34 +8123,10 @@ export const initialRestaurants = [
     "isVegetarian": false,
     "isNoBeef": false,
     "manualStatus": "auto",
-    "branches": []
-  },
-  {
-    "id": 283,
-    "area": "Indahpura",
-    "name": "霸王饭",
-    "name_en": "Bar Wang Rice",
-    "intro_zh": "知名杂菜饭连锁店，提供多样化的菜色选择，价格实惠，是快速解决午餐或晚餐的热门选择。",
-    "intro_en": "A well-known mixed rice chain offering a wide variety of dishes at affordable prices, making it a popular choice for a quick lunch or dinner.",
-    "address": "Jln Kenanga 29/8, Indahpura, 81000 Kulai, Johor",
-    "opening_hours": "9:30 am–9 pm",
-    "category": [
-      "杂菜饭"
-    ],
-    "categories": [
-      "杂菜饭"
-    ],
-    "rating": 0,
-    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTM8Z3Njt8AWVVPPpsIErb73xxibcaoW8Lf3g&s",
-    "subStalls": [],
-    "price_range": "RM 10-20",
-    "menu_link": "",
-    "website_link": "",
-    "delivery_link": "",
-    "isVegetarian": false,
-    "isNoBeef": false,
-    "manualStatus": "auto",
-    "branches": []
+    "branches": [],
+    "tags": [
+      "干"
+    ]
   },
   {
     "id": 284,
@@ -7439,7 +8153,8 @@ export const initialRestaurants = [
     "isVegetarian": false,
     "isNoBeef": false,
     "manualStatus": "auto",
-    "branches": []
+    "branches": [],
+    "tags": []
   },
   {
     "id": 285,
@@ -7466,33 +8181,10 @@ export const initialRestaurants = [
     "isVegetarian": false,
     "isNoBeef": false,
     "manualStatus": "auto",
-    "branches": []
-  },
-  {
-    "id": 286,
-    "name": "福珍海鲜楼",
-    "name_en": "Restoran Hock Chin",
-    "intro_zh": "传统的煮炒海鲜楼，提供新鲜的海鲜料理和锅气十足的炒粉面，是当地人晚餐和宵夜的好去处。",
-    "intro_en": "A traditional seafood Zi Char restaurant offering fresh seafood dishes and wok-hei filled fried noodles, a great place for dinner and supper for locals.",
-    "address": "131-155, Jln. Jambu Mawar, Taman Kulai Besar, 81000 Kulai, Johor Darul Ta'zim",
-    "opening_hours": "4 pm–1 am Tue Closed",
-    "category": [
-      "煮炒海鲜楼"
-    ],
-    "categories": [
-      "煮炒海鲜楼"
-    ],
-    "rating": 0,
-    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSw5aQRxxKpDTQTa3RJ2mYx-VVErK1vfasUGg&s",
-    "subStalls": [],
-    "price_range": "RM 10-20",
-    "menu_link": "",
-    "website_link": "",
-    "delivery_link": "",
-    "isVegetarian": false,
-    "isNoBeef": false,
-    "manualStatus": "auto",
-    "branches": []
+    "branches": [],
+    "tags": [
+      "干"
+    ]
   },
   {
     "id": 287,
@@ -7519,7 +8211,10 @@ export const initialRestaurants = [
     "isVegetarian": false,
     "isNoBeef": false,
     "manualStatus": "auto",
-    "branches": []
+    "branches": [],
+    "tags": [
+      "干"
+    ]
   },
   {
     "id": 288,
@@ -7546,7 +8241,12 @@ export const initialRestaurants = [
     "isVegetarian": false,
     "isNoBeef": false,
     "manualStatus": "auto",
-    "branches": []
+    "branches": [],
+    "tags": [
+      "干",
+      "清淡",
+      "健康"
+    ]
   },
   {
     "id": 289,
@@ -7573,7 +8273,10 @@ export const initialRestaurants = [
     "isVegetarian": false,
     "isNoBeef": false,
     "manualStatus": "auto",
-    "branches": []
+    "branches": [],
+    "tags": [
+      "平价"
+    ]
   },
   {
     "id": 290,
@@ -7600,7 +8303,8 @@ export const initialRestaurants = [
     "isVegetarian": false,
     "isNoBeef": false,
     "manualStatus": "auto",
-    "branches": []
+    "branches": [],
+    "tags": []
   },
   {
     "id": 291,
@@ -7627,7 +8331,13 @@ export const initialRestaurants = [
     "isVegetarian": false,
     "isNoBeef": false,
     "manualStatus": "auto",
-    "branches": []
+    "branches": [],
+    "tags": [
+      "有冷气",
+      "适合聚餐",
+      "汤",
+      "热"
+    ]
   },
   {
     "id": 292,
@@ -7654,7 +8364,8 @@ export const initialRestaurants = [
     "isVegetarian": false,
     "isNoBeef": false,
     "manualStatus": "auto",
-    "branches": []
+    "branches": [],
+    "tags": []
   },
   {
     "id": 293,
@@ -7681,7 +8392,11 @@ export const initialRestaurants = [
     "isVegetarian": false,
     "isNoBeef": false,
     "manualStatus": "auto",
-    "branches": []
+    "branches": [],
+    "tags": [
+      "有冷气",
+      "适合聚餐"
+    ]
   },
   {
     "id": 294,
@@ -7709,7 +8424,11 @@ export const initialRestaurants = [
     "isVegetarian": false,
     "isNoBeef": false,
     "manualStatus": "auto",
-    "branches": []
+    "branches": [],
+    "tags": [
+      "有冷气",
+      "适合聚餐"
+    ]
   },
   {
     "id": 295,
@@ -7737,7 +8456,11 @@ export const initialRestaurants = [
     "isVegetarian": false,
     "isNoBeef": false,
     "manualStatus": "auto",
-    "branches": []
+    "branches": [],
+    "tags": [
+      "有冷气",
+      "适合聚餐"
+    ]
   },
   {
     "id": 296,
@@ -7766,7 +8489,11 @@ export const initialRestaurants = [
     "isVegetarian": false,
     "isNoBeef": false,
     "manualStatus": "auto",
-    "branches": []
+    "branches": [],
+    "tags": [
+      "有冷气",
+      "适合聚餐"
+    ]
   },
   {
     "id": 297,
@@ -7793,7 +8520,11 @@ export const initialRestaurants = [
     "isVegetarian": false,
     "isNoBeef": false,
     "manualStatus": "auto",
-    "branches": []
+    "branches": [],
+    "tags": [
+      "有冷气",
+      "适合聚餐"
+    ]
   },
   {
     "id": 298,
@@ -7820,7 +8551,11 @@ export const initialRestaurants = [
     "isVegetarian": false,
     "isNoBeef": false,
     "manualStatus": "auto",
-    "branches": []
+    "branches": [],
+    "tags": [
+      "有冷气",
+      "适合聚餐"
+    ]
   },
   {
     "id": 299,
@@ -7847,7 +8582,11 @@ export const initialRestaurants = [
     "isVegetarian": false,
     "isNoBeef": false,
     "manualStatus": "auto",
-    "branches": []
+    "branches": [],
+    "tags": [
+      "重口味",
+      "辣"
+    ]
   },
   {
     "id": 300,
@@ -7874,7 +8613,11 @@ export const initialRestaurants = [
     "isVegetarian": false,
     "isNoBeef": false,
     "manualStatus": "auto",
-    "branches": []
+    "branches": [],
+    "tags": [
+      "重口味",
+      "辣"
+    ]
   },
   {
     "id": 301,
@@ -7901,34 +8644,8 @@ export const initialRestaurants = [
     "isVegetarian": false,
     "isNoBeef": false,
     "manualStatus": "auto",
-    "branches": []
-  },
-  {
-    "id": 303,
-    "area": "Kulai",
-    "name": "宴宾楼",
-    "name_en": "Restoran Yan Bin",
-    "address": "Kulai, Johor",
-    "opening_hours": "10am-10pm",
-    "intro_zh": "古来老字号酒楼，以传统粤菜和客家菜为主。环境宽敞，是举办婚宴和寿宴的热门选择。",
-    "intro_en": "Established restaurant in Kulai, specializing in traditional Cantonese and Hakka cuisine. Spacious environment, popular for weddings and birthday banquets.",
-    "category": [
-      "中餐"
-    ],
-    "categories": [
-      "中餐"
-    ],
-    "rating": 0,
-    "image": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI2MDAiIGhlaWdodD0iNDAwIiB2aWV3Qm94PSIwIDAgNjAwIDQwMCI+PHJlY3QgZmlsbD0iIzFlMWUxZSIgd2lkdGg9IjYwMCIgaGVpZ2h0PSI0MDAiLz48dGV4dCBmaWxsPSIjZmZmZmZmIiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIzMCIgZHk9IjEwLjUiIGZvbnQtd2VpZ2h0PSJib2xkIiB4PSI1MCUiIHk9IjUwJSIgdGV4dC1hbmNob3I9Im1pZGRsZSI+S3VsYWkgRm9vZDwvdGV4dD48L3N2Zz4=",
-    "subStalls": [],
-    "price_range": "RM 20-40",
-    "menu_link": "",
-    "website_link": "",
-    "delivery_link": "",
-    "isVegetarian": false,
-    "isNoBeef": false,
-    "manualStatus": "auto",
-    "branches": []
+    "branches": [],
+    "tags": []
   },
   {
     "id": 304,
@@ -7955,40 +8672,24 @@ export const initialRestaurants = [
     "isVegetarian": false,
     "isNoBeef": false,
     "manualStatus": "auto",
-    "branches": []
-  },
-  {
-    "id": 305,
-    "area": "Kulai",
-    "name": "满美烧腊",
-    "name_en": "Man Mei Roasted Meat",
-    "address": "Kulai, Johor",
-    "opening_hours": "8am-3pm",
-    "intro_zh": "以港式烧腊闻名，招牌烧鸭皮脆肉嫩，叉烧肥瘦适中，蜜汁香浓。是古来吃烧腊的好去处。",
-    "intro_en": "Known for Hong Kong-style roasted meats. Signature roast duck has crispy skin and tender meat, while the Char Siew has the perfect fat-to-lean ratio with rich honey glaze. A great place for roasted meats in Kulai.",
-    "category": [
-      "鸡饭"
-    ],
-    "categories": [
-      "鸡饭"
-    ],
-    "rating": 0,
-    "image": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI2MDAiIGhlaWdodD0iNDAwIiB2aWV3Qm94PSIwIDAgNjAwIDQwMCI+PHJlY3QgZmlsbD0iIzFlMWUxZSIgd2lkdGg9IjYwMCIgaGVpZ2h0PSI0MDAiLz48dGV4dCBmaWxsPSIjZmZmZmZmIiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIzMCIgZHk9IjEwLjUiIGZvbnQtd2VpZ2h0PSJib2xkIiB4PSI1MCUiIHk9IjUwJSIgdGV4dC1hbmNob3I9Im1pZGRsZSI+S3VsYWkgRm9vZDwvdGV4dD48L3N2Zz4=",
-    "subStalls": [],
-    "price_range": "RM 10-20",
-    "menu_link": "",
-    "website_link": "",
-    "delivery_link": "",
-    "isVegetarian": false,
-    "isNoBeef": false,
-    "manualStatus": "auto",
-    "branches": []
+    "branches": [],
+    "tags": [
+      "平价"
+    ]
   },
   {
     "id": 306,
     "area": "Kulai",
     "name": "欢乐园红豆冰",
     "name_en": "Happy Land Ice Kacang",
+    "tags": [
+      "适合小孩",
+      "平价",
+      "甜点",
+      "炸鸡",
+      "不辣",
+      "下午茶"
+    ],
     "address": "Jalan Pinang, Taman Kota Kulai, 81000 Kulai, Johor",
     "opening_hours": "Monday: 11am - 4:30pm\nTuesday: 11am - 4:30pm\nWednesday: 11am - 4:30pm\nThursday: 11am - 4:30pm\nFriday: 11am - 4:30pm\nSaturday: 11am - 4:30pm\nSunday: 11am - 4:30pm",
     "intro_zh": "古来传奇红豆冰店，营业超过20年。招牌红豆冰淋上浓郁的巧克力酱或草莓酱，搭配炸鸡排和Rojak，是古来人的集体回忆。",
@@ -8021,9 +8722,7 @@ export const initialRestaurants = [
     "opening_hours": "Monday: 8am - 5pm\nTuesday: 8am - 5pm\nWednesday: 8am - 5pm\nThursday: 8am - 5pm\nFriday: 8am - 5pm\nSaturday: 8am - 5pm\nSunday: 8am - 5pm",
     "intro_zh": "正宗海南鸡饭，源自新加坡瑞记传统。白斩鸡皮滑肉嫩，烧鸡香气四溢。饭粒粒分明，充满鸡油香。配上特制辣椒酱和姜蓉，味道一流。",
     "intro_en": "Authentic Hainanese Chicken Rice, originating from the traditional Swee Kee in Singapore. Poached chicken is smooth and tender, while roasted chicken is aromatic. Rice is fragrant with chicken oil. Served with special chili sauce and ginger paste, the taste is first-class.",
-    "category": [
-      "鸡饭"
-    ],
+    "category": [],
     "categories": [
       "饭类"
     ],
@@ -8037,6 +8736,163 @@ export const initialRestaurants = [
     "isVegetarian": false,
     "isNoBeef": false,
     "manualStatus": "auto",
-    "branches": []
+    "branches": [],
+    "tags": [
+      "干",
+      "平价"
+    ]
+  },
+  {
+    "id": 308,
+    "name": "Pizza Hut",
+    "name_en": "Pizza Hut",
+    "category": [
+      "西餐",
+      "快餐",
+      "Pizza"
+    ],
+    "categories": [
+      "西餐",
+      "快餐",
+      "Pizza"
+    ],
+    "tags": [
+      "Pizza",
+      "西餐",
+      "快餐",
+      "适合聚餐",
+      "有冷气"
+    ],
+    "intro_zh": "全球知名的披萨连锁店，提供各种口味的披萨、意大利面和开胃小吃。适合家庭聚餐和朋友聚会。",
+    "intro_en": "Global pizza chain offering a variety of pizzas, pastas, and appetizers. Great for family gatherings and hanging out with friends.",
+    "address": "Multiple Locations in Kulai",
+    "opening_hours": "10:30am - 11:00pm",
+    "price_range": "RM 20-40",
+    "image": "https://upload.wikimedia.org/wikipedia/en/thumb/d/d2/Pizza_Hut_logo.svg/1200px-Pizza_Hut_logo.svg.png",
+    "branches": [
+      {
+        "name": "Pizza Hut Kulai (Jalan Susur 3)",
+        "address": "Jalan Susur Kulai 3, Taman Sri Kulai Baru"
+      },
+      {
+        "name": "Pizza Hut IOI Mall",
+        "address": "Lot G-25, IOI Mall Kulai"
+      },
+      {
+        "name": "Pizza Hut AEON Kulaijaya",
+        "address": "Lot G18, AEON Mall Kulaijaya"
+      },
+      {
+        "name": "Pizza Hut Kulai 2",
+        "address": "Lot 5035, Batu 17 1/2, Jalan Air Hitam"
+      }
+    ],
+    "subStalls": [],
+    "menu_link": "",
+    "website_link": "https://www.pizzahut.com.my/",
+    "delivery_link": "",
+    "isVegetarian": false,
+    "isNoBeef": false,
+    "manualStatus": "auto",
+    "rating": 0
+  },
+  {
+    "id": 309,
+    "name": "Marrybrown",
+    "name_en": "Marrybrown",
+    "category": [
+      "西餐",
+      "快餐",
+      "炸鸡"
+    ],
+    "categories": [
+      "西餐",
+      "快餐",
+      "炸鸡"
+    ],
+    "tags": [
+      "炸鸡",
+      "汉堡",
+      "快餐",
+      "本地风味",
+      "Halal"
+    ],
+    "intro_zh": "马来西亚本土清真快餐品牌，以炸鸡、汉堡和本地美食（如椰浆饭）闻名。提供独特的大马风味。",
+    "intro_en": "Malaysian homegrown Halal fast food chain known for fried chicken, burgers, and local delights like Nasi Lemak. Offers unique Malaysian flavors.",
+    "address": "Multiple Locations in Kulai",
+    "opening_hours": "10:00am - 10:00pm",
+    "price_range": "RM 15-30",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/34/Marrybrown_Logo.svg/1200px-Marrybrown_Logo.svg.png",
+    "branches": [
+      {
+        "name": "Marrybrown Kulai",
+        "address": "Jalan Susur Kulai 3, Taman Sri Kulai Baru"
+      },
+      {
+        "name": "Marrybrown Kulai Utama",
+        "address": "1.05, Jalan Anggerik 8, Taman Kulai Utama"
+      },
+      {
+        "name": "Marrybrown Mydin Kulai",
+        "address": "Mydin Mall Kulai Utama"
+      },
+      {
+        "name": "Marrybrown AEON Kulai",
+        "address": "AEON Mall Kulaijaya"
+      }
+    ],
+    "subStalls": [],
+    "menu_link": "",
+    "website_link": "https://marrybrown.com/",
+    "delivery_link": "",
+    "isVegetarian": false,
+    "isNoBeef": false,
+    "manualStatus": "auto",
+    "rating": 0
+  },
+  {
+    "id": 310,
+    "name": "Domino's Pizza",
+    "name_en": "Domino's Pizza",
+    "category": [
+      "西餐",
+      "快餐",
+      "Pizza"
+    ],
+    "categories": [
+      "西餐",
+      "快餐",
+      "Pizza"
+    ],
+    "tags": [
+      "Pizza",
+      "外卖",
+      "快餐",
+      "西餐"
+    ],
+    "intro_zh": "专注于披萨外送和外带的专家，提供多种口味的披萨和丰富的副食。承诺30分钟送达。",
+    "intro_en": "The pizza delivery expert offering a wide variety of pizzas and sides. Famous for their 30-minute delivery promise.",
+    "address": "Multiple Locations in Kulai",
+    "opening_hours": "10:30am - 11:00pm",
+    "price_range": "RM 20-40",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/74/Dominos_pizza_logo.svg/1200px-Dominos_pizza_logo.svg.png",
+    "branches": [
+      {
+        "name": "Domino's Pizza Indahpura",
+        "address": "7 Jalan Kenanga 29/1, Bandar Indahpura"
+      },
+      {
+        "name": "Domino's Pizza Bandar Putra",
+        "address": "2906, Jalan Merbau 3, Bandar Putra"
+      }
+    ],
+    "subStalls": [],
+    "menu_link": "",
+    "website_link": "https://www.dominos.com.my/",
+    "delivery_link": "",
+    "isVegetarian": false,
+    "isNoBeef": false,
+    "manualStatus": "auto",
+    "rating": 0
   }
 ];

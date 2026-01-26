@@ -209,8 +209,8 @@ const FilterBar = ({
           <div className="w-px h-6 bg-gray-700 mx-1 shrink-0"></div>
         </div>
 
-        {/* Right: Sortable Categories (Wrapping) */}
-        <div className="flex flex-wrap gap-2 items-center flex-1">
+        {/* Right: Sortable Categories (Scrollable on mobile, Wrap on desktop) */}
+        <div className="flex overflow-x-auto md:flex-wrap gap-2 items-center flex-1 pb-2 scrollbar-hide">
           <DndContext 
               sensors={sensors} 
               collisionDetection={closestCenter} 

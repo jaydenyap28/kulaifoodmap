@@ -9,7 +9,8 @@ import AdBanner from './components/AdBanner';
 import SupportModal from './components/SupportModal';
 import LoginModal from './components/LoginModal';
 import AdminAnalytics from './components/AdminAnalytics';
-import { UtensilsCrossed, Lock, X, Coffee, Image as ImageIcon, Upload, Save, Download, BarChart2, Globe, Clock, Dessert, RefreshCw } from 'lucide-react';
+import AiFoodAssistant from './components/AiFoodAssistant';
+import { UtensilsCrossed, Lock, X, Coffee, Image as ImageIcon, Upload, Save, Download, BarChart2, Globe, Clock, Dessert, RefreshCw, Sparkles } from 'lucide-react';
 import { useTranslation } from 'react-i18next';
 
 import { checkOpenStatus } from './utils/businessHours';
@@ -21,7 +22,7 @@ const DEFAULT_HERO_BG = "https://i.ibb.co/7J5qjZtv/image.png";
 
 // Version control for data structure changes
 // Increment this when you make breaking changes to data structure to force a reset
-const DATA_VERSION = 'v28';
+const DATA_VERSION = 'v29';
 
 function App() {
   const { t, i18n } = useTranslation();
@@ -38,6 +39,7 @@ function App() {
     }
   }, []);
   const [lastSaved, setLastSaved] = useState(null);
+  const [showAiAssistant, setShowAiAssistant] = useState(false);
   
   // Area Overrides State (for manual fixes)
   const [areaOverrides, setAreaOverrides] = useState(() => {
@@ -873,44 +875,59 @@ function App() {
         </div>
 
         {/* Special Filters Row (Below Hero Stack) */}
-        <div className="flex flex-wrap justify-center gap-3 mb-8 relative z-20">
-            {/* Show Open Only */}
-            <button
-                onClick={() => setShowOpenOnly(!showOpenOnly)}
-                className={`flex items-center gap-1.5 px-4 py-2 rounded-full text-sm font-bold transition-all ${
-                showOpenOnly
-                    ? 'bg-emerald-900/50 text-emerald-400 border-emerald-500/50 ring-1 ring-emerald-500/50'
-                    : 'bg-[#1e1e1e] text-gray-400 hover:bg-[#2d2d2d] border-[#333]'
-                } border shadow-sm`}
-            >
-                <Clock size={16} className={showOpenOnly ? "fill-current" : ""} />
-                {t('filter.open_now')}
-            </button>
+        <div className="flex flex-col items-center gap-4 mb-8 relative z-20">
+            
+            {/* Filter Buttons Group */}
+            <div className="flex flex-wrap justify-center gap-3">
+                {/* Show Open Only */}
+                <button
+                    onClick={() => setShowOpenOnly(!showOpenOnly)}
+                    className={`flex items-center gap-1.5 px-4 py-2 rounded-full text-sm font-bold transition-all ${
+                    showOpenOnly
+                        ? 'bg-emerald-900/50 text-emerald-400 border-emerald-500/50 ring-1 ring-emerald-500/50'
+                        : 'bg-[#1e1e1e] text-gray-400 hover:bg-[#2d2d2d] border-[#333]'
+                    } border shadow-sm`}
+                >
+                    <Clock size={16} className={showOpenOnly ? "fill-current" : ""} />
+                    {t('filter.open_now')}
+                </button>
 
-            {/* No Drinks */}
-            <button
-                onClick={() => setHideDrinks(!hideDrinks)}
-                className={`flex items-center gap-1.5 px-4 py-2 rounded-full text-sm font-bold transition-all ${
-                hideDrinks
-                    ? 'bg-orange-900/50 text-orange-400 border-orange-500/50 ring-1 ring-orange-500/50'
-                    : 'bg-[#1e1e1e] text-gray-400 hover:bg-[#2d2d2d] border-[#333]'
-                } border shadow-sm`}
-            >
-                <Coffee size={16} />
-                {t('filter.no_drinks')}
-            </button>
+                {/* No Drinks */}
+                <button
+                    onClick={() => setHideDrinks(!hideDrinks)}
+                    className={`flex items-center gap-1.5 px-4 py-2 rounded-full text-sm font-bold transition-all ${
+                    hideDrinks
+                        ? 'bg-orange-900/50 text-orange-400 border-orange-500/50 ring-1 ring-orange-500/50'
+                        : 'bg-[#1e1e1e] text-gray-400 hover:bg-[#2d2d2d] border-[#333]'
+                    } border shadow-sm`}
+                >
+                    <Coffee size={16} />
+                    {t('filter.no_drinks')}
+                </button>
 
-            {/* No Desserts */}
+                {/* No Desserts */}
+                <button
+                    onClick={() => setHideDesserts(!hideDesserts)}
+                    className={`flex items-center gap-1.5 px-4 py-2 rounded-full text-sm font-bold transition-all ${
+                    hideDesserts
+                        ? 'bg-pink-900/50 text-pink-400 border-pink-500/50 ring-1 ring-pink-500/50'
+                        : 'bg-[#1e1e1e] text-gray-400 hover:bg-[#2d2d2d] border-[#333]'
+                    } border shadow-sm`}
+                >
+                    <Dessert size={16} />
+                    {t('filter.no_desserts')}
+                </button>
+            </div>
+
+            {/* AI Assistant Button (Inserted here) */}
             <button
-                onClick={() => setHideDesserts(!hideDesserts)}
-                className={`flex items-center gap-1.5 px-4 py-2 rounded-full text-sm font-bold transition-all ${
-                hideDesserts
-                    ? 'bg-pink-900/50 text-pink-400 border-pink-500/50 ring-1 ring-pink-500/50'
-                    : 'bg-[#1e1e1e] text-gray-400 hover:bg-[#2d2d2d] border-[#333]'
-                } border shadow-sm`}
+                onClick={() => setShowAiAssistant(true)}
+                className="w-full max-w-sm mx-auto flex items-center justify-center gap-2 px-6 py-3 rounded-xl bg-gradient-to-r from-purple-900/80 to-blue-900/80 border border-white/10 hover:border-white/30 text-white font-bold shadow-lg hover:shadow-purple-500/20 hover:scale-[1.02] active:scale-95 transition-all duration-300 group"
             >
-                <Dessert size={16} />
-                {t('filter.no_desserts')}
+                <Sparkles size={18} className="text-purple-300 group-hover:text-white transition-colors" />
+                <span className="bg-clip-text text-transparent bg-gradient-to-r from-purple-200 to-blue-200 group-hover:text-white group-hover:bg-none">
+                    专治“随便”和“都可以”问问AI
+                </span>
             </button>
         </div>
 
@@ -972,6 +989,12 @@ function App() {
       <AdminAnalytics 
         isOpen={showAnalyticsModal} 
         onClose={() => setShowAnalyticsModal(false)}
+        restaurants={restaurants}
+      />
+
+      <AiFoodAssistant 
+        isOpen={showAiAssistant}
+        onClose={() => setShowAiAssistant(false)}
         restaurants={restaurants}
       />
 
