@@ -8695,10 +8695,10 @@ export const initialRestaurants = [
     "intro_zh": "深受当地人喜爱的中餐厅，提供各类海鲜和肉类料理。菜色丰富，锅气十足，价格公道。",
     "intro_en": "A Chinese restaurant loved by locals, offering various seafood and meat dishes. Rich menu, good 'wok hei', and reasonable prices.",
     "category": [
-      "中餐"
+      "煮炒海鲜楼"
     ],
     "categories": [
-      "中餐"
+      "煮炒海鲜楼"
     ],
     "rating": 0,
     "image": "https://i.ibb.co/gMCt4cKv/image.jpg",
@@ -8751,12 +8751,10 @@ export const initialRestaurants = [
     "category": [
       "西餐",
       "快餐",
-      "Pizza"
     ],
     "categories": [
       "西餐",
       "快餐",
-      "Pizza"
     ],
     "tags": [
       "Pizza",
@@ -8805,12 +8803,10 @@ export const initialRestaurants = [
     "category": [
       "西餐",
       "快餐",
-      "炸鸡"
     ],
     "categories": [
       "西餐",
       "快餐",
-      "炸鸡"
     ],
     "tags": [
       "炸鸡",
@@ -8859,12 +8855,10 @@ export const initialRestaurants = [
     "category": [
       "西餐",
       "快餐",
-      "Pizza"
     ],
     "categories": [
       "西餐",
       "快餐",
-      "Pizza"
     ],
     "tags": [
       "Pizza",
@@ -8917,10 +8911,10 @@ export const initialRestaurants = [
       "宵夜"
     ],
     "category": [
-      "无招牌美食"
+      "无招牌/路边摊"
     ],
     "categories": [
-      "无招牌美食"
+      "无招牌/路边摊"
     ],
     "rating": 0,
     "image": "https://i.ibb.co/4wm2YxZd/image.jpg",
@@ -8953,11 +8947,11 @@ export const initialRestaurants = [
       "下午茶"
     ],
     "category": [
-      "无招牌美食",
+      "无招牌/路边摊",
       "蛋糕甜点"
     ],
     "categories": [
-      "无招牌美食",
+      "无招牌/路边摊",
       "蛋糕甜点"
     ],
     "rating": 0,
