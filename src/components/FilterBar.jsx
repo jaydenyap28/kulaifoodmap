@@ -35,7 +35,7 @@ const SortableCategoryChip = ({ cat, selectedCategory, onSelectCategory, onDelet
     transition,
     opacity: isDragging ? 0.5 : 1,
     cursor: isAdmin ? 'grab' : 'pointer',
-    touchAction: 'none' 
+    touchAction: isAdmin ? 'none' : 'manipulation'
   };
 
   return (

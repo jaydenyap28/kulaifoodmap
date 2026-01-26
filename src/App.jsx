@@ -22,7 +22,7 @@ const DEFAULT_HERO_BG = "https://i.ibb.co/7J5qjZtv/image.png";
 
 // Version control for data structure changes
 // Increment this when you make breaking changes to data structure to force a reset
-const DATA_VERSION = 'v30';
+const DATA_VERSION = 'v35';
 
 function App() {
   const { t, i18n } = useTranslation();
@@ -283,6 +283,12 @@ function App() {
       name_en: r.name_en || r.desc2,
       // Ensure categories exists (map from category if needed)
       categories: r.categories || r.category || [],
+      
+      // Commercial Fields
+      subscriptionLevel: r.subscriptionLevel || 0,
+      isVIP: (r.subscriptionLevel || 0) > 0,
+      priority: r.priority || 0,
+      whatsappLink: r.whatsappLink || "",
 
       // Ensure price_range exists
       price_range: r.price_range || 'RM 10-20',
@@ -314,6 +320,9 @@ function App() {
   const [categories, setCategories] = useState(() => {
     let finalCategories = [];
     let processedCats = new Set();
+    
+    // Define deprecated categories to filter out
+    const deprecatedCats = new Set(["Pizza", "炸鸡", "中餐", "中国餐", "无招牌美食"]);
 
     // 1. Try to load from LocalStorage FIRST (Preserve Order)
     try {
@@ -321,8 +330,9 @@ function App() {
       if (storedCats && storedCats !== "undefined" && storedCats !== "null") {
         const parsedCats = JSON.parse(storedCats);
         if (Array.isArray(parsedCats) && parsedCats.length > 0) {
-          finalCategories = [...parsedCats];
-          parsedCats.forEach(c => processedCats.add(c));
+          // Filter deprecated from storage
+          finalCategories = parsedCats.filter(c => !deprecatedCats.has(c));
+          finalCategories.forEach(c => processedCats.add(c));
         }
       }
     } catch (e) {
@@ -331,7 +341,7 @@ function App() {
 
     // 2. Merge Defaults (Ensure new system categories appear)
     DEFAULT_CATEGORIES.forEach(c => {
-        if (!processedCats.has(c)) {
+        if (!processedCats.has(c) && !deprecatedCats.has(c)) {
             finalCategories.push(c);
             processedCats.add(c);
         }
@@ -341,14 +351,14 @@ function App() {
     initialRestaurants.forEach(r => {
       if (Array.isArray(r.category)) {
         r.category.forEach(c => {
-            if (!processedCats.has(c)) {
+            if (!processedCats.has(c) && !deprecatedCats.has(c)) {
                 finalCategories.push(c);
                 processedCats.add(c);
             }
         });
       } else if (Array.isArray(r.categories)) {
         r.categories.forEach(c => {
-            if (!processedCats.has(c)) {
+            if (!processedCats.has(c) && !deprecatedCats.has(c)) {
                 finalCategories.push(c);
                 processedCats.add(c);
             }
@@ -499,22 +509,20 @@ function App() {
             'price_range', 'image', 'rating', 'area',
             'menu_link', 'website_link', 'delivery_link',
             'isVegetarian', 'isNoBeef', 'manualStatus',
-            'intro_zh', 'intro_en', 'categories', 'subStalls', 'branches'
+            'intro_zh', 'intro_en', 'categories', 'subStalls', 'branches',
+            'location', 'tags', 'subscriptionLevel', 'priority', 'whatsappLink'
         ];
 
         keysToCheck.forEach(key => {
             const valCurrent = current[key];
             const valOriginal = original[key];
 
-            // Handle Arrays (Categories, SubStalls)
-            if (Array.isArray(valCurrent) || Array.isArray(valOriginal)) {
-                // Use JSON stringify for simple array comparison
-                // Treat undefined/null as empty array for comparison if needed, 
-                // but usually data consistency implies they are arrays.
-                const arrCurrent = Array.isArray(valCurrent) ? valCurrent : [];
-                const arrOriginal = Array.isArray(valOriginal) ? valOriginal : [];
+            // Handle Objects & Arrays (Categories, SubStalls, Location, Tags)
+            if (typeof valCurrent === 'object' && valCurrent !== null) {
+                const jsonCurrent = JSON.stringify(valCurrent);
+                const jsonOriginal = JSON.stringify(valOriginal || (Array.isArray(valCurrent) ? [] : {})); // Handle null/undefined original
                 
-                if (JSON.stringify(arrCurrent) !== JSON.stringify(arrOriginal)) {
+                if (jsonCurrent !== jsonOriginal) {
                     diff[key] = valCurrent;
                     hasChanges = true;
                 }
@@ -962,7 +970,7 @@ function App() {
       {/* AI Assistant Floating Button */}
       <button 
         onClick={() => setShowAiAssistant(true)}
-        className="fixed bottom-6 right-6 z-40 bg-gradient-to-tr from-purple-600 to-blue-600 text-white p-4 rounded-full shadow-2xl hover:scale-105 hover:shadow-purple-500/50 transition-all duration-300 group flex items-center gap-2 border border-white/20"
+        className="fixed bottom-6 left-6 z-40 bg-gradient-to-tr from-purple-600 to-blue-600 text-white p-4 rounded-full shadow-2xl hover:scale-105 hover:shadow-purple-500/50 transition-all duration-300 group flex items-center gap-2 border border-white/20"
       >
         <Sparkles size={24} className="group-hover:rotate-12 transition-transform" />
         <span className="max-w-0 overflow-hidden group-hover:max-w-xs transition-all duration-500 ease-in-out whitespace-nowrap text-sm font-bold">

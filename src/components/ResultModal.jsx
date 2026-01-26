@@ -31,7 +31,11 @@ const ResultModal = ({ restaurant, onClose, onAddReview, isAdmin, onUpdateRestau
     area: restaurant.area || '',
     intro_zh: restaurant.intro_zh || '',
     intro_en: restaurant.intro_en || '',
-    tags: restaurant.tags || []
+    tags: restaurant.tags || [],
+    subscriptionLevel: restaurant.subscriptionLevel || 0,
+    priority: restaurant.priority || 0,
+    whatsappLink: restaurant.whatsappLink || "",
+    location: restaurant.location || { lat: '', lng: '' }
   });
 
   // Smart Schedule State
@@ -69,7 +73,11 @@ const ResultModal = ({ restaurant, onClose, onAddReview, isAdmin, onUpdateRestau
         area: restaurant.area || '',
         intro_zh: restaurant.intro_zh || '',
         intro_en: restaurant.intro_en || '',
-        tags: restaurant.tags || []
+        tags: restaurant.tags || [],
+        subscriptionLevel: restaurant.subscriptionLevel || 0,
+        priority: restaurant.priority || 0,
+        whatsappLink: restaurant.whatsappLink || "",
+        location: restaurant.location || { lat: '', lng: '' }
     });
   }, [restaurant]);
 
@@ -242,7 +250,9 @@ const ResultModal = ({ restaurant, onClose, onAddReview, isAdmin, onUpdateRestau
     }
   };
 
-  const mapUrl = `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(restaurant.address)}`;
+  const mapUrl = (restaurant.location?.lat && restaurant.location?.lng)
+    ? `https://www.google.com/maps/dir/?api=1&destination=${restaurant.location.lat},${restaurant.location.lng}`
+    : `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(restaurant.name + ' 古来')}`;
 
   return (
     <AnimatePresence>
@@ -415,6 +425,74 @@ const ResultModal = ({ restaurant, onClose, onAddReview, isAdmin, onUpdateRestau
                         ))}
                     </select>
                   </div>
+
+                  <div>
+                    <label className="text-xs text-gray-400">坐标 (Location Coordinates)</label>
+                    <div className="flex gap-2">
+                        <input 
+                            type="text" 
+                            placeholder="Latitude (e.g. 1.661234)"
+                            value={editForm.location?.lat || ''}
+                            onChange={e => setEditForm({...editForm, location: { ...editForm.location, lat: e.target.value }})}
+                            className="w-full bg-[#1a1a1a] border-b border-gray-600 py-1 text-sm text-white focus:border-white outline-none"
+                        />
+                        <input 
+                            type="text" 
+                            placeholder="Longitude (e.g. 103.598765)"
+                            value={editForm.location?.lng || ''}
+                            onChange={e => setEditForm({...editForm, location: { ...editForm.location, lng: e.target.value }})}
+                            className="w-full bg-[#1a1a1a] border-b border-gray-600 py-1 text-sm text-white focus:border-white outline-none"
+                        />
+                    </div>
+                    <p className="text-[10px] text-gray-500 mt-1">
+                       提示: 在 Google Maps 上右键点击地点即可复制坐标。用于精准导航和隐世路边摊定位。
+                    </p>
+                  </div>
+
+                  {/* Commercial / VIP Settings */}
+                  <div className="bg-amber-900/10 p-3 rounded-lg border border-amber-900/30 space-y-3">
+                      <p className="text-xs font-bold text-amber-500 uppercase flex items-center gap-1">
+                          <Star size={12} fill="currentColor" /> 商业化设置 (VIP Settings)
+                      </p>
+                      
+                      <div className="grid grid-cols-2 gap-3">
+                          <div>
+                            <label className="text-xs text-gray-400">等级 (Subscription Level)</label>
+                            <select
+                                value={editForm.subscriptionLevel}
+                                onChange={(e) => setEditForm({...editForm, subscriptionLevel: parseInt(e.target.value)})}
+                                className="w-full bg-[#1a1a1a] border-b border-gray-600 py-1 text-sm text-white focus:border-amber-500 outline-none"
+                            >
+                                <option value={0}>0 - Free (免费)</option>
+                                <option value={1}>1 - VIP Basic (入门)</option>
+                                <option value={2}>2 - Mid Tier (中级)</option>
+                                <option value={3}>3 - Top Tier (高级/Featured)</option>
+                            </select>
+                          </div>
+                          <div>
+                            <label className="text-xs text-gray-400">优先级 (Priority)</label>
+                            <input 
+                              type="number"
+                              value={editForm.priority}
+                              onChange={e => setEditForm({...editForm, priority: parseInt(e.target.value) || 0})}
+                              className="w-full bg-[#1a1a1a] border-b border-gray-600 py-1 text-sm text-white focus:border-amber-500 outline-none"
+                            />
+                          </div>
+                      </div>
+
+                      <div>
+                        <label className="text-xs text-gray-400 flex items-center gap-1">
+                            <Send size={10} /> WhatsApp 链接 (Contact Link)
+                        </label>
+                        <input 
+                          value={editForm.whatsappLink}
+                          onChange={e => setEditForm({...editForm, whatsappLink: e.target.value})}
+                          className="w-full bg-[#1a1a1a] border-b border-gray-600 py-1 text-xs text-white focus:border-amber-500 outline-none"
+                          placeholder="https://wa.me/601xxxxxx"
+                        />
+                      </div>
+                  </div>
+
                   <div>
                     <label className="text-xs text-gray-400">价格范围 (Price Range)</label>
                     <input 

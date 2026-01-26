@@ -1,5 +1,5 @@
-import React, { useState, useEffect } from 'react';
-import { MapPin, Edit2, Trash2, ArrowUp, Search, Plus, Leaf, Ban, Star, GripVertical } from 'lucide-react';
+import React, { useState, useEffect, useMemo } from 'react';
+import { MapPin, Edit2, Trash2, ArrowUp, Search, Plus, Leaf, Ban, Star, GripVertical, Flame, Medal, MessageCircle } from 'lucide-react';
 import {
   DndContext,
   closestCenter,
@@ -50,21 +50,21 @@ const RestaurantList = ({ restaurants, allRestaurants, isAdmin, onUpdateRestaura
   const { t } = useTranslation();
   const [searchTerm, setSearchTerm] = useState('');
   const [showBackToTop, setShowBackToTop] = useState(false);
+  const [seed] = useState(Date.now());
 
-  // Filter logic
-  const filteredRestaurants = restaurants.filter(restaurant => {
-    const term = searchTerm.toLowerCase();
-    return (
-        restaurant.name?.toLowerCase().includes(term) ||
-        restaurant.name_en?.toLowerCase().includes(term) ||
-        (restaurant.categories && restaurant.categories.some(c => c.toLowerCase().includes(term)))
-    );
-  });
+  // Filter and Sort Logic
+  const filteredRestaurants = useMemo(() => {
+    const filtered = restaurants.filter(restaurant => {
+      const term = searchTerm.toLowerCase();
+      return (
+          restaurant.name?.toLowerCase().includes(term) ||
+          restaurant.name_en?.toLowerCase().includes(term) ||
+          (restaurant.categories && restaurant.categories.some(c => c.toLowerCase().includes(term)))
+      );
+    });
 
-  // Enforce ID sorting for non-admins to ensure consistent display order
-  if (!isAdmin) {
-    filteredRestaurants.sort((a, b) => a.id - b.id);
-  }
+    return filtered.sort((a, b) => a.id - b.id);
+  }, [restaurants, searchTerm, isAdmin, seed]);
 
   const sensors = useSensors(
     useSensor(PointerSensor, {
@@ -220,11 +220,14 @@ const RestaurantCard = ({ restaurant, isAdmin, onUpdate, onDelete, onClick, onCa
         text: restaurant.manualStatus === 'open' ? '营业中 (Open)' : '已休息 (Closed)' 
       }
     : checkOpenStatus(restaurant.opening_hours);
+  
+  const isVIP = (restaurant.subscriptionLevel || 0) > 0;
+  const borderClass = isVIP ? 'border-amber-500/50 shadow-amber-900/10' : 'border-gray-800';
 
   return (
     <div 
       onClick={onClick}
-      className="bg-[#1e1e1e] rounded-2xl overflow-hidden shadow-xl hover:shadow-2xl hover:shadow-black/60 transition-all duration-300 relative group h-full flex flex-col border border-gray-800 select-none cursor-pointer"
+      className={`bg-[#1e1e1e] rounded-2xl overflow-hidden shadow-xl hover:shadow-2xl hover:shadow-black/60 transition-all duration-300 relative group h-full flex flex-col border select-none cursor-pointer ${borderClass} ${isVIP ? 'hover:-translate-y-1' : ''}`}
     >
       {/* Image Header: Aspect Ratio 16/9 for better mobile view */}
       <div className="aspect-video w-full relative bg-gray-800 overflow-hidden shadow-inner shrink-0">
@@ -235,6 +238,14 @@ const RestaurantCard = ({ restaurant, isAdmin, onUpdate, onDelete, onClick, onCa
         />
         <div className="absolute inset-0 bg-gradient-to-t from-[#121212] via-transparent to-transparent opacity-60"></div>
         
+        {/* VIP Badge */}
+        {isVIP && (
+             <div className="absolute top-0 right-0 z-20 flex items-center gap-1 bg-amber-500/90 backdrop-blur-sm text-white text-[10px] font-bold px-2 py-1 rounded-bl-lg shadow-sm">
+                {restaurant.subscriptionLevel >= 3 ? <Flame size={12} className="fill-white" /> : <Medal size={12} className="fill-white" />}
+                <span>{restaurant.subscriptionLevel >= 3 ? 'FEATURED' : '精选'}</span>
+             </div>
+        )}
+
         {/* Admin Controls - Floating Top Right */}
         {isAdmin && (
             <div 
@@ -382,6 +393,19 @@ const RestaurantCard = ({ restaurant, isAdmin, onUpdate, onDelete, onClick, onCa
                     <MapPin size={12} className="mt-0.5 mr-1.5 shrink-0 opacity-70" />
                     <span className="line-clamp-2 leading-tight">{restaurant.address}</span>
                 </div>
+
+                {/* WhatsApp Button for VIP */}
+                {isVIP && restaurant.whatsappLink && (
+                    <a 
+                        href={restaurant.whatsappLink} 
+                        target="_blank" 
+                        rel="noopener noreferrer"
+                        onClick={(e) => e.stopPropagation()}
+                        className="mt-2 w-full flex items-center justify-center gap-1.5 bg-green-600/20 hover:bg-green-600 text-green-500 hover:text-white border border-green-600/30 hover:border-green-600 py-1.5 rounded-lg text-xs font-bold transition-all duration-300"
+                    >
+                        <MessageCircle size={14} /> {t('contact_merchant', '联系商家')}
+                    </a>
+                )}
             </div>
       </div>
     </div>
