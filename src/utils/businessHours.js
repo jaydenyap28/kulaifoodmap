@@ -1,4 +1,4 @@
-export const checkOpenStatus = (hoursStr) => {
+export const checkOpenStatus = (hoursStr, testDate = null) => {
   if (!hoursStr) return { isOpen: null, text: '' };
 
   if (hoursStr.toLowerCase().includes('24 hours') || hoursStr.toLowerCase().includes('24小时')) {
@@ -6,7 +6,7 @@ export const checkOpenStatus = (hoursStr) => {
   }
 
   try {
-    const now = new Date();
+    const now = testDate || new Date();
     const day = now.getDay(); // 0-6
     const currentMinutes = now.getHours() * 60 + now.getMinutes();
 
@@ -64,10 +64,7 @@ export const checkOpenStatus = (hoursStr) => {
          }
     }
 
-    // 2. Parse Time Range "10am - 10pm"
-    const parts = lowerStr.split(/-|–| to /); // Support hyphen, en-dash, 'to'
-    if (parts.length < 2) return { isOpen: null, text: '' };
-
+    // 2. Parse Time Range (Support multiple segments e.g. "11am-3pm, 6pm-10pm")
     const parseTime = (timeStr) => {
         timeStr = timeStr.trim();
         let isPM = timeStr.includes('pm') || timeStr.includes('下午') || timeStr.includes('晚上');
@@ -82,22 +79,40 @@ export const checkOpenStatus = (hoursStr) => {
         return hours * 60 + minutes;
     };
 
-    let start = parseTime(parts[0]);
-    // Handle multi-segment? Just take the last part for end time.
-    let end = parseTime(parts[parts.length - 1]);
+    // Split by comma, slash, ampersand, or Chinese comma
+    const segments = lowerStr.split(/,|，|\/|&/);
+    let hasValidRange = false;
+    let isCurrentlyOpen = false;
 
-    if (isNaN(start) || isNaN(end)) return { isOpen: null, text: '' };
+    for (const segment of segments) {
+        const parts = segment.split(/-|–| to /); // Support hyphen, en-dash, 'to'
+        if (parts.length < 2) continue;
 
-    let isOpen = false;
-    if (end < start) {
-        // Cross midnight (e.g. 5pm - 2am)
-        // Open if current > start OR current < end
-        isOpen = currentMinutes >= start || currentMinutes <= end;
-    } else {
-        isOpen = currentMinutes >= start && currentMinutes <= end;
+        let start = parseTime(parts[0]);
+        let end = parseTime(parts[parts.length - 1]);
+
+        if (isNaN(start) || isNaN(end)) continue;
+        
+        hasValidRange = true;
+
+        if (end < start) {
+            // Cross midnight (e.g. 5pm - 2am)
+            if (currentMinutes >= start || currentMinutes <= end) {
+                isCurrentlyOpen = true;
+                break;
+            }
+        } else {
+            // Normal range (e.g. 10am - 10pm)
+            if (currentMinutes >= start && currentMinutes <= end) {
+                isCurrentlyOpen = true;
+                break;
+            }
+        }
     }
 
-    return isOpen ? { isOpen: true, text: '营业中 (Open)' } : { isOpen: false, text: '已打烊 (Closed)' };
+    if (!hasValidRange) return { isOpen: null, text: '' };
+
+    return isCurrentlyOpen ? { isOpen: true, text: '营业中 (Open)' } : { isOpen: false, text: '已打烊 (Closed)' };
 
   } catch (e) {
     console.error("Error parsing time:", e);

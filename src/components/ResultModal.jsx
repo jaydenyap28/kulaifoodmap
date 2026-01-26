@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { X, Star, MapPin, ExternalLink, Send, Save, Clock, Info, UtensilsCrossed, Upload, BookOpen, Globe, Bike } from 'lucide-react';
+import { X, Star, MapPin, ExternalLink, Send, Save, Clock, Info, UtensilsCrossed, Upload, BookOpen, Globe, Bike, Navigation } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { useTranslation } from 'react-i18next';
 import ImageWithFallback from './ImageWithFallback';
@@ -25,6 +25,7 @@ const ResultModal = ({ restaurant, onClose, onAddReview, isAdmin, onUpdateRestau
     categories: restaurant.categories || [],
     isVegetarian: restaurant.isVegetarian || false,
     isNoBeef: restaurant.isNoBeef || false,
+    halalStatus: restaurant.halalStatus || 'non_halal',
     manualStatus: restaurant.manualStatus || 'auto', // 'auto', 'open', 'closed'
     subStalls: restaurant.subStalls || [],
     rating: restaurant.rating !== undefined ? restaurant.rating : 0,
@@ -66,6 +67,7 @@ const ResultModal = ({ restaurant, onClose, onAddReview, isAdmin, onUpdateRestau
         categories: restaurant.categories || [],
         isVegetarian: restaurant.isVegetarian || false,
         isNoBeef: restaurant.isNoBeef || false,
+        halalStatus: restaurant.halalStatus || 'non_halal',
         manualStatus: restaurant.manualStatus || 'auto',
         subStalls: restaurant.subStalls || [],
         branches: restaurant.branches || [],
@@ -298,6 +300,22 @@ const ResultModal = ({ restaurant, onClose, onAddReview, isAdmin, onUpdateRestau
                     </p>
                 )}
                 <div className="flex items-center text-white/90 text-sm">
+                    {/* Halal Status Badge */}
+                    {restaurant.halalStatus === 'certified' && (
+                        <span className="bg-emerald-600 text-white border border-emerald-500 px-2 py-0.5 rounded text-xs font-bold mr-2 backdrop-blur-md flex items-center shadow-sm">
+                            <span className="mr-1">✅</span> Halal Certified
+                        </span>
+                    )}
+                    {restaurant.halalStatus === 'muslim_owned' && (
+                        <span className="bg-green-600/80 text-white border border-green-500 px-2 py-0.5 rounded text-xs font-bold mr-2 backdrop-blur-md flex items-center shadow-sm">
+                            <span className="mr-1">☪️</span> Muslim Owned
+                        </span>
+                    )}
+                    {restaurant.halalStatus === 'no_pork' && (
+                        <span className="bg-orange-600/80 text-white border border-orange-500 px-2 py-0.5 rounded text-xs font-bold mr-2 backdrop-blur-md flex items-center shadow-sm">
+                            <span className="mr-1">🍖</span> No Pork No Lard
+                        </span>
+                    )}
                     <span className="bg-white/10 border border-white/20 px-2 py-0.5 rounded text-white font-bold text-xs mr-2 backdrop-blur-md">
                         {restaurant.price_range}
                     </span>
@@ -548,6 +566,20 @@ const ResultModal = ({ restaurant, onClose, onAddReview, isAdmin, onUpdateRestau
                         />
                         <span className="text-xs text-gray-400">/ 5.0</span>
                     </div>
+                  </div>
+
+                  <div>
+                    <label className="text-xs text-gray-400">Halal Status (清真状态)</label>
+                    <select
+                        value={editForm.halalStatus || 'non_halal'}
+                        onChange={(e) => setEditForm({...editForm, halalStatus: e.target.value})}
+                        className="w-full bg-[#1a1a1a] border-b border-gray-600 py-1 text-sm text-white focus:border-white outline-none mt-1"
+                    >
+                        <option value="non_halal">Non-Halal (非清真/未标注)</option>
+                        <option value="certified">Halal Certified (官方认证)</option>
+                        <option value="muslim_owned">Muslim Owned (穆斯林经营)</option>
+                        <option value="no_pork">No Pork No Lard (不含猪肉/猪油)</option>
+                    </select>
                   </div>
 
                   <div>
@@ -1033,15 +1065,28 @@ Tuesday: Closed
                  )}
               </div>
 
-              <a
-                href={mapUrl}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="flex items-center justify-center w-full py-3 bg-white hover:bg-gray-200 text-black rounded-xl font-bold transition shadow-lg shadow-white/10"
-              >
-                <ExternalLink size={18} className="mr-2" />
-                {t('modal.navigate', 'Google Maps 导航')}
-              </a>
+              <div className="flex gap-2 w-full">
+                  <a
+                    href={mapUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex-1 flex items-center justify-center py-3 bg-white hover:bg-gray-200 text-black rounded-xl font-bold transition shadow-lg shadow-white/10"
+                  >
+                    <ExternalLink size={18} className="mr-2" />
+                    {t('modal.navigate', 'Google Maps')}
+                  </a>
+                  {restaurant.location?.lat && restaurant.location?.lng && (
+                     <a
+                        href={`https://waze.com/ul?ll=${restaurant.location.lat},${restaurant.location.lng}&navigate=yes`}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="flex-1 flex items-center justify-center py-3 bg-[#33ccff] hover:bg-[#33ccff]/90 text-black rounded-xl font-bold transition shadow-lg shadow-blue-400/10"
+                     >
+                        <Navigation size={18} className="mr-2 fill-current" />
+                        Waze
+                     </a>
+                  )}
+              </div>
             </div>
 
             <hr className="border-gray-700" />

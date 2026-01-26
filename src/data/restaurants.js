@@ -42,7 +42,8 @@ export const initialRestaurants = [
             "lat": null,
             "lng": null
         },
-        "phone": "016-752 8026"
+        "phone": "016-752 8026",
+        "halalStatus": "non_halal"
     },
     {
         "id": 2,
@@ -85,7 +86,8 @@ export const initialRestaurants = [
             "lat": null,
             "lng": null
         },
-        "phone": "012-727 8272"
+        "phone": "012-727 8272",
+        "halalStatus": "non_halal"
     },
     {
         "id": 3,
@@ -104,7 +106,7 @@ export const initialRestaurants = [
         ],
         "address": "523, Jalan Kenanga 29/17, Bandar Indahpura, 81000 Kulai, Johor",
         "opening_hours": "Monday: 5am - 2pm\nTuesday: 5am - 2pm\nWednesday: 5am - 2pm\nThursday: 5am - 2pm\nFriday: 5am - 2pm\nSaturday: 5am - 2pm\nSunday: 5am - 2pm",
-        "intro_zh": "古来家喻户晓的老字号，搬迁至 Indahpura 后依然人气火爆。虽然招牌是牛肉面，但也贴心提供猪肉粉和海鲜粉，照顾不吃牛的食客。生意极好，属于道地的排队美食。",
+        "intro_zh": "位于 古来 Indahpura 的老字号 牛肉面家（原位于古来大街）。主打 传统海南牛肉面（干捞/汤），牛肉炖煮得软嫩入味，汤头浓郁，配上咸菜更是提味。除了牛肉面，也提供 猪肉粉 和 海鲜粉，是古来人从小吃到大的 经典老味道。",
         "intro_en": "A household name in Kulai, now located in Indahpura. While famous for their Beef Noodles, they also serve Pork and Seafood noodles, making it suitable for everyone. A truly local spot that is always packed and often requires queuing.",
         "category": [
             "粉类"
@@ -131,7 +133,8 @@ export const initialRestaurants = [
             "lat": null,
             "lng": null
         },
-        "phone": "012-710 9772"
+        "phone": "012-710 9772",
+        "halalStatus": "non_halal"
     },
     {
         "id": 4,
@@ -149,7 +152,7 @@ export const initialRestaurants = [
         ],
         "address": "21, Jalan Manis, Taman Manis, 81000 Kulai, Johor",
         "opening_hours": "Monday: 10am - 3pm\nTuesday: 10am - 3pm\nWednesday: 10am - 3pm\nThursday: Closed\nFriday: 10am - 3pm\nSaturday: 10am - 3pm\nSunday: 10am - 3pm",
-        "intro_zh": "位于古来21哩 (Taman Manis) 的地标性美食。这里的客家擂茶汤底浓郁，带有浓厚的花生与芝麻香，配菜丰富新鲜，是许多古来人心中最正宗的客家味道。",
+        "intro_zh": "位于古来 Taman Manis (21哩)，提供 正宗客家擂茶。汤底香浓带有花生与芝麻风味，配有传统豆类、坚果和青菜等经典配料，是许多古来人心中熟悉的客家味道。",
         "intro_en": "A landmark delicacy located at Kulai 21 Miles (Taman Manis). Their signature Hakka Lei Cha features a rich, green broth fragrant with peanuts and sesame seeds. Served with generous fresh toppings, it's the authentic taste of Hakka cuisine.",
         "category": [
             "饭类"
@@ -176,7 +179,8 @@ export const initialRestaurants = [
             "lat": null,
             "lng": null
         },
-        "phone": "016-795 0302"
+        "phone": "016-795 0302",
+        "halalStatus": "non_halal"
     },
     {
         "id": 5,
@@ -222,7 +226,8 @@ export const initialRestaurants = [
             "lat": null,
             "lng": null
         },
-        "phone": "019-759 3635"
+        "phone": "019-759 3635",
+        "halalStatus": "non_halal"
     },
     {
         "id": 6,
@@ -260,7 +265,8 @@ export const initialRestaurants = [
             "lat": null,
             "lng": null
         },
-        "phone": "016-731 9910"
+        "phone": "016-731 9910",
+        "halalStatus": "non_halal"
     },
     {
         "id": 7,
@@ -299,7 +305,8 @@ export const initialRestaurants = [
         "location": {
             "lat": null,
             "lng": null
-        }
+        },
+        "halalStatus": "non_halal"
     },
     {
         "id": 8,
@@ -346,7 +353,9 @@ export const initialRestaurants = [
         "location": {
             "lat": null,
             "lng": null
-        }
+        },
+        "phone": "07-663 1111",
+        "halalStatus": "non_halal"
     },
     {
         "id": 9,
@@ -355,7 +364,7 @@ export const initialRestaurants = [
         "name_en": "Ji Noodles",
         "address": "845-855, Jalan Teratai 36/17, Bandar Indahpura, 81000 Kulai, Johor",
         "opening_hours": "Monday: Closed\nTuesday: 7am - 3pm\nWednesday: 7am - 3pm\nThursday: 7am - 3pm\nFriday: 7am - 3pm\nSaturday: 7am - 3pm\nSunday: 7am - 3pm",
-        "intro_zh": "吉面家的面条采用全蛋制作，口感Q弹且散发淡淡蛋香。无须过多调味，简单的酱汁就能衬托出面条的鲜美，是追求原汁原味食客的首选。",
+        "intro_zh": "古来 Indahpura 的面馆，采用全蛋面制作，面条 Q 弹有弹性、带淡淡蛋香，简单酱汁就能衬托出面条本身的鲜美，是喜欢原味面食的食客常去的正餐选择。",
         "intro_en": "Ji Noodles uses whole-egg noodles that are springy and fragrant. Delicious even with simple seasoning, allowing the natural taste of the noodles to shine. A top choice for those who appreciate authentic flavors.",
         "category": [
             "粉类"
@@ -382,7 +391,8 @@ export const initialRestaurants = [
         "location": {
             "lat": null,
             "lng": null
-        }
+        },
+        "halalStatus": "non_halal"
     },
     {
         "id": 10,
@@ -426,7 +436,8 @@ export const initialRestaurants = [
         "location": {
             "lat": null,
             "lng": null
-        }
+        },
+        "halalStatus": "non_halal"
     },
     {
         "id": 12,
@@ -463,7 +474,9 @@ export const initialRestaurants = [
         "location": {
             "lat": null,
             "lng": null
-        }
+        },
+        "phone": "012-789 4073",
+        "halalStatus": "non_halal"
     },
     {
         "id": 13,
@@ -538,7 +551,8 @@ export const initialRestaurants = [
         "location": {
             "lat": null,
             "lng": null
-        }
+        },
+        "halalStatus": "non_halal"
     },
     {
         "id": 14,
@@ -547,7 +561,7 @@ export const initialRestaurants = [
         "name_en": "Kedai Makan Man Ting Fong",
         "address": "Lot 8098, Jalan Kelapa Sawit 6, Kelapa Sawit, 81030 Kulai, Johor",
         "opening_hours": "Monday: 7am - 2pm\nTuesday: Closed\nWednesday: 7am - 2pm\nThursday: 7am - 2pm\nFriday: 7am - 2pm\nSaturday: 7am - 2pm\nSunday: 7am - 2pm",
-        "intro_zh": "位于加拉巴沙威的传统客家美食店。最出名的是正宗的客家擂茶和纯手工制作的菜板（Chai Ban）。菜板皮薄馅多，有沙葛、韭菜等多种口味。",
+        "intro_zh": "沙威（Kelapa Sawit） 著名的 客家茶餐室，主打 擂茶（Hakka Lei Cha） 和 酿豆腐。这里的擂茶汤头浓郁甘香，配菜丰富，是健康又美味的传统客家料理。同时也售卖 菜板 等小吃，保留了浓厚的 传统客家风味。",
         "intro_en": "A traditional Hakka restaurant located in Kelapa Sawit. Famous for its authentic Hakka Lei Cha and handmade Chai Ban (vegetable dumplings). The Chai Ban has a thin skin with generous fillings, available in turnip, chives, and other flavors.",
         "category": [],
         "rating": 0,
@@ -572,7 +586,8 @@ export const initialRestaurants = [
         "location": {
             "lat": null,
             "lng": null
-        }
+        },
+        "halalStatus": "non_halal"
     },
     {
         "id": 15,
@@ -610,7 +625,8 @@ export const initialRestaurants = [
         "location": {
             "lat": null,
             "lng": null
-        }
+        },
+        "halalStatus": "non_halal"
     },
     {
         "id": 16,
@@ -648,7 +664,9 @@ export const initialRestaurants = [
         "location": {
             "lat": null,
             "lng": null
-        }
+        },
+        "phone": "012-754 3818",
+        "halalStatus": "muslim_owned"
     },
     {
         "id": 17,
@@ -687,7 +705,8 @@ export const initialRestaurants = [
         "location": {
             "lat": null,
             "lng": null
-        }
+        },
+        "halalStatus": "muslim_owned"
     },
     {
         "id": 18,
@@ -726,7 +745,8 @@ export const initialRestaurants = [
         "location": {
             "lat": null,
             "lng": null
-        }
+        },
+        "halalStatus": "non_halal"
     },
     {
         "id": 19,
@@ -766,7 +786,8 @@ export const initialRestaurants = [
         "location": {
             "lat": null,
             "lng": null
-        }
+        },
+        "halalStatus": "non_halal"
     },
     {
         "id": 20,
@@ -804,7 +825,8 @@ export const initialRestaurants = [
         "location": {
             "lat": null,
             "lng": null
-        }
+        },
+        "halalStatus": "non_halal"
     },
     {
         "id": 21,
@@ -819,7 +841,7 @@ export const initialRestaurants = [
             "粉类"
         ],
         "rating": 0,
-        "image": "https://scontent.fmkz1-2.fna.fbcdn.net/v/t39.30808-6/306158499_539125361502108_3747463199871027682_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=6ee11a&_nc_ohc=wJN-NeqfT0AQ7kNvwFt1b0-&_nc_oc=AdkIE8IS1Af4g5HHMYeGjFnu89B7_BYpthLNncjMAv5fQrm2k2jR1fr45CjndE_Si88&_nc_zt=23&_nc_ht=scontent.fmkz1-2.fna&_nc_gid=kMJLwZpy0hF-_DxKIxtkOQ&oh=00_AfqHG0VWN7fHli6eVLHbdkSJW7pb_Zzv6-KkpmcyPuo6VQ&oe=697BD84F",
+        "image": "https://i.ibb.co/C3m8gGkp/image.jpg",
         "subStalls": [],
         "categories": [
             "粉类"
@@ -840,7 +862,8 @@ export const initialRestaurants = [
         "location": {
             "lat": null,
             "lng": null
-        }
+        },
+        "halalStatus": "non_halal"
     },
     {
         "id": 22,
@@ -878,7 +901,8 @@ export const initialRestaurants = [
         "location": {
             "lat": null,
             "lng": null
-        }
+        },
+        "halalStatus": "non_halal"
     },
     {
         "id": 23,
@@ -887,7 +911,7 @@ export const initialRestaurants = [
         "name_en": "Best Flavor Food Restaurant",
         "address": "42, Jalan Susur Kulai 4, Taman Sri Kulai Baru, 81000 Kulai, Johor Darul Ta'zim",
         "opening_hours": "Monday: 10:30am - 3pm\nTuesday: 10:30am - 3pm\nWednesday: 10:30am - 3pm\nThursday: 10:30am - 3pm\nFriday: 10:30am - 3pm\nSaturday: 10:30am - 3pm\nSunday: Closed",
-        "intro_zh": "这里的烧腊和鸡饭深受食客喜爱。烧鸭皮脆肉嫩，叉烧肥瘦适中。是古来21哩一带解决午餐的热门选择。",
+        "intro_zh": "古来的一家 杂菜饭正餐店，招牌 杂菜饭，环境随意亲民，适合日常午餐或晚餐。",
         "intro_en": "Popular for its roast meats and chicken rice. The roast duck has crispy skin and tender meat, while the char siew has the perfect balance of fat and lean meat. A popular lunch spot in the Kulai 21 Miles area.",
         "category": [
             "饭类"
@@ -916,7 +940,8 @@ export const initialRestaurants = [
         "location": {
             "lat": null,
             "lng": null
-        }
+        },
+        "halalStatus": "non_halal"
     },
     {
         "id": 24,
@@ -931,7 +956,7 @@ export const initialRestaurants = [
             "饭类"
         ],
         "rating": 0,
-        "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1c/Chicken_rice_in_KL_%282%29.jpg/330px-Chicken_rice_in_KL_%282%29.jpg",
+        "image": "https://i.ibb.co/KjXnn5tw/image.jpg",
         "subStalls": [],
         "categories": [
             "饭类"
@@ -955,7 +980,8 @@ export const initialRestaurants = [
         "location": {
             "lat": null,
             "lng": null
-        }
+        },
+        "halalStatus": "non_halal"
     },
     {
         "id": 25,
@@ -995,7 +1021,8 @@ export const initialRestaurants = [
         "location": {
             "lat": null,
             "lng": null
-        }
+        },
+        "halalStatus": "non_halal"
     },
     {
         "id": 26,
@@ -1036,7 +1063,8 @@ export const initialRestaurants = [
         "location": {
             "lat": null,
             "lng": null
-        }
+        },
+        "halalStatus": "non_halal"
     },
     {
         "id": 27,
@@ -1045,7 +1073,7 @@ export const initialRestaurants = [
         "name_en": "Khoh Foong Restaurant",
         "address": "1, Jalan Susur Kulai 4, Taman Sri Kulai Baru 2, 81000 Kulai, Johor Darul Ta'zim",
         "opening_hours": "Monday: 10:45am - 8pm\nTuesday: 10:45am - 8pm\nWednesday: 10:45am - 8pm\nThursday: 10:45am - 8pm\nFriday: 10:45am - 8pm\nSaturday: 10:45am - 8pm\nSunday: 10:45am - 8pm",
-        "intro_zh": "传统中式酒家，提供各类煮炒和宴席菜色。适合家庭聚餐和庆祝活动。",
+        "intro_zh": "古来的一家 中式煮炒店，也承接自助餐餐饮服务。适合家庭聚餐和庆祝活动",
         "intro_en": "Traditional Chinese restaurant offering various 'Zhu Chao' dishes and banquet menus. Suitable for family dinners and celebrations.",
         "category": [
             "饭类",
@@ -1077,7 +1105,8 @@ export const initialRestaurants = [
         "location": {
             "lat": null,
             "lng": null
-        }
+        },
+        "halalStatus": "non_halal"
     },
     {
         "id": 28,
@@ -1117,7 +1146,8 @@ export const initialRestaurants = [
         "location": {
             "lat": null,
             "lng": null
-        }
+        },
+        "halalStatus": "non_halal"
     },
     {
         "id": 29,
@@ -1125,7 +1155,7 @@ export const initialRestaurants = [
         "name_en": "Restoran Ji Guan",
         "address": "JALAN MAS 4, TAMAN DESAMAS, TAMAN DESAMAS, 81000 Kulai, Johor Darul Ta'zim",
         "opening_hours": "Monday: 11am - 10pm\nTuesday: Closed\nWednesday: 11am - 10pm\nThursday: 11am - 10pm\nFriday: 11am - 10pm\nSaturday: 11am - 10pm\nSunday: 11am - 10pm",
-        "intro_zh": "环境宽敞舒适的宴会酒楼，提供精致的中式料理和宴席配套。无论是婚宴、寿宴还是商务聚餐，都能提供高水准的服务和美食。",
+        "intro_zh": "古来一家 中式酒楼 / 煮炒店，环境宽敞舒适，提供 各类中式菜肴和宴席配套，适合 家庭聚餐、婚宴、寿宴或商务聚餐。",
         "intro_en": "A spacious banquet restaurant offering exquisite Chinese cuisine and banquet packages. Whether for weddings, birthdays, or business dinners, they provide high-standard service and food.",
         "category": [
             "宴会酒楼"
@@ -1152,7 +1182,9 @@ export const initialRestaurants = [
         "location": {
             "lat": null,
             "lng": null
-        }
+        },
+        "phone": "07-662 5678",
+        "halalStatus": "non_halal"
     },
     {
         "id": 30,
@@ -1188,7 +1220,8 @@ export const initialRestaurants = [
         "location": {
             "lat": null,
             "lng": null
-        }
+        },
+        "halalStatus": "non_halal"
     },
     {
         "id": 31,
@@ -1224,7 +1257,8 @@ export const initialRestaurants = [
         "location": {
             "lat": null,
             "lng": null
-        }
+        },
+        "halalStatus": "muslim_owned"
     },
     {
         "id": 32,
@@ -1233,13 +1267,13 @@ export const initialRestaurants = [
         "name_en": "Yoon Lai",
         "address": "646, Jalan Gangsa 6, Taman Timur, 81000 Kulai, Johor Darul Ta'zim",
         "opening_hours": "Monday: 6am - 4pm\nTuesday: 6am - 4pm\nWednesday: Closed\nThursday: 6am - 4pm\nFriday: 6am - 4pm\nSaturday: 6am - 4pm\nSunday: 6am - 4pm",
-        "intro_zh": "提供美味的点心、猪肠粉和云吞面。猪肠粉滑嫩爽口，豆沙包松软香甜。云吞面面条独特，口感极佳。",
+        "intro_zh": "古来 Taman Timur 的传统中式餐馆，以 点心、粿条、云吞面、鸡饭和其他本地早餐/正餐 吃法闻名，适合想吃简单早午餐或传统华人料理的食客。",
         "intro_en": "Serves delicious Dim Sum, Chee Cheong Fun, and Wanton Noodles. The Chee Cheong Fun is smooth and fragrant, while the Tau Sar Pau is soft and sweet. Famous for its unique style of Wanton Noodles.",
         "category": [
             "咖啡店"
         ],
         "rating": 0,
-        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTp_v_ViDFHo6LKx-erRDVXI2mcSe6Rm66V_A&s",
+        "image": "https://i.ibb.co/mFJmH4KG/Screen-Hunter-78-Jan-26-18-33.jpg",
         "subStalls": [],
         "categories": [
             "咖啡店"
@@ -1262,7 +1296,8 @@ export const initialRestaurants = [
         "location": {
             "lat": null,
             "lng": null
-        }
+        },
+        "halalStatus": "non_halal"
     },
     {
         "id": 33,
@@ -1324,7 +1359,8 @@ export const initialRestaurants = [
         "location": {
             "lat": null,
             "lng": null
-        }
+        },
+        "halalStatus": "certified"
     },
     {
         "id": 34,
@@ -1377,7 +1413,8 @@ export const initialRestaurants = [
         "location": {
             "lat": null,
             "lng": null
-        }
+        },
+        "halalStatus": "certified"
     },
     {
         "id": 35,
@@ -1412,7 +1449,8 @@ export const initialRestaurants = [
         "location": {
             "lat": null,
             "lng": null
-        }
+        },
+        "halalStatus": "muslim_owned"
     },
     {
         "id": 36,
@@ -1449,7 +1487,8 @@ export const initialRestaurants = [
         "location": {
             "lat": null,
             "lng": null
-        }
+        },
+        "halalStatus": "non_halal"
     },
     {
         "id": 37,
@@ -1488,7 +1527,8 @@ export const initialRestaurants = [
         "location": {
             "lat": null,
             "lng": null
-        }
+        },
+        "halalStatus": "non_halal"
     },
     {
         "id": 38,
@@ -1497,7 +1537,7 @@ export const initialRestaurants = [
         "name_en": "Three And A Half",
         "address": "38, Lorong Ismail, Taman Kulai, 81000 Kulai, Johor Darul Ta'zim",
         "opening_hours": "Monday: 8am - 4pm\nTuesday: 8am - 4pm\nWednesday: 8am - 4pm\nThursday: 8am - 4pm\nFriday: 8am - 4pm\nSaturday: 8am - 4pm\nSunday: 8am - 4pm",
-        "intro_zh": "位于独特的3层半建筑内，环境舒适。主打热压吐司（如乌打芝士口味）和香煎吐司，搭配香浓的传统咖啡和半熟蛋。",
+        "intro_zh": "古来一家 小巧特色咖啡馆，位于 独特的后巷空间，环境舒适。主打 热压吐司（如乌打芝士口味） 与 香煎吐司，搭配 香浓传统咖啡 和 半熟蛋，是早餐或午茶的好选择。",
         "intro_en": "Located in a unique 3.5-story building with a cozy atmosphere. Specializes in pressed toast sandwiches (such as Otak Cheese) and grilled toast, served with aromatic traditional coffee and soft-boiled eggs.",
         "category": [
             "咖啡店"
@@ -1527,7 +1567,8 @@ export const initialRestaurants = [
         "location": {
             "lat": null,
             "lng": null
-        }
+        },
+        "halalStatus": "non_halal"
     },
     {
         "id": 39,
@@ -1565,7 +1606,8 @@ export const initialRestaurants = [
         "location": {
             "lat": null,
             "lng": null
-        }
+        },
+        "halalStatus": "non_halal"
     },
     {
         "id": 40,
@@ -1600,7 +1642,8 @@ export const initialRestaurants = [
         "location": {
             "lat": null,
             "lng": null
-        }
+        },
+        "halalStatus": "non_halal"
     },
     {
         "id": 41,
@@ -1638,7 +1681,8 @@ export const initialRestaurants = [
         "location": {
             "lat": null,
             "lng": null
-        }
+        },
+        "halalStatus": "non_halal"
     },
     {
         "id": 42,
@@ -1677,7 +1721,8 @@ export const initialRestaurants = [
         "location": {
             "lat": null,
             "lng": null
-        }
+        },
+        "halalStatus": "non_halal"
     },
     {
         "id": 43,
@@ -1717,7 +1762,8 @@ export const initialRestaurants = [
         "location": {
             "lat": null,
             "lng": null
-        }
+        },
+        "halalStatus": "muslim_owned"
     },
     {
         "id": 44,
@@ -1755,7 +1801,8 @@ export const initialRestaurants = [
         "location": {
             "lat": null,
             "lng": null
-        }
+        },
+        "halalStatus": "non_halal"
     },
     {
         "id": 45,
@@ -1793,7 +1840,8 @@ export const initialRestaurants = [
         "location": {
             "lat": null,
             "lng": null
-        }
+        },
+        "halalStatus": "non_halal"
     },
     {
         "id": 46,
@@ -1802,7 +1850,7 @@ export const initialRestaurants = [
         "name_en": "",
         "address": "75, Jln. Kenanga 29/11, Bandar Indahpura, 81000 Kulai, Johor Darul Ta'zim",
         "opening_hours": "Monday: Closed\nTuesday: 10am - 10pm\nWednesday: 10am - 10pm\nThursday: 10am - 10pm\nFriday: 10am - 10pm\nSaturday: 10am - 10pm\nSunday: 10am - 10pm",
-        "intro_zh": "著名的苦瓜汤专卖店，汤头清甜回甘，苦瓜薄片爽口。搭配客家炸肉、梅菜扣肉等经典配菜，是健康美味的住家饭首选。",
+        "intro_zh": "一家以苦瓜汤为主的中式餐馆，苦瓜汤清爽带微苦甘甜风味，是店里的特色菜。店里也有搭配米饭和中式配菜如炸肉等选择，是喜欢传统苦瓜汤的顾客常去的地方。",
         "intro_en": "Famous for its bitter gourd soup with a clear, slightly sweet broth. The thinly sliced bitter gourd is refreshing. Best enjoyed with their signature Hakka fried pork and preserved vegetables.",
         "category": [
             "饭类"
@@ -1833,7 +1881,8 @@ export const initialRestaurants = [
         "location": {
             "lat": null,
             "lng": null
-        }
+        },
+        "halalStatus": "non_halal"
     },
     {
         "id": 47,
@@ -1841,7 +1890,7 @@ export const initialRestaurants = [
         "name": "MyKori Dessert Cafe Kulai",
         "address": "93, Jln. Kenanga 29/11, Bandar Indahpura, 81000 Kulai, Johor Darul Ta'zim",
         "opening_hours": "Monday: 12pm – 10pm\nTuesday: 12pm – 10pm\nWednesday: 12pm – 10pm\nThursday: 12pm – 10pm\nFriday: 12pm – 10pm\nSaturday: 12pm – 10pm\nSunday: 12pm – 10pm",
-        "intro_zh": "人气日式甜点屋，主打各式口味的日式刨冰 (Kakigori) 和蜜糖吐司。环境温馨，是甜品爱好者的必打卡之地。",
+        "intro_zh": "一家主打 日式刨冰（Kakigori） 的甜品店，提供多种口味（如抹茶、草莓、巧克力等）的绵密刨冰，造型精致且份量十足。此外也提供 蜜糖吐司（Shibuya Toast） 和 鱼形烧（Taiyaki）。是消暑和享受 甜蜜下午茶 的好去处。",
         "intro_en": "A popular Japanese dessert cafe specializing in various flavors of Kakigori (shaved ice) and Shibuya toast. A cozy spot and a must-visit for dessert lovers.",
         "category": [
             "蛋糕甜点"
@@ -1871,7 +1920,8 @@ export const initialRestaurants = [
         "location": {
             "lat": null,
             "lng": null
-        }
+        },
+        "halalStatus": "non_halal"
     },
     {
         "id": 48,
@@ -1880,7 +1930,7 @@ export const initialRestaurants = [
         "name_en": "Restoran Ah Pang",
         "address": "85, 77, Jln. Kenanga 29/11, Indahpura, 81000 Kulai, Johor",
         "opening_hours": "Monday: See Google Maps\nTuesday: See Google Maps\nWednesday: See Google Maps\nThursday: See Google Maps\nFriday: See Google Maps\nSaturday: See Google Maps\nSunday: See Google Maps",
-        "intro_zh": "拥有超过50年历史的老字号，坚持制作纯正手工鱼丸。鱼丸口感Q弹鲜美，搭配干捞面或清汤粉，是古来人熟悉的古早味。",
+        "intro_zh": "一家较有历史感的传统鱼丸面档，主打 手工制作的鱼丸，弹牙鲜美，常见搭配 干捞面或清汤面，是很多当地人喜欢的经典古早味鱼丸面。",
         "intro_en": "A legendary spot with over 50 years of history, known for its authentic handmade fish balls. The fish balls are bouncy and fresh, perfectly paired with dry noodles or soup. A true taste of Kulai tradition.",
         "category": [
             "粉类"
@@ -1907,7 +1957,8 @@ export const initialRestaurants = [
         "location": {
             "lat": null,
             "lng": null
-        }
+        },
+        "halalStatus": "non_halal"
     },
     {
         "id": 49,
@@ -1916,7 +1967,7 @@ export const initialRestaurants = [
         "name_en": "",
         "address": "73, Jln. Kenanga 29/11, Bandar Indahpura, 81000 Kulai, Johor Darul Ta'zim",
         "opening_hours": "10am – 10pm (Wed Closed)",
-        "intro_zh": "来自越南的超人气咖啡品牌，主打香浓的越南咖啡。推荐招牌 Kopi Saigon 和 Kopi Buttercream，咖啡香气浓郁，口感顺滑。",
+        "intro_zh": "一家受 越南咖啡文化启发 的马来西亚咖啡连锁品牌，主打 越式滴滤咖啡（如招牌 Kopi Saigon），以浓郁甜香的风味著称。咖啡系列中 Kopi Saigon 和 Kopi Buttercream 在顾客中很受欢迎，口感香浓且顺滑，同时也提供多样饮品选择。",
         "intro_en": "A popular Vietnamese coffee chain serving authentic and aromatic coffee. Signature drinks include Kopi Saigon and Kopi Buttercream, known for their rich flavor and smooth texture.",
         "category": [
             "咖啡店",
@@ -1947,7 +1998,8 @@ export const initialRestaurants = [
         "location": {
             "lat": null,
             "lng": null
-        }
+        },
+        "halalStatus": "muslim_owned"
     },
     {
         "id": 50,
@@ -1983,7 +2035,8 @@ export const initialRestaurants = [
         "location": {
             "lat": null,
             "lng": null
-        }
+        },
+        "halalStatus": "non_halal"
     },
     {
         "id": 51,
@@ -2023,7 +2076,8 @@ export const initialRestaurants = [
         "location": {
             "lat": null,
             "lng": null
-        }
+        },
+        "halalStatus": "non_halal"
     },
     {
         "id": 52,
@@ -2061,7 +2115,8 @@ export const initialRestaurants = [
         "location": {
             "lat": null,
             "lng": null
-        }
+        },
+        "halalStatus": "non_halal"
     },
     {
         "id": 53,
@@ -2099,7 +2154,8 @@ export const initialRestaurants = [
         "location": {
             "lat": null,
             "lng": null
-        }
+        },
+        "halalStatus": "non_halal"
     },
     {
         "id": 54,
@@ -2135,7 +2191,8 @@ export const initialRestaurants = [
         "location": {
             "lat": null,
             "lng": null
-        }
+        },
+        "halalStatus": "non_halal"
     },
     {
         "id": 55,
@@ -2144,7 +2201,7 @@ export const initialRestaurants = [
         "name_en": "Wafu Indahpura",
         "address": "192, Jalan Kenanga 29/4, Bandar Indahpura, 81000 Kulai, Johor Darul Ta'zim",
         "opening_hours": "Monday: 12pm - 10pm\nTuesday: 12pm - 10pm\nWednesday: 12pm - 10pm\nThursday: 12pm - 10pm\nFriday: 12pm - 10pm\nSaturday: 12pm - 10pm\nSunday: 12pm - 10pm",
-        "intro_zh": "提供多样化本地美食和西餐的舒适食堂。食物选择丰富，价格亲民，适合日常用餐。",
+        "intro_zh": "位于 Indahpura 的日式/韩式风味平价餐厅，提供多样盖饭、咖喱饭、拉面和汤饭套餐，以及小吃和饮品，菜色选择丰富且价格亲民，适合日常用餐。",
         "intro_en": "A cozy eatery offering a wide variety of local and Western delights. With extensive food choices and affordable prices, it is a great spot for daily dining.",
         "category": [
             "咖啡店"
@@ -2173,7 +2230,8 @@ export const initialRestaurants = [
         "location": {
             "lat": null,
             "lng": null
-        }
+        },
+        "halalStatus": "non_halal"
     },
     {
         "id": 56,
@@ -2181,7 +2239,7 @@ export const initialRestaurants = [
         "name": "Jang Won Korean BBQ Restaurant",
         "address": "185, Jalan Kenanga 29/4, Bandar Indahpura, 81000 Kulai, Johor Darul Ta'zim",
         "opening_hours": "Monday: 11am - 10pm\nTuesday: 11am - 10pm\nWednesday: 11am - 10pm\nThursday: 11am - 10pm\nFriday: 11am - 10pm\nSaturday: 11am - 10pm\nSunday: 11am - 10pm",
-        "intro_zh": "位于 Indahpura 的正宗韩式烧烤店。以腌制入味的排骨和丰富的韩式小菜闻名。提供舒适的用餐环境，适合家庭聚餐。",
+        "intro_zh": "位于古来 Indahpura 的韩式烧烤餐厅，主打多样韩式烤肉（如五花肉、排骨、鸡肉等）和韩式料理。这里的烤肉腌制入味，配上丰富的韩式配菜（banchan）和其他料理如泡菜炒饭、石锅拌饭等，环境休闲适合 家庭或朋友聚餐。",
         "intro_en": "Authentic Korean BBQ restaurant in Indahpura. Known for its well-marinated pork ribs and generous variety of Korean side dishes (banchan). Offers a comfortable dining environment suitable for families.",
         "category": [
             "韩国餐"
@@ -2209,7 +2267,8 @@ export const initialRestaurants = [
         "location": {
             "lat": null,
             "lng": null
-        }
+        },
+        "halalStatus": "non_halal"
     },
     {
         "id": 57,
@@ -2218,7 +2277,7 @@ export const initialRestaurants = [
         "name_en": "Chiyo Sushi",
         "address": "184A, Indahpura, 81000 Kulai, Johor",
         "opening_hours": "Monday: 11:30am - 10pm\nTuesday: 11:30am - 10pm\nWednesday: 11:30am - 10pm\nThursday: 11:30am - 10pm\nFriday: 11:30am - 10pm\nSaturday: 11:30am - 10pm\nSunday: 11:30am - 10pm",
-        "intro_zh": "Indahpura 人气的日本餐厅，提供新鲜寿司和多样化的日式料理。以优质食材和温馨的用餐氛围著称。",
+        "intro_zh": "一家位于古来 Indahpura 的日式餐厅/寿司餐馆，菜单包含 寿司、寿司盒、日式便当、烤物、拉面/乌冬、天妇罗等多样日式料理，选择丰富且价格亲民。环境简洁适合日常日式用餐，是喜欢多样日本风味料理的一个不错选择。",
         "intro_en": "A popular Japanese restaurant in Indahpura offering fresh sushi and a wide variety of Japanese dishes. Known for its quality ingredients and cozy atmosphere.",
         "category": [
             "日本餐"
@@ -2245,7 +2304,8 @@ export const initialRestaurants = [
         "location": {
             "lat": null,
             "lng": null
-        }
+        },
+        "halalStatus": "non_halal"
     },
     {
         "id": 58,
@@ -2284,7 +2344,8 @@ export const initialRestaurants = [
         "location": {
             "lat": null,
             "lng": null
-        }
+        },
+        "halalStatus": "non_halal"
     },
     {
         "id": 59,
@@ -2330,7 +2391,8 @@ export const initialRestaurants = [
         "location": {
             "lat": null,
             "lng": null
-        }
+        },
+        "halalStatus": "non_halal"
     },
     {
         "id": 60,
@@ -2369,7 +2431,8 @@ export const initialRestaurants = [
         "location": {
             "lat": null,
             "lng": null
-        }
+        },
+        "halalStatus": "non_halal"
     },
     {
         "id": 61,
@@ -2407,7 +2470,8 @@ export const initialRestaurants = [
         "location": {
             "lat": null,
             "lng": null
-        }
+        },
+        "halalStatus": "non_halal"
     },
     {
         "id": 62,
@@ -2446,7 +2510,8 @@ export const initialRestaurants = [
         "location": {
             "lat": null,
             "lng": null
-        }
+        },
+        "halalStatus": "non_halal"
     },
     {
         "id": 63,
@@ -2455,7 +2520,7 @@ export const initialRestaurants = [
         "name_en": "Chagee",
         "address": "263, Jln Kenanga 29/8, Indahpura, 81000 Kulai, Johor",
         "opening_hours": "Monday: 12pm - 11pm\nTuesday: 12pm - 11pm\nWednesday: 12pm - 11pm\nThursday: 12pm - 11pm\nFriday: 12pm - 11pm\nSaturday: 12pm - 11pm\nSunday: 12pm - 11pm",
-        "intro_zh": "霸王茶姬是源自中国云南的新中式国风茶饮品牌。以原叶鲜奶茶为主打，招牌产品包括伯牙绝弦（茉莉雪芽）等。店内环境融合了传统与现代设计元素，适合拍照打卡。",
+        "intro_zh": "霸王茶姬 是源自 中国的“原叶鲜奶茶”品牌，以 伯牙绝弦（茉莉雪芽鲜奶茶） 等招牌饮品闻名。主打茶香浓郁、口感清新的鲜奶茶，包装设计充满国风美学。适合喜欢 清爽茶味奶茶 的朋友。",
         "intro_en": "CHAGEE is a premium tea beverage brand originating from Yunnan, China. Known for its fresh milk tea made with authentic tea leaves, signature drinks include the Jasmine Green Milk Tea. The store features a blend of traditional and modern design, perfect for photos.",
         "category": [
             "饮品"
@@ -2482,7 +2547,8 @@ export const initialRestaurants = [
         "location": {
             "lat": null,
             "lng": null
-        }
+        },
+        "halalStatus": "non_halal"
     },
     {
         "id": 64,
@@ -2519,7 +2585,8 @@ export const initialRestaurants = [
         "location": {
             "lat": null,
             "lng": null
-        }
+        },
+        "halalStatus": "non_halal"
     },
     {
         "id": 65,
@@ -2527,7 +2594,7 @@ export const initialRestaurants = [
         "name_en": "",
         "address": "Lot G-70, AEON Mall Kulaijaya",
         "opening_hours": "Monday: 10am - 10pm\nTuesday: 10am - 10pm\nWednesday: 10am - 10pm\nThursday: 10am - 10pm\nFriday: 10am - 10pm\nSaturday: 10am - 10pm\nSunday: 10am - 10pm",
-        "intro_zh": "结合了西式快餐与休闲餐饮的披萨专卖店。主打美式披萨、意大利面、焗饭以及大份量的鸡扒。其披萨饼皮厚实，馅料丰富，是聚餐的好去处。",
+        "intro_zh": "一家主打 美式披萨（Pizza） 和 帕尼尼（Panini） 的西餐厅，也提供 意大利面、焗饭、蘑菇汤 等西式料理。这里的披萨饼皮松软、馅料丰富，环境现代舒适，非常适合 年轻人聚会 或 家庭享用西餐。",
         "intro_en": "A casual dining pizza specialist combining Western fast food elements. Famous for American-style pizzas, pasta, baked rice, and generous chicken chops. Their pizzas feature thick crusts and abundant toppings, making it a great spot for gatherings.",
         "category": [
             "西餐"
@@ -2557,7 +2624,8 @@ export const initialRestaurants = [
         "location": {
             "lat": null,
             "lng": null
-        }
+        },
+        "halalStatus": "non_halal"
     },
     {
         "id": 66,
@@ -2596,7 +2664,8 @@ export const initialRestaurants = [
         "location": {
             "lat": null,
             "lng": null
-        }
+        },
+        "halalStatus": "non_halal"
     },
     {
         "id": 67,
@@ -2634,7 +2703,8 @@ export const initialRestaurants = [
         "location": {
             "lat": null,
             "lng": null
-        }
+        },
+        "halalStatus": "non_halal"
     },
     {
         "id": 68,
@@ -2643,7 +2713,7 @@ export const initialRestaurants = [
         "name_en": "",
         "address": "590, Jalan Kenanga 29/19, Bandar Indahpura, 81000 Kulai, Johor Darul Ta'zim",
         "opening_hours": "Monday: 11am - 12am\nTuesday: 11am - 12am\nWednesday: 11am - 12am\nThursday: 11am - 12am\nFriday: 11am - 12am\nSaturday: 11am - 12am\nSunday: 11am - 12am",
-        "intro_zh": "古来马丞锅，以海鲜粥底火锅闻名。汤头鲜甜，海鲜食材如虾、鱼片、啦啦都很新鲜。除了火锅，也提供多种煮炒和小吃。环境有特色，适合家庭聚餐。",
+        "intro_zh": "位于 古来 Indahpura 的火锅/打边炉餐厅，提供多种火锅锅底和丰富的海鲜、肉类及配料组合，汤底鲜美、食材新鲜，也有人喜欢这里的海鲜粥或海鲜类组合。餐厅环境休闲舒适，适合 家庭聚餐与朋友聚会",
         "intro_en": "Known as Ma Chin All, famous for its seafood porridge steamboat. The broth is sweet and savory, with fresh seafood like prawns, fish slices, and clams. Besides hotpot, they also offer various stir-fry dishes and snacks. A distinctive environment suitable for family dinners.",
         "category": [
             "火锅烧烤"
@@ -2652,7 +2722,7 @@ export const initialRestaurants = [
             "火锅烧烤"
         ],
         "rating": 0,
-        "image": "https://pbs.twimg.com/media/GUOFxfEb0AALGjq.jpg",
+        "image": "https://i.ibb.co/hJKZrnN1/Ma-Chin-All-Steamboat-Restaurant.jpg",
         "subStalls": [],
         "price_range": "RM 10-20",
         "menu_link": "",
@@ -2673,7 +2743,8 @@ export const initialRestaurants = [
         "location": {
             "lat": null,
             "lng": null
-        }
+        },
+        "halalStatus": "non_halal"
     },
     {
         "id": 69,
@@ -2711,7 +2782,8 @@ export const initialRestaurants = [
         "location": {
             "lat": null,
             "lng": null
-        }
+        },
+        "halalStatus": "non_halal"
     },
     {
         "id": 70,
@@ -2728,7 +2800,7 @@ export const initialRestaurants = [
             "粉类"
         ],
         "rating": 0,
-        "image": "https://placehold.co/800x600/e67e22/ffffff?text=Lau+Ma+Zi",
+        "image": "https://i.ibb.co/JW8c8hP1/image.jpg",
         "subStalls": [],
         "price_range": "RM 10-20",
         "menu_link": "",
@@ -2746,7 +2818,8 @@ export const initialRestaurants = [
         "location": {
             "lat": null,
             "lng": null
-        }
+        },
+        "halalStatus": "non_halal"
     },
     {
         "id": 71,
@@ -2784,7 +2857,8 @@ export const initialRestaurants = [
         "location": {
             "lat": null,
             "lng": null
-        }
+        },
+        "halalStatus": "non_halal"
     },
     {
         "id": 72,
@@ -2823,7 +2897,8 @@ export const initialRestaurants = [
         "location": {
             "lat": null,
             "lng": null
-        }
+        },
+        "halalStatus": "non_halal"
     },
     {
         "id": 73,
@@ -2832,7 +2907,7 @@ export const initialRestaurants = [
         "name_en": "Restoran jiang mam",
         "address": "555, Jalan Kenanga 29/18, Bandar Indahpura, 81000 Kulai, Johor Darul Ta'zim",
         "opening_hours": "5:30 pm–1:30 am Thursday Closed",
-        "intro_zh": "提供各式煮炒和饭类面类。招牌菜包括各类炒粉、烩饭等。份量足，价格公道，是晚餐和宵夜的好去处。",
+        "intro_zh": "一家人气本地小食馆，主要供应各类 炒粉、炒面、炒饭等煮炒类料理，份量足、价格亲民，是很多人晚上吃饭或当宵夜的好选择。",
         "intro_en": "Offers a variety of stir-fry dishes, rice, and noodles. Signature dishes include various fried noodles and braised rice. Generous portions and reasonable prices make it a great spot for dinner and supper.",
         "category": [
             "饭类",
@@ -2863,7 +2938,8 @@ export const initialRestaurants = [
         "location": {
             "lat": null,
             "lng": null
-        }
+        },
+        "halalStatus": "non_halal"
     },
     {
         "id": 74,
@@ -2901,7 +2977,8 @@ export const initialRestaurants = [
         "location": {
             "lat": null,
             "lng": null
-        }
+        },
+        "halalStatus": "non_halal"
     },
     {
         "id": 75,
@@ -2939,7 +3016,8 @@ export const initialRestaurants = [
         "location": {
             "lat": null,
             "lng": null
-        }
+        },
+        "halalStatus": "non_halal"
     },
     {
         "id": 76,
@@ -2979,7 +3057,8 @@ export const initialRestaurants = [
         "location": {
             "lat": null,
             "lng": null
-        }
+        },
+        "halalStatus": "non_halal"
     },
     {
         "id": 77,
@@ -3015,7 +3094,8 @@ export const initialRestaurants = [
         "location": {
             "lat": null,
             "lng": null
-        }
+        },
+        "halalStatus": "non_halal"
     },
     {
         "id": 78,
@@ -3024,7 +3104,7 @@ export const initialRestaurants = [
         "name_en": "",
         "address": "160 Jalan Kiambang  Kulai Bandar Indahpura 81000 JOHOR",
         "opening_hours": "Monday: 7am - 6pm\nTuesday: 7am - 6pm\nWednesday: 7am - 6pm\nThursday: 7am - 6pm\nFriday: 7am - 6pm\nSaturday: 7am - 6pm\nSunday: 7am - 6pm",
-        "intro_zh": "环境舒适的咖啡厅，提供各类西式早餐、意大利面和精品咖啡。招牌包括大早餐和特色拿铁，是享受悠闲早午餐的好去处。",
+        "intro_zh": "位于 古来 Indahpura 的舒适咖啡馆，提供多种咖啡饮品与轻食/主食选择（如本地早餐、烤面包、炒饭、西餐、面类及传统南洋咖啡等），环境轻松适合悠闲喝咖啡或早午餐聚会。",
         "intro_en": "A cozy cafe offering Western-style breakfasts, pasta, and specialty coffee. Signatures include their Big Breakfast and specialty lattes, making it a great spot for a relaxing brunch.",
         "category": [
             "咖啡店"
@@ -3055,7 +3135,8 @@ export const initialRestaurants = [
         "location": {
             "lat": null,
             "lng": null
-        }
+        },
+        "halalStatus": "non_halal"
     },
     {
         "id": 79,
@@ -3091,7 +3172,8 @@ export const initialRestaurants = [
         "location": {
             "lat": null,
             "lng": null
-        }
+        },
+        "halalStatus": "non_halal"
     },
     {
         "id": 80,
@@ -3129,7 +3211,8 @@ export const initialRestaurants = [
         "location": {
             "lat": null,
             "lng": null
-        }
+        },
+        "halalStatus": "non_halal"
     },
     {
         "id": 81,
@@ -3168,7 +3251,8 @@ export const initialRestaurants = [
         "location": {
             "lat": null,
             "lng": null
-        }
+        },
+        "halalStatus": "non_halal"
     },
     {
         "id": 82,
@@ -3177,7 +3261,7 @@ export const initialRestaurants = [
         "name_en": "Taste Of Ipoh",
         "address": "143, Pusat Komersial Indah, Jalan Kiambang 13, Bandar Indahpura, 81000 Kulai, Johor Darul Ta'zim",
         "opening_hours": "8 am–5 pm Mon Closed",
-        "intro_zh": "提供正宗怡保美食，推荐招牌芽菜鸡和爽滑河粉。味道地道，让你在古来也能品尝到怡保的风味。",
+        "intro_zh": "一家位于古来 Indahpura 的怡保风味餐馆，主打 怡保特色料理，包括 鸡丝河粉、猪肠粉、咖喱面等招牌口味，让你在古来也能吃到有南洋风格的怡保风味。",
         "intro_en": "Offers authentic Ipoh cuisine, featuring signature Bean Sprout Chicken and smooth Hor Fun noodles. Authentic flavors bringing the taste of Ipoh to Kulai.",
         "category": [
             "咖啡店"
@@ -3206,7 +3290,8 @@ export const initialRestaurants = [
         "location": {
             "lat": null,
             "lng": null
-        }
+        },
+        "halalStatus": "non_halal"
     },
     {
         "id": 83,
@@ -3215,7 +3300,7 @@ export const initialRestaurants = [
         "name_en": "Yubao Chicken Rice",
         "address": "Pusat Komersial Kulai, 169, Jalan Kiambang 13, Bandar Indahpura, 81000 Kulai, Johor Darul Ta'zim",
         "opening_hours": "10am-8pm Mon Closed",
-        "intro_zh": "招牌贵妃鸡皮滑肉嫩，淋上特制酱汁，香气四溢。除了鸡饭，叉烧和烧肉也值得一试。",
+        "intro_zh": "位于古来 Indahpura 的鸡饭与烧味餐馆，招牌包括 菜园鸡饭、烧鸡饭、叉烧和烧肉饭，鸡肉鲜嫩、饭香浓郁。这里也提供多种面类与配菜选择，是喜欢经典鸡饭与烧味的轻食午晚餐好去处",
         "intro_en": "Signature Gui Fei Chicken features smooth skin and tender meat, drizzled with special sauce. Besides chicken rice, their Char Siew and Roasted Pork are also worth trying.",
         "category": [
             "饭类"
@@ -3244,7 +3329,8 @@ export const initialRestaurants = [
         "location": {
             "lat": null,
             "lng": null
-        }
+        },
+        "halalStatus": "non_halal"
     },
     {
         "id": 84,
@@ -3278,7 +3364,8 @@ export const initialRestaurants = [
         "location": {
             "lat": null,
             "lng": null
-        }
+        },
+        "halalStatus": "non_halal"
     },
     {
         "id": 85,
@@ -3318,7 +3405,8 @@ export const initialRestaurants = [
         "location": {
             "lat": null,
             "lng": null
-        }
+        },
+        "halalStatus": "non_halal"
     },
     {
         "id": 86,
@@ -3356,7 +3444,8 @@ export const initialRestaurants = [
         "location": {
             "lat": null,
             "lng": null
-        }
+        },
+        "halalStatus": "non_halal"
     },
     {
         "id": 87,
@@ -3365,7 +3454,7 @@ export const initialRestaurants = [
         "name_en": "Tao Yuan Noodle House",
         "address": "13, Pusat Komersial Indah, 137, Jalan Kiambang, Indahpura, 81000 Kulai, Johor",
         "opening_hours": "Monday: 7am-3pm\nTuesday: 7am-3pm\nWednesday: 7am-3pm\nThursday: 7am-3pm\nFriday: 7am-3pm\nSaturday: 7am-3pm\nSunday: 7am-3pm",
-        "intro_zh": "手工面条专卖店，面条劲道爽滑。推荐尝试他们的干捞面和汤面，配料丰富，汤头鲜甜。",
+        "intro_zh": "位于 古来 Indahpura 的老字号 面家，以 手工制作的面条 闻名。主打 干捞面、云吞面 和 各类汤面，面条口感 Q 弹劲道。这里也提供美味的 炸肉、叉烧 等配料，是当地人喜爱的 传统早餐/午餐 地点。",
         "intro_en": "Specializes in handmade noodles that are chewy and smooth. Recommended dishes include their dry noodles and soup noodles, served with generous toppings and flavorful broth.",
         "category": [
             "粉类"
@@ -3392,7 +3481,8 @@ export const initialRestaurants = [
         "location": {
             "lat": null,
             "lng": null
-        }
+        },
+        "halalStatus": "non_halal"
     },
     {
         "id": 88,
@@ -3430,7 +3520,8 @@ export const initialRestaurants = [
         "location": {
             "lat": null,
             "lng": null
-        }
+        },
+        "halalStatus": "non_halal"
     },
     {
         "id": 89,
@@ -3470,7 +3561,8 @@ export const initialRestaurants = [
         "location": {
             "lat": null,
             "lng": null
-        }
+        },
+        "halalStatus": "non_halal"
     },
     {
         "id": 90,
@@ -3488,7 +3580,7 @@ export const initialRestaurants = [
             "西餐"
         ],
         "rating": 0,
-        "image": "https://placehold.co/800x600/333333/ffffff?text=The+Bierhaus",
+        "image": "https://i.ibb.co/pBDCB7g9/The-Bierhaus.jpg",
         "subStalls": [],
         "price_range": "RM 10-20",
         "menu_link": "",
@@ -3509,7 +3601,8 @@ export const initialRestaurants = [
         "location": {
             "lat": null,
             "lng": null
-        }
+        },
+        "halalStatus": "non_halal"
     },
     {
         "id": 91,
@@ -3518,7 +3611,7 @@ export const initialRestaurants = [
         "name_en": "Restoran Q House",
         "address": "Pusat Komersial Indah, 132 & 133, Jln Kiambang 14, Indahpura, 81000 Kulai, Johor",
         "opening_hours": "Monday: 11am - 11pm\nTuesday: 11am - 11pm\nWednesday: 11am - 11pm\nThursday: 11am - 11pm\nFriday: 11am - 11pm\nSaturday: 11am - 11pm\nSunday: 11am - 11pm",
-        "intro_zh": "适合一家大小的家庭式餐厅，提供多样化的港式与台式料理，环境温馨，价格亲民。",
+        "intro_zh": "一家提供多样化菜色的家庭式餐厅/茶餐厅，融合中式、港式、日式和西式料理，菜单选择超过百种（饭、面、煮炒、烤饭、意粉、小食等），价格亲民且环境轻松，是家庭聚餐、朋友聚会和日常用餐的好选择。",
         "intro_en": "Family-friendly restaurant offering a variety of Hong Kong and Taiwanese style cuisine. Cozy atmosphere with affordable prices.",
         "category": [
             "西餐"
@@ -3548,7 +3641,8 @@ export const initialRestaurants = [
         "location": {
             "lat": null,
             "lng": null
-        }
+        },
+        "halalStatus": "non_halal"
     },
     {
         "id": 92,
@@ -3587,7 +3681,8 @@ export const initialRestaurants = [
         "location": {
             "lat": null,
             "lng": null
-        }
+        },
+        "halalStatus": "non_halal"
     },
     {
         "id": 93,
@@ -3626,7 +3721,8 @@ export const initialRestaurants = [
         "location": {
             "lat": null,
             "lng": null
-        }
+        },
+        "halalStatus": "non_halal"
     },
     {
         "id": 94,
@@ -3662,7 +3758,8 @@ export const initialRestaurants = [
         "location": {
             "lat": null,
             "lng": null
-        }
+        },
+        "halalStatus": "non_halal"
     },
     {
         "id": 95,
@@ -3701,7 +3798,8 @@ export const initialRestaurants = [
         "location": {
             "lat": null,
             "lng": null
-        }
+        },
+        "halalStatus": "non_halal"
     },
     {
         "id": 96,
@@ -3710,7 +3808,7 @@ export const initialRestaurants = [
         "name_en": "Eight Toast Nanyang Kopitiam",
         "address": "196, Jalan Kiambang 12, Bandar Indahpura, 81000 Kulai, Johor Darul Ta'zim",
         "opening_hours": "Monday: 7am - 5am\nTuesday: 7am - 5am\nWednesday: 7am - 5am\nThursday: 7am - 5am\nFriday: 7am - 5am\nSaturday: 7am - 5am\nSunday: 7am - 5am",
-        "intro_zh": "南洋风味咖啡店，提供传统烤面包、半生熟蛋和香浓咖啡。早餐和午餐的经典选择。",
+        "intro_zh": "位于 古来 Indahpura 的南洋风味早餐咖啡馆，主打 烤面包/太空包搭配半熟蛋和南洋咖啡，还提供多样早餐与轻食选择。环境轻松，是享受经典南洋早餐/早午餐的好去处。",
         "intro_en": "Nanyang-style kopitiam serving traditional toast, soft-boiled eggs, and aromatic coffee. A classic choice for breakfast and lunch.",
         "category": [
             "咖啡店"
@@ -3740,7 +3838,8 @@ export const initialRestaurants = [
         "location": {
             "lat": null,
             "lng": null
-        }
+        },
+        "halalStatus": "non_halal"
     },
     {
         "id": 97,
@@ -3775,7 +3874,8 @@ export const initialRestaurants = [
         "location": {
             "lat": null,
             "lng": null
-        }
+        },
+        "halalStatus": "non_halal"
     },
     {
         "id": 98,
@@ -3783,7 +3883,7 @@ export const initialRestaurants = [
         "name_en": "The Cloud Restaurant",
         "address": "Jalan Kiambang 12, Pusat Komersial Indah 81000",
         "opening_hours": "7:30 am–6 pm Wed Closed",
-        "intro_zh": "提供各式面食和中式小吃，环境整洁。招牌面食和手工水饺深受食客喜爱。",
+        "intro_zh": "一家位于 古来 Indahpura 的家庭式餐厅，以云吞面（多种风味）为特色，也提供各类面食、主食和小吃选择。餐厅环境简洁、份量适中，适合日常用餐。",
         "intro_en": "Offers a variety of noodles and Chinese snacks in a clean environment. Signature noodles and handmade dumplings are popular among diners.",
         "category": [
             "粉类"
@@ -3810,7 +3910,8 @@ export const initialRestaurants = [
         "location": {
             "lat": null,
             "lng": null
-        }
+        },
+        "halalStatus": "non_halal"
     },
     {
         "id": 99,
@@ -3845,7 +3946,8 @@ export const initialRestaurants = [
         "location": {
             "lat": null,
             "lng": null
-        }
+        },
+        "halalStatus": "non_halal"
     },
     {
         "id": 100,
@@ -3883,7 +3985,8 @@ export const initialRestaurants = [
         "location": {
             "lat": null,
             "lng": null
-        }
+        },
+        "halalStatus": "non_halal"
     },
     {
         "id": 101,
@@ -3892,7 +3995,7 @@ export const initialRestaurants = [
         "name_en": "",
         "address": "Pusat Komersial Indah, 187, Jalan Kiambang 12, Bandar Indahpura, 81000 Kulai, Johor Darul Ta'zim",
         "opening_hours": "11 am–11 pm Tuesday Closed",
-        "intro_zh": "以恐龙为主题的特色咖啡厅，环境充满童趣。提供西餐、小吃和特色饮料，适合亲子用餐。",
+        "intro_zh": "一家位于古来 Indahpura 的轻食咖啡馆，提供 鸡扒、意粉、Croffle、小吃与多样饮品（奶茶、茶饮、咖啡等）。环境轻松舒适，适合 亲友聚餐、下午茶或轻松用餐。",
         "intro_en": "Dino-themed cafe with a fun and playful atmosphere. Serves Western food, snacks, and specialty drinks, suitable for family dining.",
         "category": [
             "西餐"
@@ -3922,7 +4025,8 @@ export const initialRestaurants = [
         "location": {
             "lat": null,
             "lng": null
-        }
+        },
+        "halalStatus": "non_halal"
     },
     {
         "id": 102,
@@ -3961,7 +4065,8 @@ export const initialRestaurants = [
         "location": {
             "lat": null,
             "lng": null
-        }
+        },
+        "halalStatus": "non_halal"
     },
     {
         "id": 103,
@@ -3970,7 +4075,7 @@ export const initialRestaurants = [
         "name_en": "Kang Bee Hong",
         "address": "182, Jalan Kiambang 12, Bandar Indahpura, 81000 Kulai, Johor Darul Ta'zim",
         "opening_hours": "Monday: 8 am–9 pm\nTuesday: 8 am–9 pm\nWednesday: 8 am–9 pm\nThursday: 8 am–9 pm\nFriday: 8 am–9 pm\nSaturday: 8 am–9 pm\nSunday: 8 am–9 pm",
-        "intro_zh": "老字号烧腊连锁店，以炭烧烧腊闻名。招牌叉烧肥瘦适中，烧鸭皮脆肉嫩，是古来人熟悉的美味。",
+        "intro_zh": "一家以 传统炭火烧腊 闻名的连锁烧腊餐厅，主打 炭烧叉烧、烧鸭、烤鸡和烧肉等烧腊类料理，烧腊香气浓郁、肉质鲜嫩。这里也有烧腊饭、烧腊面以及拼盘选择，适合喜欢经典南洋风味烧腊的食客。",
         "intro_en": "Established roasted meat chain famous for charcoal-roasted meats. Signature dishes include perfectly balanced Char Siew and crispy roasted duck.",
         "category": [
             "咖啡店"
@@ -3999,7 +4104,8 @@ export const initialRestaurants = [
         "location": {
             "lat": null,
             "lng": null
-        }
+        },
+        "halalStatus": "non_halal"
     },
     {
         "id": 104,
@@ -4008,7 +4114,7 @@ export const initialRestaurants = [
         "name_en": "Restaurant Xin Mo Gao",
         "address": "PUSAT KOMERSIAL INDAH, 181, Jalan Kiambang 12, Indahpura, 81000 Kulai, Johor",
         "opening_hours": "7 am–3 pm Thusday closed",
-        "intro_zh": "古来老字号咖啡店之一，提供经济实惠的早餐和午餐。传统咖啡和烤面包是必点，充满古早味。",
+        "intro_zh": "位于古来 Indahpura 的粉面小馆，主打 牛肉粉、猪肉粉和海鲜粉等汤粉与干捞粉类料理，汤头清爽、肉质鲜嫩，味道地道，份量充足且价格亲民，是很多当地人常去的 早餐到午餐粉面美食小馆。",
         "intro_en": "One of Kulai's old-school kopitiams offering affordable breakfast and lunch. Traditional coffee and toast are must-tries, full of nostalgic flavor.",
         "category": [
             "咖啡店"
@@ -4037,7 +4143,8 @@ export const initialRestaurants = [
         "location": {
             "lat": null,
             "lng": null
-        }
+        },
+        "halalStatus": "non_halal"
     },
     {
         "id": 105,
@@ -4076,7 +4183,8 @@ export const initialRestaurants = [
         "location": {
             "lat": null,
             "lng": null
-        }
+        },
+        "halalStatus": "non_halal"
     },
     {
         "id": 106,
@@ -4115,7 +4223,8 @@ export const initialRestaurants = [
         "location": {
             "lat": null,
             "lng": null
-        }
+        },
+        "halalStatus": "non_halal"
     },
     {
         "id": 107,
@@ -4153,7 +4262,8 @@ export const initialRestaurants = [
         "location": {
             "lat": null,
             "lng": null
-        }
+        },
+        "halalStatus": "non_halal"
     },
     {
         "id": 108,
@@ -4162,7 +4272,7 @@ export const initialRestaurants = [
         "name_en": "",
         "address": "207, Jln Kiambang 14, Bandar Indahpura, 81000 Kulai, Johor Darul Ta'zim",
         "opening_hours": "Monday: 5.30Pm-1am\nTuesday: 5.30Pm-1am\nWednesday: 5.30Pm-1am\nThursday: 5.30Pm-1am\nFriday: 5.30Pm-1am\nSaturday: 5.30Pm-1am\nSunday: 5.30Pm-1am",
-        "intro_zh": "主打各类特色茶饮和台式小吃，环境休闲。适合年轻人聚会喝茶聊天的舒适空间。",
+        "intro_zh": "位于古来 Indahpura 的轻食餐饮店，以 Loklok 串串（串串火锅/烫串）为特色，食材种类丰富、价格亲民，也有汤类配料与饮料可以搭配，环境轻松休闲，是 年轻人和朋友聚会吃串、喝饮料聊天的好地方。",
         "intro_en": "Specializes in specialty tea drinks and Taiwanese snacks in a casual setting. A comfortable space for youths to hang out and chat.",
         "category": [
             "火锅烧烤"
@@ -4192,7 +4302,8 @@ export const initialRestaurants = [
         "location": {
             "lat": null,
             "lng": null
-        }
+        },
+        "halalStatus": "non_halal"
     },
     {
         "id": 109,
@@ -4232,7 +4343,8 @@ export const initialRestaurants = [
         "location": {
             "lat": null,
             "lng": null
-        }
+        },
+        "halalStatus": "non_halal"
     },
     {
         "id": 110,
@@ -4272,7 +4384,8 @@ export const initialRestaurants = [
         "location": {
             "lat": null,
             "lng": null
-        }
+        },
+        "halalStatus": "non_halal"
     },
     {
         "id": 111,
@@ -4311,7 +4424,8 @@ export const initialRestaurants = [
         "location": {
             "lat": null,
             "lng": null
-        }
+        },
+        "halalStatus": "non_halal"
     },
     {
         "id": 112,
@@ -4320,7 +4434,7 @@ export const initialRestaurants = [
         "name_en": "Like Mee Noodle House",
         "address": "231, Jalan Kiambang 15, Bandar Indahpura, 81000 Kulai, Johor Darul Ta'zim",
         "opening_hours": "Monday: 10 am–9:30 pm\nTuesday: 10 am–9:30 pm\nWednesday: 10 am–9:30 pm\nThursday: 10 am–9:30 pm\nFriday: 10 am–9:30 pm\nSaturday: 10 am–9:30 pm\nSunday: 10 am–9:30 pm",
-        "intro_zh": "主打自家制面条，口感Q弹劲道。提供多种口味汤底和干捞选择，简单却美味的面食专卖店。",
+        "intro_zh": "一家位于古来 Indahpura 的面食馆，主打 猪肉粉与多种汤底/干捞面选择，面条口感 Q 弹有嚼劲、汤头香浓，搭配肉片、肉碎、贡丸等配料，美味却不复杂。环境适合日常用餐，是面食爱好者的经典选择。",
         "intro_en": "Features homemade noodles with a chewy texture. Offers various soup and dry toss options, a simple yet delicious noodle specialty shop.",
         "category": [
             "粉类"
@@ -4347,7 +4461,8 @@ export const initialRestaurants = [
         "location": {
             "lat": null,
             "lng": null
-        }
+        },
+        "halalStatus": "non_halal"
     },
     {
         "id": 113,
@@ -4383,7 +4498,8 @@ export const initialRestaurants = [
         "location": {
             "lat": null,
             "lng": null
-        }
+        },
+        "halalStatus": "non_halal"
     },
     {
         "id": 114,
@@ -4423,7 +4539,8 @@ export const initialRestaurants = [
         "location": {
             "lat": null,
             "lng": null
-        }
+        },
+        "halalStatus": "non_halal"
     },
     {
         "id": 115,
@@ -4459,7 +4576,8 @@ export const initialRestaurants = [
         "location": {
             "lat": null,
             "lng": null
-        }
+        },
+        "halalStatus": "non_halal"
     },
     {
         "id": 116,
@@ -4495,7 +4613,8 @@ export const initialRestaurants = [
         "location": {
             "lat": null,
             "lng": null
-        }
+        },
+        "halalStatus": "non_halal"
     },
     {
         "id": 117,
@@ -4531,7 +4650,8 @@ export const initialRestaurants = [
         "location": {
             "lat": null,
             "lng": null
-        }
+        },
+        "halalStatus": "non_halal"
     },
     {
         "id": 118,
@@ -4549,7 +4669,7 @@ export const initialRestaurants = [
             "咖啡店"
         ],
         "rating": 0,
-        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTmRbh7cWGZAAgSQijHLTOw61M05FiAmLTg-Q&s",
+        "image": "https://i.ibb.co/XxVWpGmd/image.jpg",
         "subStalls": [],
         "price_range": "RM 10-20",
         "menu_link": "",
@@ -4569,7 +4689,8 @@ export const initialRestaurants = [
         "location": {
             "lat": null,
             "lng": null
-        }
+        },
+        "halalStatus": "non_halal"
     },
     {
         "id": 119,
@@ -4577,7 +4698,7 @@ export const initialRestaurants = [
         "name_en": "Restoran Cuan Yue",
         "address": "281, Jln Kiambang 11, 81000 Kulai, Johor Darul Ta'zim",
         "opening_hours": "Monday: 11am-10.30pm\nTuesday: 11am-10.30pm\nWednesday: 11am-10.30pm\nThursday: 11am-10.30pm\nFriday: 11am-10.30pm\nSaturday: 11am-10.30pm\nSunday: 11am-10.30pm",
-        "intro_zh": "自选食材的麻辣烫，汤底香辣过瘾，也有不辣的骨汤选择。按重量计费，想吃什么就夹什么。",
+        "intro_zh": "家位于古来 Indahpura 的麻辣烫档口式餐厅，自选食材组合吃法，提供多种 麻辣汤底（微辣到超辣） 以及 清汤/番茄等不辣锅底选择。所有食材按重量计费，汤底香辣过瘾也可根据口味选择不辣或清淡，适合 朋友或家庭聚餐、轻松吃饭聊天。",
         "intro_en": "Self-service Mala Tang with spicy and addictive soup bases, as well as non-spicy bone broth. Pay by weight and choose your favorite ingredients.",
         "category": [
             "火锅烧烤"
@@ -4609,7 +4730,8 @@ export const initialRestaurants = [
         "location": {
             "lat": null,
             "lng": null
-        }
+        },
+        "halalStatus": "non_halal"
     },
     {
         "id": 120,
@@ -4649,7 +4771,8 @@ export const initialRestaurants = [
         "location": {
             "lat": null,
             "lng": null
-        }
+        },
+        "halalStatus": "non_halal"
     },
     {
         "id": 121,
@@ -4687,7 +4810,8 @@ export const initialRestaurants = [
         "location": {
             "lat": null,
             "lng": null
-        }
+        },
+        "halalStatus": "non_halal"
     },
     {
         "id": 122,
@@ -4723,7 +4847,8 @@ export const initialRestaurants = [
         "location": {
             "lat": null,
             "lng": null
-        }
+        },
+        "halalStatus": "non_halal"
     },
     {
         "id": 123,
@@ -4762,7 +4887,8 @@ export const initialRestaurants = [
         "location": {
             "lat": null,
             "lng": null
-        }
+        },
+        "halalStatus": "non_halal"
     },
     {
         "id": 124,
@@ -4798,7 +4924,8 @@ export const initialRestaurants = [
         "location": {
             "lat": null,
             "lng": null
-        }
+        },
+        "halalStatus": "non_halal"
     },
     {
         "id": 125,
@@ -4834,7 +4961,8 @@ export const initialRestaurants = [
         "location": {
             "lat": null,
             "lng": null
-        }
+        },
+        "halalStatus": "non_halal"
     },
     {
         "id": 126,
@@ -4870,7 +4998,8 @@ export const initialRestaurants = [
         "location": {
             "lat": null,
             "lng": null
-        }
+        },
+        "halalStatus": "non_halal"
     },
     {
         "id": 127,
@@ -4906,7 +5035,8 @@ export const initialRestaurants = [
         "location": {
             "lat": null,
             "lng": null
-        }
+        },
+        "halalStatus": "non_halal"
     },
     {
         "id": 128,
@@ -4945,7 +5075,8 @@ export const initialRestaurants = [
         "location": {
             "lat": null,
             "lng": null
-        }
+        },
+        "halalStatus": "non_halal"
     },
     {
         "id": 129,
@@ -4981,7 +5112,8 @@ export const initialRestaurants = [
         "location": {
             "lat": null,
             "lng": null
-        }
+        },
+        "halalStatus": "non_halal"
     },
     {
         "id": 130,
@@ -5019,7 +5151,8 @@ export const initialRestaurants = [
         "location": {
             "lat": null,
             "lng": null
-        }
+        },
+        "halalStatus": "non_halal"
     },
     {
         "id": 131,
@@ -5054,7 +5187,8 @@ export const initialRestaurants = [
         "location": {
             "lat": null,
             "lng": null
-        }
+        },
+        "halalStatus": "non_halal"
     },
     {
         "id": 132,
@@ -5092,7 +5226,8 @@ export const initialRestaurants = [
         "location": {
             "lat": null,
             "lng": null
-        }
+        },
+        "halalStatus": "non_halal"
     },
     {
         "id": 133,
@@ -5128,7 +5263,8 @@ export const initialRestaurants = [
         "location": {
             "lat": null,
             "lng": null
-        }
+        },
+        "halalStatus": "non_halal"
     },
     {
         "id": 134,
@@ -5164,7 +5300,8 @@ export const initialRestaurants = [
         "location": {
             "lat": null,
             "lng": null
-        }
+        },
+        "halalStatus": "non_halal"
     },
     {
         "id": 135,
@@ -5202,7 +5339,8 @@ export const initialRestaurants = [
         "location": {
             "lat": null,
             "lng": null
-        }
+        },
+        "halalStatus": "non_halal"
     },
     {
         "id": 136,
@@ -5211,7 +5349,7 @@ export const initialRestaurants = [
         "name_en": "Chai Ji Fish Soup",
         "address": "Pusat Komersial Indah, 250, Jalan Kiambang 10, Bandar Indahpura, 81000 Kulai, Johor Darul Ta'zim",
         "opening_hours": "Monday: 10am - 10pm\nTuesday: 10am - 10pm\nWednesday: 10am - 10pm\nThursday: 10am - 10pm\nFriday: 10am - 10pm\nSaturday: 10am - 10pm\nSunday: 10am - 10pm",
-        "intro_zh": "专卖鲜鱼汤面。汤头鲜甜自然，无添加味精。",
+        "intro_zh": "一家位于古来 Indahpura 的鱼汤餐厅，以 鲜鱼片汤为主打，汤底鲜甜自然、鱼肉新鲜嫩滑，搭配面/粉等组合，味道清爽不腥，价格亲民，是当地人喜欢的轻食选择。",
         "intro_en": "Specializes in fresh fish soup noodles. The soup is sweet and natural, with no added MSG.",
         "category": [
             "粉类"
@@ -5243,7 +5381,8 @@ export const initialRestaurants = [
         "location": {
             "lat": null,
             "lng": null
-        }
+        },
+        "halalStatus": "non_halal"
     },
     {
         "id": 137,
@@ -5252,7 +5391,7 @@ export const initialRestaurants = [
         "name_en": "",
         "address": "249， Pusat Komersial Indah, PTD 110674, Jalan Kiambang 10, Bandar Indahpura, 81000 Kulai, Johor Darul Ta'zim",
         "opening_hours": "Monday: 10am - 9:30pm\nTuesday: 10am - 9:30pm\nWednesday: 10am - 9:30pm\nThursday: 10am - 9:30pm\nFriday: 10am - 9:30pm\nSaturday: 10am - 9:30pm\nSunday: 10am - 9:30pm",
-        "intro_zh": "方便的食物外送服务，提供各类本地美食和便当。",
+        "intro_zh": "位于 古来 Indahpura 的本地餐厅，提供 丰富的本地美食、便当和饮料。这里既支持 堂食用餐，也提供 外送/外卖服务。菜单包括鸡肉饭、椰浆饭、炒饭、面类、小吃和多种饮品选择，环境休闲实惠，适合日常正餐和轻松吃饭。",
         "intro_en": "Convenient food delivery service offering a variety of local favorites and bento boxes.",
         "category": [
             "咖啡店"
@@ -5281,7 +5420,8 @@ export const initialRestaurants = [
         "location": {
             "lat": null,
             "lng": null
-        }
+        },
+        "halalStatus": "non_halal"
     },
     {
         "id": 138,
@@ -5317,7 +5457,8 @@ export const initialRestaurants = [
         "location": {
             "lat": null,
             "lng": null
-        }
+        },
+        "halalStatus": "non_halal"
     },
     {
         "id": 139,
@@ -5355,7 +5496,8 @@ export const initialRestaurants = [
         "location": {
             "lat": null,
             "lng": null
-        }
+        },
+        "halalStatus": "no_pork"
     },
     {
         "id": 140,
@@ -5395,7 +5537,8 @@ export const initialRestaurants = [
         "location": {
             "lat": null,
             "lng": null
-        }
+        },
+        "halalStatus": "non_halal"
     },
     {
         "id": 141,
@@ -5414,7 +5557,7 @@ export const initialRestaurants = [
             "煮炒海鲜楼"
         ],
         "rating": 0,
-        "image": "https://placehold.co/800x600/8e44ad/ffffff?text=Chao+Shan",
+        "image": "https://i.ibb.co/SXC7dRyw/image.jpg",
         "subStalls": [],
         "price_range": "RM 10-20",
         "menu_link": "",
@@ -5434,7 +5577,8 @@ export const initialRestaurants = [
         "location": {
             "lat": null,
             "lng": null
-        }
+        },
+        "halalStatus": "non_halal"
     },
     {
         "id": 142,
@@ -5472,7 +5616,8 @@ export const initialRestaurants = [
         "location": {
             "lat": null,
             "lng": null
-        }
+        },
+        "halalStatus": "non_halal"
     },
     {
         "id": 144,
@@ -5489,7 +5634,7 @@ export const initialRestaurants = [
             "马来餐"
         ],
         "rating": 0,
-        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTDI_300Z3ZfxIIi__sJVY2zlXsBqrvWvISaA&s",
+        "image": "https://i.ibb.co/yBqkbnGB/Roti-King-Saleng.jpg",
         "subStalls": [],
         "price_range": "RM 10-20",
         "menu_link": "",
@@ -5515,7 +5660,8 @@ export const initialRestaurants = [
         "location": {
             "lat": null,
             "lng": null
-        }
+        },
+        "halalStatus": "muslim_owned"
     },
     {
         "id": 145,
@@ -5551,7 +5697,8 @@ export const initialRestaurants = [
         "location": {
             "lat": null,
             "lng": null
-        }
+        },
+        "halalStatus": "non_halal"
     },
     {
         "id": 146,
@@ -5587,14 +5734,15 @@ export const initialRestaurants = [
         "location": {
             "lat": null,
             "lng": null
-        }
+        },
+        "halalStatus": "non_halal"
     },
     {
         "id": 147,
         "area": "Bandar Putra",
         "name": "Verbena Patisserie Shop • Bandar Putra",
         "name_en": "",
-        "intro_zh": "古来极具人气的欧式烘焙店。以精致的水果蛋糕、杏仁牛角包和地瓜面包闻名，周末常有排队人潮。",
+        "intro_zh": "一家 人气极高 的烘焙店（位于古来及新山多地）。以 欧式面包、精致蛋糕 和 水果塔 闻名。面包 种类繁多且口感松软（如招牌的 蒜香奶油面包、螃蟹面包等）。这里的蛋糕 造型精美、用料实在，是 面包和甜点爱好者 的天堂。",
         "intro_en": "Extremely popular European-style bakery in Kulai. Famous for exquisite fruit cakes, almond croissants, and sweet potato bread, often attracting queues on weekends.",
         "address": "2918, Jalan Merbau 3, Bandar Putra Kulai, 81000 Kulai, Johor Darul Ta'zim",
         "opening_hours": "Monday: 9am - 7pm\nTuesday: 9am - 7pm\nWednesday: 9am - 7pm\nThursday: 9am - 7pm\nFriday: 9am - 7pm\nSaturday: 9am - 7pm\nSunday: 9am - 7pm",
@@ -5623,13 +5771,14 @@ export const initialRestaurants = [
         "location": {
             "lat": null,
             "lng": null
-        }
+        },
+        "halalStatus": "non_halal"
     },
     {
         "id": 148,
         "name": "Nando's",
         "name_en": "",
-        "intro_zh": "源自南非的国际烤鸡连锁店，以其特制的Peri-Peri辣椒酱烤鸡闻名。提供多种辣度选择，搭配薯条或香料饭。",
+        "intro_zh": "源自 南非的国际烤鸡连锁店，以其特制的 PERi‑PERi 辣椒酱烤鸡 闻名，提供多种辣度选择，搭配薯条、香料饭等西式配餐。这里适合喜欢有辣味烤鸡和轻松用餐氛围的朋友。",
         "intro_en": "International Afro-Portuguese chain famous for its flame-grilled Peri-Peri chicken. Offers various spice levels, served with sides like chips or spicy rice.",
         "address": "G-25, IOI Mall Kulai",
         "opening_hours": "Monday: 10am - 10pm\nTuesday: 10am - 10pm\nWednesday: 10am - 10pm\nThursday: 10am - 10pm\nFriday: 10am - 10pm\nSaturday: 10am - 10pm\nSunday: 10am - 10pm",
@@ -5664,13 +5813,14 @@ export const initialRestaurants = [
         "location": {
             "lat": null,
             "lng": null
-        }
+        },
+        "halalStatus": "non_halal"
     },
     {
         "id": 149,
         "name": "Ichiban Ramen",
         "name_en": "",
-        "intro_zh": "提供融合本地口味的日式拉面连锁店。除了传统的味噌拉面，还提供泡菜拉面、东炎海鲜拉面等特色选择。",
+        "intro_zh": "一家 日式拉面连锁餐厅，提供多种 拉面（如经典 Ichiban Ramen、辣味拉面、海鲜拉面、豆腐拉面等） 以及其他日式料理、小食和便当选择。整体口味丰富、适合日常日式用餐。",
         "intro_en": "Japanese ramen chain offering localized flavors. Besides traditional Miso Ramen, also serves Kimchi Ramen, Tomyam Seafood Ramen, and more.",
         "address": "IOI MALL KULAI",
         "opening_hours": "Monday: 10am - 10pm\nTuesday: 10am - 10pm\nWednesday: 10am - 10pm\nThursday: 10am - 10pm\nFriday: 10am - 10pm\nSaturday: 10am - 10pm\nSunday: 10am - 10pm",
@@ -5700,13 +5850,14 @@ export const initialRestaurants = [
         "location": {
             "lat": null,
             "lng": null
-        }
+        },
+        "halalStatus": "non_halal"
     },
     {
         "id": 150,
         "name": "Rengit Coffee by Dagan",
         "name_en": "",
-        "intro_zh": "采用柔佛本土种植的利比里卡（Liberica）咖啡豆（俗称大象豆）。提供香浓的传统咖啡、烤面包和各式本地美食。",
+        "intro_zh": "主打 本地风味咖啡（如 Rengit Coffee） 和 传统早餐（烤面包、半生熟蛋） 的咖啡馆，也提供 Nasi Lemak、面食 等主食。环境复古舒适，适合休闲喝茶或享用简餐。",
         "intro_en": "Uses locally grown Liberica coffee beans (Elephant beans) from Johor. Serves aromatic traditional coffee, toast, and a variety of local delights.",
         "address": "G23A,Ground Floor,IOI Mall",
         "opening_hours": "Monday: 10am - 10pm\nTuesday: 10am - 10pm\nWednesday: 10am - 10pm\nThursday: 10am - 10pm\nFriday: 10am - 10pm\nSaturday: 10am - 10pm\nSunday: 10am - 10pm",
@@ -5740,7 +5891,8 @@ export const initialRestaurants = [
         "location": {
             "lat": null,
             "lng": null
-        }
+        },
+        "halalStatus": "non_halal"
     },
     {
         "id": 151,
@@ -5780,7 +5932,8 @@ export const initialRestaurants = [
         "location": {
             "lat": null,
             "lng": null
-        }
+        },
+        "halalStatus": "certified"
     },
     {
         "id": 152,
@@ -5820,7 +5973,8 @@ export const initialRestaurants = [
         "location": {
             "lat": null,
             "lng": null
-        }
+        },
+        "halalStatus": "non_halal"
     },
     {
         "id": 153,
@@ -5860,7 +6014,8 @@ export const initialRestaurants = [
         "location": {
             "lat": null,
             "lng": null
-        }
+        },
+        "halalStatus": "non_halal"
     },
     {
         "id": 154,
@@ -5899,7 +6054,8 @@ export const initialRestaurants = [
         "location": {
             "lat": null,
             "lng": null
-        }
+        },
+        "halalStatus": "non_halal"
     },
     {
         "id": 155,
@@ -5938,7 +6094,8 @@ export const initialRestaurants = [
         "location": {
             "lat": null,
             "lng": null
-        }
+        },
+        "halalStatus": "non_halal"
     },
     {
         "id": 156,
@@ -5974,7 +6131,8 @@ export const initialRestaurants = [
         "location": {
             "lat": null,
             "lng": null
-        }
+        },
+        "halalStatus": "non_halal"
     },
     {
         "id": 157,
@@ -6009,7 +6167,8 @@ export const initialRestaurants = [
         "location": {
             "lat": null,
             "lng": null
-        }
+        },
+        "halalStatus": "non_halal"
     },
     {
         "id": 158,
@@ -6048,7 +6207,8 @@ export const initialRestaurants = [
         "location": {
             "lat": null,
             "lng": null
-        }
+        },
+        "halalStatus": "non_halal"
     },
     {
         "id": 159,
@@ -6088,7 +6248,8 @@ export const initialRestaurants = [
         "location": {
             "lat": null,
             "lng": null
-        }
+        },
+        "halalStatus": "non_halal"
     },
     {
         "id": 160,
@@ -6128,7 +6289,8 @@ export const initialRestaurants = [
         "location": {
             "lat": null,
             "lng": null
-        }
+        },
+        "halalStatus": "non_halal"
     },
     {
         "id": 161,
@@ -6164,7 +6326,8 @@ export const initialRestaurants = [
         "location": {
             "lat": null,
             "lng": null
-        }
+        },
+        "halalStatus": "muslim_owned"
     },
     {
         "id": 162,
@@ -6203,7 +6366,8 @@ export const initialRestaurants = [
         "location": {
             "lat": null,
             "lng": null
-        }
+        },
+        "halalStatus": "non_halal"
     },
     {
         "id": 163,
@@ -6239,7 +6403,8 @@ export const initialRestaurants = [
         "location": {
             "lat": null,
             "lng": null
-        }
+        },
+        "halalStatus": "muslim_owned"
     },
     {
         "id": 164,
@@ -6276,7 +6441,8 @@ export const initialRestaurants = [
         "location": {
             "lat": null,
             "lng": null
-        }
+        },
+        "halalStatus": "non_halal"
     },
     {
         "id": 165,
@@ -6317,7 +6483,8 @@ export const initialRestaurants = [
         "location": {
             "lat": null,
             "lng": null
-        }
+        },
+        "halalStatus": "non_halal"
     },
     {
         "id": 166,
@@ -6356,7 +6523,8 @@ export const initialRestaurants = [
         "location": {
             "lat": null,
             "lng": null
-        }
+        },
+        "halalStatus": "non_halal"
     },
     {
         "id": 167,
@@ -6392,7 +6560,8 @@ export const initialRestaurants = [
         "location": {
             "lat": null,
             "lng": null
-        }
+        },
+        "halalStatus": "non_halal"
     },
     {
         "id": 168,
@@ -6428,7 +6597,8 @@ export const initialRestaurants = [
         "location": {
             "lat": null,
             "lng": null
-        }
+        },
+        "halalStatus": "non_halal"
     },
     {
         "id": 169,
@@ -6467,7 +6637,8 @@ export const initialRestaurants = [
         "location": {
             "lat": null,
             "lng": null
-        }
+        },
+        "halalStatus": "non_halal"
     },
     {
         "id": 170,
@@ -6505,7 +6676,8 @@ export const initialRestaurants = [
         "location": {
             "lat": null,
             "lng": null
-        }
+        },
+        "halalStatus": "non_halal"
     },
     {
         "id": 171,
@@ -6541,7 +6713,8 @@ export const initialRestaurants = [
         "location": {
             "lat": null,
             "lng": null
-        }
+        },
+        "halalStatus": "non_halal"
     },
     {
         "id": 172,
@@ -6580,7 +6753,8 @@ export const initialRestaurants = [
         "location": {
             "lat": null,
             "lng": null
-        }
+        },
+        "halalStatus": "non_halal"
     },
     {
         "id": 173,
@@ -6619,7 +6793,8 @@ export const initialRestaurants = [
         "location": {
             "lat": null,
             "lng": null
-        }
+        },
+        "halalStatus": "non_halal"
     },
     {
         "id": 174,
@@ -6637,7 +6812,7 @@ export const initialRestaurants = [
             "点心"
         ],
         "rating": 0,
-        "image": "https://i.ibb.co/qYssZcp0/image.jpg",
+        "image": "https://i.ibb.co/Rp3CfmTq/image.jpg",
         "subStalls": [],
         "price_range": "RM 10-20",
         "menu_link": "",
@@ -6659,7 +6834,8 @@ export const initialRestaurants = [
         "location": {
             "lat": null,
             "lng": null
-        }
+        },
+        "halalStatus": "non_halal"
     },
     {
         "id": 175,
@@ -6697,7 +6873,8 @@ export const initialRestaurants = [
         "location": {
             "lat": null,
             "lng": null
-        }
+        },
+        "halalStatus": "non_halal"
     },
     {
         "id": 176,
@@ -6732,7 +6909,8 @@ export const initialRestaurants = [
         "location": {
             "lat": null,
             "lng": null
-        }
+        },
+        "halalStatus": "non_halal"
     },
     {
         "id": 177,
@@ -6769,7 +6947,8 @@ export const initialRestaurants = [
         "location": {
             "lat": null,
             "lng": null
-        }
+        },
+        "halalStatus": "non_halal"
     },
     {
         "id": 178,
@@ -6807,13 +6986,14 @@ export const initialRestaurants = [
         "location": {
             "lat": null,
             "lng": null
-        }
+        },
+        "halalStatus": "non_halal"
     },
     {
         "id": 179,
         "name": "秀花菜粄",
         "name_en": "",
-        "intro_zh": "沙威必吃的客家菜板，皮薄馅多，有蒜味、沙葛等多种口味。每日新鲜制作，经常大排长龙。",
+        "intro_zh": "位于 沙威（Kelapa Sawit） 的老字号 菜板（客家传统糕点）专卖店。这里的菜板 皮薄馅多，口味包括 蒜味、沙葛、韭菜 等，口感软糯香咸。是沙威著名的特产，许多人专程前来打包或现场品尝。",
         "intro_en": "A must-try in Sawit for Hakka Choy Ban (vegetable dumplings). Thin skin with generous filling, available in various flavors like garlic and turnip. Freshly made daily and often has long queues.",
         "address": "343, Jalan Manis 15, Taman Manis, 81000 Kulai, Johor Darul Ta'zim",
         "opening_hours": "7 am–6:30 pm Mon & Tue Closed",
@@ -6842,7 +7022,8 @@ export const initialRestaurants = [
         "location": {
             "lat": null,
             "lng": null
-        }
+        },
+        "halalStatus": "non_halal"
     },
     {
         "id": 180,
@@ -6880,7 +7061,8 @@ export const initialRestaurants = [
         "location": {
             "lat": null,
             "lng": null
-        }
+        },
+        "halalStatus": "non_halal"
     },
     {
         "id": 181,
@@ -6921,7 +7103,8 @@ export const initialRestaurants = [
         "location": {
             "lat": null,
             "lng": null
-        }
+        },
+        "halalStatus": "non_halal"
     },
     {
         "id": 182,
@@ -6960,7 +7143,8 @@ export const initialRestaurants = [
         "location": {
             "lat": null,
             "lng": null
-        }
+        },
+        "halalStatus": "non_halal"
     },
     {
         "id": 183,
@@ -6995,7 +7179,8 @@ export const initialRestaurants = [
         "location": {
             "lat": null,
             "lng": null
-        }
+        },
+        "halalStatus": "non_halal"
     },
     {
         "id": 184,
@@ -7032,7 +7217,8 @@ export const initialRestaurants = [
         "location": {
             "lat": null,
             "lng": null
-        }
+        },
+        "halalStatus": "non_halal"
     },
     {
         "id": 185,
@@ -7070,7 +7256,8 @@ export const initialRestaurants = [
         "location": {
             "lat": null,
             "lng": null
-        }
+        },
+        "halalStatus": "non_halal"
     },
     {
         "id": 187,
@@ -7109,7 +7296,8 @@ export const initialRestaurants = [
         "location": {
             "lat": null,
             "lng": null
-        }
+        },
+        "halalStatus": "non_halal"
     },
     {
         "id": 188,
@@ -7149,7 +7337,8 @@ export const initialRestaurants = [
         "location": {
             "lat": null,
             "lng": null
-        }
+        },
+        "halalStatus": "non_halal"
     },
     {
         "id": 189,
@@ -7166,7 +7355,7 @@ export const initialRestaurants = [
             "饮品"
         ],
         "rating": 0,
-        "image": "https://placehold.co/800x600/1e3a8a/ffffff?text=ZUS+Coffee",
+        "image": "https://i.ibb.co/h1hKWSvx/ZUS-Coffee.webp",
         "subStalls": [],
         "price_range": "RM 10-20",
         "menu_link": "",
@@ -7177,12 +7366,28 @@ export const initialRestaurants = [
         "manualStatus": "auto",
         "branches": [
             {
-                "name": "ZUS Coffee Bandar Indahpura",
+                "name": "ZUS Coffee (Vervo City)",
                 "address": "No 221 (Ground Floor), Jalan Kiambang 14, Pusat Komersial Indah, Bandar Indahpura, 81000 Kulai, Johor"
+            },
+            {
+                "name": "ZUS Coffee Jalan Kenanga",
+                "address": "No 184(GF) Jalan Kenanga 29/4, Bandar Indahpura, 81000 Kulai, Johor"
+            },
+            {
+                "name": "ZUS Coffee Johor Premium Outlets",
+                "address": "No. 28, Johor Premium Outlet, Jalan Premium Outlets, Bandar Indahpura, 81000 Kulai, Johor"
             },
             {
                 "name": "ZUS Coffee Kelapa Sawit",
                 "address": "No 18(GF), Jalan Impiana 1, Taman Impiana, Kelapa Sawit, 81030 Kulai, Johor"
+            },
+            {
+                "name": "ZUS Coffee Senai International Airport",
+                "address": "Lot S5 (GF) Aeromall Johor Bahru Senai International Airport, 81250 Senai, Johor"
+            },
+            {
+                "name": "ZUS Coffee Taman Scientex Utama",
+                "address": "No 504(GF) Persiaran Scientex Utama 1, Taman Scientex Utama, 81400 Senai, Johor"
             }
         ],
         "area": "",
@@ -7197,7 +7402,8 @@ export const initialRestaurants = [
         "location": {
             "lat": null,
             "lng": null
-        }
+        },
+        "halalStatus": "certified"
     },
     {
         "id": 190,
@@ -7234,7 +7440,8 @@ export const initialRestaurants = [
         "location": {
             "lat": null,
             "lng": null
-        }
+        },
+        "halalStatus": "non_halal"
     },
     {
         "id": 191,
@@ -7272,6 +7479,10 @@ export const initialRestaurants = [
             {
                 "name": "Mixue Jalan Kiambang Kulai",
                 "address": "Jalan Kiambang, Bandar Indahpura, 81000 Kulai, Johor"
+            },
+            {
+                "name": "Mixue Senai Centre Point",
+                "address": "Senai Centre Point, 81400 Senai, Johor"
             }
         ],
         "area": "",
@@ -7283,7 +7494,8 @@ export const initialRestaurants = [
         "location": {
             "lat": null,
             "lng": null
-        }
+        },
+        "halalStatus": "certified"
     },
     {
         "id": 192,
@@ -7322,7 +7534,8 @@ export const initialRestaurants = [
         "location": {
             "lat": null,
             "lng": null
-        }
+        },
+        "halalStatus": "non_halal"
     },
     {
         "id": 193,
@@ -7361,7 +7574,8 @@ export const initialRestaurants = [
         "location": {
             "lat": null,
             "lng": null
-        }
+        },
+        "halalStatus": "non_halal"
     },
     {
         "id": 194,
@@ -7396,7 +7610,8 @@ export const initialRestaurants = [
         "location": {
             "lat": null,
             "lng": null
-        }
+        },
+        "halalStatus": "no_pork"
     },
     {
         "id": 195,
@@ -7433,7 +7648,8 @@ export const initialRestaurants = [
         "location": {
             "lat": null,
             "lng": null
-        }
+        },
+        "halalStatus": "non_halal"
     },
     {
         "id": 196,
@@ -7470,7 +7686,8 @@ export const initialRestaurants = [
         "location": {
             "lat": null,
             "lng": null
-        }
+        },
+        "halalStatus": "non_halal"
     },
     {
         "id": 197,
@@ -7508,7 +7725,8 @@ export const initialRestaurants = [
         "location": {
             "lat": null,
             "lng": null
-        }
+        },
+        "halalStatus": "non_halal"
     },
     {
         "id": 198,
@@ -7545,13 +7763,14 @@ export const initialRestaurants = [
         "location": {
             "lat": null,
             "lng": null
-        }
+        },
+        "halalStatus": "non_halal"
     },
     {
         "id": 199,
         "name": "阿華茶餐室",
         "name_en": "Ah Hua Coffee Shop",
-        "intro_zh": "沙威当地人常去的茶餐室，提供经济实惠的早餐和午餐。家常口味，充满人情味。",
+        "intro_zh": "位于 沙威（Kelapa Sawit） 的老字号 粿条汤。主打 清甜汤底 的粿条汤，配料通常包括 鱼丸、肉碎、猪肝 等，味道 鲜美清淡，保留了 传统的古早味。是当地村民喜爱的 早餐/午餐 暖胃美食。",
         "intro_en": "A coffee shop frequently visited by Sawit locals, offering affordable breakfast and lunch. Home-cooked flavors full of human touch.",
         "address": "S-34, Jalan Kelapa Sawit 2, Kampung Sri Paya, 81000 Kulai, Johor Darul Ta'zim",
         "opening_hours": "5:30 am–1:30 pm Tue Closed",
@@ -7584,7 +7803,8 @@ export const initialRestaurants = [
         "location": {
             "lat": null,
             "lng": null
-        }
+        },
+        "halalStatus": "non_halal"
     },
     {
         "id": 200,
@@ -7627,7 +7847,8 @@ export const initialRestaurants = [
         "location": {
             "lat": null,
             "lng": null
-        }
+        },
+        "halalStatus": "non_halal"
     },
     {
         "id": 201,
@@ -7664,7 +7885,8 @@ export const initialRestaurants = [
         "location": {
             "lat": null,
             "lng": null
-        }
+        },
+        "halalStatus": "non_halal"
     },
     {
         "id": 204,
@@ -7705,7 +7927,8 @@ export const initialRestaurants = [
         "location": {
             "lat": null,
             "lng": null
-        }
+        },
+        "halalStatus": "non_halal"
     },
     {
         "id": 205,
@@ -7742,7 +7965,8 @@ export const initialRestaurants = [
         "location": {
             "lat": null,
             "lng": null
-        }
+        },
+        "halalStatus": "non_halal"
     },
     {
         "id": 206,
@@ -7759,7 +7983,7 @@ export const initialRestaurants = [
             "Cafe"
         ],
         "rating": 0,
-        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT8DsvR-M4ncgeMo2xpRQLqnJ6M_wqllF8lpw&s",
+        "image": "https://i.ibb.co/zWDScfn2/3rd-Junction-Cafe.jpg",
         "subStalls": [],
         "price_range": "RM 10-20",
         "menu_link": "",
@@ -7780,7 +8004,8 @@ export const initialRestaurants = [
         "location": {
             "lat": null,
             "lng": null
-        }
+        },
+        "halalStatus": "non_halal"
     },
     {
         "id": 208,
@@ -7818,13 +8043,14 @@ export const initialRestaurants = [
         "location": {
             "lat": null,
             "lng": null
-        }
+        },
+        "halalStatus": "non_halal"
     },
     {
         "id": 211,
         "name": "欢乐园饮冰室",
         "name_en": "Happy Land Cafeteria",
-        "intro_zh": "古来传奇红豆冰店，营业超过20年。招牌红豆冰淋上浓郁的巧克力酱或草莓酱，搭配炸鸡排和Rojak，是古来人的集体回忆。",
+        "intro_zh": "古来 传奇级别的红豆冰（Ice Kacang） 专卖店，也以 炸鸡排 和 Nasi Lemak 闻名。这里的红豆冰 淋上浓郁的巧克力酱，味道独特。炸鸡排外酥里嫩，是许多古来人 必吃的下午茶或午餐 组合，承载了满满的 古来回忆。",
         "intro_en": "A legendary Ice Kacang shop in Kulai, operating for over 20 years. Signature Ice Kacang topped with rich chocolate or strawberry sauce, paired with fried chicken chop and Rojak. A collective memory for Kulai people.",
         "address": "16, Jalan Pinang, Taman Kota Kulai, 81000 Kulai, Johor Darul Ta'zim",
         "opening_hours": "11:30 am–6:30 pm Mon Closed",
@@ -7864,7 +8090,8 @@ export const initialRestaurants = [
         "location": {
             "lat": null,
             "lng": null
-        }
+        },
+        "halalStatus": "non_halal"
     },
     {
         "id": 212,
@@ -7881,7 +8108,7 @@ export const initialRestaurants = [
             "素食"
         ],
         "rating": 0,
-        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSo4uNiTuS-bNKkkB__mm6jMx3LWtVzYqnKew&s",
+        "image": "https://i.ibb.co/8nDJSx6K/image.jpg",
         "subStalls": [],
         "price_range": "RM 10-20",
         "menu_link": "",
@@ -7899,7 +8126,8 @@ export const initialRestaurants = [
         "location": {
             "lat": null,
             "lng": null
-        }
+        },
+        "halalStatus": "non_halal"
     },
     {
         "id": 216,
@@ -7936,7 +8164,8 @@ export const initialRestaurants = [
         "location": {
             "lat": null,
             "lng": null
-        }
+        },
+        "halalStatus": "non_halal"
     },
     {
         "id": 217,
@@ -7953,7 +8182,7 @@ export const initialRestaurants = [
             "素食"
         ],
         "rating": 0,
-        "image": "https://i.ibb.co/1Yf3wX8v/image.jpg",
+        "image": "https://i.ibb.co/23jdWnGJ/image.jpg",
         "subStalls": [],
         "price_range": "RM 10-20",
         "menu_link": "",
@@ -7971,7 +8200,8 @@ export const initialRestaurants = [
         "location": {
             "lat": null,
             "lng": null
-        }
+        },
+        "halalStatus": "non_halal"
     },
     {
         "id": 218,
@@ -8008,7 +8238,8 @@ export const initialRestaurants = [
         "location": {
             "lat": null,
             "lng": null
-        }
+        },
+        "halalStatus": "non_halal"
     },
     {
         "id": 219,
@@ -8043,7 +8274,8 @@ export const initialRestaurants = [
         "location": {
             "lat": null,
             "lng": null
-        }
+        },
+        "halalStatus": "non_halal"
     },
     {
         "id": 220,
@@ -8084,7 +8316,8 @@ export const initialRestaurants = [
         "location": {
             "lat": null,
             "lng": null
-        }
+        },
+        "halalStatus": "non_halal"
     },
     {
         "id": 222,
@@ -8121,7 +8354,8 @@ export const initialRestaurants = [
         "location": {
             "lat": null,
             "lng": null
-        }
+        },
+        "halalStatus": "muslim_owned"
     },
     {
         "id": 223,
@@ -8159,7 +8393,8 @@ export const initialRestaurants = [
         "location": {
             "lat": null,
             "lng": null
-        }
+        },
+        "halalStatus": "non_halal"
     },
     {
         "id": 224,
@@ -8200,7 +8435,8 @@ export const initialRestaurants = [
         "location": {
             "lat": null,
             "lng": null
-        }
+        },
+        "halalStatus": "non_halal"
     },
     {
         "id": 225,
@@ -8239,7 +8475,8 @@ export const initialRestaurants = [
         "location": {
             "lat": null,
             "lng": null
-        }
+        },
+        "halalStatus": "non_halal"
     },
     {
         "id": 226,
@@ -8280,7 +8517,8 @@ export const initialRestaurants = [
         "location": {
             "lat": null,
             "lng": null
-        }
+        },
+        "halalStatus": "no_pork"
     },
     {
         "id": 227,
@@ -8321,7 +8559,8 @@ export const initialRestaurants = [
         "location": {
             "lat": null,
             "lng": null
-        }
+        },
+        "halalStatus": "non_halal"
     },
     {
         "id": 228,
@@ -8359,7 +8598,8 @@ export const initialRestaurants = [
         "location": {
             "lat": null,
             "lng": null
-        }
+        },
+        "halalStatus": "non_halal"
     },
     {
         "id": 229,
@@ -8399,7 +8639,8 @@ export const initialRestaurants = [
         "location": {
             "lat": null,
             "lng": null
-        }
+        },
+        "halalStatus": "non_halal"
     },
     {
         "id": 230,
@@ -8434,7 +8675,8 @@ export const initialRestaurants = [
         "location": {
             "lat": null,
             "lng": null
-        }
+        },
+        "halalStatus": "no_pork"
     },
     {
         "id": 231,
@@ -8471,7 +8713,8 @@ export const initialRestaurants = [
         "location": {
             "lat": null,
             "lng": null
-        }
+        },
+        "halalStatus": "non_halal"
     },
     {
         "id": 232,
@@ -8510,7 +8753,8 @@ export const initialRestaurants = [
         "location": {
             "lat": null,
             "lng": null
-        }
+        },
+        "halalStatus": "non_halal"
     },
     {
         "id": 233,
@@ -8545,7 +8789,8 @@ export const initialRestaurants = [
         "location": {
             "lat": null,
             "lng": null
-        }
+        },
+        "halalStatus": "non_halal"
     },
     {
         "id": 234,
@@ -8562,7 +8807,7 @@ export const initialRestaurants = [
             "咖啡店"
         ],
         "rating": 0,
-        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR7FYSmWX6myAh90aA9N4YsP4h_L_N9TRRJeg&s",
+        "image": "https://i.ibb.co/RGksz1k3/image.webp",
         "subStalls": [],
         "price_range": "RM 10-20",
         "menu_link": "",
@@ -8582,7 +8827,8 @@ export const initialRestaurants = [
         "location": {
             "lat": null,
             "lng": null
-        }
+        },
+        "halalStatus": "non_halal"
     },
     {
         "id": 235,
@@ -8618,7 +8864,8 @@ export const initialRestaurants = [
         "location": {
             "lat": null,
             "lng": null
-        }
+        },
+        "halalStatus": "non_halal"
     },
     {
         "id": 236,
@@ -8657,7 +8904,8 @@ export const initialRestaurants = [
         "location": {
             "lat": null,
             "lng": null
-        }
+        },
+        "halalStatus": "non_halal"
     },
     {
         "id": 237,
@@ -8689,7 +8937,8 @@ export const initialRestaurants = [
         "location": {
             "lat": null,
             "lng": null
-        }
+        },
+        "halalStatus": "non_halal"
     },
     {
         "id": 239,
@@ -8729,7 +8978,8 @@ export const initialRestaurants = [
         "location": {
             "lat": null,
             "lng": null
-        }
+        },
+        "halalStatus": "non_halal"
     },
     {
         "id": 240,
@@ -8765,7 +9015,8 @@ export const initialRestaurants = [
         "location": {
             "lat": null,
             "lng": null
-        }
+        },
+        "halalStatus": "muslim_owned"
     },
     {
         "id": 241,
@@ -8801,7 +9052,8 @@ export const initialRestaurants = [
         "location": {
             "lat": null,
             "lng": null
-        }
+        },
+        "halalStatus": "non_halal"
     },
     {
         "id": 242,
@@ -8838,7 +9090,8 @@ export const initialRestaurants = [
         "location": {
             "lat": null,
             "lng": null
-        }
+        },
+        "halalStatus": "non_halal"
     },
     {
         "id": 243,
@@ -8868,7 +9121,8 @@ export const initialRestaurants = [
         "location": {
             "lat": null,
             "lng": null
-        }
+        },
+        "halalStatus": "non_halal"
     },
     {
         "id": 244,
@@ -8905,7 +9159,8 @@ export const initialRestaurants = [
         "location": {
             "lat": null,
             "lng": null
-        }
+        },
+        "halalStatus": "non_halal"
     },
     {
         "id": 245,
@@ -8941,7 +9196,8 @@ export const initialRestaurants = [
         "location": {
             "lat": null,
             "lng": null
-        }
+        },
+        "halalStatus": "non_halal"
     },
     {
         "id": 246,
@@ -8976,7 +9232,8 @@ export const initialRestaurants = [
         "location": {
             "lat": null,
             "lng": null
-        }
+        },
+        "halalStatus": "non_halal"
     },
     {
         "id": 247,
@@ -9016,7 +9273,8 @@ export const initialRestaurants = [
         "location": {
             "lat": null,
             "lng": null
-        }
+        },
+        "halalStatus": "non_halal"
     },
     {
         "id": 248,
@@ -9054,7 +9312,8 @@ export const initialRestaurants = [
         "location": {
             "lat": null,
             "lng": null
-        }
+        },
+        "halalStatus": "non_halal"
     },
     {
         "id": 249,
@@ -9090,7 +9349,8 @@ export const initialRestaurants = [
         "location": {
             "lat": null,
             "lng": null
-        }
+        },
+        "halalStatus": "non_halal"
     },
     {
         "id": 250,
@@ -9124,7 +9384,8 @@ export const initialRestaurants = [
         "location": {
             "lat": null,
             "lng": null
-        }
+        },
+        "halalStatus": "non_halal"
     },
     {
         "id": 251,
@@ -9160,7 +9421,8 @@ export const initialRestaurants = [
         "location": {
             "lat": null,
             "lng": null
-        }
+        },
+        "halalStatus": "non_halal"
     },
     {
         "id": 252,
@@ -9198,7 +9460,8 @@ export const initialRestaurants = [
         "location": {
             "lat": null,
             "lng": null
-        }
+        },
+        "halalStatus": "non_halal"
     },
     {
         "id": 253,
@@ -9236,7 +9499,8 @@ export const initialRestaurants = [
         "location": {
             "lat": null,
             "lng": null
-        }
+        },
+        "halalStatus": "non_halal"
     },
     {
         "id": 254,
@@ -9274,7 +9538,8 @@ export const initialRestaurants = [
         "location": {
             "lat": null,
             "lng": null
-        }
+        },
+        "halalStatus": "non_halal"
     },
     {
         "id": 255,
@@ -9313,7 +9578,8 @@ export const initialRestaurants = [
         "location": {
             "lat": null,
             "lng": null
-        }
+        },
+        "halalStatus": "non_halal"
     },
     {
         "id": 256,
@@ -9351,7 +9617,8 @@ export const initialRestaurants = [
         "location": {
             "lat": null,
             "lng": null
-        }
+        },
+        "halalStatus": "non_halal"
     },
     {
         "id": 257,
@@ -9390,7 +9657,8 @@ export const initialRestaurants = [
         "location": {
             "lat": null,
             "lng": null
-        }
+        },
+        "halalStatus": "non_halal"
     },
     {
         "id": 258,
@@ -9424,7 +9692,8 @@ export const initialRestaurants = [
         "location": {
             "lat": null,
             "lng": null
-        }
+        },
+        "halalStatus": "non_halal"
     },
     {
         "id": 259,
@@ -9463,37 +9732,67 @@ export const initialRestaurants = [
         "location": {
             "lat": null,
             "lng": null
-        }
+        },
+        "halalStatus": "non_halal"
     },
     {
         "id": 261,
         "area": "Indahpura",
         "name": "古文茶",
-        "name_en": "Tea Garden Bandar Indahpura",
-        "intro_zh": "著名的南洋风味餐厅，提供传统咖啡、烤面包、点心以及各式各样的本地美食，环境怀旧舒适。",
+        "name_en": "Tea Garden",
+        "intro_zh": "一家以 南洋风味 为主的连锁餐厅，环境怀旧舒适（冷气），菜单选择非常丰富，涵盖 传统烤面包/咖啡、点心、各类面食、饭类（如椰浆饭、炒饭）、西餐 以及 甜品。适合家庭聚餐或朋友喝茶，是一个“一站式”解决早午晚餐的好地方。",
         "intro_en": "A famous Nanyang-style restaurant offering traditional coffee, toast, dim sum, and a variety of local delicacies in a nostalgic and comfortable setting.",
-        "address": "No 52, Jalan Kenanga 29/3, Bandar Indahpura, 81000 Kulai, Johor Darul Ta'zim",
-        "opening_hours": "Monday: 8 am–10:30 pm\nTuesday: 8 am–10:30 pm\nWednesday: 8 am–10:30 pm\nThursday: 8 am–10:30 pm\nFriday: 8 am–10:30 pm\nSaturday: 8 am–10:30 pm\nSunday: 8 am–10:30 pm",
+        "address": "Multiple Locations in Kulai & Senai",
+        "opening_hours": "Daily: 8am - 10:30pm",
         "category": [
-            "Cafe"
+            "Cafe",
+            "饮品"
         ],
         "categories": [
-            "Cafe"
+            "Cafe",
+            "饮品"
         ],
         "rating": 0,
         "image": "https://lirp.cdn-website.com/17f4972a/dms3rep/multi/opt/Tiktok+TG+Logo-1920w.png",
         "subStalls": [],
         "price_range": "RM 10-20",
-        "menu_link": "",
-        "website_link": "",
+        "menu_link": "https://www.teagarden.com.my/menu",
+        "website_link": "https://www.teagarden.com.my",
         "delivery_link": "",
         "isVegetarian": false,
         "isNoBeef": false,
         "manualStatus": "auto",
-        "branches": [],
+        "branches": [
+            {
+                "name": "Tea Garden Kulai (Indahpura - Jalan Sutera)",
+                "address": "175 & 176, Jalan Sutera, Bandar Indahpura, 81000 Kulai, Johor"
+            },
+            {
+                "name": "Tea Garden Bandar Indahpura (Jalan Kenanga)",
+                "address": "No 52, Jalan Kenanga 29/3, Bandar Indahpura, 81000 Kulai, Johor Darul Ta'zim"
+            },
+            {
+                "name": "Tea Garden AEON Mall Kulaijaya",
+                "address": "LG-25, Lower Ground Floor, AEON Mall Kulaijaya, Persiaran Indahpura Utama, 81000 Kulai, Johor"
+            },
+            {
+                "name": "Tea Garden Taman Tropika",
+                "address": "17, Jalan Tropika 1, Taman Tropika, 81000 Kulai, Johor"
+            },
+            {
+                "name": "KUU Kopitiam Senai International Airport",
+                "address": "Lots N6, N7, N8 Aeromall Senai International Airport, 81250 Johor"
+            },
+            {
+                "name": "Tea Garden Senai",
+                "address": "No. 1 & 2, Jalan Terminal 2, 81400 Senai, Johor"
+            }
+        ],
         "tags": [
             "有冷气",
-            "适合聚餐"
+            "适合聚餐",
+            "南洋风味",
+            "Halal"
         ],
         "subscriptionLevel": 0,
         "isVIP": false,
@@ -9502,7 +9801,8 @@ export const initialRestaurants = [
         "location": {
             "lat": null,
             "lng": null
-        }
+        },
+        "halalStatus": "certified"
     },
     {
         "id": 262,
@@ -9538,7 +9838,8 @@ export const initialRestaurants = [
         "location": {
             "lat": null,
             "lng": null
-        }
+        },
+        "halalStatus": "non_halal"
     },
     {
         "id": 263,
@@ -9576,7 +9877,8 @@ export const initialRestaurants = [
         "location": {
             "lat": null,
             "lng": null
-        }
+        },
+        "halalStatus": "non_halal"
     },
     {
         "id": 264,
@@ -9612,7 +9914,8 @@ export const initialRestaurants = [
         "location": {
             "lat": null,
             "lng": null
-        }
+        },
+        "halalStatus": "non_halal"
     },
     {
         "id": 265,
@@ -9650,7 +9953,8 @@ export const initialRestaurants = [
         "location": {
             "lat": null,
             "lng": null
-        }
+        },
+        "halalStatus": "non_halal"
     },
     {
         "id": 266,
@@ -9691,7 +9995,8 @@ export const initialRestaurants = [
         "location": {
             "lat": null,
             "lng": null
-        }
+        },
+        "halalStatus": "non_halal"
     },
     {
         "id": 267,
@@ -9727,7 +10032,8 @@ export const initialRestaurants = [
         "location": {
             "lat": null,
             "lng": null
-        }
+        },
+        "halalStatus": "non_halal"
     },
     {
         "id": 268,
@@ -9766,7 +10072,8 @@ export const initialRestaurants = [
         "location": {
             "lat": null,
             "lng": null
-        }
+        },
+        "halalStatus": "non_halal"
     },
     {
         "id": 269,
@@ -9805,7 +10112,8 @@ export const initialRestaurants = [
         "location": {
             "lat": null,
             "lng": null
-        }
+        },
+        "halalStatus": "non_halal"
     },
     {
         "id": 270,
@@ -9841,7 +10149,8 @@ export const initialRestaurants = [
         "location": {
             "lat": null,
             "lng": null
-        }
+        },
+        "halalStatus": "non_halal"
     },
     {
         "id": 271,
@@ -9882,14 +10191,15 @@ export const initialRestaurants = [
         "location": {
             "lat": null,
             "lng": null
-        }
+        },
+        "halalStatus": "certified"
     },
     {
         "id": 272,
         "area": "Indahpura",
         "name": "SDS Bakery & Cafe",
         "name_en": "",
-        "intro_zh": "柔佛本土著名的烘焙与餐饮品牌，提供新鲜面包、蛋糕以及舒适的堂食环境，主打西餐和本地美食。",
+        "intro_zh": "柔佛本土著名的 烘焙与餐饮品牌。这里不仅有各式 新鲜面包、蛋糕，还附设餐厅提供 西餐（鸡扒、意面）、本地餐（炒饭、椰浆饭） 以及 咖啡饮品。环境舒适，适合 家庭用餐、庆祝生日 或 朋友喝茶聚会。",
         "intro_en": "A famous Johor-based bakery and dining brand offering fresh bread, cakes, and a comfortable dining environment, specializing in Western and local cuisine.",
         "address": "Lot G57, Groun Floor, AEON Mall Kulai Jaya, Persiaran Indahpura Utama, Bandar Indahpura, 81000 Kulai, Johor Darul Ta'zim",
         "opening_hours": "Monday: 10am - 10pm\nTuesday: 10am - 10pm\nWednesday: 10am - 10pm\nThursday: 10am - 10pm\nFriday: 10am - 10pm\nSaturday: 10am - 10pm\nSunday: 10am - 10pm",
@@ -9923,7 +10233,8 @@ export const initialRestaurants = [
         "location": {
             "lat": null,
             "lng": null
-        }
+        },
+        "halalStatus": "certified"
     },
     {
         "id": 274,
@@ -9962,7 +10273,8 @@ export const initialRestaurants = [
         "location": {
             "lat": null,
             "lng": null
-        }
+        },
+        "halalStatus": "non_halal"
     },
     {
         "id": 275,
@@ -10001,7 +10313,8 @@ export const initialRestaurants = [
         "location": {
             "lat": null,
             "lng": null
-        }
+        },
+        "halalStatus": "certified"
     },
     {
         "id": 276,
@@ -10040,7 +10353,8 @@ export const initialRestaurants = [
         "location": {
             "lat": null,
             "lng": null
-        }
+        },
+        "halalStatus": "non_halal"
     },
     {
         "id": 277,
@@ -10076,7 +10390,8 @@ export const initialRestaurants = [
         "location": {
             "lat": null,
             "lng": null
-        }
+        },
+        "halalStatus": "non_halal"
     },
     {
         "id": 278,
@@ -10116,7 +10431,8 @@ export const initialRestaurants = [
         "location": {
             "lat": null,
             "lng": null
-        }
+        },
+        "halalStatus": "non_halal"
     },
     {
         "id": 279,
@@ -10155,7 +10471,8 @@ export const initialRestaurants = [
         "location": {
             "lat": null,
             "lng": null
-        }
+        },
+        "halalStatus": "non_halal"
     },
     {
         "id": 280,
@@ -10194,7 +10511,8 @@ export const initialRestaurants = [
         "location": {
             "lat": null,
             "lng": null
-        }
+        },
+        "halalStatus": "non_halal"
     },
     {
         "id": 281,
@@ -10230,7 +10548,8 @@ export const initialRestaurants = [
         "location": {
             "lat": null,
             "lng": null
-        }
+        },
+        "halalStatus": "muslim_owned"
     },
     {
         "id": 282,
@@ -10268,7 +10587,8 @@ export const initialRestaurants = [
         "location": {
             "lat": null,
             "lng": null
-        }
+        },
+        "halalStatus": "non_halal"
     },
     {
         "id": 284,
@@ -10304,7 +10624,8 @@ export const initialRestaurants = [
         "location": {
             "lat": null,
             "lng": null
-        }
+        },
+        "halalStatus": "non_halal"
     },
     {
         "id": 285,
@@ -10342,7 +10663,8 @@ export const initialRestaurants = [
         "location": {
             "lat": null,
             "lng": null
-        }
+        },
+        "halalStatus": "non_halal"
     },
     {
         "id": 287,
@@ -10380,7 +10702,8 @@ export const initialRestaurants = [
         "location": {
             "lat": null,
             "lng": null
-        }
+        },
+        "halalStatus": "non_halal"
     },
     {
         "id": 288,
@@ -10420,7 +10743,8 @@ export const initialRestaurants = [
         "location": {
             "lat": null,
             "lng": null
-        }
+        },
+        "halalStatus": "non_halal"
     },
     {
         "id": 289,
@@ -10458,7 +10782,8 @@ export const initialRestaurants = [
         "location": {
             "lat": null,
             "lng": null
-        }
+        },
+        "halalStatus": "non_halal"
     },
     {
         "id": 290,
@@ -10494,7 +10819,8 @@ export const initialRestaurants = [
         "location": {
             "lat": null,
             "lng": null
-        }
+        },
+        "halalStatus": "non_halal"
     },
     {
         "id": 291,
@@ -10535,7 +10861,8 @@ export const initialRestaurants = [
         "location": {
             "lat": null,
             "lng": null
-        }
+        },
+        "halalStatus": "non_halal"
     },
     {
         "id": 292,
@@ -10571,7 +10898,8 @@ export const initialRestaurants = [
         "location": {
             "lat": null,
             "lng": null
-        }
+        },
+        "halalStatus": "non_halal"
     },
     {
         "id": 293,
@@ -10610,7 +10938,8 @@ export const initialRestaurants = [
         "location": {
             "lat": null,
             "lng": null
-        }
+        },
+        "halalStatus": "non_halal"
     },
     {
         "id": 294,
@@ -10650,13 +10979,14 @@ export const initialRestaurants = [
         "location": {
             "lat": null,
             "lng": null
-        }
+        },
+        "halalStatus": "non_halal"
     },
     {
         "id": 295,
         "name": "Oldtown White Coffee • JPO",
         "name_en": "",
-        "intro_zh": "马来西亚著名的白咖啡连锁店，以其浓郁香滑的怡保白咖啡和经典的烤面包、半生熟蛋及面食系列著称，充满南洋传统咖啡店风情。",
+        "intro_zh": "著名的 马来西亚白咖啡连锁店，以 正宗怡保白咖啡 著称，搭配 经典的加央牛油烤面包（Kaya Butter Toast） 和 半生熟蛋。菜单也包括 椰浆饭（Nasi Lemak）、怡保河粉、咖喱面 等本地主食，是享受南洋传统咖啡店风味（环境舒适冷气）的经典选择。",
         "intro_en": "Malaysia's famous white coffee chain, known for its rich and smooth Ipoh white coffee and classic toast, soft-boiled eggs, and noodle series, full of Nanyang traditional coffee shop vibes.",
         "address": "Johor Premium Outlets, 81400 Senai, Johor",
         "opening_hours": "Monday: 10am - 10pm\nTuesday: 10am - 10pm\nWednesday: 10am - 10pm\nThursday: 10am - 10pm\nFriday: 10am - 10pm\nSaturday: 10am - 10pm\nSunday: 10am - 10pm",
@@ -10690,7 +11020,8 @@ export const initialRestaurants = [
         "location": {
             "lat": null,
             "lng": null
-        }
+        },
+        "halalStatus": "certified"
     },
     {
         "id": 296,
@@ -10731,7 +11062,8 @@ export const initialRestaurants = [
         "location": {
             "lat": null,
             "lng": null
-        }
+        },
+        "halalStatus": "non_halal"
     },
     {
         "id": 297,
@@ -10770,7 +11102,8 @@ export const initialRestaurants = [
         "location": {
             "lat": null,
             "lng": null
-        }
+        },
+        "halalStatus": "non_halal"
     },
     {
         "id": 298,
@@ -10809,7 +11142,8 @@ export const initialRestaurants = [
         "location": {
             "lat": null,
             "lng": null
-        }
+        },
+        "halalStatus": "certified"
     },
     {
         "id": 299,
@@ -10848,11 +11182,12 @@ export const initialRestaurants = [
         "location": {
             "lat": null,
             "lng": null
-        }
+        },
+        "halalStatus": "muslim_owned"
     },
     {
         "id": 300,
-        "area": "Indahpura",
+        "area": "",
         "name": "D Laksa • JPO",
         "name_en": "",
         "intro_zh": "专注于提供正宗槟城亚参叻沙（Asam Laksa）的连锁品牌。酸辣浓郁的鱼汤底搭配Q弹的赖粉，味道地道，方便快捷。",
@@ -10887,7 +11222,8 @@ export const initialRestaurants = [
         "location": {
             "lat": null,
             "lng": null
-        }
+        },
+        "halalStatus": "non_halal"
     },
     {
         "id": 301,
@@ -10896,7 +11232,7 @@ export const initialRestaurants = [
         "name_en": "Ming Fang Kway Teow Kia",
         "address": "Kulai, Johor",
         "opening_hours": "Monday: 7am - 3pm\nTuesday: 7am - 3pm\nWednesday: 7am - 3pm\nThursday: 7am - 3pm\nFriday: 7am - 3pm\nSaturday: 7am - 3pm\nSunday: 7am - 3pm",
-        "intro_zh": "古来著名的粿条仔，以药材汤底和新鲜卤味闻名。卤肉、粉肠、卤蛋等入味十足，是当地人的早餐首选。",
+        "intro_zh": "位于 古来大街（或相关分行） 的老字号 粿条仔。汤底带有药材清香，配料选择丰富（如卤猪肠、卤肉、卤蛋、豆腐、猪皮等），卤得非常入味。搭配顺滑的粿条，是古来人 经典的早餐或午餐 选择。",
         "intro_en": "Famous Kway Teow Kia in Kulai, known for its herbal soup and fresh braised dishes. The braised meat, intestines, and eggs are flavorful, making it a top breakfast choice for locals.",
         "category": [
             "粉类"
@@ -10923,7 +11259,8 @@ export const initialRestaurants = [
         "location": {
             "lat": null,
             "lng": null
-        }
+        },
+        "halalStatus": "non_halal"
     },
     {
         "id": 304,
@@ -10961,7 +11298,8 @@ export const initialRestaurants = [
         "location": {
             "lat": null,
             "lng": null
-        }
+        },
+        "halalStatus": "non_halal"
     },
     {
         "id": 307,
@@ -10970,7 +11308,7 @@ export const initialRestaurants = [
         "name_en": "Swee Kee Hainanese Chicken Rice",
         "address": "98, Jalan Bintang, Taman Bintang, 81400 Senai, Johor",
         "opening_hours": "Monday: 8am - 5pm\nTuesday: 8am - 5pm\nWednesday: 8am - 5pm\nThursday: 8am - 5pm\nFriday: 8am - 5pm\nSaturday: 8am - 5pm\nSunday: 8am - 5pm",
-        "intro_zh": "正宗海南鸡饭，源自新加坡瑞记传统。白斩鸡皮滑肉嫩，烧鸡香气四溢。饭粒粒分明，充满鸡油香。配上特制辣椒酱和姜蓉，味道一流。",
+        "intro_zh": "古来著名的 海南鸡饭 老字号。主打 白斩鸡 和 烧鸡，鸡肉滑嫩多汁，油饭香气扑鼻。搭配特制的 辣椒酱 和 姜蓉，味道正宗。这里也提供 卤肉、卤蛋 等配菜，是体验 传统海南鸡饭 的好地方。",
         "intro_en": "Authentic Hainanese Chicken Rice, originating from the traditional Swee Kee in Singapore. Poached chicken is smooth and tender, while roasted chicken is aromatic. Rice is fragrant with chicken oil. Served with special chili sauce and ginger paste, the taste is first-class.",
         "category": [],
         "categories": [
@@ -10998,7 +11336,8 @@ export const initialRestaurants = [
         "location": {
             "lat": null,
             "lng": null
-        }
+        },
+        "halalStatus": "non_halal"
     },
     {
         "id": 308,
@@ -11057,7 +11396,8 @@ export const initialRestaurants = [
         "location": {
             "lat": null,
             "lng": null
-        }
+        },
+        "halalStatus": "certified"
     },
     {
         "id": 309,
@@ -11116,7 +11456,8 @@ export const initialRestaurants = [
         "location": {
             "lat": null,
             "lng": null
-        }
+        },
+        "halalStatus": "certified"
     },
     {
         "id": 310,
@@ -11166,7 +11507,8 @@ export const initialRestaurants = [
         "location": {
             "lat": null,
             "lng": null
-        }
+        },
+        "halalStatus": "certified"
     },
     {
         "id": 311,
@@ -11188,10 +11530,10 @@ export const initialRestaurants = [
             "宵夜"
         ],
         "category": [
-            "无招牌/路边摊"
+            "路边摊/餐车"
         ],
         "categories": [
-            "无招牌/路边摊"
+            "路边摊/餐车"
         ],
         "rating": 0,
         "image": "https://i.ibb.co/KxW3LMnj/image.jpg",
@@ -11211,7 +11553,8 @@ export const initialRestaurants = [
         "location": {
             "lat": null,
             "lng": null
-        }
+        },
+        "halalStatus": "non_halal"
     },
     {
         "id": 312,
@@ -11232,11 +11575,11 @@ export const initialRestaurants = [
             "下午茶"
         ],
         "category": [
-            "无招牌/路边摊",
+            "路边摊/餐车",
             "蛋糕甜点"
         ],
         "categories": [
-            "无招牌/路边摊",
+            "路边摊/餐车",
             "蛋糕甜点"
         ],
         "rating": 0,
@@ -11257,7 +11600,8 @@ export const initialRestaurants = [
         "location": {
             "lat": null,
             "lng": null
-        }
+        },
+        "halalStatus": "non_halal"
     },
     {
         "id": 313,
@@ -11299,7 +11643,8 @@ export const initialRestaurants = [
         "location": {
             "lat": null,
             "lng": null
-        }
+        },
+        "halalStatus": "non_halal"
     },
     {
         "id": 314,
@@ -11325,7 +11670,7 @@ export const initialRestaurants = [
             "亚逸文满"
         ],
         "rating": 0,
-        "image": "https://travelholic.my/wp-content/uploads/2025/09/WengYaoJi.webp",
+        "image": "https://i.ibb.co/1fm9Yf7V/image.jpg",
         "subStalls": [],
         "price_range": "RM 20-40",
         "menu_link": "",
@@ -11342,7 +11687,8 @@ export const initialRestaurants = [
         "location": {
             "lat": null,
             "lng": null
-        }
+        },
+        "halalStatus": "non_halal"
     },
     {
         "id": 315,
@@ -11359,7 +11705,7 @@ export const initialRestaurants = [
             "咖啡店"
         ],
         "rating": 0,
-        "image": "https://placehold.co/600x400/2a2a2a/ffffff?text=越来越香茶餐室",
+        "image": "https://i.ibb.co/p6BjvsQJ/image.jpg",
         "subStalls": [],
         "price_range": "RM 10-20",
         "menu_link": "",
@@ -11377,11 +11723,12 @@ export const initialRestaurants = [
         "location": {
             "lat": null,
             "lng": null
-        }
+        },
+        "halalStatus": "non_halal"
     },
     {
         "id": 316,
-        "name": "雲来(Desa Baiduri)",
+        "name": "云来 • Desa Baiduri",
         "name_en": "Yun Lai (Desa Baiduri)",
         "intro_zh": "位于 Desa Baiduri 的咖啡店。",
         "intro_en": "A coffee shop located in Desa Baiduri.",
@@ -11394,7 +11741,7 @@ export const initialRestaurants = [
             "咖啡店"
         ],
         "rating": 0,
-        "image": "https://placehold.co/600x400/2a2a2a/ffffff?text=雲来(Desa+Baiduri)",
+        "image": "https://i.ibb.co/N2xkJPRY/Desa-Baiduri.jpg",
         "subStalls": [],
         "price_range": "RM 10-20",
         "menu_link": "",
@@ -11412,7 +11759,8 @@ export const initialRestaurants = [
         "location": {
             "lat": null,
             "lng": null
-        }
+        },
+        "halalStatus": "non_halal"
     },
     {
         "id": 317,
@@ -11429,7 +11777,7 @@ export const initialRestaurants = [
             "咖啡店"
         ],
         "rating": 0,
-        "image": "https://placehold.co/600x400/2a2a2a/ffffff?text=Restoran+Fuk+He+178",
+        "image": "https://i.ibb.co/CpxmxVsT/178.jpg",
         "subStalls": [],
         "price_range": "RM 10-20",
         "menu_link": "",
@@ -11447,7 +11795,8 @@ export const initialRestaurants = [
         "location": {
             "lat": null,
             "lng": null
-        }
+        },
+        "halalStatus": "non_halal"
     },
     {
         "id": 318,
@@ -11464,7 +11813,7 @@ export const initialRestaurants = [
             "印度档"
         ],
         "rating": 0,
-        "image": "https://placehold.co/600x400/2a2a2a/ffffff?text=Restoran+Pelita+Mas",
+        "image": "https://i.ibb.co/kgz9xHf1/Restoran-Pelita-Mas.webp",
         "subStalls": [],
         "price_range": "RM 10-20",
         "menu_link": "",
@@ -11486,7 +11835,8 @@ export const initialRestaurants = [
         "location": {
             "lat": 1.661629,
             "lng": 103.582793
-        }
+        },
+        "halalStatus": "muslim_owned"
     },
     {
         "id": 319,
@@ -11503,7 +11853,7 @@ export const initialRestaurants = [
             "饭类"
         ],
         "rating": 0,
-        "image": "https://placehold.co/600x400/2a2a2a/ffffff?text=Sky+Garden+Bakuteh",
+        "image": "https://i.ibb.co/yBp1BN2b/image.jpg",
         "subStalls": [],
         "price_range": "RM 15-30",
         "menu_link": "",
@@ -11525,7 +11875,8 @@ export const initialRestaurants = [
         "location": {
             "lat": null,
             "lng": null
-        }
+        },
+        "halalStatus": "non_halal"
     },
     {
         "id": 320,
@@ -11542,7 +11893,7 @@ export const initialRestaurants = [
             "咖啡店"
         ],
         "rating": 0,
-        "image": "https://placehold.co/600x400/png?text=No+Image",
+        "image": "https://i.ibb.co/MxXDhtrc/118-Kopitiam.jpg",
         "subStalls": [],
         "price_range": "RM 10-20",
         "menu_link": "",
@@ -11561,7 +11912,8 @@ export const initialRestaurants = [
             "lat": null,
             "lng": null
         },
-        "phone": ""
+        "phone": "",
+        "halalStatus": "non_halal"
     },
     {
         "id": 321,
@@ -11578,7 +11930,7 @@ export const initialRestaurants = [
             "咖啡店"
         ],
         "rating": 0,
-        "image": "https://placehold.co/600x400/png?text=No+Image",
+        "image": "https://i.ibb.co/FkVx6xqk/image.jpg",
         "subStalls": [],
         "price_range": "RM 10-20",
         "menu_link": "",
@@ -11597,7 +11949,8 @@ export const initialRestaurants = [
             "lat": null,
             "lng": null
         },
-        "phone": ""
+        "phone": "",
+        "halalStatus": "non_halal"
     },
     {
         "id": 322,
@@ -11614,7 +11967,7 @@ export const initialRestaurants = [
             "马来餐"
         ],
         "rating": 0,
-        "image": "https://placehold.co/600x400/png?text=No+Image",
+        "image": "https://i.ibb.co/mCZ2rpBC/Jibril-Corner.jpg",
         "subStalls": [],
         "price_range": "RM 10-20",
         "menu_link": "",
@@ -11633,7 +11986,8 @@ export const initialRestaurants = [
             "lat": null,
             "lng": null
         },
-        "phone": ""
+        "phone": "",
+        "halalStatus": "muslim_owned"
     },
     {
         "id": 323,
@@ -11650,7 +12004,7 @@ export const initialRestaurants = [
             "煮炒海鲜楼"
         ],
         "rating": 0,
-        "image": "https://placehold.co/600x400/png?text=No+Image",
+        "image": "https://i.ibb.co/5XxBSzdc/image.jpg",
         "subStalls": [],
         "price_range": "RM 10-20",
         "menu_link": "",
@@ -11669,11 +12023,12 @@ export const initialRestaurants = [
             "lat": null,
             "lng": null
         },
-        "phone": ""
+        "phone": "",
+        "halalStatus": "non_halal"
     },
     {
         "id": 324,
-        "name": "BD NASRI TOMYAM",
+        "name": "BD Nasri Tomyam",
         "name_en": "",
         "address": "1408, Jln Lagenda 51, Taman Lagenda Putra, 81000 Kulai, Johor Darul Ta'zim",
         "opening_hours": "",
@@ -11686,7 +12041,7 @@ export const initialRestaurants = [
             "马来餐"
         ],
         "rating": 0,
-        "image": "https://placehold.co/600x400/png?text=No+Image",
+        "image": "https://i.ibb.co/8LJDB5Mj/BD-NASRI-TOMYAM.jpg",
         "subStalls": [],
         "price_range": "RM 10-20",
         "menu_link": "",
@@ -11705,7 +12060,8 @@ export const initialRestaurants = [
             "lat": null,
             "lng": null
         },
-        "phone": ""
+        "phone": "",
+        "halalStatus": "muslim_owned"
     },
     {
         "id": 325,
@@ -11722,7 +12078,7 @@ export const initialRestaurants = [
             "马来餐"
         ],
         "rating": 0,
-        "image": "https://placehold.co/600x400/png?text=No+Image",
+        "image": "https://i.ibb.co/fY5X0cd0/Azlan-Seafood.jpg",
         "subStalls": [],
         "price_range": "RM 10-20",
         "menu_link": "",
@@ -11741,7 +12097,8 @@ export const initialRestaurants = [
             "lat": null,
             "lng": null
         },
-        "phone": ""
+        "phone": "",
+        "halalStatus": "muslim_owned"
     },
     {
         "id": 326,
@@ -11758,7 +12115,7 @@ export const initialRestaurants = [
             "煮炒海鲜楼"
         ],
         "rating": 0,
-        "image": "https://placehold.co/600x400/png?text=No+Image",
+        "image": "https://i.ibb.co/5XLLRXSB/image.jpg",
         "subStalls": [],
         "price_range": "RM 10-20",
         "menu_link": "",
@@ -11777,7 +12134,8 @@ export const initialRestaurants = [
             "lat": null,
             "lng": null
         },
-        "phone": ""
+        "phone": "",
+        "halalStatus": "non_halal"
     },
     {
         "id": 327,
@@ -11794,7 +12152,7 @@ export const initialRestaurants = [
             "马来餐"
         ],
         "rating": 0,
-        "image": "https://placehold.co/600x400/png?text=No+Image",
+        "image": "https://i.ibb.co/zHSwGY89/Kedai-Makan-Kak-Sal-Selera-Kelantan.jpg",
         "subStalls": [],
         "price_range": "RM 10-20",
         "menu_link": "",
@@ -11813,7 +12171,8 @@ export const initialRestaurants = [
             "lat": null,
             "lng": null
         },
-        "phone": ""
+        "phone": "",
+        "halalStatus": "muslim_owned"
     },
     {
         "id": 328,
@@ -11830,7 +12189,7 @@ export const initialRestaurants = [
             "马来餐"
         ],
         "rating": 0,
-        "image": "https://placehold.co/600x400/png?text=No+Image",
+        "image": "https://i.ibb.co/G3NPq4Hm/Restoran-Gear-Box.jpg",
         "subStalls": [],
         "price_range": "RM 10-20",
         "menu_link": "",
@@ -11849,7 +12208,8 @@ export const initialRestaurants = [
             "lat": null,
             "lng": null
         },
-        "phone": ""
+        "phone": "",
+        "halalStatus": "muslim_owned"
     },
     {
         "id": 329,
@@ -11866,7 +12226,7 @@ export const initialRestaurants = [
             "点心"
         ],
         "rating": 0,
-        "image": "https://placehold.co/600x400/png?text=No+Image",
+        "image": "https://i.ibb.co/PZGrX99m/image.jpg",
         "subStalls": [],
         "price_range": "RM 10-20",
         "menu_link": "",
@@ -11885,7 +12245,8 @@ export const initialRestaurants = [
             "lat": null,
             "lng": null
         },
-        "phone": ""
+        "phone": "",
+        "halalStatus": "non_halal"
     },
     {
         "id": 330,
@@ -11902,7 +12263,7 @@ export const initialRestaurants = [
             "Cafe"
         ],
         "rating": 0,
-        "image": "https://placehold.co/600x400/png?text=No+Image",
+        "image": "https://i.ibb.co/FLVXkdJX/image.jpg",
         "subStalls": [],
         "price_range": "RM 10-20",
         "menu_link": "",
@@ -11921,7 +12282,8 @@ export const initialRestaurants = [
             "lat": null,
             "lng": null
         },
-        "phone": ""
+        "phone": "",
+        "halalStatus": "non_halal"
     },
     {
         "id": 331,
@@ -11938,7 +12300,7 @@ export const initialRestaurants = [
             "马来餐"
         ],
         "rating": 0,
-        "image": "https://placehold.co/600x400/png?text=No+Image",
+        "image": "https://i.ibb.co/TM4RZzbw/Restoran-Asam-Pedas-Aeshah.jpg",
         "subStalls": [],
         "price_range": "RM 10-20",
         "menu_link": "",
@@ -11957,7 +12319,8 @@ export const initialRestaurants = [
             "lat": null,
             "lng": null
         },
-        "phone": ""
+        "phone": "",
+        "halalStatus": "muslim_owned"
     },
     {
         "id": 332,
@@ -11974,7 +12337,7 @@ export const initialRestaurants = [
             "马来餐"
         ],
         "rating": 0,
-        "image": "https://placehold.co/600x400/png?text=No+Image",
+        "image": "https://i.ibb.co/N6mhNzV3/Ina-Tom-Yam-Sea-Food.jpg",
         "subStalls": [],
         "price_range": "RM 10-20",
         "menu_link": "",
@@ -11993,7 +12356,8 @@ export const initialRestaurants = [
             "lat": null,
             "lng": null
         },
-        "phone": ""
+        "phone": "",
+        "halalStatus": "muslim_owned"
     },
     {
         "id": 333,
@@ -12001,7 +12365,7 @@ export const initialRestaurants = [
         "name_en": "Kedai Kek Lian Pang",
         "address": "No.6, Jalan Susur Kulai 4, Taman Sri Kulai Baru, 81000 Kulai, Johor Darul Ta'zim",
         "opening_hours": "Monday: 9am–7pm\nTuesday: 9am–7pm\nWednesday: 9am–7pm\nThursday: 9am–7pm\nFriday: 9am–7pm\nSaturday: 9am–7pm\nSunday: 9am–7pm",
-        "intro_zh": "",
+        "intro_zh": "古来非常著名的 传统蛋糕西点店（Old School Bakery）。最出名的是 传统牛油蛋糕（Butter Cake），口感扎实绵密，牛油香气十足。此外也售卖 各类传统面包、蛋挞 和 喜饼。是购买 传统风味蛋糕/伴手礼 的首选老店。",
         "intro_en": "",
         "category": [
             "甜品饮料"
@@ -12010,7 +12374,7 @@ export const initialRestaurants = [
             "甜品饮料"
         ],
         "rating": 0,
-        "image": "https://placehold.co/600x400/png?text=No+Image",
+        "image": "https://i.ibb.co/gL8Ly1z1/image.jpg",
         "subStalls": [],
         "price_range": "RM 10-20",
         "menu_link": "",
@@ -12029,7 +12393,8 @@ export const initialRestaurants = [
             "lat": null,
             "lng": null
         },
-        "phone": ""
+        "phone": "",
+        "halalStatus": "non_halal"
     },
     {
         "id": 334,
@@ -12046,6 +12411,119 @@ export const initialRestaurants = [
             "咖啡店"
         ],
         "rating": 0,
+        "image": "https://i.ibb.co/PGF8YFJ8/image.jpg",
+        "subStalls": [],
+        "price_range": "RM 10-20",
+        "menu_link": "",
+        "website_link": "",
+        "delivery_link": "",
+        "isVegetarian": false,
+        "isNoBeef": false,
+        "manualStatus": "auto",
+        "branches": [],
+        "tags": [],
+        "subscriptionLevel": 0,
+        "isVIP": false,
+        "priority": 0,
+        "whatsappLink": "",
+        "location": {
+            "lat": null,
+            "lng": null
+        },
+        "phone": "",
+        "halalStatus": "non_halal"
+    },
+    {
+        "id": 335,
+        "name": "Secret Recipe",
+        "name_en": "",
+        "address": "31, Jalan Seri Putra 1, Bandar Putra Kulai, 81000 Kulai, Johor Darul Ta'zim",
+        "opening_hours": "10 am–10 pm",
+        "intro_zh": "",
+        "intro_en": "",
+        "category": [
+            "Cafe",
+            "蛋糕甜点"
+        ],
+        "categories": [
+            "Cafe",
+            "蛋糕甜点"
+        ],
+        "rating": 0,
+        "image": "https://placehold.co/600x400/png?text=No+Image",
+        "subStalls": [],
+        "price_range": "RM 10-20",
+        "menu_link": "",
+        "website_link": "http://www.secretrecipe.com.my/",
+        "delivery_link": "",
+        "isVegetarian": false,
+        "isNoBeef": false,
+        "manualStatus": "auto",
+        "branches": [],
+        "tags": [],
+        "subscriptionLevel": 0,
+        "isVIP": false,
+        "priority": 0,
+        "whatsappLink": "",
+        "location": {
+            "lat": null,
+            "lng": null
+        },
+        "phone": "076632082",
+        "halalStatus": "certified"
+    },
+    {
+        "id": 336,
+        "name": "Baker's Cottage",
+        "name_en": "",
+        "address": "No. 29, Jalan Seri Putra 1, Bandar Putra Kulai, 81000 Kulai, Johor Darul Ta'zim",
+        "opening_hours": "11 am–9 pm",
+        "intro_zh": "",
+        "intro_en": "",
+        "category": [
+            "蛋糕甜点"
+        ],
+        "categories": [
+            "蛋糕甜点"
+        ],
+        "rating": 0,
+        "image": "https://placehold.co/600x400/png?text=No+Image",
+        "subStalls": [],
+        "price_range": "RM 10-20",
+        "menu_link": "",
+        "website_link": "https://www.thebakerscottage.com/",
+        "delivery_link": "",
+        "isVegetarian": false,
+        "isNoBeef": false,
+        "manualStatus": "auto",
+        "branches": [],
+        "tags": [],
+        "subscriptionLevel": 0,
+        "isVIP": false,
+        "priority": 0,
+        "whatsappLink": "",
+        "location": {
+            "lat": null,
+            "lng": null
+        },
+        "phone": "076615479",
+        "halalStatus": "non_halal"
+    },
+    {
+        "id": 337,
+        "name": "马德拉斯美食中心",
+        "name_en": "Madras to Malaya Cafe",
+        "address": "12, Jalan Seri Putra 1, Bandar Putra Kulai, 81000 Kulai, Johor Darul Ta'zim",
+        "opening_hours": "7 am–8:30 pm",
+        "intro_zh": "",
+        "intro_en": "",
+        "category": [
+            "印度档"
+        ],
+        "categories": [
+            "印度档"
+        ],
+        "rating": 0,
         "image": "https://placehold.co/600x400/png?text=No+Image",
         "subStalls": [],
         "price_range": "RM 10-20",
@@ -12065,6 +12543,2210 @@ export const initialRestaurants = [
             "lat": null,
             "lng": null
         },
-        "phone": ""
+        "phone": "",
+        "halalStatus": "muslim_owned"
+    },
+    {
+        "id": 338,
+        "name": "锅妈台式火锅",
+        "name_en": "GUOMA STEAMBOAT",
+        "address": "10&11, Jalan Seri Putra 1, Bandar Putra Kulai, 81000 Kulai, Johor Darul Ta'zim",
+        "opening_hours": "",
+        "intro_zh": "",
+        "intro_en": "",
+        "category": [
+            "火锅"
+        ],
+        "categories": [
+            "火锅"
+        ],
+        "rating": 0,
+        "image": "https://placehold.co/600x400/png?text=No+Image",
+        "subStalls": [],
+        "price_range": "RM 10-20",
+        "menu_link": "",
+        "website_link": "https://www.facebook.com/guomakulai/",
+        "delivery_link": "",
+        "isVegetarian": false,
+        "isNoBeef": false,
+        "manualStatus": "auto",
+        "branches": [],
+        "tags": [],
+        "subscriptionLevel": 0,
+        "isVIP": false,
+        "priority": 0,
+        "whatsappLink": "",
+        "location": {
+            "lat": null,
+            "lng": null
+        },
+        "phone": "076608398",
+        "halalStatus": "non_halal"
+    },
+    {
+        "id": 339,
+        "name": "嘉都咖啡",
+        "name_en": "He Kado Kopi",
+        "address": "36, Jalan Seri Putra 1, Bandar Putra Kulai, 81000 Kulai, Johor Darul Ta'zim",
+        "opening_hours": "7:30 am–4 pm Friday closed",
+        "intro_zh": "",
+        "intro_en": "",
+        "category": [
+            "Cafe"
+        ],
+        "categories": [
+            "Cafe"
+        ],
+        "rating": 0,
+        "image": "https://placehold.co/600x400/png?text=No+Image",
+        "subStalls": [],
+        "price_range": "RM 10-20",
+        "menu_link": "",
+        "website_link": "",
+        "delivery_link": "",
+        "isVegetarian": false,
+        "isNoBeef": false,
+        "manualStatus": "auto",
+        "branches": [],
+        "tags": [],
+        "subscriptionLevel": 0,
+        "isVIP": false,
+        "priority": 0,
+        "whatsappLink": "",
+        "location": {
+            "lat": null,
+            "lng": null
+        },
+        "phone": "0199783485",
+        "halalStatus": "non_halal"
+    },
+    {
+        "id": 340,
+        "name": "啰信记糖水甜品",
+        "name_en": "Lol Soon Kee Desserts",
+        "address": "37, Jalan Seri Putra 1, Bandar Putra Kulai, 81000 Kulai, Johor Darul Ta'zim",
+        "opening_hours": "12–10 pm",
+        "intro_zh": "",
+        "intro_en": "",
+        "category": [
+            "甜品饮料"
+        ],
+        "categories": [
+            "甜品饮料"
+        ],
+        "rating": 0,
+        "image": "https://placehold.co/600x400/png?text=No+Image",
+        "subStalls": [],
+        "price_range": "RM 10-20",
+        "menu_link": "",
+        "website_link": "https://linktr.ee/lolsoonkeekulai#417032206",
+        "delivery_link": "",
+        "isVegetarian": false,
+        "isNoBeef": false,
+        "manualStatus": "auto",
+        "branches": [],
+        "tags": [],
+        "subscriptionLevel": 0,
+        "isVIP": false,
+        "priority": 0,
+        "whatsappLink": "",
+        "location": {
+            "lat": null,
+            "lng": null
+        },
+        "phone": "",
+        "halalStatus": "non_halal"
+    },
+    {
+        "id": 341,
+        "name": "Tomyam Meletop",
+        "name_en": "",
+        "address": "Jalan Merbau 3, Bandar Putra Kulai, 81000, Johor Darul Ta'zim",
+        "opening_hours": "4 pm–12 am",
+        "intro_zh": "",
+        "intro_en": "",
+        "category": [
+            "马来餐"
+        ],
+        "categories": [
+            "马来餐"
+        ],
+        "rating": 0,
+        "image": "https://placehold.co/600x400/png?text=No+Image",
+        "subStalls": [],
+        "price_range": "RM 10-20",
+        "menu_link": "",
+        "website_link": "",
+        "delivery_link": "",
+        "isVegetarian": false,
+        "isNoBeef": false,
+        "manualStatus": "auto",
+        "branches": [],
+        "tags": [],
+        "subscriptionLevel": 0,
+        "isVIP": false,
+        "priority": 0,
+        "whatsappLink": "",
+        "location": {
+            "lat": null,
+            "lng": null
+        },
+        "phone": "0183760887",
+        "halalStatus": "muslim_owned"
+    },
+    {
+        "id": 342,
+        "name": "Restoran Juara Seafood",
+        "name_en": "",
+        "address": "2931, 2920, Jalan Merbau 3, Bandar Putra Kulai, 81000 Kulai, Johor",
+        "opening_hours": "4:30 pm–2 am",
+        "intro_zh": "",
+        "intro_en": "",
+        "category": [
+            "马来餐"
+        ],
+        "categories": [
+            "马来餐"
+        ],
+        "rating": 0,
+        "image": "https://placehold.co/600x400/png?text=No+Image",
+        "subStalls": [],
+        "price_range": "RM 10-20",
+        "menu_link": "",
+        "website_link": "",
+        "delivery_link": "",
+        "isVegetarian": false,
+        "isNoBeef": false,
+        "manualStatus": "auto",
+        "branches": [],
+        "tags": [],
+        "subscriptionLevel": 0,
+        "isVIP": false,
+        "priority": 0,
+        "whatsappLink": "",
+        "location": {
+            "lat": null,
+            "lng": null
+        },
+        "phone": "0177397097",
+        "halalStatus": "muslim_owned"
+    },
+    {
+        "id": 343,
+        "name": "Sanabil Al-Arabi",
+        "name_en": "",
+        "address": "3045, Jalan Merbau 3, Bandar Putra Kulai, 81000 Kulai, Johor Darul Ta'zim",
+        "opening_hours": "12–10 pm",
+        "intro_zh": "",
+        "intro_en": "",
+        "category": [
+            "马来餐"
+        ],
+        "categories": [
+            "马来餐"
+        ],
+        "rating": 0,
+        "image": "https://placehold.co/600x400/png?text=No+Image",
+        "subStalls": [],
+        "price_range": "RM 10-20",
+        "menu_link": "",
+        "website_link": "",
+        "delivery_link": "",
+        "isVegetarian": false,
+        "isNoBeef": false,
+        "manualStatus": "auto",
+        "branches": [],
+        "tags": [],
+        "subscriptionLevel": 0,
+        "isVIP": false,
+        "priority": 0,
+        "whatsappLink": "",
+        "location": {
+            "lat": null,
+            "lng": null
+        },
+        "phone": "0133920184",
+        "halalStatus": "muslim_owned"
+    },
+    {
+        "id": 344,
+        "name": "Selera Rasa Hasnah",
+        "name_en": "",
+        "address": "3049, Jalan Merbau 1, Bandar Putra Kulai, 81000 Kulai, Johor Darul Ta'zim",
+        "opening_hours": "5 pm–2:30 am",
+        "intro_zh": "",
+        "intro_en": "",
+        "category": [
+            "马来餐"
+        ],
+        "categories": [
+            "马来餐"
+        ],
+        "rating": 0,
+        "image": "https://placehold.co/600x400/png?text=No+Image",
+        "subStalls": [],
+        "price_range": "RM 10-20",
+        "menu_link": "",
+        "website_link": "",
+        "delivery_link": "",
+        "isVegetarian": false,
+        "isNoBeef": false,
+        "manualStatus": "auto",
+        "branches": [],
+        "tags": [],
+        "subscriptionLevel": 0,
+        "isVIP": false,
+        "priority": 0,
+        "whatsappLink": "",
+        "location": {
+            "lat": null,
+            "lng": null
+        },
+        "phone": "01111817500",
+        "halalStatus": "muslim_owned"
+    },
+    {
+        "id": 345,
+        "name": "Tom Yam Ramai-ramai Cawangan",
+        "name_en": "",
+        "address": "3055-A, Jalan Merbau 3, Bandar Putra Kulai, 81000 Kulai, Johor Darul Ta'zim",
+        "opening_hours": "",
+        "intro_zh": "",
+        "intro_en": "",
+        "category": [
+            "马来餐"
+        ],
+        "categories": [
+            "马来餐"
+        ],
+        "rating": 0,
+        "image": "https://placehold.co/600x400/png?text=No+Image",
+        "subStalls": [],
+        "price_range": "RM 10-20",
+        "menu_link": "",
+        "website_link": "",
+        "delivery_link": "",
+        "isVegetarian": false,
+        "isNoBeef": false,
+        "manualStatus": "auto",
+        "branches": [],
+        "tags": [],
+        "subscriptionLevel": 0,
+        "isVIP": false,
+        "priority": 0,
+        "whatsappLink": "",
+        "location": {
+            "lat": null,
+            "lng": null
+        },
+        "phone": "01128765578",
+        "halalStatus": "muslim_owned"
+    },
+    {
+        "id": 346,
+        "name": "Nasi Ayam Mak Pah",
+        "name_en": "",
+        "address": "4957, Jalan Merbau 1, Bandar Putra Kulai, 81000 Kulai, Johor Darul Ta'zim",
+        "opening_hours": "7 am–5 pm",
+        "intro_zh": "",
+        "intro_en": "",
+        "category": [
+            "马来餐"
+        ],
+        "categories": [
+            "马来餐"
+        ],
+        "rating": 0,
+        "image": "https://placehold.co/600x400/png?text=No+Image",
+        "subStalls": [],
+        "price_range": "RM 10-20",
+        "menu_link": "",
+        "website_link": "https://www.foodpanda.my/restaurant/ppl2/restoran-nasi-ayam-mak-pah",
+        "delivery_link": "",
+        "isVegetarian": false,
+        "isNoBeef": false,
+        "manualStatus": "auto",
+        "branches": [],
+        "tags": [],
+        "subscriptionLevel": 0,
+        "isVIP": false,
+        "priority": 0,
+        "whatsappLink": "",
+        "location": {
+            "lat": null,
+            "lng": null
+        },
+        "phone": "0162163499",
+        "halalStatus": "muslim_owned"
+    },
+    {
+        "id": 347,
+        "name": "Seri Pantai Seafood",
+        "name_en": "",
+        "address": "",
+        "opening_hours": "4 pm–2 am",
+        "intro_zh": "",
+        "intro_en": "",
+        "category": [
+            "马来餐"
+        ],
+        "categories": [
+            "马来餐"
+        ],
+        "rating": 0,
+        "image": "https://placehold.co/600x400/png?text=No+Image",
+        "subStalls": [],
+        "price_range": "RM 10-20",
+        "menu_link": "",
+        "website_link": "",
+        "delivery_link": "",
+        "isVegetarian": false,
+        "isNoBeef": false,
+        "manualStatus": "auto",
+        "branches": [],
+        "tags": [],
+        "subscriptionLevel": 0,
+        "isVIP": false,
+        "priority": 0,
+        "whatsappLink": "",
+        "location": {
+            "lat": null,
+            "lng": null
+        },
+        "phone": "",
+        "halalStatus": "muslim_owned"
+    },
+    {
+        "id": 348,
+        "name": "Mama Thai Tomyam",
+        "name_en": "",
+        "address": "4973, Jalan Merbau 11, Bandar Putra Kulai, 81000 Kulai, Johor Darul Ta'zim",
+        "opening_hours": "4 pm–2 am",
+        "intro_zh": "",
+        "intro_en": "",
+        "category": [
+            "马来餐"
+        ],
+        "categories": [
+            "马来餐"
+        ],
+        "rating": 0,
+        "image": "https://placehold.co/600x400/png?text=No+Image",
+        "subStalls": [],
+        "price_range": "RM 10-20",
+        "menu_link": "",
+        "website_link": "",
+        "delivery_link": "",
+        "isVegetarian": false,
+        "isNoBeef": false,
+        "manualStatus": "auto",
+        "branches": [],
+        "tags": [],
+        "subscriptionLevel": 0,
+        "isVIP": false,
+        "priority": 0,
+        "whatsappLink": "",
+        "location": {
+            "lat": null,
+            "lng": null
+        },
+        "phone": "",
+        "halalStatus": "muslim_owned"
+    },
+    {
+        "id": 349,
+        "name": "Sofiyah Cafe",
+        "name_en": "",
+        "address": "4978, Jalan Merbau 11, Bandar Putra Kulai, 81000 Kulai, Johor Darul Ta'zim",
+        "opening_hours": "7 am–3 pm Friday Closed",
+        "intro_zh": "",
+        "intro_en": "",
+        "category": [
+            "马来餐"
+        ],
+        "categories": [
+            "马来餐"
+        ],
+        "rating": 0,
+        "image": "https://placehold.co/600x400/png?text=No+Image",
+        "subStalls": [],
+        "price_range": "RM 10-20",
+        "menu_link": "",
+        "website_link": "",
+        "delivery_link": "",
+        "isVegetarian": false,
+        "isNoBeef": false,
+        "manualStatus": "auto",
+        "branches": [],
+        "tags": [],
+        "subscriptionLevel": 0,
+        "isVIP": false,
+        "priority": 0,
+        "whatsappLink": "",
+        "location": {
+            "lat": null,
+            "lng": null
+        },
+        "phone": "0177859537",
+        "halalStatus": "muslim_owned"
+    },
+    {
+        "id": 350,
+        "name": "Restaurant Aziz Bilal",
+        "name_en": "",
+        "address": "Jalan Putra 1, Bandar Putra Kulai, 81000 Kulai, Johor Darul Ta'zim",
+        "opening_hours": "",
+        "intro_zh": "",
+        "intro_en": "",
+        "category": [
+            "印度档"
+        ],
+        "categories": [
+            "印度档"
+        ],
+        "rating": 0,
+        "image": "https://placehold.co/600x400/png?text=No+Image",
+        "subStalls": [],
+        "price_range": "RM 10-20",
+        "menu_link": "",
+        "website_link": "",
+        "delivery_link": "",
+        "isVegetarian": false,
+        "isNoBeef": false,
+        "manualStatus": "auto",
+        "branches": [],
+        "tags": [],
+        "subscriptionLevel": 0,
+        "isVIP": false,
+        "priority": 0,
+        "whatsappLink": "",
+        "location": {
+            "lat": null,
+            "lng": null
+        },
+        "phone": "01168304749",
+        "halalStatus": "muslim_owned"
+    },
+    {
+        "id": 351,
+        "name": "Restaurant ezma corner",
+        "name_en": "",
+        "address": "13000-13030, Jalan Rajawali 1, Bandar Putra Kulai, 81000 Kulai, Johor Darul Ta'zim",
+        "opening_hours": "",
+        "intro_zh": "",
+        "intro_en": "",
+        "category": [
+            "印度档"
+        ],
+        "categories": [
+            "印度档"
+        ],
+        "rating": 0,
+        "image": "https://placehold.co/600x400/png?text=No+Image",
+        "subStalls": [],
+        "price_range": "RM 10-20",
+        "menu_link": "",
+        "website_link": "",
+        "delivery_link": "",
+        "isVegetarian": false,
+        "isNoBeef": false,
+        "manualStatus": "auto",
+        "branches": [],
+        "tags": [],
+        "subscriptionLevel": 0,
+        "isVIP": false,
+        "priority": 0,
+        "whatsappLink": "",
+        "location": {
+            "lat": null,
+            "lng": null
+        },
+        "phone": "0167261470",
+        "halalStatus": "muslim_owned"
+    },
+    {
+        "id": 352,
+        "area": "Senai",
+        "name": "金龙饭店",
+        "name_en": "Kim Long Restaurant Sdn Bhd",
+        "subscriptionLevel": 0,
+        "manualStatus": "auto",
+        "address": "130, Jalan Senai Utama 5/17, Taman Senai Utama, 81400 Senai, Johor Darul Ta'zim",
+        "opening_hours": "10am-10pm",
+        "intro_zh": "",
+        "intro_en": "",
+        "category": [
+            "煮炒海鲜楼"
+        ],
+        "categories": [
+            "煮炒海鲜楼"
+        ],
+        "tags": [],
+        "price_range": "RM 10 - RM 20",
+        "image": "https://placehold.co/600x400/e0e0e0/333333?text=No+Image",
+        "rating": 0,
+        "google_maps": "",
+        "location": {
+            "lat": null,
+            "lng": null
+        },
+        "phone": "07-599 1850",
+        "link": "https://www.facebook.com/JimLongCatering/",
+        "halalStatus": "non_halal"
+    },
+    {
+        "id": 353,
+        "area": "Senai",
+        "name": "Restoran D'Ambang",
+        "name_en": "Restoran D'Ambang",
+        "subscriptionLevel": 0,
+        "manualStatus": "auto",
+        "address": "1769, Jalan Senai Utama 1/2, Taman Senai Utama, 81400 Senai, Johor Darul Ta'zim",
+        "opening_hours": "12pm–11pm\nSaturday: Closed\nSunday: Closed",
+        "intro_zh": "",
+        "intro_en": "",
+        "category": [
+            "马来餐"
+        ],
+        "categories": [
+            "马来餐"
+        ],
+        "tags": [],
+        "price_range": "RM 10 - RM 20",
+        "image": "https://placehold.co/600x400/e0e0e0/333333?text=No+Image",
+        "rating": 0,
+        "google_maps": "",
+        "location": {
+            "lat": null,
+            "lng": null
+        },
+        "phone": "018-872 4269",
+        "halalStatus": "muslim_owned"
+    },
+    {
+        "id": 354,
+        "area": "Senai",
+        "name": "士乃鸭王烧腊专卖店",
+        "name_en": "Restoran Sang Sang Sang",
+        "subscriptionLevel": 0,
+        "manualStatus": "auto",
+        "address": "1763, Jalan Senai Utama 1/2, Taman Senai Utama, 81400 Senai, Johor Darul Ta'zim",
+        "opening_hours": "9am–5pm\nTuesday: Closed",
+        "intro_zh": "",
+        "intro_en": "",
+        "category": [
+            "饭类"
+        ],
+        "categories": [
+            "饭类"
+        ],
+        "tags": [],
+        "price_range": "RM 10 - RM 20",
+        "image": "https://placehold.co/600x400/e0e0e0/333333?text=No+Image",
+        "rating": 0,
+        "google_maps": "",
+        "location": {
+            "lat": null,
+            "lng": null
+        },
+        "phone": "016-972 8135",
+        "link": "https://www.facebook.com/profile.php?id=100063655324098",
+        "halalStatus": "non_halal"
+    },
+    {
+        "id": 355,
+        "area": "Senai",
+        "name": "好运美食中心",
+        "name_en": "Restoran Senai HN",
+        "subscriptionLevel": 0,
+        "manualStatus": "auto",
+        "address": "1099, 6, Jalan Senai Utama 2, Taman Senai Utama, 81400 Senai, Johor Darul Ta'zim",
+        "opening_hours": "12pm-10pm\nTuesday: Closed",
+        "intro_zh": "",
+        "intro_en": "",
+        "category": [
+            "咖啡店"
+        ],
+        "categories": [
+            "咖啡店"
+        ],
+        "tags": [],
+        "price_range": "RM 10 - RM 20",
+        "image": "https://placehold.co/600x400/e0e0e0/333333?text=No+Image",
+        "rating": 0,
+        "google_maps": "",
+        "location": {
+            "lat": null,
+            "lng": null
+        },
+        "phone": "012-736 1219",
+        "link": "https://www.facebook.com/RestoranSenaiHY/",
+        "halalStatus": "non_halal"
+    },
+    {
+        "id": 356,
+        "area": "Senai",
+        "name": "Restoran Singgah Maju",
+        "name_en": "Restoran Singgah Maju",
+        "subscriptionLevel": 0,
+        "manualStatus": "auto",
+        "address": "1256 & 1258 & 1259, Jalan Senai Utama 1/1, Taman Senai Utama, 81400 Senai, Johor Darul Ta'zim",
+        "opening_hours": "4pm–2am",
+        "intro_zh": "",
+        "intro_en": "",
+        "category": [
+            "马来餐"
+        ],
+        "categories": [
+            "马来餐"
+        ],
+        "tags": [],
+        "price_range": "RM 10 - RM 20",
+        "image": "https://placehold.co/600x400/e0e0e0/333333?text=No+Image",
+        "rating": 0,
+        "google_maps": "",
+        "location": {
+            "lat": null,
+            "lng": null
+        },
+        "phone": "011-1280 5434",
+        "link": "https://www.facebook.com/p/Restoran-Singgah-Maju-100063733675498/",
+        "halalStatus": "muslim_owned"
+    },
+    {
+        "id": 357,
+        "area": "Senai",
+        "name": "Restoran Nasi Ayam Hainan",
+        "name_en": "Restoran Nasi Ayam Hainan",
+        "subscriptionLevel": 0,
+        "manualStatus": "auto",
+        "address": "1251, Jalan Senai Utama 2, Taman Senai Utama, 81400 Senai, Johor Darul Ta'zim",
+        "opening_hours": "11.30am-9.30pm\nTuesday: Closed",
+        "intro_zh": "",
+        "intro_en": "",
+        "category": [
+            "马来餐",
+            "饭类"
+        ],
+        "categories": [
+            "马来餐",
+            "饭类"
+        ],
+        "tags": [],
+        "price_range": "RM 10 - RM 20",
+        "image": "https://placehold.co/600x400/e0e0e0/333333?text=No+Image",
+        "rating": 0,
+        "google_maps": "",
+        "location": {
+            "lat": null,
+            "lng": null
+        },
+        "phone": "014-277 0299",
+        "halalStatus": "muslim_owned"
+    },
+    {
+        "id": 358,
+        "area": "Senai",
+        "name": "生意兴隆茶室",
+        "name_en": "Restoran Senyi Sinron",
+        "subscriptionLevel": 0,
+        "manualStatus": "auto",
+        "address": "1208, Jalan Senai Utama 2/7, Taman Senai Utama, 81400 Senai, Johor Darul Ta'zim",
+        "opening_hours": "6am–2pm\nMonday: Closed",
+        "intro_zh": "",
+        "intro_en": "",
+        "category": [
+            "咖啡店"
+        ],
+        "categories": [
+            "咖啡店"
+        ],
+        "tags": [],
+        "price_range": "RM 10 - RM 20",
+        "image": "https://placehold.co/600x400/e0e0e0/333333?text=No+Image",
+        "rating": 0,
+        "google_maps": "",
+        "location": {
+            "lat": null,
+            "lng": null
+        },
+        "phone": "07-598 5133",
+        "halalStatus": "non_halal"
+    },
+    {
+        "id": 359,
+        "area": "Senai",
+        "name": "猴子面茶餐室",
+        "name_en": "Restoran Sin Peng",
+        "subscriptionLevel": 0,
+        "manualStatus": "auto",
+        "address": "3, Jalan Selesa 1, Taman Selesa, 81400 Senai, Johor Darul Ta'zim",
+        "opening_hours": "7am–1pm, 6pm–10pm\nThursday: Closed",
+        "intro_zh": "",
+        "intro_en": "",
+        "category": [
+            "面类/粉类"
+        ],
+        "categories": [
+            "面类/粉类"
+        ],
+        "tags": [],
+        "price_range": "RM 10 - RM 20",
+        "image": "https://placehold.co/600x400/e0e0e0/333333?text=No+Image",
+        "rating": 0,
+        "google_maps": "",
+        "location": {
+            "lat": null,
+            "lng": null
+        },
+        "phone": "012-742 3328",
+        "halalStatus": "non_halal"
+    },
+    {
+        "id": 360,
+        "area": "Senai",
+        "name": "小幸湖",
+        "name_en": "The Tiny Lake",
+        "subscriptionLevel": 0,
+        "manualStatus": "auto",
+        "address": "Jalan Senai 10, Kampung Baru Senai, 81400 Senai, Johor Darul Ta'zim",
+        "opening_hours": "3pm–11pm",
+        "intro_zh": "",
+        "intro_en": "",
+        "category": [
+            "Cafe"
+        ],
+        "categories": [
+            "Cafe"
+        ],
+        "tags": [],
+        "price_range": "RM 10 - RM 20",
+        "image": "https://placehold.co/600x400/e0e0e0/333333?text=No+Image",
+        "rating": 0,
+        "google_maps": "",
+        "location": {
+            "lat": null,
+            "lng": null
+        },
+        "phone": "",
+        "link": "https://www.facebook.com/profile.php?id=61571374596803",
+        "halalStatus": "non_halal"
+    },
+    {
+        "id": 361,
+        "area": "Senai",
+        "name": "新顺记苦瓜汤",
+        "name_en": "Kedai Makanan & Minuman Soon Kee",
+        "subscriptionLevel": 0,
+        "manualStatus": "auto",
+        "address": "28 & 29, Jalan Impian Senai Utama, Taman Impian Senai, 81400 Senai, Johor Darul Ta'zim",
+        "opening_hours": "",
+        "intro_zh": "",
+        "intro_en": "",
+        "category": [
+            "饭类"
+        ],
+        "categories": [
+            "饭类"
+        ],
+        "tags": [],
+        "price_range": "RM 10 - RM 20",
+        "image": "https://placehold.co/600x400/e0e0e0/333333?text=No+Image",
+        "rating": 0,
+        "google_maps": "",
+        "location": {
+            "lat": null,
+            "lng": null
+        },
+        "phone": "012-719 8567",
+        "halalStatus": "non_halal"
+    },
+    {
+        "id": 362,
+        "area": "Senai",
+        "name": "Restoran Bunga Dahlia",
+        "name_en": "Restoran Bunga Dahlia",
+        "subscriptionLevel": 0,
+        "manualStatus": "auto",
+        "address": "49, Jalan Impian Senai Utama, Taman Impian Senai, 81400 Senai, Johor Darul Ta'zim",
+        "opening_hours": "6am–9:30pm",
+        "intro_zh": "",
+        "intro_en": "",
+        "category": [
+            "马来餐"
+        ],
+        "categories": [
+            "马来餐"
+        ],
+        "tags": [],
+        "price_range": "RM 10 - RM 20",
+        "image": "https://placehold.co/600x400/e0e0e0/333333?text=No+Image",
+        "rating": 0,
+        "google_maps": "",
+        "location": {
+            "lat": null,
+            "lng": null
+        },
+        "phone": "",
+        "halalStatus": "muslim_owned"
+    },
+    {
+        "id": 363,
+        "area": "Senai",
+        "name": "ABMH Restaurant",
+        "name_en": "ABMH Restaurant",
+        "subscriptionLevel": 0,
+        "manualStatus": "auto",
+        "address": "26 & 27, Jalan Impian Senai Utama, Taman Impian Senai, 81400 Senai, Johor Darul Ta'zim",
+        "opening_hours": "",
+        "intro_zh": "",
+        "intro_en": "",
+        "category": [
+            "印度档"
+        ],
+        "categories": [
+            "印度档"
+        ],
+        "tags": [],
+        "price_range": "RM 10 - RM 20",
+        "image": "https://placehold.co/600x400/e0e0e0/333333?text=No+Image",
+        "rating": 0,
+        "google_maps": "",
+        "location": {
+            "lat": null,
+            "lng": null
+        },
+        "phone": "014-313 5200",
+        "halalStatus": "muslim_owned"
+    },
+    {
+        "id": 364,
+        "area": "Senai",
+        "name": "东阳",
+        "name_en": "The Sunrise Cafe",
+        "subscriptionLevel": 0,
+        "manualStatus": "auto",
+        "address": "20~21, Jalan Impian Senai Utama, Taman Impian Senai, 81400 Senai, Johor Darul Ta'zim",
+        "opening_hours": "8am–9pm\nMonday: Closed",
+        "intro_zh": "",
+        "intro_en": "",
+        "category": [
+            "Cafe"
+        ],
+        "categories": [
+            "Cafe"
+        ],
+        "tags": [],
+        "price_range": "RM 10 - RM 20",
+        "image": "https://placehold.co/600x400/e0e0e0/333333?text=No+Image",
+        "rating": 0,
+        "google_maps": "",
+        "location": {
+            "lat": null,
+            "lng": null
+        },
+        "phone": "018-376 3625",
+        "link": "https://www.facebook.com/profile.php?id=100069963770411",
+        "halalStatus": "non_halal"
+    },
+    {
+        "id": 365,
+        "area": "Senai",
+        "name": "Projek KEBAB Cafe",
+        "name_en": "Projek KEBAB Cafe",
+        "subscriptionLevel": 0,
+        "manualStatus": "auto",
+        "address": "14, Jalan Impian Senai Utama, Taman Impian Senai, 81400 Senai, Johor Darul Ta'zim",
+        "opening_hours": "",
+        "intro_zh": "",
+        "intro_en": "",
+        "category": [
+            "马来餐"
+        ],
+        "categories": [
+            "马来餐"
+        ],
+        "tags": [],
+        "price_range": "RM 10 - RM 20",
+        "image": "https://placehold.co/600x400/e0e0e0/333333?text=No+Image",
+        "rating": 0,
+        "google_maps": "",
+        "location": {
+            "lat": null,
+            "lng": null
+        },
+        "phone": "019-678 0198",
+        "link": "https://easyeat.ai/r/projek-kebab/2",
+        "halalStatus": "muslim_owned"
+    },
+    {
+        "id": 366,
+        "area": "Senai",
+        "name": "士乃KCC金龙饭店",
+        "name_en": "Kim M Long Restaurant",
+        "subscriptionLevel": 0,
+        "manualStatus": "auto",
+        "address": "12, Jalan Impian Senai Utama, Taman Impian Senai, 81400 Senai, Johor Darul Ta'zim",
+        "opening_hours": "11am–9:30pm\nWednesday: Closed",
+        "intro_zh": "",
+        "intro_en": "",
+        "category": [
+            "煮炒海鲜楼"
+        ],
+        "categories": [
+            "煮炒海鲜楼"
+        ],
+        "tags": [],
+        "price_range": "RM 10 - RM 20",
+        "image": "https://placehold.co/600x400/e0e0e0/333333?text=No+Image",
+        "rating": 0,
+        "google_maps": "",
+        "location": {
+            "lat": null,
+            "lng": null
+        },
+        "phone": "07-599 5800",
+        "link": "https://www.facebook.com/ShiNaikccJinLongFanDian/",
+        "halalStatus": "non_halal"
+    },
+    {
+        "id": 367,
+        "area": "Senai",
+        "name": "好运饭店",
+        "name_en": "Hao Yun Restaurant",
+        "subscriptionLevel": 0,
+        "manualStatus": "auto",
+        "address": "10, Jalan Impian Senai Utama, Taman Impian Senai, 81400 Senai, Johor Darul Ta'zim",
+        "opening_hours": "",
+        "intro_zh": "",
+        "intro_en": "",
+        "category": [
+            "煮炒海鲜楼"
+        ],
+        "categories": [
+            "煮炒海鲜楼"
+        ],
+        "tags": [],
+        "price_range": "RM 10 - RM 20",
+        "image": "https://placehold.co/600x400/e0e0e0/333333?text=No+Image",
+        "rating": 0,
+        "google_maps": "",
+        "location": {
+            "lat": null,
+            "lng": null
+        },
+        "phone": "017-736 2618",
+        "halalStatus": "non_halal"
+    },
+    {
+        "id": 368,
+        "area": "Senai",
+        "name": "家家肉骨茶",
+        "name_en": "家家肉骨茶",
+        "subscriptionLevel": 0,
+        "manualStatus": "auto",
+        "address": "4, Jalan Impian Senai Utama, Taman Impian Senai, 81400 Senai, Johor Darul Ta'zim",
+        "opening_hours": "8:30am–5pm\nTuesday: Closed",
+        "intro_zh": "",
+        "intro_en": "",
+        "category": [
+            "饭类"
+        ],
+        "categories": [
+            "饭类"
+        ],
+        "tags": [],
+        "price_range": "RM 10 - RM 20",
+        "image": "https://placehold.co/600x400/e0e0e0/333333?text=No+Image",
+        "rating": 0,
+        "google_maps": "",
+        "location": {
+            "lat": null,
+            "lng": null
+        },
+        "phone": "012-773 2281",
+        "halalStatus": "non_halal"
+    },
+    {
+        "id": 369,
+        "area": "Senai",
+        "name": "Kafe Dulang Ayan",
+        "name_en": "Kafe Dulang Ayan",
+        "subscriptionLevel": 0,
+        "manualStatus": "auto",
+        "address": "99, Jalan Impian Senai 1, Taman Impian Senai, 81400 Senai, Johor Darul Ta'zim",
+        "opening_hours": "",
+        "intro_zh": "",
+        "intro_en": "",
+        "category": [
+            "马来餐"
+        ],
+        "categories": [
+            "马来餐"
+        ],
+        "tags": [],
+        "price_range": "RM 10 - RM 20",
+        "image": "https://placehold.co/600x400/e0e0e0/333333?text=No+Image",
+        "rating": 0,
+        "google_maps": "",
+        "location": {
+            "lat": null,
+            "lng": null
+        },
+        "phone": "011-2084 2287",
+        "halalStatus": "muslim_owned"
+    },
+    {
+        "id": 370,
+        "area": "Senai",
+        "name": "#7 Beradik Restaurant • Senai",
+        "name_en": "#7 Beradik Restaurant (Senai)",
+        "intro_zh": "著名的马来餐厅，以独特的香料炸鸡椰浆饭（Nasi Lemak Ayam Goreng Berempah）闻名。酸辣鱼（Asam Pedas）和咖喱面也是必试佳肴，深受食客喜爱。",
+        "intro_en": "A famous Malay restaurant known for its Nasi Lemak with Spiced Fried Chicken. Asam Pedas and Curry Mee are also must-try dishes, highly favored by locals.",
+        "address": "Lot 5035, Batu 17 1/2, Jalan Air Hitam, Saleng, 81400 Senai, Johor",
+        "opening_hours": "Monday: 11am-4pm, 7pm-9pm\nTuesday: 11am-4pm, 7pm-9pm\nWednesday: 11am-4pm, 7pm-9pm\nThursday: 11am-4pm, 7pm-9pm\nFriday: 11am-4pm, 7pm-9pm\nSaturday: 11am-4pm, 7pm-9pm\nSunday: 11am-4pm, 7pm-9pm",
+        "category": [
+            "马来餐"
+        ],
+        "categories": [
+            "马来餐"
+        ],
+        "rating": 0,
+        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTbtWPJLxWTWgAK1VKMPDsS9EHe6BcyuHxYrg&s",
+        "subStalls": [],
+        "price_range": "RM 10-20",
+        "menu_link": "",
+        "website_link": "",
+        "delivery_link": "",
+        "isVegetarian": false,
+        "isNoBeef": false,
+        "manualStatus": "auto",
+        "branches": [],
+        "tags": [],
+        "subscriptionLevel": 0,
+        "isVIP": false,
+        "priority": 0,
+        "whatsappLink": "",
+        "location": {
+            "lat": null,
+            "lng": null
+        },
+        "halalStatus": "muslim_owned"
+    },
+    {
+        "id": 371,
+        "name": "Empire Sushi",
+        "name_en": "Empire Sushi",
+        "intro_zh": "马来西亚著名的外带寿司连锁店，提供各种新鲜制作的创意寿司，口味多样且价格亲民。深受各族群喜爱。",
+        "intro_en": "Malaysia's famous grab-and-go sushi chain, offering a wide variety of freshly made creative sushi at affordable prices. Loved by all communities.",
+        "address": "Lot GK1, Ground Floor, AEON Mall Kulaijaya, Persiaran Indahpura Utama, Bandar Indahpura, 81000 Kulai, Johor",
+        "opening_hours": "10am-10pm",
+        "category": [
+            "日本餐"
+        ],
+        "categories": [
+            "日本餐"
+        ],
+        "rating": 0,
+        "image": "https://placehold.co/600x400/ff9900/ffffff?text=Empire+Sushi",
+        "subStalls": [],
+        "price_range": "RM 10-20",
+        "menu_link": "",
+        "website_link": "https://empiresushi.com.my/",
+        "delivery_link": "",
+        "isVegetarian": false,
+        "isNoBeef": true,
+        "manualStatus": "auto",
+        "branches": [
+            {
+                "name": "Empire Sushi AEON Mall Kulaijaya",
+                "address": "Lot GK1, Ground Floor, AEON Mall Kulaijaya, Persiaran Indahpura Utama, Bandar Indahpura, 81000 Kulai, Johor"
+            }
+        ],
+        "tags": [
+            "Sushi",
+            "Halal",
+            "Grab & Go"
+        ],
+        "subscriptionLevel": 0,
+        "isVIP": false,
+        "priority": 0,
+        "whatsappLink": "",
+        "location": {
+            "lat": null,
+            "lng": null
+        },
+        "halalStatus": "certified"
+    }
+,
+    {
+    "id": 372,
+    "name": "Tulang Jr Cafe",
+    "name_en": "Tulang Jr Cafe",
+    "intro_zh": "",
+    "intro_en": "",
+    "address": "108, Jalan Impian Senai 2, Taman Impian Senai, 81400 Senai, Johor Darul Ta'zim",
+    "opening_hours": "",
+    "category": [
+        "马来餐"
+    ],
+    "categories": [
+        "马来餐"
+    ],
+    "rating": 0,
+    "image": "https://placehold.co/600x400/e0e0e0/333333?text=No+Image",
+    "subStalls": [],
+    "price_range": "RM 10-20",
+    "menu_link": "",
+    "website_link": "https://www.facebook.com/TulangChopNGrill/",
+    "delivery_link": "",
+    "isVegetarian": false,
+    "isNoBeef": true,
+    "manualStatus": "auto",
+    "branches": [],
+    "tags": [],
+    "subscriptionLevel": 0,
+    "isVIP": false,
+    "priority": 0,
+    "whatsappLink": "",
+    "location": {
+        "lat": null,
+        "lng": null
+    },
+    "phone": "0182559296",
+    "halalStatus": "muslim_owned"
+},
+    {
+    "id": 373,
+    "name": "Chicken Chop Senai (Kg Jaya Sepakat)",
+    "name_en": "Chicken Chop Senai (Kg Jaya Sepakat)",
+    "intro_zh": "",
+    "intro_en": "",
+    "address": "Taman Jaya Sepakat, 81400 Senai, Johor",
+    "opening_hours": "",
+    "category": [
+        "马来餐",
+        "西餐"
+    ],
+    "categories": [
+        "马来餐",
+        "西餐"
+    ],
+    "rating": 0,
+    "image": "https://placehold.co/600x400/e0e0e0/333333?text=No+Image",
+    "subStalls": [],
+    "price_range": "RM 10-20",
+    "menu_link": "",
+    "website_link": "",
+    "delivery_link": "",
+    "isVegetarian": false,
+    "isNoBeef": true,
+    "manualStatus": "auto",
+    "branches": [],
+    "tags": [],
+    "subscriptionLevel": 0,
+    "isVIP": false,
+    "priority": 0,
+    "whatsappLink": "",
+    "location": {
+        "lat": null,
+        "lng": null
+    },
+    "phone": "0182359412",
+    "halalStatus": "muslim_owned"
+},
+    {
+    "id": 374,
+    "name": "Nasi Kukus Scientex Utama",
+    "name_en": "Nasi Kukus Scientex Utama",
+    "intro_zh": "",
+    "intro_en": "",
+    "address": "527, Jln Persiaran Scientex Utama 1, Taman Scientex Utama, 81400 Senai, Johor Darul Ta'zim",
+    "opening_hours": "",
+    "category": [
+        "马来餐"
+    ],
+    "categories": [
+        "马来餐"
+    ],
+    "rating": 0,
+    "image": "https://placehold.co/600x400/e0e0e0/333333?text=No+Image",
+    "subStalls": [],
+    "price_range": "RM 10-20",
+    "menu_link": "",
+    "website_link": "",
+    "delivery_link": "",
+    "isVegetarian": false,
+    "isNoBeef": true,
+    "manualStatus": "auto",
+    "branches": [],
+    "tags": [],
+    "subscriptionLevel": 0,
+    "isVIP": false,
+    "priority": 0,
+    "whatsappLink": "",
+    "location": {
+        "lat": null,
+        "lng": null
+    },
+    "phone": "0172396335",
+    "halalStatus": "muslim_owned"
+},
+    {
+    "id": 375,
+    "name": "Restoran Nusantara Tok Rin",
+    "name_en": "Restoran Nusantara Tok Rin",
+    "intro_zh": "",
+    "intro_en": "",
+    "address": "503, Jln Persiaran Scientex Utama 1, Taman Scientex Utama, 81400 Senai, Johor Darul Ta'zim",
+    "opening_hours": "",
+    "category": [
+        "马来餐"
+    ],
+    "categories": [
+        "马来餐"
+    ],
+    "rating": 0,
+    "image": "https://placehold.co/600x400/e0e0e0/333333?text=No+Image",
+    "subStalls": [],
+    "price_range": "RM 10-20",
+    "menu_link": "",
+    "website_link": "https://www.facebook.com/p/Restoran-Nusantara-Tok-Rin-100083053162867/",
+    "delivery_link": "",
+    "isVegetarian": false,
+    "isNoBeef": true,
+    "manualStatus": "auto",
+    "branches": [],
+    "tags": [],
+    "subscriptionLevel": 0,
+    "isVIP": false,
+    "priority": 0,
+    "whatsappLink": "",
+    "location": {
+        "lat": null,
+        "lng": null
+    },
+    "phone": "",
+    "halalStatus": "muslim_owned"
+},
+    {
+    "id": 376,
+    "name": "Hungry Habibi",
+    "name_en": "Hungry Habibi",
+    "intro_zh": "",
+    "intro_en": "",
+    "address": "496, Jln Persiaran Scientex Utama 1, Taman Scientex Utama, 81400 Senai, Johor Darul Ta'zim",
+    "opening_hours": "12pm–11pm",
+    "category": [
+        "马来餐"
+    ],
+    "categories": [
+        "马来餐"
+    ],
+    "rating": 0,
+    "image": "https://placehold.co/600x400/e0e0e0/333333?text=No+Image",
+    "subStalls": [],
+    "price_range": "RM 10-20",
+    "menu_link": "",
+    "website_link": "",
+    "delivery_link": "",
+    "isVegetarian": false,
+    "isNoBeef": true,
+    "manualStatus": "auto",
+    "branches": [],
+    "tags": [],
+    "subscriptionLevel": 0,
+    "isVIP": false,
+    "priority": 0,
+    "whatsappLink": "",
+    "location": {
+        "lat": null,
+        "lng": null
+    },
+    "phone": "075984781",
+    "halalStatus": "muslim_owned"
+},
+    {
+    "id": 377,
+    "name": "Kelem Ice Cream Gula Apong",
+    "name_en": "Kelem Ice Cream Gula Apong",
+    "intro_zh": "",
+    "intro_en": "",
+    "address": "493, Jln Persiaran Scientex Utama 1, Taman Scientex Utama, 81400 Senai, Johor Darul Ta'zim",
+    "opening_hours": "11:30am–10:30pm",
+    "category": [
+        "蛋糕甜点"
+    ],
+    "categories": [
+        "蛋糕甜点"
+    ],
+    "rating": 0,
+    "image": "https://placehold.co/600x400/e0e0e0/333333?text=No+Image",
+    "subStalls": [],
+    "price_range": "RM 10-20",
+    "menu_link": "",
+    "website_link": "",
+    "delivery_link": "",
+    "isVegetarian": false,
+    "isNoBeef": true,
+    "manualStatus": "auto",
+    "branches": [],
+    "tags": [],
+    "subscriptionLevel": 0,
+    "isVIP": false,
+    "priority": 0,
+    "whatsappLink": "",
+    "location": {
+        "lat": null,
+        "lng": null
+    },
+    "phone": "0105706367",
+    "halalStatus": "muslim_owned"
+},
+    {
+    "id": 378,
+    "name": "Happy Tomyam Kitchen Restaurant",
+    "name_en": "Happy Tomyam Kitchen Restaurant",
+    "intro_zh": "",
+    "intro_en": "",
+    "address": "480, Jln Persiaran Scientex Utama 1, TAMAN SCIENTEX UTAMA, 81400 Senai, Johor Darul Ta'zim",
+    "opening_hours": "",
+    "category": [
+        "马来餐"
+    ],
+    "categories": [
+        "马来餐"
+    ],
+    "rating": 0,
+    "image": "https://placehold.co/600x400/e0e0e0/333333?text=No+Image",
+    "subStalls": [],
+    "price_range": "RM 10-20",
+    "menu_link": "",
+    "website_link": "",
+    "delivery_link": "",
+    "isVegetarian": false,
+    "isNoBeef": true,
+    "manualStatus": "auto",
+    "branches": [],
+    "tags": [],
+    "subscriptionLevel": 0,
+    "isVIP": false,
+    "priority": 0,
+    "whatsappLink": "",
+    "location": {
+        "lat": null,
+        "lng": null
+    },
+    "phone": "01162027215",
+    "halalStatus": "muslim_owned"
+},
+    {
+    "id": 379,
+    "name": "Nasi Kandar Mamu",
+    "name_en": "Nasi Kandar Mamu",
+    "intro_zh": "",
+    "intro_en": "",
+    "address": "472 & 473, Jln Persiaran Scientex Utama 1, Taman Teknologi Johor, 81400 Johor Bahru, Johor Darul Ta'zim",
+    "opening_hours": "",
+    "category": [
+        "印度档"
+    ],
+    "categories": [
+        "印度档"
+    ],
+    "rating": 0,
+    "image": "https://placehold.co/600x400/e0e0e0/333333?text=No+Image",
+    "subStalls": [],
+    "price_range": "RM 10-20",
+    "menu_link": "",
+    "website_link": "",
+    "delivery_link": "",
+    "isVegetarian": false,
+    "isNoBeef": true,
+    "manualStatus": "auto",
+    "branches": [],
+    "tags": [],
+    "subscriptionLevel": 0,
+    "isVIP": false,
+    "priority": 0,
+    "whatsappLink": "",
+    "location": {
+        "lat": null,
+        "lng": null
+    },
+    "phone": "075988934",
+    "halalStatus": "muslim_owned"
+},
+    {
+    "id": 380,
+    "name": "DeliC Cafe",
+    "name_en": "DeliC Cafe",
+    "intro_zh": "",
+    "intro_en": "",
+    "address": "456, Jln Persiaran Scientex Utama 1, Tmn, Jln Scientex Utama, 81400 Senai, Johor Darul Ta'zim",
+    "opening_hours": "",
+    "category": [
+        "Cafe",
+        "马来餐"
+    ],
+    "categories": [
+        "Cafe",
+        "马来餐"
+    ],
+    "rating": 0,
+    "image": "https://placehold.co/600x400/e0e0e0/333333?text=No+Image",
+    "subStalls": [],
+    "price_range": "RM 10-20",
+    "menu_link": "",
+    "website_link": "",
+    "delivery_link": "",
+    "isVegetarian": false,
+    "isNoBeef": true,
+    "manualStatus": "auto",
+    "branches": [],
+    "tags": [],
+    "subscriptionLevel": 0,
+    "isVIP": false,
+    "priority": 0,
+    "whatsappLink": "",
+    "location": {
+        "lat": null,
+        "lng": null
+    },
+    "phone": "0106627020",
+    "halalStatus": "muslim_owned"
+},
+    {
+    "id": 381,
+    "name": "Naseeb Capati Nan Senai",
+    "name_en": "Naseeb Capati Nan Senai",
+    "intro_zh": "",
+    "intro_en": "",
+    "address": "446, Jln Persiaran Scientex Utama 1, Taman Teknologi Johor, 81400 Senai, Johor Darul Ta'zim",
+    "opening_hours": "",
+    "category": [
+        "印度档"
+    ],
+    "categories": [
+        "印度档"
+    ],
+    "rating": 0,
+    "image": "https://placehold.co/600x400/e0e0e0/333333?text=No+Image",
+    "subStalls": [],
+    "price_range": "RM 10-20",
+    "menu_link": "",
+    "website_link": "",
+    "delivery_link": "",
+    "isVegetarian": false,
+    "isNoBeef": true,
+    "manualStatus": "auto",
+    "branches": [],
+    "tags": [],
+    "subscriptionLevel": 0,
+    "isVIP": false,
+    "priority": 0,
+    "whatsappLink": "",
+    "location": {
+        "lat": null,
+        "lng": null
+    },
+    "phone": "0167359364",
+    "halalStatus": "muslim_owned"
+},
+    {
+    "id": 382,
+    "name": "Nasi Royale JB",
+    "name_en": "Nasi Royale JB",
+    "intro_zh": "",
+    "intro_en": "",
+    "address": "NO. 577, Jalan jaya sepakat, Kampung Jaya Sepakat, 81400 Senai, Johor Darul Ta'zim",
+    "opening_hours": "",
+    "category": [
+        "马来餐"
+    ],
+    "categories": [
+        "马来餐"
+    ],
+    "rating": 0,
+    "image": "https://placehold.co/600x400/e0e0e0/333333?text=No+Image",
+    "subStalls": [],
+    "price_range": "RM 10-20",
+    "menu_link": "",
+    "website_link": "",
+    "delivery_link": "",
+    "isVegetarian": false,
+    "isNoBeef": true,
+    "manualStatus": "auto",
+    "branches": [],
+    "tags": [],
+    "subscriptionLevel": 0,
+    "isVIP": false,
+    "priority": 0,
+    "whatsappLink": "",
+    "location": {
+        "lat": null,
+        "lng": null
+    },
+    "phone": "0187934005",
+    "halalStatus": "muslim_owned"
+},
+    {
+    "id": 383,
+    "name": "Warung Mee Bandung Pak Abu",
+    "name_en": "Warung Mee Bandung Pak Abu",
+    "intro_zh": "",
+    "intro_en": "",
+    "address": "30, Jalan Berkat 2, Kampung Jaya Sepakat, 81400 Senai, Johor Darul Ta'zim",
+    "opening_hours": "8am-10pm\nSaturday: Closed",
+    "category": [
+        "马来餐"
+    ],
+    "categories": [
+        "马来餐"
+    ],
+    "rating": 0,
+    "image": "https://placehold.co/600x400/e0e0e0/333333?text=No+Image",
+    "subStalls": [],
+    "price_range": "RM 10-20",
+    "menu_link": "",
+    "website_link": "",
+    "delivery_link": "",
+    "isVegetarian": false,
+    "isNoBeef": true,
+    "manualStatus": "auto",
+    "branches": [],
+    "tags": [],
+    "subscriptionLevel": 0,
+    "isVIP": false,
+    "priority": 0,
+    "whatsappLink": "",
+    "location": {
+        "lat": null,
+        "lng": null
+    },
+    "phone": "075992279",
+    "halalStatus": "muslim_owned"
+},
+    {
+    "id": 384,
+    "name": "Bakso Beranak Kulai",
+    "name_en": "Bakso Beranak Kulai",
+    "intro_zh": "",
+    "intro_en": "",
+    "address": "Jln Utama 1 Taman Bintang Utama 1 kulai Kulai, 81400 Senai, Johor Darul Ta'zim",
+    "opening_hours": "11am–11pm",
+    "category": [
+        "马来餐"
+    ],
+    "categories": [
+        "马来餐"
+    ],
+    "rating": 0,
+    "image": "https://placehold.co/600x400/e0e0e0/333333?text=No+Image",
+    "subStalls": [],
+    "price_range": "RM 10-20",
+    "menu_link": "",
+    "website_link": "",
+    "delivery_link": "",
+    "isVegetarian": false,
+    "isNoBeef": true,
+    "manualStatus": "auto",
+    "branches": [],
+    "tags": [],
+    "subscriptionLevel": 0,
+    "isVIP": false,
+    "priority": 0,
+    "whatsappLink": "",
+    "location": {
+        "lat": null,
+        "lng": null
+    },
+    "phone": "0193770456",
+    "halalStatus": "muslim_owned"
+},
+    {
+    "id": 385,
+    "name": "泉记烧腊.烧猪专卖店",
+    "name_en": "Quah Ji Restaurant",
+    "intro_zh": "",
+    "intro_en": "",
+    "address": "279 Jalan Utama 2 Taman Bintang utama 81400 senai johor Senai, 81400 Kulai, Johor Darul Ta'zim",
+    "opening_hours": "6:30am–2:30pm\nSunday: Closed",
+    "category": [
+        "饭类"
+    ],
+    "categories": [
+        "饭类"
+    ],
+    "rating": 0,
+    "image": "https://placehold.co/600x400/e0e0e0/333333?text=No+Image",
+    "subStalls": [],
+    "price_range": "RM 10-20",
+    "menu_link": "",
+    "website_link": "https://www.facebook.com/qjroasted/",
+    "delivery_link": "",
+    "isVegetarian": false,
+    "isNoBeef": false,
+    "manualStatus": "auto",
+    "branches": [],
+    "tags": [
+        "烧腊",
+        "烧猪"
+    ],
+    "subscriptionLevel": 0,
+    "isVIP": false,
+    "priority": 0,
+    "whatsappLink": "",
+    "location": {
+        "lat": null,
+        "lng": null
+    },
+    "phone": "0127125822",
+    "halalStatus": "non_halal"
+},
+    {
+    "id": 386,
+    "name": "三素公餐厅",
+    "name_en": "Uncle Vege Restaurant",
+    "intro_zh": "",
+    "intro_en": "",
+    "address": "280, Jalan Utama 2, Taman Bintang Utama, 81400 Senai, Johor Darul Ta'zim",
+    "opening_hours": "",
+    "category": [
+        "饭类"
+    ],
+    "categories": [
+        "饭类"
+    ],
+    "rating": 0,
+    "image": "https://placehold.co/600x400/e0e0e0/333333?text=No+Image",
+    "subStalls": [],
+    "price_range": "RM 10-20",
+    "menu_link": "",
+    "website_link": "",
+    "delivery_link": "",
+    "isVegetarian": true,
+    "isNoBeef": false,
+    "manualStatus": "auto",
+    "branches": [],
+    "tags": [
+        "素食"
+    ],
+    "subscriptionLevel": 0,
+    "isVIP": false,
+    "priority": 0,
+    "whatsappLink": "",
+    "location": {
+        "lat": null,
+        "lng": null
+    },
+    "phone": "0102818668",
+    "halalStatus": "no_pork"
+},
+    {
+    "id": 387,
+    "name": "士乃大众",
+    "name_en": "Restoran Makanan Hakka",
+    "intro_zh": "",
+    "intro_en": "",
+    "address": "294, Jalan Utama 2, Taman Bintang Utama, 81400 Senai, Johor Darul Ta'zim",
+    "opening_hours": "10am–3:30pm\nMonday: Closed",
+    "category": [
+        "煮炒海鲜楼"
+    ],
+    "categories": [
+        "煮炒海鲜楼"
+    ],
+    "rating": 0,
+    "image": "https://placehold.co/600x400/e0e0e0/333333?text=No+Image",
+    "subStalls": [],
+    "price_range": "RM 10-20",
+    "menu_link": "",
+    "website_link": "https://www.facebook.com/profile.php?id=100054275091440#",
+    "delivery_link": "",
+    "isVegetarian": false,
+    "isNoBeef": false,
+    "manualStatus": "auto",
+    "branches": [],
+    "tags": [
+        "客家菜"
+    ],
+    "subscriptionLevel": 0,
+    "isVIP": false,
+    "priority": 0,
+    "whatsappLink": "",
+    "location": {
+        "lat": null,
+        "lng": null
+    },
+    "phone": "0167874900",
+    "halalStatus": "non_halal"
+},
+    {
+    "id": 388,
+    "name": "Mastura Tomyam Seafood",
+    "name_en": "Mastura Tomyam Seafood",
+    "intro_zh": "",
+    "intro_en": "",
+    "address": "300, Jalan Utama 2, Taman Bintang Utama, 81400 Senai, Johor Darul Ta'zim",
+    "opening_hours": "12pm–12am",
+    "category": [
+        "马来餐"
+    ],
+    "categories": [
+        "马来餐"
+    ],
+    "rating": 0,
+    "image": "https://placehold.co/600x400/e0e0e0/333333?text=No+Image",
+    "subStalls": [],
+    "price_range": "RM 10-20",
+    "menu_link": "",
+    "website_link": "",
+    "delivery_link": "",
+    "isVegetarian": false,
+    "isNoBeef": true,
+    "manualStatus": "auto",
+    "branches": [],
+    "tags": [],
+    "subscriptionLevel": 0,
+    "isVIP": false,
+    "priority": 0,
+    "whatsappLink": "",
+    "location": {
+        "lat": null,
+        "lng": null
+    },
+    "phone": "0177536597",
+    "halalStatus": "muslim_owned"
+},
+    {
+    "id": 389,
+    "name": "莊园松鱼头",
+    "name_en": "Restoran Zhuang Yuan",
+    "intro_zh": "",
+    "intro_en": "",
+    "address": "295, Jalan Utama 2, Taman Bintang Utama, 81400 Senai, Johor Darul Ta'zim",
+    "opening_hours": "10am–4pm\nSunday: Closed",
+    "category": [
+        "饭类"
+    ],
+    "categories": [
+        "饭类"
+    ],
+    "rating": 0,
+    "image": "https://placehold.co/600x400/e0e0e0/333333?text=No+Image",
+    "subStalls": [],
+    "price_range": "RM 10-20",
+    "menu_link": "",
+    "website_link": "",
+    "delivery_link": "",
+    "isVegetarian": false,
+    "isNoBeef": false,
+    "manualStatus": "auto",
+    "branches": [],
+    "tags": [
+        "松鱼头"
+    ],
+    "subscriptionLevel": 0,
+    "isVIP": false,
+    "priority": 0,
+    "whatsappLink": "",
+    "location": {
+        "lat": null,
+        "lng": null
+    },
+    "phone": "0167120456",
+    "halalStatus": "non_halal"
+},
+    {
+    "id": 390,
+    "name": "Restoran Bunga Dahlia",
+    "name_en": "Restoran Bunga Dahlia",
+    "intro_zh": "",
+    "intro_en": "",
+    "address": "88, Jln Bintang, Taman Bintang, 81400 Senai, Johor Darul Ta'zim",
+    "opening_hours": "6:30am–6pm\nMonday: Closed",
+    "category": [
+        "马来餐"
+    ],
+    "categories": [
+        "马来餐"
+    ],
+    "rating": 0,
+    "image": "https://placehold.co/600x400/e0e0e0/333333?text=No+Image",
+    "subStalls": [],
+    "price_range": "RM 10-20",
+    "menu_link": "",
+    "website_link": "https://www.facebook.com/p/Restoran-Bunga-Dahlia-100066599084975/",
+    "delivery_link": "",
+    "isVegetarian": false,
+    "isNoBeef": true,
+    "manualStatus": "auto",
+    "branches": [],
+    "tags": [],
+    "subscriptionLevel": 0,
+    "isVIP": false,
+    "priority": 0,
+    "whatsappLink": "",
+    "location": {
+        "lat": null,
+        "lng": null
+    },
+    "phone": "0192895929",
+    "halalStatus": "muslim_owned"
+},
+    {
+    "id": 391,
+    "name": "瑞记海南鸡饭",
+    "name_en": "Swee Kee Hainan Chicken Rice",
+    "intro_zh": "",
+    "intro_en": "",
+    "address": "98, Jln Bintang, Taman Bintang, 81400 Senai, Johor Darul Ta'zim",
+    "opening_hours": "10:30am–7pm\nMonday: Closed",
+    "category": [
+        "饭类"
+    ],
+    "categories": [
+        "饭类"
+    ],
+    "rating": 0,
+    "image": "https://placehold.co/600x400/e0e0e0/333333?text=No+Image",
+    "subStalls": [],
+    "price_range": "RM 10-20",
+    "menu_link": "",
+    "website_link": "",
+    "delivery_link": "",
+    "isVegetarian": false,
+    "isNoBeef": false,
+    "manualStatus": "auto",
+    "branches": [],
+    "tags": [
+        "海南鸡饭"
+    ],
+    "subscriptionLevel": 0,
+    "isVIP": false,
+    "priority": 0,
+    "whatsappLink": "",
+    "location": {
+        "lat": null,
+        "lng": null
+    },
+    "phone": "075984231",
+    "halalStatus": "non_halal"
+},
+    {
+    "id": 392,
+    "name": "Masal Vadai Restaurant",
+    "name_en": "Masal Vadai Restaurant",
+    "intro_zh": "",
+    "intro_en": "",
+    "address": "108, Jln Bintang, Taman Bintang, 81400 Senai, Johor Darul Ta'zim",
+    "opening_hours": "",
+    "category": [
+        "马来餐"
+    ],
+    "categories": [
+        "马来餐"
+    ],
+    "rating": 0,
+    "image": "https://placehold.co/600x400/e0e0e0/333333?text=No+Image",
+    "subStalls": [],
+    "price_range": "RM 10-20",
+    "menu_link": "",
+    "website_link": "",
+    "delivery_link": "",
+    "isVegetarian": false,
+    "isNoBeef": true,
+    "manualStatus": "auto",
+    "branches": [],
+    "tags": [],
+    "subscriptionLevel": 0,
+    "isVIP": false,
+    "priority": 0,
+    "whatsappLink": "",
+    "location": {
+        "lat": null,
+        "lng": null
+    },
+    "phone": "0143334622",
+    "halalStatus": "muslim_owned"
+},
+    {
+    "id": 393,
+    "name": "Restoran Farook 23Jam",
+    "name_en": "Restoran Farook 23Jam",
+    "intro_zh": "",
+    "intro_en": "",
+    "address": "11, Jalan Pakis, Taman Handal, 81400 Senai, Johor Darul Ta'zim",
+    "opening_hours": "",
+    "category": [
+        "印度档"
+    ],
+    "categories": [
+        "印度档"
+    ],
+    "rating": 0,
+    "image": "https://placehold.co/600x400/e0e0e0/333333?text=No+Image",
+    "subStalls": [],
+    "price_range": "RM 10-20",
+    "menu_link": "",
+    "website_link": "",
+    "delivery_link": "",
+    "isVegetarian": false,
+    "isNoBeef": true,
+    "manualStatus": "auto",
+    "branches": [],
+    "tags": [],
+    "subscriptionLevel": 0,
+    "isVIP": false,
+    "priority": 0,
+    "whatsappLink": "",
+    "location": {
+        "lat": null,
+        "lng": null
+    },
+    "phone": "075908918",
+    "halalStatus": "muslim_owned"
+},
+    {
+    "id": 394,
+    "name": "Restaurant Awe Kelantan",
+    "name_en": "Restaurant Awe Kelantan",
+    "intro_zh": "",
+    "intro_en": "",
+    "address": "Taman Senai Baru, 81400 Senai, Johor",
+    "opening_hours": "",
+    "category": [
+        "马来餐"
+    ],
+    "categories": [
+        "马来餐"
+    ],
+    "rating": 0,
+    "image": "https://placehold.co/600x400/e0e0e0/333333?text=No+Image",
+    "subStalls": [],
+    "price_range": "RM 10-20",
+    "menu_link": "",
+    "website_link": "",
+    "delivery_link": "",
+    "isVegetarian": false,
+    "isNoBeef": true,
+    "manualStatus": "auto",
+    "branches": [],
+    "tags": [],
+    "subscriptionLevel": 0,
+    "isVIP": false,
+    "priority": 0,
+    "whatsappLink": "",
+    "location": {
+        "lat": null,
+        "lng": null
+    },
+    "phone": "",
+    "halalStatus": "muslim_owned"
+},
+    {
+    "id": 395,
+    "name": "Lakkias Curry House",
+    "name_en": "Lakkias Curry House",
+    "intro_zh": "",
+    "intro_en": "",
+    "address": "41 & 42, 41 42, Jalan Cyber 16, Kawasan Perindustrian Senai Fasa 3, 81400 Senai, Johor",
+    "opening_hours": "",
+    "category": [
+        "印度档"
+    ],
+    "categories": [
+        "印度档"
+    ],
+    "rating": 0,
+    "image": "https://placehold.co/600x400/e0e0e0/333333?text=No+Image",
+    "subStalls": [],
+    "price_range": "RM 10-20",
+    "menu_link": "",
+    "website_link": "",
+    "delivery_link": "",
+    "isVegetarian": false,
+    "isNoBeef": true,
+    "manualStatus": "auto",
+    "branches": [],
+    "tags": [],
+    "subscriptionLevel": 0,
+    "isVIP": false,
+    "priority": 0,
+    "whatsappLink": "",
+    "location": {
+        "lat": null,
+        "lng": null
+    },
+    "phone": "0173737922",
+    "halalStatus": "muslim_owned"
+},
+    {
+    "id": 396,
+    "name": "Asam Pedas Jb",
+    "name_en": "Asam Pedas Jb",
+    "intro_zh": "",
+    "intro_en": "",
+    "address": "Kawasan Perindustrian Senai Fasa 3, 81400 Senai, Johor",
+    "opening_hours": "10am–9pm\nFriday: Closed\nSaturday: Closed\nSunday: Closed",
+    "category": [
+        "马来餐"
+    ],
+    "categories": [
+        "马来餐"
+    ],
+    "rating": 0,
+    "image": "https://placehold.co/600x400/e0e0e0/333333?text=No+Image",
+    "subStalls": [],
+    "price_range": "RM 10-20",
+    "menu_link": "",
+    "website_link": "",
+    "delivery_link": "",
+    "isVegetarian": false,
+    "isNoBeef": true,
+    "manualStatus": "auto",
+    "branches": [],
+    "tags": [],
+    "subscriptionLevel": 0,
+    "isVIP": false,
+    "priority": 0,
+    "whatsappLink": "",
+    "location": {
+        "lat": null,
+        "lng": null
+    },
+    "phone": "0178430483",
+    "halalStatus": "muslim_owned"
+},
+    {
+    "id": 397,
+    "name": "Chamek",
+    "name_en": "Chamek",
+    "intro_zh": "",
+    "intro_en": "",
+    "address": "30, Jalan Terminal 5, 81400 Senai, Johor",
+    "opening_hours": "7am–7pm",
+    "category": [
+        "马来餐"
+    ],
+    "categories": [
+        "马来餐"
+    ],
+    "rating": 0,
+    "image": "https://placehold.co/600x400/e0e0e0/333333?text=No+Image",
+    "subStalls": [],
+    "price_range": "RM 10-20",
+    "menu_link": "",
+    "website_link": "",
+    "delivery_link": "",
+    "isVegetarian": false,
+    "isNoBeef": true,
+    "manualStatus": "auto",
+    "branches": [],
+    "tags": [],
+    "subscriptionLevel": 0,
+    "isVIP": false,
+    "priority": 0,
+    "whatsappLink": "",
+    "location": {
+        "lat": null,
+        "lng": null
+    },
+    "phone": "0173603215",
+    "halalStatus": "muslim_owned"
+},
+    {
+    "id": 398,
+    "name": "Omak Den Restaurant",
+    "name_en": "Omak Den Restaurant",
+    "intro_zh": "",
+    "intro_en": "",
+    "address": "Jalan Jumbo, 81250 Senai, Johor Darul Ta'zim",
+    "opening_hours": "8am–5pm\nSunday: Closed",
+    "category": [
+        "马来餐"
+    ],
+    "categories": [
+        "马来餐"
+    ],
+    "rating": 0,
+    "image": "https://placehold.co/600x400/e0e0e0/333333?text=No+Image",
+    "subStalls": [],
+    "price_range": "RM 10-20",
+    "menu_link": "",
+    "website_link": "",
+    "delivery_link": "",
+    "isVegetarian": false,
+    "isNoBeef": true,
+    "manualStatus": "auto",
+    "branches": [],
+    "tags": [],
+    "subscriptionLevel": 0,
+    "isVIP": false,
+    "priority": 0,
+    "whatsappLink": "",
+    "location": {
+        "lat": null,
+        "lng": null
+    },
+    "phone": "0189810255",
+    "halalStatus": "muslim_owned"
+},
+    {
+        "id": 399,
+        "name": "Starbucks",
+        "name_en": "Starbucks",
+        "intro_zh": "星巴克（Starbucks）是全球最大的咖啡连锁店，以其高品质的烘焙咖啡豆和丰富的手工调制饮品而闻名。无论是经典的拿铁、卡布奇诺，还是季节限定的星冰乐，都能满足您的味蕾。舒适的环境和免费Wi-Fi，是工作、学习或与朋友聚会的理想场所。",
+        "intro_en": "Starbucks is the world's largest coffeehouse chain, known for its high-quality roasted coffee beans and handcrafted beverages. From classic Lattes and Cappuccinos to seasonal Frappuccinos, there's something for everyone. With a cozy atmosphere and free Wi-Fi, it's the perfect place to work, study, or catch up with friends.",
+        "address": "Multiple Locations in Kulai",
+        "opening_hours": "Daily: 10am - 10pm",
+        "category": [
+            "Cafe",
+            "饮品"
+        ],
+        "categories": [
+            "Cafe",
+            "饮品"
+        ],
+        "rating": 0,
+        "image": "https://upload.wikimedia.org/wikipedia/zh/thumb/d/d3/Starbucks_Corporation_Logo_2011.svg/440px-Starbucks_Corporation_Logo_2011.svg.png",
+        "subStalls": [],
+        "price_range": "RM 15-30",
+        "menu_link": "https://www.starbucks.com.my/menu",
+        "website_link": "https://www.starbucks.com.my",
+        "delivery_link": "https://www.foodpanda.my/chain/starbucks",
+        "isVegetarian": false,
+        "isNoBeef": true,
+        "manualStatus": "auto",
+        "branches": [
+            {
+                "name": "Starbucks Bandar Putra Kulai",
+                "address": "Lot No. G-OSE3/5/6, Ground Floor, Lebuh Putra Utama, Bandar Putra Kulai, 81000, Johor"
+            },
+            {
+                "name": "Starbucks AEON Mall Kulaijaya",
+                "address": "Lot G68, Ground Floor, AEON Mall Kulaijaya, Indahpura, 81000 Kulai, Johor"
+            },
+            {
+                "name": "Starbucks Johor Premium Outlets (JPO)",
+                "address": "Jalan Premium Outlets, Indahpura, 81000 Kulai, Johor"
+            }
+        ],
+        "tags": [
+            "Coffee",
+            "Dessert",
+            "Wifi",
+            "Aircon"
+        ],
+        "subscriptionLevel": 0,
+        "isVIP": false,
+        "priority": 0,
+        "whatsappLink": "",
+        "location": {
+            "lat": null,
+            "lng": null
+        },
+        "halalStatus": "certified"
     }
 ];

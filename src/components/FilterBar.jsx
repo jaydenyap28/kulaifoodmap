@@ -5,7 +5,8 @@ import {
   DndContext,
   closestCenter,
   KeyboardSensor,
-  PointerSensor,
+  MouseSensor,
+  TouchSensor,
   useSensor,
   useSensors,
 } from '@dnd-kit/core';
@@ -35,7 +36,7 @@ const SortableCategoryChip = ({ cat, selectedCategory, onSelectCategory, onDelet
     transition,
     opacity: isDragging ? 0.5 : 1,
     cursor: isAdmin ? 'grab' : 'pointer',
-    touchAction: isAdmin ? 'none' : 'manipulation'
+    touchAction: 'manipulation'
   };
 
   return (
@@ -93,9 +94,15 @@ const FilterBar = ({
   const [isEditMode, setIsEditMode] = useState(false);
 
   const sensors = useSensors(
-    useSensor(PointerSensor, {
+    useSensor(MouseSensor, {
         activationConstraint: {
-            distance: 8, 
+            distance: 10, 
+        },
+    }),
+    useSensor(TouchSensor, {
+        activationConstraint: {
+            delay: 250,
+            tolerance: 5,
         },
     }),
     useSensor(KeyboardSensor, {

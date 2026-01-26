@@ -311,7 +311,7 @@ const RestaurantCard = ({ restaurant, isAdmin, onUpdate, onDelete, onClick, onCa
             )}
 
             {/* Tags Row */}
-            {(restaurant.categories?.length > 0 || restaurant.isVegetarian) && (
+            {(restaurant.categories?.length > 0 || restaurant.isVegetarian || (restaurant.halalStatus && restaurant.halalStatus !== 'non_halal')) && (
                 <div className="flex flex-wrap gap-1 mb-2">
                     {/* Categories */}
                     {restaurant.categories && restaurant.categories.slice(0, 3).map(cat => (
@@ -331,6 +331,23 @@ const RestaurantCard = ({ restaurant, isAdmin, onUpdate, onDelete, onClick, onCa
                     {restaurant.isVegetarian && (
                         <span className="px-1.5 py-0.5 bg-emerald-900/50 text-emerald-400 border border-emerald-800 text-[10px] rounded flex items-center gap-1 leading-none">
                             <Leaf size={10} /> 素食
+                        </span>
+                    )}
+
+                    {/* Halal Status */}
+                    {restaurant.halalStatus === 'certified' && (
+                        <span className="px-1.5 py-0.5 bg-emerald-900/50 text-emerald-400 border border-emerald-800 text-[10px] rounded flex items-center gap-1 leading-none">
+                            ✅ Certified
+                        </span>
+                    )}
+                    {restaurant.halalStatus === 'muslim_owned' && (
+                        <span className="px-1.5 py-0.5 bg-green-900/50 text-green-400 border border-green-800 text-[10px] rounded flex items-center gap-1 leading-none">
+                            ☪️ Muslim Owned
+                        </span>
+                    )}
+                    {restaurant.halalStatus === 'no_pork' && (
+                        <span className="px-1.5 py-0.5 bg-orange-900/50 text-orange-400 border border-orange-800 text-[10px] rounded flex items-center gap-1 leading-none">
+                            🍖 No Pork
                         </span>
                     )}
                 </div>

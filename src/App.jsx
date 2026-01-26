@@ -1,4 +1,5 @@
 import React, { useState, useEffect, useRef } from 'react';
+import { useNavigate, useLocation, matchPath } from 'react-router-dom';
 import { initialRestaurants } from './data/restaurants';
 import HeroCardStack from './components/HeroCardStack';
 import ResultModal from './components/ResultModal';
@@ -26,6 +27,8 @@ const DATA_VERSION = 'v35';
 
 function App() {
   const { t, i18n } = useTranslation();
+  const navigate = useNavigate();
+  const location = useLocation();
 
   useEffect(() => {
     // Check version and clear if needed
@@ -370,6 +373,28 @@ function App() {
   });
 
   const [selectedRestaurant, setSelectedRestaurant] = useState(null);
+
+  // Sync URL with Selected Restaurant
+  useEffect(() => {
+    const match = matchPath('/restaurant/:id', location.pathname);
+    if (match && match.params.id) {
+        const id = parseInt(match.params.id, 10);
+        const restaurant = restaurants.find(r => r.id === id);
+        if (restaurant) {
+            // Only update if not already selected to avoid loops/re-renders
+            if (selectedRestaurant?.id !== restaurant.id) {
+                setSelectedRestaurant(restaurant);
+                // Increment view count when opened via URL (or navigation)
+                analytics.incrementView(restaurant.id);
+            }
+        }
+    } else {
+        // If URL is not /restaurant/:id, ensure modal is closed
+        if (selectedRestaurant) {
+            setSelectedRestaurant(null);
+        }
+    }
+  }, [location.pathname, restaurants]);
   const [selectedCategory, setSelectedCategory] = useState([]); // Changed to array for multi-select
   const [selectedArea, setSelectedArea] = useState(null); // New Area State
   const [showOpenOnly, setShowOpenOnly] = useState(false);
@@ -726,8 +751,8 @@ function App() {
   };
 
   const handleRestaurantClick = (restaurant) => {
-      analytics.incrementView(restaurant.id);
-      setSelectedRestaurant(restaurant);
+      // Navigate to the URL, let the useEffect handle the state update and analytics
+      navigate(`/restaurant/${restaurant.id}`);
   };
 
   return (
@@ -992,7 +1017,7 @@ function App() {
       {selectedRestaurant && (
         <ResultModal 
           restaurant={selectedRestaurant} 
-          onClose={() => setSelectedRestaurant(null)} 
+          onClose={() => navigate('/')} 
           onAddReview={handleAddReview}
           isAdmin={isAdmin}
           onUpdateRestaurant={handleUpdateRestaurant}
