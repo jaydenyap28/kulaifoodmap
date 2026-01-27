@@ -16412,5 +16412,86 @@ export const initialRestaurants = [
         },
         "halalStatus": "non_halal",
         "dietaryOption": null
+    },
+    {
+        "id": 422,
+        "area": "Indahpura",
+        "name": "银河龙记美食中心",
+        "name_en": "Galaxy Dragon Food and Beverage",
+        "intro_zh": "位于Indahpura的大型美食中心，提供多样化的本地美食选择。营业至凌晨，是晚餐和宵夜的好去处。",
+        "intro_en": "Large food court in Indahpura offering a diverse range of local food options. Open until late night, making it a great spot for dinner and supper.",
+        "address": "434, Jalan Kenanga 29/10, Bandar Indahpura, 81000 Kulai, Johor Darul Ta'zim",
+        "opening_hours": "Monday: 4pm - 2am\nTuesday: 4pm - 2am\nWednesday: 4pm - 2am\nThursday: 4pm - 2am\nFriday: 4pm - 2am\nSaturday: 4pm - 2am\nSunday: 4pm - 2am",
+        "category": [
+            "咖啡店"
+        ],
+        "categories": [
+            "咖啡店"
+        ],
+        "rating": 0,
+        "image": "https://i.ibb.co/hxLHhfHr/IMG-20260127-135600.jpg",
+        "subStalls": [
+            {
+                "name": "",
+                "image": "https://i.ibb.co/hxLHhfHr/IMG-20260127-135600.jpg"
+            },
+            {
+                "name": "",
+                "image": "https://i.ibb.co/bM9F43tT/IMG-20260127-135608.jpg"
+            },
+            {
+                "name": "",
+                "image": "https://i.ibb.co/Xr49VRgk/IMG-20260127-135617.jpg"
+            },
+            {
+                "name": "",
+                "image": "https://i.ibb.co/QvP0LSbp/IMG-20260127-135623.jpg"
+            },
+            {
+                "name": "",
+                "image": "https://i.ibb.co/1fYqnqr1/IMG-20260127-135632.jpg"
+            },
+            {
+                "name": "",
+                "image": "https://i.ibb.co/202TdRj4/IMG-20260127-135639.jpg"
+            },
+            {
+                "name": "",
+                "image": "https://i.ibb.co/Ld95ZHpM/IMG-20260127-135647.jpg"
+            },
+            {
+                "name": "",
+                "image": "https://i.ibb.co/6Jcz8H14/IMG-20260127-135656.jpg"
+            },
+            {
+                "name": "",
+                "image": "https://i.ibb.co/spj5FTFN/IMG-20260127-135702.jpg"
+            }
+        ],
+        "price_range": "RM 10-20",
+        "menu_link": "",
+        "website_link": "https://www.facebook.com/galaxydragonfoodnbeverage/",
+        "delivery_link": "",
+        "isVegetarian": false,
+        "isNoBeef": false,
+        "manualStatus": "auto",
+        "branches": [],
+        "tags": [
+            "平价",
+            "晚餐",
+            "宵夜",
+            "适合聚餐"
+        ],
+        "subscriptionLevel": 0,
+        "isVIP": false,
+        "priority": 0,
+        "whatsappLink": "https://wa.me/6076600823",
+        "location": {
+            "lat": null,
+            "lng": null
+        },
+        "phone": "07-660 0823",
+        "halalStatus": "non_halal",
+        "dietaryOption": null
     }
 ];
