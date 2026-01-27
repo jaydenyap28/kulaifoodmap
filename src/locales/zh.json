@@ -11,7 +11,8 @@
     "not_enough": "商家不足以转动 (Need 2+)",
     "what_to_eat": "今天吃什么？",
     "winner_badge": "今日之选!",
-    "support_btn": "觉得好用？请我喝杯 Kopi ☕️"
+    "support_btn": "觉得好用？请我喝一杯Kopi ☕",
+    "ai_tagline": "专治“随便”和“都可以”问问AI"
   },
   "filter": {
     "enter_new_cat": "请输入新分类名称:",

@@ -993,7 +993,7 @@ function App() {
             >
                 <Sparkles size={18} className="text-purple-300 group-hover:text-white transition-colors" />
                 <span className="bg-clip-text text-transparent bg-gradient-to-r from-purple-200 to-blue-200 group-hover:text-white group-hover:bg-none">
-                    专治“随便”和“都可以”问问AI
+                    {t('hero.ai_tagline')}
                 </span>
             </button>
         </div>
@@ -1005,7 +1005,7 @@ function App() {
                 className="flex items-center gap-2 px-6 py-2.5 rounded-full bg-gradient-to-r from-amber-500 to-orange-600 text-white font-bold shadow-lg hover:scale-105 active:scale-95 transition-all duration-300 border border-white/20"
             >
                 <Coffee size={18} />
-                <span>觉得好用？请我喝一杯Kopi ☕</span>
+                <span>{t('hero.support_btn')}</span>
             </button>
         </div>
       </div>
