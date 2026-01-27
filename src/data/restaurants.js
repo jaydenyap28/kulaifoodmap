@@ -14775,5 +14775,64 @@ export const initialRestaurants = [
             "lng": null
         },
         "halalStatus": "certified"
+    },
+    {
+        "id": 400,
+        "name": "Bask Bear Coffee",
+        "name_en": "Bask Bear Coffee",
+        "address": "Multiple Locations in Kulai & Senai",
+        "area": "Bandar Putra",
+        "opening_hours": "Daily: 10am - 10pm",
+        "intro_zh": "马来西亚领先的创新咖啡品牌，以特调咖啡和著名的Bask Bear吐司闻名。结合了独特的咖啡风味和酥脆的吐司，是下午茶或轻食的绝佳选择。",
+        "intro_en": "Malaysia's leading innovative coffee brand, famous for its specialty coffee and signature Bask Bear Toast. Combining unique coffee flavors with crispy toast, it's a perfect choice for tea time or a light meal.",
+        "category": [
+            "Cafe",
+            "饮品",
+            "蛋糕甜点"
+        ],
+        "categories": [
+            "Cafe",
+            "饮品",
+            "蛋糕甜点"
+        ],
+        "rating": 0,
+        "image": "https://images.deliveryhero.io/image/fd-my/LH/v9yn-hero.jpg",
+        "price_range": "RM 10-25",
+        "menu_link": "https://www.baskbear.com/menu",
+        "website_link": "https://www.baskbear.com",
+        "delivery_link": "",
+        "isVegetarian": false,
+        "isNoBeef": true,
+        "manualStatus": "auto",
+        "branches": [
+            {
+                "name": "Bask Bear Coffee - IOI Mall Kulai",
+                "address": "G-22, Ground Floor, IOI Mall Kulai, Lebuh Putra Utama, Bandar Putra Kulai"
+            },
+            {
+                "name": "Bask Bear Coffee - Johor Premium Outlets (JPO)",
+                "address": "Stall 1, Gucci - Johor Premium Outlet, Jalan Premium Outlets, Bandar Indahpura"
+            },
+            {
+                "name": "Bask Bear Coffee Senai Centre Point",
+                "address": "No. 34 (Ground Floor), Jalan Terminal 5, Central Point, Lapangan Terbang, 81400 Senai, Johor"
+            }
+        ],
+        "tags": [
+            "Coffee",
+            "Toast",
+            "Halal",
+            "Cafe",
+            "Tea"
+        ],
+        "subscriptionLevel": 0,
+        "isVIP": false,
+        "priority": 0,
+        "whatsappLink": "",
+        "location": {
+            "lat": null,
+            "lng": null
+        },
+        "halalStatus": "certified"
     }
 ];
