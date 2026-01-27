@@ -2465,7 +2465,7 @@ export const initialRestaurants = [
     },
     {
         "id": 61,
-        "area": "",
+        "area": "Indahpura",
         "name": "四夕豆花",
         "address": "247, Jln Kenanga 29/8, Indahpura, 81000 Kulai, Johor",
         "opening_hours": "Monday: 2pm - 10am\nTuesday: 2pm - 10am\nWednesday: 2pm - 10am\nThursday: 2pm - 10am\nFriday: 2pm - 10am\nSaturday: 2pm - 10am\nSunday: 2pm - 10am",
@@ -7060,7 +7060,8 @@ export const initialRestaurants = [
             "lng": null
         },
         "halalStatus": "certified",
-        "dietaryOption": "vegetarian_friendly"
+        "dietaryOption": "vegetarian_friendly",
+        "area": "Indahpura"
     },
     {
         "id": 176,
@@ -8140,7 +8141,8 @@ export const initialRestaurants = [
             "lng": null
         },
         "halalStatus": "non_halal",
-        "dietaryOption": "vegetarian_friendly"
+        "dietaryOption": "vegetarian_friendly",
+        "area": "Indahpura"
     },
     {
         "id": 205,
@@ -11563,6 +11565,46 @@ export const initialRestaurants = [
         "dietaryOption": null
     },
     {
+        "id": 304,
+        "area": "Kulai",
+        "name": "聚园酒家",
+        "name_en": "Restoran Chi Yuen",
+        "address": "Kulai, Johor",
+        "opening_hours": "Monday: 11am - 10pm\nTuesday: 11am - 10pm\nWednesday: 11am - 10pm\nThursday: 11am - 10pm\nFriday: 11am - 10pm\nSaturday: 11am - 10pm\nSunday: 11am - 10pm",
+        "intro_zh": "深受当地人喜爱的中餐厅，提供各类海鲜和肉类料理。菜色丰富，锅气十足，价格公道。",
+        "intro_en": "A Chinese restaurant loved by locals, offering various seafood and meat dishes. Rich menu, good 'wok hei', and reasonable prices.",
+        "category": [
+            "煮炒海鲜楼"
+        ],
+        "categories": [
+            "煮炒海鲜楼"
+        ],
+        "rating": 0,
+        "image": "https://i.ibb.co/7xLGp31X/image.jpg",
+        "subStalls": [],
+        "price_range": "RM 10-30",
+        "menu_link": "",
+        "website_link": "",
+        "delivery_link": "",
+        "isVegetarian": false,
+        "isNoBeef": false,
+        "manualStatus": "auto",
+        "branches": [],
+        "tags": [
+            "平价"
+        ],
+        "subscriptionLevel": 0,
+        "isVIP": false,
+        "priority": 0,
+        "whatsappLink": "",
+        "location": {
+            "lat": null,
+            "lng": null
+        },
+        "halalStatus": "non_halal",
+        "dietaryOption": null
+    },
+    {
         "id": 307,
         "area": "Senai",
         "name": "瑞记海南鸡饭",
@@ -12454,7 +12496,8 @@ export const initialRestaurants = [
         },
         "phone": "",
         "halalStatus": "muslim_owned",
-        "dietaryOption": null
+        "dietaryOption": null,
+        "area": "Indahpura"
     },
     {
         "id": 328,
@@ -15850,6 +15893,54 @@ export const initialRestaurants = [
         "halalStatus": "no_pork",
         "area": "Kulai Town",
         "dietaryOption": "vegetarian_friendly"
+    },
+    {
+        "id": 416,
+        "name": "江满小食馆",
+        "name_en": "Restoran Jiang Man",
+        "intro_zh": "位于 Taman Nam Tak (21哩) 的老字号小食馆，提供各式地道面食与小吃。有一间分行。",
+        "intro_en": "Traditional eatery located in Taman Nam Tak (21 Miles), known for its authentic noodles and snacks. Has a branch.",
+        "address": "Jalan Susur Kulai 5, Taman Nam Tak, 81000 Kulai, Johor Darul Ta'zim",
+        "opening_hours": "Monday: 7am - 3pm\nTuesday: 7am - 3pm\nWednesday: 7am - 3pm\nThursday: 7am - 3pm\nFriday: 7am - 3pm\nSaturday: 7am - 3pm\nSunday: 7am - 3pm",
+        "category": [
+            "中餐",
+            "粉类"
+        ],
+        "categories": [
+            "中餐",
+            "粉类"
+        ],
+        "rating": 0,
+        "image": "https://placehold.co/600x400/1e1e1e/FFF?text=Jiang+Man",
+        "subStalls": [],
+        "price_range": "RM 5-15",
+        "menu_link": "",
+        "website_link": "",
+        "delivery_link": "",
+        "isVegetarian": false,
+        "isNoBeef": false,
+        "manualStatus": "auto",
+        "branches": [],
+        "tags": [
+            "Chinese",
+            "Noodles",
+            "Kulai",
+            "Traditional",
+            "Breakfast",
+            "Lunch"
+        ],
+        "subscriptionLevel": 0,
+        "isVIP": false,
+        "priority": 0,
+        "whatsappLink": "",
+        "location": {
+            "lat": null,
+            "lng": null
+        },
+        "phone": "",
+        "halalStatus": "non_halal",
+        "area": "Kulai 21 Miles",
+        "dietaryOption": null
     },
     {
         "id": 417,
