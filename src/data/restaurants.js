@@ -15549,5 +15549,52 @@ export const initialRestaurants = [
     "phone": "016-751 5056",
     "halalStatus": "non_halal",
     "area": "Kulai 21 Miles"
-}
+},
+    {
+        "id": 418,
+        "name": "三人行·面馆",
+        "name_en": "Trio Guys Ramen",
+        "intro_zh": "位于 Indahpura 的日式拉面馆，提供多种口味的拉面和小吃。",
+        "intro_en": "Japanese ramen shop located in Indahpura, serving various flavors of ramen and snacks.",
+        "address": "PUSAT KOMERSIAL INDAH, 264, Jalan Kiambang 10, Bandar Indahpura, 81000 Kulai, Johor Darul Ta'zim",
+        "opening_hours": "Monday: 12pm - 3:30pm, 5:30pm - 9:15pm\nTuesday: 12pm - 3:30pm, 5:30pm - 9:15pm\nWednesday: 12pm - 3:30pm, 5:30pm - 9:15pm\nThursday: 12pm - 3:30pm, 5:30pm - 9:15pm\nFriday: 12pm - 3:30pm, 5:30pm - 9:15pm\nSaturday: 12pm - 3:30pm, 5:30pm - 9:15pm\nSunday: 12pm - 3:30pm, 5:30pm - 9:15pm",
+        "category": [
+            "日本餐",
+            "面类"
+        ],
+        "categories": [
+            "日本餐",
+            "面类"
+        ],
+        "rating": 0,
+        "image": "https://placehold.co/600x400/1e1e1e/FFF?text=Trio+Guys+Ramen",
+        "subStalls": [],
+        "price_range": "RM 15-30",
+        "menu_link": "",
+        "website_link": "https://www.facebook.com/TrioGuysRamenSdnBhd",
+        "delivery_link": "",
+        "isVegetarian": false,
+        "isNoBeef": false,
+        "manualStatus": "auto",
+        "branches": [],
+        "tags": [
+            "Ramen",
+            "Japanese",
+            "Noodles",
+            "Indahpura",
+            "Lunch",
+            "Dinner"
+        ],
+        "subscriptionLevel": 0,
+        "isVIP": false,
+        "priority": 0,
+        "whatsappLink": "https://wa.me/60102003731",
+        "location": {
+            "lat": null,
+            "lng": null
+        },
+        "phone": "010-200 3731",
+        "halalStatus": "non_halal",
+        "area": "Indahpura"
+    }
 ];
