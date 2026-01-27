@@ -16534,5 +16534,48 @@ export const initialRestaurants = [
         "phone": "07-660 0823",
         "halalStatus": "non_halal",
         "dietaryOption": null
+    },
+    {
+        "id": 423,
+        "area": "Indahpura",
+        "name": "心誠点心楼",
+        "name_en": "Restoran Xin Cheng Dim Sum",
+        "intro_zh": "位于Indahpura的点心楼，提供各式手工点心和包点，是享用早午餐的好去处。",
+        "intro_en": "Dim Sum restaurant located in Indahpura, offering a variety of handmade dim sum and buns, a great place for brunch.",
+        "address": "Jalan Kenanga 29/12, Bandar Indahpura, 81000 Kulai, Johor",
+        "opening_hours": "Monday: 7am - 4:30pm\nTuesday: Closed\nWednesday: 7am - 4:30pm\nThursday: 7am - 4:30pm\nFriday: 7am - 4:30pm\nSaturday: 7am - 4:30pm\nSunday: 7am - 4:30pm",
+        "category": [
+            "点心"
+        ],
+        "categories": [
+            "点心"
+        ],
+        "rating": 0,
+        "image": "https://placehold.co/600x400/1e1e1e/FFF?text=Xin+Cheng+Dim+Sum",
+        "subStalls": [],
+        "price_range": "RM 10-30",
+        "menu_link": "",
+        "website_link": "",
+        "delivery_link": "",
+        "isVegetarian": false,
+        "isNoBeef": false,
+        "manualStatus": "auto",
+        "branches": [],
+        "tags": [
+            "Dim Sum",
+            "Breakfast",
+            "Brunch"
+        ],
+        "subscriptionLevel": 0,
+        "isVIP": false,
+        "priority": 0,
+        "whatsappLink": "https://wa.me/601136696168",
+        "location": {
+            "lat": null,
+            "lng": null
+        },
+        "phone": "011-3669 6168",
+        "halalStatus": "non_halal",
+        "dietaryOption": null
     }
 ];
