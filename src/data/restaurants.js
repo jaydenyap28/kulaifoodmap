@@ -9736,7 +9736,28 @@ export const initialRestaurants = [
         ],
         "rating": 0,
         "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTqq4s0kSov4dLw-XxN0-1fhDz-MaSLxnAtCw&s",
-        "subStalls": [],
+        "subStalls": [
+            {
+                "name": "",
+                "image": "https://i.ibb.co/8g8G6ghp/IMG-20260127-135308.jpg"
+            },
+            {
+                "name": "",
+                "image": "https://i.ibb.co/8LtyVfXW/IMG-20260127-135245.jpg"
+            },
+            {
+                "name": "",
+                "image": "https://i.ibb.co/Z7vDTPb/IMG-20260127-135235.jpg"
+            },
+            {
+                "name": "",
+                "image": "https://i.ibb.co/DPZhcg3X/IMG-20260127-135229.jpg"
+            },
+            {
+                "name": "",
+                "image": "https://i.ibb.co/Qv6FjGYp/IMG-20260127-135359.jpg"
+            }
+        ],
         "price_range": "RM 10-20",
         "menu_link": "",
         "website_link": "",
