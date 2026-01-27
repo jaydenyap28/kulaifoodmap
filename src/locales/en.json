@@ -20,8 +20,13 @@
     "manage_category": "Manage Categories",
     "all": "All",
     "open_now": "Open Now",
-    "no_drinks": "No Drinks",
-    "no_desserts": "No Desserts",
+    "no_drinks_desserts": "No Drinks & Desserts",
+    "halal_status": "Halal Status",
+    "halal_options": {
+      "certified": "Halal Certified",
+      "muslim_owned": "Muslim Owned",
+      "no_pork": "No Pork No Lard"
+    },
     "area_label": "Filter Area",
     "all_areas": "All Areas",
     "confirm_delete_cat": "Delete category \"{{cat}}\"?"

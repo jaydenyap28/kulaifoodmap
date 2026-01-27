@@ -399,8 +399,9 @@ function App() {
   const [selectedCategory, setSelectedCategory] = useState([]); // Changed to array for multi-select
   const [selectedArea, setSelectedArea] = useState(null); // New Area State
   const [showOpenOnly, setShowOpenOnly] = useState(false);
-  const [hideDrinks, setHideDrinks] = useState(false);
-  const [hideDesserts, setHideDesserts] = useState(false);
+  const [hideDrinksDesserts, setHideDrinksDesserts] = useState(false);
+  const [halalFilter, setHalalFilter] = useState(null);
+  const [showHalalMenu, setShowHalalMenu] = useState(false);
   const [showSupportModal, setShowSupportModal] = useState(false);
   const [supportQR, setSupportQR] = useState(() => {
     try {
@@ -468,22 +469,24 @@ function App() {
       }
     }
 
-    // 2. Hide Drinks Filter
-    if (hideDrinks) {
-        // Keywords: 饮品, 饮料, Drink, Beverage, 饮品店
-        if (r.categories && r.categories.some(c => 
-            c && typeof c === 'string' && (c.includes('饮品') || c.includes('饮料') || c.toLowerCase().includes('drink') || c.toLowerCase().includes('beverage'))
-        )) {
+    // 2. Hide Drinks & Desserts Filter
+    if (hideDrinksDesserts) {
+        // Keywords for Drinks and Desserts
+        const drinksKeywords = ['饮品', '饮料', 'drink', 'beverage', '饮品店'];
+        const dessertsKeywords = ['甜点', '蛋糕', 'dessert', 'cake', 'ice cream', 'waffle'];
+        
+        if (r.categories && r.categories.some(c => {
+            if (!c || typeof c !== 'string') return false;
+            const lowerC = c.toLowerCase();
+            return drinksKeywords.some(k => lowerC.includes(k)) || dessertsKeywords.some(k => lowerC.includes(k));
+        })) {
             return false;
         }
     }
 
-    // 3. Hide Desserts Filter
-    if (hideDesserts) {
-        // Keywords: 甜点, 蛋糕, Dessert, Cake
-        if (r.categories && r.categories.some(c => 
-            c && typeof c === 'string' && (c.includes('甜点') || c.includes('蛋糕') || c.toLowerCase().includes('dessert') || c.toLowerCase().includes('cake'))
-        )) {
+    // 3. Halal Status Filter
+    if (halalFilter) {
+        if (r.halalStatus !== halalFilter) {
             return false;
         }
     }
@@ -900,6 +903,8 @@ function App() {
                         setSelectedCategory([]);
                         setSelectedArea(null);
                         setShowOpenOnly(false);
+                        setHideDrinksDesserts(false);
+                        setHalalFilter(null);
                     }}
                     className="mt-6 px-8 py-3 bg-white text-black rounded-full font-bold shadow-md hover:bg-gray-200 transition"
                 >
@@ -927,31 +932,59 @@ function App() {
                     {t('filter.open_now')}
                 </button>
 
-                {/* No Drinks */}
+                {/* No Drinks & Desserts */}
                 <button
-                    onClick={() => setHideDrinks(!hideDrinks)}
+                    onClick={() => setHideDrinksDesserts(!hideDrinksDesserts)}
                     className={`flex items-center gap-1.5 px-4 py-2 rounded-full text-sm font-bold transition-all ${
-                    hideDrinks
+                    hideDrinksDesserts
                         ? 'bg-orange-900/50 text-orange-400 border-orange-500/50 ring-1 ring-orange-500/50'
                         : 'bg-[#1e1e1e] text-gray-400 hover:bg-[#2d2d2d] border-[#333]'
                     } border shadow-sm`}
                 >
                     <Coffee size={16} />
-                    {t('filter.no_drinks')}
+                    {t('filter.no_drinks_desserts')}
                 </button>
 
-                {/* No Desserts */}
-                <button
-                    onClick={() => setHideDesserts(!hideDesserts)}
-                    className={`flex items-center gap-1.5 px-4 py-2 rounded-full text-sm font-bold transition-all ${
-                    hideDesserts
-                        ? 'bg-pink-900/50 text-pink-400 border-pink-500/50 ring-1 ring-pink-500/50'
-                        : 'bg-[#1e1e1e] text-gray-400 hover:bg-[#2d2d2d] border-[#333]'
-                    } border shadow-sm`}
-                >
-                    <Dessert size={16} />
-                    {t('filter.no_desserts')}
-                </button>
+                {/* Halal Status Dropdown */}
+                <div className="relative">
+                    <button
+                        onClick={() => setShowHalalMenu(!showHalalMenu)}
+                        className={`flex items-center gap-1.5 px-4 py-2 rounded-full text-sm font-bold transition-all ${
+                        halalFilter
+                            ? 'bg-green-900/50 text-green-400 border-green-500/50 ring-1 ring-green-500/50'
+                            : 'bg-[#1e1e1e] text-gray-400 hover:bg-[#2d2d2d] border-[#333]'
+                        } border shadow-sm`}
+                    >
+                        <UtensilsCrossed size={16} />
+                        {halalFilter ? t(`filter.halal_options.${halalFilter}`) : t('filter.halal_status')}
+                    </button>
+
+                    {showHalalMenu && (
+                        <>
+                            {/* Backdrop to close menu */}
+                            <div className="fixed inset-0 z-40" onClick={() => setShowHalalMenu(false)}></div>
+                            
+                            {/* Menu */}
+                            <div className="absolute top-full left-0 mt-2 w-48 bg-[#1e1e1e] border border-gray-700 rounded-xl shadow-xl z-50 overflow-hidden flex flex-col p-1">
+                                <button
+                                    onClick={() => { setHalalFilter(null); setShowHalalMenu(false); }}
+                                    className={`px-4 py-2 text-left text-sm rounded-lg hover:bg-white/10 ${!halalFilter ? 'text-white font-bold' : 'text-gray-400'}`}
+                                >
+                                    {t('filter.all')}
+                                </button>
+                                {['certified', 'muslim_owned', 'no_pork'].map(status => (
+                                    <button
+                                        key={status}
+                                        onClick={() => { setHalalFilter(status); setShowHalalMenu(false); }}
+                                        className={`px-4 py-2 text-left text-sm rounded-lg hover:bg-white/10 ${halalFilter === status ? 'text-green-400 font-bold' : 'text-gray-400'}`}
+                                    >
+                                        {t(`filter.halal_options.${status}`)}
+                                    </button>
+                                ))}
+                            </div>
+                        </>
+                    )}
+                </div>
             </div>
 
             {/* AI Assistant Button (Inserted here) */}

@@ -20,8 +20,13 @@
     "manage_category": "管理分类",
     "all": "全部",
     "open_now": "只看营业中",
-    "no_drinks": "不看饮品",
-    "no_desserts": "不看甜点",
+    "no_drinks_desserts": "不看饮品&甜点",
+    "halal_status": "Halal Status",
+    "halal_options": {
+      "certified": "Halal Certified",
+      "muslim_owned": "Muslim Owned",
+      "no_pork": "No Pork No Lard"
+    },
     "area_label": "地区筛选",
     "all_areas": "全古来 (All Areas)",
     "confirm_delete_cat": "确定要删除分类 \"{{cat}}\" 吗？"

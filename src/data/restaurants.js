@@ -14884,4 +14884,176 @@ export const initialRestaurants = [
         "酒家"
     ]
 }
+,
+    {
+    "id": 402,
+    "name": "小洲美食中心",
+    "name_en": "Restoran Xiao Zhou",
+    "intro_zh": "Indahpura 的早市咖啡店，提供各式本地早餐。",
+    "intro_en": "Morning kopitiam in Indahpura serving local breakfast favorites.",
+    "address": "857, Jalan Teratai 36/17, Taman Indahpura, 81000 Kulai, Johor Darul Ta'zim",
+    "opening_hours": "Monday: 5am - 4:30pm\nTuesday: 5am - 4:30pm\nWednesday: 5am - 4:30pm\nThursday: 5am - 4:30pm\nFriday: 5am - 4:30pm\nSaturday: 5am - 4:30pm\nSunday: 5am - 4:30pm",
+    "category": [
+        "咖啡店"
+    ],
+    "categories": [
+        "咖啡店"
+    ],
+    "rating": 0,
+    "image": "https://placehold.co/600x400/1e1e1e/FFF?text=Xiao+Zhou",
+    "subStalls": [],
+    "price_range": "RM 5-15",
+    "menu_link": "",
+    "website_link": "",
+    "delivery_link": "",
+    "isVegetarian": false,
+    "isNoBeef": false,
+    "manualStatus": "auto",
+    "branches": [],
+    "tags": [
+        "Kopitiam",
+        "Breakfast",
+        "Indahpura"
+    ],
+    "subscriptionLevel": 0,
+    "isVIP": false,
+    "priority": 0,
+    "whatsappLink": "",
+    "location": {
+        "lat": null,
+        "lng": null
+    },
+    "phone": "07-660 8897",
+    "halalStatus": "non_halal",
+    "area": "Indahpura"
+},
+    {
+    "id": 403,
+    "name": "Mutiara Garden Restaurant",
+    "name_en": "Mutiara Garden Restaurant",
+    "intro_zh": "24小时营业的印裔穆斯林餐厅（Mamak），提供各种马来与印度风味美食。",
+    "intro_en": "24-hour Mamak restaurant serving a variety of Malay and Indian dishes.",
+    "address": "865, Jalan Teratai 36/17, Bandar Indahpura, 81000 Kulai, Johor Darul Ta'zim",
+    "opening_hours": "Monday: Open 24 Hours\nTuesday: Open 24 Hours\nWednesday: Open 24 Hours\nThursday: Open 24 Hours\nFriday: Open 24 Hours\nSaturday: Open 24 Hours\nSunday: Open 24 Hours",
+    "category": [
+        "马来与印度风味"
+    ],
+    "categories": [
+        "马来与印度风味"
+    ],
+    "rating": 0,
+    "image": "https://placehold.co/600x400/1e1e1e/FFF?text=Mutiara+Garden",
+    "subStalls": [],
+    "price_range": "RM 5-20",
+    "menu_link": "",
+    "website_link": "https://www.facebook.com/profile.php?id=100095169625065",
+    "delivery_link": "",
+    "isVegetarian": false,
+    "isNoBeef": true,
+    "manualStatus": "auto",
+    "branches": [],
+    "tags": [
+        "Mamak",
+        "24 Hours",
+        "Roti Canai",
+        "Indahpura"
+    ],
+    "subscriptionLevel": 0,
+    "isVIP": false,
+    "priority": 0,
+    "whatsappLink": "",
+    "location": {
+        "lat": null,
+        "lng": null
+    },
+    "phone": "016-704 7860",
+    "halalStatus": "muslim_owned",
+    "area": "Indahpura"
+},
+    {
+    "id": 404,
+    "name": "Restoran Hasny",
+    "name_en": "Restoran Hasny",
+    "intro_zh": "Indahpura 的热门 Mamak 档，营业至凌晨。",
+    "intro_en": "Popular Mamak spot in Indahpura, open until late night.",
+    "address": "Jalan Teratai 36/17, Bandar Indahpura, 81000 Kulai, Johor Darul Ta'zim",
+    "opening_hours": "Monday: 6am - 3am\nTuesday: 6am - 3am\nWednesday: 6am - 3am\nThursday: 6am - 3am\nFriday: 6am - 3am\nSaturday: 6am - 3am\nSunday: 6am - 3am",
+    "category": [
+        "马来与印度风味"
+    ],
+    "categories": [
+        "马来与印度风味"
+    ],
+    "rating": 0,
+    "image": "https://placehold.co/600x400/1e1e1e/FFF?text=Hasny",
+    "subStalls": [],
+    "price_range": "RM 5-20",
+    "menu_link": "",
+    "website_link": "",
+    "delivery_link": "",
+    "isVegetarian": false,
+    "isNoBeef": true,
+    "manualStatus": "auto",
+    "branches": [],
+    "tags": [
+        "Mamak",
+        "Late Night",
+        "Indahpura"
+    ],
+    "subscriptionLevel": 0,
+    "isVIP": false,
+    "priority": 0,
+    "whatsappLink": "",
+    "location": {
+        "lat": null,
+        "lng": null
+    },
+    "phone": "011-1077 0299",
+    "halalStatus": "muslim_owned",
+    "area": "Indahpura"
+},
+    {
+    "id": 405,
+    "name": "The Brew Orchestra",
+    "name_en": "The Brew Orchestra",
+    "intro_zh": "士乃的一家精致咖啡馆，提供优质咖啡和舒适环境。",
+    "intro_en": "A refined cafe in Senai offering quality coffee and a comfortable ambiance.",
+    "address": "Ground Floor, 1045, Jalan Muhibah 1, Taman Perindustrian Muhibah, 81400 Senai, Johor",
+    "opening_hours": "Monday: 9am - 7pm\nTuesday: 9am - 7pm\nWednesday: 9am - 7pm\nThursday: 9am - 7pm\nFriday: 9am - 7pm\nSaturday: 9am - 7pm\nSunday: 9am - 7pm",
+    "category": [
+        "Cafe",
+        "饮品"
+    ],
+    "categories": [
+        "Cafe",
+        "饮品"
+    ],
+    "rating": 0,
+    "image": "https://placehold.co/600x400/1e1e1e/FFF?text=The+Brew+Orchestra",
+    "subStalls": [],
+    "price_range": "RM 20-40",
+    "menu_link": "",
+    "website_link": "",
+    "delivery_link": "",
+    "isVegetarian": false,
+    "isNoBeef": true,
+    "manualStatus": "auto",
+    "branches": [],
+    "tags": [
+        "Cafe",
+        "Coffee",
+        "Senai"
+    ],
+    "subscriptionLevel": 0,
+    "isVIP": false,
+    "priority": 0,
+    "whatsappLink": "",
+    "location": {
+        "lat": null,
+        "lng": null
+    },
+    "phone": "",
+    "halalStatus": "no_pork",
+    "area": "Senai"
+}
 ];
