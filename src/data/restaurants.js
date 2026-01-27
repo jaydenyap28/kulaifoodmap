@@ -16297,5 +16297,99 @@ export const initialRestaurants = [
         "halalStatus": "non_halal",
         "area": "Indahpura",
         "dietaryOption": null
+    },
+    {
+        "id": 421,
+        "area": "Indahpura",
+        "name": "优美城126美食阁",
+        "name_en": "Restoran 126",
+        "intro_zh": "位于Indahpura的热闹美食阁，汇集了多种本地美食档口。从早市到夜市都有丰富选择，环境宽敞通风。",
+        "intro_en": "A bustling food court in Indahpura featuring a wide variety of local food stalls. Offers extensive choices from morning to night in a spacious and airy environment.",
+        "address": "230, Jln Kenanga 29/8, Indahpura, 81000 Kulai, Johor",
+        "opening_hours": "Monday: 7am - 11pm\nTuesday: 7am - 11pm\nWednesday: 7am - 11pm\nThursday: 7am - 11pm\nFriday: 7am - 11pm\nSaturday: 7am - 11pm\nSunday: 7am - 11pm",
+        "category": [
+            "咖啡店"
+        ],
+        "categories": [
+            "咖啡店"
+        ],
+        "rating": 0,
+        "image": "https://i.ibb.co/9k24LdXj/IMG-20260127-150841.jpg",
+        "subStalls": [
+            {
+                "name": "",
+                "image": "https://i.ibb.co/9k24LdXj/IMG-20260127-150841.jpg"
+            },
+            {
+                "name": "",
+                "image": "https://i.ibb.co/wh8TVpJd/IMG-20260127-150853.jpg"
+            },
+            {
+                "name": "",
+                "image": "https://i.ibb.co/zTDnXXn9/IMG-20260127-150900.jpg"
+            },
+            {
+                "name": "",
+                "image": "https://i.ibb.co/pjV7YTWZ/IMG-20260127-150910.jpg"
+            },
+            {
+                "name": "",
+                "image": "https://i.ibb.co/zhSwSv7N/IMG-20260127-150921.jpg"
+            },
+            {
+                "name": "",
+                "image": "https://i.ibb.co/h1Wnfqcw/IMG-20260127-150933.jpg"
+            },
+            {
+                "name": "",
+                "image": "https://i.ibb.co/s9ZVptjx/IMG-20260127-150940.jpg"
+            },
+            {
+                "name": "",
+                "image": "https://i.ibb.co/1GqWBBkB/IMG-20260127-150952.jpg"
+            },
+            {
+                "name": "",
+                "image": "https://i.ibb.co/dsvBmtnh/IMG-20260127-151005.jpg"
+            },
+            {
+                "name": "",
+                "image": "https://i.ibb.co/vCPWXMHq/IMG-20260127-151011.jpg"
+            },
+            {
+                "name": "",
+                "image": "https://i.ibb.co/DHPJr7c3/IMG-20260127-151017.jpg"
+            },
+            {
+                "name": "",
+                "image": "https://i.ibb.co/Y4WbQf9V/IMG-20260127-151023.jpg"
+            },
+            {
+                "name": "",
+                "image": "https://i.ibb.co/HLdR2XR5/IMG-20260127-151043.jpg"
+            }
+        ],
+        "price_range": "RM 10-20",
+        "menu_link": "",
+        "website_link": "",
+        "delivery_link": "",
+        "isVegetarian": false,
+        "isNoBeef": false,
+        "manualStatus": "auto",
+        "branches": [],
+        "tags": [
+            "平价",
+            "适合聚餐"
+        ],
+        "subscriptionLevel": 0,
+        "isVIP": false,
+        "priority": 0,
+        "whatsappLink": "",
+        "location": {
+            "lat": null,
+            "lng": null
+        },
+        "halalStatus": "non_halal",
+        "dietaryOption": null
     }
 ];
