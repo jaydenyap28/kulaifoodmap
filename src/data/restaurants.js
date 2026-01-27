@@ -15572,5 +15572,93 @@ export const initialRestaurants = [
         "phone": "010-200 3731",
         "halalStatus": "non_halal",
         "area": "Indahpura"
+    },
+    {
+        "id": 419,
+        "name": "Waichi Yakiniku",
+        "name_en": "Waichi Yakiniku",
+        "intro_zh": "位于 Indahpura 的日式烧烤(Yakiniku)专卖店，提供优质肉类和正宗日式烧烤体验。",
+        "intro_en": "Japanese Yakiniku restaurant located in Indahpura, offering premium meats and authentic Japanese BBQ experience.",
+        "address": "G-03A, Ground Floor, 291, Jalan Kiambang 10, Pusat Komersial Indah Indahpura, 81000 Kulai, Johor Darul Ta'zim",
+        "opening_hours": "Monday: 11am - 10pm\nTuesday: 11am - 10pm\nWednesday: 11am - 10pm\nThursday: 11am - 10pm\nFriday: 11am - 10pm\nSaturday: 11am - 10pm\nSunday: 11am - 10pm",
+        "category": [
+            "日本餐"
+        ],
+        "categories": [
+            "日本餐"
+        ],
+        "rating": 0,
+        "image": "https://placehold.co/600x400/1e1e1e/FFF?text=Waichi+Yakiniku",
+        "subStalls": [],
+        "price_range": "RM 30-100",
+        "menu_link": "",
+        "website_link": "https://linktr.ee/WaichiYakiniku",
+        "delivery_link": "",
+        "isVegetarian": false,
+        "isNoBeef": false,
+        "manualStatus": "auto",
+        "branches": [],
+        "tags": [
+            "Yakiniku",
+            "BBQ",
+            "Japanese",
+            "Indahpura",
+            "Dinner"
+        ],
+        "subscriptionLevel": 0,
+        "isVIP": false,
+        "priority": 0,
+        "whatsappLink": "https://wa.me/60175801129",
+        "location": {
+            "lat": null,
+            "lng": null
+        },
+        "phone": "017-580 1129",
+        "halalStatus": "non_halal",
+        "area": "Indahpura"
+    },
+    {
+        "id": 420,
+        "name": "众生鱼头鱼片米粉",
+        "name_en": "Restoran Zhong Sheng",
+        "intro_zh": "位于 Indahpura 的鱼头米粉专卖店，主打鲜甜的鱼汤和嫩滑的鱼肉，是喜爱鱼头米粉食客的好去处。",
+        "intro_en": "Specialized Fish Head Noodle shop in Indahpura, known for its fresh sweet broth and tender fish slices.",
+        "address": "516, Jalan Kenanga 29/15, Bandar Indahpura, 81000 Kulai, Johor Darul Ta'zim",
+        "opening_hours": "Monday: Closed\nTuesday: 10:30am - 8:30pm\nWednesday: 10:30am - 8:30pm\nThursday: 10:30am - 8:30pm\nFriday: 10:30am - 8:30pm\nSaturday: 10:30am - 8:30pm\nSunday: 10:30am - 8:30pm",
+        "category": [
+            "粉类"
+        ],
+        "categories": [
+            "粉类"
+        ],
+        "rating": 0,
+        "image": "https://placehold.co/600x400/1e1e1e/FFF?text=Restoran+Zhong+Sheng",
+        "subStalls": [],
+        "price_range": "RM 10-25",
+        "menu_link": "",
+        "website_link": "",
+        "delivery_link": "",
+        "isVegetarian": false,
+        "isNoBeef": false,
+        "manualStatus": "auto",
+        "branches": [],
+        "tags": [
+            "Fish Head Noodle",
+            "Seafood",
+            "Noodles",
+            "Indahpura",
+            "Lunch",
+            "Dinner"
+        ],
+        "subscriptionLevel": 0,
+        "isVIP": false,
+        "priority": 0,
+        "whatsappLink": "",
+        "location": {
+            "lat": null,
+            "lng": null
+        },
+        "phone": "",
+        "halalStatus": "non_halal",
+        "area": "Indahpura"
     }
-];
