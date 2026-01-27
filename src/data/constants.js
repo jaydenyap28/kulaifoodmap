@@ -3,8 +3,8 @@ export const AVAILABLE_AREAS = [
     'Bandar Putra',
     'Kulai 21 Miles',
     'Saleng',
-    'Kelapa Sawit',
-    'Senai'
+    'Senai',
+    'Kelapa Sawit'
 ];
 
 export const DEFAULT_CATEGORIES = [
