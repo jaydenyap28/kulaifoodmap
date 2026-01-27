@@ -16577,5 +16577,75 @@ export const initialRestaurants = [
         "phone": "011-3669 6168",
         "halalStatus": "non_halal",
         "dietaryOption": null
+    },
+    {
+        "id": 424,
+        "area": "Bandar Putra",
+        "name": "亚华饮食阁",
+        "name_en": "Restoran Ah Hwa",
+        "intro_zh": "位于Bandar Putra的饮食阁，提供多样化的本地美食档口。",
+        "intro_en": "Food court located in Bandar Putra, offering a variety of local food stalls.",
+        "address": "Bandar Putra, 81000 Kulai, Johor",
+        "opening_hours": "Monday: 7am - 10pm\nTuesday: 7am - 10pm\nWednesday: 7am - 10pm\nThursday: 7am - 10pm\nFriday: 7am - 10pm\nSaturday: 7am - 10pm\nSunday: 7am - 10pm",
+        "category": [
+            "咖啡店"
+        ],
+        "categories": [
+            "咖啡店"
+        ],
+        "rating": 0,
+        "image": "https://placehold.co/600x400/1e1e1e/FFF?text=Restoran+Ah+Hwa",
+        "subStalls": [
+            {
+                "name": "",
+                "image": "https://i.ibb.co/8L7QFhJJ/IMG-20260127-134128.jpg"
+            },
+            {
+                "name": "",
+                "image": "https://i.ibb.co/0p54cdz3/IMG-20260127-134143.jpg"
+            },
+            {
+                "name": "",
+                "image": "https://i.ibb.co/tM6qnQyL/IMG-20260127-134026.jpg"
+            },
+            {
+                "name": "",
+                "image": "https://i.ibb.co/dwVL4SFm/IMG-20260127-134038.jpg"
+            },
+            {
+                "name": "",
+                "image": "https://i.ibb.co/qMJ3R54W/IMG-20260127-134050.jpg"
+            },
+            {
+                "name": "",
+                "image": "https://i.ibb.co/KcfmWbCy/IMG-20260127-134103.jpg"
+            },
+            {
+                "name": "",
+                "image": "https://i.ibb.co/4gfVMGRr/IMG-20260127-134120.jpg"
+            }
+        ],
+        "price_range": "RM 10-20",
+        "menu_link": "",
+        "website_link": "",
+        "delivery_link": "",
+        "isVegetarian": false,
+        "isNoBeef": false,
+        "manualStatus": "auto",
+        "branches": [],
+        "tags": [
+            "Food Court",
+            "Local Food"
+        ],
+        "subscriptionLevel": 0,
+        "isVIP": false,
+        "priority": 0,
+        "whatsappLink": "",
+        "location": {
+            "lat": 1.642650,
+            "lng": 103.614474
+        },
+        "halalStatus": "non_halal",
+        "dietaryOption": null
     }
 ];
