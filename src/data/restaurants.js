@@ -637,14 +637,14 @@ export const initialRestaurants = [
         "intro_en": "Kulai's Nasi Lemak that is famous throughout Malaysia. Features crispy and juicy fried chicken, fragrant coconut rice, and a signature Sambal sauce that is perfectly balanced in sweetness and spiciness.",
         "category": [
             "饭类",
-            "马来餐"
+            "马来与印度风味"
         ],
         "rating": 0,
         "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSKaL11_-yxI6mKX8Vzb-YcoPJN9I3CSGB-Vg&s",
         "subStalls": [],
         "categories": [
             "饭类",
-            "马来餐"
+            "马来与印度风味"
         ],
         "price_range": "RM 10-20",
         "menu_link": "",
@@ -678,14 +678,14 @@ export const initialRestaurants = [
         "intro_en": "One of the most famous Nasi Lemak spots in Kulai, especially known for its Fried Chicken which is crispy on the outside and tender on the inside. Paired with their special Sambal sauce, it's absolutely delicious. A top choice for dinner and supper.",
         "category": [
             "饭类",
-            "马来餐"
+            "马来与印度风味"
         ],
         "rating": 0,
         "image": "https://i.ibb.co/cSppDRmr/Yellow-Corner.webp",
         "subStalls": [],
         "categories": [
             "饭类",
-            "马来餐"
+            "马来与印度风味"
         ],
         "price_range": "RM 10-20",
         "menu_link": "",
@@ -1233,13 +1233,13 @@ export const initialRestaurants = [
         "intro_zh": "位于古来的集装箱主题西餐厅。环境优美，氛围轻松。主打西餐如羊扒、鸡扒、汉堡和意大利面。是朋友聚会和庆生的好地方。",
         "intro_en": "A container-themed Western restaurant in Kulai. Beautiful environment and relaxing atmosphere. Specializes in Western cuisine like Lamb Chop, Chicken Chop, Burgers, and Pasta. A great place for gathering with friends and celebrations.",
         "category": [
-            "马来餐"
+            "马来与印度风味"
         ],
         "rating": 0,
         "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRtokQmL0_Vzbh8mDTDHsQ9JOxd7eyehL6Arw&s",
         "subStalls": [],
         "categories": [
-            "马来餐"
+            "马来与印度风味"
         ],
         "price_range": "RM 10-20",
         "menu_link": "",
@@ -1425,10 +1425,10 @@ export const initialRestaurants = [
         "intro_zh": "古来传奇椰浆饭，以其独特的炸鸡和参巴辣椒酱闻名。炸鸡皮脆肉嫩，参巴酱香辣开胃，是古来必吃的地标性美食。",
         "intro_en": "Legendary Nasi Lemak in Kulai, famous for its unique fried chicken and sambal sauce. The chicken is crispy and tender, while the sambal is spicy and appetizing. A must-try landmark food in Kulai.",
         "category": [
-            "马来餐"
+            "马来与印度风味"
         ],
         "categories": [
-            "马来餐"
+            "马来与印度风味"
         ],
         "rating": 0,
         "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS4LJ1WH9dHQu3dpiBZsb7C2ZePFJV90LQd8w&s",
@@ -1734,11 +1734,11 @@ export const initialRestaurants = [
         "intro_en": "A popular Western restaurant in Indahpura known for its generous portions. Famous for their mixed grill platters and lively atmosphere, perfect for gathering with friends.",
         "category": [
             "西餐",
-            "马来餐"
+            "马来与印度风味"
         ],
         "categories": [
             "西餐",
-            "马来餐"
+            "马来与印度风味"
         ],
         "rating": 0,
         "image": "https://i.ibb.co/60LQM3GH/Street-Crew.jpg",
@@ -1971,11 +1971,11 @@ export const initialRestaurants = [
         "intro_en": "A popular Vietnamese coffee chain serving authentic and aromatic coffee. Signature drinks include Kopi Saigon and Kopi Buttercream, known for their rich flavor and smooth texture.",
         "category": [
             "咖啡店",
-            "马来餐"
+            "马来与印度风味"
         ],
         "categories": [
             "咖啡店",
-            "马来餐"
+            "马来与印度风味"
         ],
         "rating": 0,
         "image": "https://i.ibb.co/B534LYzt/Kopi-Saigon-Kulai.jpg",
@@ -5628,10 +5628,10 @@ export const initialRestaurants = [
         "address": "Jalan Saleng 7, Kampung Baru Saleng, 81400 Senai, Johor Darul Ta'zim",
         "opening_hours": "Monday: 6 pm–1:30 am\nTuesday: 6 pm–1:30 am\nWednesday: 6 pm–1:30 am\nThursday: 6 pm–1:30 am\nFriday: 6 pm–1:30 am\nSaturday: 6 pm–1:30 am\nSunday: 6 pm–1:30 am",
         "category": [
-            "马来餐"
+            "马来与印度风味"
         ],
         "categories": [
-            "马来餐"
+            "马来与印度风味"
         ],
         "rating": 0,
         "image": "https://i.ibb.co/yBqkbnGB/Roti-King-Saleng.jpg",
@@ -6303,10 +6303,10 @@ export const initialRestaurants = [
         "address": "5432, Jalan Kenari 18, Bandar Putra Kulai, 81000 Kulai, Johor Darul Ta'zim",
         "opening_hours": "11:30 am–10 pm Sat Closed",
         "category": [
-            "马来餐"
+            "马来与印度风味"
         ],
         "categories": [
-            "马来餐"
+            "马来与印度风味"
         ],
         "rating": 0,
         "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTbtWPJLxWTWgAK1VKMPDsS9EHe6BcyuHxYrg&s",
@@ -6380,10 +6380,10 @@ export const initialRestaurants = [
         "address": "17147, Jalan Murai 4, Bandar Putra Kulai, 81000 Kulai, Johor Darul Ta'zim",
         "opening_hours": "Monday: 10am - 10pm\nTuesday: 10am - 10pm\nWednesday: 10am - 10pm\nThursday: 10am - 10pm\nFriday: Closed\nSaturday: 10am - 10pm\nSunday: 10am - 10pm",
         "category": [
-            "马来餐"
+            "马来与印度风味"
         ],
         "categories": [
-            "马来餐"
+            "马来与印度风味"
         ],
         "rating": 0,
         "image": "https://i.ibb.co/cSsHg2Pb/Nasi-Ayam-Angah.jpg",
@@ -8992,10 +8992,10 @@ export const initialRestaurants = [
         "address": "7, Jln Kiambang 2, Bandar Indahpura, 81000 Kulai, Johor Darul Ta'zim",
         "opening_hours": "7 am–11:30 pm Wed closed",
         "category": [
-            "马来餐"
+            "马来与印度风味"
         ],
         "categories": [
-            "马来餐"
+            "马来与印度风味"
         ],
         "rating": 0,
         "image": "https://i.ibb.co/GvGZngcx/Kopi-Tenggek.jpg",
@@ -10525,10 +10525,10 @@ export const initialRestaurants = [
         "address": "84, Jalan Kenanga 29/7, Bandar Indahpura, 81000 Kulai, Johor.",
         "opening_hours": "Monday: 10:15 AM - 10:00 PM\nTuesday: 10:15 AM - 10:00 PM\nWednesday: 10:15 AM - 10:00 PM\nThursday: 10:15 AM - 10:00 PM\nFriday: 10:15 AM - 10:00 PM\nSaturday: 10:15 AM - 10:00 PM\nSunday: 10:15 AM - 10:00 PM",
         "category": [
-            "马来餐"
+            "马来与印度风味"
         ],
         "categories": [
-            "马来餐"
+            "马来与印度风味"
         ],
         "rating": 0,
         "image": "https://scontent.fmkz1-2.fna.fbcdn.net/v/t39.30808-6/312953003_1108795009762546_2795953368015319407_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=6ee11a&_nc_ohc=DXCZyXLdsQoQ7kNvwGmaXEe&_nc_oc=AdmUty7NWGHPpn95jht1gdWz1RpGQiRBEGxlASkpcCOYdgCijDvrWHB5xqEANSVUnYI&_nc_zt=23&_nc_ht=scontent.fmkz1-2.fna&_nc_gid=htKcY5nDlJOcLJ3QqoVL1w&oh=00_AfqmJkRNTTcwjK61j5OvvDpDxFAR1pIpfCN0CIwPzZaA4w&oe=697A5798",
@@ -11809,10 +11809,10 @@ export const initialRestaurants = [
         "address": "Kulai, Johor",
         "opening_hours": "Monday: 7am–3:30am\nTuesday: 7am–3:30am\nWednesday: 7am–3:30am\nThursday: 7am–3:30am\nFriday: 7am–3:30am\nSaturday: 7am–3:30am\nSunday: 7am–3:30am",
         "category": [
-            "印度档"
+            "马来与印度风味"
         ],
         "categories": [
-            "印度档"
+            "马来与印度风味"
         ],
         "rating": 0,
         "image": "https://i.ibb.co/kgz9xHf1/Restoran-Pelita-Mas.webp",
@@ -11963,10 +11963,10 @@ export const initialRestaurants = [
         "intro_zh": "",
         "intro_en": "",
         "category": [
-            "马来餐"
+            "马来与印度风味"
         ],
         "categories": [
-            "马来餐"
+            "马来与印度风味"
         ],
         "rating": 0,
         "image": "https://i.ibb.co/mCZ2rpBC/Jibril-Corner.jpg",
@@ -12037,10 +12037,10 @@ export const initialRestaurants = [
         "intro_zh": "",
         "intro_en": "",
         "category": [
-            "马来餐"
+            "马来与印度风味"
         ],
         "categories": [
-            "马来餐"
+            "马来与印度风味"
         ],
         "rating": 0,
         "image": "https://i.ibb.co/8LJDB5Mj/BD-NASRI-TOMYAM.jpg",
@@ -12074,10 +12074,10 @@ export const initialRestaurants = [
         "intro_zh": "",
         "intro_en": "",
         "category": [
-            "马来餐"
+            "马来与印度风味"
         ],
         "categories": [
-            "马来餐"
+            "马来与印度风味"
         ],
         "rating": 0,
         "image": "https://i.ibb.co/fY5X0cd0/Azlan-Seafood.jpg",
@@ -12148,10 +12148,10 @@ export const initialRestaurants = [
         "intro_zh": "",
         "intro_en": "",
         "category": [
-            "马来餐"
+            "马来与印度风味"
         ],
         "categories": [
-            "马来餐"
+            "马来与印度风味"
         ],
         "rating": 0,
         "image": "https://i.ibb.co/zHSwGY89/Kedai-Makan-Kak-Sal-Selera-Kelantan.jpg",
@@ -12185,10 +12185,10 @@ export const initialRestaurants = [
         "intro_zh": "",
         "intro_en": "",
         "category": [
-            "马来餐"
+            "马来与印度风味"
         ],
         "categories": [
-            "马来餐"
+            "马来与印度风味"
         ],
         "rating": 0,
         "image": "https://i.ibb.co/G3NPq4Hm/Restoran-Gear-Box.jpg",
@@ -12296,10 +12296,10 @@ export const initialRestaurants = [
         "intro_zh": "",
         "intro_en": "",
         "category": [
-            "马来餐"
+            "马来与印度风味"
         ],
         "categories": [
-            "马来餐"
+            "马来与印度风味"
         ],
         "rating": 0,
         "image": "https://i.ibb.co/TM4RZzbw/Restoran-Asam-Pedas-Aeshah.jpg",
@@ -12333,10 +12333,10 @@ export const initialRestaurants = [
         "intro_zh": "",
         "intro_en": "",
         "category": [
-            "马来餐"
+            "马来与印度风味"
         ],
         "categories": [
-            "马来餐"
+            "马来与印度风味"
         ],
         "rating": 0,
         "image": "https://i.ibb.co/N6mhNzV3/Ina-Tom-Yam-Sea-Food.jpg",
@@ -12520,10 +12520,10 @@ export const initialRestaurants = [
         "intro_zh": "",
         "intro_en": "",
         "category": [
-            "印度档"
+            "马来与印度风味"
         ],
         "categories": [
-            "印度档"
+            "马来与印度风味"
         ],
         "rating": 0,
         "image": "https://placehold.co/600x400/png?text=No+Image",
@@ -12668,10 +12668,10 @@ export const initialRestaurants = [
         "intro_zh": "",
         "intro_en": "",
         "category": [
-            "马来餐"
+            "马来与印度风味"
         ],
         "categories": [
-            "马来餐"
+            "马来与印度风味"
         ],
         "rating": 0,
         "image": "https://placehold.co/600x400/png?text=No+Image",
@@ -12705,10 +12705,10 @@ export const initialRestaurants = [
         "intro_zh": "",
         "intro_en": "",
         "category": [
-            "马来餐"
+            "马来与印度风味"
         ],
         "categories": [
-            "马来餐"
+            "马来与印度风味"
         ],
         "rating": 0,
         "image": "https://placehold.co/600x400/png?text=No+Image",
@@ -12742,10 +12742,10 @@ export const initialRestaurants = [
         "intro_zh": "",
         "intro_en": "",
         "category": [
-            "马来餐"
+            "马来与印度风味"
         ],
         "categories": [
-            "马来餐"
+            "马来与印度风味"
         ],
         "rating": 0,
         "image": "https://placehold.co/600x400/png?text=No+Image",
@@ -12779,10 +12779,10 @@ export const initialRestaurants = [
         "intro_zh": "",
         "intro_en": "",
         "category": [
-            "马来餐"
+            "马来与印度风味"
         ],
         "categories": [
-            "马来餐"
+            "马来与印度风味"
         ],
         "rating": 0,
         "image": "https://placehold.co/600x400/png?text=No+Image",
@@ -12816,10 +12816,10 @@ export const initialRestaurants = [
         "intro_zh": "",
         "intro_en": "",
         "category": [
-            "马来餐"
+            "马来与印度风味"
         ],
         "categories": [
-            "马来餐"
+            "马来与印度风味"
         ],
         "rating": 0,
         "image": "https://placehold.co/600x400/png?text=No+Image",
@@ -12853,10 +12853,10 @@ export const initialRestaurants = [
         "intro_zh": "",
         "intro_en": "",
         "category": [
-            "马来餐"
+            "马来与印度风味"
         ],
         "categories": [
-            "马来餐"
+            "马来与印度风味"
         ],
         "rating": 0,
         "image": "https://placehold.co/600x400/png?text=No+Image",
@@ -12890,10 +12890,10 @@ export const initialRestaurants = [
         "intro_zh": "",
         "intro_en": "",
         "category": [
-            "马来餐"
+            "马来与印度风味"
         ],
         "categories": [
-            "马来餐"
+            "马来与印度风味"
         ],
         "rating": 0,
         "image": "https://placehold.co/600x400/png?text=No+Image",
@@ -12927,10 +12927,10 @@ export const initialRestaurants = [
         "intro_zh": "",
         "intro_en": "",
         "category": [
-            "马来餐"
+            "马来与印度风味"
         ],
         "categories": [
-            "马来餐"
+            "马来与印度风味"
         ],
         "rating": 0,
         "image": "https://placehold.co/600x400/png?text=No+Image",
@@ -12964,10 +12964,10 @@ export const initialRestaurants = [
         "intro_zh": "",
         "intro_en": "",
         "category": [
-            "马来餐"
+            "马来与印度风味"
         ],
         "categories": [
-            "马来餐"
+            "马来与印度风味"
         ],
         "rating": 0,
         "image": "https://placehold.co/600x400/png?text=No+Image",
@@ -13001,10 +13001,10 @@ export const initialRestaurants = [
         "intro_zh": "",
         "intro_en": "",
         "category": [
-            "印度档"
+            "马来与印度风味"
         ],
         "categories": [
-            "印度档"
+            "马来与印度风味"
         ],
         "rating": 0,
         "image": "https://placehold.co/600x400/png?text=No+Image",
@@ -13038,10 +13038,10 @@ export const initialRestaurants = [
         "intro_zh": "",
         "intro_en": "",
         "category": [
-            "印度档"
+            "马来与印度风味"
         ],
         "categories": [
-            "印度档"
+            "马来与印度风味"
         ],
         "rating": 0,
         "image": "https://placehold.co/600x400/png?text=No+Image",
@@ -13108,10 +13108,10 @@ export const initialRestaurants = [
         "intro_zh": "",
         "intro_en": "",
         "category": [
-            "马来餐"
+            "马来与印度风味"
         ],
         "categories": [
-            "马来餐"
+            "马来与印度风味"
         ],
         "tags": [],
         "price_range": "RM 10 - RM 20",
@@ -13197,10 +13197,10 @@ export const initialRestaurants = [
         "intro_zh": "",
         "intro_en": "",
         "category": [
-            "马来餐"
+            "马来与印度风味"
         ],
         "categories": [
-            "马来餐"
+            "马来与印度风味"
         ],
         "tags": [],
         "price_range": "RM 10 - RM 20",
@@ -13227,11 +13227,11 @@ export const initialRestaurants = [
         "intro_zh": "",
         "intro_en": "",
         "category": [
-            "马来餐",
+            "马来与印度风味",
             "饭类"
         ],
         "categories": [
-            "马来餐",
+            "马来与印度风味",
             "饭类"
         ],
         "tags": [],
@@ -13375,10 +13375,10 @@ export const initialRestaurants = [
         "intro_zh": "",
         "intro_en": "",
         "category": [
-            "马来餐"
+            "马来与印度风味"
         ],
         "categories": [
-            "马来餐"
+            "马来与印度风味"
         ],
         "tags": [],
         "price_range": "RM 10 - RM 20",
@@ -13404,10 +13404,10 @@ export const initialRestaurants = [
         "intro_zh": "",
         "intro_en": "",
         "category": [
-            "印度档"
+            "马来与印度风味"
         ],
         "categories": [
-            "印度档"
+            "马来与印度风味"
         ],
         "tags": [],
         "price_range": "RM 10 - RM 20",
@@ -13463,10 +13463,10 @@ export const initialRestaurants = [
         "intro_zh": "",
         "intro_en": "",
         "category": [
-            "马来餐"
+            "马来与印度风味"
         ],
         "categories": [
-            "马来餐"
+            "马来与印度风味"
         ],
         "tags": [],
         "price_range": "RM 10 - RM 20",
@@ -13581,10 +13581,10 @@ export const initialRestaurants = [
         "intro_zh": "",
         "intro_en": "",
         "category": [
-            "马来餐"
+            "马来与印度风味"
         ],
         "categories": [
-            "马来餐"
+            "马来与印度风味"
         ],
         "tags": [],
         "price_range": "RM 10 - RM 20",
@@ -13608,10 +13608,10 @@ export const initialRestaurants = [
         "address": "Lot 5035, Batu 17 1/2, Jalan Air Hitam, Saleng, 81400 Senai, Johor",
         "opening_hours": "Monday: 11am-4pm, 7pm-9pm\nTuesday: 11am-4pm, 7pm-9pm\nWednesday: 11am-4pm, 7pm-9pm\nThursday: 11am-4pm, 7pm-9pm\nFriday: 11am-4pm, 7pm-9pm\nSaturday: 11am-4pm, 7pm-9pm\nSunday: 11am-4pm, 7pm-9pm",
         "category": [
-            "马来餐"
+            "马来与印度风味"
         ],
         "categories": [
-            "马来餐"
+            "马来与印度风味"
         ],
         "rating": 0,
         "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTbtWPJLxWTWgAK1VKMPDsS9EHe6BcyuHxYrg&s",
@@ -13689,10 +13689,10 @@ export const initialRestaurants = [
         "address": "108, Jalan Impian Senai 2, Taman Impian Senai, 81400 Senai, Johor Darul Ta'zim",
         "opening_hours": "",
         "category": [
-            "马来餐"
+            "马来与印度风味"
         ],
         "categories": [
-            "马来餐"
+            "马来与印度风味"
         ],
         "rating": 0,
         "image": "https://placehold.co/600x400/e0e0e0/333333?text=No+Image",
@@ -13727,11 +13727,11 @@ export const initialRestaurants = [
         "address": "Taman Jaya Sepakat, 81400 Senai, Johor",
         "opening_hours": "",
         "category": [
-            "马来餐",
+            "马来与印度风味",
             "西餐"
         ],
         "categories": [
-            "马来餐",
+            "马来与印度风味",
             "西餐"
         ],
         "rating": 0,
@@ -13767,10 +13767,10 @@ export const initialRestaurants = [
         "address": "527, Jln Persiaran Scientex Utama 1, Taman Scientex Utama, 81400 Senai, Johor Darul Ta'zim",
         "opening_hours": "",
         "category": [
-            "马来餐"
+            "马来与印度风味"
         ],
         "categories": [
-            "马来餐"
+            "马来与印度风味"
         ],
         "rating": 0,
         "image": "https://placehold.co/600x400/e0e0e0/333333?text=No+Image",
@@ -13805,10 +13805,10 @@ export const initialRestaurants = [
         "address": "503, Jln Persiaran Scientex Utama 1, Taman Scientex Utama, 81400 Senai, Johor Darul Ta'zim",
         "opening_hours": "",
         "category": [
-            "马来餐"
+            "马来与印度风味"
         ],
         "categories": [
-            "马来餐"
+            "马来与印度风味"
         ],
         "rating": 0,
         "image": "https://placehold.co/600x400/e0e0e0/333333?text=No+Image",
@@ -13843,10 +13843,10 @@ export const initialRestaurants = [
         "address": "496, Jln Persiaran Scientex Utama 1, Taman Scientex Utama, 81400 Senai, Johor Darul Ta'zim",
         "opening_hours": "12pm–11pm",
         "category": [
-            "马来餐"
+            "马来与印度风味"
         ],
         "categories": [
-            "马来餐"
+            "马来与印度风味"
         ],
         "rating": 0,
         "image": "https://placehold.co/600x400/e0e0e0/333333?text=No+Image",
@@ -13919,10 +13919,10 @@ export const initialRestaurants = [
         "address": "480, Jln Persiaran Scientex Utama 1, TAMAN SCIENTEX UTAMA, 81400 Senai, Johor Darul Ta'zim",
         "opening_hours": "",
         "category": [
-            "马来餐"
+            "马来与印度风味"
         ],
         "categories": [
-            "马来餐"
+            "马来与印度风味"
         ],
         "rating": 0,
         "image": "https://placehold.co/600x400/e0e0e0/333333?text=No+Image",
@@ -13957,10 +13957,10 @@ export const initialRestaurants = [
         "address": "472 & 473, Jln Persiaran Scientex Utama 1, Taman Teknologi Johor, 81400 Johor Bahru, Johor Darul Ta'zim",
         "opening_hours": "",
         "category": [
-            "印度档"
+            "马来与印度风味"
         ],
         "categories": [
-            "印度档"
+            "马来与印度风味"
         ],
         "rating": 0,
         "image": "https://placehold.co/600x400/e0e0e0/333333?text=No+Image",
@@ -13995,11 +13995,11 @@ export const initialRestaurants = [
         "opening_hours": "",
         "category": [
             "Cafe",
-            "马来餐"
+            "马来与印度风味"
         ],
         "categories": [
             "Cafe",
-            "马来餐"
+            "马来与印度风味"
         ],
         "rating": 0,
         "image": "https://placehold.co/600x400/e0e0e0/333333?text=No+Image",
@@ -14034,10 +14034,10 @@ export const initialRestaurants = [
         "address": "446, Jln Persiaran Scientex Utama 1, Taman Teknologi Johor, 81400 Senai, Johor Darul Ta'zim",
         "opening_hours": "",
         "category": [
-            "印度档"
+            "马来与印度风味"
         ],
         "categories": [
-            "印度档"
+            "马来与印度风味"
         ],
         "rating": 0,
         "image": "https://placehold.co/600x400/e0e0e0/333333?text=No+Image",
@@ -14072,10 +14072,10 @@ export const initialRestaurants = [
         "address": "NO. 577, Jalan jaya sepakat, Kampung Jaya Sepakat, 81400 Senai, Johor Darul Ta'zim",
         "opening_hours": "",
         "category": [
-            "马来餐"
+            "马来与印度风味"
         ],
         "categories": [
-            "马来餐"
+            "马来与印度风味"
         ],
         "rating": 0,
         "image": "https://placehold.co/600x400/e0e0e0/333333?text=No+Image",
@@ -14110,10 +14110,10 @@ export const initialRestaurants = [
         "address": "30, Jalan Berkat 2, Kampung Jaya Sepakat, 81400 Senai, Johor Darul Ta'zim",
         "opening_hours": "8am-10pm\nSaturday: Closed",
         "category": [
-            "马来餐"
+            "马来与印度风味"
         ],
         "categories": [
-            "马来餐"
+            "马来与印度风味"
         ],
         "rating": 0,
         "image": "https://placehold.co/600x400/e0e0e0/333333?text=No+Image",
@@ -14148,10 +14148,10 @@ export const initialRestaurants = [
         "address": "Jln Utama 1 Taman Bintang Utama 1 kulai Kulai, 81400 Senai, Johor Darul Ta'zim",
         "opening_hours": "11am–11pm",
         "category": [
-            "马来餐"
+            "马来与印度风味"
         ],
         "categories": [
-            "马来餐"
+            "马来与印度风味"
         ],
         "rating": 0,
         "image": "https://placehold.co/600x400/e0e0e0/333333?text=No+Image",
@@ -14307,10 +14307,10 @@ export const initialRestaurants = [
         "address": "300, Jalan Utama 2, Taman Bintang Utama, 81400 Senai, Johor Darul Ta'zim",
         "opening_hours": "12pm–12am",
         "category": [
-            "马来餐"
+            "马来与印度风味"
         ],
         "categories": [
-            "马来餐"
+            "马来与印度风味"
         ],
         "rating": 0,
         "image": "https://placehold.co/600x400/e0e0e0/333333?text=No+Image",
@@ -14385,10 +14385,10 @@ export const initialRestaurants = [
         "address": "88, Jln Bintang, Taman Bintang, 81400 Senai, Johor Darul Ta'zim",
         "opening_hours": "6:30am–6pm\nMonday: Closed",
         "category": [
-            "马来餐"
+            "马来与印度风味"
         ],
         "categories": [
-            "马来餐"
+            "马来与印度风味"
         ],
         "rating": 0,
         "image": "https://placehold.co/600x400/e0e0e0/333333?text=No+Image",
@@ -14463,10 +14463,10 @@ export const initialRestaurants = [
         "address": "108, Jln Bintang, Taman Bintang, 81400 Senai, Johor Darul Ta'zim",
         "opening_hours": "",
         "category": [
-            "马来餐"
+            "马来与印度风味"
         ],
         "categories": [
-            "马来餐"
+            "马来与印度风味"
         ],
         "rating": 0,
         "image": "https://placehold.co/600x400/e0e0e0/333333?text=No+Image",
@@ -14501,10 +14501,10 @@ export const initialRestaurants = [
         "address": "11, Jalan Pakis, Taman Handal, 81400 Senai, Johor Darul Ta'zim",
         "opening_hours": "",
         "category": [
-            "印度档"
+            "马来与印度风味"
         ],
         "categories": [
-            "印度档"
+            "马来与印度风味"
         ],
         "rating": 0,
         "image": "https://placehold.co/600x400/e0e0e0/333333?text=No+Image",
@@ -14539,10 +14539,10 @@ export const initialRestaurants = [
         "address": "Taman Senai Baru, 81400 Senai, Johor",
         "opening_hours": "",
         "category": [
-            "马来餐"
+            "马来与印度风味"
         ],
         "categories": [
-            "马来餐"
+            "马来与印度风味"
         ],
         "rating": 0,
         "image": "https://placehold.co/600x400/e0e0e0/333333?text=No+Image",
@@ -14577,10 +14577,10 @@ export const initialRestaurants = [
         "address": "41 & 42, 41 42, Jalan Cyber 16, Kawasan Perindustrian Senai Fasa 3, 81400 Senai, Johor",
         "opening_hours": "",
         "category": [
-            "印度档"
+            "马来与印度风味"
         ],
         "categories": [
-            "印度档"
+            "马来与印度风味"
         ],
         "rating": 0,
         "image": "https://placehold.co/600x400/e0e0e0/333333?text=No+Image",
@@ -14615,10 +14615,10 @@ export const initialRestaurants = [
         "address": "Kawasan Perindustrian Senai Fasa 3, 81400 Senai, Johor",
         "opening_hours": "10am–9pm\nFriday: Closed\nSaturday: Closed\nSunday: Closed",
         "category": [
-            "马来餐"
+            "马来与印度风味"
         ],
         "categories": [
-            "马来餐"
+            "马来与印度风味"
         ],
         "rating": 0,
         "image": "https://placehold.co/600x400/e0e0e0/333333?text=No+Image",
@@ -14653,10 +14653,10 @@ export const initialRestaurants = [
         "address": "30, Jalan Terminal 5, 81400 Senai, Johor",
         "opening_hours": "7am–7pm",
         "category": [
-            "马来餐"
+            "马来与印度风味"
         ],
         "categories": [
-            "马来餐"
+            "马来与印度风味"
         ],
         "rating": 0,
         "image": "https://placehold.co/600x400/e0e0e0/333333?text=No+Image",
@@ -14691,10 +14691,10 @@ export const initialRestaurants = [
         "address": "Jalan Jumbo, 81250 Senai, Johor Darul Ta'zim",
         "opening_hours": "8am–5pm\nSunday: Closed",
         "category": [
-            "马来餐"
+            "马来与印度风味"
         ],
         "categories": [
-            "马来餐"
+            "马来与印度风味"
         ],
         "rating": 0,
         "image": "https://placehold.co/600x400/e0e0e0/333333?text=No+Image",
