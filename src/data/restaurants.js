@@ -12555,10 +12555,10 @@ export const initialRestaurants = [
         "intro_zh": "",
         "intro_en": "",
         "category": [
-            "火锅"
+            "火锅烧烤"
         ],
         "categories": [
-            "火锅"
+            "火锅烧烤"
         ],
         "rating": 0,
         "image": "https://placehold.co/600x400/png?text=No+Image",
@@ -13285,10 +13285,10 @@ export const initialRestaurants = [
         "intro_zh": "",
         "intro_en": "",
         "category": [
-            "面类/粉类"
+            "粉类"
         ],
         "categories": [
-            "面类/粉类"
+            "粉类"
         ],
         "tags": [],
         "price_range": "RM 10 - RM 20",
@@ -13677,1022 +13677,1021 @@ export const initialRestaurants = [
             "lng": null
         },
         "halalStatus": "certified"
-    }
-,
-    {
-    "id": 372,
-    "name": "Tulang Jr Cafe",
-    "name_en": "Tulang Jr Cafe",
-    "intro_zh": "",
-    "intro_en": "",
-    "address": "108, Jalan Impian Senai 2, Taman Impian Senai, 81400 Senai, Johor Darul Ta'zim",
-    "opening_hours": "",
-    "category": [
-        "马来餐"
-    ],
-    "categories": [
-        "马来餐"
-    ],
-    "rating": 0,
-    "image": "https://placehold.co/600x400/e0e0e0/333333?text=No+Image",
-    "subStalls": [],
-    "price_range": "RM 10-20",
-    "menu_link": "",
-    "website_link": "https://www.facebook.com/TulangChopNGrill/",
-    "delivery_link": "",
-    "isVegetarian": false,
-    "isNoBeef": true,
-    "manualStatus": "auto",
-    "branches": [],
-    "tags": [],
-    "subscriptionLevel": 0,
-    "isVIP": false,
-    "priority": 0,
-    "whatsappLink": "",
-    "location": {
-        "lat": null,
-        "lng": null
     },
-    "phone": "0182559296",
-    "halalStatus": "muslim_owned"
-},
     {
-    "id": 373,
-    "name": "Chicken Chop Senai (Kg Jaya Sepakat)",
-    "name_en": "Chicken Chop Senai (Kg Jaya Sepakat)",
-    "intro_zh": "",
-    "intro_en": "",
-    "address": "Taman Jaya Sepakat, 81400 Senai, Johor",
-    "opening_hours": "",
-    "category": [
-        "马来餐",
-        "西餐"
-    ],
-    "categories": [
-        "马来餐",
-        "西餐"
-    ],
-    "rating": 0,
-    "image": "https://placehold.co/600x400/e0e0e0/333333?text=No+Image",
-    "subStalls": [],
-    "price_range": "RM 10-20",
-    "menu_link": "",
-    "website_link": "",
-    "delivery_link": "",
-    "isVegetarian": false,
-    "isNoBeef": true,
-    "manualStatus": "auto",
-    "branches": [],
-    "tags": [],
-    "subscriptionLevel": 0,
-    "isVIP": false,
-    "priority": 0,
-    "whatsappLink": "",
-    "location": {
-        "lat": null,
-        "lng": null
+        "id": 372,
+        "name": "Tulang Jr Cafe",
+        "name_en": "Tulang Jr Cafe",
+        "intro_zh": "",
+        "intro_en": "",
+        "address": "108, Jalan Impian Senai 2, Taman Impian Senai, 81400 Senai, Johor Darul Ta'zim",
+        "opening_hours": "",
+        "category": [
+            "马来餐"
+        ],
+        "categories": [
+            "马来餐"
+        ],
+        "rating": 0,
+        "image": "https://placehold.co/600x400/e0e0e0/333333?text=No+Image",
+        "subStalls": [],
+        "price_range": "RM 10-20",
+        "menu_link": "",
+        "website_link": "https://www.facebook.com/TulangChopNGrill/",
+        "delivery_link": "",
+        "isVegetarian": false,
+        "isNoBeef": true,
+        "manualStatus": "auto",
+        "branches": [],
+        "tags": [],
+        "subscriptionLevel": 0,
+        "isVIP": false,
+        "priority": 0,
+        "whatsappLink": "",
+        "location": {
+            "lat": null,
+            "lng": null
+        },
+        "phone": "0182559296",
+        "halalStatus": "muslim_owned"
     },
-    "phone": "0182359412",
-    "halalStatus": "muslim_owned"
-},
     {
-    "id": 374,
-    "name": "Nasi Kukus Scientex Utama",
-    "name_en": "Nasi Kukus Scientex Utama",
-    "intro_zh": "",
-    "intro_en": "",
-    "address": "527, Jln Persiaran Scientex Utama 1, Taman Scientex Utama, 81400 Senai, Johor Darul Ta'zim",
-    "opening_hours": "",
-    "category": [
-        "马来餐"
-    ],
-    "categories": [
-        "马来餐"
-    ],
-    "rating": 0,
-    "image": "https://placehold.co/600x400/e0e0e0/333333?text=No+Image",
-    "subStalls": [],
-    "price_range": "RM 10-20",
-    "menu_link": "",
-    "website_link": "",
-    "delivery_link": "",
-    "isVegetarian": false,
-    "isNoBeef": true,
-    "manualStatus": "auto",
-    "branches": [],
-    "tags": [],
-    "subscriptionLevel": 0,
-    "isVIP": false,
-    "priority": 0,
-    "whatsappLink": "",
-    "location": {
-        "lat": null,
-        "lng": null
+        "id": 373,
+        "name": "Chicken Chop Senai (Kg Jaya Sepakat)",
+        "name_en": "Chicken Chop Senai (Kg Jaya Sepakat)",
+        "intro_zh": "",
+        "intro_en": "",
+        "address": "Taman Jaya Sepakat, 81400 Senai, Johor",
+        "opening_hours": "",
+        "category": [
+            "马来餐",
+            "西餐"
+        ],
+        "categories": [
+            "马来餐",
+            "西餐"
+        ],
+        "rating": 0,
+        "image": "https://placehold.co/600x400/e0e0e0/333333?text=No+Image",
+        "subStalls": [],
+        "price_range": "RM 10-20",
+        "menu_link": "",
+        "website_link": "",
+        "delivery_link": "",
+        "isVegetarian": false,
+        "isNoBeef": true,
+        "manualStatus": "auto",
+        "branches": [],
+        "tags": [],
+        "subscriptionLevel": 0,
+        "isVIP": false,
+        "priority": 0,
+        "whatsappLink": "",
+        "location": {
+            "lat": null,
+            "lng": null
+        },
+        "phone": "0182359412",
+        "halalStatus": "muslim_owned"
     },
-    "phone": "0172396335",
-    "halalStatus": "muslim_owned"
-},
     {
-    "id": 375,
-    "name": "Restoran Nusantara Tok Rin",
-    "name_en": "Restoran Nusantara Tok Rin",
-    "intro_zh": "",
-    "intro_en": "",
-    "address": "503, Jln Persiaran Scientex Utama 1, Taman Scientex Utama, 81400 Senai, Johor Darul Ta'zim",
-    "opening_hours": "",
-    "category": [
-        "马来餐"
-    ],
-    "categories": [
-        "马来餐"
-    ],
-    "rating": 0,
-    "image": "https://placehold.co/600x400/e0e0e0/333333?text=No+Image",
-    "subStalls": [],
-    "price_range": "RM 10-20",
-    "menu_link": "",
-    "website_link": "https://www.facebook.com/p/Restoran-Nusantara-Tok-Rin-100083053162867/",
-    "delivery_link": "",
-    "isVegetarian": false,
-    "isNoBeef": true,
-    "manualStatus": "auto",
-    "branches": [],
-    "tags": [],
-    "subscriptionLevel": 0,
-    "isVIP": false,
-    "priority": 0,
-    "whatsappLink": "",
-    "location": {
-        "lat": null,
-        "lng": null
+        "id": 374,
+        "name": "Nasi Kukus Scientex Utama",
+        "name_en": "Nasi Kukus Scientex Utama",
+        "intro_zh": "",
+        "intro_en": "",
+        "address": "527, Jln Persiaran Scientex Utama 1, Taman Scientex Utama, 81400 Senai, Johor Darul Ta'zim",
+        "opening_hours": "",
+        "category": [
+            "马来餐"
+        ],
+        "categories": [
+            "马来餐"
+        ],
+        "rating": 0,
+        "image": "https://placehold.co/600x400/e0e0e0/333333?text=No+Image",
+        "subStalls": [],
+        "price_range": "RM 10-20",
+        "menu_link": "",
+        "website_link": "",
+        "delivery_link": "",
+        "isVegetarian": false,
+        "isNoBeef": true,
+        "manualStatus": "auto",
+        "branches": [],
+        "tags": [],
+        "subscriptionLevel": 0,
+        "isVIP": false,
+        "priority": 0,
+        "whatsappLink": "",
+        "location": {
+            "lat": null,
+            "lng": null
+        },
+        "phone": "0172396335",
+        "halalStatus": "muslim_owned"
     },
-    "phone": "",
-    "halalStatus": "muslim_owned"
-},
     {
-    "id": 376,
-    "name": "Hungry Habibi",
-    "name_en": "Hungry Habibi",
-    "intro_zh": "",
-    "intro_en": "",
-    "address": "496, Jln Persiaran Scientex Utama 1, Taman Scientex Utama, 81400 Senai, Johor Darul Ta'zim",
-    "opening_hours": "12pm–11pm",
-    "category": [
-        "马来餐"
-    ],
-    "categories": [
-        "马来餐"
-    ],
-    "rating": 0,
-    "image": "https://placehold.co/600x400/e0e0e0/333333?text=No+Image",
-    "subStalls": [],
-    "price_range": "RM 10-20",
-    "menu_link": "",
-    "website_link": "",
-    "delivery_link": "",
-    "isVegetarian": false,
-    "isNoBeef": true,
-    "manualStatus": "auto",
-    "branches": [],
-    "tags": [],
-    "subscriptionLevel": 0,
-    "isVIP": false,
-    "priority": 0,
-    "whatsappLink": "",
-    "location": {
-        "lat": null,
-        "lng": null
+        "id": 375,
+        "name": "Restoran Nusantara Tok Rin",
+        "name_en": "Restoran Nusantara Tok Rin",
+        "intro_zh": "",
+        "intro_en": "",
+        "address": "503, Jln Persiaran Scientex Utama 1, Taman Scientex Utama, 81400 Senai, Johor Darul Ta'zim",
+        "opening_hours": "",
+        "category": [
+            "马来餐"
+        ],
+        "categories": [
+            "马来餐"
+        ],
+        "rating": 0,
+        "image": "https://placehold.co/600x400/e0e0e0/333333?text=No+Image",
+        "subStalls": [],
+        "price_range": "RM 10-20",
+        "menu_link": "",
+        "website_link": "https://www.facebook.com/p/Restoran-Nusantara-Tok-Rin-100083053162867/",
+        "delivery_link": "",
+        "isVegetarian": false,
+        "isNoBeef": true,
+        "manualStatus": "auto",
+        "branches": [],
+        "tags": [],
+        "subscriptionLevel": 0,
+        "isVIP": false,
+        "priority": 0,
+        "whatsappLink": "",
+        "location": {
+            "lat": null,
+            "lng": null
+        },
+        "phone": "",
+        "halalStatus": "muslim_owned"
     },
-    "phone": "075984781",
-    "halalStatus": "muslim_owned"
-},
     {
-    "id": 377,
-    "name": "Kelem Ice Cream Gula Apong",
-    "name_en": "Kelem Ice Cream Gula Apong",
-    "intro_zh": "",
-    "intro_en": "",
-    "address": "493, Jln Persiaran Scientex Utama 1, Taman Scientex Utama, 81400 Senai, Johor Darul Ta'zim",
-    "opening_hours": "11:30am–10:30pm",
-    "category": [
-        "蛋糕甜点"
-    ],
-    "categories": [
-        "蛋糕甜点"
-    ],
-    "rating": 0,
-    "image": "https://placehold.co/600x400/e0e0e0/333333?text=No+Image",
-    "subStalls": [],
-    "price_range": "RM 10-20",
-    "menu_link": "",
-    "website_link": "",
-    "delivery_link": "",
-    "isVegetarian": false,
-    "isNoBeef": true,
-    "manualStatus": "auto",
-    "branches": [],
-    "tags": [],
-    "subscriptionLevel": 0,
-    "isVIP": false,
-    "priority": 0,
-    "whatsappLink": "",
-    "location": {
-        "lat": null,
-        "lng": null
+        "id": 376,
+        "name": "Hungry Habibi",
+        "name_en": "Hungry Habibi",
+        "intro_zh": "",
+        "intro_en": "",
+        "address": "496, Jln Persiaran Scientex Utama 1, Taman Scientex Utama, 81400 Senai, Johor Darul Ta'zim",
+        "opening_hours": "12pm–11pm",
+        "category": [
+            "马来餐"
+        ],
+        "categories": [
+            "马来餐"
+        ],
+        "rating": 0,
+        "image": "https://placehold.co/600x400/e0e0e0/333333?text=No+Image",
+        "subStalls": [],
+        "price_range": "RM 10-20",
+        "menu_link": "",
+        "website_link": "",
+        "delivery_link": "",
+        "isVegetarian": false,
+        "isNoBeef": true,
+        "manualStatus": "auto",
+        "branches": [],
+        "tags": [],
+        "subscriptionLevel": 0,
+        "isVIP": false,
+        "priority": 0,
+        "whatsappLink": "",
+        "location": {
+            "lat": null,
+            "lng": null
+        },
+        "phone": "075984781",
+        "halalStatus": "muslim_owned"
     },
-    "phone": "0105706367",
-    "halalStatus": "muslim_owned"
-},
     {
-    "id": 378,
-    "name": "Happy Tomyam Kitchen Restaurant",
-    "name_en": "Happy Tomyam Kitchen Restaurant",
-    "intro_zh": "",
-    "intro_en": "",
-    "address": "480, Jln Persiaran Scientex Utama 1, TAMAN SCIENTEX UTAMA, 81400 Senai, Johor Darul Ta'zim",
-    "opening_hours": "",
-    "category": [
-        "马来餐"
-    ],
-    "categories": [
-        "马来餐"
-    ],
-    "rating": 0,
-    "image": "https://placehold.co/600x400/e0e0e0/333333?text=No+Image",
-    "subStalls": [],
-    "price_range": "RM 10-20",
-    "menu_link": "",
-    "website_link": "",
-    "delivery_link": "",
-    "isVegetarian": false,
-    "isNoBeef": true,
-    "manualStatus": "auto",
-    "branches": [],
-    "tags": [],
-    "subscriptionLevel": 0,
-    "isVIP": false,
-    "priority": 0,
-    "whatsappLink": "",
-    "location": {
-        "lat": null,
-        "lng": null
+        "id": 377,
+        "name": "Kelem Ice Cream Gula Apong",
+        "name_en": "Kelem Ice Cream Gula Apong",
+        "intro_zh": "",
+        "intro_en": "",
+        "address": "493, Jln Persiaran Scientex Utama 1, Taman Scientex Utama, 81400 Senai, Johor Darul Ta'zim",
+        "opening_hours": "11:30am–10:30pm",
+        "category": [
+            "蛋糕甜点"
+        ],
+        "categories": [
+            "蛋糕甜点"
+        ],
+        "rating": 0,
+        "image": "https://placehold.co/600x400/e0e0e0/333333?text=No+Image",
+        "subStalls": [],
+        "price_range": "RM 10-20",
+        "menu_link": "",
+        "website_link": "",
+        "delivery_link": "",
+        "isVegetarian": false,
+        "isNoBeef": true,
+        "manualStatus": "auto",
+        "branches": [],
+        "tags": [],
+        "subscriptionLevel": 0,
+        "isVIP": false,
+        "priority": 0,
+        "whatsappLink": "",
+        "location": {
+            "lat": null,
+            "lng": null
+        },
+        "phone": "0105706367",
+        "halalStatus": "muslim_owned"
     },
-    "phone": "01162027215",
-    "halalStatus": "muslim_owned"
-},
     {
-    "id": 379,
-    "name": "Nasi Kandar Mamu",
-    "name_en": "Nasi Kandar Mamu",
-    "intro_zh": "",
-    "intro_en": "",
-    "address": "472 & 473, Jln Persiaran Scientex Utama 1, Taman Teknologi Johor, 81400 Johor Bahru, Johor Darul Ta'zim",
-    "opening_hours": "",
-    "category": [
-        "印度档"
-    ],
-    "categories": [
-        "印度档"
-    ],
-    "rating": 0,
-    "image": "https://placehold.co/600x400/e0e0e0/333333?text=No+Image",
-    "subStalls": [],
-    "price_range": "RM 10-20",
-    "menu_link": "",
-    "website_link": "",
-    "delivery_link": "",
-    "isVegetarian": false,
-    "isNoBeef": true,
-    "manualStatus": "auto",
-    "branches": [],
-    "tags": [],
-    "subscriptionLevel": 0,
-    "isVIP": false,
-    "priority": 0,
-    "whatsappLink": "",
-    "location": {
-        "lat": null,
-        "lng": null
+        "id": 378,
+        "name": "Happy Tomyam Kitchen Restaurant",
+        "name_en": "Happy Tomyam Kitchen Restaurant",
+        "intro_zh": "",
+        "intro_en": "",
+        "address": "480, Jln Persiaran Scientex Utama 1, TAMAN SCIENTEX UTAMA, 81400 Senai, Johor Darul Ta'zim",
+        "opening_hours": "",
+        "category": [
+            "马来餐"
+        ],
+        "categories": [
+            "马来餐"
+        ],
+        "rating": 0,
+        "image": "https://placehold.co/600x400/e0e0e0/333333?text=No+Image",
+        "subStalls": [],
+        "price_range": "RM 10-20",
+        "menu_link": "",
+        "website_link": "",
+        "delivery_link": "",
+        "isVegetarian": false,
+        "isNoBeef": true,
+        "manualStatus": "auto",
+        "branches": [],
+        "tags": [],
+        "subscriptionLevel": 0,
+        "isVIP": false,
+        "priority": 0,
+        "whatsappLink": "",
+        "location": {
+            "lat": null,
+            "lng": null
+        },
+        "phone": "01162027215",
+        "halalStatus": "muslim_owned"
     },
-    "phone": "075988934",
-    "halalStatus": "muslim_owned"
-},
     {
-    "id": 380,
-    "name": "DeliC Cafe",
-    "name_en": "DeliC Cafe",
-    "intro_zh": "",
-    "intro_en": "",
-    "address": "456, Jln Persiaran Scientex Utama 1, Tmn, Jln Scientex Utama, 81400 Senai, Johor Darul Ta'zim",
-    "opening_hours": "",
-    "category": [
-        "Cafe",
-        "马来餐"
-    ],
-    "categories": [
-        "Cafe",
-        "马来餐"
-    ],
-    "rating": 0,
-    "image": "https://placehold.co/600x400/e0e0e0/333333?text=No+Image",
-    "subStalls": [],
-    "price_range": "RM 10-20",
-    "menu_link": "",
-    "website_link": "",
-    "delivery_link": "",
-    "isVegetarian": false,
-    "isNoBeef": true,
-    "manualStatus": "auto",
-    "branches": [],
-    "tags": [],
-    "subscriptionLevel": 0,
-    "isVIP": false,
-    "priority": 0,
-    "whatsappLink": "",
-    "location": {
-        "lat": null,
-        "lng": null
+        "id": 379,
+        "name": "Nasi Kandar Mamu",
+        "name_en": "Nasi Kandar Mamu",
+        "intro_zh": "",
+        "intro_en": "",
+        "address": "472 & 473, Jln Persiaran Scientex Utama 1, Taman Teknologi Johor, 81400 Johor Bahru, Johor Darul Ta'zim",
+        "opening_hours": "",
+        "category": [
+            "印度档"
+        ],
+        "categories": [
+            "印度档"
+        ],
+        "rating": 0,
+        "image": "https://placehold.co/600x400/e0e0e0/333333?text=No+Image",
+        "subStalls": [],
+        "price_range": "RM 10-20",
+        "menu_link": "",
+        "website_link": "",
+        "delivery_link": "",
+        "isVegetarian": false,
+        "isNoBeef": true,
+        "manualStatus": "auto",
+        "branches": [],
+        "tags": [],
+        "subscriptionLevel": 0,
+        "isVIP": false,
+        "priority": 0,
+        "whatsappLink": "",
+        "location": {
+            "lat": null,
+            "lng": null
+        },
+        "phone": "075988934",
+        "halalStatus": "muslim_owned"
     },
-    "phone": "0106627020",
-    "halalStatus": "muslim_owned"
-},
     {
-    "id": 381,
-    "name": "Naseeb Capati Nan Senai",
-    "name_en": "Naseeb Capati Nan Senai",
-    "intro_zh": "",
-    "intro_en": "",
-    "address": "446, Jln Persiaran Scientex Utama 1, Taman Teknologi Johor, 81400 Senai, Johor Darul Ta'zim",
-    "opening_hours": "",
-    "category": [
-        "印度档"
-    ],
-    "categories": [
-        "印度档"
-    ],
-    "rating": 0,
-    "image": "https://placehold.co/600x400/e0e0e0/333333?text=No+Image",
-    "subStalls": [],
-    "price_range": "RM 10-20",
-    "menu_link": "",
-    "website_link": "",
-    "delivery_link": "",
-    "isVegetarian": false,
-    "isNoBeef": true,
-    "manualStatus": "auto",
-    "branches": [],
-    "tags": [],
-    "subscriptionLevel": 0,
-    "isVIP": false,
-    "priority": 0,
-    "whatsappLink": "",
-    "location": {
-        "lat": null,
-        "lng": null
+        "id": 380,
+        "name": "DeliC Cafe",
+        "name_en": "DeliC Cafe",
+        "intro_zh": "",
+        "intro_en": "",
+        "address": "456, Jln Persiaran Scientex Utama 1, Tmn, Jln Scientex Utama, 81400 Senai, Johor Darul Ta'zim",
+        "opening_hours": "",
+        "category": [
+            "Cafe",
+            "马来餐"
+        ],
+        "categories": [
+            "Cafe",
+            "马来餐"
+        ],
+        "rating": 0,
+        "image": "https://placehold.co/600x400/e0e0e0/333333?text=No+Image",
+        "subStalls": [],
+        "price_range": "RM 10-20",
+        "menu_link": "",
+        "website_link": "",
+        "delivery_link": "",
+        "isVegetarian": false,
+        "isNoBeef": true,
+        "manualStatus": "auto",
+        "branches": [],
+        "tags": [],
+        "subscriptionLevel": 0,
+        "isVIP": false,
+        "priority": 0,
+        "whatsappLink": "",
+        "location": {
+            "lat": null,
+            "lng": null
+        },
+        "phone": "0106627020",
+        "halalStatus": "muslim_owned"
     },
-    "phone": "0167359364",
-    "halalStatus": "muslim_owned"
-},
     {
-    "id": 382,
-    "name": "Nasi Royale JB",
-    "name_en": "Nasi Royale JB",
-    "intro_zh": "",
-    "intro_en": "",
-    "address": "NO. 577, Jalan jaya sepakat, Kampung Jaya Sepakat, 81400 Senai, Johor Darul Ta'zim",
-    "opening_hours": "",
-    "category": [
-        "马来餐"
-    ],
-    "categories": [
-        "马来餐"
-    ],
-    "rating": 0,
-    "image": "https://placehold.co/600x400/e0e0e0/333333?text=No+Image",
-    "subStalls": [],
-    "price_range": "RM 10-20",
-    "menu_link": "",
-    "website_link": "",
-    "delivery_link": "",
-    "isVegetarian": false,
-    "isNoBeef": true,
-    "manualStatus": "auto",
-    "branches": [],
-    "tags": [],
-    "subscriptionLevel": 0,
-    "isVIP": false,
-    "priority": 0,
-    "whatsappLink": "",
-    "location": {
-        "lat": null,
-        "lng": null
+        "id": 381,
+        "name": "Naseeb Capati Nan Senai",
+        "name_en": "Naseeb Capati Nan Senai",
+        "intro_zh": "",
+        "intro_en": "",
+        "address": "446, Jln Persiaran Scientex Utama 1, Taman Teknologi Johor, 81400 Senai, Johor Darul Ta'zim",
+        "opening_hours": "",
+        "category": [
+            "印度档"
+        ],
+        "categories": [
+            "印度档"
+        ],
+        "rating": 0,
+        "image": "https://placehold.co/600x400/e0e0e0/333333?text=No+Image",
+        "subStalls": [],
+        "price_range": "RM 10-20",
+        "menu_link": "",
+        "website_link": "",
+        "delivery_link": "",
+        "isVegetarian": false,
+        "isNoBeef": true,
+        "manualStatus": "auto",
+        "branches": [],
+        "tags": [],
+        "subscriptionLevel": 0,
+        "isVIP": false,
+        "priority": 0,
+        "whatsappLink": "",
+        "location": {
+            "lat": null,
+            "lng": null
+        },
+        "phone": "0167359364",
+        "halalStatus": "muslim_owned"
     },
-    "phone": "0187934005",
-    "halalStatus": "muslim_owned"
-},
     {
-    "id": 383,
-    "name": "Warung Mee Bandung Pak Abu",
-    "name_en": "Warung Mee Bandung Pak Abu",
-    "intro_zh": "",
-    "intro_en": "",
-    "address": "30, Jalan Berkat 2, Kampung Jaya Sepakat, 81400 Senai, Johor Darul Ta'zim",
-    "opening_hours": "8am-10pm\nSaturday: Closed",
-    "category": [
-        "马来餐"
-    ],
-    "categories": [
-        "马来餐"
-    ],
-    "rating": 0,
-    "image": "https://placehold.co/600x400/e0e0e0/333333?text=No+Image",
-    "subStalls": [],
-    "price_range": "RM 10-20",
-    "menu_link": "",
-    "website_link": "",
-    "delivery_link": "",
-    "isVegetarian": false,
-    "isNoBeef": true,
-    "manualStatus": "auto",
-    "branches": [],
-    "tags": [],
-    "subscriptionLevel": 0,
-    "isVIP": false,
-    "priority": 0,
-    "whatsappLink": "",
-    "location": {
-        "lat": null,
-        "lng": null
+        "id": 382,
+        "name": "Nasi Royale JB",
+        "name_en": "Nasi Royale JB",
+        "intro_zh": "",
+        "intro_en": "",
+        "address": "NO. 577, Jalan jaya sepakat, Kampung Jaya Sepakat, 81400 Senai, Johor Darul Ta'zim",
+        "opening_hours": "",
+        "category": [
+            "马来餐"
+        ],
+        "categories": [
+            "马来餐"
+        ],
+        "rating": 0,
+        "image": "https://placehold.co/600x400/e0e0e0/333333?text=No+Image",
+        "subStalls": [],
+        "price_range": "RM 10-20",
+        "menu_link": "",
+        "website_link": "",
+        "delivery_link": "",
+        "isVegetarian": false,
+        "isNoBeef": true,
+        "manualStatus": "auto",
+        "branches": [],
+        "tags": [],
+        "subscriptionLevel": 0,
+        "isVIP": false,
+        "priority": 0,
+        "whatsappLink": "",
+        "location": {
+            "lat": null,
+            "lng": null
+        },
+        "phone": "0187934005",
+        "halalStatus": "muslim_owned"
     },
-    "phone": "075992279",
-    "halalStatus": "muslim_owned"
-},
     {
-    "id": 384,
-    "name": "Bakso Beranak Kulai",
-    "name_en": "Bakso Beranak Kulai",
-    "intro_zh": "",
-    "intro_en": "",
-    "address": "Jln Utama 1 Taman Bintang Utama 1 kulai Kulai, 81400 Senai, Johor Darul Ta'zim",
-    "opening_hours": "11am–11pm",
-    "category": [
-        "马来餐"
-    ],
-    "categories": [
-        "马来餐"
-    ],
-    "rating": 0,
-    "image": "https://placehold.co/600x400/e0e0e0/333333?text=No+Image",
-    "subStalls": [],
-    "price_range": "RM 10-20",
-    "menu_link": "",
-    "website_link": "",
-    "delivery_link": "",
-    "isVegetarian": false,
-    "isNoBeef": true,
-    "manualStatus": "auto",
-    "branches": [],
-    "tags": [],
-    "subscriptionLevel": 0,
-    "isVIP": false,
-    "priority": 0,
-    "whatsappLink": "",
-    "location": {
-        "lat": null,
-        "lng": null
+        "id": 383,
+        "name": "Warung Mee Bandung Pak Abu",
+        "name_en": "Warung Mee Bandung Pak Abu",
+        "intro_zh": "",
+        "intro_en": "",
+        "address": "30, Jalan Berkat 2, Kampung Jaya Sepakat, 81400 Senai, Johor Darul Ta'zim",
+        "opening_hours": "8am-10pm\nSaturday: Closed",
+        "category": [
+            "马来餐"
+        ],
+        "categories": [
+            "马来餐"
+        ],
+        "rating": 0,
+        "image": "https://placehold.co/600x400/e0e0e0/333333?text=No+Image",
+        "subStalls": [],
+        "price_range": "RM 10-20",
+        "menu_link": "",
+        "website_link": "",
+        "delivery_link": "",
+        "isVegetarian": false,
+        "isNoBeef": true,
+        "manualStatus": "auto",
+        "branches": [],
+        "tags": [],
+        "subscriptionLevel": 0,
+        "isVIP": false,
+        "priority": 0,
+        "whatsappLink": "",
+        "location": {
+            "lat": null,
+            "lng": null
+        },
+        "phone": "075992279",
+        "halalStatus": "muslim_owned"
     },
-    "phone": "0193770456",
-    "halalStatus": "muslim_owned"
-},
     {
-    "id": 385,
-    "name": "泉记烧腊.烧猪专卖店",
-    "name_en": "Quah Ji Restaurant",
-    "intro_zh": "",
-    "intro_en": "",
-    "address": "279 Jalan Utama 2 Taman Bintang utama 81400 senai johor Senai, 81400 Kulai, Johor Darul Ta'zim",
-    "opening_hours": "6:30am–2:30pm\nSunday: Closed",
-    "category": [
-        "饭类"
-    ],
-    "categories": [
-        "饭类"
-    ],
-    "rating": 0,
-    "image": "https://placehold.co/600x400/e0e0e0/333333?text=No+Image",
-    "subStalls": [],
-    "price_range": "RM 10-20",
-    "menu_link": "",
-    "website_link": "https://www.facebook.com/qjroasted/",
-    "delivery_link": "",
-    "isVegetarian": false,
-    "isNoBeef": false,
-    "manualStatus": "auto",
-    "branches": [],
-    "tags": [
-        "烧腊",
-        "烧猪"
-    ],
-    "subscriptionLevel": 0,
-    "isVIP": false,
-    "priority": 0,
-    "whatsappLink": "",
-    "location": {
-        "lat": null,
-        "lng": null
+        "id": 384,
+        "name": "Bakso Beranak Kulai",
+        "name_en": "Bakso Beranak Kulai",
+        "intro_zh": "",
+        "intro_en": "",
+        "address": "Jln Utama 1 Taman Bintang Utama 1 kulai Kulai, 81400 Senai, Johor Darul Ta'zim",
+        "opening_hours": "11am–11pm",
+        "category": [
+            "马来餐"
+        ],
+        "categories": [
+            "马来餐"
+        ],
+        "rating": 0,
+        "image": "https://placehold.co/600x400/e0e0e0/333333?text=No+Image",
+        "subStalls": [],
+        "price_range": "RM 10-20",
+        "menu_link": "",
+        "website_link": "",
+        "delivery_link": "",
+        "isVegetarian": false,
+        "isNoBeef": true,
+        "manualStatus": "auto",
+        "branches": [],
+        "tags": [],
+        "subscriptionLevel": 0,
+        "isVIP": false,
+        "priority": 0,
+        "whatsappLink": "",
+        "location": {
+            "lat": null,
+            "lng": null
+        },
+        "phone": "0193770456",
+        "halalStatus": "muslim_owned"
     },
-    "phone": "0127125822",
-    "halalStatus": "non_halal"
-},
     {
-    "id": 386,
-    "name": "三素公餐厅",
-    "name_en": "Uncle Vege Restaurant",
-    "intro_zh": "",
-    "intro_en": "",
-    "address": "280, Jalan Utama 2, Taman Bintang Utama, 81400 Senai, Johor Darul Ta'zim",
-    "opening_hours": "",
-    "category": [
-        "饭类"
-    ],
-    "categories": [
-        "饭类"
-    ],
-    "rating": 0,
-    "image": "https://placehold.co/600x400/e0e0e0/333333?text=No+Image",
-    "subStalls": [],
-    "price_range": "RM 10-20",
-    "menu_link": "",
-    "website_link": "",
-    "delivery_link": "",
-    "isVegetarian": true,
-    "isNoBeef": false,
-    "manualStatus": "auto",
-    "branches": [],
-    "tags": [
-        "素食"
-    ],
-    "subscriptionLevel": 0,
-    "isVIP": false,
-    "priority": 0,
-    "whatsappLink": "",
-    "location": {
-        "lat": null,
-        "lng": null
+        "id": 385,
+        "name": "泉记烧腊.烧猪专卖店",
+        "name_en": "Quah Ji Restaurant",
+        "intro_zh": "",
+        "intro_en": "",
+        "address": "279 Jalan Utama 2 Taman Bintang utama 81400 senai johor Senai, 81400 Kulai, Johor Darul Ta'zim",
+        "opening_hours": "6:30am–2:30pm\nSunday: Closed",
+        "category": [
+            "饭类"
+        ],
+        "categories": [
+            "饭类"
+        ],
+        "rating": 0,
+        "image": "https://placehold.co/600x400/e0e0e0/333333?text=No+Image",
+        "subStalls": [],
+        "price_range": "RM 10-20",
+        "menu_link": "",
+        "website_link": "https://www.facebook.com/qjroasted/",
+        "delivery_link": "",
+        "isVegetarian": false,
+        "isNoBeef": false,
+        "manualStatus": "auto",
+        "branches": [],
+        "tags": [
+            "烧腊",
+            "烧猪"
+        ],
+        "subscriptionLevel": 0,
+        "isVIP": false,
+        "priority": 0,
+        "whatsappLink": "",
+        "location": {
+            "lat": null,
+            "lng": null
+        },
+        "phone": "0127125822",
+        "halalStatus": "non_halal"
     },
-    "phone": "0102818668",
-    "halalStatus": "no_pork"
-},
     {
-    "id": 387,
-    "name": "士乃大众",
-    "name_en": "Restoran Makanan Hakka",
-    "intro_zh": "",
-    "intro_en": "",
-    "address": "294, Jalan Utama 2, Taman Bintang Utama, 81400 Senai, Johor Darul Ta'zim",
-    "opening_hours": "10am–3:30pm\nMonday: Closed",
-    "category": [
-        "煮炒海鲜楼"
-    ],
-    "categories": [
-        "煮炒海鲜楼"
-    ],
-    "rating": 0,
-    "image": "https://placehold.co/600x400/e0e0e0/333333?text=No+Image",
-    "subStalls": [],
-    "price_range": "RM 10-20",
-    "menu_link": "",
-    "website_link": "https://www.facebook.com/profile.php?id=100054275091440#",
-    "delivery_link": "",
-    "isVegetarian": false,
-    "isNoBeef": false,
-    "manualStatus": "auto",
-    "branches": [],
-    "tags": [
-        "客家菜"
-    ],
-    "subscriptionLevel": 0,
-    "isVIP": false,
-    "priority": 0,
-    "whatsappLink": "",
-    "location": {
-        "lat": null,
-        "lng": null
+        "id": 386,
+        "name": "三素公餐厅",
+        "name_en": "Uncle Vege Restaurant",
+        "intro_zh": "",
+        "intro_en": "",
+        "address": "280, Jalan Utama 2, Taman Bintang Utama, 81400 Senai, Johor Darul Ta'zim",
+        "opening_hours": "",
+        "category": [
+            "饭类"
+        ],
+        "categories": [
+            "饭类"
+        ],
+        "rating": 0,
+        "image": "https://placehold.co/600x400/e0e0e0/333333?text=No+Image",
+        "subStalls": [],
+        "price_range": "RM 10-20",
+        "menu_link": "",
+        "website_link": "",
+        "delivery_link": "",
+        "isVegetarian": true,
+        "isNoBeef": false,
+        "manualStatus": "auto",
+        "branches": [],
+        "tags": [
+            "素食"
+        ],
+        "subscriptionLevel": 0,
+        "isVIP": false,
+        "priority": 0,
+        "whatsappLink": "",
+        "location": {
+            "lat": null,
+            "lng": null
+        },
+        "phone": "0102818668",
+        "halalStatus": "no_pork"
     },
-    "phone": "0167874900",
-    "halalStatus": "non_halal"
-},
     {
-    "id": 388,
-    "name": "Mastura Tomyam Seafood",
-    "name_en": "Mastura Tomyam Seafood",
-    "intro_zh": "",
-    "intro_en": "",
-    "address": "300, Jalan Utama 2, Taman Bintang Utama, 81400 Senai, Johor Darul Ta'zim",
-    "opening_hours": "12pm–12am",
-    "category": [
-        "马来餐"
-    ],
-    "categories": [
-        "马来餐"
-    ],
-    "rating": 0,
-    "image": "https://placehold.co/600x400/e0e0e0/333333?text=No+Image",
-    "subStalls": [],
-    "price_range": "RM 10-20",
-    "menu_link": "",
-    "website_link": "",
-    "delivery_link": "",
-    "isVegetarian": false,
-    "isNoBeef": true,
-    "manualStatus": "auto",
-    "branches": [],
-    "tags": [],
-    "subscriptionLevel": 0,
-    "isVIP": false,
-    "priority": 0,
-    "whatsappLink": "",
-    "location": {
-        "lat": null,
-        "lng": null
+        "id": 387,
+        "name": "士乃大众",
+        "name_en": "Restoran Makanan Hakka",
+        "intro_zh": "",
+        "intro_en": "",
+        "address": "294, Jalan Utama 2, Taman Bintang Utama, 81400 Senai, Johor Darul Ta'zim",
+        "opening_hours": "10am–3:30pm\nMonday: Closed",
+        "category": [
+            "煮炒海鲜楼"
+        ],
+        "categories": [
+            "煮炒海鲜楼"
+        ],
+        "rating": 0,
+        "image": "https://placehold.co/600x400/e0e0e0/333333?text=No+Image",
+        "subStalls": [],
+        "price_range": "RM 10-20",
+        "menu_link": "",
+        "website_link": "https://www.facebook.com/profile.php?id=100054275091440#",
+        "delivery_link": "",
+        "isVegetarian": false,
+        "isNoBeef": false,
+        "manualStatus": "auto",
+        "branches": [],
+        "tags": [
+            "客家菜"
+        ],
+        "subscriptionLevel": 0,
+        "isVIP": false,
+        "priority": 0,
+        "whatsappLink": "",
+        "location": {
+            "lat": null,
+            "lng": null
+        },
+        "phone": "0167874900",
+        "halalStatus": "non_halal"
     },
-    "phone": "0177536597",
-    "halalStatus": "muslim_owned"
-},
     {
-    "id": 389,
-    "name": "莊园松鱼头",
-    "name_en": "Restoran Zhuang Yuan",
-    "intro_zh": "",
-    "intro_en": "",
-    "address": "295, Jalan Utama 2, Taman Bintang Utama, 81400 Senai, Johor Darul Ta'zim",
-    "opening_hours": "10am–4pm\nSunday: Closed",
-    "category": [
-        "饭类"
-    ],
-    "categories": [
-        "饭类"
-    ],
-    "rating": 0,
-    "image": "https://placehold.co/600x400/e0e0e0/333333?text=No+Image",
-    "subStalls": [],
-    "price_range": "RM 10-20",
-    "menu_link": "",
-    "website_link": "",
-    "delivery_link": "",
-    "isVegetarian": false,
-    "isNoBeef": false,
-    "manualStatus": "auto",
-    "branches": [],
-    "tags": [
-        "松鱼头"
-    ],
-    "subscriptionLevel": 0,
-    "isVIP": false,
-    "priority": 0,
-    "whatsappLink": "",
-    "location": {
-        "lat": null,
-        "lng": null
+        "id": 388,
+        "name": "Mastura Tomyam Seafood",
+        "name_en": "Mastura Tomyam Seafood",
+        "intro_zh": "",
+        "intro_en": "",
+        "address": "300, Jalan Utama 2, Taman Bintang Utama, 81400 Senai, Johor Darul Ta'zim",
+        "opening_hours": "12pm–12am",
+        "category": [
+            "马来餐"
+        ],
+        "categories": [
+            "马来餐"
+        ],
+        "rating": 0,
+        "image": "https://placehold.co/600x400/e0e0e0/333333?text=No+Image",
+        "subStalls": [],
+        "price_range": "RM 10-20",
+        "menu_link": "",
+        "website_link": "",
+        "delivery_link": "",
+        "isVegetarian": false,
+        "isNoBeef": true,
+        "manualStatus": "auto",
+        "branches": [],
+        "tags": [],
+        "subscriptionLevel": 0,
+        "isVIP": false,
+        "priority": 0,
+        "whatsappLink": "",
+        "location": {
+            "lat": null,
+            "lng": null
+        },
+        "phone": "0177536597",
+        "halalStatus": "muslim_owned"
     },
-    "phone": "0167120456",
-    "halalStatus": "non_halal"
-},
     {
-    "id": 390,
-    "name": "Restoran Bunga Dahlia",
-    "name_en": "Restoran Bunga Dahlia",
-    "intro_zh": "",
-    "intro_en": "",
-    "address": "88, Jln Bintang, Taman Bintang, 81400 Senai, Johor Darul Ta'zim",
-    "opening_hours": "6:30am–6pm\nMonday: Closed",
-    "category": [
-        "马来餐"
-    ],
-    "categories": [
-        "马来餐"
-    ],
-    "rating": 0,
-    "image": "https://placehold.co/600x400/e0e0e0/333333?text=No+Image",
-    "subStalls": [],
-    "price_range": "RM 10-20",
-    "menu_link": "",
-    "website_link": "https://www.facebook.com/p/Restoran-Bunga-Dahlia-100066599084975/",
-    "delivery_link": "",
-    "isVegetarian": false,
-    "isNoBeef": true,
-    "manualStatus": "auto",
-    "branches": [],
-    "tags": [],
-    "subscriptionLevel": 0,
-    "isVIP": false,
-    "priority": 0,
-    "whatsappLink": "",
-    "location": {
-        "lat": null,
-        "lng": null
+        "id": 389,
+        "name": "莊园松鱼头",
+        "name_en": "Restoran Zhuang Yuan",
+        "intro_zh": "",
+        "intro_en": "",
+        "address": "295, Jalan Utama 2, Taman Bintang Utama, 81400 Senai, Johor Darul Ta'zim",
+        "opening_hours": "10am–4pm\nSunday: Closed",
+        "category": [
+            "饭类"
+        ],
+        "categories": [
+            "饭类"
+        ],
+        "rating": 0,
+        "image": "https://placehold.co/600x400/e0e0e0/333333?text=No+Image",
+        "subStalls": [],
+        "price_range": "RM 10-20",
+        "menu_link": "",
+        "website_link": "",
+        "delivery_link": "",
+        "isVegetarian": false,
+        "isNoBeef": false,
+        "manualStatus": "auto",
+        "branches": [],
+        "tags": [
+            "松鱼头"
+        ],
+        "subscriptionLevel": 0,
+        "isVIP": false,
+        "priority": 0,
+        "whatsappLink": "",
+        "location": {
+            "lat": null,
+            "lng": null
+        },
+        "phone": "0167120456",
+        "halalStatus": "non_halal"
     },
-    "phone": "0192895929",
-    "halalStatus": "muslim_owned"
-},
     {
-    "id": 391,
-    "name": "瑞记海南鸡饭",
-    "name_en": "Swee Kee Hainan Chicken Rice",
-    "intro_zh": "",
-    "intro_en": "",
-    "address": "98, Jln Bintang, Taman Bintang, 81400 Senai, Johor Darul Ta'zim",
-    "opening_hours": "10:30am–7pm\nMonday: Closed",
-    "category": [
-        "饭类"
-    ],
-    "categories": [
-        "饭类"
-    ],
-    "rating": 0,
-    "image": "https://placehold.co/600x400/e0e0e0/333333?text=No+Image",
-    "subStalls": [],
-    "price_range": "RM 10-20",
-    "menu_link": "",
-    "website_link": "",
-    "delivery_link": "",
-    "isVegetarian": false,
-    "isNoBeef": false,
-    "manualStatus": "auto",
-    "branches": [],
-    "tags": [
-        "海南鸡饭"
-    ],
-    "subscriptionLevel": 0,
-    "isVIP": false,
-    "priority": 0,
-    "whatsappLink": "",
-    "location": {
-        "lat": null,
-        "lng": null
+        "id": 390,
+        "name": "Restoran Bunga Dahlia",
+        "name_en": "Restoran Bunga Dahlia",
+        "intro_zh": "",
+        "intro_en": "",
+        "address": "88, Jln Bintang, Taman Bintang, 81400 Senai, Johor Darul Ta'zim",
+        "opening_hours": "6:30am–6pm\nMonday: Closed",
+        "category": [
+            "马来餐"
+        ],
+        "categories": [
+            "马来餐"
+        ],
+        "rating": 0,
+        "image": "https://placehold.co/600x400/e0e0e0/333333?text=No+Image",
+        "subStalls": [],
+        "price_range": "RM 10-20",
+        "menu_link": "",
+        "website_link": "https://www.facebook.com/p/Restoran-Bunga-Dahlia-100066599084975/",
+        "delivery_link": "",
+        "isVegetarian": false,
+        "isNoBeef": true,
+        "manualStatus": "auto",
+        "branches": [],
+        "tags": [],
+        "subscriptionLevel": 0,
+        "isVIP": false,
+        "priority": 0,
+        "whatsappLink": "",
+        "location": {
+            "lat": null,
+            "lng": null
+        },
+        "phone": "0192895929",
+        "halalStatus": "muslim_owned"
     },
-    "phone": "075984231",
-    "halalStatus": "non_halal"
-},
     {
-    "id": 392,
-    "name": "Masal Vadai Restaurant",
-    "name_en": "Masal Vadai Restaurant",
-    "intro_zh": "",
-    "intro_en": "",
-    "address": "108, Jln Bintang, Taman Bintang, 81400 Senai, Johor Darul Ta'zim",
-    "opening_hours": "",
-    "category": [
-        "马来餐"
-    ],
-    "categories": [
-        "马来餐"
-    ],
-    "rating": 0,
-    "image": "https://placehold.co/600x400/e0e0e0/333333?text=No+Image",
-    "subStalls": [],
-    "price_range": "RM 10-20",
-    "menu_link": "",
-    "website_link": "",
-    "delivery_link": "",
-    "isVegetarian": false,
-    "isNoBeef": true,
-    "manualStatus": "auto",
-    "branches": [],
-    "tags": [],
-    "subscriptionLevel": 0,
-    "isVIP": false,
-    "priority": 0,
-    "whatsappLink": "",
-    "location": {
-        "lat": null,
-        "lng": null
+        "id": 391,
+        "name": "瑞记海南鸡饭",
+        "name_en": "Swee Kee Hainan Chicken Rice",
+        "intro_zh": "",
+        "intro_en": "",
+        "address": "98, Jln Bintang, Taman Bintang, 81400 Senai, Johor Darul Ta'zim",
+        "opening_hours": "10:30am–7pm\nMonday: Closed",
+        "category": [
+            "饭类"
+        ],
+        "categories": [
+            "饭类"
+        ],
+        "rating": 0,
+        "image": "https://placehold.co/600x400/e0e0e0/333333?text=No+Image",
+        "subStalls": [],
+        "price_range": "RM 10-20",
+        "menu_link": "",
+        "website_link": "",
+        "delivery_link": "",
+        "isVegetarian": false,
+        "isNoBeef": false,
+        "manualStatus": "auto",
+        "branches": [],
+        "tags": [
+            "海南鸡饭"
+        ],
+        "subscriptionLevel": 0,
+        "isVIP": false,
+        "priority": 0,
+        "whatsappLink": "",
+        "location": {
+            "lat": null,
+            "lng": null
+        },
+        "phone": "075984231",
+        "halalStatus": "non_halal"
     },
-    "phone": "0143334622",
-    "halalStatus": "muslim_owned"
-},
     {
-    "id": 393,
-    "name": "Restoran Farook 23Jam",
-    "name_en": "Restoran Farook 23Jam",
-    "intro_zh": "",
-    "intro_en": "",
-    "address": "11, Jalan Pakis, Taman Handal, 81400 Senai, Johor Darul Ta'zim",
-    "opening_hours": "",
-    "category": [
-        "印度档"
-    ],
-    "categories": [
-        "印度档"
-    ],
-    "rating": 0,
-    "image": "https://placehold.co/600x400/e0e0e0/333333?text=No+Image",
-    "subStalls": [],
-    "price_range": "RM 10-20",
-    "menu_link": "",
-    "website_link": "",
-    "delivery_link": "",
-    "isVegetarian": false,
-    "isNoBeef": true,
-    "manualStatus": "auto",
-    "branches": [],
-    "tags": [],
-    "subscriptionLevel": 0,
-    "isVIP": false,
-    "priority": 0,
-    "whatsappLink": "",
-    "location": {
-        "lat": null,
-        "lng": null
+        "id": 392,
+        "name": "Masal Vadai Restaurant",
+        "name_en": "Masal Vadai Restaurant",
+        "intro_zh": "",
+        "intro_en": "",
+        "address": "108, Jln Bintang, Taman Bintang, 81400 Senai, Johor Darul Ta'zim",
+        "opening_hours": "",
+        "category": [
+            "马来餐"
+        ],
+        "categories": [
+            "马来餐"
+        ],
+        "rating": 0,
+        "image": "https://placehold.co/600x400/e0e0e0/333333?text=No+Image",
+        "subStalls": [],
+        "price_range": "RM 10-20",
+        "menu_link": "",
+        "website_link": "",
+        "delivery_link": "",
+        "isVegetarian": false,
+        "isNoBeef": true,
+        "manualStatus": "auto",
+        "branches": [],
+        "tags": [],
+        "subscriptionLevel": 0,
+        "isVIP": false,
+        "priority": 0,
+        "whatsappLink": "",
+        "location": {
+            "lat": null,
+            "lng": null
+        },
+        "phone": "0143334622",
+        "halalStatus": "muslim_owned"
     },
-    "phone": "075908918",
-    "halalStatus": "muslim_owned"
-},
     {
-    "id": 394,
-    "name": "Restaurant Awe Kelantan",
-    "name_en": "Restaurant Awe Kelantan",
-    "intro_zh": "",
-    "intro_en": "",
-    "address": "Taman Senai Baru, 81400 Senai, Johor",
-    "opening_hours": "",
-    "category": [
-        "马来餐"
-    ],
-    "categories": [
-        "马来餐"
-    ],
-    "rating": 0,
-    "image": "https://placehold.co/600x400/e0e0e0/333333?text=No+Image",
-    "subStalls": [],
-    "price_range": "RM 10-20",
-    "menu_link": "",
-    "website_link": "",
-    "delivery_link": "",
-    "isVegetarian": false,
-    "isNoBeef": true,
-    "manualStatus": "auto",
-    "branches": [],
-    "tags": [],
-    "subscriptionLevel": 0,
-    "isVIP": false,
-    "priority": 0,
-    "whatsappLink": "",
-    "location": {
-        "lat": null,
-        "lng": null
+        "id": 393,
+        "name": "Restoran Farook 23Jam",
+        "name_en": "Restoran Farook 23Jam",
+        "intro_zh": "",
+        "intro_en": "",
+        "address": "11, Jalan Pakis, Taman Handal, 81400 Senai, Johor Darul Ta'zim",
+        "opening_hours": "",
+        "category": [
+            "印度档"
+        ],
+        "categories": [
+            "印度档"
+        ],
+        "rating": 0,
+        "image": "https://placehold.co/600x400/e0e0e0/333333?text=No+Image",
+        "subStalls": [],
+        "price_range": "RM 10-20",
+        "menu_link": "",
+        "website_link": "",
+        "delivery_link": "",
+        "isVegetarian": false,
+        "isNoBeef": true,
+        "manualStatus": "auto",
+        "branches": [],
+        "tags": [],
+        "subscriptionLevel": 0,
+        "isVIP": false,
+        "priority": 0,
+        "whatsappLink": "",
+        "location": {
+            "lat": null,
+            "lng": null
+        },
+        "phone": "075908918",
+        "halalStatus": "muslim_owned"
     },
-    "phone": "",
-    "halalStatus": "muslim_owned"
-},
     {
-    "id": 395,
-    "name": "Lakkias Curry House",
-    "name_en": "Lakkias Curry House",
-    "intro_zh": "",
-    "intro_en": "",
-    "address": "41 & 42, 41 42, Jalan Cyber 16, Kawasan Perindustrian Senai Fasa 3, 81400 Senai, Johor",
-    "opening_hours": "",
-    "category": [
-        "印度档"
-    ],
-    "categories": [
-        "印度档"
-    ],
-    "rating": 0,
-    "image": "https://placehold.co/600x400/e0e0e0/333333?text=No+Image",
-    "subStalls": [],
-    "price_range": "RM 10-20",
-    "menu_link": "",
-    "website_link": "",
-    "delivery_link": "",
-    "isVegetarian": false,
-    "isNoBeef": true,
-    "manualStatus": "auto",
-    "branches": [],
-    "tags": [],
-    "subscriptionLevel": 0,
-    "isVIP": false,
-    "priority": 0,
-    "whatsappLink": "",
-    "location": {
-        "lat": null,
-        "lng": null
+        "id": 394,
+        "name": "Restaurant Awe Kelantan",
+        "name_en": "Restaurant Awe Kelantan",
+        "intro_zh": "",
+        "intro_en": "",
+        "address": "Taman Senai Baru, 81400 Senai, Johor",
+        "opening_hours": "",
+        "category": [
+            "马来餐"
+        ],
+        "categories": [
+            "马来餐"
+        ],
+        "rating": 0,
+        "image": "https://placehold.co/600x400/e0e0e0/333333?text=No+Image",
+        "subStalls": [],
+        "price_range": "RM 10-20",
+        "menu_link": "",
+        "website_link": "",
+        "delivery_link": "",
+        "isVegetarian": false,
+        "isNoBeef": true,
+        "manualStatus": "auto",
+        "branches": [],
+        "tags": [],
+        "subscriptionLevel": 0,
+        "isVIP": false,
+        "priority": 0,
+        "whatsappLink": "",
+        "location": {
+            "lat": null,
+            "lng": null
+        },
+        "phone": "",
+        "halalStatus": "muslim_owned"
     },
-    "phone": "0173737922",
-    "halalStatus": "muslim_owned"
-},
     {
-    "id": 396,
-    "name": "Asam Pedas Jb",
-    "name_en": "Asam Pedas Jb",
-    "intro_zh": "",
-    "intro_en": "",
-    "address": "Kawasan Perindustrian Senai Fasa 3, 81400 Senai, Johor",
-    "opening_hours": "10am–9pm\nFriday: Closed\nSaturday: Closed\nSunday: Closed",
-    "category": [
-        "马来餐"
-    ],
-    "categories": [
-        "马来餐"
-    ],
-    "rating": 0,
-    "image": "https://placehold.co/600x400/e0e0e0/333333?text=No+Image",
-    "subStalls": [],
-    "price_range": "RM 10-20",
-    "menu_link": "",
-    "website_link": "",
-    "delivery_link": "",
-    "isVegetarian": false,
-    "isNoBeef": true,
-    "manualStatus": "auto",
-    "branches": [],
-    "tags": [],
-    "subscriptionLevel": 0,
-    "isVIP": false,
-    "priority": 0,
-    "whatsappLink": "",
-    "location": {
-        "lat": null,
-        "lng": null
+        "id": 395,
+        "name": "Lakkias Curry House",
+        "name_en": "Lakkias Curry House",
+        "intro_zh": "",
+        "intro_en": "",
+        "address": "41 & 42, 41 42, Jalan Cyber 16, Kawasan Perindustrian Senai Fasa 3, 81400 Senai, Johor",
+        "opening_hours": "",
+        "category": [
+            "印度档"
+        ],
+        "categories": [
+            "印度档"
+        ],
+        "rating": 0,
+        "image": "https://placehold.co/600x400/e0e0e0/333333?text=No+Image",
+        "subStalls": [],
+        "price_range": "RM 10-20",
+        "menu_link": "",
+        "website_link": "",
+        "delivery_link": "",
+        "isVegetarian": false,
+        "isNoBeef": true,
+        "manualStatus": "auto",
+        "branches": [],
+        "tags": [],
+        "subscriptionLevel": 0,
+        "isVIP": false,
+        "priority": 0,
+        "whatsappLink": "",
+        "location": {
+            "lat": null,
+            "lng": null
+        },
+        "phone": "0173737922",
+        "halalStatus": "muslim_owned"
     },
-    "phone": "0178430483",
-    "halalStatus": "muslim_owned"
-},
     {
-    "id": 397,
-    "name": "Chamek",
-    "name_en": "Chamek",
-    "intro_zh": "",
-    "intro_en": "",
-    "address": "30, Jalan Terminal 5, 81400 Senai, Johor",
-    "opening_hours": "7am–7pm",
-    "category": [
-        "马来餐"
-    ],
-    "categories": [
-        "马来餐"
-    ],
-    "rating": 0,
-    "image": "https://placehold.co/600x400/e0e0e0/333333?text=No+Image",
-    "subStalls": [],
-    "price_range": "RM 10-20",
-    "menu_link": "",
-    "website_link": "",
-    "delivery_link": "",
-    "isVegetarian": false,
-    "isNoBeef": true,
-    "manualStatus": "auto",
-    "branches": [],
-    "tags": [],
-    "subscriptionLevel": 0,
-    "isVIP": false,
-    "priority": 0,
-    "whatsappLink": "",
-    "location": {
-        "lat": null,
-        "lng": null
+        "id": 396,
+        "name": "Asam Pedas Jb",
+        "name_en": "Asam Pedas Jb",
+        "intro_zh": "",
+        "intro_en": "",
+        "address": "Kawasan Perindustrian Senai Fasa 3, 81400 Senai, Johor",
+        "opening_hours": "10am–9pm\nFriday: Closed\nSaturday: Closed\nSunday: Closed",
+        "category": [
+            "马来餐"
+        ],
+        "categories": [
+            "马来餐"
+        ],
+        "rating": 0,
+        "image": "https://placehold.co/600x400/e0e0e0/333333?text=No+Image",
+        "subStalls": [],
+        "price_range": "RM 10-20",
+        "menu_link": "",
+        "website_link": "",
+        "delivery_link": "",
+        "isVegetarian": false,
+        "isNoBeef": true,
+        "manualStatus": "auto",
+        "branches": [],
+        "tags": [],
+        "subscriptionLevel": 0,
+        "isVIP": false,
+        "priority": 0,
+        "whatsappLink": "",
+        "location": {
+            "lat": null,
+            "lng": null
+        },
+        "phone": "0178430483",
+        "halalStatus": "muslim_owned"
     },
-    "phone": "0173603215",
-    "halalStatus": "muslim_owned"
-},
     {
-    "id": 398,
-    "name": "Omak Den Restaurant",
-    "name_en": "Omak Den Restaurant",
-    "intro_zh": "",
-    "intro_en": "",
-    "address": "Jalan Jumbo, 81250 Senai, Johor Darul Ta'zim",
-    "opening_hours": "8am–5pm\nSunday: Closed",
-    "category": [
-        "马来餐"
-    ],
-    "categories": [
-        "马来餐"
-    ],
-    "rating": 0,
-    "image": "https://placehold.co/600x400/e0e0e0/333333?text=No+Image",
-    "subStalls": [],
-    "price_range": "RM 10-20",
-    "menu_link": "",
-    "website_link": "",
-    "delivery_link": "",
-    "isVegetarian": false,
-    "isNoBeef": true,
-    "manualStatus": "auto",
-    "branches": [],
-    "tags": [],
-    "subscriptionLevel": 0,
-    "isVIP": false,
-    "priority": 0,
-    "whatsappLink": "",
-    "location": {
-        "lat": null,
-        "lng": null
+        "id": 397,
+        "name": "Chamek",
+        "name_en": "Chamek",
+        "intro_zh": "",
+        "intro_en": "",
+        "address": "30, Jalan Terminal 5, 81400 Senai, Johor",
+        "opening_hours": "7am–7pm",
+        "category": [
+            "马来餐"
+        ],
+        "categories": [
+            "马来餐"
+        ],
+        "rating": 0,
+        "image": "https://placehold.co/600x400/e0e0e0/333333?text=No+Image",
+        "subStalls": [],
+        "price_range": "RM 10-20",
+        "menu_link": "",
+        "website_link": "",
+        "delivery_link": "",
+        "isVegetarian": false,
+        "isNoBeef": true,
+        "manualStatus": "auto",
+        "branches": [],
+        "tags": [],
+        "subscriptionLevel": 0,
+        "isVIP": false,
+        "priority": 0,
+        "whatsappLink": "",
+        "location": {
+            "lat": null,
+            "lng": null
+        },
+        "phone": "0173603215",
+        "halalStatus": "muslim_owned"
     },
-    "phone": "0189810255",
-    "halalStatus": "muslim_owned"
-},
+    {
+        "id": 398,
+        "name": "Omak Den Restaurant",
+        "name_en": "Omak Den Restaurant",
+        "intro_zh": "",
+        "intro_en": "",
+        "address": "Jalan Jumbo, 81250 Senai, Johor Darul Ta'zim",
+        "opening_hours": "8am–5pm\nSunday: Closed",
+        "category": [
+            "马来餐"
+        ],
+        "categories": [
+            "马来餐"
+        ],
+        "rating": 0,
+        "image": "https://placehold.co/600x400/e0e0e0/333333?text=No+Image",
+        "subStalls": [],
+        "price_range": "RM 10-20",
+        "menu_link": "",
+        "website_link": "",
+        "delivery_link": "",
+        "isVegetarian": false,
+        "isNoBeef": true,
+        "manualStatus": "auto",
+        "branches": [],
+        "tags": [],
+        "subscriptionLevel": 0,
+        "isVIP": false,
+        "priority": 0,
+        "whatsappLink": "",
+        "location": {
+            "lat": null,
+            "lng": null
+        },
+        "phone": "0189810255",
+        "halalStatus": "muslim_owned"
+    },
     {
         "id": 399,
         "name": "Starbucks",
