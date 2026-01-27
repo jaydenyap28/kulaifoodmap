@@ -23,7 +23,7 @@ const DEFAULT_HERO_BG = "https://i.ibb.co/7J5qjZtv/image.png";
 
 // Version control for data structure changes
 // Increment this when you make breaking changes to data structure to force a reset
-const DATA_VERSION = 'v35';
+const DATA_VERSION = 'v37';
 
 function App() {
   const { t, i18n } = useTranslation();
@@ -867,12 +867,6 @@ function App() {
                 onReorderCategories={handleReorderCategories}
             isAdmin={isAdmin}
             onExportChanges={handleExportChanges}
-            showOpenOnly={showOpenOnly}
-                onToggleShowOpenOnly={() => setShowOpenOnly(!showOpenOnly)}
-                hideDrinks={hideDrinks}
-                onToggleHideDrinks={() => setHideDrinks(!hideDrinks)}
-                hideDesserts={hideDesserts}
-                onToggleHideDesserts={() => setHideDesserts(!hideDesserts)}
             />
         </div>
 

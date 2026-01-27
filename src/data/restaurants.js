@@ -653,7 +653,12 @@ export const initialRestaurants = [
         "isVegetarian": false,
         "isNoBeef": false,
         "manualStatus": "auto",
-        "branches": [],
+        "branches": [
+            {
+                "name": "Nasi Lemak Wak Kentut • KTM Kulai",
+                "address": "1337, Jalan Lengkongan, Taman Kulai, 81000 Kulai, Johor Darul Ta'zim"
+            }
+        ],
         "tags": [
             "干"
         ],
@@ -1416,42 +1421,7 @@ export const initialRestaurants = [
         },
         "halalStatus": "certified"
     },
-    {
-        "id": 35,
-        "name": "Nasi Lemak Wak Kentut • KTM Kulai",
-        "name_en": "",
-        "address": "1337, Jalan Lengkongan, Taman Kulai, 81000 Kulai, Johor Darul Ta'zim",
-        "opening_hours": "Monday: 7am - 12:30am\nTuesday: 7am - 12:30am\nWednesday: 7am - 12:30am\nThursday: 7am - 12:30am\nFriday: 7am - 12:30am\nSaturday: 7am - 12:30am\nSunday: 7am - 12:30am",
-        "intro_zh": "古来传奇椰浆饭，以其独特的炸鸡和参巴辣椒酱闻名。炸鸡皮脆肉嫩，参巴酱香辣开胃，是古来必吃的地标性美食。",
-        "intro_en": "Legendary Nasi Lemak in Kulai, famous for its unique fried chicken and sambal sauce. The chicken is crispy and tender, while the sambal is spicy and appetizing. A must-try landmark food in Kulai.",
-        "category": [
-            "马来与印度风味"
-        ],
-        "categories": [
-            "马来与印度风味"
-        ],
-        "rating": 0,
-        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS4LJ1WH9dHQu3dpiBZsb7C2ZePFJV90LQd8w&s",
-        "subStalls": [],
-        "price_range": "RM 10-20",
-        "menu_link": "",
-        "website_link": "",
-        "delivery_link": "",
-        "isVegetarian": false,
-        "isNoBeef": false,
-        "manualStatus": "auto",
-        "branches": [],
-        "tags": [],
-        "subscriptionLevel": 0,
-        "isVIP": false,
-        "priority": 0,
-        "whatsappLink": "",
-        "location": {
-            "lat": null,
-            "lng": null
-        },
-        "halalStatus": "muslim_owned"
-    },
+
     {
         "id": 36,
         "name": "Manggo Tree",
@@ -2088,10 +2058,12 @@ export const initialRestaurants = [
         "intro_zh": "结合时尚与美食的餐厅酒吧，提供精致西餐、蛋糕甜点和各类饮品。环境优美，适合情侣约会或朋友小酌。",
         "intro_en": "A trendy restaurant and bar combining fashion with food. Offers exquisite Western cuisine, desserts, and a wide range of drinks. A beautiful setting for dates or hanging out with friends.",
         "category": [
-            "西餐"
+            "西餐",
+            "酒吧"
         ],
         "categories": [
-            "西餐"
+            "西餐",
+            "酒吧"
         ],
         "rating": 0,
         "image": "https://i.ibb.co/gFyLtg9V/UFB-Union-Fashion-Bar-Balcony.jpg",
@@ -3574,10 +3546,12 @@ export const initialRestaurants = [
         "intro_zh": "德国风味餐厅酒吧，提供各式德国啤酒、猪手、香肠拼盘及西式餐点。环境宽敞舒适，是聚会畅饮的好地方。",
         "intro_en": "German-style restaurant and bar offering a variety of German beers, pork knuckles, sausage platters, and Western dishes. Spacious and comfortable, perfect for gatherings and drinks.",
         "category": [
-            "西餐"
+            "西餐",
+            "酒吧"
         ],
         "categories": [
-            "西餐"
+            "西餐",
+            "酒吧"
         ],
         "rating": 0,
         "image": "https://i.ibb.co/pBDCB7g9/The-Bierhaus.jpg",
@@ -8949,14 +8923,14 @@ export const initialRestaurants = [
         "intro_zh": "提供煮炒与海鲜料理，环境舒适，同时也适合小酌一杯，是放松心情的好地方。",
         "intro_en": "Offers stir-fry and seafood dishes in a comfortable setting, also suitable for a casual drink and relaxation.",
         "address": "1, Jln Kiambang 2, Pusat Komersial Indah, Bandar Indahpura, 81000 Kulai, Johor Darul Ta'zim",
-        "opening_hours": "Monday: 11:30 am–3 pm, 5:30–10 pm\nTuesday: 11:30 am–3 pm, 5:30–10 pm\nWednesday: 11:30 am–3 pm, 5:30–10 pm\nThursday: 11:30 am–3 pm, 5:30–10 pm\nFriday: 11:30 am–3 pm, 5:30–10 pm\nSaturday: 11:30 am–3 pm, 5:30–10 pm\nSunday: 11:30 am–3 pm, 5:30–10 pm",
+        "opening_hours": "Monday: 11:30am - 10pm\nTuesday: 11:30am - 10pm\nWednesday: 11:30am - 10pm\nThursday: 11:30am - 10pm\nFriday: 11:30am - 10pm\nSaturday: 11:30am - 10pm\nSunday: 11:30am - 10pm",
         "category": [
-            "煮炒海鲜楼",
-            "酒吧"
+            "酒吧",
+            "饭类"
         ],
         "categories": [
-            "煮炒海鲜楼",
-            "酒吧"
+            "酒吧",
+            "饭类"
         ],
         "rating": 0,
         "image": "https://mms.img.susercontent.com/636052d1e87864ae14d2e4424623cc03",
@@ -9395,6 +9369,8 @@ export const initialRestaurants = [
         "name_en": "The East Court",
         "address": "133, Jalan Kenanga 29/6, Bandar Indahpura, 81000 Kulai, Johor Darul Ta'zim",
         "opening_hours": "Monday: 11 am–9 pm\nTuesday: 11 am–9 pm\nWednesday: 11 am–9 pm\nThursday: 11 am–9 pm\nFriday: 11 am–9 pm\nSaturday: 11 am–9 pm\nSunday: 11 am–9 pm",
+        "intro_zh": "位于 Indahpura 的白宫海鲜药膳是当地非常受欢迎的平价大排档煮炒。虽然店名听起来响亮，但实际上是一家环境随和、充满烟火气的家常餐馆。这里主打的是价格亲民且分量十足的煮炒菜色，是许多古来家庭解决晚餐或周末小聚的“饭堂”",
+        "intro_en": "The East Court in Indahpura is a popular local Zhi Char eatery known for its unpretentious dining experience and hearty home-style cooking. Far from being a fancy banquet hall, it is a bustling, casual spot where locals head to for affordable and satisfying family dinners. The restaurant is highly regarded for its generous portions, quick service, and signature \"Wok Hei\" in every dish. From their herbal soups to classic stir-fries like butter chicken and deep-fried pork, it offers great value for money in a relaxed neighborhood setting",
         "category": [
             "煮炒海鲜楼"
         ],
@@ -15059,5 +15035,519 @@ export const initialRestaurants = [
     "phone": "",
     "halalStatus": "no_pork",
     "area": "Senai"
+}
+,
+    {
+    "id": 406,
+    "name": "Sushi Plus (Kulai)",
+    "name_en": "Sushi Plus (Kulai)",
+    "intro_zh": "Sushi Plus (Kulai) 是位于 Indahpura 商业区的一家日式寿司专卖店。与传统点餐式日料店不同，这里主打便捷的自助挑选模式。店内柜台整齐陈列着琳琅满目的单件寿司及组合套餐，口味涵盖了从经典握寿司、军舰寿司到深受本地人喜爱的美式卷物。该店以高透明度的计费方式和出色的便利性深受当地街坊欢迎。虽然店内提供少量简易桌椅供顾客即时用餐，但由于其快捷的特性，大多数食客选择在此定制自己的寿司拼盘并外带分享",
+    "intro_en": "Sushi Plus (Kulai) is a popular Japanese sushi outlet located in the vibrant Indahpura commercial hub. It operates on a self-service grab-and-go concept, where customers can browse through a wide selection of individually displayed sushi and assorted platters. The store is well-regarded for its convenience and transparent pricing, offering everything from traditional nigiri and gunkan to fusion maki rolls tailored to local tastes. While a limited seating area is available for a quick sit-down meal, the outlet primarily serves as a high-traffic takeaway spot, allowing diners to curate their own sushi boxes for home or office enjoyment",
+    "address": "244, Jalan Kenanga 29/8, Bandar Indahpura, 81000 Kulai, Johor",
+    "opening_hours": "Monday: 11am - 10pm\nTuesday: 11am - 10pm\nWednesday: 11am - 10pm\nThursday: 11am - 10pm\nFriday: 11am - 10pm\nSaturday: 11am - 10pm\nSunday: 11am - 10pm",
+    "category": [
+        "日本餐"
+    ],
+    "categories": [
+        "日本餐"
+    ],
+    "rating": 0,
+    "image": "https://placehold.co/600x400/1e1e1e/FFF?text=Sushi+Plus",
+    "subStalls": [],
+    "price_range": "RM 10-30",
+    "menu_link": "",
+    "website_link": "",
+    "delivery_link": "",
+    "isVegetarian": false,
+    "isNoBeef": false,
+    "manualStatus": "auto",
+    "branches": [],
+    "tags": [
+        "Sushi",
+        "Japanese",
+        "Indahpura",
+        "Grab&Go"
+    ],
+    "subscriptionLevel": 0,
+    "isVIP": false,
+    "priority": 0,
+    "whatsappLink": "",
+    "location": {
+        "lat": null,
+        "lng": null
+    },
+    "phone": "",
+    "halalStatus": "non_halal",
+    "area": "Indahpura"
+}
+,
+    {
+    "id": 407,
+    "name": "GoGiYo Korean BBQ House",
+    "name_en": "GoGiYo Korean BBQ House",
+    "intro_zh": "位于太子城的韩式烤肉店，提供正宗韩国料理。",
+    "intro_en": "Korean BBQ house in Bandar Putra serving authentic Korean cuisine.",
+    "address": "7509, Jln Enggang 19, Bandar Putra Kulai, 81000 Kulai, Johor Darul Ta'zim",
+    "opening_hours": "Monday: 11:30am - 10pm\nTuesday: 11:30am - 10pm\nWednesday: Closed\nThursday: 11:30am - 10pm\nFriday: 11:30am - 10pm\nSaturday: 11:30am - 10pm\nSunday: 11:30am - 10pm",
+    "category": [
+        "韩国餐"
+    ],
+    "categories": [
+        "韩国餐"
+    ],
+    "rating": 0,
+    "image": "https://placehold.co/600x400/1e1e1e/FFF?text=GoGiYo",
+    "subStalls": [],
+    "price_range": "RM 30-60",
+    "menu_link": "",
+    "website_link": "",
+    "delivery_link": "",
+    "isVegetarian": false,
+    "isNoBeef": false,
+    "manualStatus": "auto",
+    "branches": [],
+    "tags": [
+        "Korean BBQ",
+        "Bandar Putra"
+    ],
+    "subscriptionLevel": 0,
+    "isVIP": false,
+    "priority": 0,
+    "whatsappLink": "",
+    "location": {
+        "lat": null,
+        "lng": null
+    },
+    "phone": "017-470 8754",
+    "halalStatus": "non_halal",
+    "area": "Bandar Putra"
+},
+    {
+    "id": 408,
+    "name": "Glanz Bistro House",
+    "name_en": "Glanz Bistro House",
+    "intro_zh": "太子城的休闲 Bistro，营业至深夜。",
+    "intro_en": "Casual bistro in Bandar Putra, open until late night.",
+    "address": "7502, Jln Enggang 19, Bandar Putra Kulai, 81000, Johor Darul Ta'zim",
+    "opening_hours": "Monday: 11am - 2am\nTuesday: 11am - 2am\nWednesday: 11am - 2am\nThursday: 11am - 2am\nFriday: 11am - 2am\nSaturday: 11am - 2am\nSunday: 11am - 2am",
+    "category": [
+        "Cafe"
+    ],
+    "categories": [
+        "Cafe"
+    ],
+    "rating": 0,
+    "image": "https://placehold.co/600x400/1e1e1e/FFF?text=Glanz+Bistro",
+    "subStalls": [],
+    "price_range": "RM 20-50",
+    "menu_link": "",
+    "website_link": "",
+    "delivery_link": "",
+    "isVegetarian": false,
+    "isNoBeef": false,
+    "manualStatus": "auto",
+    "branches": [],
+    "tags": [
+        "Bistro",
+        "Late Night",
+        "Bandar Putra"
+    ],
+    "subscriptionLevel": 0,
+    "isVIP": false,
+    "priority": 0,
+    "whatsappLink": "",
+    "location": {
+        "lat": null,
+        "lng": null
+    },
+    "phone": "012-766 6698",
+    "halalStatus": "non_halal",
+    "area": "Bandar Putra"
+},
+    {
+    "id": 409,
+    "name": "心友明海鲜楼",
+    "name_en": "Yu Min Two Restaurant",
+    "intro_zh": "太子城的煮炒海鲜楼，适合家庭聚餐。",
+    "intro_en": "Seafood and Zhi Char restaurant in Bandar Putra, good for family dining.",
+    "address": "7513, Jln Enggang 19, Bandar Putra Kulai, 81000, Johor Darul Ta'zim",
+    "opening_hours": "Monday: 2:30pm - 12am\nTuesday: 2:30pm - 12am\nWednesday: 2:30pm - 12am\nThursday: 2:30pm - 12am\nFriday: 2:30pm - 12am\nSaturday: 2:30pm - 12am\nSunday: 2:30pm - 12am",
+    "category": [
+        "煮炒海鲜楼"
+    ],
+    "categories": [
+        "煮炒海鲜楼"
+    ],
+    "rating": 0,
+    "image": "https://placehold.co/600x400/1e1e1e/FFF?text=Yu+Min+Two",
+    "subStalls": [],
+    "price_range": "RM 15-40",
+    "menu_link": "",
+    "website_link": "",
+    "delivery_link": "",
+    "isVegetarian": false,
+    "isNoBeef": false,
+    "manualStatus": "auto",
+    "branches": [],
+    "tags": [
+        "Seafood",
+        "Zhi Char",
+        "Dinner",
+        "Supper"
+    ],
+    "subscriptionLevel": 0,
+    "isVIP": false,
+    "priority": 0,
+    "whatsappLink": "",
+    "location": {
+        "lat": null,
+        "lng": null
+    },
+    "phone": "07-598 8289",
+    "halalStatus": "non_halal",
+    "area": "Bandar Putra"
+},
+    {
+    "id": 410,
+    "name": "Gangnam BBQ",
+    "name_en": "Gangnam BBQ",
+    "intro_zh": "正宗韩式烧烤，位于太子城。",
+    "intro_en": "Authentic Korean BBQ located in Bandar Putra.",
+    "address": "7516, Jln Enggang 19, Bandar Putra Kulai, 81000 Kulai, Johor Darul Ta'zim",
+    "opening_hours": "Monday: 11:30am - 10pm\nTuesday: 11:30am - 10pm\nWednesday: 11:30am - 10pm\nThursday: 11:30am - 10pm\nFriday: 11:30am - 10pm\nSaturday: 11:30am - 10pm\nSunday: 11:30am - 10pm",
+    "category": [
+        "韩国餐"
+    ],
+    "categories": [
+        "韩国餐"
+    ],
+    "rating": 0,
+    "image": "https://placehold.co/600x400/1e1e1e/FFF?text=Gangnam+BBQ",
+    "subStalls": [],
+    "price_range": "RM 30-60",
+    "menu_link": "",
+    "website_link": "https://www.facebook.com/GangnamBBQ.my/",
+    "delivery_link": "",
+    "isVegetarian": false,
+    "isNoBeef": false,
+    "manualStatus": "auto",
+    "branches": [],
+    "tags": [
+        "Korean BBQ",
+        "Bandar Putra"
+    ],
+    "subscriptionLevel": 0,
+    "isVIP": false,
+    "priority": 0,
+    "whatsappLink": "",
+    "location": {
+        "lat": null,
+        "lng": null
+    },
+    "phone": "016-703 2677",
+    "halalStatus": "non_halal",
+    "area": "Bandar Putra"
+},
+    {
+    "id": 411,
+    "name": "福记家乡肉骨茶",
+    "name_en": "Restoran Unik",
+    "intro_zh": "太子城的肉骨茶专卖店。",
+    "intro_en": "Bak Kut Teh restaurant in Bandar Putra.",
+    "address": "7519, Jln Enggang 19, Bandar Putra Kulai, 81000 Kulai, Johor Darul Ta'zim",
+    "opening_hours": "Monday: 11:30am - 10pm\nTuesday: 11:30am - 10pm\nWednesday: 11:30am - 10pm\nThursday: 11:30am - 10pm\nFriday: 11:30am - 10pm\nSaturday: 11:30am - 10pm\nSunday: 11:30am - 10pm",
+    "category": [
+        "饭类"
+    ],
+    "categories": [
+        "饭类"
+    ],
+    "rating": 0,
+    "image": "https://placehold.co/600x400/1e1e1e/FFF?text=Restoran+Unik",
+    "subStalls": [],
+    "price_range": "RM 15-30",
+    "menu_link": "",
+    "website_link": "",
+    "delivery_link": "",
+    "isVegetarian": false,
+    "isNoBeef": false,
+    "manualStatus": "auto",
+    "branches": [],
+    "tags": [
+        "Bak Kut Teh",
+        "Chinese",
+        "Bandar Putra"
+    ],
+    "subscriptionLevel": 0,
+    "isVIP": false,
+    "priority": 0,
+    "whatsappLink": "",
+    "location": {
+        "lat": null,
+        "lng": null
+    },
+    "phone": "012-317 8816",
+    "halalStatus": "non_halal",
+    "area": "Bandar Putra"
+},
+    {
+    "id": 412,
+    "name": "齐乐美食阁",
+    "name_en": "QI LE RESTAURANT",
+    "intro_zh": "太子城的中式餐厅，提供午餐和晚餐。",
+    "intro_en": "Chinese restaurant in Bandar Putra serving lunch and dinner.",
+    "address": "7521, Jln Enggang 19, Bandar Putra Kulai, 81000 Kulai, Johor Darul Ta'zim",
+    "opening_hours": "Monday: 10am - 3pm, 5pm - 10pm\nTuesday: Closed\nWednesday: 10am - 3pm, 5pm - 10pm\nThursday: 10am - 3pm, 5pm - 10pm\nFriday: 10am - 3pm, 5pm - 10pm\nSaturday: 10am - 3pm, 5pm - 10pm\nSunday: 10am - 3pm, 5pm - 10pm",
+    "category": [
+        "煮炒海鲜楼"
+    ],
+    "categories": [
+        "煮炒海鲜楼"
+    ],
+    "rating": 0,
+    "image": "https://placehold.co/600x400/1e1e1e/FFF?text=Qi+Le",
+    "subStalls": [],
+    "price_range": "RM 10-30",
+    "menu_link": "",
+    "website_link": "",
+    "delivery_link": "",
+    "isVegetarian": false,
+    "isNoBeef": false,
+    "manualStatus": "auto",
+    "branches": [],
+    "tags": [
+        "Chinese",
+        "Lunch",
+        "Dinner",
+        "Bandar Putra"
+    ],
+    "subscriptionLevel": 0,
+    "isVIP": false,
+    "priority": 0,
+    "whatsappLink": "",
+    "location": {
+        "lat": null,
+        "lng": null
+    },
+    "phone": "010-226 6362",
+    "halalStatus": "non_halal",
+    "area": "Bandar Putra"
+},
+    {
+    "id": 413,
+    "name": "Alaf Maju Restaurant",
+    "name_en": "Alaf Maju Restaurant",
+    "intro_zh": "位于太子城的 Mamak 餐厅，提供各式印度与马来美食。",
+    "intro_en": "Mamak restaurant in Bandar Putra serving Indian and Malay cuisine.",
+    "address": "19, Jalan Enggang, Bandar Putra Kulai, 81000 Kulai, Johor",
+    "opening_hours": "Monday: 7am - 10pm\nTuesday: 7am - 10pm\nWednesday: 7am - 10pm\nThursday: 7am - 10pm\nFriday: 7am - 10pm\nSaturday: 7am - 10pm\nSunday: 7am - 10pm",
+    "category": [
+        "马来与印度风味"
+    ],
+    "categories": [
+        "马来与印度风味"
+    ],
+    "rating": 0,
+    "image": "https://placehold.co/600x400/1e1e1e/FFF?text=Alaf+Maju",
+    "subStalls": [],
+    "price_range": "RM 5-20",
+    "menu_link": "",
+    "website_link": "",
+    "delivery_link": "",
+    "isVegetarian": false,
+    "isNoBeef": true,
+    "manualStatus": "auto",
+    "branches": [],
+    "tags": [
+        "Mamak",
+        "Roti Canai",
+        "Bandar Putra"
+    ],
+    "subscriptionLevel": 0,
+    "isVIP": false,
+    "priority": 0,
+    "whatsappLink": "",
+    "location": {
+        "lat": null,
+        "lng": null
+    },
+    "phone": "07-552 0302",
+    "halalStatus": "muslim_owned",
+    "area": "Bandar Putra"
+},
+    {
+    "id": 414,
+    "name": "ZM bulgogi mix BBQ",
+    "name_en": "ZM bulgogi mix BBQ",
+    "intro_zh": "太子城的韩式烤肉店。",
+    "intro_en": "Korean BBQ restaurant in Bandar Putra.",
+    "address": "7535, Jln Enggang 19, Bandar Putra Kulai, 81000 Kulai, Johor Darul Ta'zim",
+    "opening_hours": "Monday: 11am - 10pm\nTuesday: 11am - 10pm\nWednesday: 11am - 10pm\nThursday: 11am - 10pm\nFriday: 11am - 10pm\nSaturday: 11am - 10pm\nSunday: 11am - 10pm",
+    "category": [
+        "韩国餐"
+    ],
+    "categories": [
+        "韩国餐"
+    ],
+    "rating": 0,
+    "image": "https://placehold.co/600x400/1e1e1e/FFF?text=ZM+Bulgogi",
+    "subStalls": [],
+    "price_range": "RM 30-60",
+    "menu_link": "",
+    "website_link": "",
+    "delivery_link": "",
+    "isVegetarian": false,
+    "isNoBeef": false,
+    "manualStatus": "auto",
+    "branches": [],
+    "tags": [
+        "Korean BBQ",
+        "Bandar Putra"
+    ],
+    "subscriptionLevel": 0,
+    "isVIP": false,
+    "priority": 0,
+    "whatsappLink": "",
+    "location": {
+        "lat": null,
+        "lng": null
+    },
+    "phone": "011-1173 7212",
+    "halalStatus": "non_halal",
+    "area": "Bandar Putra"
+},
+    {
+    "id": 415,
+    "name": "The Upper Floor Cafe",
+    "name_en": "The Upper Floor Cafe",
+    "intro_zh": "位于 Taman Mas 的舒适咖啡馆。",
+    "intro_en": "Cozy cafe located in Taman Mas.",
+    "address": "7A, Jln Selamat, Taman Mas, 81000 Kulai, Johor Darul Ta'zim",
+    "opening_hours": "Monday: 9:30am - 6pm\nTuesday: 9:30am - 6pm\nWednesday: 9:30am - 6pm\nThursday: 9:30am - 6pm\nFriday: 9:30am - 6pm\nSaturday: 9:30am - 6pm\nSunday: 9:30am - 6pm",
+    "category": [
+        "Cafe"
+    ],
+    "categories": [
+        "Cafe"
+    ],
+    "rating": 0,
+    "image": "https://placehold.co/600x400/1e1e1e/FFF?text=The+Upper+Floor",
+    "subStalls": [],
+    "price_range": "RM 15-35",
+    "menu_link": "",
+    "website_link": "",
+    "delivery_link": "",
+    "isVegetarian": false,
+    "isNoBeef": false,
+    "manualStatus": "auto",
+    "branches": [],
+    "tags": [
+        "Cafe",
+        "Coffee",
+        "Kulai"
+    ],
+    "subscriptionLevel": 0,
+    "isVIP": false,
+    "priority": 0,
+    "whatsappLink": "",
+    "location": {
+        "lat": null,
+        "lng": null
+    },
+    "phone": "",
+    "halalStatus": "no_pork",
+    "area": "Kulai Town"
+}
+,
+    {
+    "id": 416,
+    "name": "江满小食馆",
+    "name_en": "Restoran Jiang Man",
+    "intro_zh": "位于 Taman Nam Tak (21哩) 的老字号小食馆，提供各式地道面食与小吃。有一间分行。",
+    "intro_en": "Traditional eatery located in Taman Nam Tak (21 Miles), known for its authentic noodles and snacks. Has a branch.",
+    "address": "Jalan Susur Kulai 5, Taman Nam Tak, 81000 Kulai, Johor Darul Ta'zim",
+    "opening_hours": "Monday: 7am - 3pm\nTuesday: 7am - 3pm\nWednesday: 7am - 3pm\nThursday: 7am - 3pm\nFriday: 7am - 3pm\nSaturday: 7am - 3pm\nSunday: 7am - 3pm",
+    "category": [
+        "中餐",
+        "面食"
+    ],
+    "categories": [
+        "中餐",
+        "面食"
+    ],
+    "rating": 0,
+    "image": "https://placehold.co/600x400/1e1e1e/FFF?text=Jiang+Man",
+    "subStalls": [],
+    "price_range": "RM 5-15",
+    "menu_link": "",
+    "website_link": "",
+    "delivery_link": "",
+    "isVegetarian": false,
+    "isNoBeef": false,
+    "manualStatus": "auto",
+    "branches": [],
+    "tags": [
+        "Chinese",
+        "Noodles",
+        "Kulai",
+        "Traditional",
+        "Breakfast",
+        "Lunch"
+    ],
+    "subscriptionLevel": 0,
+    "isVIP": false,
+    "priority": 0,
+    "whatsappLink": "",
+    "location": {
+        "lat": null,
+        "lng": null
+    },
+    "phone": "",
+    "halalStatus": "non_halal",
+    "area": "Kulai 21 Miles"
+}
+,
+    {
+    "id": 417,
+    "name": "濠香点心楼",
+    "name_en": "Restoran Haw Siang",
+    "intro_zh": "位于 Taman Nam Tak (21哩) 的点心楼，提供夜市点心。",
+    "intro_en": "Dim Sum restaurant located in Taman Nam Tak (21 Miles), serving late-night dim sum.",
+    "address": "70-73, Jalan Susur Kulai 5, Taman Nam Tak, 81000 Kulai, Johor",
+    "opening_hours": "Monday: 5pm - 4am\nTuesday: Closed\nWednesday: Closed\nThursday: 5pm - 4am\nFriday: 5pm - 4am\nSaturday: 5pm - 4am\nSunday: 5pm - 4am",
+    "category": [
+        "点心"
+    ],
+    "categories": [
+        "点心"
+    ],
+    "rating": 0,
+    "image": "https://placehold.co/600x400/1e1e1e/FFF?text=Haw+Siang",
+    "subStalls": [],
+    "price_range": "RM 10-30",
+    "menu_link": "",
+    "website_link": "",
+    "delivery_link": "",
+    "isVegetarian": false,
+    "isNoBeef": false,
+    "manualStatus": "auto",
+    "branches": [],
+    "tags": [
+        "Dim Sum",
+        "Kulai",
+        "Late Night",
+        "Supper"
+    ],
+    "subscriptionLevel": 0,
+    "isVIP": false,
+    "priority": 0,
+    "whatsappLink": "https://wa.me/60167515056",
+    "location": {
+        "lat": null,
+        "lng": null
+    },
+    "phone": "016-751 5056",
+    "halalStatus": "non_halal",
+    "area": "Kulai 21 Miles"
 }
 ];
