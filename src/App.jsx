@@ -591,7 +591,9 @@ function App() {
 
   const handleChoose = (result) => {
     setTimeout(() => {
-      setSelectedRestaurant(result);
+      // Navigate to the URL, let the useEffect handle the state update and analytics
+      // This ensures that closing the modal (which navigates to '/') correctly resets the state
+      navigate(`/restaurant/${result.id}`);
     }, 1000);
   };
 
