@@ -2876,18 +2876,20 @@ export const initialRestaurants = [
         "id": 73,
         "area": "Indahpura",
         "name": "江满小食馆",
-        "name_en": "Restoran jiang mam",
+        "name_en": "Restoran Jiang Man",
         "address": "555, Jalan Kenanga 29/18, Bandar Indahpura, 81000 Kulai, Johor Darul Ta'zim",
-        "opening_hours": "5:30 pm–1:30 am Thursday Closed",
-        "intro_zh": "一家人气本地小食馆，主要供应各类 炒粉、炒面、炒饭等煮炒类料理，份量足、价格亲民，是很多人晚上吃饭或当宵夜的好选择。",
-        "intro_en": "Offers a variety of stir-fry dishes, rice, and noodles. Signature dishes include various fried noodles and braised rice. Generous portions and reasonable prices make it a great spot for dinner and supper.",
+        "opening_hours": "5:30pm–1:30am (Closed on Thu)",
+        "intro_zh": "一家人气本地小食馆，主要供应各类 炒粉、炒面、炒饭等煮炒类料理，份量足、价格亲民，是很多人晚上吃饭或当宵夜的好选择。目前有两家分行：Indahpura 总店（夜市）和 21哩分行（早市）。",
+        "intro_en": "A popular local eatery offering various stir-fry dishes, rice, and noodles. Known for generous portions and reasonable prices. Great for dinner and supper. Currently has two branches: Indahpura (Night) and 21 Miles (Morning).",
         "category": [
             "饭类",
-            "粉类"
+            "粉类",
+            "中餐"
         ],
         "categories": [
             "饭类",
-            "粉类"
+            "粉类",
+            "中餐"
         ],
         "rating": 0,
         "image": "https://i.ibb.co/N2pr5RcX/image.jpg",
@@ -2899,9 +2901,26 @@ export const initialRestaurants = [
         "isVegetarian": false,
         "isNoBeef": false,
         "manualStatus": "auto",
-        "branches": [],
+        "branches": [
+            {
+                "name": "Indahpura (HQ)",
+                "address": "555, Jalan Kenanga 29/18, Bandar Indahpura, 81000 Kulai, Johor Darul Ta'zim",
+                "opening_hours": "5:30pm–1:30am (Closed on Thu)",
+                "location": { "lat": null, "lng": null }
+            },
+            {
+                "name": "Taman Nam Tak (21 Miles)",
+                "address": "Jalan Susur Kulai 5, Taman Nam Tak, 81000 Kulai, Johor Darul Ta'zim",
+                "opening_hours": "7am - 3pm Daily",
+                "location": { "lat": null, "lng": null }
+            }
+        ],
         "tags": [
-            "干"
+            "干",
+            "煮炒",
+            "面食",
+            "宵夜",
+            "早午餐"
         ],
         "subscriptionLevel": 0,
         "isVIP": false,
@@ -15458,54 +15477,7 @@ export const initialRestaurants = [
     "halalStatus": "no_pork",
     "area": "Kulai Town"
 }
-,
-    {
-    "id": 416,
-    "name": "江满小食馆",
-    "name_en": "Restoran Jiang Man",
-    "intro_zh": "位于 Taman Nam Tak (21哩) 的老字号小食馆，提供各式地道面食与小吃。有一间分行。",
-    "intro_en": "Traditional eatery located in Taman Nam Tak (21 Miles), known for its authentic noodles and snacks. Has a branch.",
-    "address": "Jalan Susur Kulai 5, Taman Nam Tak, 81000 Kulai, Johor Darul Ta'zim",
-    "opening_hours": "Monday: 7am - 3pm\nTuesday: 7am - 3pm\nWednesday: 7am - 3pm\nThursday: 7am - 3pm\nFriday: 7am - 3pm\nSaturday: 7am - 3pm\nSunday: 7am - 3pm",
-    "category": [
-        "中餐",
-        "面食"
-    ],
-    "categories": [
-        "中餐",
-        "面食"
-    ],
-    "rating": 0,
-    "image": "https://placehold.co/600x400/1e1e1e/FFF?text=Jiang+Man",
-    "subStalls": [],
-    "price_range": "RM 5-15",
-    "menu_link": "",
-    "website_link": "",
-    "delivery_link": "",
-    "isVegetarian": false,
-    "isNoBeef": false,
-    "manualStatus": "auto",
-    "branches": [],
-    "tags": [
-        "Chinese",
-        "Noodles",
-        "Kulai",
-        "Traditional",
-        "Breakfast",
-        "Lunch"
-    ],
-    "subscriptionLevel": 0,
-    "isVIP": false,
-    "priority": 0,
-    "whatsappLink": "",
-    "location": {
-        "lat": null,
-        "lng": null
-    },
-    "phone": "",
-    "halalStatus": "non_halal",
-    "area": "Kulai 21 Miles"
-}
+
 ,
     {
     "id": 417,
