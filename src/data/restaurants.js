@@ -13641,7 +13641,7 @@ export const initialRestaurants = [
         "name_en": "Empire Sushi",
         "intro_zh": "马来西亚著名的外带寿司连锁店，提供各种新鲜制作的创意寿司，口味多样且价格亲民。深受各族群喜爱。",
         "intro_en": "Malaysia's famous grab-and-go sushi chain, offering a wide variety of freshly made creative sushi at affordable prices. Loved by all communities.",
-        "address": "Lot GK1, Ground Floor, AEON Mall Kulaijaya, Persiaran Indahpura Utama, Bandar Indahpura, 81000 Kulai, Johor",
+        "address": "Multiple Locations in Kulai & Senai",
         "opening_hours": "10am-10pm",
         "category": [
             "日本餐"
@@ -13663,6 +13663,10 @@ export const initialRestaurants = [
             {
                 "name": "Empire Sushi AEON Mall Kulaijaya",
                 "address": "Lot GK1, Ground Floor, AEON Mall Kulaijaya, Persiaran Indahpura Utama, Bandar Indahpura, 81000 Kulai, Johor"
+            },
+            {
+                "name": "Empire Sushi @ Senai International Airport",
+                "address": "Lapangan Terbang Antarabangsa Senai, 81250 Senai, Johor"
             }
         ],
         "tags": [
