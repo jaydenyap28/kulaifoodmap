@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useMemo } from 'react';
-import { MapPin, Edit2, Trash2, ArrowUp, Search, Plus, Leaf, Ban, Star, GripVertical, Flame, Medal, MessageCircle } from 'lucide-react';
+import { MapPin, Edit2, Trash2, ArrowUp, Search, Plus, Leaf, Ban, Star, GripVertical, Flame, Medal, MessageCircle, Mic, MicOff, Loader2 } from 'lucide-react';
 import {
   DndContext,
   closestCenter,
@@ -47,10 +47,57 @@ const SortableRestaurantCard = ({ restaurant, ...props }) => {
 };
 
 const RestaurantList = ({ restaurants, allRestaurants, isAdmin, onUpdateRestaurant, onDeleteRestaurant, onRestaurantClick, onAddRestaurant, onCategoryClick, onReorder, onUpdateArea }) => {
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
   const [searchTerm, setSearchTerm] = useState('');
   const [showBackToTop, setShowBackToTop] = useState(false);
   const [seed] = useState(Date.now());
+  const [isListening, setIsListening] = useState(false);
+
+  const handleVoiceSearch = () => {
+    if (isListening) {
+      if (window.speechRecognitionInstance) {
+        window.speechRecognitionInstance.stop();
+      }
+      setIsListening(false);
+      return;
+    }
+
+    const SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition;
+    if (!SpeechRecognition) {
+      alert("Voice search is not supported in this browser.");
+      return;
+    }
+
+    const recognition = new SpeechRecognition();
+    window.speechRecognitionInstance = recognition;
+    
+    recognition.lang = i18n.language === 'en' ? 'en-US' : 'zh-CN';
+    recognition.continuous = false;
+    recognition.interimResults = true;
+
+    recognition.onstart = () => {
+      setIsListening(true);
+      setSearchTerm('');
+    };
+
+    recognition.onresult = (event) => {
+      const transcript = Array.from(event.results)
+        .map(result => result[0].transcript)
+        .join('');
+      setSearchTerm(transcript);
+    };
+
+    recognition.onerror = (event) => {
+      console.error("Speech recognition error", event.error);
+      setIsListening(false);
+    };
+
+    recognition.onend = () => {
+      setIsListening(false);
+    };
+
+    recognition.start();
+  };
 
   // Filter and Sort Logic
   const filteredRestaurants = useMemo(() => {
@@ -145,12 +192,19 @@ const RestaurantList = ({ restaurants, allRestaurants, isAdmin, onUpdateRestaura
           <div className="relative w-full sm:w-80">
             <Search className="absolute left-4 top-1/2 transform -translate-y-1/2 text-gray-500" size={18} />
             <input 
-              type="text" 
-              placeholder={t('list.search_placeholder')} 
+              type="text"
+              placeholder={isListening ? (i18n.language === 'en' ? 'Listening...' : '正在听...') : t('list.search_placeholder')} 
               value={searchTerm}
               onChange={(e) => setSearchTerm(e.target.value)}
-              className="w-full pl-11 pr-4 py-3 bg-[#1e1e1e] border border-gray-700 rounded-full text-base text-gray-200 focus:outline-none focus:border-white focus:ring-1 focus:ring-white transition-all placeholder-gray-600"
+              className={`w-full pl-11 pr-12 py-3 bg-[#1e1e1e] border ${isListening ? 'border-blue-500 ring-1 ring-blue-500' : 'border-gray-700'} rounded-full text-base text-gray-200 focus:outline-none focus:border-white focus:ring-1 focus:ring-white transition-all placeholder-gray-600`}
             />
+            <button
+                onClick={handleVoiceSearch}
+                className={`absolute right-3 top-1/2 transform -translate-y-1/2 p-2 rounded-full transition-colors ${isListening ? 'text-blue-400 bg-blue-400/10' : 'text-gray-400 hover:text-white hover:bg-gray-700'}`}
+                title={isListening ? "Stop Listening" : "Voice Search"}
+            >
+                <Mic size={18} className={isListening ? 'animate-pulse' : ''} />
+            </button>
           </div>
         </div>
       </div>

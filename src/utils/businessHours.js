@@ -69,7 +69,13 @@ export const checkOpenStatus = (hoursStr, testDate = null) => {
         timeStr = timeStr.trim();
         let isPM = timeStr.includes('pm') || timeStr.includes('下午') || timeStr.includes('晚上');
         let isAM = timeStr.includes('am') || timeStr.includes('上午') || timeStr.includes('早上');
-        let cleanTime = timeStr.replace(/[a-z\u4e00-\u9fa5\s]/g, '');
+        
+        // Remove everything that is NOT a digit or a colon
+        let cleanTime = timeStr.replace(/[^\d:]/g, '');
+        
+        // Remove leading/trailing colons if any (e.g. from "Tuesday: ...")
+        cleanTime = cleanTime.replace(/^:+|:+$/g, '');
+        
         let [hours, minutes] = cleanTime.split(':').map(Number);
         if (isNaN(minutes)) minutes = 0;
         if (isNaN(hours)) return NaN;

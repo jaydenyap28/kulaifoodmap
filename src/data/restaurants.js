@@ -11051,7 +11051,180 @@ export const initialRestaurants = [
         ],
         "rating": 0,
         "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTqLjuAY28LEL20ep5ll8WodSUnuEtqe-BAMA&s",
-        "subStalls": [],
+        "subStalls": [
+            {
+                "name": "",
+                "image": "https://i.ibb.co/hRrRVz2Q/IMG-20260127-152544.jpg"
+            },
+            {
+                "name": "",
+                "image": "https://i.ibb.co/xKdWqtvy/IMG-20260127-152553.jpg"
+            },
+            {
+                "name": "",
+                "image": "https://i.ibb.co/4ZKS1MTS/IMG-20260127-152601.jpg"
+            },
+            {
+                "name": "",
+                "image": "https://i.ibb.co/YF7KDvbL/IMG-20260127-152613.jpg"
+            },
+            {
+                "name": "",
+                "image": "https://i.ibb.co/BKcDBYQ8/IMG-20260127-152622.jpg"
+            },
+            {
+                "name": "",
+                "image": "https://i.ibb.co/QFrCgH7k/IMG-20260127-152631.jpg"
+            },
+            {
+                "name": "",
+                "image": "https://i.ibb.co/gbvVs7Zj/IMG-20260127-152636.jpg"
+            },
+            {
+                "name": "",
+                "image": "https://i.ibb.co/sJ98SMnG/IMG-20260127-152653.jpg"
+            },
+            {
+                "name": "",
+                "image": "https://i.ibb.co/Ndqtd50F/IMG-20260127-152659.jpg"
+            },
+            {
+                "name": "",
+                "image": "https://i.ibb.co/cnFDx2D/IMG-20260127-152704.jpg"
+            },
+            {
+                "name": "",
+                "image": "https://i.ibb.co/7txjpBtM/IMG-20260127-152709.jpg"
+            },
+            {
+                "name": "",
+                "image": "https://i.ibb.co/Fbs3Y6ND/IMG-20260127-152715.jpg"
+            },
+            {
+                "name": "",
+                "image": "https://i.ibb.co/Gf5FXLy5/IMG-20260127-152720.jpg"
+            },
+            {
+                "name": "",
+                "image": "https://i.ibb.co/8LtJkYHF/IMG-20260127-152729.jpg"
+            },
+            {
+                "name": "",
+                "image": "https://i.ibb.co/JwH17y8y/IMG-20260127-152734.jpg"
+            },
+            {
+                "name": "",
+                "image": "https://i.ibb.co/6R8CbZf4/IMG-20260127-152741.jpg"
+            },
+            {
+                "name": "",
+                "image": "https://i.ibb.co/JFxM74Qb/IMG-20260127-152744.jpg"
+            },
+            {
+                "name": "",
+                "image": "https://i.ibb.co/r2GmsSsW/IMG-20260127-152753.jpg"
+            },
+            {
+                "name": "",
+                "image": "https://i.ibb.co/9HQzSf1t/IMG-20260127-152817.jpg"
+            },
+            {
+                "name": "",
+                "image": "https://i.ibb.co/zTmdTyXM/IMG-20260127-152829.jpg"
+            },
+            {
+                "name": "",
+                "image": "https://i.ibb.co/ks5tTG4z/IMG-20260127-152837.jpg"
+            },
+            {
+                "name": "",
+                "image": "https://i.ibb.co/VcXtJgP7/IMG-20260127-152854.jpg"
+            },
+            {
+                "name": "",
+                "image": "https://i.ibb.co/k28Df7Nj/IMG-20260127-152904.jpg"
+            },
+            {
+                "name": "",
+                "image": "https://i.ibb.co/5gtCYFN6/IMG-20260127-152916.jpg"
+            },
+            {
+                "name": "",
+                "image": "https://i.ibb.co/Q3r3GVJF/IMG-20260127-152926.jpg"
+            },
+            {
+                "name": "",
+                "image": "https://i.ibb.co/zTvYPKdH/IMG-20260127-152940.jpg"
+            },
+            {
+                "name": "",
+                "image": "https://i.ibb.co/2187vrPS/IMG-20260127-152947.jpg"
+            },
+            {
+                "name": "",
+                "image": "https://i.ibb.co/9kZYfSXh/IMG-20260127-152954.jpg"
+            },
+            {
+                "name": "",
+                "image": "https://i.ibb.co/MD8TMFvD/IMG-20260127-152959.jpg"
+            },
+            {
+                "name": "",
+                "image": "https://i.ibb.co/FLk230ZF/IMG-20260127-153023.jpg"
+            },
+            {
+                "name": "",
+                "image": "https://i.ibb.co/spDjks3r/IMG-20260127-153031.jpg"
+            },
+            {
+                "name": "",
+                "image": "https://i.ibb.co/NdcL6KFT/IMG-20260127-153038.jpg"
+            },
+            {
+                "name": "",
+                "image": "https://i.ibb.co/99zyD6t0/IMG-20260127-153047.jpg"
+            },
+            {
+                "name": "",
+                "image": "https://i.ibb.co/JW188NWR/IMG-20260127-153054.jpg"
+            },
+            {
+                "name": "",
+                "image": "https://i.ibb.co/rGN4dnbd/IMG-20260127-153105.jpg"
+            },
+            {
+                "name": "",
+                "image": "https://i.ibb.co/v9Q8jbN/IMG-20260127-153116.jpg"
+            },
+            {
+                "name": "",
+                "image": "https://i.ibb.co/qLMMZL30/IMG-20260127-153127.jpg"
+            },
+            {
+                "name": "",
+                "image": "https://i.ibb.co/pj0H4WMb/IMG-20260127-153136.jpg"
+            },
+            {
+                "name": "",
+                "image": "https://i.ibb.co/bR5CF4yb/IMG-20260127-153146.jpg"
+            },
+            {
+                "name": "",
+                "image": "https://i.ibb.co/MTDfXJ6/IMG-20260127-153217.jpg"
+            },
+            {
+                "name": "",
+                "image": "https://i.ibb.co/TMF8gbby/IMG-20260127-153223.jpg"
+            },
+            {
+                "name": "",
+                "image": "https://i.ibb.co/Q7MHmPss/IMG-20260127-153234.jpg"
+            },
+            {
+                "name": "",
+                "image": "https://i.ibb.co/ynQ4zrn3/IMG-20260127-153247.jpg"
+            }
+        ],
         "price_range": "RM 10-20",
         "menu_link": "",
         "website_link": "",
