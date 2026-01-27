@@ -325,11 +325,12 @@ function App() {
     let processedCats = new Set();
     
     // Define deprecated categories to filter out
-    const deprecatedCats = new Set(["Pizza", "炸鸡", "中餐", "无招牌美食"]);
+    const deprecatedCats = new Set(["Pizza", "炸鸡", "中餐", "无招牌美食", "马来餐", "印度档", "甜品饮料"]);
 
     // 1. Try to load from LocalStorage FIRST (Preserve Order)
     try {
-      const storedCats = localStorage.getItem('kulaifood-categories');
+      // Changed key to v2 to force reset order for Malay/Indian update
+      const storedCats = localStorage.getItem('kulaifood-categories-v2');
       if (storedCats && storedCats !== "undefined" && storedCats !== "null") {
         const parsedCats = JSON.parse(storedCats);
         if (Array.isArray(parsedCats) && parsedCats.length > 0) {
@@ -431,7 +432,7 @@ function App() {
 
   // Save Categories Only
   useEffect(() => {
-    localStorage.setItem('kulaifood-categories', JSON.stringify(categories));
+    localStorage.setItem('kulaifood-categories-v2', JSON.stringify(categories));
   }, [categories]);
 
   // Log Restaurants changes to Console for Manual Update
