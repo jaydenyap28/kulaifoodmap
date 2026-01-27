@@ -6840,30 +6840,45 @@ export const initialRestaurants = [
         "id": 175,
         "name": "Richiamo Coffee",
         "name_en": "",
-        "intro_zh": "知名连锁咖啡厅的沙威分行，提供舒适的环境和多样化的本地及西式美食，是喝咖啡聊天的休闲好去处。",
-        "intro_en": "The Kelapa Sawit branch of the popular coffee chain, offering a comfortable environment and a variety of local and Western dishes. A great spot for coffee and chat.",
-        "address": "12A Jalan Scientex, 1, Taman Scientex, Kelapa Sawit, 81000 Kulai, Johor",
-        "opening_hours": "11 am–9 pm Sun Closed",
+        "intro_zh": "知名本土连锁咖啡厅，提供舒适的环境和多样化的本地及西式美食，是喝咖啡聊天的休闲好去处。",
+        "intro_en": "A popular local coffee chain offering a comfortable environment and a variety of local and Western dishes. A great spot for coffee and gatherings.",
+        "address": "86, Jalan Kenanga 29/11, Bandar Indahpura, 81000 Kulai, Johor",
+        "opening_hours": "Daily: 10am - 11pm",
         "category": [
-            "饮品"
+            "饮品",
+            "Cafe"
         ],
         "categories": [
-            "饮品"
+            "饮品",
+            "Cafe"
         ],
         "rating": 0,
         "image": "https://i.ibb.co/nqbXmBKw/Richiamo-Coffee-Kelapa-Sawit-Kulai.jpg",
         "subStalls": [],
         "price_range": "RM 10-20",
-        "menu_link": "",
-        "website_link": "",
+        "menu_link": "https://www.richiamocoffee.com/menu/",
+        "website_link": "https://www.richiamocoffee.com/",
         "delivery_link": "",
         "isVegetarian": false,
         "isNoBeef": false,
         "manualStatus": "auto",
-        "branches": [],
+        "branches": [
+            {
+                "name": "Indahpura",
+                "address": "86, Jalan Kenanga 29/11, Bandar Indahpura, 81000 Kulai, Johor",
+                "opening_hours": "Daily: 10am - 11pm"
+            },
+            {
+                "name": "Kelapa Sawit",
+                "address": "12A Jalan Scientex, 1, Taman Scientex, Kelapa Sawit, 81000 Kulai, Johor",
+                "opening_hours": "11am–9pm (Sun Closed)"
+            }
+        ],
         "tags": [
             "有冷气",
-            "适合聚餐"
+            "适合聚餐",
+            "Halal",
+            "咖啡"
         ],
         "subscriptionLevel": 0,
         "isVIP": false,
@@ -6873,7 +6888,7 @@ export const initialRestaurants = [
             "lat": null,
             "lng": null
         },
-        "halalStatus": "non_halal"
+        "halalStatus": "certified"
     },
     {
         "id": 176,
