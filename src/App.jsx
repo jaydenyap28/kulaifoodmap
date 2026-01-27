@@ -493,7 +493,12 @@ function App() {
 
     // 4. Category Filter (Multi-select)
     if (selectedCategory && selectedCategory.length > 0) {
-      if (!r.categories || !selectedCategory.some(cat => r.categories.includes(cat))) {
+      const hasCategoryMatch = r.categories && selectedCategory.some(cat => r.categories.includes(cat));
+      // Special handling for Vegetarian filter to include dietaryOption tagged items
+      const hasDietaryMatch = (selectedCategory.includes('素食') || selectedCategory.includes('Vegetarian')) && 
+                              (r.dietaryOption === 'vegetarian_only' || r.dietaryOption === 'vegetarian_friendly');
+
+      if (!hasCategoryMatch && !hasDietaryMatch) {
         return false;
       }
     }

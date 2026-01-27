@@ -43,7 +43,8 @@ export const initialRestaurants = [
             "lng": null
         },
         "phone": "016-752 8026",
-        "halalStatus": "non_halal"
+        "halalStatus": "non_halal",
+        "dietaryOption": null
     },
     {
         "id": 2,
@@ -87,7 +88,8 @@ export const initialRestaurants = [
             "lng": null
         },
         "phone": "012-727 8272",
-        "halalStatus": "non_halal"
+        "halalStatus": "non_halal",
+        "dietaryOption": null
     },
     {
         "id": 3,
@@ -134,7 +136,8 @@ export const initialRestaurants = [
             "lng": null
         },
         "phone": "012-710 9772",
-        "halalStatus": "non_halal"
+        "halalStatus": "non_halal",
+        "dietaryOption": null
     },
     {
         "id": 4,
@@ -180,7 +183,8 @@ export const initialRestaurants = [
             "lng": null
         },
         "phone": "016-795 0302",
-        "halalStatus": "non_halal"
+        "halalStatus": "non_halal",
+        "dietaryOption": null
     },
     {
         "id": 5,
@@ -227,7 +231,8 @@ export const initialRestaurants = [
             "lng": null
         },
         "phone": "019-759 3635",
-        "halalStatus": "non_halal"
+        "halalStatus": "non_halal",
+        "dietaryOption": null
     },
     {
         "id": 6,
@@ -266,7 +271,8 @@ export const initialRestaurants = [
             "lng": null
         },
         "phone": "016-731 9910",
-        "halalStatus": "non_halal"
+        "halalStatus": "non_halal",
+        "dietaryOption": null
     },
     {
         "id": 7,
@@ -306,7 +312,8 @@ export const initialRestaurants = [
             "lat": null,
             "lng": null
         },
-        "halalStatus": "non_halal"
+        "halalStatus": "non_halal",
+        "dietaryOption": null
     },
     {
         "id": 8,
@@ -355,7 +362,8 @@ export const initialRestaurants = [
             "lng": null
         },
         "phone": "07-663 1111",
-        "halalStatus": "non_halal"
+        "halalStatus": "non_halal",
+        "dietaryOption": null
     },
     {
         "id": 9,
@@ -392,7 +400,8 @@ export const initialRestaurants = [
             "lat": null,
             "lng": null
         },
-        "halalStatus": "non_halal"
+        "halalStatus": "non_halal",
+        "dietaryOption": null
     },
     {
         "id": 10,
@@ -437,7 +446,8 @@ export const initialRestaurants = [
             "lat": null,
             "lng": null
         },
-        "halalStatus": "non_halal"
+        "halalStatus": "non_halal",
+        "dietaryOption": null
     },
     {
         "id": 12,
@@ -476,7 +486,8 @@ export const initialRestaurants = [
             "lng": null
         },
         "phone": "012-789 4073",
-        "halalStatus": "non_halal"
+        "halalStatus": "non_halal",
+        "dietaryOption": null
     },
     {
         "id": 13,
@@ -552,7 +563,8 @@ export const initialRestaurants = [
             "lat": null,
             "lng": null
         },
-        "halalStatus": "non_halal"
+        "halalStatus": "non_halal",
+        "dietaryOption": null
     },
     {
         "id": 14,
@@ -587,7 +599,8 @@ export const initialRestaurants = [
             "lat": null,
             "lng": null
         },
-        "halalStatus": "non_halal"
+        "halalStatus": "non_halal",
+        "dietaryOption": null
     },
     {
         "id": 15,
@@ -626,7 +639,8 @@ export const initialRestaurants = [
             "lat": null,
             "lng": null
         },
-        "halalStatus": "non_halal"
+        "halalStatus": "non_halal",
+        "dietaryOption": null
     },
     {
         "id": 16,
@@ -671,7 +685,8 @@ export const initialRestaurants = [
             "lng": null
         },
         "phone": "012-754 3818",
-        "halalStatus": "muslim_owned"
+        "halalStatus": "muslim_owned",
+        "dietaryOption": null
     },
     {
         "id": 17,
@@ -711,7 +726,8 @@ export const initialRestaurants = [
             "lat": null,
             "lng": null
         },
-        "halalStatus": "muslim_owned"
+        "halalStatus": "muslim_owned",
+        "dietaryOption": null
     },
     {
         "id": 18,
@@ -751,7 +767,8 @@ export const initialRestaurants = [
             "lat": null,
             "lng": null
         },
-        "halalStatus": "non_halal"
+        "halalStatus": "non_halal",
+        "dietaryOption": "vegetarian_friendly"
     },
     {
         "id": 19,
@@ -792,7 +809,8 @@ export const initialRestaurants = [
             "lat": null,
             "lng": null
         },
-        "halalStatus": "non_halal"
+        "halalStatus": "non_halal",
+        "dietaryOption": null
     },
     {
         "id": 20,
@@ -831,7 +849,8 @@ export const initialRestaurants = [
             "lat": null,
             "lng": null
         },
-        "halalStatus": "non_halal"
+        "halalStatus": "non_halal",
+        "dietaryOption": null
     },
     {
         "id": 21,
@@ -868,7 +887,8 @@ export const initialRestaurants = [
             "lat": null,
             "lng": null
         },
-        "halalStatus": "non_halal"
+        "halalStatus": "non_halal",
+        "dietaryOption": null
     },
     {
         "id": 22,
@@ -907,7 +927,8 @@ export const initialRestaurants = [
             "lat": null,
             "lng": null
         },
-        "halalStatus": "non_halal"
+        "halalStatus": "non_halal",
+        "dietaryOption": null
     },
     {
         "id": 23,
@@ -946,7 +967,8 @@ export const initialRestaurants = [
             "lat": null,
             "lng": null
         },
-        "halalStatus": "non_halal"
+        "halalStatus": "non_halal",
+        "dietaryOption": null
     },
     {
         "id": 24,
@@ -986,7 +1008,8 @@ export const initialRestaurants = [
             "lat": null,
             "lng": null
         },
-        "halalStatus": "non_halal"
+        "halalStatus": "non_halal",
+        "dietaryOption": null
     },
     {
         "id": 25,
@@ -1027,7 +1050,8 @@ export const initialRestaurants = [
             "lat": null,
             "lng": null
         },
-        "halalStatus": "non_halal"
+        "halalStatus": "non_halal",
+        "dietaryOption": null
     },
     {
         "id": 26,
@@ -1069,7 +1093,8 @@ export const initialRestaurants = [
             "lat": null,
             "lng": null
         },
-        "halalStatus": "non_halal"
+        "halalStatus": "non_halal",
+        "dietaryOption": null
     },
     {
         "id": 27,
@@ -1111,7 +1136,8 @@ export const initialRestaurants = [
             "lat": null,
             "lng": null
         },
-        "halalStatus": "non_halal"
+        "halalStatus": "non_halal",
+        "dietaryOption": null
     },
     {
         "id": 28,
@@ -1152,7 +1178,8 @@ export const initialRestaurants = [
             "lat": null,
             "lng": null
         },
-        "halalStatus": "non_halal"
+        "halalStatus": "non_halal",
+        "dietaryOption": null
     },
     {
         "id": 29,
@@ -1189,7 +1216,8 @@ export const initialRestaurants = [
             "lng": null
         },
         "phone": "07-662 5678",
-        "halalStatus": "non_halal"
+        "halalStatus": "non_halal",
+        "dietaryOption": null
     },
     {
         "id": 30,
@@ -1226,7 +1254,8 @@ export const initialRestaurants = [
             "lat": null,
             "lng": null
         },
-        "halalStatus": "non_halal"
+        "halalStatus": "non_halal",
+        "dietaryOption": null
     },
     {
         "id": 31,
@@ -1263,7 +1292,8 @@ export const initialRestaurants = [
             "lat": null,
             "lng": null
         },
-        "halalStatus": "muslim_owned"
+        "halalStatus": "muslim_owned",
+        "dietaryOption": null
     },
     {
         "id": 32,
@@ -1302,7 +1332,8 @@ export const initialRestaurants = [
             "lat": null,
             "lng": null
         },
-        "halalStatus": "non_halal"
+        "halalStatus": "non_halal",
+        "dietaryOption": null
     },
     {
         "id": 33,
@@ -1365,7 +1396,8 @@ export const initialRestaurants = [
             "lat": null,
             "lng": null
         },
-        "halalStatus": "certified"
+        "halalStatus": "certified",
+        "dietaryOption": "vegetarian_friendly"
     },
     {
         "id": 34,
@@ -1419,7 +1451,8 @@ export const initialRestaurants = [
             "lat": null,
             "lng": null
         },
-        "halalStatus": "certified"
+        "halalStatus": "certified",
+        "dietaryOption": "vegetarian_friendly"
     },
     {
         "id": 36,
@@ -1457,7 +1490,8 @@ export const initialRestaurants = [
             "lat": null,
             "lng": null
         },
-        "halalStatus": "non_halal"
+        "halalStatus": "non_halal",
+        "dietaryOption": null
     },
     {
         "id": 37,
@@ -1497,7 +1531,8 @@ export const initialRestaurants = [
             "lat": null,
             "lng": null
         },
-        "halalStatus": "non_halal"
+        "halalStatus": "non_halal",
+        "dietaryOption": "vegetarian_friendly"
     },
     {
         "id": 38,
@@ -1537,7 +1572,8 @@ export const initialRestaurants = [
             "lat": null,
             "lng": null
         },
-        "halalStatus": "non_halal"
+        "halalStatus": "non_halal",
+        "dietaryOption": "vegetarian_friendly"
     },
     {
         "id": 39,
@@ -1576,7 +1612,8 @@ export const initialRestaurants = [
             "lat": null,
             "lng": null
         },
-        "halalStatus": "non_halal"
+        "halalStatus": "non_halal",
+        "dietaryOption": "vegetarian_friendly"
     },
     {
         "id": 40,
@@ -1612,7 +1649,8 @@ export const initialRestaurants = [
             "lat": null,
             "lng": null
         },
-        "halalStatus": "non_halal"
+        "halalStatus": "non_halal",
+        "dietaryOption": null
     },
     {
         "id": 41,
@@ -1651,7 +1689,8 @@ export const initialRestaurants = [
             "lat": null,
             "lng": null
         },
-        "halalStatus": "non_halal"
+        "halalStatus": "non_halal",
+        "dietaryOption": null
     },
     {
         "id": 42,
@@ -1691,7 +1730,8 @@ export const initialRestaurants = [
             "lat": null,
             "lng": null
         },
-        "halalStatus": "non_halal"
+        "halalStatus": "non_halal",
+        "dietaryOption": "vegetarian_friendly"
     },
     {
         "id": 43,
@@ -1732,7 +1772,8 @@ export const initialRestaurants = [
             "lat": null,
             "lng": null
         },
-        "halalStatus": "muslim_owned"
+        "halalStatus": "muslim_owned",
+        "dietaryOption": "vegetarian_friendly"
     },
     {
         "id": 44,
@@ -1771,7 +1812,8 @@ export const initialRestaurants = [
             "lat": null,
             "lng": null
         },
-        "halalStatus": "non_halal"
+        "halalStatus": "non_halal",
+        "dietaryOption": null
     },
     {
         "id": 45,
@@ -1810,7 +1852,8 @@ export const initialRestaurants = [
             "lat": null,
             "lng": null
         },
-        "halalStatus": "non_halal"
+        "halalStatus": "non_halal",
+        "dietaryOption": "vegetarian_friendly"
     },
     {
         "id": 46,
@@ -1851,7 +1894,8 @@ export const initialRestaurants = [
             "lat": null,
             "lng": null
         },
-        "halalStatus": "non_halal"
+        "halalStatus": "non_halal",
+        "dietaryOption": null
     },
     {
         "id": 47,
@@ -1890,7 +1934,8 @@ export const initialRestaurants = [
             "lat": null,
             "lng": null
         },
-        "halalStatus": "non_halal"
+        "halalStatus": "non_halal",
+        "dietaryOption": null
     },
     {
         "id": 48,
@@ -1927,7 +1972,8 @@ export const initialRestaurants = [
             "lat": null,
             "lng": null
         },
-        "halalStatus": "non_halal"
+        "halalStatus": "non_halal",
+        "dietaryOption": null
     },
     {
         "id": 49,
@@ -1968,7 +2014,8 @@ export const initialRestaurants = [
             "lat": null,
             "lng": null
         },
-        "halalStatus": "muslim_owned"
+        "halalStatus": "muslim_owned",
+        "dietaryOption": null
     },
     {
         "id": 50,
@@ -2005,7 +2052,8 @@ export const initialRestaurants = [
             "lat": null,
             "lng": null
         },
-        "halalStatus": "non_halal"
+        "halalStatus": "non_halal",
+        "dietaryOption": null
     },
     {
         "id": 51,
@@ -2046,7 +2094,8 @@ export const initialRestaurants = [
             "lat": null,
             "lng": null
         },
-        "halalStatus": "non_halal"
+        "halalStatus": "non_halal",
+        "dietaryOption": "vegetarian_friendly"
     },
     {
         "id": 52,
@@ -2087,7 +2136,8 @@ export const initialRestaurants = [
             "lat": null,
             "lng": null
         },
-        "halalStatus": "non_halal"
+        "halalStatus": "non_halal",
+        "dietaryOption": "vegetarian_friendly"
     },
     {
         "id": 53,
@@ -2126,7 +2176,8 @@ export const initialRestaurants = [
             "lat": null,
             "lng": null
         },
-        "halalStatus": "non_halal"
+        "halalStatus": "non_halal",
+        "dietaryOption": "vegetarian_friendly"
     },
     {
         "id": 54,
@@ -2163,7 +2214,8 @@ export const initialRestaurants = [
             "lat": null,
             "lng": null
         },
-        "halalStatus": "non_halal"
+        "halalStatus": "non_halal",
+        "dietaryOption": null
     },
     {
         "id": 55,
@@ -2202,7 +2254,8 @@ export const initialRestaurants = [
             "lat": null,
             "lng": null
         },
-        "halalStatus": "non_halal"
+        "halalStatus": "non_halal",
+        "dietaryOption": null
     },
     {
         "id": 56,
@@ -2239,7 +2292,8 @@ export const initialRestaurants = [
             "lat": null,
             "lng": null
         },
-        "halalStatus": "non_halal"
+        "halalStatus": "non_halal",
+        "dietaryOption": null
     },
     {
         "id": 57,
@@ -2276,7 +2330,8 @@ export const initialRestaurants = [
             "lat": null,
             "lng": null
         },
-        "halalStatus": "non_halal"
+        "halalStatus": "non_halal",
+        "dietaryOption": null
     },
     {
         "id": 58,
@@ -2316,7 +2371,8 @@ export const initialRestaurants = [
             "lat": null,
             "lng": null
         },
-        "halalStatus": "non_halal"
+        "halalStatus": "non_halal",
+        "dietaryOption": "vegetarian_friendly"
     },
     {
         "id": 59,
@@ -2363,7 +2419,8 @@ export const initialRestaurants = [
             "lat": null,
             "lng": null
         },
-        "halalStatus": "non_halal"
+        "halalStatus": "non_halal",
+        "dietaryOption": "vegetarian_friendly"
     },
     {
         "id": 60,
@@ -2403,7 +2460,8 @@ export const initialRestaurants = [
             "lat": null,
             "lng": null
         },
-        "halalStatus": "non_halal"
+        "halalStatus": "non_halal",
+        "dietaryOption": null
     },
     {
         "id": 61,
@@ -2442,7 +2500,8 @@ export const initialRestaurants = [
             "lat": null,
             "lng": null
         },
-        "halalStatus": "non_halal"
+        "halalStatus": "non_halal",
+        "dietaryOption": null
     },
     {
         "id": 62,
@@ -2482,7 +2541,8 @@ export const initialRestaurants = [
             "lat": null,
             "lng": null
         },
-        "halalStatus": "non_halal"
+        "halalStatus": "non_halal",
+        "dietaryOption": null
     },
     {
         "id": 63,
@@ -2519,7 +2579,8 @@ export const initialRestaurants = [
             "lat": null,
             "lng": null
         },
-        "halalStatus": "non_halal"
+        "halalStatus": "non_halal",
+        "dietaryOption": null
     },
     {
         "id": 64,
@@ -2557,7 +2618,8 @@ export const initialRestaurants = [
             "lat": null,
             "lng": null
         },
-        "halalStatus": "non_halal"
+        "halalStatus": "non_halal",
+        "dietaryOption": null
     },
     {
         "id": 65,
@@ -2596,7 +2658,8 @@ export const initialRestaurants = [
             "lat": null,
             "lng": null
         },
-        "halalStatus": "non_halal"
+        "halalStatus": "non_halal",
+        "dietaryOption": "vegetarian_friendly"
     },
     {
         "id": 66,
@@ -2636,7 +2699,8 @@ export const initialRestaurants = [
             "lat": null,
             "lng": null
         },
-        "halalStatus": "non_halal"
+        "halalStatus": "non_halal",
+        "dietaryOption": null
     },
     {
         "id": 67,
@@ -2675,7 +2739,8 @@ export const initialRestaurants = [
             "lat": null,
             "lng": null
         },
-        "halalStatus": "non_halal"
+        "halalStatus": "non_halal",
+        "dietaryOption": null
     },
     {
         "id": 68,
@@ -2715,7 +2780,8 @@ export const initialRestaurants = [
             "lat": null,
             "lng": null
         },
-        "halalStatus": "non_halal"
+        "halalStatus": "non_halal",
+        "dietaryOption": null
     },
     {
         "id": 69,
@@ -2754,7 +2820,8 @@ export const initialRestaurants = [
             "lat": null,
             "lng": null
         },
-        "halalStatus": "non_halal"
+        "halalStatus": "non_halal",
+        "dietaryOption": null
     },
     {
         "id": 70,
@@ -2790,7 +2857,8 @@ export const initialRestaurants = [
             "lat": null,
             "lng": null
         },
-        "halalStatus": "non_halal"
+        "halalStatus": "non_halal",
+        "dietaryOption": null
     },
     {
         "id": 71,
@@ -2829,7 +2897,8 @@ export const initialRestaurants = [
             "lat": null,
             "lng": null
         },
-        "halalStatus": "non_halal"
+        "halalStatus": "non_halal",
+        "dietaryOption": null
     },
     {
         "id": 72,
@@ -2869,7 +2938,8 @@ export const initialRestaurants = [
             "lat": null,
             "lng": null
         },
-        "halalStatus": "non_halal"
+        "halalStatus": "non_halal",
+        "dietaryOption": null
     },
     {
         "id": 73,
@@ -2935,7 +3005,8 @@ export const initialRestaurants = [
             "lat": null,
             "lng": null
         },
-        "halalStatus": "non_halal"
+        "halalStatus": "non_halal",
+        "dietaryOption": null
     },
     {
         "id": 74,
@@ -2974,7 +3045,8 @@ export const initialRestaurants = [
             "lat": null,
             "lng": null
         },
-        "halalStatus": "non_halal"
+        "halalStatus": "non_halal",
+        "dietaryOption": null
     },
     {
         "id": 75,
@@ -3013,7 +3085,8 @@ export const initialRestaurants = [
             "lat": null,
             "lng": null
         },
-        "halalStatus": "non_halal"
+        "halalStatus": "non_halal",
+        "dietaryOption": null
     },
     {
         "id": 76,
@@ -3054,7 +3127,8 @@ export const initialRestaurants = [
             "lat": null,
             "lng": null
         },
-        "halalStatus": "non_halal"
+        "halalStatus": "non_halal",
+        "dietaryOption": null
     },
     {
         "id": 77,
@@ -3091,7 +3165,8 @@ export const initialRestaurants = [
             "lat": null,
             "lng": null
         },
-        "halalStatus": "non_halal"
+        "halalStatus": "non_halal",
+        "dietaryOption": null
     },
     {
         "id": 78,
@@ -3132,7 +3207,8 @@ export const initialRestaurants = [
             "lat": null,
             "lng": null
         },
-        "halalStatus": "non_halal"
+        "halalStatus": "non_halal",
+        "dietaryOption": "vegetarian_friendly"
     },
     {
         "id": 79,
@@ -3169,7 +3245,8 @@ export const initialRestaurants = [
             "lat": null,
             "lng": null
         },
-        "halalStatus": "non_halal"
+        "halalStatus": "non_halal",
+        "dietaryOption": null
     },
     {
         "id": 80,
@@ -3208,7 +3285,8 @@ export const initialRestaurants = [
             "lat": null,
             "lng": null
         },
-        "halalStatus": "non_halal"
+        "halalStatus": "non_halal",
+        "dietaryOption": null
     },
     {
         "id": 81,
@@ -3248,7 +3326,8 @@ export const initialRestaurants = [
             "lat": null,
             "lng": null
         },
-        "halalStatus": "non_halal"
+        "halalStatus": "non_halal",
+        "dietaryOption": null
     },
     {
         "id": 82,
@@ -3287,7 +3366,8 @@ export const initialRestaurants = [
             "lat": null,
             "lng": null
         },
-        "halalStatus": "non_halal"
+        "halalStatus": "non_halal",
+        "dietaryOption": null
     },
     {
         "id": 83,
@@ -3326,7 +3406,8 @@ export const initialRestaurants = [
             "lat": null,
             "lng": null
         },
-        "halalStatus": "non_halal"
+        "halalStatus": "non_halal",
+        "dietaryOption": null
     },
     {
         "id": 84,
@@ -3361,7 +3442,8 @@ export const initialRestaurants = [
             "lat": null,
             "lng": null
         },
-        "halalStatus": "non_halal"
+        "halalStatus": "non_halal",
+        "dietaryOption": null
     },
     {
         "id": 85,
@@ -3402,7 +3484,8 @@ export const initialRestaurants = [
             "lat": null,
             "lng": null
         },
-        "halalStatus": "non_halal"
+        "halalStatus": "non_halal",
+        "dietaryOption": "vegetarian_friendly"
     },
     {
         "id": 86,
@@ -3441,7 +3524,8 @@ export const initialRestaurants = [
             "lat": null,
             "lng": null
         },
-        "halalStatus": "non_halal"
+        "halalStatus": "non_halal",
+        "dietaryOption": null
     },
     {
         "id": 87,
@@ -3478,7 +3562,8 @@ export const initialRestaurants = [
             "lat": null,
             "lng": null
         },
-        "halalStatus": "non_halal"
+        "halalStatus": "non_halal",
+        "dietaryOption": null
     },
     {
         "id": 88,
@@ -3517,7 +3602,8 @@ export const initialRestaurants = [
             "lat": null,
             "lng": null
         },
-        "halalStatus": "non_halal"
+        "halalStatus": "non_halal",
+        "dietaryOption": null
     },
     {
         "id": 89,
@@ -3558,7 +3644,8 @@ export const initialRestaurants = [
             "lat": null,
             "lng": null
         },
-        "halalStatus": "non_halal"
+        "halalStatus": "non_halal",
+        "dietaryOption": "vegetarian_friendly"
     },
     {
         "id": 90,
@@ -3600,7 +3687,8 @@ export const initialRestaurants = [
             "lat": null,
             "lng": null
         },
-        "halalStatus": "non_halal"
+        "halalStatus": "non_halal",
+        "dietaryOption": "vegetarian_friendly"
     },
     {
         "id": 91,
@@ -3640,7 +3728,8 @@ export const initialRestaurants = [
             "lat": null,
             "lng": null
         },
-        "halalStatus": "non_halal"
+        "halalStatus": "non_halal",
+        "dietaryOption": "vegetarian_friendly"
     },
     {
         "id": 92,
@@ -3680,7 +3769,8 @@ export const initialRestaurants = [
             "lat": null,
             "lng": null
         },
-        "halalStatus": "non_halal"
+        "halalStatus": "non_halal",
+        "dietaryOption": "vegetarian_friendly"
     },
     {
         "id": 93,
@@ -3720,7 +3810,8 @@ export const initialRestaurants = [
             "lat": null,
             "lng": null
         },
-        "halalStatus": "non_halal"
+        "halalStatus": "non_halal",
+        "dietaryOption": null
     },
     {
         "id": 94,
@@ -3757,7 +3848,8 @@ export const initialRestaurants = [
             "lat": null,
             "lng": null
         },
-        "halalStatus": "non_halal"
+        "halalStatus": "non_halal",
+        "dietaryOption": null
     },
     {
         "id": 95,
@@ -3797,7 +3889,8 @@ export const initialRestaurants = [
             "lat": null,
             "lng": null
         },
-        "halalStatus": "non_halal"
+        "halalStatus": "non_halal",
+        "dietaryOption": null
     },
     {
         "id": 96,
@@ -3837,7 +3930,8 @@ export const initialRestaurants = [
             "lat": null,
             "lng": null
         },
-        "halalStatus": "non_halal"
+        "halalStatus": "non_halal",
+        "dietaryOption": "vegetarian_friendly"
     },
     {
         "id": 97,
@@ -3873,7 +3967,8 @@ export const initialRestaurants = [
             "lat": null,
             "lng": null
         },
-        "halalStatus": "non_halal"
+        "halalStatus": "non_halal",
+        "dietaryOption": null
     },
     {
         "id": 98,
@@ -3909,7 +4004,8 @@ export const initialRestaurants = [
             "lat": null,
             "lng": null
         },
-        "halalStatus": "non_halal"
+        "halalStatus": "non_halal",
+        "dietaryOption": null
     },
     {
         "id": 99,
@@ -3945,7 +4041,8 @@ export const initialRestaurants = [
             "lat": null,
             "lng": null
         },
-        "halalStatus": "non_halal"
+        "halalStatus": "non_halal",
+        "dietaryOption": null
     },
     {
         "id": 100,
@@ -3984,7 +4081,8 @@ export const initialRestaurants = [
             "lat": null,
             "lng": null
         },
-        "halalStatus": "non_halal"
+        "halalStatus": "non_halal",
+        "dietaryOption": null
     },
     {
         "id": 101,
@@ -4024,7 +4122,8 @@ export const initialRestaurants = [
             "lat": null,
             "lng": null
         },
-        "halalStatus": "non_halal"
+        "halalStatus": "non_halal",
+        "dietaryOption": "vegetarian_friendly"
     },
     {
         "id": 102,
@@ -4064,7 +4163,8 @@ export const initialRestaurants = [
             "lat": null,
             "lng": null
         },
-        "halalStatus": "non_halal"
+        "halalStatus": "non_halal",
+        "dietaryOption": null
     },
     {
         "id": 103,
@@ -4103,7 +4203,8 @@ export const initialRestaurants = [
             "lat": null,
             "lng": null
         },
-        "halalStatus": "non_halal"
+        "halalStatus": "non_halal",
+        "dietaryOption": null
     },
     {
         "id": 104,
@@ -4142,7 +4243,8 @@ export const initialRestaurants = [
             "lat": null,
             "lng": null
         },
-        "halalStatus": "non_halal"
+        "halalStatus": "non_halal",
+        "dietaryOption": null
     },
     {
         "id": 105,
@@ -4182,7 +4284,8 @@ export const initialRestaurants = [
             "lat": null,
             "lng": null
         },
-        "halalStatus": "non_halal"
+        "halalStatus": "non_halal",
+        "dietaryOption": null
     },
     {
         "id": 106,
@@ -4222,7 +4325,8 @@ export const initialRestaurants = [
             "lat": null,
             "lng": null
         },
-        "halalStatus": "non_halal"
+        "halalStatus": "non_halal",
+        "dietaryOption": null
     },
     {
         "id": 107,
@@ -4261,7 +4365,8 @@ export const initialRestaurants = [
             "lat": null,
             "lng": null
         },
-        "halalStatus": "non_halal"
+        "halalStatus": "non_halal",
+        "dietaryOption": null
     },
     {
         "id": 108,
@@ -4301,7 +4406,8 @@ export const initialRestaurants = [
             "lat": null,
             "lng": null
         },
-        "halalStatus": "non_halal"
+        "halalStatus": "non_halal",
+        "dietaryOption": null
     },
     {
         "id": 109,
@@ -4342,7 +4448,8 @@ export const initialRestaurants = [
             "lat": null,
             "lng": null
         },
-        "halalStatus": "non_halal"
+        "halalStatus": "non_halal",
+        "dietaryOption": null
     },
     {
         "id": 110,
@@ -4383,7 +4490,8 @@ export const initialRestaurants = [
             "lat": null,
             "lng": null
         },
-        "halalStatus": "non_halal"
+        "halalStatus": "non_halal",
+        "dietaryOption": null
     },
     {
         "id": 111,
@@ -4423,7 +4531,8 @@ export const initialRestaurants = [
             "lat": null,
             "lng": null
         },
-        "halalStatus": "non_halal"
+        "halalStatus": "non_halal",
+        "dietaryOption": null
     },
     {
         "id": 112,
@@ -4460,7 +4569,8 @@ export const initialRestaurants = [
             "lat": null,
             "lng": null
         },
-        "halalStatus": "non_halal"
+        "halalStatus": "non_halal",
+        "dietaryOption": null
     },
     {
         "id": 113,
@@ -4497,7 +4607,8 @@ export const initialRestaurants = [
             "lat": null,
             "lng": null
         },
-        "halalStatus": "non_halal"
+        "halalStatus": "non_halal",
+        "dietaryOption": null
     },
     {
         "id": 114,
@@ -4538,7 +4649,8 @@ export const initialRestaurants = [
             "lat": null,
             "lng": null
         },
-        "halalStatus": "non_halal"
+        "halalStatus": "non_halal",
+        "dietaryOption": null
     },
     {
         "id": 115,
@@ -4575,7 +4687,8 @@ export const initialRestaurants = [
             "lat": null,
             "lng": null
         },
-        "halalStatus": "non_halal"
+        "halalStatus": "non_halal",
+        "dietaryOption": null
     },
     {
         "id": 116,
@@ -4612,7 +4725,8 @@ export const initialRestaurants = [
             "lat": null,
             "lng": null
         },
-        "halalStatus": "non_halal"
+        "halalStatus": "non_halal",
+        "dietaryOption": null
     },
     {
         "id": 117,
@@ -4649,7 +4763,8 @@ export const initialRestaurants = [
             "lat": null,
             "lng": null
         },
-        "halalStatus": "non_halal"
+        "halalStatus": "non_halal",
+        "dietaryOption": null
     },
     {
         "id": 118,
@@ -4688,7 +4803,8 @@ export const initialRestaurants = [
             "lat": null,
             "lng": null
         },
-        "halalStatus": "non_halal"
+        "halalStatus": "non_halal",
+        "dietaryOption": null
     },
     {
         "id": 119,
@@ -4729,7 +4845,8 @@ export const initialRestaurants = [
             "lat": null,
             "lng": null
         },
-        "halalStatus": "non_halal"
+        "halalStatus": "non_halal",
+        "dietaryOption": null
     },
     {
         "id": 120,
@@ -4770,7 +4887,8 @@ export const initialRestaurants = [
             "lat": null,
             "lng": null
         },
-        "halalStatus": "non_halal"
+        "halalStatus": "non_halal",
+        "dietaryOption": null
     },
     {
         "id": 121,
@@ -4809,7 +4927,8 @@ export const initialRestaurants = [
             "lat": null,
             "lng": null
         },
-        "halalStatus": "non_halal"
+        "halalStatus": "non_halal",
+        "dietaryOption": "vegetarian_friendly"
     },
     {
         "id": 122,
@@ -4846,7 +4965,8 @@ export const initialRestaurants = [
             "lat": null,
             "lng": null
         },
-        "halalStatus": "non_halal"
+        "halalStatus": "non_halal",
+        "dietaryOption": null
     },
     {
         "id": 123,
@@ -4886,7 +5006,8 @@ export const initialRestaurants = [
             "lat": null,
             "lng": null
         },
-        "halalStatus": "non_halal"
+        "halalStatus": "non_halal",
+        "dietaryOption": "vegetarian_friendly"
     },
     {
         "id": 124,
@@ -4923,7 +5044,8 @@ export const initialRestaurants = [
             "lat": null,
             "lng": null
         },
-        "halalStatus": "non_halal"
+        "halalStatus": "non_halal",
+        "dietaryOption": null
     },
     {
         "id": 125,
@@ -4960,7 +5082,8 @@ export const initialRestaurants = [
             "lat": null,
             "lng": null
         },
-        "halalStatus": "non_halal"
+        "halalStatus": "non_halal",
+        "dietaryOption": null
     },
     {
         "id": 126,
@@ -4997,7 +5120,8 @@ export const initialRestaurants = [
             "lat": null,
             "lng": null
         },
-        "halalStatus": "non_halal"
+        "halalStatus": "non_halal",
+        "dietaryOption": null
     },
     {
         "id": 127,
@@ -5034,7 +5158,8 @@ export const initialRestaurants = [
             "lat": null,
             "lng": null
         },
-        "halalStatus": "non_halal"
+        "halalStatus": "non_halal",
+        "dietaryOption": null
     },
     {
         "id": 128,
@@ -5074,7 +5199,8 @@ export const initialRestaurants = [
             "lat": null,
             "lng": null
         },
-        "halalStatus": "non_halal"
+        "halalStatus": "non_halal",
+        "dietaryOption": "vegetarian_friendly"
     },
     {
         "id": 129,
@@ -5111,7 +5237,8 @@ export const initialRestaurants = [
             "lat": null,
             "lng": null
         },
-        "halalStatus": "non_halal"
+        "halalStatus": "non_halal",
+        "dietaryOption": null
     },
     {
         "id": 130,
@@ -5150,7 +5277,8 @@ export const initialRestaurants = [
             "lat": null,
             "lng": null
         },
-        "halalStatus": "non_halal"
+        "halalStatus": "non_halal",
+        "dietaryOption": null
     },
     {
         "id": 131,
@@ -5186,7 +5314,8 @@ export const initialRestaurants = [
             "lat": null,
             "lng": null
         },
-        "halalStatus": "non_halal"
+        "halalStatus": "non_halal",
+        "dietaryOption": null
     },
     {
         "id": 132,
@@ -5225,7 +5354,8 @@ export const initialRestaurants = [
             "lat": null,
             "lng": null
         },
-        "halalStatus": "non_halal"
+        "halalStatus": "non_halal",
+        "dietaryOption": null
     },
     {
         "id": 133,
@@ -5262,7 +5392,8 @@ export const initialRestaurants = [
             "lat": null,
             "lng": null
         },
-        "halalStatus": "non_halal"
+        "halalStatus": "non_halal",
+        "dietaryOption": null
     },
     {
         "id": 134,
@@ -5299,7 +5430,8 @@ export const initialRestaurants = [
             "lat": null,
             "lng": null
         },
-        "halalStatus": "non_halal"
+        "halalStatus": "non_halal",
+        "dietaryOption": null
     },
     {
         "id": 135,
@@ -5338,7 +5470,8 @@ export const initialRestaurants = [
             "lat": null,
             "lng": null
         },
-        "halalStatus": "non_halal"
+        "halalStatus": "non_halal",
+        "dietaryOption": null
     },
     {
         "id": 136,
@@ -5380,7 +5513,8 @@ export const initialRestaurants = [
             "lat": null,
             "lng": null
         },
-        "halalStatus": "non_halal"
+        "halalStatus": "non_halal",
+        "dietaryOption": null
     },
     {
         "id": 137,
@@ -5419,7 +5553,8 @@ export const initialRestaurants = [
             "lat": null,
             "lng": null
         },
-        "halalStatus": "non_halal"
+        "halalStatus": "non_halal",
+        "dietaryOption": null
     },
     {
         "id": 138,
@@ -5456,7 +5591,8 @@ export const initialRestaurants = [
             "lat": null,
             "lng": null
         },
-        "halalStatus": "non_halal"
+        "halalStatus": "non_halal",
+        "dietaryOption": null
     },
     {
         "id": 139,
@@ -5495,7 +5631,8 @@ export const initialRestaurants = [
             "lat": null,
             "lng": null
         },
-        "halalStatus": "no_pork"
+        "halalStatus": "no_pork",
+        "dietaryOption": "vegetarian_only"
     },
     {
         "id": 140,
@@ -5536,7 +5673,8 @@ export const initialRestaurants = [
             "lat": null,
             "lng": null
         },
-        "halalStatus": "non_halal"
+        "halalStatus": "non_halal",
+        "dietaryOption": null
     },
     {
         "id": 141,
@@ -5576,7 +5714,8 @@ export const initialRestaurants = [
             "lat": null,
             "lng": null
         },
-        "halalStatus": "non_halal"
+        "halalStatus": "non_halal",
+        "dietaryOption": null
     },
     {
         "id": 142,
@@ -5615,7 +5754,8 @@ export const initialRestaurants = [
             "lat": null,
             "lng": null
         },
-        "halalStatus": "non_halal"
+        "halalStatus": "non_halal",
+        "dietaryOption": "vegetarian_friendly"
     },
     {
         "id": 144,
@@ -5660,7 +5800,8 @@ export const initialRestaurants = [
             "lng": null
         },
         "halalStatus": "muslim_owned",
-        "area": "Senai"
+        "area": "Senai",
+        "dietaryOption": null
     },
     {
         "id": 145,
@@ -5697,7 +5838,8 @@ export const initialRestaurants = [
             "lat": null,
             "lng": null
         },
-        "halalStatus": "non_halal"
+        "halalStatus": "non_halal",
+        "dietaryOption": null
     },
     {
         "id": 146,
@@ -5734,7 +5876,8 @@ export const initialRestaurants = [
             "lat": null,
             "lng": null
         },
-        "halalStatus": "non_halal"
+        "halalStatus": "non_halal",
+        "dietaryOption": null
     },
     {
         "id": 147,
@@ -5771,7 +5914,8 @@ export const initialRestaurants = [
             "lat": null,
             "lng": null
         },
-        "halalStatus": "non_halal"
+        "halalStatus": "non_halal",
+        "dietaryOption": null
     },
     {
         "id": 148,
@@ -5813,7 +5957,8 @@ export const initialRestaurants = [
             "lat": null,
             "lng": null
         },
-        "halalStatus": "non_halal"
+        "halalStatus": "non_halal",
+        "dietaryOption": "vegetarian_friendly"
     },
     {
         "id": 149,
@@ -5850,7 +5995,8 @@ export const initialRestaurants = [
             "lat": null,
             "lng": null
         },
-        "halalStatus": "non_halal"
+        "halalStatus": "non_halal",
+        "dietaryOption": null
     },
     {
         "id": 150,
@@ -5891,7 +6037,8 @@ export const initialRestaurants = [
             "lat": null,
             "lng": null
         },
-        "halalStatus": "non_halal"
+        "halalStatus": "non_halal",
+        "dietaryOption": null
     },
     {
         "id": 151,
@@ -5932,7 +6079,8 @@ export const initialRestaurants = [
             "lat": null,
             "lng": null
         },
-        "halalStatus": "certified"
+        "halalStatus": "certified",
+        "dietaryOption": null
     },
     {
         "id": 152,
@@ -5973,7 +6121,8 @@ export const initialRestaurants = [
             "lat": null,
             "lng": null
         },
-        "halalStatus": "non_halal"
+        "halalStatus": "non_halal",
+        "dietaryOption": null
     },
     {
         "id": 153,
@@ -6014,7 +6163,8 @@ export const initialRestaurants = [
             "lat": null,
             "lng": null
         },
-        "halalStatus": "non_halal"
+        "halalStatus": "non_halal",
+        "dietaryOption": null
     },
     {
         "id": 154,
@@ -6054,7 +6204,8 @@ export const initialRestaurants = [
             "lat": null,
             "lng": null
         },
-        "halalStatus": "non_halal"
+        "halalStatus": "non_halal",
+        "dietaryOption": null
     },
     {
         "id": 155,
@@ -6094,7 +6245,8 @@ export const initialRestaurants = [
             "lat": null,
             "lng": null
         },
-        "halalStatus": "non_halal"
+        "halalStatus": "non_halal",
+        "dietaryOption": "vegetarian_friendly"
     },
     {
         "id": 156,
@@ -6131,7 +6283,8 @@ export const initialRestaurants = [
             "lat": null,
             "lng": null
         },
-        "halalStatus": "non_halal"
+        "halalStatus": "non_halal",
+        "dietaryOption": null
     },
     {
         "id": 157,
@@ -6167,7 +6320,8 @@ export const initialRestaurants = [
             "lat": null,
             "lng": null
         },
-        "halalStatus": "non_halal"
+        "halalStatus": "non_halal",
+        "dietaryOption": null
     },
     {
         "id": 158,
@@ -6207,7 +6361,8 @@ export const initialRestaurants = [
             "lat": null,
             "lng": null
         },
-        "halalStatus": "non_halal"
+        "halalStatus": "non_halal",
+        "dietaryOption": "vegetarian_friendly"
     },
     {
         "id": 159,
@@ -6248,7 +6403,8 @@ export const initialRestaurants = [
             "lat": null,
             "lng": null
         },
-        "halalStatus": "non_halal"
+        "halalStatus": "non_halal",
+        "dietaryOption": null
     },
     {
         "id": 160,
@@ -6289,7 +6445,8 @@ export const initialRestaurants = [
             "lat": null,
             "lng": null
         },
-        "halalStatus": "non_halal"
+        "halalStatus": "non_halal",
+        "dietaryOption": null
     },
     {
         "id": 161,
@@ -6326,7 +6483,8 @@ export const initialRestaurants = [
             "lat": null,
             "lng": null
         },
-        "halalStatus": "muslim_owned"
+        "halalStatus": "muslim_owned",
+        "dietaryOption": null
     },
     {
         "id": 162,
@@ -6366,7 +6524,8 @@ export const initialRestaurants = [
             "lat": null,
             "lng": null
         },
-        "halalStatus": "non_halal"
+        "halalStatus": "non_halal",
+        "dietaryOption": "vegetarian_friendly"
     },
     {
         "id": 163,
@@ -6403,7 +6562,8 @@ export const initialRestaurants = [
             "lat": null,
             "lng": null
         },
-        "halalStatus": "muslim_owned"
+        "halalStatus": "muslim_owned",
+        "dietaryOption": null
     },
     {
         "id": 164,
@@ -6441,7 +6601,8 @@ export const initialRestaurants = [
             "lat": null,
             "lng": null
         },
-        "halalStatus": "non_halal"
+        "halalStatus": "non_halal",
+        "dietaryOption": null
     },
     {
         "id": 165,
@@ -6483,7 +6644,8 @@ export const initialRestaurants = [
             "lat": null,
             "lng": null
         },
-        "halalStatus": "non_halal"
+        "halalStatus": "non_halal",
+        "dietaryOption": "vegetarian_friendly"
     },
     {
         "id": 166,
@@ -6523,7 +6685,8 @@ export const initialRestaurants = [
             "lat": null,
             "lng": null
         },
-        "halalStatus": "non_halal"
+        "halalStatus": "non_halal",
+        "dietaryOption": "vegetarian_friendly"
     },
     {
         "id": 167,
@@ -6560,7 +6723,8 @@ export const initialRestaurants = [
             "lat": null,
             "lng": null
         },
-        "halalStatus": "non_halal"
+        "halalStatus": "non_halal",
+        "dietaryOption": null
     },
     {
         "id": 168,
@@ -6597,7 +6761,8 @@ export const initialRestaurants = [
             "lat": null,
             "lng": null
         },
-        "halalStatus": "non_halal"
+        "halalStatus": "non_halal",
+        "dietaryOption": null
     },
     {
         "id": 169,
@@ -6637,7 +6802,8 @@ export const initialRestaurants = [
             "lat": null,
             "lng": null
         },
-        "halalStatus": "non_halal"
+        "halalStatus": "non_halal",
+        "dietaryOption": "vegetarian_friendly"
     },
     {
         "id": 170,
@@ -6676,7 +6842,8 @@ export const initialRestaurants = [
             "lat": null,
             "lng": null
         },
-        "halalStatus": "non_halal"
+        "halalStatus": "non_halal",
+        "dietaryOption": null
     },
     {
         "id": 171,
@@ -6713,7 +6880,8 @@ export const initialRestaurants = [
             "lat": null,
             "lng": null
         },
-        "halalStatus": "non_halal"
+        "halalStatus": "non_halal",
+        "dietaryOption": null
     },
     {
         "id": 172,
@@ -6753,7 +6921,8 @@ export const initialRestaurants = [
             "lat": null,
             "lng": null
         },
-        "halalStatus": "non_halal"
+        "halalStatus": "non_halal",
+        "dietaryOption": "vegetarian_friendly"
     },
     {
         "id": 173,
@@ -6793,7 +6962,8 @@ export const initialRestaurants = [
             "lat": null,
             "lng": null
         },
-        "halalStatus": "non_halal"
+        "halalStatus": "non_halal",
+        "dietaryOption": null
     },
     {
         "id": 174,
@@ -6834,7 +7004,8 @@ export const initialRestaurants = [
             "lat": null,
             "lng": null
         },
-        "halalStatus": "non_halal"
+        "halalStatus": "non_halal",
+        "dietaryOption": null
     },
     {
         "id": 175,
@@ -6888,7 +7059,8 @@ export const initialRestaurants = [
             "lat": null,
             "lng": null
         },
-        "halalStatus": "certified"
+        "halalStatus": "certified",
+        "dietaryOption": "vegetarian_friendly"
     },
     {
         "id": 176,
@@ -6924,7 +7096,8 @@ export const initialRestaurants = [
             "lat": null,
             "lng": null
         },
-        "halalStatus": "non_halal"
+        "halalStatus": "non_halal",
+        "dietaryOption": null
     },
     {
         "id": 177,
@@ -6962,7 +7135,8 @@ export const initialRestaurants = [
             "lat": null,
             "lng": null
         },
-        "halalStatus": "non_halal"
+        "halalStatus": "non_halal",
+        "dietaryOption": null
     },
     {
         "id": 178,
@@ -7001,7 +7175,8 @@ export const initialRestaurants = [
             "lat": null,
             "lng": null
         },
-        "halalStatus": "non_halal"
+        "halalStatus": "non_halal",
+        "dietaryOption": "vegetarian_friendly"
     },
     {
         "id": 179,
@@ -7037,7 +7212,8 @@ export const initialRestaurants = [
             "lat": null,
             "lng": null
         },
-        "halalStatus": "non_halal"
+        "halalStatus": "non_halal",
+        "dietaryOption": null
     },
     {
         "id": 180,
@@ -7076,7 +7252,8 @@ export const initialRestaurants = [
             "lat": null,
             "lng": null
         },
-        "halalStatus": "non_halal"
+        "halalStatus": "non_halal",
+        "dietaryOption": null
     },
     {
         "id": 181,
@@ -7118,7 +7295,8 @@ export const initialRestaurants = [
             "lat": null,
             "lng": null
         },
-        "halalStatus": "non_halal"
+        "halalStatus": "non_halal",
+        "dietaryOption": null
     },
     {
         "id": 182,
@@ -7158,7 +7336,8 @@ export const initialRestaurants = [
             "lat": null,
             "lng": null
         },
-        "halalStatus": "non_halal"
+        "halalStatus": "non_halal",
+        "dietaryOption": null
     },
     {
         "id": 183,
@@ -7194,7 +7373,8 @@ export const initialRestaurants = [
             "lat": null,
             "lng": null
         },
-        "halalStatus": "non_halal"
+        "halalStatus": "non_halal",
+        "dietaryOption": null
     },
     {
         "id": 184,
@@ -7232,7 +7412,8 @@ export const initialRestaurants = [
             "lat": null,
             "lng": null
         },
-        "halalStatus": "non_halal"
+        "halalStatus": "non_halal",
+        "dietaryOption": null
     },
     {
         "id": 185,
@@ -7271,7 +7452,8 @@ export const initialRestaurants = [
             "lat": null,
             "lng": null
         },
-        "halalStatus": "non_halal"
+        "halalStatus": "non_halal",
+        "dietaryOption": null
     },
     {
         "id": 187,
@@ -7311,7 +7493,8 @@ export const initialRestaurants = [
             "lat": null,
             "lng": null
         },
-        "halalStatus": "non_halal"
+        "halalStatus": "non_halal",
+        "dietaryOption": null
     },
     {
         "id": 188,
@@ -7352,7 +7535,8 @@ export const initialRestaurants = [
             "lat": null,
             "lng": null
         },
-        "halalStatus": "non_halal"
+        "halalStatus": "non_halal",
+        "dietaryOption": "vegetarian_friendly"
     },
     {
         "id": 189,
@@ -7417,7 +7601,8 @@ export const initialRestaurants = [
             "lat": null,
             "lng": null
         },
-        "halalStatus": "certified"
+        "halalStatus": "certified",
+        "dietaryOption": "vegetarian_friendly"
     },
     {
         "id": 190,
@@ -7455,7 +7640,8 @@ export const initialRestaurants = [
             "lat": null,
             "lng": null
         },
-        "halalStatus": "non_halal"
+        "halalStatus": "non_halal",
+        "dietaryOption": null
     },
     {
         "id": 191,
@@ -7509,7 +7695,8 @@ export const initialRestaurants = [
             "lat": null,
             "lng": null
         },
-        "halalStatus": "certified"
+        "halalStatus": "certified",
+        "dietaryOption": null
     },
     {
         "id": 192,
@@ -7549,7 +7736,8 @@ export const initialRestaurants = [
             "lat": null,
             "lng": null
         },
-        "halalStatus": "non_halal"
+        "halalStatus": "non_halal",
+        "dietaryOption": null
     },
     {
         "id": 193,
@@ -7589,7 +7777,8 @@ export const initialRestaurants = [
             "lat": null,
             "lng": null
         },
-        "halalStatus": "non_halal"
+        "halalStatus": "non_halal",
+        "dietaryOption": null
     },
     {
         "id": 194,
@@ -7625,7 +7814,8 @@ export const initialRestaurants = [
             "lat": null,
             "lng": null
         },
-        "halalStatus": "no_pork"
+        "halalStatus": "no_pork",
+        "dietaryOption": "vegetarian_only"
     },
     {
         "id": 195,
@@ -7663,7 +7853,8 @@ export const initialRestaurants = [
             "lat": null,
             "lng": null
         },
-        "halalStatus": "non_halal"
+        "halalStatus": "non_halal",
+        "dietaryOption": null
     },
     {
         "id": 196,
@@ -7701,7 +7892,8 @@ export const initialRestaurants = [
             "lat": null,
             "lng": null
         },
-        "halalStatus": "non_halal"
+        "halalStatus": "non_halal",
+        "dietaryOption": null
     },
     {
         "id": 197,
@@ -7740,7 +7932,8 @@ export const initialRestaurants = [
             "lat": null,
             "lng": null
         },
-        "halalStatus": "non_halal"
+        "halalStatus": "non_halal",
+        "dietaryOption": "vegetarian_friendly"
     },
     {
         "id": 198,
@@ -7778,7 +7971,8 @@ export const initialRestaurants = [
             "lat": null,
             "lng": null
         },
-        "halalStatus": "non_halal"
+        "halalStatus": "non_halal",
+        "dietaryOption": null
     },
     {
         "id": 199,
@@ -7818,7 +8012,8 @@ export const initialRestaurants = [
             "lat": null,
             "lng": null
         },
-        "halalStatus": "non_halal"
+        "halalStatus": "non_halal",
+        "dietaryOption": null
     },
     {
         "id": 200,
@@ -7862,7 +8057,8 @@ export const initialRestaurants = [
             "lat": null,
             "lng": null
         },
-        "halalStatus": "non_halal"
+        "halalStatus": "non_halal",
+        "dietaryOption": null
     },
     {
         "id": 201,
@@ -7900,7 +8096,8 @@ export const initialRestaurants = [
             "lat": null,
             "lng": null
         },
-        "halalStatus": "non_halal"
+        "halalStatus": "non_halal",
+        "dietaryOption": null
     },
     {
         "id": 204,
@@ -7942,7 +8139,8 @@ export const initialRestaurants = [
             "lat": null,
             "lng": null
         },
-        "halalStatus": "non_halal"
+        "halalStatus": "non_halal",
+        "dietaryOption": "vegetarian_friendly"
     },
     {
         "id": 205,
@@ -7980,7 +8178,8 @@ export const initialRestaurants = [
             "lat": null,
             "lng": null
         },
-        "halalStatus": "non_halal"
+        "halalStatus": "non_halal",
+        "dietaryOption": null
     },
     {
         "id": 206,
@@ -8019,7 +8218,8 @@ export const initialRestaurants = [
             "lat": null,
             "lng": null
         },
-        "halalStatus": "non_halal"
+        "halalStatus": "non_halal",
+        "dietaryOption": "vegetarian_friendly"
     },
     {
         "id": 208,
@@ -8058,7 +8258,8 @@ export const initialRestaurants = [
             "lat": null,
             "lng": null
         },
-        "halalStatus": "non_halal"
+        "halalStatus": "non_halal",
+        "dietaryOption": "vegetarian_friendly"
     },
     {
         "id": 211,
@@ -8105,7 +8306,8 @@ export const initialRestaurants = [
             "lat": null,
             "lng": null
         },
-        "halalStatus": "non_halal"
+        "halalStatus": "non_halal",
+        "dietaryOption": null
     },
     {
         "id": 212,
@@ -8141,7 +8343,8 @@ export const initialRestaurants = [
             "lat": null,
             "lng": null
         },
-        "halalStatus": "non_halal"
+        "halalStatus": "non_halal",
+        "dietaryOption": "vegetarian_only"
     },
     {
         "id": 216,
@@ -8179,7 +8382,8 @@ export const initialRestaurants = [
             "lat": null,
             "lng": null
         },
-        "halalStatus": "non_halal"
+        "halalStatus": "non_halal",
+        "dietaryOption": null
     },
     {
         "id": 217,
@@ -8215,7 +8419,8 @@ export const initialRestaurants = [
             "lat": null,
             "lng": null
         },
-        "halalStatus": "non_halal"
+        "halalStatus": "non_halal",
+        "dietaryOption": "vegetarian_only"
     },
     {
         "id": 218,
@@ -8253,7 +8458,8 @@ export const initialRestaurants = [
             "lat": null,
             "lng": null
         },
-        "halalStatus": "non_halal"
+        "halalStatus": "non_halal",
+        "dietaryOption": null
     },
     {
         "id": 219,
@@ -8289,7 +8495,8 @@ export const initialRestaurants = [
             "lat": null,
             "lng": null
         },
-        "halalStatus": "non_halal"
+        "halalStatus": "non_halal",
+        "dietaryOption": "vegetarian_only"
     },
     {
         "id": 220,
@@ -8331,7 +8538,8 @@ export const initialRestaurants = [
             "lat": null,
             "lng": null
         },
-        "halalStatus": "non_halal"
+        "halalStatus": "non_halal",
+        "dietaryOption": "vegetarian_friendly"
     },
     {
         "id": 222,
@@ -8369,7 +8577,8 @@ export const initialRestaurants = [
             "lat": null,
             "lng": null
         },
-        "halalStatus": "muslim_owned"
+        "halalStatus": "muslim_owned",
+        "dietaryOption": null
     },
     {
         "id": 223,
@@ -8408,7 +8617,8 @@ export const initialRestaurants = [
             "lat": null,
             "lng": null
         },
-        "halalStatus": "non_halal"
+        "halalStatus": "non_halal",
+        "dietaryOption": null
     },
     {
         "id": 224,
@@ -8450,7 +8660,8 @@ export const initialRestaurants = [
             "lat": null,
             "lng": null
         },
-        "halalStatus": "non_halal"
+        "halalStatus": "non_halal",
+        "dietaryOption": "vegetarian_friendly"
     },
     {
         "id": 225,
@@ -8490,7 +8701,8 @@ export const initialRestaurants = [
             "lat": null,
             "lng": null
         },
-        "halalStatus": "non_halal"
+        "halalStatus": "non_halal",
+        "dietaryOption": null
     },
     {
         "id": 226,
@@ -8532,7 +8744,8 @@ export const initialRestaurants = [
             "lat": null,
             "lng": null
         },
-        "halalStatus": "no_pork"
+        "halalStatus": "no_pork",
+        "dietaryOption": "vegetarian_only"
     },
     {
         "id": 227,
@@ -8574,7 +8787,8 @@ export const initialRestaurants = [
             "lat": null,
             "lng": null
         },
-        "halalStatus": "non_halal"
+        "halalStatus": "non_halal",
+        "dietaryOption": "vegetarian_friendly"
     },
     {
         "id": 228,
@@ -8613,7 +8827,8 @@ export const initialRestaurants = [
             "lat": null,
             "lng": null
         },
-        "halalStatus": "non_halal"
+        "halalStatus": "non_halal",
+        "dietaryOption": "vegetarian_friendly"
     },
     {
         "id": 229,
@@ -8654,7 +8869,8 @@ export const initialRestaurants = [
             "lat": null,
             "lng": null
         },
-        "halalStatus": "non_halal"
+        "halalStatus": "non_halal",
+        "dietaryOption": "vegetarian_friendly"
     },
     {
         "id": 230,
@@ -8690,7 +8906,8 @@ export const initialRestaurants = [
             "lat": null,
             "lng": null
         },
-        "halalStatus": "no_pork"
+        "halalStatus": "no_pork",
+        "dietaryOption": "vegetarian_only"
     },
     {
         "id": 231,
@@ -8728,7 +8945,8 @@ export const initialRestaurants = [
             "lat": null,
             "lng": null
         },
-        "halalStatus": "non_halal"
+        "halalStatus": "non_halal",
+        "dietaryOption": null
     },
     {
         "id": 232,
@@ -8768,7 +8986,8 @@ export const initialRestaurants = [
             "lat": null,
             "lng": null
         },
-        "halalStatus": "non_halal"
+        "halalStatus": "non_halal",
+        "dietaryOption": null
     },
     {
         "id": 233,
@@ -8804,7 +9023,8 @@ export const initialRestaurants = [
             "lat": null,
             "lng": null
         },
-        "halalStatus": "non_halal"
+        "halalStatus": "non_halal",
+        "dietaryOption": null
     },
     {
         "id": 234,
@@ -8842,7 +9062,8 @@ export const initialRestaurants = [
             "lat": null,
             "lng": null
         },
-        "halalStatus": "non_halal"
+        "halalStatus": "non_halal",
+        "dietaryOption": null
     },
     {
         "id": 235,
@@ -8879,7 +9100,8 @@ export const initialRestaurants = [
             "lat": null,
             "lng": null
         },
-        "halalStatus": "non_halal"
+        "halalStatus": "non_halal",
+        "dietaryOption": null
     },
     {
         "id": 236,
@@ -8919,7 +9141,8 @@ export const initialRestaurants = [
             "lat": null,
             "lng": null
         },
-        "halalStatus": "non_halal"
+        "halalStatus": "non_halal",
+        "dietaryOption": null
     },
     {
         "id": 237,
@@ -8952,7 +9175,8 @@ export const initialRestaurants = [
             "lat": null,
             "lng": null
         },
-        "halalStatus": "non_halal"
+        "halalStatus": "non_halal",
+        "dietaryOption": null
     },
     {
         "id": 239,
@@ -8993,7 +9217,8 @@ export const initialRestaurants = [
             "lat": null,
             "lng": null
         },
-        "halalStatus": "non_halal"
+        "halalStatus": "non_halal",
+        "dietaryOption": null
     },
     {
         "id": 240,
@@ -9030,7 +9255,8 @@ export const initialRestaurants = [
             "lat": null,
             "lng": null
         },
-        "halalStatus": "muslim_owned"
+        "halalStatus": "muslim_owned",
+        "dietaryOption": null
     },
     {
         "id": 241,
@@ -9067,7 +9293,8 @@ export const initialRestaurants = [
             "lat": null,
             "lng": null
         },
-        "halalStatus": "non_halal"
+        "halalStatus": "non_halal",
+        "dietaryOption": null
     },
     {
         "id": 242,
@@ -9105,7 +9332,8 @@ export const initialRestaurants = [
             "lat": null,
             "lng": null
         },
-        "halalStatus": "non_halal"
+        "halalStatus": "non_halal",
+        "dietaryOption": "vegetarian_friendly"
     },
     {
         "id": 243,
@@ -9136,7 +9364,8 @@ export const initialRestaurants = [
             "lat": null,
             "lng": null
         },
-        "halalStatus": "non_halal"
+        "halalStatus": "non_halal",
+        "dietaryOption": null
     },
     {
         "id": 244,
@@ -9174,7 +9403,8 @@ export const initialRestaurants = [
             "lat": null,
             "lng": null
         },
-        "halalStatus": "non_halal"
+        "halalStatus": "non_halal",
+        "dietaryOption": "vegetarian_friendly"
     },
     {
         "id": 245,
@@ -9211,7 +9441,8 @@ export const initialRestaurants = [
             "lat": null,
             "lng": null
         },
-        "halalStatus": "non_halal"
+        "halalStatus": "non_halal",
+        "dietaryOption": null
     },
     {
         "id": 246,
@@ -9247,7 +9478,8 @@ export const initialRestaurants = [
             "lat": null,
             "lng": null
         },
-        "halalStatus": "non_halal"
+        "halalStatus": "non_halal",
+        "dietaryOption": null
     },
     {
         "id": 247,
@@ -9288,7 +9520,8 @@ export const initialRestaurants = [
             "lat": null,
             "lng": null
         },
-        "halalStatus": "non_halal"
+        "halalStatus": "non_halal",
+        "dietaryOption": null
     },
     {
         "id": 248,
@@ -9327,7 +9560,8 @@ export const initialRestaurants = [
             "lat": null,
             "lng": null
         },
-        "halalStatus": "non_halal"
+        "halalStatus": "non_halal",
+        "dietaryOption": null
     },
     {
         "id": 249,
@@ -9364,7 +9598,8 @@ export const initialRestaurants = [
             "lat": null,
             "lng": null
         },
-        "halalStatus": "non_halal"
+        "halalStatus": "non_halal",
+        "dietaryOption": null
     },
     {
         "id": 250,
@@ -9399,7 +9634,8 @@ export const initialRestaurants = [
             "lat": null,
             "lng": null
         },
-        "halalStatus": "non_halal"
+        "halalStatus": "non_halal",
+        "dietaryOption": null
     },
     {
         "id": 251,
@@ -9438,7 +9674,8 @@ export const initialRestaurants = [
             "lat": null,
             "lng": null
         },
-        "halalStatus": "non_halal"
+        "halalStatus": "non_halal",
+        "dietaryOption": null
     },
     {
         "id": 252,
@@ -9477,7 +9714,8 @@ export const initialRestaurants = [
             "lat": null,
             "lng": null
         },
-        "halalStatus": "non_halal"
+        "halalStatus": "non_halal",
+        "dietaryOption": null
     },
     {
         "id": 253,
@@ -9516,7 +9754,8 @@ export const initialRestaurants = [
             "lat": null,
             "lng": null
         },
-        "halalStatus": "non_halal"
+        "halalStatus": "non_halal",
+        "dietaryOption": null
     },
     {
         "id": 254,
@@ -9555,7 +9794,8 @@ export const initialRestaurants = [
             "lat": null,
             "lng": null
         },
-        "halalStatus": "non_halal"
+        "halalStatus": "non_halal",
+        "dietaryOption": null
     },
     {
         "id": 255,
@@ -9595,7 +9835,8 @@ export const initialRestaurants = [
             "lat": null,
             "lng": null
         },
-        "halalStatus": "non_halal"
+        "halalStatus": "non_halal",
+        "dietaryOption": "vegetarian_friendly"
     },
     {
         "id": 256,
@@ -9634,7 +9875,8 @@ export const initialRestaurants = [
             "lat": null,
             "lng": null
         },
-        "halalStatus": "non_halal"
+        "halalStatus": "non_halal",
+        "dietaryOption": null
     },
     {
         "id": 257,
@@ -9674,7 +9916,8 @@ export const initialRestaurants = [
             "lat": null,
             "lng": null
         },
-        "halalStatus": "non_halal"
+        "halalStatus": "non_halal",
+        "dietaryOption": "vegetarian_friendly"
     },
     {
         "id": 258,
@@ -9709,7 +9952,8 @@ export const initialRestaurants = [
             "lat": null,
             "lng": null
         },
-        "halalStatus": "non_halal"
+        "halalStatus": "non_halal",
+        "dietaryOption": null
     },
     {
         "id": 259,
@@ -9749,7 +9993,8 @@ export const initialRestaurants = [
             "lat": null,
             "lng": null
         },
-        "halalStatus": "non_halal"
+        "halalStatus": "non_halal",
+        "dietaryOption": "vegetarian_friendly"
     },
     {
         "id": 261,
@@ -9818,7 +10063,8 @@ export const initialRestaurants = [
             "lat": null,
             "lng": null
         },
-        "halalStatus": "certified"
+        "halalStatus": "certified",
+        "dietaryOption": "vegetarian_friendly"
     },
     {
         "id": 262,
@@ -9855,7 +10101,8 @@ export const initialRestaurants = [
             "lat": null,
             "lng": null
         },
-        "halalStatus": "non_halal"
+        "halalStatus": "non_halal",
+        "dietaryOption": null
     },
     {
         "id": 263,
@@ -9894,7 +10141,8 @@ export const initialRestaurants = [
             "lat": null,
             "lng": null
         },
-        "halalStatus": "non_halal"
+        "halalStatus": "non_halal",
+        "dietaryOption": null
     },
     {
         "id": 264,
@@ -9931,7 +10179,8 @@ export const initialRestaurants = [
             "lat": null,
             "lng": null
         },
-        "halalStatus": "non_halal"
+        "halalStatus": "non_halal",
+        "dietaryOption": null
     },
     {
         "id": 265,
@@ -9970,7 +10219,8 @@ export const initialRestaurants = [
             "lat": null,
             "lng": null
         },
-        "halalStatus": "non_halal"
+        "halalStatus": "non_halal",
+        "dietaryOption": null
     },
     {
         "id": 266,
@@ -10012,7 +10262,8 @@ export const initialRestaurants = [
             "lat": null,
             "lng": null
         },
-        "halalStatus": "non_halal"
+        "halalStatus": "non_halal",
+        "dietaryOption": "vegetarian_friendly"
     },
     {
         "id": 267,
@@ -10049,7 +10300,8 @@ export const initialRestaurants = [
             "lat": null,
             "lng": null
         },
-        "halalStatus": "non_halal"
+        "halalStatus": "non_halal",
+        "dietaryOption": null
     },
     {
         "id": 268,
@@ -10089,7 +10341,8 @@ export const initialRestaurants = [
             "lat": null,
             "lng": null
         },
-        "halalStatus": "non_halal"
+        "halalStatus": "non_halal",
+        "dietaryOption": null
     },
     {
         "id": 269,
@@ -10129,7 +10382,8 @@ export const initialRestaurants = [
             "lat": null,
             "lng": null
         },
-        "halalStatus": "non_halal"
+        "halalStatus": "non_halal",
+        "dietaryOption": null
     },
     {
         "id": 270,
@@ -10166,7 +10420,8 @@ export const initialRestaurants = [
             "lat": null,
             "lng": null
         },
-        "halalStatus": "non_halal"
+        "halalStatus": "non_halal",
+        "dietaryOption": null
     },
     {
         "id": 271,
@@ -10208,7 +10463,8 @@ export const initialRestaurants = [
             "lat": null,
             "lng": null
         },
-        "halalStatus": "certified"
+        "halalStatus": "certified",
+        "dietaryOption": "vegetarian_friendly"
     },
     {
         "id": 272,
@@ -10250,7 +10506,8 @@ export const initialRestaurants = [
             "lat": null,
             "lng": null
         },
-        "halalStatus": "certified"
+        "halalStatus": "certified",
+        "dietaryOption": "vegetarian_friendly"
     },
     {
         "id": 274,
@@ -10290,7 +10547,8 @@ export const initialRestaurants = [
             "lat": null,
             "lng": null
         },
-        "halalStatus": "non_halal"
+        "halalStatus": "non_halal",
+        "dietaryOption": "vegetarian_friendly"
     },
     {
         "id": 275,
@@ -10330,7 +10588,8 @@ export const initialRestaurants = [
             "lat": null,
             "lng": null
         },
-        "halalStatus": "certified"
+        "halalStatus": "certified",
+        "dietaryOption": null
     },
     {
         "id": 276,
@@ -10370,7 +10629,8 @@ export const initialRestaurants = [
             "lat": null,
             "lng": null
         },
-        "halalStatus": "non_halal"
+        "halalStatus": "non_halal",
+        "dietaryOption": "vegetarian_friendly"
     },
     {
         "id": 277,
@@ -10407,7 +10667,8 @@ export const initialRestaurants = [
             "lat": null,
             "lng": null
         },
-        "halalStatus": "non_halal"
+        "halalStatus": "non_halal",
+        "dietaryOption": null
     },
     {
         "id": 278,
@@ -10448,7 +10709,8 @@ export const initialRestaurants = [
             "lat": null,
             "lng": null
         },
-        "halalStatus": "non_halal"
+        "halalStatus": "non_halal",
+        "dietaryOption": null
     },
     {
         "id": 279,
@@ -10488,7 +10750,8 @@ export const initialRestaurants = [
             "lat": null,
             "lng": null
         },
-        "halalStatus": "non_halal"
+        "halalStatus": "non_halal",
+        "dietaryOption": null
     },
     {
         "id": 280,
@@ -10528,7 +10791,8 @@ export const initialRestaurants = [
             "lat": null,
             "lng": null
         },
-        "halalStatus": "non_halal"
+        "halalStatus": "non_halal",
+        "dietaryOption": "vegetarian_friendly"
     },
     {
         "id": 281,
@@ -10565,7 +10829,8 @@ export const initialRestaurants = [
             "lat": null,
             "lng": null
         },
-        "halalStatus": "muslim_owned"
+        "halalStatus": "muslim_owned",
+        "dietaryOption": null
     },
     {
         "id": 282,
@@ -10604,7 +10869,8 @@ export const initialRestaurants = [
             "lat": null,
             "lng": null
         },
-        "halalStatus": "non_halal"
+        "halalStatus": "non_halal",
+        "dietaryOption": null
     },
     {
         "id": 284,
@@ -10641,7 +10907,8 @@ export const initialRestaurants = [
             "lat": null,
             "lng": null
         },
-        "halalStatus": "non_halal"
+        "halalStatus": "non_halal",
+        "dietaryOption": null
     },
     {
         "id": 285,
@@ -10680,7 +10947,8 @@ export const initialRestaurants = [
             "lat": null,
             "lng": null
         },
-        "halalStatus": "non_halal"
+        "halalStatus": "non_halal",
+        "dietaryOption": null
     },
     {
         "id": 287,
@@ -10719,7 +10987,8 @@ export const initialRestaurants = [
             "lat": null,
             "lng": null
         },
-        "halalStatus": "non_halal"
+        "halalStatus": "non_halal",
+        "dietaryOption": null
     },
     {
         "id": 288,
@@ -10760,7 +11029,8 @@ export const initialRestaurants = [
             "lat": null,
             "lng": null
         },
-        "halalStatus": "non_halal"
+        "halalStatus": "non_halal",
+        "dietaryOption": null
     },
     {
         "id": 289,
@@ -10799,7 +11069,8 @@ export const initialRestaurants = [
             "lat": null,
             "lng": null
         },
-        "halalStatus": "non_halal"
+        "halalStatus": "non_halal",
+        "dietaryOption": null
     },
     {
         "id": 290,
@@ -10836,7 +11107,8 @@ export const initialRestaurants = [
             "lat": null,
             "lng": null
         },
-        "halalStatus": "non_halal"
+        "halalStatus": "non_halal",
+        "dietaryOption": null
     },
     {
         "id": 291,
@@ -10878,7 +11150,8 @@ export const initialRestaurants = [
             "lat": null,
             "lng": null
         },
-        "halalStatus": "non_halal"
+        "halalStatus": "non_halal",
+        "dietaryOption": "vegetarian_friendly"
     },
     {
         "id": 292,
@@ -10915,7 +11188,8 @@ export const initialRestaurants = [
             "lat": null,
             "lng": null
         },
-        "halalStatus": "non_halal"
+        "halalStatus": "non_halal",
+        "dietaryOption": null
     },
     {
         "id": 293,
@@ -10955,7 +11229,8 @@ export const initialRestaurants = [
             "lat": null,
             "lng": null
         },
-        "halalStatus": "non_halal"
+        "halalStatus": "non_halal",
+        "dietaryOption": "vegetarian_friendly"
     },
     {
         "id": 294,
@@ -10996,7 +11271,8 @@ export const initialRestaurants = [
             "lat": null,
             "lng": null
         },
-        "halalStatus": "non_halal"
+        "halalStatus": "non_halal",
+        "dietaryOption": "vegetarian_friendly"
     },
     {
         "id": 295,
@@ -11038,7 +11314,8 @@ export const initialRestaurants = [
             "lng": null
         },
         "halalStatus": "certified",
-        "area": "Senai"
+        "area": "Senai",
+        "dietaryOption": "vegetarian_friendly"
     },
     {
         "id": 296,
@@ -11080,7 +11357,8 @@ export const initialRestaurants = [
             "lat": null,
             "lng": null
         },
-        "halalStatus": "non_halal"
+        "halalStatus": "non_halal",
+        "dietaryOption": "vegetarian_friendly"
     },
     {
         "id": 297,
@@ -11120,7 +11398,8 @@ export const initialRestaurants = [
             "lat": null,
             "lng": null
         },
-        "halalStatus": "non_halal"
+        "halalStatus": "non_halal",
+        "dietaryOption": null
     },
     {
         "id": 298,
@@ -11160,7 +11439,8 @@ export const initialRestaurants = [
             "lat": null,
             "lng": null
         },
-        "halalStatus": "certified"
+        "halalStatus": "certified",
+        "dietaryOption": null
     },
     {
         "id": 299,
@@ -11200,7 +11480,8 @@ export const initialRestaurants = [
             "lat": null,
             "lng": null
         },
-        "halalStatus": "muslim_owned"
+        "halalStatus": "muslim_owned",
+        "dietaryOption": null
     },
     {
         "id": 300,
@@ -11240,7 +11521,8 @@ export const initialRestaurants = [
             "lat": null,
             "lng": null
         },
-        "halalStatus": "non_halal"
+        "halalStatus": "non_halal",
+        "dietaryOption": null
     },
     {
         "id": 301,
@@ -11277,7 +11559,8 @@ export const initialRestaurants = [
             "lat": null,
             "lng": null
         },
-        "halalStatus": "non_halal"
+        "halalStatus": "non_halal",
+        "dietaryOption": null
     },
     {
         "id": 307,
@@ -11315,7 +11598,8 @@ export const initialRestaurants = [
             "lat": null,
             "lng": null
         },
-        "halalStatus": "non_halal"
+        "halalStatus": "non_halal",
+        "dietaryOption": null
     },
     {
         "id": 308,
@@ -11375,7 +11659,8 @@ export const initialRestaurants = [
             "lat": null,
             "lng": null
         },
-        "halalStatus": "certified"
+        "halalStatus": "certified",
+        "dietaryOption": "vegetarian_friendly"
     },
     {
         "id": 309,
@@ -11435,7 +11720,8 @@ export const initialRestaurants = [
             "lat": null,
             "lng": null
         },
-        "halalStatus": "certified"
+        "halalStatus": "certified",
+        "dietaryOption": "vegetarian_friendly"
     },
     {
         "id": 310,
@@ -11486,7 +11772,8 @@ export const initialRestaurants = [
             "lat": null,
             "lng": null
         },
-        "halalStatus": "certified"
+        "halalStatus": "certified",
+        "dietaryOption": "vegetarian_friendly"
     },
     {
         "id": 311,
@@ -11532,7 +11819,8 @@ export const initialRestaurants = [
             "lat": null,
             "lng": null
         },
-        "halalStatus": "non_halal"
+        "halalStatus": "non_halal",
+        "dietaryOption": null
     },
     {
         "id": 312,
@@ -11579,7 +11867,8 @@ export const initialRestaurants = [
             "lat": null,
             "lng": null
         },
-        "halalStatus": "non_halal"
+        "halalStatus": "non_halal",
+        "dietaryOption": null
     },
     {
         "id": 313,
@@ -11622,7 +11911,8 @@ export const initialRestaurants = [
             "lat": null,
             "lng": null
         },
-        "halalStatus": "non_halal"
+        "halalStatus": "non_halal",
+        "dietaryOption": null
     },
     {
         "id": 314,
@@ -11666,7 +11956,8 @@ export const initialRestaurants = [
             "lat": null,
             "lng": null
         },
-        "halalStatus": "non_halal"
+        "halalStatus": "non_halal",
+        "dietaryOption": null
     },
     {
         "id": 315,
@@ -11702,7 +11993,8 @@ export const initialRestaurants = [
             "lat": null,
             "lng": null
         },
-        "halalStatus": "non_halal"
+        "halalStatus": "non_halal",
+        "dietaryOption": null
     },
     {
         "id": 316,
@@ -11738,7 +12030,8 @@ export const initialRestaurants = [
             "lat": null,
             "lng": null
         },
-        "halalStatus": "non_halal"
+        "halalStatus": "non_halal",
+        "dietaryOption": null
     },
     {
         "id": 317,
@@ -11774,7 +12067,8 @@ export const initialRestaurants = [
             "lat": null,
             "lng": null
         },
-        "halalStatus": "non_halal"
+        "halalStatus": "non_halal",
+        "dietaryOption": null
     },
     {
         "id": 318,
@@ -11814,7 +12108,8 @@ export const initialRestaurants = [
             "lat": 1.661629,
             "lng": 103.582793
         },
-        "halalStatus": "muslim_owned"
+        "halalStatus": "muslim_owned",
+        "dietaryOption": null
     },
     {
         "id": 319,
@@ -11854,7 +12149,8 @@ export const initialRestaurants = [
             "lat": null,
             "lng": null
         },
-        "halalStatus": "non_halal"
+        "halalStatus": "non_halal",
+        "dietaryOption": null
     },
     {
         "id": 320,
@@ -11891,7 +12187,8 @@ export const initialRestaurants = [
             "lng": null
         },
         "phone": "",
-        "halalStatus": "non_halal"
+        "halalStatus": "non_halal",
+        "dietaryOption": null
     },
     {
         "id": 321,
@@ -11928,7 +12225,8 @@ export const initialRestaurants = [
             "lng": null
         },
         "phone": "",
-        "halalStatus": "non_halal"
+        "halalStatus": "non_halal",
+        "dietaryOption": null
     },
     {
         "id": 322,
@@ -11965,7 +12263,8 @@ export const initialRestaurants = [
             "lng": null
         },
         "phone": "",
-        "halalStatus": "muslim_owned"
+        "halalStatus": "muslim_owned",
+        "dietaryOption": null
     },
     {
         "id": 323,
@@ -12002,7 +12301,8 @@ export const initialRestaurants = [
             "lng": null
         },
         "phone": "",
-        "halalStatus": "non_halal"
+        "halalStatus": "non_halal",
+        "dietaryOption": null
     },
     {
         "id": 324,
@@ -12039,7 +12339,8 @@ export const initialRestaurants = [
             "lng": null
         },
         "phone": "",
-        "halalStatus": "muslim_owned"
+        "halalStatus": "muslim_owned",
+        "dietaryOption": null
     },
     {
         "id": 325,
@@ -12076,7 +12377,8 @@ export const initialRestaurants = [
             "lng": null
         },
         "phone": "",
-        "halalStatus": "muslim_owned"
+        "halalStatus": "muslim_owned",
+        "dietaryOption": null
     },
     {
         "id": 326,
@@ -12113,7 +12415,8 @@ export const initialRestaurants = [
             "lng": null
         },
         "phone": "",
-        "halalStatus": "non_halal"
+        "halalStatus": "non_halal",
+        "dietaryOption": null
     },
     {
         "id": 327,
@@ -12150,7 +12453,8 @@ export const initialRestaurants = [
             "lng": null
         },
         "phone": "",
-        "halalStatus": "muslim_owned"
+        "halalStatus": "muslim_owned",
+        "dietaryOption": null
     },
     {
         "id": 328,
@@ -12187,7 +12491,8 @@ export const initialRestaurants = [
             "lng": null
         },
         "phone": "",
-        "halalStatus": "muslim_owned"
+        "halalStatus": "muslim_owned",
+        "dietaryOption": null
     },
     {
         "id": 329,
@@ -12224,7 +12529,8 @@ export const initialRestaurants = [
             "lng": null
         },
         "phone": "",
-        "halalStatus": "non_halal"
+        "halalStatus": "non_halal",
+        "dietaryOption": null
     },
     {
         "id": 330,
@@ -12261,7 +12567,8 @@ export const initialRestaurants = [
             "lng": null
         },
         "phone": "",
-        "halalStatus": "non_halal"
+        "halalStatus": "non_halal",
+        "dietaryOption": "vegetarian_friendly"
     },
     {
         "id": 331,
@@ -12298,7 +12605,8 @@ export const initialRestaurants = [
             "lng": null
         },
         "phone": "",
-        "halalStatus": "muslim_owned"
+        "halalStatus": "muslim_owned",
+        "dietaryOption": null
     },
     {
         "id": 332,
@@ -12335,7 +12643,8 @@ export const initialRestaurants = [
             "lng": null
         },
         "phone": "",
-        "halalStatus": "muslim_owned"
+        "halalStatus": "muslim_owned",
+        "dietaryOption": null
     },
     {
         "id": 333,
@@ -12374,7 +12683,8 @@ export const initialRestaurants = [
             "lng": null
         },
         "phone": "",
-        "halalStatus": "non_halal"
+        "halalStatus": "non_halal",
+        "dietaryOption": null
     },
     {
         "id": 334,
@@ -12411,7 +12721,8 @@ export const initialRestaurants = [
             "lng": null
         },
         "phone": "",
-        "halalStatus": "non_halal"
+        "halalStatus": "non_halal",
+        "dietaryOption": null
     },
     {
         "id": 335,
@@ -12450,7 +12761,8 @@ export const initialRestaurants = [
             "lng": null
         },
         "phone": "076632082",
-        "halalStatus": "certified"
+        "halalStatus": "certified",
+        "dietaryOption": "vegetarian_friendly"
     },
     {
         "id": 336,
@@ -12487,7 +12799,8 @@ export const initialRestaurants = [
             "lng": null
         },
         "phone": "076615479",
-        "halalStatus": "non_halal"
+        "halalStatus": "non_halal",
+        "dietaryOption": null
     },
     {
         "id": 337,
@@ -12524,7 +12837,8 @@ export const initialRestaurants = [
             "lng": null
         },
         "phone": "",
-        "halalStatus": "muslim_owned"
+        "halalStatus": "muslim_owned",
+        "dietaryOption": null
     },
     {
         "id": 338,
@@ -12561,7 +12875,8 @@ export const initialRestaurants = [
             "lng": null
         },
         "phone": "076608398",
-        "halalStatus": "non_halal"
+        "halalStatus": "non_halal",
+        "dietaryOption": null
     },
     {
         "id": 339,
@@ -12598,7 +12913,8 @@ export const initialRestaurants = [
             "lng": null
         },
         "phone": "0199783485",
-        "halalStatus": "non_halal"
+        "halalStatus": "non_halal",
+        "dietaryOption": "vegetarian_friendly"
     },
     {
         "id": 340,
@@ -12637,7 +12953,8 @@ export const initialRestaurants = [
             "lng": null
         },
         "phone": "",
-        "halalStatus": "non_halal"
+        "halalStatus": "non_halal",
+        "dietaryOption": null
     },
     {
         "id": 341,
@@ -12674,7 +12991,8 @@ export const initialRestaurants = [
             "lng": null
         },
         "phone": "0183760887",
-        "halalStatus": "muslim_owned"
+        "halalStatus": "muslim_owned",
+        "dietaryOption": null
     },
     {
         "id": 342,
@@ -12711,7 +13029,8 @@ export const initialRestaurants = [
             "lng": null
         },
         "phone": "0177397097",
-        "halalStatus": "muslim_owned"
+        "halalStatus": "muslim_owned",
+        "dietaryOption": null
     },
     {
         "id": 343,
@@ -12748,7 +13067,8 @@ export const initialRestaurants = [
             "lng": null
         },
         "phone": "0133920184",
-        "halalStatus": "muslim_owned"
+        "halalStatus": "muslim_owned",
+        "dietaryOption": null
     },
     {
         "id": 344,
@@ -12785,7 +13105,8 @@ export const initialRestaurants = [
             "lng": null
         },
         "phone": "01111817500",
-        "halalStatus": "muslim_owned"
+        "halalStatus": "muslim_owned",
+        "dietaryOption": null
     },
     {
         "id": 345,
@@ -12822,7 +13143,8 @@ export const initialRestaurants = [
             "lng": null
         },
         "phone": "01128765578",
-        "halalStatus": "muslim_owned"
+        "halalStatus": "muslim_owned",
+        "dietaryOption": null
     },
     {
         "id": 346,
@@ -12859,7 +13181,8 @@ export const initialRestaurants = [
             "lng": null
         },
         "phone": "0162163499",
-        "halalStatus": "muslim_owned"
+        "halalStatus": "muslim_owned",
+        "dietaryOption": null
     },
     {
         "id": 347,
@@ -12896,7 +13219,8 @@ export const initialRestaurants = [
             "lng": null
         },
         "phone": "",
-        "halalStatus": "muslim_owned"
+        "halalStatus": "muslim_owned",
+        "dietaryOption": null
     },
     {
         "id": 348,
@@ -12933,7 +13257,8 @@ export const initialRestaurants = [
             "lng": null
         },
         "phone": "",
-        "halalStatus": "muslim_owned"
+        "halalStatus": "muslim_owned",
+        "dietaryOption": null
     },
     {
         "id": 349,
@@ -12970,7 +13295,8 @@ export const initialRestaurants = [
             "lng": null
         },
         "phone": "0177859537",
-        "halalStatus": "muslim_owned"
+        "halalStatus": "muslim_owned",
+        "dietaryOption": null
     },
     {
         "id": 350,
@@ -13007,7 +13333,8 @@ export const initialRestaurants = [
             "lng": null
         },
         "phone": "01168304749",
-        "halalStatus": "muslim_owned"
+        "halalStatus": "muslim_owned",
+        "dietaryOption": null
     },
     {
         "id": 351,
@@ -13044,7 +13371,8 @@ export const initialRestaurants = [
             "lng": null
         },
         "phone": "0167261470",
-        "halalStatus": "muslim_owned"
+        "halalStatus": "muslim_owned",
+        "dietaryOption": null
     },
     {
         "id": 352,
@@ -13074,7 +13402,8 @@ export const initialRestaurants = [
         },
         "phone": "07-599 1850",
         "link": "https://www.facebook.com/JimLongCatering/",
-        "halalStatus": "non_halal"
+        "halalStatus": "non_halal",
+        "dietaryOption": null
     },
     {
         "id": 353,
@@ -13103,7 +13432,8 @@ export const initialRestaurants = [
             "lng": null
         },
         "phone": "018-872 4269",
-        "halalStatus": "muslim_owned"
+        "halalStatus": "muslim_owned",
+        "dietaryOption": null
     },
     {
         "id": 354,
@@ -13133,7 +13463,8 @@ export const initialRestaurants = [
         },
         "phone": "016-972 8135",
         "link": "https://www.facebook.com/profile.php?id=100063655324098",
-        "halalStatus": "non_halal"
+        "halalStatus": "non_halal",
+        "dietaryOption": null
     },
     {
         "id": 355,
@@ -13163,7 +13494,8 @@ export const initialRestaurants = [
         },
         "phone": "012-736 1219",
         "link": "https://www.facebook.com/RestoranSenaiHY/",
-        "halalStatus": "non_halal"
+        "halalStatus": "non_halal",
+        "dietaryOption": null
     },
     {
         "id": 356,
@@ -13193,7 +13525,8 @@ export const initialRestaurants = [
         },
         "phone": "011-1280 5434",
         "link": "https://www.facebook.com/p/Restoran-Singgah-Maju-100063733675498/",
-        "halalStatus": "muslim_owned"
+        "halalStatus": "muslim_owned",
+        "dietaryOption": null
     },
     {
         "id": 357,
@@ -13224,7 +13557,8 @@ export const initialRestaurants = [
             "lng": null
         },
         "phone": "014-277 0299",
-        "halalStatus": "muslim_owned"
+        "halalStatus": "muslim_owned",
+        "dietaryOption": null
     },
     {
         "id": 358,
@@ -13253,7 +13587,8 @@ export const initialRestaurants = [
             "lng": null
         },
         "phone": "07-598 5133",
-        "halalStatus": "non_halal"
+        "halalStatus": "non_halal",
+        "dietaryOption": null
     },
     {
         "id": 359,
@@ -13282,7 +13617,8 @@ export const initialRestaurants = [
             "lng": null
         },
         "phone": "012-742 3328",
-        "halalStatus": "non_halal"
+        "halalStatus": "non_halal",
+        "dietaryOption": null
     },
     {
         "id": 360,
@@ -13312,7 +13648,8 @@ export const initialRestaurants = [
         },
         "phone": "",
         "link": "https://www.facebook.com/profile.php?id=61571374596803",
-        "halalStatus": "non_halal"
+        "halalStatus": "non_halal",
+        "dietaryOption": "vegetarian_friendly"
     },
     {
         "id": 361,
@@ -13341,7 +13678,8 @@ export const initialRestaurants = [
             "lng": null
         },
         "phone": "012-719 8567",
-        "halalStatus": "non_halal"
+        "halalStatus": "non_halal",
+        "dietaryOption": null
     },
     {
         "id": 362,
@@ -13370,7 +13708,8 @@ export const initialRestaurants = [
             "lng": null
         },
         "phone": "",
-        "halalStatus": "muslim_owned"
+        "halalStatus": "muslim_owned",
+        "dietaryOption": null
     },
     {
         "id": 363,
@@ -13399,7 +13738,8 @@ export const initialRestaurants = [
             "lng": null
         },
         "phone": "014-313 5200",
-        "halalStatus": "muslim_owned"
+        "halalStatus": "muslim_owned",
+        "dietaryOption": null
     },
     {
         "id": 364,
@@ -13429,7 +13769,8 @@ export const initialRestaurants = [
         },
         "phone": "018-376 3625",
         "link": "https://www.facebook.com/profile.php?id=100069963770411",
-        "halalStatus": "non_halal"
+        "halalStatus": "non_halal",
+        "dietaryOption": "vegetarian_friendly"
     },
     {
         "id": 365,
@@ -13459,7 +13800,8 @@ export const initialRestaurants = [
         },
         "phone": "019-678 0198",
         "link": "https://easyeat.ai/r/projek-kebab/2",
-        "halalStatus": "muslim_owned"
+        "halalStatus": "muslim_owned",
+        "dietaryOption": null
     },
     {
         "id": 366,
@@ -13489,7 +13831,8 @@ export const initialRestaurants = [
         },
         "phone": "07-599 5800",
         "link": "https://www.facebook.com/ShiNaikccJinLongFanDian/",
-        "halalStatus": "non_halal"
+        "halalStatus": "non_halal",
+        "dietaryOption": null
     },
     {
         "id": 367,
@@ -13518,7 +13861,8 @@ export const initialRestaurants = [
             "lng": null
         },
         "phone": "017-736 2618",
-        "halalStatus": "non_halal"
+        "halalStatus": "non_halal",
+        "dietaryOption": null
     },
     {
         "id": 368,
@@ -13547,7 +13891,8 @@ export const initialRestaurants = [
             "lng": null
         },
         "phone": "012-773 2281",
-        "halalStatus": "non_halal"
+        "halalStatus": "non_halal",
+        "dietaryOption": null
     },
     {
         "id": 369,
@@ -13576,7 +13921,8 @@ export const initialRestaurants = [
             "lng": null
         },
         "phone": "011-2084 2287",
-        "halalStatus": "muslim_owned"
+        "halalStatus": "muslim_owned",
+        "dietaryOption": null
     },
     {
         "id": 370,
@@ -13613,7 +13959,8 @@ export const initialRestaurants = [
             "lat": null,
             "lng": null
         },
-        "halalStatus": "muslim_owned"
+        "halalStatus": "muslim_owned",
+        "dietaryOption": null
     },
     {
         "id": 371,
@@ -13662,7 +14009,8 @@ export const initialRestaurants = [
             "lat": null,
             "lng": null
         },
-        "halalStatus": "certified"
+        "halalStatus": "certified",
+        "dietaryOption": null
     },
     {
         "id": 372,
@@ -13700,7 +14048,8 @@ export const initialRestaurants = [
         },
         "phone": "0182559296",
         "halalStatus": "muslim_owned",
-        "area": "Senai"
+        "area": "Senai",
+        "dietaryOption": null
     },
     {
         "id": 373,
@@ -13740,7 +14089,8 @@ export const initialRestaurants = [
         },
         "phone": "0182359412",
         "halalStatus": "muslim_owned",
-        "area": "Senai"
+        "area": "Senai",
+        "dietaryOption": "vegetarian_friendly"
     },
     {
         "id": 374,
@@ -13778,7 +14128,8 @@ export const initialRestaurants = [
         },
         "phone": "0172396335",
         "halalStatus": "muslim_owned",
-        "area": "Senai"
+        "area": "Senai",
+        "dietaryOption": null
     },
     {
         "id": 375,
@@ -13816,7 +14167,8 @@ export const initialRestaurants = [
         },
         "phone": "",
         "halalStatus": "muslim_owned",
-        "area": "Senai"
+        "area": "Senai",
+        "dietaryOption": null
     },
     {
         "id": 376,
@@ -13854,7 +14206,8 @@ export const initialRestaurants = [
         },
         "phone": "075984781",
         "halalStatus": "muslim_owned",
-        "area": "Senai"
+        "area": "Senai",
+        "dietaryOption": null
     },
     {
         "id": 377,
@@ -13892,7 +14245,8 @@ export const initialRestaurants = [
         },
         "phone": "0105706367",
         "halalStatus": "muslim_owned",
-        "area": "Senai"
+        "area": "Senai",
+        "dietaryOption": "vegetarian_friendly"
     },
     {
         "id": 378,
@@ -13930,7 +14284,8 @@ export const initialRestaurants = [
         },
         "phone": "01162027215",
         "halalStatus": "muslim_owned",
-        "area": "Senai"
+        "area": "Senai",
+        "dietaryOption": null
     },
     {
         "id": 379,
@@ -13967,7 +14322,8 @@ export const initialRestaurants = [
             "lng": null
         },
         "phone": "075988934",
-        "halalStatus": "muslim_owned"
+        "halalStatus": "muslim_owned",
+        "dietaryOption": null
     },
     {
         "id": 380,
@@ -14007,7 +14363,8 @@ export const initialRestaurants = [
         },
         "phone": "0106627020",
         "halalStatus": "muslim_owned",
-        "area": "Senai"
+        "area": "Senai",
+        "dietaryOption": "vegetarian_friendly"
     },
     {
         "id": 381,
@@ -14045,7 +14402,8 @@ export const initialRestaurants = [
         },
         "phone": "0167359364",
         "halalStatus": "muslim_owned",
-        "area": "Senai"
+        "area": "Senai",
+        "dietaryOption": null
     },
     {
         "id": 382,
@@ -14083,7 +14441,8 @@ export const initialRestaurants = [
         },
         "phone": "0187934005",
         "halalStatus": "muslim_owned",
-        "area": "Senai"
+        "area": "Senai",
+        "dietaryOption": null
     },
     {
         "id": 383,
@@ -14121,7 +14480,8 @@ export const initialRestaurants = [
         },
         "phone": "075992279",
         "halalStatus": "muslim_owned",
-        "area": "Senai"
+        "area": "Senai",
+        "dietaryOption": null
     },
     {
         "id": 384,
@@ -14159,7 +14519,8 @@ export const initialRestaurants = [
         },
         "phone": "0193770456",
         "halalStatus": "muslim_owned",
-        "area": "Senai"
+        "area": "Senai",
+        "dietaryOption": null
     },
     {
         "id": 385,
@@ -14200,7 +14561,8 @@ export const initialRestaurants = [
         },
         "phone": "0127125822",
         "halalStatus": "non_halal",
-        "area": "Senai"
+        "area": "Senai",
+        "dietaryOption": null
     },
     {
         "id": 386,
@@ -14240,7 +14602,8 @@ export const initialRestaurants = [
         },
         "phone": "0102818668",
         "halalStatus": "no_pork",
-        "area": "Senai"
+        "area": "Senai",
+        "dietaryOption": "vegetarian_only"
     },
     {
         "id": 387,
@@ -14280,7 +14643,8 @@ export const initialRestaurants = [
         },
         "phone": "0167874900",
         "halalStatus": "non_halal",
-        "area": "Senai"
+        "area": "Senai",
+        "dietaryOption": null
     },
     {
         "id": 388,
@@ -14318,7 +14682,8 @@ export const initialRestaurants = [
         },
         "phone": "0177536597",
         "halalStatus": "muslim_owned",
-        "area": "Senai"
+        "area": "Senai",
+        "dietaryOption": null
     },
     {
         "id": 389,
@@ -14358,7 +14723,8 @@ export const initialRestaurants = [
         },
         "phone": "0167120456",
         "halalStatus": "non_halal",
-        "area": "Senai"
+        "area": "Senai",
+        "dietaryOption": null
     },
     {
         "id": 390,
@@ -14396,7 +14762,8 @@ export const initialRestaurants = [
         },
         "phone": "0192895929",
         "halalStatus": "muslim_owned",
-        "area": "Senai"
+        "area": "Senai",
+        "dietaryOption": null
     },
     {
         "id": 391,
@@ -14436,7 +14803,8 @@ export const initialRestaurants = [
         },
         "phone": "075984231",
         "halalStatus": "non_halal",
-        "area": "Senai"
+        "area": "Senai",
+        "dietaryOption": null
     },
     {
         "id": 392,
@@ -14474,7 +14842,8 @@ export const initialRestaurants = [
         },
         "phone": "0143334622",
         "halalStatus": "muslim_owned",
-        "area": "Senai"
+        "area": "Senai",
+        "dietaryOption": null
     },
     {
         "id": 393,
@@ -14512,7 +14881,8 @@ export const initialRestaurants = [
         },
         "phone": "075908918",
         "halalStatus": "muslim_owned",
-        "area": "Senai"
+        "area": "Senai",
+        "dietaryOption": null
     },
     {
         "id": 394,
@@ -14550,7 +14920,8 @@ export const initialRestaurants = [
         },
         "phone": "",
         "halalStatus": "muslim_owned",
-        "area": "Senai"
+        "area": "Senai",
+        "dietaryOption": null
     },
     {
         "id": 395,
@@ -14588,7 +14959,8 @@ export const initialRestaurants = [
         },
         "phone": "0173737922",
         "halalStatus": "muslim_owned",
-        "area": "Senai"
+        "area": "Senai",
+        "dietaryOption": null
     },
     {
         "id": 396,
@@ -14626,7 +14998,8 @@ export const initialRestaurants = [
         },
         "phone": "0178430483",
         "halalStatus": "muslim_owned",
-        "area": "Senai"
+        "area": "Senai",
+        "dietaryOption": null
     },
     {
         "id": 397,
@@ -14664,7 +15037,8 @@ export const initialRestaurants = [
         },
         "phone": "0173603215",
         "halalStatus": "muslim_owned",
-        "area": "Senai"
+        "area": "Senai",
+        "dietaryOption": null
     },
     {
         "id": 398,
@@ -14702,7 +15076,8 @@ export const initialRestaurants = [
         },
         "phone": "0189810255",
         "halalStatus": "muslim_owned",
-        "area": "Senai"
+        "area": "Senai",
+        "dietaryOption": null
     },
     {
         "id": 399,
@@ -14758,7 +15133,8 @@ export const initialRestaurants = [
             "lat": null,
             "lng": null
         },
-        "halalStatus": "certified"
+        "halalStatus": "certified",
+        "dietaryOption": "vegetarian_friendly"
     },
     {
         "id": 400,
@@ -14817,7 +15193,8 @@ export const initialRestaurants = [
             "lat": null,
             "lng": null
         },
-        "halalStatus": "certified"
+        "halalStatus": "certified",
+        "dietaryOption": "vegetarian_friendly"
     },
     {
         "id": 401,
@@ -14866,7 +15243,8 @@ export const initialRestaurants = [
             "锅气",
             "南洋中餐",
             "酒家"
-        ]
+        ],
+        "dietaryOption": null
     },
     {
         "id": 402,
@@ -14908,7 +15286,8 @@ export const initialRestaurants = [
         },
         "phone": "07-660 8897",
         "halalStatus": "non_halal",
-        "area": "Indahpura"
+        "area": "Indahpura",
+        "dietaryOption": null
     },
     {
         "id": 403,
@@ -14951,7 +15330,8 @@ export const initialRestaurants = [
         },
         "phone": "016-704 7860",
         "halalStatus": "muslim_owned",
-        "area": "Indahpura"
+        "area": "Indahpura",
+        "dietaryOption": null
     },
     {
         "id": 404,
@@ -14993,7 +15373,8 @@ export const initialRestaurants = [
         },
         "phone": "011-1077 0299",
         "halalStatus": "muslim_owned",
-        "area": "Indahpura"
+        "area": "Indahpura",
+        "dietaryOption": null
     },
     {
         "id": 405,
@@ -15037,7 +15418,8 @@ export const initialRestaurants = [
         },
         "phone": "",
         "halalStatus": "no_pork",
-        "area": "Senai"
+        "area": "Senai",
+        "dietaryOption": "vegetarian_friendly"
     },
     {
         "id": 406,
@@ -15080,7 +15462,8 @@ export const initialRestaurants = [
         },
         "phone": "",
         "halalStatus": "non_halal",
-        "area": "Indahpura"
+        "area": "Indahpura",
+        "dietaryOption": null
     },
     {
         "id": 407,
@@ -15121,7 +15504,8 @@ export const initialRestaurants = [
         },
         "phone": "017-470 8754",
         "halalStatus": "non_halal",
-        "area": "Bandar Putra"
+        "area": "Bandar Putra",
+        "dietaryOption": null
     },
     {
         "id": 408,
@@ -15163,7 +15547,8 @@ export const initialRestaurants = [
         },
         "phone": "012-766 6698",
         "halalStatus": "non_halal",
-        "area": "Bandar Putra"
+        "area": "Bandar Putra",
+        "dietaryOption": "vegetarian_friendly"
     },
     {
         "id": 409,
@@ -15206,7 +15591,8 @@ export const initialRestaurants = [
         },
         "phone": "07-598 8289",
         "halalStatus": "non_halal",
-        "area": "Bandar Putra"
+        "area": "Bandar Putra",
+        "dietaryOption": null
     },
     {
         "id": 410,
@@ -15247,7 +15633,8 @@ export const initialRestaurants = [
         },
         "phone": "016-703 2677",
         "halalStatus": "non_halal",
-        "area": "Bandar Putra"
+        "area": "Bandar Putra",
+        "dietaryOption": null
     },
     {
         "id": 411,
@@ -15289,7 +15676,8 @@ export const initialRestaurants = [
         },
         "phone": "012-317 8816",
         "halalStatus": "non_halal",
-        "area": "Bandar Putra"
+        "area": "Bandar Putra",
+        "dietaryOption": null
     },
     {
         "id": 412,
@@ -15332,7 +15720,8 @@ export const initialRestaurants = [
         },
         "phone": "010-226 6362",
         "halalStatus": "non_halal",
-        "area": "Bandar Putra"
+        "area": "Bandar Putra",
+        "dietaryOption": null
     },
     {
         "id": 413,
@@ -15374,7 +15763,8 @@ export const initialRestaurants = [
         },
         "phone": "07-552 0302",
         "halalStatus": "muslim_owned",
-        "area": "Bandar Putra"
+        "area": "Bandar Putra",
+        "dietaryOption": null
     },
     {
         "id": 414,
@@ -15415,7 +15805,8 @@ export const initialRestaurants = [
         },
         "phone": "011-1173 7212",
         "halalStatus": "non_halal",
-        "area": "Bandar Putra"
+        "area": "Bandar Putra",
+        "dietaryOption": null
     },
     {
         "id": 415,
@@ -15457,7 +15848,8 @@ export const initialRestaurants = [
         },
         "phone": "",
         "halalStatus": "no_pork",
-        "area": "Kulai Town"
+        "area": "Kulai Town",
+        "dietaryOption": "vegetarian_friendly"
     },
     {
         "id": 417,
@@ -15500,7 +15892,8 @@ export const initialRestaurants = [
         },
         "phone": "016-751 5056",
         "halalStatus": "non_halal",
-        "area": "Kulai 21 Miles"
+        "area": "Kulai 21 Miles",
+        "dietaryOption": null
     },
     {
         "id": 418,
@@ -15547,7 +15940,8 @@ export const initialRestaurants = [
         },
         "phone": "010-200 3731",
         "halalStatus": "non_halal",
-        "area": "Indahpura"
+        "area": "Indahpura",
+        "dietaryOption": null
     },
     {
         "id": 419,
@@ -15591,7 +15985,8 @@ export const initialRestaurants = [
         },
         "phone": "017-580 1129",
         "halalStatus": "non_halal",
-        "area": "Indahpura"
+        "area": "Indahpura",
+        "dietaryOption": null
     },
     {
         "id": 420,
@@ -15636,6 +16031,7 @@ export const initialRestaurants = [
         },
         "phone": "",
         "halalStatus": "non_halal",
-        "area": "Indahpura"
+        "area": "Indahpura",
+        "dietaryOption": null
     }
 ];

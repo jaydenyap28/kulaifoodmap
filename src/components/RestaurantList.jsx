@@ -61,6 +61,7 @@ const RestaurantList = ({ restaurants, allRestaurants, isAdmin, onUpdateRestaura
           (restaurant.name_en || '').toLowerCase().includes(term) ||
           (restaurant.address || '').toLowerCase().includes(term) || // Search Address
           (restaurant.area || '').toLowerCase().includes(term) || // Search Area explicitly
+          (restaurant.dietaryOption && (term.includes('素') || term.includes('veg'))) || // Search Dietary Option
           (restaurant.categories && restaurant.categories.some(c => (c || '').toLowerCase().includes(term))) ||
           (restaurant.branches && restaurant.branches.some(b => (b.name || '').toLowerCase().includes(term))) || // Search Branches
           (restaurant.subStalls && restaurant.subStalls.some(s => { // Search SubStalls
@@ -334,12 +335,16 @@ const RestaurantCard = ({ restaurant, isAdmin, onUpdate, onDelete, onClick, onCa
                         </span>
                     ))}
                     
-                    {/* Features */}
-                    {restaurant.isVegetarian && (
+                    {/* Dietary Options */}
+                    {(restaurant.dietaryOption === 'vegetarian_only' || restaurant.isVegetarian) ? (
                         <span className="px-1.5 py-0.5 bg-emerald-900/50 text-emerald-400 border border-emerald-800 text-[10px] rounded flex items-center gap-1 leading-none">
                             <Leaf size={10} /> 素食
                         </span>
-                    )}
+                    ) : restaurant.dietaryOption === 'vegetarian_friendly' ? (
+                        <span className="px-1.5 py-0.5 bg-lime-900/50 text-lime-400 border border-lime-800 text-[10px] rounded flex items-center gap-1 leading-none">
+                            <Leaf size={10} /> Veg-Friendly
+                        </span>
+                    ) : null}
 
                     {/* Halal Status */}
                     {restaurant.halalStatus === 'certified' && (

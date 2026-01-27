@@ -1,6 +1,6 @@
 import React, { useState, useRef } from 'react';
 import { createPortal } from 'react-dom';
-import { X, Star, MapPin, ExternalLink, Send, Save, Clock, Info, UtensilsCrossed, Upload, BookOpen, Globe, Bike, Navigation } from 'lucide-react';
+import { X, Star, MapPin, ExternalLink, Send, Save, Clock, Info, UtensilsCrossed, Upload, BookOpen, Globe, Bike, Navigation, Leaf } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { useTranslation } from 'react-i18next';
 import ImageWithFallback from './ImageWithFallback';
@@ -37,7 +37,8 @@ const ResultModal = ({ restaurant, onClose, onAddReview, isAdmin, onUpdateRestau
     subscriptionLevel: restaurant.subscriptionLevel || 0,
     priority: restaurant.priority || 0,
     whatsappLink: restaurant.whatsappLink || "",
-    location: restaurant.location || { lat: '', lng: '' }
+    location: restaurant.location || { lat: '', lng: '' },
+    dietaryOption: restaurant.dietaryOption || null
   });
 
   // Smart Schedule State
@@ -92,7 +93,8 @@ const ResultModal = ({ restaurant, onClose, onAddReview, isAdmin, onUpdateRestau
         subscriptionLevel: restaurant.subscriptionLevel || 0,
         priority: restaurant.priority || 0,
         whatsappLink: restaurant.whatsappLink || "",
-        location: restaurant.location || { lat: '', lng: '' }
+        location: restaurant.location || { lat: '', lng: '' },
+        dietaryOption: restaurant.dietaryOption || null
     });
   }, [restaurant]);
 
@@ -312,7 +314,19 @@ const ResultModal = ({ restaurant, onClose, onAddReview, isAdmin, onUpdateRestau
                         {i18n.language === 'en' ? restaurant.name : restaurant.name_en}
                     </p>
                 )}
-                <div className="flex items-center text-white/90 text-sm">
+                <div className="flex items-center text-white/90 text-sm flex-wrap gap-y-1">
+                    {/* Vegetarian Badge */}
+                    {(restaurant.dietaryOption === 'vegetarian_only' || restaurant.isVegetarian) && (
+                        <span className="bg-emerald-600 text-white border border-emerald-500 px-2 py-0.5 rounded text-xs font-bold mr-2 backdrop-blur-md flex items-center shadow-sm">
+                            <Leaf size={12} className="mr-1" /> 素食 / Vegetarian
+                        </span>
+                    )}
+                    {restaurant.dietaryOption === 'vegetarian_friendly' && (
+                        <span className="bg-lime-600/90 text-white border border-lime-500 px-2 py-0.5 rounded text-xs font-bold mr-2 backdrop-blur-md flex items-center shadow-sm">
+                            <Leaf size={12} className="mr-1" /> 提供素食选项 / Veg-Friendly
+                        </span>
+                    )}
+
                     {/* Halal Status Badge */}
                     {restaurant.halalStatus === 'certified' && (
                         <span className="bg-emerald-600 text-white border border-emerald-500 px-2 py-0.5 rounded text-xs font-bold mr-2 backdrop-blur-md flex items-center shadow-sm">
@@ -633,6 +647,20 @@ const ResultModal = ({ restaurant, onClose, onAddReview, isAdmin, onUpdateRestau
                             document.body
                         )}
                     </div>
+                  </div>
+
+                  {/* Dietary Option Selector */}
+                  <div>
+                    <label className="text-xs text-gray-400">Dietary Option (素食选项)</label>
+                    <select
+                        value={editForm.dietaryOption || ''}
+                        onChange={(e) => setEditForm({...editForm, dietaryOption: e.target.value || null})}
+                        className="w-full bg-[#1a1a1a] border-b border-gray-600 py-1 text-sm text-white focus:border-white outline-none mt-1"
+                    >
+                        <option value="">None (无)</option>
+                        <option value="vegetarian_friendly">Veg-Friendly (提供素食选项)</option>
+                        <option value="vegetarian_only">Vegetarian Only (纯素食)</option>
+                    </select>
                   </div>
 
                   <div>
@@ -1020,7 +1048,28 @@ Tuesday: Closed
                     </div>
                   </div>
                   
-
+                  {/* Waze Navigation Button */}
+                  <button
+                    onClick={() => {
+                        const lat = restaurant.location?.lat;
+                        const lng = restaurant.location?.lng;
+                        let url;
+                        // Prioritize lat/lng as requested
+                        if (lat && lng) {
+                            url = `https://waze.com/ul?ll=${lat},${lng}&navigate=yes`;
+                        } else {
+                            // Smart fallback to address search if coords are missing (ensures 100% coverage)
+                            const query = encodeURIComponent(restaurant.address || restaurant.name);
+                            url = `https://waze.com/ul?q=${query}&navigate=yes`;
+                        }
+                        window.open(url, '_blank');
+                    }}
+                    className="w-full mt-4 flex items-center justify-center gap-2 py-3 rounded-xl font-bold text-white shadow-lg hover:brightness-110 transition-all active:scale-95 group"
+                    style={{ backgroundColor: '#33CCFF' }}
+                  >
+                    <Navigation size={20} className="fill-current group-hover:scale-110 transition-transform" />
+                    使用 Waze 导航 (Navigate with Waze)
+                  </button>
 
                   {/* Branches Display (For Chain Restaurants) */}
                   {restaurant.branches && restaurant.branches.length > 0 && (
