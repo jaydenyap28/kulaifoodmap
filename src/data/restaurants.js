@@ -14834,5 +14834,54 @@ export const initialRestaurants = [
             "lng": null
         },
         "halalStatus": "certified"
-    }
+    },
+    {
+    "id": 401,
+    "name": "金山食館",
+    "name_en": "Restoran Kim Shan",
+    "intro_zh": "金山食館是古来家喻户晓的老字号酒家，坐落于 Taman Sri Kulai Baru。这里以正宗南洋中餐和道地煮炒著称，凭借扎实的“锅气”和亲民的价格，成为了当地人家庭聚餐与喜庆设宴的首选。餐馆保留了最淳朴的古来味道，每一道菜都承载着几代人的集体回忆。",
+    "intro_en": "Restoran Kim Shan is a renowned legacy restaurant in Kulai, specializing in authentic Nanyang Chinese cuisine and traditional Zhi Char. Located at Taman Sri Kulai Baru, it is the go-to spot for locals for family dinners and celebrations, thanks to its signature \"Wok Hei\" and affordable pricing. It remains a nostalgic culinary landmark that perfectly captures the heritage flavors of Kulai.",
+    "address": "13-16, Jalan Susur Kulai 1, Taman Sri Kulai Baru, 81000 Kulai, Johor",
+    "opening_hours": "Monday: 4pm - 9pm\nTuesday: Closed\nWednesday: Closed\nThursday: 4pm - 9pm\nFriday: Closed\nSaturday: 4pm - 9pm\nSunday: 4pm - 9pm",
+    "category": [
+        "饭类",
+        "煮炒海鲜楼"
+    ],
+    "rating": 0,
+    "image": "https://placehold.co/600x400/1e1e1e/FFF?text=Kim+Shan",
+    "subStalls": [],
+    "categories": [
+        "饭类",
+        "煮炒海鲜楼"
+    ],
+    "price_range": "RM 10-30",
+    "menu_link": "",
+    "website_link": "https://www.facebook.com/profile.php?id=100063670805547",
+    "delivery_link": "",
+    "isVegetarian": false,
+    "isNoBeef": false,
+    "manualStatus": "auto",
+    "branches": [],
+    "subscriptionLevel": 0,
+    "isVIP": false,
+    "priority": 0,
+    "whatsappLink": "https://wa.me/60127702318",
+    "location": {
+        "lat": null,
+        "lng": null
+    },
+    "phone": "012-770 2318",
+    "halalStatus": "non_halal",
+    "area": "Kulai 21 Miles",
+    "tags": [
+        "煮炒",
+        "海鲜",
+        "老字号",
+        "晚餐",
+        "家庭聚餐",
+        "锅气",
+        "南洋中餐",
+        "酒家"
+    ]
+}
 ];
