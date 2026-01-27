@@ -11280,45 +11280,6 @@ export const initialRestaurants = [
         "halalStatus": "non_halal"
     },
     {
-        "id": 304,
-        "area": "Kulai",
-        "name": "聚园酒家",
-        "name_en": "Restoran Chi Yuen",
-        "address": "Kulai, Johor",
-        "opening_hours": "Monday: 11am - 10pm\nTuesday: 11am - 10pm\nWednesday: 11am - 10pm\nThursday: 11am - 10pm\nFriday: 11am - 10pm\nSaturday: 11am - 10pm\nSunday: 11am - 10pm",
-        "intro_zh": "深受当地人喜爱的中餐厅，提供各类海鲜和肉类料理。菜色丰富，锅气十足，价格公道。",
-        "intro_en": "A Chinese restaurant loved by locals, offering various seafood and meat dishes. Rich menu, good 'wok hei', and reasonable prices.",
-        "category": [
-            "煮炒海鲜楼"
-        ],
-        "categories": [
-            "煮炒海鲜楼"
-        ],
-        "rating": 0,
-        "image": "https://i.ibb.co/7xLGp31X/image.jpg",
-        "subStalls": [],
-        "price_range": "RM 10-30",
-        "menu_link": "",
-        "website_link": "",
-        "delivery_link": "",
-        "isVegetarian": false,
-        "isNoBeef": false,
-        "manualStatus": "auto",
-        "branches": [],
-        "tags": [
-            "平价"
-        ],
-        "subscriptionLevel": 0,
-        "isVIP": false,
-        "priority": 0,
-        "whatsappLink": "",
-        "location": {
-            "lat": null,
-            "lng": null
-        },
-        "halalStatus": "non_halal"
-    },
-    {
         "id": 307,
         "area": "Senai",
         "name": "瑞记海南鸡饭",
@@ -15677,3 +15638,4 @@ export const initialRestaurants = [
         "halalStatus": "non_halal",
         "area": "Indahpura"
     }
+];

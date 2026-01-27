@@ -60,6 +60,7 @@ const RestaurantList = ({ restaurants, allRestaurants, isAdmin, onUpdateRestaura
           (restaurant.name || '').toLowerCase().includes(term) ||
           (restaurant.name_en || '').toLowerCase().includes(term) ||
           (restaurant.address || '').toLowerCase().includes(term) || // Search Address
+          (restaurant.area || '').toLowerCase().includes(term) || // Search Area explicitly
           (restaurant.categories && restaurant.categories.some(c => (c || '').toLowerCase().includes(term))) ||
           (restaurant.branches && restaurant.branches.some(b => (b.name || '').toLowerCase().includes(term))) || // Search Branches
           (restaurant.subStalls && restaurant.subStalls.some(s => { // Search SubStalls
