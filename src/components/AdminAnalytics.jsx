@@ -41,10 +41,22 @@ const AdminAnalytics = ({ isOpen, onClose, restaurants }) => {
     })).sort((a, b) => (b.picks + b.views) - (a.picks + a.views)); // Sort by activity
 
     const filteredData = data.filter(r => {
+        const term = searchTerm.toLowerCase();
         const name = r.desc || r.name || '';
         const name2 = r.desc2 || r.name_en || '';
-        return name.toLowerCase().includes(searchTerm.toLowerCase()) || 
-               name2.toLowerCase().includes(searchTerm.toLowerCase());
+        const address = r.address || '';
+
+        return (
+            name.toLowerCase().includes(term) || 
+            name2.toLowerCase().includes(term) ||
+            address.toLowerCase().includes(term) ||
+            (r.categories && r.categories.some(c => (c || '').toLowerCase().includes(term))) ||
+            (r.branches && r.branches.some(b => (b.name || '').toLowerCase().includes(term))) ||
+            (r.subStalls && r.subStalls.some(s => {
+                const sName = typeof s === 'object' ? s.name : s;
+                return (sName || '').toLowerCase().includes(term);
+            }))
+        );
     });
 
     return (

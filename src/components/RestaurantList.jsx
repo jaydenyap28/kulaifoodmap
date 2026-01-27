@@ -57,14 +57,14 @@ const RestaurantList = ({ restaurants, allRestaurants, isAdmin, onUpdateRestaura
     const filtered = restaurants.filter(restaurant => {
       const term = searchTerm.toLowerCase();
       return (
-          restaurant.name?.toLowerCase().includes(term) ||
-          restaurant.name_en?.toLowerCase().includes(term) ||
-          restaurant.address?.toLowerCase().includes(term) || // Search Address
-          (restaurant.categories && restaurant.categories.some(c => c.toLowerCase().includes(term))) ||
-          (restaurant.branches && restaurant.branches.some(b => b.name?.toLowerCase().includes(term))) || // Search Branches
+          (restaurant.name || '').toLowerCase().includes(term) ||
+          (restaurant.name_en || '').toLowerCase().includes(term) ||
+          (restaurant.address || '').toLowerCase().includes(term) || // Search Address
+          (restaurant.categories && restaurant.categories.some(c => (c || '').toLowerCase().includes(term))) ||
+          (restaurant.branches && restaurant.branches.some(b => (b.name || '').toLowerCase().includes(term))) || // Search Branches
           (restaurant.subStalls && restaurant.subStalls.some(s => { // Search SubStalls
              const sName = typeof s === 'object' ? s.name : s;
-             return sName?.toLowerCase().includes(term);
+             return (sName || '').toLowerCase().includes(term);
           }))
       );
     });
