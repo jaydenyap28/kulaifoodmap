@@ -2877,7 +2877,52 @@ export const initialRestaurants = [
         ],
         "rating": 0,
         "image": "https://i.ibb.co/mVcj0R8j/image.jpg",
-        "subStalls": [],
+        "subStalls": [
+            {
+                "name": "",
+                "image": "https://i.ibb.co/dst56Z8P/IMG-20260127-133908.jpg"
+            },
+            {
+                "name": "",
+                "image": "https://i.ibb.co/dszFQgvs/IMG-20260127-133925.jpg"
+            },
+            {
+                "name": "",
+                "image": "https://i.ibb.co/twhj5y2B/IMG-20260127-133729.jpg"
+            },
+            {
+                "name": "",
+                "image": "https://i.ibb.co/wFQ6hsy3/IMG-20260127-133736.jpg"
+            },
+            {
+                "name": "",
+                "image": "https://i.ibb.co/rfQcvwcm/IMG-20260127-133741.jpg"
+            },
+            {
+                "name": "",
+                "image": "https://i.ibb.co/DfdRPhfX/IMG-20260127-133752.jpg"
+            },
+            {
+                "name": "",
+                "image": "https://i.ibb.co/5gQDzHpg/IMG-20260127-133805.jpg"
+            },
+            {
+                "name": "",
+                "image": "https://i.ibb.co/Ng1Pf6WB/IMG-20260127-133815.jpg"
+            },
+            {
+                "name": "",
+                "image": "https://i.ibb.co/HfN3qt4P/IMG-20260127-133823.jpg"
+            },
+            {
+                "name": "",
+                "image": "https://i.ibb.co/FG85fsG/IMG-20260127-133836.jpg"
+            },
+            {
+                "name": "",
+                "image": "https://i.ibb.co/27r2nz3z/IMG-20260127-133850.jpg"
+            }
+        ],
         "price_range": "RM 10-20",
         "menu_link": "",
         "website_link": "",
