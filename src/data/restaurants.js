@@ -5661,7 +5661,8 @@ export const initialRestaurants = [
             "lat": null,
             "lng": null
         },
-        "halalStatus": "muslim_owned"
+        "halalStatus": "muslim_owned",
+        "area": "Senai"
     },
     {
         "id": 145,
@@ -9737,7 +9738,7 @@ export const initialRestaurants = [
     },
     {
         "id": 261,
-        "area": "Indahpura",
+        "area": "Senai",
         "name": "古文茶",
         "name_en": "Tea Garden",
         "intro_zh": "一家以 南洋风味 为主的连锁餐厅，环境怀旧舒适（冷气），菜单选择非常丰富，涵盖 传统烤面包/咖啡、点心、各类面食、饭类（如椰浆饭、炒饭）、西餐 以及 甜品。适合家庭聚餐或朋友喝茶，是一个“一站式”解决早午晚餐的好地方。",
@@ -11021,7 +11022,8 @@ export const initialRestaurants = [
             "lat": null,
             "lng": null
         },
-        "halalStatus": "certified"
+        "halalStatus": "certified",
+        "area": "Senai"
     },
     {
         "id": 296,
@@ -13713,7 +13715,8 @@ export const initialRestaurants = [
             "lng": null
         },
         "phone": "0182559296",
-        "halalStatus": "muslim_owned"
+        "halalStatus": "muslim_owned",
+        "area": "Senai"
     },
     {
         "id": 373,
@@ -13752,7 +13755,8 @@ export const initialRestaurants = [
             "lng": null
         },
         "phone": "0182359412",
-        "halalStatus": "muslim_owned"
+        "halalStatus": "muslim_owned",
+        "area": "Senai"
     },
     {
         "id": 374,
@@ -13789,7 +13793,8 @@ export const initialRestaurants = [
             "lng": null
         },
         "phone": "0172396335",
-        "halalStatus": "muslim_owned"
+        "halalStatus": "muslim_owned",
+        "area": "Senai"
     },
     {
         "id": 375,
@@ -13826,7 +13831,8 @@ export const initialRestaurants = [
             "lng": null
         },
         "phone": "",
-        "halalStatus": "muslim_owned"
+        "halalStatus": "muslim_owned",
+        "area": "Senai"
     },
     {
         "id": 376,
@@ -13863,7 +13869,8 @@ export const initialRestaurants = [
             "lng": null
         },
         "phone": "075984781",
-        "halalStatus": "muslim_owned"
+        "halalStatus": "muslim_owned",
+        "area": "Senai"
     },
     {
         "id": 377,
@@ -13900,7 +13907,8 @@ export const initialRestaurants = [
             "lng": null
         },
         "phone": "0105706367",
-        "halalStatus": "muslim_owned"
+        "halalStatus": "muslim_owned",
+        "area": "Senai"
     },
     {
         "id": 378,
@@ -13937,7 +13945,8 @@ export const initialRestaurants = [
             "lng": null
         },
         "phone": "01162027215",
-        "halalStatus": "muslim_owned"
+        "halalStatus": "muslim_owned",
+        "area": "Senai"
     },
     {
         "id": 379,
@@ -14013,7 +14022,8 @@ export const initialRestaurants = [
             "lng": null
         },
         "phone": "0106627020",
-        "halalStatus": "muslim_owned"
+        "halalStatus": "muslim_owned",
+        "area": "Senai"
     },
     {
         "id": 381,
@@ -14050,7 +14060,8 @@ export const initialRestaurants = [
             "lng": null
         },
         "phone": "0167359364",
-        "halalStatus": "muslim_owned"
+        "halalStatus": "muslim_owned",
+        "area": "Senai"
     },
     {
         "id": 382,
@@ -14087,7 +14098,8 @@ export const initialRestaurants = [
             "lng": null
         },
         "phone": "0187934005",
-        "halalStatus": "muslim_owned"
+        "halalStatus": "muslim_owned",
+        "area": "Senai"
     },
     {
         "id": 383,
@@ -14124,7 +14136,8 @@ export const initialRestaurants = [
             "lng": null
         },
         "phone": "075992279",
-        "halalStatus": "muslim_owned"
+        "halalStatus": "muslim_owned",
+        "area": "Senai"
     },
     {
         "id": 384,
@@ -14161,7 +14174,8 @@ export const initialRestaurants = [
             "lng": null
         },
         "phone": "0193770456",
-        "halalStatus": "muslim_owned"
+        "halalStatus": "muslim_owned",
+        "area": "Senai"
     },
     {
         "id": 385,
@@ -14201,7 +14215,8 @@ export const initialRestaurants = [
             "lng": null
         },
         "phone": "0127125822",
-        "halalStatus": "non_halal"
+        "halalStatus": "non_halal",
+        "area": "Senai"
     },
     {
         "id": 386,
@@ -14240,7 +14255,8 @@ export const initialRestaurants = [
             "lng": null
         },
         "phone": "0102818668",
-        "halalStatus": "no_pork"
+        "halalStatus": "no_pork",
+        "area": "Senai"
     },
     {
         "id": 387,
@@ -14279,7 +14295,8 @@ export const initialRestaurants = [
             "lng": null
         },
         "phone": "0167874900",
-        "halalStatus": "non_halal"
+        "halalStatus": "non_halal",
+        "area": "Senai"
     },
     {
         "id": 388,
@@ -14316,7 +14333,8 @@ export const initialRestaurants = [
             "lng": null
         },
         "phone": "0177536597",
-        "halalStatus": "muslim_owned"
+        "halalStatus": "muslim_owned",
+        "area": "Senai"
     },
     {
         "id": 389,
@@ -14355,7 +14373,8 @@ export const initialRestaurants = [
             "lng": null
         },
         "phone": "0167120456",
-        "halalStatus": "non_halal"
+        "halalStatus": "non_halal",
+        "area": "Senai"
     },
     {
         "id": 390,
@@ -14392,7 +14411,8 @@ export const initialRestaurants = [
             "lng": null
         },
         "phone": "0192895929",
-        "halalStatus": "muslim_owned"
+        "halalStatus": "muslim_owned",
+        "area": "Senai"
     },
     {
         "id": 391,
@@ -14431,7 +14451,8 @@ export const initialRestaurants = [
             "lng": null
         },
         "phone": "075984231",
-        "halalStatus": "non_halal"
+        "halalStatus": "non_halal",
+        "area": "Senai"
     },
     {
         "id": 392,
@@ -14468,7 +14489,8 @@ export const initialRestaurants = [
             "lng": null
         },
         "phone": "0143334622",
-        "halalStatus": "muslim_owned"
+        "halalStatus": "muslim_owned",
+        "area": "Senai"
     },
     {
         "id": 393,
@@ -14505,7 +14527,8 @@ export const initialRestaurants = [
             "lng": null
         },
         "phone": "075908918",
-        "halalStatus": "muslim_owned"
+        "halalStatus": "muslim_owned",
+        "area": "Senai"
     },
     {
         "id": 394,
@@ -14542,7 +14565,8 @@ export const initialRestaurants = [
             "lng": null
         },
         "phone": "",
-        "halalStatus": "muslim_owned"
+        "halalStatus": "muslim_owned",
+        "area": "Senai"
     },
     {
         "id": 395,
@@ -14579,7 +14603,8 @@ export const initialRestaurants = [
             "lng": null
         },
         "phone": "0173737922",
-        "halalStatus": "muslim_owned"
+        "halalStatus": "muslim_owned",
+        "area": "Senai"
     },
     {
         "id": 396,
@@ -14616,7 +14641,8 @@ export const initialRestaurants = [
             "lng": null
         },
         "phone": "0178430483",
-        "halalStatus": "muslim_owned"
+        "halalStatus": "muslim_owned",
+        "area": "Senai"
     },
     {
         "id": 397,
@@ -14653,7 +14679,8 @@ export const initialRestaurants = [
             "lng": null
         },
         "phone": "0173603215",
-        "halalStatus": "muslim_owned"
+        "halalStatus": "muslim_owned",
+        "area": "Senai"
     },
     {
         "id": 398,
@@ -14690,7 +14717,8 @@ export const initialRestaurants = [
             "lng": null
         },
         "phone": "0189810255",
-        "halalStatus": "muslim_owned"
+        "halalStatus": "muslim_owned",
+        "area": "Senai"
     },
     {
         "id": 399,
