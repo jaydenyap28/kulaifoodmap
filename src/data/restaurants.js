@@ -360,7 +360,7 @@ export const initialRestaurants = [
     {
         "id": 9,
         "area": "Indahpura",
-        "name": "吉麵家",
+        "name": "吉面家",
         "name_en": "Ji Noodles",
         "address": "845-855, Jalan Teratai 36/17, Bandar Indahpura, 81000 Kulai, Johor",
         "opening_hours": "Monday: Closed\nTuesday: 7am - 3pm\nWednesday: 7am - 3pm\nThursday: 7am - 3pm\nFriday: 7am - 3pm\nSaturday: 7am - 3pm\nSunday: 7am - 3pm",
@@ -1074,7 +1074,7 @@ export const initialRestaurants = [
     {
         "id": 27,
         "area": "Kulai 21 Miles",
-        "name": "可豐酒家",
+        "name": "可丰酒家",
         "name_en": "Khoh Foong Restaurant",
         "address": "1, Jalan Susur Kulai 4, Taman Sri Kulai Baru 2, 81000 Kulai, Johor Darul Ta'zim",
         "opening_hours": "Monday: 10:45am - 8pm\nTuesday: 10:45am - 8pm\nWednesday: 10:45am - 8pm\nThursday: 10:45am - 8pm\nFriday: 10:45am - 8pm\nSaturday: 10:45am - 8pm\nSunday: 10:45am - 8pm",
@@ -3018,7 +3018,7 @@ export const initialRestaurants = [
     {
         "id": 76,
         "area": "Indahpura",
-        "name": "笨珍亞九咖啡",
+        "name": "笨珍亚九咖啡",
         "name_en": "Pontian Coffee 9",
         "address": "No 155, Pusat Komersial Indah, Jalan Kiambang 13, Bandar Indahpura, 81000 Kulai, Johor Darul Ta'zim",
         "opening_hours": "Monday: 8 am–6 pm\nTuesday: 8 am–6 pm\nWednesday: 8 am–6 pm\nThursday: 8 am–6 pm\nFriday: 8 am–6 pm\nSaturday: 8 am–6 pm\nSunday: 8 am–6 pm",
@@ -3174,7 +3174,7 @@ export const initialRestaurants = [
     {
         "id": 80,
         "area": "Indahpura",
-        "name": "好運茶室",
+        "name": "好运茶室",
         "name_en": "Goodluck Kopitiam",
         "address": "No.166, Pusat Komersial Indah, Jalan Kiambang 13, Bandar Indahpura, 81000 Kulai, Johor Darul Ta'zim",
         "opening_hours": "7 am–5 pm Tuesday Closed",
@@ -3292,7 +3292,7 @@ export const initialRestaurants = [
     {
         "id": 83,
         "area": "Indahpura",
-        "name": "御寶貴妃雞",
+        "name": "御宝贵妃鸡",
         "name_en": "Yubao Chicken Rice",
         "address": "Pusat Komersial Kulai, 169, Jalan Kiambang 13, Bandar Indahpura, 81000 Kulai, Johor Darul Ta'zim",
         "opening_hours": "10am-8pm Mon Closed",
@@ -3446,7 +3446,7 @@ export const initialRestaurants = [
     {
         "id": 87,
         "area": "Indahpura",
-        "name": "桃源麵家",
+        "name": "桃源面家",
         "name_en": "Tao Yuan Noodle House",
         "address": "13, Pusat Komersial Indah, 137, Jalan Kiambang, Indahpura, 81000 Kulai, Johor",
         "opening_hours": "Monday: 7am-3pm\nTuesday: 7am-3pm\nWednesday: 7am-3pm\nThursday: 7am-3pm\nFriday: 7am-3pm\nSaturday: 7am-3pm\nSunday: 7am-3pm",
@@ -4147,7 +4147,7 @@ export const initialRestaurants = [
     {
         "id": 105,
         "area": "Indahpura",
-        "name": "榮記魚頭爐",
+        "name": "荣记鱼头炉",
         "name_en": "LoongKee",
         "address": "Pusat Komersial Indah, 178, Jalan Kiambang 12, Indahpura, 81000 Kulai, Johor",
         "opening_hours": "Monday: 2–10 pm\nTuesday: 2–10 pm\nWednesday: 2–10 pm\nThursday: 2–10 pm\nFriday: 2–10 pm\nSaturday: 2–10 pm\nSunday: 2–10 pm",
@@ -6135,7 +6135,7 @@ export const initialRestaurants = [
     },
     {
         "id": 157,
-        "name": "五福全蛋雲吞麵",
+        "name": "五福全蛋云吞面",
         "name_en": "Sutera Mee Restaurant",
         "intro_zh": "著名的全蛋云吞面专卖店。面条弹牙爽口，云吞饱满，搭配叉烧和特制酱汁，深受食客喜爱。",
         "intro_en": "A famous shop specializing in whole egg wanton noodles. The noodles are springy, wantons are plump, served with char siew and special sauce, loved by diners.",
@@ -6565,7 +6565,7 @@ export const initialRestaurants = [
     {
         "id": 168,
         "area": "Indahpura",
-        "name": "鼎點心",
+        "name": "鼎点心",
         "name_en": "Ding DimSum",
         "intro_zh": "提供多样化的港式点心，从烧卖、虾饺到流沙包应有尽有。坚持现点现蒸，保证点心的新鲜与口感。",
         "intro_en": "Offers a wide variety of Hong Kong-style dim sum, from Siew Mai and Har Gow to Salted Egg Yolk Buns. Insists on steaming upon order to ensure freshness and taste.",
@@ -7744,7 +7744,7 @@ export const initialRestaurants = [
     },
     {
         "id": 198,
-        "name": "新沙威126美食閣",
+        "name": "新沙威126美食阁",
         "name_en": "New Sawit 126 Food Court",
         "intro_zh": "聚集了多种美食摊位的美食阁，选择丰富。从主食到小吃应有尽有，适合一家大小用餐。",
         "intro_en": "A food court gathering various food stalls with a rich selection. From main dishes to snacks, it has everything, suitable for family dining.",
@@ -7782,7 +7782,7 @@ export const initialRestaurants = [
     },
     {
         "id": 199,
-        "name": "阿華茶餐室",
+        "name": "阿华茶餐室",
         "name_en": "Ah Hua Coffee Shop",
         "intro_zh": "位于 沙威（Kelapa Sawit） 的老字号 粿条汤。主打 清甜汤底 的粿条汤，配料通常包括 鱼丸、肉碎、猪肝 等，味道 鲜美清淡，保留了 传统的古早味。是当地村民喜爱的 早餐/午餐 暖胃美食。",
         "intro_en": "A coffee shop frequently visited by Sawit locals, offering affordable breakfast and lunch. Home-cooked flavors full of human touch.",
@@ -9369,7 +9369,7 @@ export const initialRestaurants = [
     {
         "id": 250,
         "area": "Indahpura",
-        "name": "給麵子",
+        "name": "给面子",
         "name_en": "Noodles Q",
         "address": "121, Jalan Kenanga 29/6, Taman Indahpura, 81000 Kulai, Johor Darul Ta'zim",
         "opening_hours": "Monday: 9am - 6pm\nTuesday: 9am - 6pm\nWednesday: 9am - 6pm\nThursday: 9am - 6pm\nFriday: 9am - 6pm\nSaturday: 9am - 6pm\nSunday: 9am - 6pm",
@@ -9679,7 +9679,7 @@ export const initialRestaurants = [
     {
         "id": 258,
         "area": "Indahpura",
-        "name": "九億廚房",
+        "name": "九亿厨房",
         "name_en": "JiuYi Kitchen@Indahpura",
         "address": "163, Jalan Kenanga 29/4, Bandar Indahpura, 81000 Kulai, Johor Darul Ta'zim",
         "opening_hours": "Monday: 10am - 10pm\nTuesday: 10am - 10pm\nWednesday: 10am - 10pm\nThursday: 10am - 10pm\nFriday: 10am - 10pm\nSaturday: 10am - 10pm\nSunday: 10am - 10pm",
@@ -14361,7 +14361,7 @@ export const initialRestaurants = [
     },
     {
         "id": 389,
-        "name": "莊园松鱼头",
+        "name": "庄园松鱼头",
         "name_en": "Restoran Zhuang Yuan",
         "intro_zh": "",
         "intro_en": "",
@@ -14860,9 +14860,9 @@ export const initialRestaurants = [
     },
     {
         "id": 401,
-        "name": "金山食館",
+        "name": "金山食馆",
         "name_en": "Restoran Kim Shan",
-        "intro_zh": "金山食館是古来家喻户晓的老字号酒家，坐落于 Taman Sri Kulai Baru。这里以正宗南洋中餐和道地煮炒著称，凭借扎实的“锅气”和亲民的价格，成为了当地人家庭聚餐与喜庆设宴的首选。餐馆保留了最淳朴的古来味道，每一道菜都承载着几代人的集体回忆。",
+        "intro_zh": "金山食馆是古来家喻户晓的老字号酒家，坐落于 Taman Sri Kulai Baru。这里以正宗南洋中餐和道地煮炒著称，凭借扎实的“锅气”和亲民的价格，成为了当地人家庭聚餐与喜庆设宴的首选。餐馆保留了最淳朴的古来味道，每一道菜都承载着几代人的集体回忆。",
         "intro_en": "Restoran Kim Shan is a renowned legacy restaurant in Kulai, specializing in authentic Nanyang Chinese cuisine and traditional Zhi Char. Located at Taman Sri Kulai Baru, it is the go-to spot for locals for family dinners and celebrations, thanks to its signature \"Wok Hei\" and affordable pricing. It remains a nostalgic culinary landmark that perfectly captures the heritage flavors of Kulai.",
         "address": "13-16, Jalan Susur Kulai 1, Taman Sri Kulai Baru, 81000 Kulai, Johor",
         "opening_hours": "Monday: 4pm - 9pm\nTuesday: Closed\nWednesday: Closed\nThursday: 4pm - 9pm\nFriday: Closed\nSaturday: 4pm - 9pm\nSunday: 4pm - 9pm",
