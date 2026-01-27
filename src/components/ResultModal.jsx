@@ -1,4 +1,5 @@
-import React, { useState } from 'react';
+import React, { useState, useRef } from 'react';
+import { createPortal } from 'react-dom';
 import { X, Star, MapPin, ExternalLink, Send, Save, Clock, Info, UtensilsCrossed, Upload, BookOpen, Globe, Bike, Navigation } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { useTranslation } from 'react-i18next';
@@ -49,6 +50,18 @@ const ResultModal = ({ restaurant, onClose, onAddReview, isAdmin, onUpdateRestau
 
   // State for zoomed image
   const [zoomedImage, setZoomedImage] = useState(null);
+  
+  // State for Halal Dropdown
+  const [showHalalDropdown, setShowHalalDropdown] = useState(false);
+  const [dropdownPos, setDropdownPos] = useState({ top: 0, left: 0 });
+  const halalButtonRef = useRef(null);
+
+  const HALAL_OPTIONS = [
+    { value: 'non_halal', label: 'Non-Halal (非清真/未标注)' },
+    { value: 'certified', label: 'Halal Certified (官方认证)' },
+    { value: 'muslim_owned', label: 'Muslim Owned (穆斯林经营)' },
+    { value: 'no_pork', label: 'No Pork No Lard (不含猪肉/猪油)' }
+  ];
 
   // Update form when restaurant changes
   React.useEffect(() => {
@@ -570,16 +583,56 @@ const ResultModal = ({ restaurant, onClose, onAddReview, isAdmin, onUpdateRestau
 
                   <div>
                     <label className="text-xs text-gray-400">Halal Status (清真状态)</label>
-                    <select
-                        value={editForm.halalStatus || 'non_halal'}
-                        onChange={(e) => setEditForm({...editForm, halalStatus: e.target.value})}
-                        className="w-full bg-[#1a1a1a] border-b border-gray-600 py-1 text-sm text-white focus:border-white outline-none mt-1"
-                    >
-                        <option value="non_halal">Non-Halal (非清真/未标注)</option>
-                        <option value="certified">Halal Certified (官方认证)</option>
-                        <option value="muslim_owned">Muslim Owned (穆斯林经营)</option>
-                        <option value="no_pork">No Pork No Lard (不含猪肉/猪油)</option>
-                    </select>
+                    <div className="relative">
+                        <button
+                            ref={halalButtonRef}
+                            onClick={() => {
+                                if (!showHalalDropdown && halalButtonRef.current) {
+                                    const rect = halalButtonRef.current.getBoundingClientRect();
+                                    setDropdownPos({ 
+                                        top: rect.top, 
+                                        left: rect.right + 10 
+                                    });
+                                }
+                                setShowHalalDropdown(!showHalalDropdown);
+                            }}
+                            className="w-full bg-[#1a1a1a] border-b border-gray-600 py-1 text-sm text-white focus:border-white outline-none mt-1 text-left flex justify-between items-center"
+                        >
+                            <span>
+                                {HALAL_OPTIONS.find(o => o.value === (editForm.halalStatus || 'non_halal'))?.label}
+                            </span>
+                            <span className="text-gray-500 text-xs transform transition-transform duration-200" style={{ transform: showHalalDropdown ? 'rotate(180deg)' : 'rotate(0deg)' }}>▼</span>
+                        </button>
+
+                        {showHalalDropdown && createPortal(
+                            <>
+                                <div className="fixed inset-0 z-[60]" onClick={() => setShowHalalDropdown(false)}></div>
+                                <div 
+                                    className="fixed z-[60] bg-[#2d2d2d] border border-gray-600 rounded-lg shadow-2xl w-64 overflow-hidden"
+                                    style={{ 
+                                        top: dropdownPos.top, 
+                                        left: dropdownPos.left 
+                                    }}
+                                >
+                                    {HALAL_OPTIONS.map(option => (
+                                        <button
+                                            key={option.value}
+                                            onClick={() => {
+                                                setEditForm({...editForm, halalStatus: option.value});
+                                                setShowHalalDropdown(false);
+                                            }}
+                                            className={`w-full text-left px-4 py-3 text-sm hover:bg-[#444] border-b border-gray-700 last:border-0 transition-colors ${
+                                                editForm.halalStatus === option.value ? 'text-white font-bold bg-[#333]' : 'text-gray-300'
+                                            }`}
+                                        >
+                                            {option.label}
+                                        </button>
+                                    ))}
+                                </div>
+                            </>,
+                            document.body
+                        )}
+                    </div>
                   </div>
 
                   <div>
