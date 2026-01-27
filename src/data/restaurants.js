@@ -12370,10 +12370,10 @@ export const initialRestaurants = [
         "intro_zh": "古来非常著名的 传统蛋糕西点店（Old School Bakery）。最出名的是 传统牛油蛋糕（Butter Cake），口感扎实绵密，牛油香气十足。此外也售卖 各类传统面包、蛋挞 和 喜饼。是购买 传统风味蛋糕/伴手礼 的首选老店。",
         "intro_en": "",
         "category": [
-            "甜品饮料"
+            "饮品", "蛋糕甜点"
         ],
         "categories": [
-            "甜品饮料"
+            "饮品", "蛋糕甜点"
         ],
         "rating": 0,
         "image": "https://i.ibb.co/gL8Ly1z1/image.jpg",
@@ -12631,10 +12631,10 @@ export const initialRestaurants = [
         "intro_zh": "",
         "intro_en": "",
         "category": [
-            "甜品饮料"
+            "饮品", "蛋糕甜点"
         ],
         "categories": [
-            "甜品饮料"
+            "饮品", "蛋糕甜点"
         ],
         "rating": 0,
         "image": "https://placehold.co/600x400/png?text=No+Image",

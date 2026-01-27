@@ -325,7 +325,7 @@ function App() {
     let processedCats = new Set();
     
     // Define deprecated categories to filter out
-    const deprecatedCats = new Set(["Pizza", "炸鸡", "中餐", "中国餐", "无招牌美食"]);
+    const deprecatedCats = new Set(["Pizza", "炸鸡", "中餐", "无招牌美食"]);
 
     // 1. Try to load from LocalStorage FIRST (Preserve Order)
     try {
