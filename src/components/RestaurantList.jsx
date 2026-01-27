@@ -349,7 +349,7 @@ const RestaurantCard = ({ restaurant, isAdmin, onUpdate, onDelete, onClick, onCa
                     {/* Halal Status */}
                     {restaurant.halalStatus === 'certified' && (
                         <span className="px-1.5 py-0.5 bg-emerald-900/50 text-emerald-400 border border-emerald-800 text-[10px] rounded flex items-center gap-1 leading-none">
-                            ✅ Certified
+                            ✅ Halal Certified
                         </span>
                     )}
                     {restaurant.halalStatus === 'muslim_owned' && (
