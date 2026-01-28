@@ -814,7 +814,7 @@ function App() {
         /> */}
 
         {/* Hero Stack Section */}
-        <div className="relative w-full flex flex-col items-center min-h-[450px] mb-5">
+        <div className="relative w-full flex flex-col items-center min-h-[350px] md:min-h-[450px] mb-5">
           {filteredRestaurants.length > 1 ? (
             <HeroCardStack 
               restaurants={filteredRestaurants} 

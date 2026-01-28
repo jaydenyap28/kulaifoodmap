@@ -49,7 +49,7 @@ const SlotReel = ({ restaurants, isShuffling, winner, onAnimationComplete }) => 
              >
                 {/* Render a repeated pattern of restaurants */}
                 {[...restaurants, ...restaurants, ...restaurants, ...restaurants].slice(0, 40).map((r, idx) => (
-                    <div key={idx} className="h-[450px] w-full shrink-0 relative p-4 opacity-50">
+                    <div key={idx} className="h-[350px] md:h-[450px] w-full shrink-0 relative p-4 opacity-50">
                         {/* Simplified Card for Speed */}
                          <div className="w-full h-full bg-gray-800 rounded-2xl overflow-hidden relative">
                             <img src={r.image} className="w-full h-full object-cover opacity-50" alt="" />
@@ -193,9 +193,9 @@ const HeroCardStack = ({ restaurants, onChoose, onSupportClick }) => {
   if (!restaurants || restaurants.length === 0) return null;
 
   return (
-    <div className="relative w-full max-w-sm h-[550px] flex flex-col items-center justify-center perspective-1000">
+    <div className="relative w-full max-w-sm h-[450px] md:h-[550px] flex flex-col items-center justify-center perspective-1000">
       {/* Card Area */}
-      <div className="relative w-full h-[450px] mb-8">
+      <div className="relative w-full h-[350px] md:h-[450px] mb-8">
         
         <div className={`
               absolute inset-0 rounded-[24px] overflow-hidden shadow-2xl bg-[#1e1e1e] border-4 border-gray-800
