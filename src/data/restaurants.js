@@ -1414,7 +1414,7 @@ export const initialRestaurants = [
             "快餐"
         ],
         "rating": 0,
-        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQCHD9uVr8KYu4po51Mz7YEvZGIIEkCMUSeUg&s",
+        "image": "https://i.ibb.co/G4zMRCZW/image.png",
         "subStalls": [],
         "categories": [
             "西餐",
@@ -2811,7 +2811,7 @@ export const initialRestaurants = [
             "火锅烧烤"
         ],
         "rating": 0,
-        "image": "https://placehold.co/800x600/e74c3c/ffffff?text=Xiao+Xin+Hotpot",
+        "image": "https://i.ibb.co/wNvfX9mF/image.jpg",
         "subStalls": [],
         "price_range": "RM 10-20",
         "menu_link": "",
@@ -3559,7 +3559,7 @@ export const initialRestaurants = [
             "Cafe"
         ],
         "rating": 0,
-        "image": "https://i.ibb.co/Q7JYwBVt/image.jpg",
+        "image": "https://i.ibb.co/HpKdm9cy/image.jpg",
         "subStalls": [],
         "price_range": "RM 10-20",
         "menu_link": "",
@@ -5375,7 +5375,7 @@ export const initialRestaurants = [
             "Cafe"
         ],
         "rating": 0,
-        "image": "https://i.ibb.co/yFMV4dCz/image.jpg",
+        "image": "https://i.ibb.co/F4Rc9hYs/image.jpg",
         "subStalls": [],
         "price_range": "RM 10-20",
         "menu_link": "",
@@ -5660,7 +5660,7 @@ export const initialRestaurants = [
             "火锅烧烤"
         ],
         "rating": 0,
-        "image": "https://i.ibb.co/xtQrjYht/image.jpg",
+        "image": "https://i.ibb.co/8g5DhBVq/Guoma-Seafood-Express.jpg",
         "subStalls": [],
         "price_range": "RM 10-20",
         "menu_link": "",
@@ -8791,7 +8791,7 @@ export const initialRestaurants = [
             "Cafe"
         ],
         "rating": 0,
-        "image": "https://d208quqxsjalxm.cloudfront.net/restaurant_image/e79aed175a0b444a8fa2e2fb3cbbcc08_1661146251.jpeg",
+        "image": "https://i.ibb.co/TqbKQCVX/Rasa-Sayang-Kopitiam.jpg",
         "subStalls": [],
         "price_range": "RM 10-20",
         "menu_link": "",
@@ -12578,7 +12578,7 @@ export const initialRestaurants = [
         "address": "Multiple Locations in Kulai",
         "opening_hours": "Monday: 10:30am - 11:00pm\nTuesday: 10:30am - 11:00pm\nWednesday: 10:30am - 11:00pm\nThursday: 10:30am - 11:00pm\nFriday: 10:30am - 11:00pm\nSaturday: 10:30am - 11:00pm\nSunday: 10:30am - 11:00pm",
         "price_range": "RM 20-40",
-        "image": "https://i.ibb.co/5xc2dgZJ/Pizza-Hut.png",
+        "image": "https://i.ibb.co/7NZ3HFWn/Pizza-Hut.webp",
         "branches": [
             {
                 "name": "Pizza Hut Kulai (Jalan Susur 3)",
@@ -14858,7 +14858,7 @@ export const initialRestaurants = [
         ],
         "tags": [],
         "price_range": "RM 10 - RM 20",
-        "image": "https://placehold.co/600x400/e0e0e0/333333?text=No+Image",
+        "image": "https://i.ibb.co/5hgPCGLg/Projek-KEBAB-Cafe.jpg",
         "rating": 0,
         "google_maps": "",
         "location": {
@@ -17133,7 +17133,7 @@ export const initialRestaurants = [
             "粉类"
         ],
         "rating": 0,
-        "image": "https://placehold.co/600x400/1e1e1e/FFF?text=Trio+Guys+Ramen",
+        "image": "https://i.ibb.co/9mP0ZJKC/image.jpg",
         "subStalls": [],
         "price_range": "RM 15-30",
         "menu_link": "",
@@ -17575,7 +17575,7 @@ export const initialRestaurants = [
             "点心"
         ],
         "rating": 0,
-        "image": "https://ibb.co/7xBSqH5w",
+        "image": "https://i.ibb.co/7NRyQ8wX/image.jpg",
         "subStalls": [
             {
                 "name": "",
@@ -17829,7 +17829,7 @@ export const initialRestaurants = [
         ],
         "halalStatus": "non_halal",
         "rating": 0,
-        "image": "",
+        "image": "https://i.ibb.co/3yWfBMQ4/L-L-Cafe-House.jpg",
         "subStalls": [],
         "price_range": "RM 10-20",
         "tags": [
@@ -17865,7 +17865,7 @@ export const initialRestaurants = [
         ],
         "halalStatus": "non_halal",
         "rating": 0,
-        "image": "",
+        "image": "https://i.ibb.co/S4PFz9NB/image.jpg",
         "subStalls": [],
         "price_range": "RM 10-20",
         "tags": [
@@ -17900,7 +17900,7 @@ export const initialRestaurants = [
         ],
         "halalStatus": "non_halal",
         "rating": 0,
-        "image": "",
+        "image": "https://i.ibb.co/C3kgRFcP/Moments-Bistro-Cafe.jpg",
         "subStalls": [],
         "price_range": "RM 20-40",
         "tags": [
@@ -17970,7 +17970,7 @@ export const initialRestaurants = [
         ],
         "halalStatus": "pork_free",
         "rating": 0,
-        "image": "",
+        "image": "https://i.ibb.co/DHgkfKKb/Lingo-Bakery.jpg",
         "subStalls": [],
         "price_range": "RM 10-20",
         "tags": [
@@ -18038,7 +18038,7 @@ export const initialRestaurants = [
         ],
         "halalStatus": "non_halal",
         "rating": 0,
-        "image": "",
+        "image": "https://i.ibb.co/XxZmft0S/image.jpg",
         "subStalls": [],
         "price_range": "RM 15-25",
         "tags": [
@@ -18074,7 +18074,7 @@ export const initialRestaurants = [
         ],
         "halalStatus": "muslim_owned",
         "rating": 0,
-        "image": "",
+        "image": "https://i.ibb.co/MyPwcM7g/Nasi-Gulai-Isteri-Kulai.jpg",
         "subStalls": [],
         "price_range": "RM 10-20",
         "tags": [
@@ -18109,7 +18109,7 @@ export const initialRestaurants = [
         ],
         "halalStatus": "pork_free",
         "rating": 0,
-        "image": "",
+        "image": "https://i.ibb.co/7JjQ0YCn/Good-Friend-Pastry.jpg",
         "subStalls": [],
         "price_range": "RM 10-30",
         "tags": [
@@ -18145,7 +18145,7 @@ export const initialRestaurants = [
         ],
         "halalStatus": "non_halal",
         "rating": 0,
-        "image": "",
+        "image": "https://i.ibb.co/B5kMd9TP/image.jpg",
         "subStalls": [],
         "price_range": "RM 1-2 (Per stick)",
         "tags": [
@@ -18181,7 +18181,7 @@ export const initialRestaurants = [
         ],
         "halalStatus": "muslim_owned",
         "rating": 0,
-        "image": "",
+        "image": "https://i.ibb.co/QFXGZWbk/Restoran-Indah-Tomyam.jpg",
         "subStalls": [],
         "price_range": "RM 10-20",
         "tags": [
@@ -18217,7 +18217,7 @@ export const initialRestaurants = [
         ],
         "halalStatus": "pork_free",
         "rating": 0,
-        "image": "",
+        "image": "https://i.ibb.co/99T4mhcM/image.jpg",
         "subStalls": [],
         "price_range": "RM 10-20",
         "tags": [
@@ -18250,7 +18250,7 @@ export const initialRestaurants = [
             "咖啡店/美食阁"
         ],
         "rating": 0,
-        "image": "https://placehold.co/600x400/1e1e1e/FFF?text=Restoran+Tai+Chiang",
+        "image": "https://i.ibb.co/8H770jh/image.jpg",
         "subStalls": [],
         "price_range": "RM 5-15",
         "menu_link": "",
@@ -18294,7 +18294,7 @@ export const initialRestaurants = [
             "Cafe"
         ],
         "rating": 0,
-        "image": "https://placehold.co/600x400/1e1e1e/FFF?text=Cawan+Mas+Coffee",
+        "image": "https://i.ibb.co/6RPqjYcY/Cawan-Mas-Coffee.jpg",
         "subStalls": [],
         "price_range": "RM 10-25",
         "menu_link": "",
@@ -18337,7 +18337,7 @@ export const initialRestaurants = [
             "咖啡店/美食阁"
         ],
         "rating": 0,
-        "image": "https://placehold.co/600x400/1e1e1e/FFF?text=TJ+Food+Court",
+        "image": "https://i.ibb.co/KjfBG5kg/TJ-Food-Court.jpg",
         "subStalls": [],
         "price_range": "RM 10-20",
         "menu_link": "",
@@ -18381,7 +18381,7 @@ export const initialRestaurants = [
             "火锅烧烤"
         ],
         "rating": 0,
-        "image": "https://placehold.co/600x400/1e1e1e/FFF?text=Krabby+Planet",
+        "image": "https://i.ibb.co/93SBd9t6/Krabby-Planet-Steamboat-Grill.jpg",
         "subStalls": [],
         "price_range": "RM 30-60",
         "menu_link": "",
@@ -18425,7 +18425,7 @@ export const initialRestaurants = [
             "咖啡店/美食阁"
         ],
         "rating": 0,
-        "image": "https://placehold.co/600x400/1e1e1e/FFF?text=Hao+Wang+Jiao",
+        "image": "https://i.ibb.co/BFJvQ2h/image.jpg",
         "subStalls": [],
         "price_range": "RM 5-15",
         "menu_link": "",
@@ -18507,7 +18507,7 @@ export const initialRestaurants = [
             "饭类"
         ],
         "rating": 0,
-        "image": "https://placehold.co/600x400/1e1e1e/FFF?text=Heng+Heng",
+        "image": "https://i.ibb.co/tTzjX0mW/image.jpg",
         "subStalls": [],
         "price_range": "RM 10-20",
         "menu_link": "",
@@ -18551,7 +18551,7 @@ export const initialRestaurants = [
             "马来与印度风味"
         ],
         "rating": 0,
-        "image": "https://placehold.co/600x400/1e1e1e/FFF?text=ABMH+Satu",
+        "image": "https://i.ibb.co/F44w6c3z/Restoran-ABMH-Satu.jpg",
         "subStalls": [],
         "price_range": "RM 5-15",
         "menu_link": "",
@@ -18594,7 +18594,7 @@ export const initialRestaurants = [
             "粉类"
         ],
         "rating": 0,
-        "image": "https://placehold.co/600x400/1e1e1e/FFF?text=Kiow+Jie",
+        "image": "https://i.ibb.co/Xf8tFRN5/image.jpg",
         "subStalls": [],
         "price_range": "RM 10-20",
         "menu_link": "",
@@ -18637,7 +18637,7 @@ export const initialRestaurants = [
             "咖啡店/美食阁"
         ],
         "rating": 0,
-        "image": "https://placehold.co/600x400/1e1e1e/FFF?text=Rumah+Putih",
+        "image": "https://i.ibb.co/JWs4FLWD/image.jpg",
         "subStalls": [],
         "price_range": "RM 10-20",
         "menu_link": "",
@@ -18680,7 +18680,7 @@ export const initialRestaurants = [
             "咖啡店/美食阁"
         ],
         "rating": 0,
-        "image": "https://placehold.co/600x400/1e1e1e/FFF?text=Tang+Food+Centre",
+        "image": "https://i.ibb.co/mLkbmZs/image.jpg",
         "subStalls": [],
         "price_range": "RM 10-20",
         "menu_link": "",
@@ -18723,7 +18723,7 @@ export const initialRestaurants = [
             "马来与印度风味"
         ],
         "rating": 0,
-        "image": "https://placehold.co/600x400/1e1e1e/FFF?text=Warong+Crew",
+        "image": "https://i.ibb.co/r2rFWRkz/Warong-Crew-Taman-Muhibbah.jpg",
         "subStalls": [],
         "price_range": "RM 5-15",
         "menu_link": "",
