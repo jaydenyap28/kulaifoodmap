@@ -24,9 +24,10 @@
     "no_drinks_desserts": "不看饮品&甜点",
     "halal_status": "Halal Status",
     "halal_options": {
-      "certified": "Halal Certified",
-      "muslim_owned": "Muslim Owned",
-      "no_pork": "No Pork No Lard"
+      "certified": "Halal Certified (官方认证)",
+      "muslim_owned": "Muslim Owned (穆斯林经营)",
+      "no_pork": "No Pork No Lard (不含猪肉/猪油)",
+      "non_halal": "Non-Halal (非清真)"
     },
     "area_label": "地区筛选",
     "all_areas": "全古来 (All Areas)",

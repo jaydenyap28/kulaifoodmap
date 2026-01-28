@@ -26,7 +26,8 @@
     "halal_options": {
       "certified": "Halal Certified",
       "muslim_owned": "Muslim Owned",
-      "no_pork": "No Pork No Lard"
+      "no_pork": "No Pork No Lard",
+      "non_halal": "Non-Halal"
     },
     "area_label": "Filter Area",
     "all_areas": "All Areas",

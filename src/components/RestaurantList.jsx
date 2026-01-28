@@ -403,17 +403,17 @@ const RestaurantCard = ({ restaurant, isAdmin, onUpdate, onDelete, onClick, onCa
                     {/* Halal Status */}
                     {restaurant.halalStatus === 'certified' && (
                         <span className="px-1.5 py-0.5 bg-emerald-900/50 text-emerald-400 border border-emerald-800 text-[10px] rounded flex items-center gap-1 leading-none">
-                            ✅ Halal Certified
+                            ✅ {t('filter.halal_options.certified')}
                         </span>
                     )}
                     {restaurant.halalStatus === 'muslim_owned' && (
                         <span className="px-1.5 py-0.5 bg-green-900/50 text-green-400 border border-green-800 text-[10px] rounded flex items-center gap-1 leading-none">
-                            ☪️ Muslim Owned
+                            ☪️ {t('filter.halal_options.muslim_owned')}
                         </span>
                     )}
                     {restaurant.halalStatus === 'no_pork' && (
                         <span className="px-1.5 py-0.5 bg-orange-900/50 text-orange-400 border border-orange-800 text-[10px] rounded flex items-center gap-1 leading-none">
-                            🍖 No Pork
+                            🍖 {t('filter.halal_options.no_pork')}
                         </span>
                     )}
                 </div>

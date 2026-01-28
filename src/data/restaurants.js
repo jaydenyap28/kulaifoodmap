@@ -768,7 +768,7 @@ export const initialRestaurants = [
             "lng": null
         },
         "halalStatus": "non_halal",
-        "dietaryOption": "vegetarian_friendly"
+        "dietaryOption": null
     },
     {
         "id": 19,
@@ -1397,7 +1397,7 @@ export const initialRestaurants = [
             "lng": null
         },
         "halalStatus": "certified",
-        "dietaryOption": "vegetarian_friendly"
+        "dietaryOption": null
     },
     {
         "id": 34,
@@ -1452,7 +1452,7 @@ export const initialRestaurants = [
             "lng": null
         },
         "halalStatus": "certified",
-        "dietaryOption": "vegetarian_friendly"
+        "dietaryOption": null
     },
     {
         "id": 36,
@@ -1532,7 +1532,7 @@ export const initialRestaurants = [
             "lng": null
         },
         "halalStatus": "non_halal",
-        "dietaryOption": "vegetarian_friendly"
+        "dietaryOption": null
     },
     {
         "id": 38,
@@ -1573,7 +1573,7 @@ export const initialRestaurants = [
             "lng": null
         },
         "halalStatus": "non_halal",
-        "dietaryOption": "vegetarian_friendly"
+        "dietaryOption": null
     },
     {
         "id": 39,
@@ -1613,7 +1613,7 @@ export const initialRestaurants = [
             "lng": null
         },
         "halalStatus": "non_halal",
-        "dietaryOption": "vegetarian_friendly"
+        "dietaryOption": null
     },
     {
         "id": 40,
@@ -1731,7 +1731,7 @@ export const initialRestaurants = [
             "lng": null
         },
         "halalStatus": "non_halal",
-        "dietaryOption": "vegetarian_friendly"
+        "dietaryOption": null
     },
     {
         "id": 43,
@@ -1773,7 +1773,7 @@ export const initialRestaurants = [
             "lng": null
         },
         "halalStatus": "muslim_owned",
-        "dietaryOption": "vegetarian_friendly"
+        "dietaryOption": null
     },
     {
         "id": 44,
@@ -1820,7 +1820,7 @@ export const initialRestaurants = [
         "name": "秘密基地",
         "name_en": "Starblu cafe",
         "address": "521, Jalan Susur Kulai 1, Kulai Besar, 81000 Kulai, Johor Darul Ta'zim",
-        "opening_hours": "8am – 3pm (Tuesday Closed)",
+        "opening_hours": "Monday: 10am - 10pm\nTuesday: Closed\nWednesday: 10am - 10pm\nThursday: 10am - 10pm\nFriday: 10am - 10pm\nSaturday: 10am - 10pm\nSunday: 10am - 10pm",
         "intro_zh": "一家隐秘而充满特色的咖啡馆，名为“秘密基地”。提供各式西餐、咖啡和舒适的环境，是享受悠闲时光的好地方。",
         "intro_en": "A hidden gem in Kulai known as \"Secret Base\". Offers a variety of Western food, coffee, and a cozy atmosphere, making it a perfect spot for a relaxing meal.",
         "category": [
@@ -1853,7 +1853,7 @@ export const initialRestaurants = [
             "lng": null
         },
         "halalStatus": "non_halal",
-        "dietaryOption": "vegetarian_friendly"
+        "dietaryOption": null
     },
     {
         "id": 46,
@@ -2097,7 +2097,7 @@ export const initialRestaurants = [
             "lng": null
         },
         "halalStatus": "non_halal",
-        "dietaryOption": "vegetarian_friendly"
+        "dietaryOption": null
     },
     {
         "id": 52,
@@ -2139,14 +2139,14 @@ export const initialRestaurants = [
             "lng": null
         },
         "halalStatus": "non_halal",
-        "dietaryOption": "vegetarian_friendly"
+        "dietaryOption": null
     },
     {
         "id": 53,
         "area": "Indahpura",
         "name": "Broovies Cafe",
         "address": "55, Jalan Kenanga 29/5, Bandar Indahpura, 81000 Kulai, Johor Darul Ta'zim",
-        "opening_hours": "Monday: 11am – 10pm\nTuesday: 11am – 10pm\nWednesday: 11am – 10pm\nThursday: 11am – 10pm\nFriday: 11am – 10pm\nSaturday: 11am – 10pm\nSunday: 11am – 10pm",
+        "opening_hours": "Monday: 11am - 10pm\nTuesday: 11am - 10pm\nWednesday: 11am - 10pm\nThursday: 11am - 10pm\nFriday: 11am - 10pm\nSaturday: 11am - 10pm\nSunday: 11am - 10pm",
         "intro_zh": "充满复古英伦风情的咖啡馆，环境非常有格调。主打西餐、意大利面和精品咖啡，是拍照打卡和享受美食的热门地点。",
         "intro_en": "A cafe with a retro British vibe and stylish interior. Specializes in Western cuisine, pasta, and specialty coffee. A popular spot for photos and enjoying good food.",
         "category": [
@@ -2179,7 +2179,7 @@ export const initialRestaurants = [
             "lng": null
         },
         "halalStatus": "non_halal",
-        "dietaryOption": "vegetarian_friendly"
+        "dietaryOption": null
     },
     {
         "id": 54,
@@ -2187,14 +2187,14 @@ export const initialRestaurants = [
         "name": "维府",
         "name_en": "Wei Palace Chinese Restaurant",
         "address": "No54, Jalan Kenanga 29/5, Bandar Indahpura, 81000 Kulai, Johor Darul Ta'zim",
-        "opening_hours": "Monday: 11:30am – 3pm, 5:30pm – 9pm\nTuesday: 11:30am – 3pm, 5:30pm – 9pm\nWednesday: 11:30am – 3pm, 5:30pm – 9pm\nThursday: 11:30am – 3pm, 5:30pm – 9pm\nFriday: 11:30am – 3pm, 5:30pm – 9pm\nSaturday: 11:30am – 3pm, 5:30pm – 9pm\nSunday: 11:30am – 3pm, 5:30pm – 9pm",
+        "opening_hours": "Monday: 11:30am - 9pm\nTuesday: 11:30am - 9pm\nWednesday: 11:30am - 9pm\nThursday: 11:30am - 9pm\nFriday: 11:30am - 9pm\nSaturday: 11:30am - 9pm\nSunday: 11:30am - 9pm",
         "intro_zh": "专注于精致川粤中餐和点心的酒楼。菜品制作考究，环境舒适典雅，是商务宴请和家庭聚餐的优质选择。",
         "intro_en": "Specializes in exquisite Sichuan and Cantonese cuisine and dim sum. Known for its meticulously prepared dishes and elegant atmosphere, making it a top choice for business dining and family meals.",
         "category": [
-            "宴会酒楼"
+            "中国餐"
         ],
         "categories": [
-            "宴会酒楼"
+            "中国餐"
         ],
         "rating": 0,
         "image": "https://i.ibb.co/7dcZF2TB/image.jpg",
@@ -2377,7 +2377,7 @@ export const initialRestaurants = [
             "lng": null
         },
         "halalStatus": "non_halal",
-        "dietaryOption": "vegetarian_friendly"
+        "dietaryOption": null
     },
     {
         "id": 59,
@@ -2425,7 +2425,7 @@ export const initialRestaurants = [
             "lng": null
         },
         "halalStatus": "non_halal",
-        "dietaryOption": "vegetarian_friendly"
+        "dietaryOption": null
     },
     {
         "id": 60,
@@ -2664,7 +2664,7 @@ export const initialRestaurants = [
             "lng": null
         },
         "halalStatus": "non_halal",
-        "dietaryOption": "vegetarian_friendly"
+        "dietaryOption": null
     },
     {
         "id": 66,
@@ -2724,7 +2724,48 @@ export const initialRestaurants = [
         ],
         "rating": 0,
         "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRu2cQuldli1y1WLnTsbBv5H6pzyHJGlhRV3A&s",
-        "subStalls": [],
+        "subStalls": [
+            {
+                "name": "",
+                "image": "https://ibb.co/PZz54wZq"
+            },
+            {
+                "name": "",
+                "image": "https://ibb.co/prQ9X2Z6"
+            },
+            {
+                "name": "",
+                "image": "https://ibb.co/QvQVg1wk"
+            },
+            {
+                "name": "",
+                "image": "https://ibb.co/GQw2xQKG"
+            },
+            {
+                "name": "",
+                "image": "https://ibb.co/HDq92X9b"
+            },
+            {
+                "name": "",
+                "image": "https://ibb.co/hJQj979V"
+            },
+            {
+                "name": "",
+                "image": "https://ibb.co/ZzMZR9S5"
+            },
+            {
+                "name": "",
+                "image": "https://ibb.co/ymyHCZqK"
+            },
+            {
+                "name": "",
+                "image": "https://ibb.co/HfRrTqdh"
+            },
+            {
+                "name": "",
+                "image": "https://ibb.co/21YBxs7g"
+            }
+        ],
         "price_range": "RM 10-20",
         "menu_link": "",
         "website_link": "",
@@ -3303,7 +3344,7 @@ export const initialRestaurants = [
             "lng": null
         },
         "halalStatus": "non_halal",
-        "dietaryOption": "vegetarian_friendly"
+        "dietaryOption": null
     },
     {
         "id": 79,
@@ -3584,7 +3625,7 @@ export const initialRestaurants = [
             "lng": null
         },
         "halalStatus": "non_halal",
-        "dietaryOption": "vegetarian_friendly"
+        "dietaryOption": null
     },
     {
         "id": 86,
@@ -3748,7 +3789,7 @@ export const initialRestaurants = [
             "lng": null
         },
         "halalStatus": "non_halal",
-        "dietaryOption": "vegetarian_friendly"
+        "dietaryOption": null
     },
     {
         "id": 90,
@@ -3791,7 +3832,7 @@ export const initialRestaurants = [
             "lng": null
         },
         "halalStatus": "non_halal",
-        "dietaryOption": "vegetarian_friendly"
+        "dietaryOption": null
     },
     {
         "id": 91,
@@ -3832,7 +3873,7 @@ export const initialRestaurants = [
             "lng": null
         },
         "halalStatus": "non_halal",
-        "dietaryOption": "vegetarian_friendly"
+        "dietaryOption": null
     },
     {
         "id": 92,
@@ -3873,7 +3914,7 @@ export const initialRestaurants = [
             "lng": null
         },
         "halalStatus": "non_halal",
-        "dietaryOption": "vegetarian_friendly"
+        "dietaryOption": null
     },
     {
         "id": 93,
@@ -4034,7 +4075,7 @@ export const initialRestaurants = [
             "lng": null
         },
         "halalStatus": "non_halal",
-        "dietaryOption": "vegetarian_friendly"
+        "dietaryOption": null
     },
     {
         "id": 97,
@@ -4228,7 +4269,7 @@ export const initialRestaurants = [
             "lng": null
         },
         "halalStatus": "non_halal",
-        "dietaryOption": "vegetarian_friendly"
+        "dietaryOption": null
     },
     {
         "id": 102,
@@ -5035,7 +5076,7 @@ export const initialRestaurants = [
             "lng": null
         },
         "halalStatus": "non_halal",
-        "dietaryOption": "vegetarian_friendly"
+        "dietaryOption": null
     },
     {
         "id": 122,
@@ -5114,7 +5155,7 @@ export const initialRestaurants = [
             "lng": null
         },
         "halalStatus": "non_halal",
-        "dietaryOption": "vegetarian_friendly"
+        "dietaryOption": null
     },
     {
         "id": 124,
@@ -5307,7 +5348,7 @@ export const initialRestaurants = [
             "lng": null
         },
         "halalStatus": "non_halal",
-        "dietaryOption": "vegetarian_friendly"
+        "dietaryOption": null
     },
     {
         "id": 129,
@@ -5864,7 +5905,7 @@ export const initialRestaurants = [
             "lng": null
         },
         "halalStatus": "non_halal",
-        "dietaryOption": "vegetarian_friendly"
+        "dietaryOption": null
     },
     {
         "id": 144,
@@ -6067,7 +6108,7 @@ export const initialRestaurants = [
             "lng": null
         },
         "halalStatus": "non_halal",
-        "dietaryOption": "vegetarian_friendly"
+        "dietaryOption": null
     },
     {
         "id": 149,
@@ -6354,7 +6395,7 @@ export const initialRestaurants = [
             "lng": null
         },
         "halalStatus": "non_halal",
-        "dietaryOption": "vegetarian_friendly"
+        "dietaryOption": null
     },
     {
         "id": 156,
@@ -6470,7 +6511,7 @@ export const initialRestaurants = [
             "lng": null
         },
         "halalStatus": "non_halal",
-        "dietaryOption": "vegetarian_friendly"
+        "dietaryOption": null
     },
     {
         "id": 159,
@@ -6633,7 +6674,7 @@ export const initialRestaurants = [
             "lng": null
         },
         "halalStatus": "non_halal",
-        "dietaryOption": "vegetarian_friendly"
+        "dietaryOption": null
     },
     {
         "id": 163,
@@ -6753,7 +6794,7 @@ export const initialRestaurants = [
             "lng": null
         },
         "halalStatus": "non_halal",
-        "dietaryOption": "vegetarian_friendly"
+        "dietaryOption": null
     },
     {
         "id": 166,
@@ -6794,7 +6835,7 @@ export const initialRestaurants = [
             "lng": null
         },
         "halalStatus": "non_halal",
-        "dietaryOption": "vegetarian_friendly"
+        "dietaryOption": null
     },
     {
         "id": 167,
@@ -6911,7 +6952,7 @@ export const initialRestaurants = [
             "lng": null
         },
         "halalStatus": "non_halal",
-        "dietaryOption": "vegetarian_friendly"
+        "dietaryOption": null
     },
     {
         "id": 170,
@@ -7031,7 +7072,7 @@ export const initialRestaurants = [
             "lng": null
         },
         "halalStatus": "non_halal",
-        "dietaryOption": "vegetarian_friendly"
+        "dietaryOption": null
     },
     {
         "id": 173,
@@ -7169,7 +7210,7 @@ export const initialRestaurants = [
             "lng": null
         },
         "halalStatus": "certified",
-        "dietaryOption": "vegetarian_friendly",
+        "dietaryOption": null,
         "area": "Indahpura"
     },
     {
@@ -7286,7 +7327,7 @@ export const initialRestaurants = [
             "lng": null
         },
         "halalStatus": "non_halal",
-        "dietaryOption": "vegetarian_friendly"
+        "dietaryOption": null
     },
     {
         "id": 179,
@@ -7646,7 +7687,7 @@ export const initialRestaurants = [
             "lng": null
         },
         "halalStatus": "non_halal",
-        "dietaryOption": "vegetarian_friendly"
+        "dietaryOption": null
     },
     {
         "id": 189,
@@ -7712,7 +7753,7 @@ export const initialRestaurants = [
             "lng": null
         },
         "halalStatus": "certified",
-        "dietaryOption": "vegetarian_friendly"
+        "dietaryOption": null
     },
     {
         "id": 190,
@@ -8043,7 +8084,7 @@ export const initialRestaurants = [
             "lng": null
         },
         "halalStatus": "non_halal",
-        "dietaryOption": "vegetarian_friendly"
+        "dietaryOption": null
     },
     {
         "id": 198,
@@ -8250,7 +8291,7 @@ export const initialRestaurants = [
             "lng": null
         },
         "halalStatus": "non_halal",
-        "dietaryOption": "vegetarian_friendly",
+        "dietaryOption": null,
         "area": "Indahpura"
     },
     {
@@ -8330,7 +8371,7 @@ export const initialRestaurants = [
             "lng": null
         },
         "halalStatus": "non_halal",
-        "dietaryOption": "vegetarian_friendly"
+        "dietaryOption": null
     },
     {
         "id": 208,
@@ -8370,7 +8411,7 @@ export const initialRestaurants = [
             "lng": null
         },
         "halalStatus": "non_halal",
-        "dietaryOption": "vegetarian_friendly"
+        "dietaryOption": null
     },
     {
         "id": 211,
@@ -8650,7 +8691,7 @@ export const initialRestaurants = [
             "lng": null
         },
         "halalStatus": "non_halal",
-        "dietaryOption": "vegetarian_friendly"
+        "dietaryOption": null
     },
     {
         "id": 222,
@@ -8772,7 +8813,7 @@ export const initialRestaurants = [
             "lng": null
         },
         "halalStatus": "non_halal",
-        "dietaryOption": "vegetarian_friendly"
+        "dietaryOption": null
     },
     {
         "id": 225,
@@ -8899,7 +8940,7 @@ export const initialRestaurants = [
             "lng": null
         },
         "halalStatus": "non_halal",
-        "dietaryOption": "vegetarian_friendly"
+        "dietaryOption": null
     },
     {
         "id": 228,
@@ -8939,7 +8980,7 @@ export const initialRestaurants = [
             "lng": null
         },
         "halalStatus": "non_halal",
-        "dietaryOption": "vegetarian_friendly"
+        "dietaryOption": null
     },
     {
         "id": 229,
@@ -8981,7 +9022,7 @@ export const initialRestaurants = [
             "lng": null
         },
         "halalStatus": "non_halal",
-        "dietaryOption": "vegetarian_friendly"
+        "dietaryOption": null
     },
     {
         "id": 230,
@@ -9299,11 +9340,9 @@ export const initialRestaurants = [
         "address": "1, Jln Kiambang 2, Pusat Komersial Indah, Bandar Indahpura, 81000 Kulai, Johor Darul Ta'zim",
         "opening_hours": "Monday: 11:30am - 10pm\nTuesday: 11:30am - 10pm\nWednesday: 11:30am - 10pm\nThursday: 11:30am - 10pm\nFriday: 11:30am - 10pm\nSaturday: 11:30am - 10pm\nSunday: 11:30am - 10pm",
         "category": [
-            "酒吧",
             "饭类"
         ],
         "categories": [
-            "酒吧",
             "饭类"
         ],
         "rating": 0,
@@ -9444,7 +9483,7 @@ export const initialRestaurants = [
             "lng": null
         },
         "halalStatus": "non_halal",
-        "dietaryOption": "vegetarian_friendly"
+        "dietaryOption": null
     },
     {
         "id": 243,
@@ -9515,7 +9554,7 @@ export const initialRestaurants = [
             "lng": null
         },
         "halalStatus": "non_halal",
-        "dietaryOption": "vegetarian_friendly"
+        "dietaryOption": null
     },
     {
         "id": 245,
@@ -9968,7 +10007,7 @@ export const initialRestaurants = [
             "lng": null
         },
         "halalStatus": "non_halal",
-        "dietaryOption": "vegetarian_friendly"
+        "dietaryOption": null
     },
     {
         "id": 256,
@@ -10049,7 +10088,7 @@ export const initialRestaurants = [
             "lng": null
         },
         "halalStatus": "non_halal",
-        "dietaryOption": "vegetarian_friendly"
+        "dietaryOption": null
     },
     {
         "id": 258,
@@ -10126,7 +10165,7 @@ export const initialRestaurants = [
             "lng": null
         },
         "halalStatus": "non_halal",
-        "dietaryOption": "vegetarian_friendly"
+        "dietaryOption": null
     },
     {
         "id": 261,
@@ -10136,14 +10175,12 @@ export const initialRestaurants = [
         "intro_zh": "一家以 南洋风味 为主的连锁餐厅，环境怀旧舒适（冷气），菜单选择非常丰富，涵盖 传统烤面包/咖啡、点心、各类面食、饭类（如椰浆饭、炒饭）、西餐 以及 甜品。适合家庭聚餐或朋友喝茶，是一个“一站式”解决早午晚餐的好地方。",
         "intro_en": "A famous Nanyang-style restaurant offering traditional coffee, toast, dim sum, and a variety of local delicacies in a nostalgic and comfortable setting.",
         "address": "Multiple Locations in Kulai & Senai",
-        "opening_hours": "Daily: 8am - 10:30pm",
+        "opening_hours": "Monday: 8am - 10:30pm\nTuesday: 8am - 10:30pm\nWednesday: 8am - 10:30pm\nThursday: 8am - 10:30pm\nFriday: 8am - 10:30pm\nSaturday: 8am - 10:30pm\nSunday: 8am - 10:30pm",
         "category": [
-            "Cafe",
-            "饮品"
+            "Cafe"
         ],
         "categories": [
-            "Cafe",
-            "饮品"
+            "Cafe"
         ],
         "rating": 0,
         "image": "https://lirp.cdn-website.com/17f4972a/dms3rep/multi/opt/Tiktok+TG+Logo-1920w.png",
@@ -10196,7 +10233,7 @@ export const initialRestaurants = [
             "lng": null
         },
         "halalStatus": "certified",
-        "dietaryOption": "vegetarian_friendly"
+        "dietaryOption": null
     },
     {
         "id": 262,
@@ -10395,7 +10432,7 @@ export const initialRestaurants = [
             "lng": null
         },
         "halalStatus": "non_halal",
-        "dietaryOption": "vegetarian_friendly"
+        "dietaryOption": null
     },
     {
         "id": 267,
@@ -10596,7 +10633,7 @@ export const initialRestaurants = [
             "lng": null
         },
         "halalStatus": "certified",
-        "dietaryOption": "vegetarian_friendly"
+        "dietaryOption": null
     },
     {
         "id": 272,
@@ -10639,7 +10676,7 @@ export const initialRestaurants = [
             "lng": null
         },
         "halalStatus": "certified",
-        "dietaryOption": "vegetarian_friendly"
+        "dietaryOption": null
     },
     {
         "id": 274,
@@ -10680,7 +10717,7 @@ export const initialRestaurants = [
             "lng": null
         },
         "halalStatus": "non_halal",
-        "dietaryOption": "vegetarian_friendly"
+        "dietaryOption": null
     },
     {
         "id": 275,
@@ -10762,7 +10799,7 @@ export const initialRestaurants = [
             "lng": null
         },
         "halalStatus": "non_halal",
-        "dietaryOption": "vegetarian_friendly"
+        "dietaryOption": null
     },
     {
         "id": 277,
@@ -10924,7 +10961,7 @@ export const initialRestaurants = [
             "lng": null
         },
         "halalStatus": "non_halal",
-        "dietaryOption": "vegetarian_friendly"
+        "dietaryOption": null
     },
     {
         "id": 281,
@@ -11456,7 +11493,7 @@ export const initialRestaurants = [
             "lng": null
         },
         "halalStatus": "non_halal",
-        "dietaryOption": "vegetarian_friendly"
+        "dietaryOption": null
     },
     {
         "id": 292,
@@ -11535,7 +11572,7 @@ export const initialRestaurants = [
             "lng": null
         },
         "halalStatus": "non_halal",
-        "dietaryOption": "vegetarian_friendly"
+        "dietaryOption": null
     },
     {
         "id": 294,
@@ -11577,7 +11614,7 @@ export const initialRestaurants = [
             "lng": null
         },
         "halalStatus": "non_halal",
-        "dietaryOption": "vegetarian_friendly"
+        "dietaryOption": null
     },
     {
         "id": 295,
@@ -11619,7 +11656,7 @@ export const initialRestaurants = [
         },
         "halalStatus": "certified",
         "area": "Senai",
-        "dietaryOption": "vegetarian_friendly"
+        "dietaryOption": null
     },
     {
         "id": 296,
@@ -11662,7 +11699,7 @@ export const initialRestaurants = [
             "lng": null
         },
         "halalStatus": "non_halal",
-        "dietaryOption": "vegetarian_friendly"
+        "dietaryOption": null
     },
     {
         "id": 297,
@@ -12004,7 +12041,7 @@ export const initialRestaurants = [
             "lng": null
         },
         "halalStatus": "certified",
-        "dietaryOption": "vegetarian_friendly"
+        "dietaryOption": null
     },
     {
         "id": 309,
@@ -12065,7 +12102,7 @@ export const initialRestaurants = [
             "lng": null
         },
         "halalStatus": "certified",
-        "dietaryOption": "vegetarian_friendly"
+        "dietaryOption": null
     },
     {
         "id": 310,
@@ -12117,7 +12154,7 @@ export const initialRestaurants = [
             "lng": null
         },
         "halalStatus": "certified",
-        "dietaryOption": "vegetarian_friendly"
+        "dietaryOption": null
     },
     {
         "id": 311,
@@ -12138,12 +12175,8 @@ export const initialRestaurants = [
             "晚餐",
             "宵夜"
         ],
-        "category": [
-            "路边摊/餐车"
-        ],
-        "categories": [
-            "路边摊/餐车"
-        ],
+        "category": [],
+        "categories": [],
         "rating": 0,
         "image": "https://i.ibb.co/KxW3LMnj/image.jpg",
         "subStalls": [],
@@ -12185,12 +12218,16 @@ export const initialRestaurants = [
             "下午茶"
         ],
         "category": [
-            "路边摊/餐车",
-            "蛋糕甜点"
+            "咖啡店",
+            "蛋糕甜点",
+            "粉类",
+            "饭类"
         ],
         "categories": [
-            "路边摊/餐车",
-            "蛋糕甜点"
+            "咖啡店",
+            "蛋糕甜点",
+            "粉类",
+            "饭类"
         ],
         "rating": 0,
         "image": "https://i.ibb.co/x4bn4np/image.jpg",
@@ -12913,7 +12950,7 @@ export const initialRestaurants = [
         },
         "phone": "",
         "halalStatus": "non_halal",
-        "dietaryOption": "vegetarian_friendly"
+        "dietaryOption": null
     },
     {
         "id": 331,
@@ -12996,15 +13033,13 @@ export const initialRestaurants = [
         "name": "联邦蛋糕西点",
         "name_en": "Kedai Kek Lian Pang",
         "address": "No.6, Jalan Susur Kulai 4, Taman Sri Kulai Baru, 81000 Kulai, Johor Darul Ta'zim",
-        "opening_hours": "Monday: 9am–7pm\nTuesday: 9am–7pm\nWednesday: 9am–7pm\nThursday: 9am–7pm\nFriday: 9am–7pm\nSaturday: 9am–7pm\nSunday: 9am–7pm",
+        "opening_hours": "Monday: 9am - 7pm\nTuesday: 9am - 7pm\nWednesday: 9am - 7pm\nThursday: 9am - 7pm\nFriday: 9am - 7pm\nSaturday: 9am - 7pm\nSunday: 9am - 7pm",
         "intro_zh": "古来非常著名的 传统蛋糕西点店（Old School Bakery）。最出名的是 传统牛油蛋糕（Butter Cake），口感扎实绵密，牛油香气十足。此外也售卖 各类传统面包、蛋挞 和 喜饼。是购买 传统风味蛋糕/伴手礼 的首选老店。",
         "intro_en": "",
         "category": [
-            "饮品",
             "蛋糕甜点"
         ],
         "categories": [
-            "饮品",
             "蛋糕甜点"
         ],
         "rating": 0,
@@ -13107,7 +13142,7 @@ export const initialRestaurants = [
         },
         "phone": "076632082",
         "halalStatus": "certified",
-        "dietaryOption": "vegetarian_friendly"
+        "dietaryOption": null
     },
     {
         "id": 336,
@@ -13259,7 +13294,7 @@ export const initialRestaurants = [
         },
         "phone": "0199783485",
         "halalStatus": "non_halal",
-        "dietaryOption": "vegetarian_friendly"
+        "dietaryOption": null
     },
     {
         "id": 340,
@@ -13994,7 +14029,7 @@ export const initialRestaurants = [
         "phone": "",
         "link": "https://www.facebook.com/profile.php?id=61571374596803",
         "halalStatus": "non_halal",
-        "dietaryOption": "vegetarian_friendly"
+        "dietaryOption": null
     },
     {
         "id": 361,
@@ -14115,7 +14150,7 @@ export const initialRestaurants = [
         "phone": "018-376 3625",
         "link": "https://www.facebook.com/profile.php?id=100069963770411",
         "halalStatus": "non_halal",
-        "dietaryOption": "vegetarian_friendly"
+        "dietaryOption": null
     },
     {
         "id": 365,
@@ -14435,7 +14470,7 @@ export const initialRestaurants = [
         "phone": "0182359412",
         "halalStatus": "muslim_owned",
         "area": "Senai",
-        "dietaryOption": "vegetarian_friendly"
+        "dietaryOption": null
     },
     {
         "id": 374,
@@ -14591,7 +14626,7 @@ export const initialRestaurants = [
         "phone": "0105706367",
         "halalStatus": "muslim_owned",
         "area": "Senai",
-        "dietaryOption": "vegetarian_friendly"
+        "dietaryOption": null
     },
     {
         "id": 378,
@@ -14709,7 +14744,7 @@ export const initialRestaurants = [
         "phone": "0106627020",
         "halalStatus": "muslim_owned",
         "area": "Senai",
-        "dietaryOption": "vegetarian_friendly"
+        "dietaryOption": null
     },
     {
         "id": 381,
@@ -15479,7 +15514,7 @@ export const initialRestaurants = [
             "lng": null
         },
         "halalStatus": "certified",
-        "dietaryOption": "vegetarian_friendly"
+        "dietaryOption": null
     },
     {
         "id": 400,
@@ -15539,7 +15574,7 @@ export const initialRestaurants = [
             "lng": null
         },
         "halalStatus": "certified",
-        "dietaryOption": "vegetarian_friendly"
+        "dietaryOption": null
     },
     {
         "id": 401,
@@ -15764,7 +15799,7 @@ export const initialRestaurants = [
         "phone": "",
         "halalStatus": "no_pork",
         "area": "Senai",
-        "dietaryOption": "vegetarian_friendly"
+        "dietaryOption": null
     },
     {
         "id": 406,
@@ -15893,7 +15928,7 @@ export const initialRestaurants = [
         "phone": "012-766 6698",
         "halalStatus": "non_halal",
         "area": "Bandar Putra",
-        "dietaryOption": "vegetarian_friendly"
+        "dietaryOption": null
     },
     {
         "id": 409,
@@ -16194,7 +16229,7 @@ export const initialRestaurants = [
         "phone": "",
         "halalStatus": "no_pork",
         "area": "Kulai Town",
-        "dietaryOption": "vegetarian_friendly"
+        "dietaryOption": null
     },
     {
         "id": 416,
@@ -16712,6 +16747,254 @@ export const initialRestaurants = [
             "lat": 1.64265,
             "lng": 103.614474
         },
+        "halalStatus": "non_halal",
+        "dietaryOption": null
+    },
+    {
+        "id": 425,
+        "area": "Indahpura",
+        "name": "点心苑",
+        "name_en": "Dian Xin Yuan",
+        "intro_zh": "位于优美城(Indahpura)的点心与咖啡店，提供早市点心和各类美食。",
+        "intro_en": "Dim sum and coffee shop located in Indahpura, serving morning dim sum and a variety of local food.",
+        "address": "575 & 576, Jalan Kenanga 29/10, Bandar Indahpura, 81000 Kulai, Johor Darul Ta'zim",
+        "opening_hours": "Monday: 5:30am - 1:30pm\nTuesday: 5:30am - 1:30pm\nWednesday: 5:30am - 1:30pm\nThursday: 5:30am - 1:30pm\nFriday: 5:30am - 1:30pm\nSaturday: 5:30am - 1:30pm\nSunday: 5:30am - 1:30pm",
+        "category": [
+            "咖啡店",
+            "点心"
+        ],
+        "categories": [
+            "咖啡店",
+            "点心"
+        ],
+        "rating": 0,
+        "image": "https://ibb.co/7xBSqH5w",
+        "subStalls": [
+            {
+                "name": "",
+                "image": "https://ibb.co/7xBSqH5w"
+            },
+            {
+                "name": "",
+                "image": "https://ibb.co/Z6cNsn09"
+            },
+            {
+                "name": "",
+                "image": "https://ibb.co/Y7DJSvRP"
+            },
+            {
+                "name": "",
+                "image": "https://ibb.co/JFttHgBT"
+            },
+            {
+                "name": "",
+                "image": "https://ibb.co/TM4mTc4B"
+            },
+            {
+                "name": "",
+                "image": "https://ibb.co/fGyfskSR"
+            },
+            {
+                "name": "",
+                "image": "https://ibb.co/JWRcCLKC"
+            },
+            {
+                "name": "",
+                "image": "https://ibb.co/ycV4Cbmd"
+            },
+            {
+                "name": "",
+                "image": "https://ibb.co/tMg1W1Pb"
+            }
+        ],
+        "price_range": "RM 10-20",
+        "menu_link": "",
+        "website_link": "",
+        "delivery_link": "",
+        "isVegetarian": false,
+        "isNoBeef": false,
+        "manualStatus": "auto",
+        "branches": [],
+        "tags": [
+            "Dim Sum",
+            "Breakfast",
+            "Coffee Shop"
+        ],
+        "subscriptionLevel": 0,
+        "isVIP": false,
+        "priority": 0,
+        "whatsappLink": "https://wa.me/60137878788",
+        "location": {
+            "lat": null,
+            "lng": null
+        },
+        "phone": "013-787 8788",
+        "halalStatus": "non_halal",
+        "dietaryOption": null
+    },
+    {
+        "id": 426,
+        "area": "Indahpura",
+        "name": "126美食阁",
+        "name_en": "Restoran 126",
+        "intro_zh": "位于优美城(Indahpura)的热闹美食阁，汇集了多种本地美食档口。",
+        "intro_en": "Bustling food court in Indahpura featuring a wide variety of local food stalls.",
+        "address": "Jalan Kenanga 29/10, Bandar Indahpura, 81000 Kulai, Johor Darul Ta'zim",
+        "opening_hours": "Monday: 7am - 11pm\nTuesday: 7am - 11pm\nWednesday: 7am - 11pm\nThursday: 7am - 11pm\nFriday: 7am - 11pm\nSaturday: 7am - 11pm\nSunday: 7am - 11pm",
+        "category": [
+            "咖啡店"
+        ],
+        "categories": [
+            "咖啡店"
+        ],
+        "rating": 0,
+        "image": "https://ibb.co/2Y7Fy3zv",
+        "subStalls": [
+            {
+                "name": "",
+                "image": "https://ibb.co/2Y7Fy3zv"
+            },
+            {
+                "name": "",
+                "image": "https://ibb.co/mrtmYPqv"
+            },
+            {
+                "name": "",
+                "image": "https://ibb.co/W4Zwr7V1"
+            },
+            {
+                "name": "",
+                "image": "https://ibb.co/BK6PLbQs"
+            },
+            {
+                "name": "",
+                "image": "https://ibb.co/q3vM9FmJ"
+            },
+            {
+                "name": "",
+                "image": "https://ibb.co/sS2yNgb"
+            },
+            {
+                "name": "",
+                "image": "https://ibb.co/d08CXRXQ"
+            },
+            {
+                "name": "",
+                "image": "https://ibb.co/cXKD8MBq"
+            },
+            {
+                "name": "",
+                "image": "https://ibb.co/5gYJ6gfk"
+            }
+        ],
+        "price_range": "RM 10-20",
+        "menu_link": "",
+        "website_link": "",
+        "delivery_link": "",
+        "isVegetarian": false,
+        "isNoBeef": false,
+        "manualStatus": "auto",
+        "branches": [],
+        "tags": [
+            "Food Court",
+            "Local Food"
+        ],
+        "subscriptionLevel": 0,
+        "isVIP": false,
+        "priority": 0,
+        "whatsappLink": "",
+        "location": {
+            "lat": null,
+            "lng": null
+        },
+        "phone": "",
+        "halalStatus": "non_halal",
+        "dietaryOption": null
+    },
+    {
+        "id": 427,
+        "area": "Indahpura",
+        "name": "五脚基美食港",
+        "name_en": "Kopitiam Kaki Lima",
+        "intro_zh": "位于优美城(Indahpura)的咖啡店，提供各类本地美食。",
+        "intro_en": "Kopitiam located in Indahpura offering various local delights.",
+        "address": "Bandar Indahpura, 81000 Kulai, Johor",
+        "opening_hours": "Daily: 7am - 11pm",
+        "category": [
+            "咖啡店"
+        ],
+        "categories": [
+            "咖啡店"
+        ],
+        "rating": 0,
+        "image": "https://ibb.co/rGDCQYWC",
+        "subStalls": [
+            {
+                "name": "",
+                "image": "https://ibb.co/rGDCQYWC"
+            },
+            {
+                "name": "",
+                "image": "https://ibb.co/qY72Ldxj"
+            },
+            {
+                "name": "",
+                "image": "https://ibb.co/Fbn74Kn2"
+            },
+            {
+                "name": "",
+                "image": "https://ibb.co/PG6Z2RLG"
+            },
+            {
+                "name": "",
+                "image": "https://ibb.co/1tdj4QzF"
+            },
+            {
+                "name": "",
+                "image": "https://ibb.co/Mx0yztD2"
+            },
+            {
+                "name": "",
+                "image": "https://ibb.co/Cpb2RVh5"
+            },
+            {
+                "name": "",
+                "image": "https://ibb.co/qMWQjpsV"
+            },
+            {
+                "name": "",
+                "image": "https://ibb.co/hFWCMX1N"
+            },
+            {
+                "name": "",
+                "image": "https://ibb.co/237M0sKx"
+            },
+            {
+                "name": "",
+                "image": "https://ibb.co/767tcd8"
+            }
+        ],
+        "price_range": "RM 10-20",
+        "menu_link": "",
+        "website_link": "",
+        "delivery_link": "",
+        "isVegetarian": false,
+        "isNoBeef": false,
+        "manualStatus": "auto",
+        "branches": [],
+        "tags": [
+            "Coffee Shop",
+            "Local Food"
+        ],
+        "subscriptionLevel": 0,
+        "isVIP": false,
+        "priority": 0,
+        "whatsappLink": "",
+        "location": {
+            "lat": 1.642765,
+            "lng": 103.615597
+        },
+        "phone": "",
         "halalStatus": "non_halal",
         "dietaryOption": null
     }

@@ -330,17 +330,17 @@ const ResultModal = ({ restaurant, onClose, onAddReview, isAdmin, onUpdateRestau
                     {/* Halal Status Badge */}
                     {restaurant.halalStatus === 'certified' && (
                         <span className="bg-emerald-600 text-white border border-emerald-500 px-2 py-0.5 rounded text-xs font-bold mr-2 backdrop-blur-md flex items-center shadow-sm">
-                            <span className="mr-1">✅</span> Halal Certified
+                            <span className="mr-1">✅</span> {t('filter.halal_options.certified')}
                         </span>
                     )}
                     {restaurant.halalStatus === 'muslim_owned' && (
                         <span className="bg-green-600/80 text-white border border-green-500 px-2 py-0.5 rounded text-xs font-bold mr-2 backdrop-blur-md flex items-center shadow-sm">
-                            <span className="mr-1">☪️</span> Muslim Owned
+                            <span className="mr-1">☪️</span> {t('filter.halal_options.muslim_owned')}
                         </span>
                     )}
                     {restaurant.halalStatus === 'no_pork' && (
                         <span className="bg-orange-600/80 text-white border border-orange-500 px-2 py-0.5 rounded text-xs font-bold mr-2 backdrop-blur-md flex items-center shadow-sm">
-                            <span className="mr-1">🍖</span> No Pork No Lard
+                            <span className="mr-1">🍖</span> {t('filter.halal_options.no_pork')}
                         </span>
                     )}
                     <span className="bg-white/10 border border-white/20 px-2 py-0.5 rounded text-white font-bold text-xs mr-2 backdrop-blur-md">
@@ -603,9 +603,17 @@ const ResultModal = ({ restaurant, onClose, onAddReview, isAdmin, onUpdateRestau
                             onClick={() => {
                                 if (!showHalalDropdown && halalButtonRef.current) {
                                     const rect = halalButtonRef.current.getBoundingClientRect();
+                                    // Calculate position to keep it on screen
+                                    let left = rect.left;
+                                    // If dropdown would go off right screen edge (w-64 = 256px)
+                                    if (left + 256 > window.innerWidth) {
+                                        left = window.innerWidth - 266; // 10px padding from right
+                                        if (left < 10) left = 10; // 10px padding from left
+                                    }
+
                                     setDropdownPos({ 
-                                        top: rect.top, 
-                                        left: rect.right + 10 
+                                        top: rect.bottom + 5, 
+                                        left: left
                                     });
                                 }
                                 setShowHalalDropdown(!showHalalDropdown);
@@ -1175,28 +1183,7 @@ Tuesday: Closed
                  )}
               </div>
 
-              <div className="flex gap-2 w-full">
-                  <a
-                    href={mapUrl}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="flex-1 flex items-center justify-center py-3 bg-white hover:bg-gray-200 text-black rounded-xl font-bold transition shadow-lg shadow-white/10"
-                  >
-                    <ExternalLink size={18} className="mr-2" />
-                    {t('modal.navigate', 'Google Maps')}
-                  </a>
-                  {restaurant.location?.lat && restaurant.location?.lng && (
-                     <a
-                        href={`https://waze.com/ul?ll=${restaurant.location.lat},${restaurant.location.lng}&navigate=yes`}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="flex-1 flex items-center justify-center py-3 bg-[#33ccff] hover:bg-[#33ccff]/90 text-black rounded-xl font-bold transition shadow-lg shadow-blue-400/10"
-                     >
-                        <Navigation size={18} className="mr-2 fill-current" />
-                        Waze
-                     </a>
-                  )}
-              </div>
+
             </div>
 
             <hr className="border-gray-700" />

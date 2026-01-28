@@ -14,6 +14,11 @@ i18n
       en: { translation: en }
     },
     fallbackLng: 'zh',
+    detection: {
+      order: ['localStorage'],
+      lookupLocalStorage: 'kulaifood_lang',
+      caches: ['localStorage'],
+    },
     debug: false,
     interpolation: {
       escapeValue: false // React already escapes values

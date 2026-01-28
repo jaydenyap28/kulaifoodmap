@@ -914,7 +914,7 @@ function App() {
         </div>
 
         {/* Special Filters Row (Below Hero Stack) */}
-        <div className="flex flex-col items-center gap-4 mb-8 relative z-20">
+        <div className="flex flex-col items-center gap-4 mb-8 relative z-30">
             
             {/* Filter Buttons Group */}
             <div className="flex flex-wrap justify-center gap-3">
@@ -964,18 +964,18 @@ function App() {
                             <div className="fixed inset-0 z-40" onClick={() => setShowHalalMenu(false)}></div>
                             
                             {/* Menu */}
-                            <div className="absolute top-full left-0 mt-2 w-48 bg-[#1e1e1e] border border-gray-700 rounded-xl shadow-xl z-50 overflow-hidden flex flex-col p-1">
+                            <div className="absolute top-full left-1/2 -translate-x-1/2 mt-2 w-max min-w-[12rem] bg-[#1e1e1e] border border-gray-700 rounded-xl shadow-xl z-50 overflow-hidden flex flex-col p-1">
                                 <button
                                     onClick={() => { setHalalFilter(null); setShowHalalMenu(false); }}
-                                    className={`px-4 py-2 text-left text-sm rounded-lg hover:bg-white/10 ${!halalFilter ? 'text-white font-bold' : 'text-gray-400'}`}
+                                    className={`px-4 py-2 text-center text-sm rounded-lg hover:bg-white/10 ${!halalFilter ? 'text-white font-bold' : 'text-gray-400'}`}
                                 >
                                     {t('filter.all')}
                                 </button>
-                                {['certified', 'muslim_owned', 'no_pork'].map(status => (
+                                {['certified', 'muslim_owned', 'no_pork', 'non_halal'].map(status => (
                                     <button
                                         key={status}
                                         onClick={() => { setHalalFilter(status); setShowHalalMenu(false); }}
-                                        className={`px-4 py-2 text-left text-sm rounded-lg hover:bg-white/10 ${halalFilter === status ? 'text-green-400 font-bold' : 'text-gray-400'}`}
+                                        className={`px-4 py-2 text-center text-sm rounded-lg hover:bg-white/10 ${halalFilter === status ? 'text-green-400 font-bold' : 'text-gray-400'}`}
                                     >
                                         {t(`filter.halal_options.${status}`)}
                                     </button>
