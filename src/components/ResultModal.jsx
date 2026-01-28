@@ -1048,27 +1048,14 @@ Tuesday: Closed
                     </div>
                   </div>
                   
-                  {/* Waze Navigation Button */}
+                  {/* Google Maps Navigation Button (Primary) */}
                   <button
-                    onClick={() => {
-                        const lat = restaurant.location?.lat;
-                        const lng = restaurant.location?.lng;
-                        let url;
-                        // Prioritize lat/lng as requested
-                        if (lat && lng) {
-                            url = `https://waze.com/ul?ll=${lat},${lng}&navigate=yes`;
-                        } else {
-                            // Smart fallback to address search if coords are missing (ensures 100% coverage)
-                            const query = encodeURIComponent(restaurant.address || restaurant.name);
-                            url = `https://waze.com/ul?q=${query}&navigate=yes`;
-                        }
-                        window.open(url, '_blank');
-                    }}
-                    className="w-full mt-4 flex items-center justify-center gap-2 py-3 rounded-xl font-bold text-white shadow-lg hover:brightness-110 transition-all active:scale-95 group"
-                    style={{ backgroundColor: '#33CCFF' }}
+                    onClick={() => window.open(mapUrl, '_blank')}
+                    className="w-full mt-4 flex items-center justify-center gap-2 py-3 rounded-xl font-bold text-black shadow-lg hover:brightness-110 transition-all active:scale-95 group"
+                    style={{ backgroundColor: '#ffffff' }}
                   >
                     <Navigation size={20} className="fill-current group-hover:scale-110 transition-transform" />
-                    使用 Waze 导航 (Navigate with Waze)
+                    使用Google Maps导航 (Navigate)
                   </button>
 
                   {/* Branches Display (For Chain Restaurants) */}
