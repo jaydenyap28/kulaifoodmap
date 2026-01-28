@@ -897,8 +897,8 @@ export const initialRestaurants = [
         "name_en": "CJ21 Kopitiam",
         "address": "53, Jalan Bunga Santalia, Taman Sri Kulai Baru, 81000 Kulai, Johor Darul Ta'zim",
         "opening_hours": "Monday: Closed\nTuesday: 7am - 2pm\nWednesday: 7am - 2pm\nThursday: 7am - 2pm\nFriday: 7am - 2pm\nSaturday: 7am - 2pm\nSunday: 7am - 2pm",
-        "intro_zh": "位于古来21哩的道地茶室，汇集了多种本地美食档口。环境宽敞舒适，是附近居民解决早餐和午餐的好去处。",
-        "intro_en": "A local Kopitiam located at Kulai 21 Miles, hosting a variety of local hawker food stalls. Spacious and comfortable environment, it is a great spot for breakfast and lunch for the neighborhood residents.",
+        "intro_zh": "位于古来21哩的道地茶室。环境宽敞，是附近居民解决早餐和午餐的好去处。",
+        "intro_en": "A local kopitiam located at Kulai 21 Miles. With its spacious setting, it is a go-to spot for locals to settle their breakfast and lunch.",
         "category": [
             "咖啡店"
         ],
@@ -1466,7 +1466,7 @@ export const initialRestaurants = [
             "咖啡店"
         ],
         "categories": [
-            "咖啡店"
+            "Cafe"
         ],
         "rating": 0,
         "image": "https://i.ibb.co/jkZBWSpD/Manggo-Tree.jpg",
@@ -1981,7 +1981,7 @@ export const initialRestaurants = [
         "name": "Kopi Saigon",
         "name_en": "",
         "address": "73, Jln. Kenanga 29/11, Bandar Indahpura, 81000 Kulai, Johor Darul Ta'zim",
-        "opening_hours": "10am – 10pm (Wed Closed)",
+        "opening_hours": "Monday: 10am - 10pm\nTuesday: 10am - 10pm\nWednesday: Closed\nThursday: 10am - 10pm\nFriday: 10am - 10pm\nSaturday: 10am - 10pm\nSunday: 10am - 10pm",
         "intro_zh": "一家受 越南咖啡文化启发 的马来西亚咖啡连锁品牌，主打 越式滴滤咖啡（如招牌 Kopi Saigon），以浓郁甜香的风味著称。咖啡系列中 Kopi Saigon 和 Kopi Buttercream 在顾客中很受欢迎，口感香浓且顺滑，同时也提供多样饮品选择。",
         "intro_en": "A popular Vietnamese coffee chain serving authentic and aromatic coffee. Signature drinks include Kopi Saigon and Kopi Buttercream, known for their rich flavor and smooth texture.",
         "category": [
@@ -1989,8 +1989,8 @@ export const initialRestaurants = [
             "马来与印度风味"
         ],
         "categories": [
-            "咖啡店",
-            "马来与印度风味"
+            "马来与印度风味",
+            "Cafe"
         ],
         "rating": 0,
         "image": "https://i.ibb.co/B534LYzt/Kopi-Saigon-Kulai.jpg",
@@ -2068,7 +2068,9 @@ export const initialRestaurants = [
             "咖啡店"
         ],
         "categories": [
-            "咖啡店"
+            "饭类",
+            "粉类",
+            "Cafe"
         ],
         "rating": 0,
         "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR3HcsTwKHEpmNyyt6khZ1tuk-8QJX7vtgOwA&s",
@@ -2230,7 +2232,10 @@ export const initialRestaurants = [
             "咖啡店"
         ],
         "categories": [
-            "咖啡店"
+            "饭类",
+            "粉类",
+            "日本餐",
+            "韩国餐"
         ],
         "rating": 0,
         "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRmhGKYqVaP1GMhK2UTAUdPq_C6vwapWMtGfg&s",
@@ -2594,7 +2599,7 @@ export const initialRestaurants = [
             "咖啡店"
         ],
         "categories": [
-            "咖啡店"
+            "Cafe"
         ],
         "rating": 0,
         "image": "https://i.ibb.co/60CtjfNr/image.jpg",
@@ -3180,14 +3185,16 @@ export const initialRestaurants = [
         "name": "笨珍亚九咖啡",
         "name_en": "Pontian Coffee 9",
         "address": "No 155, Pusat Komersial Indah, Jalan Kiambang 13, Bandar Indahpura, 81000 Kulai, Johor Darul Ta'zim",
-        "opening_hours": "Monday: 8 am–6 pm\nTuesday: 8 am–6 pm\nWednesday: 8 am–6 pm\nThursday: 8 am–6 pm\nFriday: 8 am–6 pm\nSaturday: 8 am–6 pm\nSunday: 8 am–6 pm",
+        "opening_hours": "Monday: 8am - 6pm\nTuesday: 8am - 6pm\nWednesday: 8am - 6pm\nThursday: 8am - 6pm\nFriday: 8am - 6pm\nSaturday: 8am - 6pm\nSunday: 8am - 6pm",
         "intro_zh": "著名的传统咖啡店，源自笨珍。以其香浓的传统咖啡、烤面包和半生熟蛋闻名。也提供云吞面、叻沙等本地美食，是享用南洋早餐的好去处。",
         "intro_en": "A famous traditional coffee shop originating from Pontian. Known for its aromatic traditional coffee, toast, and half-boiled eggs. Also offers local delights like Wanton Mee and Laksa. A great place for a Nanyang-style breakfast.",
         "category": [
             "咖啡店"
         ],
         "categories": [
-            "咖啡店"
+            "Cafe",
+            "粉类",
+            "饭类"
         ],
         "rating": 0,
         "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR6cqLTZv273gvrGrDCuMANxOoR-jLHkaQV3Q&s",
@@ -3267,7 +3274,9 @@ export const initialRestaurants = [
             "咖啡店"
         ],
         "categories": [
-            "咖啡店"
+            "饭类",
+            "粉类",
+            "Cafe"
         ],
         "rating": 0,
         "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRYXcL6MnIP799gWZcL0XEr8Xc_N6xpfz7Dbw&s",
@@ -3340,14 +3349,16 @@ export const initialRestaurants = [
         "name": "好运茶室",
         "name_en": "Goodluck Kopitiam",
         "address": "No.166, Pusat Komersial Indah, Jalan Kiambang 13, Bandar Indahpura, 81000 Kulai, Johor Darul Ta'zim",
-        "opening_hours": "7 am–5 pm Tuesday Closed",
+        "opening_hours": "Monday: 10am - 10pm\nTuesday: Closed\nWednesday: 10am - 10pm\nThursday: 10am - 10pm\nFriday: 10am - 10pm\nSaturday: 10am - 10pm\nSunday: 10am - 10pm",
         "intro_zh": "传统海南咖啡店，提供经典的烤面包、半熟蛋和香浓咖啡。环境怀旧，是当地人喜爱的早餐和下午茶地点。",
         "intro_en": "Traditional Hainanese Kopitiam serving classic toast, half-boiled eggs, and aromatic coffee. A nostalgic spot favored by locals for breakfast and tea time.",
         "category": [
             "咖啡店"
         ],
         "categories": [
-            "咖啡店"
+            "饭类",
+            "粉类",
+            "Cafe"
         ],
         "rating": 0,
         "image": "https://i.ibb.co/Q7JYwBVt/image.jpg",
@@ -3421,14 +3432,16 @@ export const initialRestaurants = [
         "name": "怡保风味馆",
         "name_en": "Taste Of Ipoh",
         "address": "143, Pusat Komersial Indah, Jalan Kiambang 13, Bandar Indahpura, 81000 Kulai, Johor Darul Ta'zim",
-        "opening_hours": "8 am–5 pm Mon Closed",
+        "opening_hours": "Monday: Closed\nTuesday: 10am - 10pm\nWednesday: 10am - 10pm\nThursday: 10am - 10pm\nFriday: 10am - 10pm\nSaturday: 10am - 10pm\nSunday: 10am - 10pm",
         "intro_zh": "一家位于古来 Indahpura 的怡保风味餐馆，主打 怡保特色料理，包括 鸡丝河粉、猪肠粉、咖喱面等招牌口味，让你在古来也能吃到有南洋风格的怡保风味。",
         "intro_en": "Offers authentic Ipoh cuisine, featuring signature Bean Sprout Chicken and smooth Hor Fun noodles. Authentic flavors bringing the taste of Ipoh to Kulai.",
         "category": [
             "咖啡店"
         ],
         "categories": [
-            "咖啡店"
+            "Cafe",
+            "饭类",
+            "粉类"
         ],
         "rating": 0,
         "image": "https://i.ibb.co/d4X0pBqs/image.jpg",
@@ -3586,7 +3599,9 @@ export const initialRestaurants = [
             "咖啡店"
         ],
         "categories": [
-            "咖啡店"
+            "Cafe",
+            "粉类",
+            "饭类"
         ],
         "rating": 0,
         "image": "https://i.ibb.co/1YZ4fxrn/Kopiloco.jpg",
@@ -3664,7 +3679,9 @@ export const initialRestaurants = [
             "咖啡店"
         ],
         "categories": [
-            "咖啡店"
+            "Cafe",
+            "粉类",
+            "饭类"
         ],
         "rating": 0,
         "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRNZRNCjciIKncODXygtUCAATIh26XV-rVg8A&s",
@@ -4143,7 +4160,9 @@ export const initialRestaurants = [
             "咖啡店"
         ],
         "categories": [
-            "咖啡店"
+            "饭类",
+            "粉类",
+            "Cafe"
         ],
         "rating": 0,
         "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSTpS8PZaIsZyuD3RvYlZ1QNRxYaw-auGbOKw&s",
@@ -4258,14 +4277,16 @@ export const initialRestaurants = [
         "name": "慷美峰",
         "name_en": "Kang Bee Hong",
         "address": "182, Jalan Kiambang 12, Bandar Indahpura, 81000 Kulai, Johor Darul Ta'zim",
-        "opening_hours": "Monday: 8 am–9 pm\nTuesday: 8 am–9 pm\nWednesday: 8 am–9 pm\nThursday: 8 am–9 pm\nFriday: 8 am–9 pm\nSaturday: 8 am–9 pm\nSunday: 8 am–9 pm",
+        "opening_hours": "Monday: 8am - 9pm\nTuesday: 8am - 9pm\nWednesday: 8am - 9pm\nThursday: 8am - 9pm\nFriday: 8am - 9pm\nSaturday: 8am - 9pm\nSunday: 8am - 9pm",
         "intro_zh": "一家以 传统炭火烧腊 闻名的连锁烧腊餐厅，主打 炭烧叉烧、烧鸭、烤鸡和烧肉等烧腊类料理，烧腊香气浓郁、肉质鲜嫩。这里也有烧腊饭、烧腊面以及拼盘选择，适合喜欢经典南洋风味烧腊的食客。",
         "intro_en": "Established roasted meat chain famous for charcoal-roasted meats. Signature dishes include perfectly balanced Char Siew and crispy roasted duck.",
         "category": [
             "咖啡店"
         ],
         "categories": [
-            "咖啡店"
+            "Cafe",
+            "粉类",
+            "饭类"
         ],
         "rating": 0,
         "image": "https://i.ibb.co/WWpzpRt5/image.jpg",
@@ -4298,14 +4319,14 @@ export const initialRestaurants = [
         "name": "新莫九",
         "name_en": "Restaurant Xin Mo Gao",
         "address": "PUSAT KOMERSIAL INDAH, 181, Jalan Kiambang 12, Indahpura, 81000 Kulai, Johor",
-        "opening_hours": "7 am–3 pm Thusday closed",
+        "opening_hours": "Monday: 10am - 10pm\nTuesday: 10am - 10pm\nWednesday: 10am - 10pm\nThursday: Closed\nFriday: 10am - 10pm\nSaturday: 10am - 10pm\nSunday: 10am - 10pm",
         "intro_zh": "位于古来 Indahpura 的粉面小馆，主打 牛肉粉、猪肉粉和海鲜粉等汤粉与干捞粉类料理，汤头清爽、肉质鲜嫩，味道地道，份量充足且价格亲民，是很多当地人常去的 早餐到午餐粉面美食小馆。",
         "intro_en": "One of Kulai's old-school kopitiams offering affordable breakfast and lunch. Traditional coffee and toast are must-tries, full of nostalgic flavor.",
         "category": [
             "咖啡店"
         ],
         "categories": [
-            "咖啡店"
+            "粉类"
         ],
         "rating": 0,
         "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSOoMokQ0FPRb1XaCNM6Omby2631rOVvgcwqg&s",
@@ -4858,14 +4879,14 @@ export const initialRestaurants = [
         "name": "夫妻坊小厨房",
         "name_en": "Fu Qi Fang",
         "address": "PTD 110707, Jln Kiambang 11, Bandar Indahpura, 81000 Kulai, Johor Darul Ta'zim",
-        "opening_hours": "",
+        "opening_hours": "Monday: 10am - 10pm\nTuesday: 10am - 10pm\nWednesday: 10am - 10pm\nThursday: 10am - 10pm\nFriday: 10am - 10pm\nSaturday: 10am - 10pm\nSunday: 10am - 10pm",
         "intro_zh": "温馨的家庭式小厨房，提供家常小菜和面食。味道像家里的饭菜一样亲切，价格实惠。",
         "intro_en": "A cozy family-style kitchen serving home-cooked dishes and noodles. Tastes like home with affordable prices.",
         "category": [
             "咖啡店"
         ],
         "categories": [
-            "咖啡店"
+            "Cafe"
         ],
         "rating": 0,
         "image": "https://i.ibb.co/XxVWpGmd/image.jpg",
@@ -5525,14 +5546,16 @@ export const initialRestaurants = [
         "name": "华美",
         "name_en": "Restoran Hua Mui",
         "address": "251, Pusat Komersial Indah, Jalan Kiambang 10, Bandar Indahpura, 81000 Kulai, Johor Darul Ta'zim",
-        "opening_hours": "Monday: 8 am–8:30 pm\nTuesday: 8 am–8:30 pm\nWednesday: 8 am–8:30 pm\nThursday: 8 am–8:30 pm\nFriday: 8 am–8:30 pm\nSaturday: 8 am–8:30 pm\nSunday: 8 am–8:30 pm",
+        "opening_hours": "Monday: 8am - 8:30pm\nTuesday: 8am - 8:30pm\nWednesday: 8am - 8:30pm\nThursday: 8am - 8:30pm\nFriday: 8am - 8:30pm\nSaturday: 8am - 8:30pm\nSunday: 8am - 8:30pm",
         "intro_zh": "传奇海南咖啡店，以招牌海南鸡扒和传统烤面包早餐闻名。",
         "intro_en": "Legendary Hainanese Kopitiam famous for its Chicken Chop and traditional breakfast toast.",
         "category": [
             "咖啡店"
         ],
         "categories": [
-            "咖啡店"
+            "Cafe",
+            "粉类",
+            "饭类"
         ],
         "rating": 0,
         "image": "https://i.ibb.co/vxSQg87b/image.png",
@@ -5615,7 +5638,7 @@ export const initialRestaurants = [
             "咖啡店"
         ],
         "categories": [
-            "咖啡店"
+            "Cafe"
         ],
         "rating": 0,
         "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTvZYHnYoSAd9KTh3Zd5gK5Vom1Dn6reLBGsg&s",
@@ -6096,7 +6119,7 @@ export const initialRestaurants = [
             "咖啡店"
         ],
         "categories": [
-            "咖啡店"
+            "Cafe"
         ],
         "rating": 0,
         "image": "https://i.ibb.co/cKSHxR74/Rengit-Coffee-by-Dagan.jpg",
@@ -6139,8 +6162,7 @@ export const initialRestaurants = [
             "快餐"
         ],
         "categories": [
-            "饭类",
-            "快餐"
+            "饭类"
         ],
         "rating": 0,
         "image": "https://scontent.fmkz1-2.fna.fbcdn.net/v/t39.30808-6/351499236_645514067085177_3364422854381515643_n.png?_nc_cat=109&ccb=1-7&_nc_sid=6ee11a&_nc_ohc=YgUGfO6IUZ4Q7kNvwHmpuS-&_nc_oc=AdkWGBWcfwq4RuNnRvYV1pA1SdT1P-C9VX4xuvPUPUGb-02XQ2vC-z2lIOXmPv5attE&_nc_zt=23&_nc_ht=scontent.fmkz1-2.fna&_nc_gid=VQy6ajWNawSrcQCDHuhikQ&oh=00_Afrxw2ArQ8jqqHvKXcAoyHls-vzwJxaKdsjcx42Py06EGw&oe=697BECCB",
@@ -6176,12 +6198,12 @@ export const initialRestaurants = [
         "intro_zh": "充满家乡风味的传统咖啡馆。提供香浓Kopi、烤面包和半生熟蛋，是体验古早味早餐的好地方。",
         "intro_en": "A traditional coffee shop full of hometown flavor. Serves aromatic Kopi, toast, and half-boiled eggs, a great place to experience a nostalgic breakfast.",
         "address": "5013, Jalan Kenari, Bandar Putra Kulai, 81000 Kulai, Johor Darul Ta'zim",
-        "opening_hours": "8am-3.30pm tuesday closed",
+        "opening_hours": "Monday: 10am - 10pm\nTuesday: 10am - 10pm\nWednesday: 10am - 10pm\nThursday: 10am - 10pm\nFriday: 10am - 10pm\nSaturday: 10am - 10pm\nSunday: 10am - 10pm",
         "category": [
             "咖啡店"
         ],
         "categories": [
-            "咖啡店"
+            "Cafe"
         ],
         "rating": 0,
         "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRIPe-x9ybqjC5n-nLvonUXPWFRBQD6iOLSFQ&s",
@@ -6223,7 +6245,7 @@ export const initialRestaurants = [
             "咖啡店"
         ],
         "categories": [
-            "咖啡店"
+            "Cafe"
         ],
         "rating": 0,
         "image": "https://i.ibb.co/DHvctYbM/Classic-Coffee.jpg",
@@ -6899,12 +6921,13 @@ export const initialRestaurants = [
         "intro_zh": "充满怀旧风情的传统咖啡店。提供香浓南洋咖啡、烤面包和半熟蛋，是体验古早味早餐的绝佳地点。",
         "intro_en": "A traditional kopitiam full of nostalgia. Serves aromatic Nanyang coffee, toast, and soft-boiled eggs, a perfect spot for a classic breakfast experience.",
         "address": "306, Jalan Kenanga 29/9, Bandar Indahpura, 81000 Kulai, Johor Darul Ta'zim",
-        "opening_hours": "Monday: 8:30 am–8:30 pm\nTuesday: 8:30 am–8:30 pm\nWednesday: 8:30 am–8:30 pm\nThursday: 8:30 am–8:30 pm\nFriday: 8:30 am–8:30 pm\nSaturday: 8:30 am–8:30 pm\nSunday: 8:30 am–8:30 pm",
+        "opening_hours": "Monday: 8:30am - 8:30pm\nTuesday: 8:30am - 8:30pm\nWednesday: 8:30am - 8:30pm\nThursday: 8:30am - 8:30pm\nFriday: 8:30am - 8:30pm\nSaturday: 8:30am - 8:30pm\nSunday: 8:30am - 8:30pm",
         "category": [
             "咖啡店"
         ],
         "categories": [
-            "咖啡店"
+            "饭类",
+            "粉类"
         ],
         "rating": 0,
         "image": "https://i.ibb.co/60jmNYCp/image.jpg",
@@ -9497,8 +9520,8 @@ export const initialRestaurants = [
     {
         "id": 245,
         "area": "Indahpura",
-        "name": "Wallace ",
-        "name_en": "",
+        "name": "华莱士",
+        "name_en": "Wallace",
         "intro_zh": "来自中国的快餐连锁品牌，提供炸鸡、汉堡和各种小吃，价格实惠。",
         "intro_en": "A Chinese fast food chain offering fried chicken, burgers, and snacks at competitive prices.",
         "address": "175, Jalan Kenanga 29/4, Bandar Indahpura, 81000 Kulai, Johor Darul Ta'zim",
@@ -9874,12 +9897,12 @@ export const initialRestaurants = [
         "intro_zh": "汇集了多种美食摊位的美食中心，选择丰富，价格实惠，适合日常用餐。",
         "intro_en": "A food court gathering various food stalls, offering a wide range of choices at affordable prices, suitable for daily dining.",
         "address": "325, Jalan Kenanga 29/9, Bandar Indahpura, 81000 Kulai, Johor Darul Ta'zim",
-        "opening_hours": "8 am–3:30 pm Fri closed",
+        "opening_hours": "Monday: 10am - 10pm\nTuesday: 10am - 10pm\nWednesday: 10am - 10pm\nThursday: 10am - 10pm\nFriday: Closed\nSaturday: 10am - 10pm\nSunday: 10am - 10pm",
         "category": [
             "咖啡店"
         ],
         "categories": [
-            "咖啡店"
+            "Cafe"
         ],
         "rating": 0,
         "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ2hD7nOvsu7Va-2V2wc2kczzZFzEfNOBRAOA&s",
@@ -11569,8 +11592,7 @@ export const initialRestaurants = [
             "咖啡店"
         ],
         "categories": [
-            "Cafe",
-            "咖啡店"
+            "Cafe"
         ],
         "rating": 0,
         "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTGijjBt15VpfcRuw7abE0TpaVP9L3-mlRBpg&s",
@@ -16687,7 +16709,7 @@ export const initialRestaurants = [
         "priority": 0,
         "whatsappLink": "",
         "location": {
-            "lat": 1.642650,
+            "lat": 1.64265,
             "lng": 103.614474
         },
         "halalStatus": "non_halal",
