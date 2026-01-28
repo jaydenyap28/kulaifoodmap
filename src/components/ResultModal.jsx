@@ -219,6 +219,13 @@ const ResultModal = ({ restaurant, onClose, isAdmin, onUpdateRestaurant, categor
     }
   }, [restaurant]);
 
+  const mapUrl = React.useMemo(() => {
+    if (restaurant.location?.lat && restaurant.location?.lng) {
+      return `https://www.google.com/maps/search/?api=1&query=${restaurant.location.lat},${restaurant.location.lng}`;
+    }
+    return `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(restaurant.address || restaurant.name)}`;
+  }, [restaurant]);
+
   const handleSaveEdit = () => {
     onUpdateRestaurant({ ...restaurant, ...editForm });
     setIsEditing(false);
