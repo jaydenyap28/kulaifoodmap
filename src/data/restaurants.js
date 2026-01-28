@@ -3077,7 +3077,7 @@ export const initialRestaurants = [
         "image": "https://i.ibb.co/ZpwYx2Fw/image.jpg",
         "subStalls": [
             {
-                "name": "",
+                "name": "面煎糕 (Apam Balik)",
                 "image": "https://i.ibb.co/VY6nD0Ct/IMG-20260127-134438.jpg"
             },
             {

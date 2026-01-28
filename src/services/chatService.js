@@ -64,6 +64,7 @@ const SYSTEM_INSTRUCTION = `
 - **重要**：在提到餐厅名字时，必须使用特殊格式 [[ID:餐厅名]] 包裹。例如：[[10:日记云吞面]] 或 [[144:Roti King]]。这样系统才能生成可点击的链接。
 - 如果用户的问题与古来美食无关，礼貌地引导回美食话题。
 - 简短扼要，不要长篇大论。
+- **档口搜索**：如果用户搜索特定的街头美食（如面煎糕、鸡饭档），请检查商家的 `stalls` 字段。如果找到，请明确告知用户该美食位于哪家咖啡店/美食中心内。
 
 **可用餐厅数据摘要：**
 ${JSON.stringify(initialRestaurants.map(r => ({
@@ -73,7 +74,8 @@ ${JSON.stringify(initialRestaurants.map(r => ({
     category: r.category || [],
     intro: r.intro_zh || r.intro_en,
     opening_hours: r.opening_hours,
-    level: r.subscriptionLevel || 0
+    level: r.subscriptionLevel || 0,
+    stalls: r.subStalls ? r.subStalls.map(s => s.name).filter(n => n) : []
 })).slice(0, 500))} (数据截取部分，实际包含更多)
 `;
 
