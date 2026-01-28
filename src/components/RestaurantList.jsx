@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useMemo } from 'react';
-import { MapPin, Edit2, Trash2, ArrowUp, Search, Plus, Leaf, Ban, Star, GripVertical, Flame, Medal, MessageCircle, Mic, MicOff, Loader2 } from 'lucide-react';
+import { MapPin, Edit2, Trash2, ArrowUp, Search, Plus, Leaf, Sprout, Ban, Star, GripVertical, Flame, Medal, MessageCircle, Mic, MicOff, Loader2 } from 'lucide-react';
 import {
   DndContext,
   closestCenter,
@@ -392,11 +392,11 @@ const RestaurantCard = ({ restaurant, isAdmin, onUpdate, onDelete, onClick, onCa
                     {/* Dietary Options */}
                     {(restaurant.dietaryOption === 'vegetarian_only' || restaurant.isVegetarian) ? (
                         <span className="px-1.5 py-0.5 bg-emerald-900/50 text-emerald-400 border border-emerald-800 text-[10px] rounded flex items-center gap-1 leading-none">
-                            <Leaf size={10} /> 素食
+                            <Leaf size={10} /> 纯素食
                         </span>
                     ) : restaurant.dietaryOption === 'vegetarian_friendly' ? (
                         <span className="px-1.5 py-0.5 bg-lime-900/50 text-lime-400 border border-lime-800 text-[10px] rounded flex items-center gap-1 leading-none">
-                            <Leaf size={10} /> Veg-Friendly
+                            <Sprout size={10} /> 提供素食选项
                         </span>
                     ) : null}
 

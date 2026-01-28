@@ -1,6 +1,6 @@
 import React, { useState, useRef } from 'react';
 import { createPortal } from 'react-dom';
-import { X, Star, MapPin, ExternalLink, Send, Save, Clock, Info, UtensilsCrossed, Upload, BookOpen, Globe, Bike, Navigation, Leaf } from 'lucide-react';
+import { X, Star, MapPin, ExternalLink, Send, Save, Clock, Info, UtensilsCrossed, Upload, BookOpen, Globe, Bike, Navigation, Leaf, Sprout } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { useTranslation } from 'react-i18next';
 import ImageWithFallback from './ImageWithFallback';
@@ -318,12 +318,12 @@ const ResultModal = ({ restaurant, onClose, onAddReview, isAdmin, onUpdateRestau
                     {/* Vegetarian Badge */}
                     {(restaurant.dietaryOption === 'vegetarian_only' || restaurant.isVegetarian) && (
                         <span className="bg-emerald-600 text-white border border-emerald-500 px-2 py-0.5 rounded text-xs font-bold mr-2 backdrop-blur-md flex items-center shadow-sm">
-                            <Leaf size={12} className="mr-1" /> 素食 / Vegetarian
+                            <Leaf size={12} className="mr-1" /> 纯素食 / Pure Vegetarian
                         </span>
                     )}
                     {restaurant.dietaryOption === 'vegetarian_friendly' && (
                         <span className="bg-lime-600/90 text-white border border-lime-500 px-2 py-0.5 rounded text-xs font-bold mr-2 backdrop-blur-md flex items-center shadow-sm">
-                            <Leaf size={12} className="mr-1" /> 提供素食选项 / Veg-Friendly
+                            <Sprout size={12} className="mr-1" /> 提供素食选项 / Vegetarian Options
                         </span>
                     )}
 
