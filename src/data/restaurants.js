@@ -15883,49 +15883,7 @@ export const initialRestaurants = [
         "dietaryOption": null,
         "slug": "restoran-bunga-dahlia-1"
     },
-    {
-        "id": 391,
-        "fb_post_link": "",
-        "name": "瑞记海南鸡饭",
-        "name_en": "Swee Kee Hainan Chicken Rice",
-        "intro_zh": "",
-        "intro_en": "",
-        "address": "98, Jln Bintang, Taman Bintang, 81400 Senai, Johor Darul Ta'zim",
-        "opening_hours": "10:30am–7pm\nMonday: Closed",
-        "category": [
-            "饭类"
-        ],
-        "categories": [
-            "饭类"
-        ],
-        "rating": 0,
-        "image": "https://placehold.co/600x400/e0e0e0/333333?text=No+Image",
-        "subStalls": [],
-        "price_range": "RM 10-20",
-        "menu_link": "",
-        "website_link": "",
-        "delivery_link": "",
-        "isVegetarian": false,
-        "isNoBeef": false,
-        "manualStatus": "auto",
-        "branches": [],
-        "tags": [
-            "海南鸡饭"
-        ],
-        "subscriptionLevel": 0,
-        "isVIP": false,
-        "priority": 0,
-        "whatsappLink": "",
-        "location": {
-            "lat": null,
-            "lng": null
-        },
-        "phone": "075984231",
-        "halalStatus": "non_halal",
-        "area": "Senai",
-        "dietaryOption": null,
-        "slug": "swee-kee-hainan-chicken-rice"
-    },
+
     {
         "id": 392,
         "fb_post_link": "",
