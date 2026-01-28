@@ -3717,10 +3717,10 @@ export const initialRestaurants = [
         "id": 84,
         "fb_post_link": "",
         "area": "Indahpura",
-        "name": "Hermeal healthy food",
+        "name": "Hermeal Healthy Food",
         "name_en": "",
         "address": "Pusat Kormersial Indah 142, 13, Jalan Kiambang, Bandar Indahpura, 81000 Kulai, Johor Darul Ta'zim",
-        "opening_hours": "Monday: 10am - 10pm\nTuesday: 10am - 10pm\nWednesday: 10am - 10pm\nThursday: Closed\nFriday: 10am - 10pm\nSaturday: 10am - 10pm\nSunday: 10am - 10pm",
+        "opening_hours": "Monday: 11:30am - 8pm\nTuesday: 11:30am - 8pm\nWednesday: 11:30am - 8pm\nThursday: Closed\nFriday: 11:30am - 8pm\nSaturday: 11:30am - 8pm\nSunday: 11:30am - 8pm",
         "intro_zh": "主打健康饮食，提供低卡路里、营养均衡的便当。适合健身人士或追求健康饮食的顾客，菜品清淡但不失美味。",
         "intro_en": "Focused on healthy dining, offering low-calorie, nutritionally balanced bento boxes. Perfect for fitness enthusiasts or health-conscious diners, serving light yet tasty meals.",
         "category": [],
@@ -3916,8 +3916,8 @@ export const initialRestaurants = [
         "priority": 0,
         "whatsappLink": "",
         "location": {
-            "lat": null,
-            "lng": null
+            "lat": "1.6427675077398685",
+            "lng": "103.60526218074149"
         },
         "halalStatus": "non_halal",
         "dietaryOption": null,
@@ -3929,7 +3929,7 @@ export const initialRestaurants = [
         "area": "Indahpura",
         "name": "La Primeur",
         "name_en": "",
-        "address": "PUSAT KOMERSIAL INDAH, 135, 13, Jalan Kiambang, Bandar Indahpura, 81000 Kulai, Johor Darul Ta'zim",
+        "address": "Pusat Komersial Indah, 135, 13, Jalan Kiambang, Bandar Indahpura, 81000 Kulai, Johor Darul Ta'zim",
         "opening_hours": "Monday: 3pm - 1am\nTuesday: 3pm - 1am\nWednesday: 3pm - 1am\nThursday: 3pm - 1am\nFriday: 3pm - 1am\nSaturday: 3pm - 1am\nSunday: 3pm - 1am",
         "intro_zh": "环境优雅的西餐厅酒吧，提供高品质的扒类、意大利面和美酒。适合约会、庆祝纪念日或与朋友小酌。",
         "intro_en": "Elegant Western restaurant and bar offering high-quality steaks, pasta, and fine wines. Perfect for dates, celebrations, or drinks with friends.",
@@ -4062,7 +4062,7 @@ export const initialRestaurants = [
         "name": "MeatVking Bistro",
         "name_en": "",
         "address": "Pusat Komersial Indah, 127, Jln Kiambang 14, Bandar Indahpura, 81000 Kulai, Johor Darul Ta'zim",
-        "opening_hours": "Monday: 10am - 10pm\nTuesday: 10am - 10pm\nWednesday: Closed\nThursday: 10am - 10pm\nFriday: 10am - 10pm\nSaturday: 10am - 10pm\nSunday: 10am - 10pm",
+        "opening_hours": "Monday: 12pm - 10pm\nTuesday: 12pm - 10pm\nWednesday: Closed\nThursday: 12pm - 10pm\nFriday: 12pm - 10pm\nSaturday: 12pm - 10pm\nSunday: 12pm - 10pm",
         "intro_zh": "主打各类扒类和西式料理的餐厅，食物份量足，价格合理。推荐他们的鸡扒和意大利面。",
         "intro_en": "Bistro specializing in various steaks and Western cuisine. Generous portions at reasonable prices. Chicken chop and pasta are recommended.",
         "category": [
