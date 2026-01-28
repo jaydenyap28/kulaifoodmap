@@ -4148,7 +4148,7 @@ export const initialRestaurants = [
         "name": "甜品轩",
         "name_en": "Dessert Library",
         "address": "120, Jln Kiambang 14, Bandar Indahpura, 81000 Kulai, Johor Darul Ta'zim",
-        "opening_hours": "Monday: 8.30am-9pm\nTuesday: 8.30am-9pm\nWednesday: 8.30am-9pm\nThursday: 8.30am-9pm\nFriday: 8.30am-9pm\nSaturday: 8.30am-9pm\nSunday: 8.30am-9pm",
+        "opening_hours": "Monday: 8:30am - 9pm\nTuesday: 8:30am - 9pm\nWednesday: 8:30am - 9pm\nThursday: 8:30am - 9pm\nFriday: 8:30am - 9pm\nSaturday: 8:30am - 9pm\nSunday: 8:30am - 9pm",
         "intro_zh": "主打各类中式糖水和甜品，也有提供主食。环境清幽，是下午茶或饭后甜点的好去处。",
         "intro_en": "Specializes in various Chinese tong sui and desserts, also serving main courses. A quiet and pleasant spot for afternoon tea or post-meal desserts.",
         "category": [
@@ -4174,8 +4174,8 @@ export const initialRestaurants = [
         "priority": 0,
         "whatsappLink": "",
         "location": {
-            "lat": null,
-            "lng": null
+            "lat": "1.6417822420733377",
+            "lng": "103.60552505266415"
         },
         "halalStatus": "non_halal",
         "dietaryOption": null,
@@ -4231,7 +4231,7 @@ export const initialRestaurants = [
         "name": "八号吐司",
         "name_en": "Eight Toast Nanyang Kopitiam",
         "address": "196, Jalan Kiambang 12, Bandar Indahpura, 81000 Kulai, Johor Darul Ta'zim",
-        "opening_hours": "Monday: 7am - 5am\nTuesday: 7am - 5am\nWednesday: 7am - 5am\nThursday: 7am - 5am\nFriday: 7am - 5am\nSaturday: 7am - 5am\nSunday: 7am - 5am",
+        "opening_hours": "Monday: 7am - 5:30am\nTuesday: 7am - 5:30am\nWednesday: 7am - 5:30am\nThursday: 7am - 5:30am\nFriday: 7am - 5:30am\nSaturday: 7am - 5:30am\nSunday: 7am - 5:30am",
         "intro_zh": "位于 古来 Indahpura 的南洋风味早餐咖啡馆，主打 烤面包/太空包搭配半熟蛋和南洋咖啡，还提供多样早餐与轻食选择。环境轻松，是享受经典南洋早餐/早午餐的好去处。",
         "intro_en": "Nanyang-style kopitiam serving traditional toast, soft-boiled eggs, and aromatic coffee. A classic choice for breakfast and lunch.",
         "category": [
@@ -4312,7 +4312,7 @@ export const initialRestaurants = [
         "name": "金斗云",
         "name_en": "The Cloud Restaurant",
         "address": "Jalan Kiambang 12, Pusat Komersial Indah 81000",
-        "opening_hours": "7:30 am–6 pm Wed Closed",
+        "opening_hours": "Monday: 7:30am - 6pm\nTuesday: 7:30am - 6pm\nWednesday: Closed\nThursday: 7:30am - 6pm\nFriday: 7:30am - 6pm\nSaturday: 7:30am - 6pm\nSunday: 7:30am - 6pm",
         "intro_zh": "一家位于 古来 Indahpura 的家庭式餐厅，以云吞面（多种风味）为特色，也提供各类面食、主食和小吃选择。餐厅环境简洁、份量适中，适合日常用餐。",
         "intro_en": "Offers a variety of noodles and Chinese snacks in a clean environment. Signature noodles and handmade dumplings are popular among diners.",
         "category": [
@@ -4351,7 +4351,7 @@ export const initialRestaurants = [
         "name": "Khunya Thai Kitchen",
         "name_en": "",
         "address": "189, Jalan Kiambang 12, 81000 Kulai, Johor Darul Ta'zim",
-        "opening_hours": "Monday: 10am - 10pm\nTuesday: Closed\nWednesday: 10am - 10pm\nThursday: 10am - 10pm\nFriday: 10am - 10pm\nSaturday: 10am - 10pm\nSunday: 10am - 10pm",
+        "opening_hours": "Monday: 12pm - 10pm\nTuesday: Closed\nWednesday: 12pm - 10pm\nThursday: 12pm - 10pm\nFriday: 12pm - 10pm\nSaturday: 12pm - 10pm\nSunday: 12pm - 10pm",
         "intro_zh": "正宗泰国料理，由泰国厨师掌厨。东炎汤、青咖喱和泰式猪脚饭都是人气必点。",
         "intro_en": "Authentic Thai cuisine prepared by Thai chefs. Tom Yum soup, Green Curry, and Thai Pork Leg Rice are popular must-tries.",
         "category": [
@@ -4391,7 +4391,7 @@ export const initialRestaurants = [
         "name": "芳源",
         "name_en": "Fang Yuan Kopitiam",
         "address": "188, Jalan Kiambang 12, Bandar Indahpura, 81000 Kulai, Johor Darul Ta'zim",
-        "opening_hours": "Monday: 10am - 10pm\nTuesday: 10am - 10pm\nWednesday: 10am - 10pm\nThursday: Closed\nFriday: 10am - 10pm\nSaturday: 10am - 10pm\nSunday: 10am - 10pm",
+        "opening_hours": "Monday: 8am - 5:30pm\nTuesday: 8am - 5:30pm\nWednesday: 8am - 5:30pm\nThursday: Closed\nFriday: 8am - 5:30pm\nSaturday: 8am - 5:30pm\nSunday: 8am - 5:30pm",
         "intro_zh": "传统海南咖啡店，保留了古早味的咖啡香和烤面包。是体验古来传统早餐的好地方。",
         "intro_en": "Traditional Hainanese kopitiam preserving the old-school aroma of coffee and toast. A great place to experience traditional Kulai breakfast.",
         "category": [
@@ -4435,7 +4435,7 @@ export const initialRestaurants = [
         "name": "Dino House Cafe",
         "name_en": "",
         "address": "Pusat Komersial Indah, 187, Jalan Kiambang 12, Bandar Indahpura, 81000 Kulai, Johor Darul Ta'zim",
-        "opening_hours": "11 am–11 pm Tuesday Closed",
+        "opening_hours": "Monday: 11am - 10pm\nTuesday: Closed\nWednesday: 11am - 10pm\nThursday: 11am - 10pm\nFriday: 11am - 10pm\nSaturday: 11am - 10pm\nSunday: 11am - 10pm",
         "intro_zh": "一家位于古来 Indahpura 的轻食咖啡馆，提供 鸡扒、意粉、Croffle、小吃与多样饮品（奶茶、茶饮、咖啡等）。环境轻松舒适，适合 亲友聚餐、下午茶或轻松用餐。",
         "intro_en": "Dino-themed cafe with a fun and playful atmosphere. Serves Western food, snacks, and specialty drinks, suitable for family dining.",
         "category": [
@@ -4478,7 +4478,7 @@ export const initialRestaurants = [
         "name": "卡路里烧烤火锅",
         "name_en": "K Lolly Steamboat & BBQ",
         "address": "No.184 & 185, Pusat Komersial Indah, 12, Jalan Kiambang, Bandar Indahpura, 81000 Kulai, Johor Darul Ta'zim",
-        "opening_hours": "5–10 pm Monday closed",
+        "opening_hours": "Monday: Closed\nTuesday: 5pm - 10pm\nWednesday: 5pm - 10pm\nThursday: 5pm - 10pm\nFriday: 5pm - 10pm\nSaturday: 5pm - 10pm\nSunday: 5pm - 10pm",
         "intro_zh": "结合了火锅和烧烤的自助餐厅，食材种类丰富，包括海鲜、肉类和蔬菜。适合大胃王和聚会。",
         "intro_en": "Buffet restaurant combining steamboat and BBQ with a wide variety of ingredients including seafood, meat, and vegetables. Perfect for big eaters and gatherings.",
         "category": [
@@ -4564,8 +4564,8 @@ export const initialRestaurants = [
         "area": "Indahpura",
         "name": "新莫九",
         "name_en": "Restaurant Xin Mo Gao",
-        "address": "PUSAT KOMERSIAL INDAH, 181, Jalan Kiambang 12, Indahpura, 81000 Kulai, Johor",
-        "opening_hours": "Monday: 10am - 10pm\nTuesday: 10am - 10pm\nWednesday: 10am - 10pm\nThursday: Closed\nFriday: 10am - 10pm\nSaturday: 10am - 10pm\nSunday: 10am - 10pm",
+        "address": "Pusat Komersial Indah, 181, Jalan Kiambang 12, Indahpura, 81000 Kulai, Johor",
+        "opening_hours": "Monday: 7am - 3pm\nTuesday: 7am - 3pm\nWednesday: 7am - 3pm\nThursday: Closed\nFriday: 7am - 3pm\nSaturday: 7am - 3pm\nSunday: 7am - 3pm",
         "intro_zh": "位于古来 Indahpura 的粉面小馆，主打 牛肉粉、猪肉粉和海鲜粉等汤粉与干捞粉类料理，汤头清爽、肉质鲜嫩，味道地道，份量充足且价格亲民，是很多当地人常去的 早餐到午餐粉面美食小馆。",
         "intro_en": "One of Kulai's old-school kopitiams offering affordable breakfast and lunch. Traditional coffee and toast are must-tries, full of nostalgic flavor.",
         "category": [
@@ -4822,7 +4822,7 @@ export const initialRestaurants = [
         "name": "心友明",
         "name_en": "Yu Min One",
         "address": "198, Jln Kiambang 14, taman Indahpura81000 Kulai, Johor Darul Ta'zim",
-        "opening_hours": "Monday: 4pm-12am\nTuesday: 4pm-12am\nWednesday: 4pm-12am\nThursday: 4pm-12am\nFriday: 4pm-12am\nSaturday: 4pm-12am\nSunday: 4pm-12am",
+        "opening_hours": "Monday: 4pm - 12am\nTuesday: 4pm - 12am\nWednesday: 4pm - 12am\nThursday: 4pm - 12am\nFriday: 4pm - 12am\nSaturday: 4pm - 12am\nSunday: 4pm - 12am",
         "intro_zh": "提供各类煮炒和海鲜料理，锅气十足。菜色丰富，价格公道，是家庭和朋友聚餐的热门选择。",
         "intro_en": "Offers a variety of Zhu Chao (stir-fry) and seafood dishes with 'Wok Hei'. Extensive menu and reasonable prices make it a popular choice for gatherings.",
         "category": [
@@ -4852,8 +4852,8 @@ export const initialRestaurants = [
         "priority": 0,
         "whatsappLink": "",
         "location": {
-            "lat": null,
-            "lng": null
+            "lat": "1.6436802851025516",
+            "lng": "103.60546754122926"
         },
         "halalStatus": "non_halal",
         "dietaryOption": null,
@@ -4865,7 +4865,7 @@ export const initialRestaurants = [
         "name": "心友明苦瓜汤",
         "name_en": "Yu Min Bitter Gourd Soup",
         "address": "201Jalan kiambang 14 Kulai, 81000 Johor, Johor Darul Ta'zim",
-        "opening_hours": "Monday: 12pm–9:30 pm\nTuesday: 12pm–9:30 pm\nWednesday: 12pm–9:30 pm\nThursday: 12pm–9:30 pm\nFriday: 12pm–9:30 pm\nSaturday: 12pm–9:30 pm\nSunday: 12pm–9:30 pm",
+        "opening_hours": "Monday: 12pm - 9:30pm\nTuesday: 12pm - 9:30pm\nWednesday: 12pm - 9:30pm\nThursday: 12pm - 9:30pm\nFriday: 12pm - 9:30pm\nSaturday: 12pm - 9:30pm\nSunday: 12pm - 9:30pm",
         "intro_zh": "专卖苦瓜汤和客家炸肉，苦瓜汤甘苦适中，清热解暑。炸肉外酥里嫩，是绝佳的搭配。",
         "intro_en": "Specializes in Bitter Gourd Soup and Hakka Fried Pork. The soup is refreshing, while the crispy fried pork makes for a perfect pairing.",
         "category": [
@@ -4895,8 +4895,8 @@ export const initialRestaurants = [
         "priority": 0,
         "whatsappLink": "",
         "location": {
-            "lat": null,
-            "lng": null
+            "lat": "1.6437425422748404",
+            "lng": "103.60544174804643"
         },
         "halalStatus": "non_halal",
         "dietaryOption": null,
@@ -4989,7 +4989,7 @@ export const initialRestaurants = [
         "name": "笨珍风味肉骨茶",
         "name_en": "LNP Pontian Flavor Bak Kut Teh",
         "address": "289, Jln Kiambang 11, Bandar Indahpura, 81000 Kulai, Johor Darul Ta'zim",
-        "opening_hours": "",
+        "opening_hours": "Monday: 10am - 10pm\nTuesday: 10am - 10pm\nWednesday: 10am - 10pm\nThursday: 10am - 10pm\nFriday: 10am - 10pm\nSaturday: 10am - 10pm\nSunday: 10am - 10pm",
         "intro_zh": "源自笨珍的独特风味肉骨茶，汤底药材味浓郁。除了肉骨茶，也有提供其他特色小菜。",
         "intro_en": "Unique Pontian-style Bak Kut Teh with a strong herbal soup base. Also serves other specialty side dishes.",
         "category": [
@@ -5019,8 +5019,8 @@ export const initialRestaurants = [
         "priority": 0,
         "whatsappLink": "",
         "location": {
-            "lat": null,
-            "lng": null
+            "lat": "1.643032776377791 ",
+            "lng": "103.60391291772572"
         },
         "halalStatus": "non_halal",
         "dietaryOption": null,
@@ -5033,7 +5033,7 @@ export const initialRestaurants = [
         "name": "佳旺甜品",
         "name_en": "JustWant Dessert",
         "address": "Pusat Komersial Indah, 289, Jln Kiambang 11, Bandar Indahpura, 81000 Kulai, Johor Darul Ta'zim",
-        "opening_hours": "12–10 pm Wed Closed",
+        "opening_hours": "Monday: 12pm - 10pm\nTuesday: 12pm - 10pm\nWednesday: Closed\nThursday: 12pm - 10pm\nFriday: 12pm - 10pm\nSaturday: 12pm - 10pm\nSunday: 12pm - 10pm",
         "intro_zh": "提供各类冷热传统糖水，如红豆冰、摩摩喳喳和花生糊。甜而不腻，是饭后甜点的最佳选择。",
         "intro_en": "Serves various hot and cold traditional desserts like Ice Kacang, Bubur Chacha, and Peanut Paste. Sweet but not cloying, perfect for dessert.",
         "category": [
