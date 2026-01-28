@@ -23,7 +23,7 @@ const DEFAULT_HERO_BG = "https://i.ibb.co/7J5qjZtv/image.png";
 
 // Version control for data structure changes
 // Increment this when you make breaking changes to data structure to force a reset
-const DATA_VERSION = 'v38';
+const DATA_VERSION = 'v39';
 
 function App() {
   const { t, i18n } = useTranslation();
@@ -769,7 +769,7 @@ function App() {
   return (
     <div className="min-h-screen bg-[#121212] font-sans text-gray-100">
       {/* Top Zone: Hero Section */}
-      <div className="relative w-full overflow-hidden pt-4 pb-8 px-4 bg-cover bg-center" style={{ backgroundImage: `linear-gradient(to bottom, rgba(18,18,18,0.3), #121212), url("${heroBg}")` }}>
+      <div className="relative w-full pt-4 pb-8 px-4 bg-cover bg-center" style={{ backgroundImage: `linear-gradient(to bottom, rgba(18,18,18,0.3), #121212), url("${heroBg}")` }}>
         
         {/* Admin Background Control */}
         {isAdmin && (
@@ -964,7 +964,7 @@ function App() {
                             <div className="fixed inset-0 z-40" onClick={() => setShowHalalMenu(false)}></div>
                             
                             {/* Menu */}
-                            <div className="absolute top-full left-1/2 -translate-x-1/2 mt-2 w-max min-w-[12rem] bg-[#1e1e1e] border border-gray-700 rounded-xl shadow-xl z-50 overflow-hidden flex flex-col p-1">
+                            <div className="absolute top-full left-1/2 -translate-x-1/2 mt-2 md:top-0 md:left-full md:ml-2 md:translate-x-0 w-max min-w-[12rem] bg-[#1e1e1e] border border-gray-700 rounded-xl shadow-xl z-50 overflow-hidden flex flex-col p-1">
                                 <button
                                     onClick={() => { setHalalFilter(null); setShowHalalMenu(false); }}
                                     className={`px-4 py-2 text-center text-sm rounded-lg hover:bg-white/10 ${!halalFilter ? 'text-white font-bold' : 'text-gray-400'}`}

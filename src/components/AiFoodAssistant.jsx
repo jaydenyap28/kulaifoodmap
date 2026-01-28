@@ -1,5 +1,5 @@
 import React, { useState, useRef, useEffect } from 'react';
-import { Send, Bot, Sparkles, X, User, MapPin } from 'lucide-react';
+import { Send, Bot, Sparkles, X, User, MapPin, Mic, MicOff } from 'lucide-react';
 import { getGeminiResponse } from '../services/chatService';
 
 const AiFoodAssistant = ({ isOpen, onClose, restaurants, onRestaurantClick }) => {
@@ -12,13 +12,57 @@ const AiFoodAssistant = ({ isOpen, onClose, restaurants, onRestaurantClick }) =>
   ]);
   const [inputValue, setInputValue] = useState('');
   const [isTyping, setIsTyping] = useState(false);
+  const [isListening, setIsListening] = useState(false);
   const messagesEndRef = useRef(null);
+  const recognitionRef = useRef(null);
 
   useEffect(() => {
     if (isOpen) {
         scrollToBottom();
     }
   }, [messages, isOpen]);
+
+  useEffect(() => {
+    if ('webkitSpeechRecognition' in window || 'SpeechRecognition' in window) {
+        const SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition;
+        recognitionRef.current = new SpeechRecognition();
+        recognitionRef.current.continuous = false;
+        recognitionRef.current.interimResults = false;
+        recognitionRef.current.lang = 'zh-CN';
+
+        recognitionRef.current.onresult = (event) => {
+            const transcript = event.results[0][0].transcript;
+            setInputValue(prev => {
+                const newValue = prev ? `${prev} ${transcript}` : transcript;
+                return newValue;
+            });
+            setIsListening(false);
+        };
+
+        recognitionRef.current.onerror = (event) => {
+            console.error('Speech recognition error', event.error);
+            setIsListening(false);
+        };
+
+        recognitionRef.current.onend = () => {
+            setIsListening(false);
+        };
+    }
+  }, []);
+
+  const toggleListening = () => {
+    if (!recognitionRef.current) {
+        alert('您的浏览器不支持语音识别功能');
+        return;
+    }
+
+    if (isListening) {
+        recognitionRef.current.stop();
+    } else {
+        recognitionRef.current.start();
+        setIsListening(true);
+    }
+  };
 
   const scrollToBottom = () => {
     messagesEndRef.current?.scrollIntoView({ behavior: "smooth" });
@@ -209,6 +253,17 @@ const AiFoodAssistant = ({ isOpen, onClose, restaurants, onRestaurantClick }) =>
             onSubmit={(e) => { e.preventDefault(); handleSend(); }}
             className="flex items-center gap-2"
           >
+            <button
+                type="button"
+                onClick={toggleListening}
+                className={`p-3 rounded-xl transition-colors ${
+                    isListening 
+                        ? 'bg-red-500/20 text-red-500 hover:bg-red-500/30' 
+                        : 'bg-[#1a1a1a] text-gray-400 hover:text-white hover:bg-gray-700'
+                }`}
+            >
+                {isListening ? <MicOff size={18} /> : <Mic size={18} />}
+            </button>
             <input
               type="text"
               value={inputValue}
