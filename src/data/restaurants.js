@@ -5113,7 +5113,7 @@ export const initialRestaurants = [
         "name": "黄凤娣面粉粿专卖店",
         "name_en": "Wong Fong Tee Mee Hun Kueh",
         "address": "No 283, PUSAT KOMERSIAL INDAH, Jln Kiambang 11, Bandar Indahpura, 81000 Kulai, Johor Darul Ta'zim",
-        "opening_hours": "Monday: 9 am–3 pm, 5–9 pm\nTuesday: 9 am–3 pm, 5–9 pm\nWednesday: 9 am–3 pm, 5–9 pm\nThursday: 9 am–3 pm, 5–9 pm\nFriday: 9 am–3 pm, 5–9 pm\nSaturday: 9 am–3 pm, 5–9 pm\nSunday: 9 am–3 pm, 5–9 pm",
+        "opening_hours": "Monday: 9am - 9pm\nTuesday: 9am - 9pm\nWednesday: 9am - 9pm\nThursday: 9am - 9pm\nFriday: 9am - 9pm\nSaturday: 9am - 9pm\nSunday: 9am - 9pm",
         "intro_zh": "手工制作的面粉粿，口感滑顺有嚼劲。汤底鲜甜，配料丰富，是深受本地人喜爱的平民美食。",
         "intro_en": "Handmade Mee Hun Kueh with a smooth and chewy texture. Sweet soup base and generous toppings make it a favorite local comfort food.",
         "category": [
@@ -5139,8 +5139,8 @@ export const initialRestaurants = [
         "priority": 0,
         "whatsappLink": "",
         "location": {
-            "lat": null,
-            "lng": null
+            "lat": "1.6427390805212028",
+            "lng": "103.60378634235232"
         },
         "halalStatus": "non_halal",
         "dietaryOption": null,
@@ -5238,7 +5238,7 @@ export const initialRestaurants = [
         "name": "辣椒板面",
         "name_en": "Chili Pan Mee",
         "address": "279, PTD 110704, Pusat Komersial Indah, Jln Kiambang 11, PUSAT KOMERSIAL INDAH, 81000 Kulai, Johor",
-        "opening_hours": "8 am–9 pm Mon Closed",
+        "opening_hours": "Monday: Closed\nTuesday: 8am - 9pm\nWednesday: 8am - 9pm\nThursday: 8am - 9pm\nFriday: 8am - 9pm\nSaturday: 8am - 9pm\nSunday: 8am - 9pm",
         "intro_zh": "招牌辣椒板面，香辣的肉燥配上炸江鱼仔和半熟蛋，搅拌均匀后香气四溢。爱吃辣的朋友必试。",
         "intro_en": "Signature Chili Pan Mee featuring spicy minced meat, fried anchovies, and a soft-boiled egg. A fragrant and spicy delight for chili lovers.",
         "category": [
@@ -5408,7 +5408,7 @@ export const initialRestaurants = [
         "name": "马口手工面粉粿专卖店",
         "name_en": "Restoran Bahao",
         "address": "268, Jln Kiambang 11, virvo city indahpura, 81000 Kulai, Johor Darul Ta'zim",
-        "opening_hours": "9 am–8:30 pm Tuesday Closed",
+        "opening_hours": "Monday: 9am - 8:30pm\nTuesday: Closed\nWednesday: 9am - 8:30pm\nThursday: 9am - 8:30pm\nFriday: 9am - 8:30pm\nSaturday: 9am - 8:30pm\nSunday: 9am - 8:30pm",
         "intro_zh": "正宗马口手工面粉粿，面条口感Q弹，汤头鲜甜。",
         "intro_en": "Famous for authentic handmade Mee Hun Kueh from Bahau. Chewy texture and sweet soup base.",
         "category": [
@@ -5434,8 +5434,8 @@ export const initialRestaurants = [
         "priority": 0,
         "whatsappLink": "",
         "location": {
-            "lat": null,
-            "lng": null
+            "lat": "1.6415329418664122",
+            "lng": "103.60325401354301"
         },
         "halalStatus": "non_halal",
         "dietaryOption": null,
@@ -5487,8 +5487,8 @@ export const initialRestaurants = [
         "area": "Indahpura",
         "name": "古来花火本屋",
         "name_en": "Hanabi Robata Izakaya Kulai",
-        "address": "No.294H, PUSAT KOMERSIAL INDAH, Jln Kiambang 11, Bandar Indahpura, 81000 Kulai, Johor Darul Ta'zim",
-        "opening_hours": "Monday: 12–11 pm\nTuesday: 12–11 pm\nWednesday: 12–11 pm\nThursday: 12–11 pm\nFriday: 12–11 pm\nSaturday: 12–11 pm\nSunday: 12–11 pm",
+        "address": "No.294H, Pusat Komersial Indah, Jln Kiambang 11, Bandar Indahpura, 81000 Kulai, Johor Darul Ta'zim",
+        "opening_hours": "Monday: Closed\nTuesday: 12pm - 11pm\nWednesday: 12pm - 11pm\nThursday: 12pm - 11pm\nFriday: 12pm - 11pm\nSaturday: 12pm - 11pm\nSunday: 12pm - 11pm",
         "intro_zh": "日式居酒屋，提供炉端烧（烤串）、刺身和清酒，气氛热闹。",
         "intro_en": "Japanese Izakaya serving Robatayaki (grilled skewers), sashimi, and sake in a lively atmosphere.",
         "category": [
@@ -5568,7 +5568,7 @@ export const initialRestaurants = [
         "name": "琥珀时光",
         "name_en": "Aunt Vicky",
         "address": "Pusat Komersial Indah, 294N, Jalan Kiambang 12, Indahpura, 81000 Kulai, Johor",
-        "opening_hours": "8 am–7:30 pm Tuesday Closed",
+        "opening_hours": "Monday: 8am - 7:30pm\nTuesday: Closed\nWednesday: 8am - 7:30pm\nThursday: 8am - 7:30pm\nFriday: 8am - 7:30pm\nSaturday: 8am - 7:30pm\nSunday: 8am - 7:30pm",
         "intro_zh": "温馨的西餐厅，提供多样的西餐和融合料理。环境舒适放松。",
         "intro_en": "Cozy restaurant offering a variety of Western and fusion dishes. Known for its relaxing ambience.",
         "category": [
@@ -5597,8 +5597,8 @@ export const initialRestaurants = [
         "priority": 0,
         "whatsappLink": "",
         "location": {
-            "lat": null,
-            "lng": null
+            "lat": "1.641718962530817",
+            "lng": "103.6040291595527"
         },
         "halalStatus": "non_halal",
         "dietaryOption": null,
@@ -5884,8 +5884,8 @@ export const initialRestaurants = [
         "priority": 0,
         "whatsappLink": "",
         "location": {
-            "lat": null,
-            "lng": null
+            "lat": "1.642778464084776",
+            "lng": "103.60337384286836"
         },
         "halalStatus": "non_halal",
         "dietaryOption": null,
@@ -6069,7 +6069,7 @@ export const initialRestaurants = [
         "intro_zh": "位于Indahpura的手工点心店，提供各式传统蒸点和包点。环境朴实亲切，是当地居民享用早茶的好去处。",
         "intro_en": "A local handmade dim sum shop in Indahpura, offering a variety of traditional steamed dumplings and buns. A casual and friendly spot for morning tea.",
         "address": "Kawasan Perindustrian SME, 33, Jalan SME 2, Indahpura, 81000 Kulai, Johor",
-        "opening_hours": "7 am–2 pm Tuesday Closed",
+        "opening_hours": "Monday: 7am - 2pm\nTuesday: Closed\nWednesday: 7am - 2pm\nThursday: 7am - 2pm\nFriday: 7am - 2pm\nSaturday: 7am - 2pm\nSunday: 7am - 2pm",
         "category": [
             "咖啡店/美食阁",
             "点心"
