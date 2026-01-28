@@ -6155,7 +6155,7 @@ export const initialRestaurants = [
         "intro_zh": "古来特色的柴火披萨店，提供独具风味的马来式披萨。环境温馨舒适，灯光柔和，是享用晚餐的惬意之选。",
         "intro_en": "Unique wood-fired pizza spot in Kulai offering Malay-style pizza creations. Cozy atmosphere with warm lighting, making it a pleasant choice for dinner.",
         "address": "2023, Jalan Manggis, Kampung Pertanian, 81000 Kulai, Johor Darul Ta'zim",
-        "opening_hours": "Monday: Closed\nTuesday: 10am - 10pm\nWednesday: 10am - 10pm\nThursday: 10am - 10pm\nFriday: 10am - 10pm\nSaturday: 10am - 10pm\nSunday: 10am - 10pm",
+        "opening_hours": "Monday: Closed\nTuesday: 2pm - 10:30pm\nWednesday: 2pm - 10:30pm\nThursday: 2pm - 10:30pm\nFriday: 2pm - 10:30pm\nSaturday: 2pm - 10:30pm\nSunday: 2pm - 10:30pm",
         "category": [
             "西餐"
         ],
@@ -6538,7 +6538,7 @@ export const initialRestaurants = [
         "intro_zh": "充满家乡风味的传统咖啡馆。提供香浓Kopi、烤面包和半生熟蛋，是体验古早味早餐的好地方。",
         "intro_en": "A traditional coffee shop full of hometown flavor. Serves aromatic Kopi, toast, and half-boiled eggs, a great place to experience a nostalgic breakfast.",
         "address": "5013, Jalan Kenari, Bandar Putra Kulai, 81000 Kulai, Johor Darul Ta'zim",
-        "opening_hours": "Monday: 10am - 10pm\nTuesday: 10am - 10pm\nWednesday: 10am - 10pm\nThursday: 10am - 10pm\nFriday: 10am - 10pm\nSaturday: 10am - 10pm\nSunday: 10am - 10pm",
+        "opening_hours": "Monday: 8am - 3:30pm\nTuesday: Closed\nWednesday: 8am - 3:30pm\nThursday: 8am - 3:30pm\nFriday: 8am - 3:30pm\nSaturday: 8am - 3:30pm\nSunday: 8am - 3:30pm",
         "category": [
             "咖啡店/美食阁"
         ],
@@ -6582,7 +6582,7 @@ export const initialRestaurants = [
         "intro_zh": "经典风味的咖啡店，提供舒适的用餐环境。主打传统咖啡和本地小吃，适合下午茶或休闲聚会。",
         "intro_en": "A coffee shop with classic flavors offering a comfortable dining environment. Specializes in traditional coffee and local snacks, suitable for tea time or casual gatherings.",
         "address": "5011, Jalan Kenari, Bandar Putra Kulai, 81000 Kulai, Johor Darul Ta'zim",
-        "opening_hours": "Monday: 7am - 3:45pm\nTuesday: 7am - 3:45pm\nWednesday: 7am - 3:45pm\nThursday: 7am - 3:45pm\nFriday: 7am - 3:45pm\nSaturday: 7am - 3:45pm\nSunday: 7am - 3:45pm",
+        "opening_hours": "Monday: Closed\nTuesday: 7am - 3:45pm\nWednesday: 7am - 3:45pm\nThursday: 7am - 3:45pm\nFriday: 7am - 3:45pm\nSaturday: 7am - 3:45pm\nSunday: 7am - 3:45pm",
         "category": [
             "咖啡店/美食阁"
         ],
@@ -6751,7 +6751,7 @@ export const initialRestaurants = [
         "intro_zh": "著名的全蛋云吞面专卖店。面条弹牙爽口，云吞饱满，搭配叉烧和特制酱汁，深受食客喜爱。",
         "intro_en": "A famous shop specializing in whole egg wanton noodles. The noodles are springy, wantons are plump, served with char siew and special sauce, loved by diners.",
         "address": "Kulai, Johor",
-        "opening_hours": "7 am–3:30 pm Tuesday Closed",
+        "opening_hours": "Monday: 7am - 3:30pm\nTuesday: Closed\nWednesday: 7am - 3:30pm\nThursday: 7am - 3:30pm\nFriday: 7am - 3:30pm\nSaturday: 7am - 3:30pm\nSunday: 7am - 3:30pm",
         "category": [
             "粉类"
         ],
@@ -6834,7 +6834,7 @@ export const initialRestaurants = [
         "intro_zh": "汇集多种美食的传统咖啡店。提供经济实惠的早餐和午餐选择，是当地人常去的用餐地点。",
         "intro_en": "A traditional coffee shop gathering various foods. Offers affordable breakfast and lunch options, a frequent dining spot for locals.",
         "address": "5484, Jalan Kenari 19, Bandar Putra Kulai, 81000 Kulai, Johor Darul Ta'zim",
-        "opening_hours": "Monday: 7:30 am–1:30 pm\nTuesday: 7:30 am–1:30 pm\nWednesday: 7:30 am–1:30 pm\nThursday: 7:30 am–1:30 pm\nFriday: 7:30 am–1:30 pm\nSaturday: 7:30 am–1:30 pm\nSunday: 7:30 am–1:30 pm",
+        "opening_hours": "Monday: 6am - 2pm\nTuesday: 6am - 2pm\nWednesday: 6am - 2pm\nThursday: 6am - 2pm\nFriday: 6am - 2pm\nSaturday: 6am - 2pm\nSunday: 6am - 2pm",
         "category": [
             "咖啡店/美食阁"
         ],
@@ -6862,8 +6862,8 @@ export const initialRestaurants = [
         "priority": 0,
         "whatsappLink": "",
         "location": {
-            "lat": null,
-            "lng": null
+            "lat": "1.6579941141866004",
+            "lng": "103.63019815547288"
         },
         "halalStatus": "non_halal",
         "dietaryOption": null,
