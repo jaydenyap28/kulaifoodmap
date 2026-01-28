@@ -984,10 +984,8 @@ function App() {
         <ResultModal 
           restaurant={selectedRestaurant} 
           onClose={() => navigate('/')} 
-          onAddReview={handleAddReview}
           isAdmin={isAdmin}
           onUpdateRestaurant={handleUpdateRestaurant}
-          onDeleteReview={handleDeleteReview} // Pass delete handler
           categories={categories} // Pass available categories
           onAddCategory={handleAddCategory} // Allow adding from modal too
         />

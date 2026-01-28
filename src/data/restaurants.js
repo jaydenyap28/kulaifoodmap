@@ -481,13 +481,13 @@ export const initialRestaurants = [
         "intro_zh": "拥有超过半世纪历史的传统海南咖啡店。坚持使用炭烧方式冲泡咖啡，每一口都充满古早味。搭配半生熟蛋和烤面包，是古来人最爱的早餐组合。",
         "intro_en": "A traditional Hainanese coffee shop with over half a century of history. Famous for its charcoal-roasted coffee that offers a nostalgic taste. Paired with half-boiled eggs and toast, it's a favorite breakfast spot for Kulai locals.",
         "category": [
-            "咖啡店"
+            "咖啡店/美食阁"
         ],
         "rating": 0,
         "image": "https://scontent.fmkz1-2.fna.fbcdn.net/v/t39.30808-6/237482257_1241570576319493_1119263468831903382_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=6ee11a&_nc_ohc=xt8q0PtNL20Q7kNvwG0jgVM&_nc_oc=AdnFxPbU9Ob896S7xTlCfUTHkRpZWu-p21FUgvpuwXOXVd9xelFsHJJhGatKxRGHE44&_nc_zt=23&_nc_ht=scontent.fmkz1-2.fna&_nc_gid=oQWLGX8FgtCGNxwouuq29w&oh=00_AfoojL7saSPbj6l6t3qxXRt0k88Ur2R5zAAr_eONpmpywQ&oe=697BD58B",
         "subStalls": [],
         "categories": [
-            "咖啡店"
+            "咖啡店/美食阁"
         ],
         "price_range": "RM 10-20",
         "menu_link": "",
@@ -525,7 +525,7 @@ export const initialRestaurants = [
         "intro_en": "An iconic traditional breakfast spot at Batu 21, Kulai. While famous for its handmade 'Big Pao' and BBQ Pork Buns, it also houses various popular stalls offering pork noodles and konlo mee, making it a perfect hub for a diverse local breakfast.",
         "category": [
             "点心",
-            "咖啡店"
+            "咖啡店/美食阁"
         ],
         "rating": 0,
         "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTS4IT7xvF0wJvbCe_ChlCt8E7nKEEDeQFB-g&s",
@@ -561,7 +561,7 @@ export const initialRestaurants = [
         ],
         "categories": [
             "点心",
-            "咖啡店"
+            "咖啡店/美食阁"
         ],
         "price_range": "RM 10-20",
         "menu_link": "",
@@ -774,7 +774,7 @@ export const initialRestaurants = [
         "intro_zh": "提供中西餐的舒适咖啡馆。招牌菜包括西式鸡扒、黑胡椒鸡扒以及各类煮炒。环境整洁，适合家庭聚餐。",
         "intro_en": "A comfortable cafe offering Western and Chinese cuisine. Signature dishes include Chicken Chop, Black Pepper Chicken Chop, and various 'Zhu Chao' dishes. Clean environment, suitable for family dining.",
         "category": [
-            "咖啡店"
+            "咖啡店/美食阁"
         ],
         "rating": 0,
         "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTapfIawzRAocP9jWaJKJn3MZJeuxiteNnhLA&s",
@@ -943,13 +943,13 @@ export const initialRestaurants = [
         "intro_zh": "位于古来21哩的道地茶室。环境宽敞，是附近居民解决早餐和午餐的好去处。",
         "intro_en": "A local kopitiam located at Kulai 21 Miles. With its spacious setting, it is a go-to spot for locals to settle their breakfast and lunch.",
         "category": [
-            "咖啡店"
+            "咖啡店/美食阁"
         ],
         "rating": 0,
         "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSvGo3QpvV0Rm8Rys5XxbNm7yEvMWawOIiOlQ&s",
         "subStalls": [],
         "categories": [
-            "咖啡店"
+            "咖啡店/美食阁"
         ],
         "price_range": "RM 10-20",
         "menu_link": "",
@@ -1368,13 +1368,13 @@ export const initialRestaurants = [
         "intro_zh": "古来 Taman Timur 的传统中式餐馆，以 点心、粿条、云吞面、鸡饭和其他本地早餐/正餐 吃法闻名，适合想吃简单早午餐或传统华人料理的食客。",
         "intro_en": "Serves delicious Dim Sum, Chee Cheong Fun, and Wanton Noodles. The Chee Cheong Fun is smooth and fragrant, while the Tau Sar Pau is soft and sweet. Famous for its unique style of Wanton Noodles.",
         "category": [
-            "咖啡店"
+            "咖啡店/美食阁"
         ],
         "rating": 0,
         "image": "https://i.ibb.co/mFJmH4KG/Screen-Hunter-78-Jan-26-18-33.jpg",
         "subStalls": [],
         "categories": [
-            "咖啡店"
+            "咖啡店/美食阁"
         ],
         "price_range": "RM 10-20",
         "menu_link": "",
@@ -1532,7 +1532,7 @@ export const initialRestaurants = [
         "intro_zh": "位于古来的休闲餐饮点，以早餐和马来风味美食闻名。推荐尝试他们的Lontong Goreng和Asam Pedas。环境轻松，适合朋友聚会。",
         "intro_en": "A casual dining spot in Kulai, known for breakfast and Malay-style cuisine. Recommended dishes include Lontong Goreng and Asam Pedas. A relaxing environment suitable for gatherings.",
         "category": [
-            "咖啡店"
+            "咖啡店/美食阁"
         ],
         "categories": [
             "Cafe"
@@ -1617,7 +1617,7 @@ export const initialRestaurants = [
         "intro_zh": "古来一家 小巧特色咖啡馆，位于 独特的后巷空间，环境舒适。主打 热压吐司（如乌打芝士口味） 与 香煎吐司，搭配 香浓传统咖啡 和 半熟蛋，是早餐或午茶的好选择。",
         "intro_en": "Located in a unique 3.5-story building with a cozy atmosphere. Specializes in pressed toast sandwiches (such as Otak Cheese) and grilled toast, served with aromatic traditional coffee and soft-boiled eggs.",
         "category": [
-            "咖啡店"
+            "咖啡店/美食阁"
         ],
         "categories": [
             "Cafe"
@@ -1783,7 +1783,7 @@ export const initialRestaurants = [
         "intro_zh": "结合传统与现代的咖啡店，环境舒适。招牌“Berangan Latte”将阿拉比卡咖啡与栗子完美融合。这里的烤面包、椰浆饭和柔佛叻沙也是必试美食。",
         "intro_en": "A modern take on the traditional kopitiam. Famous for its signature \"Berangan Latte\", a unique blend of Arabica coffee and chestnuts. Also serves excellent Butter Kaya Toast, Nasi Lemak, and Laksa Johor.",
         "category": [
-            "咖啡店"
+            "咖啡店/美食阁"
         ],
         "categories": [
             "Cafe"
@@ -2080,7 +2080,7 @@ export const initialRestaurants = [
         "intro_zh": "一家受 越南咖啡文化启发 的马来西亚咖啡连锁品牌，主打 越式滴滤咖啡（如招牌 Kopi Saigon），以浓郁甜香的风味著称。咖啡系列中 Kopi Saigon 和 Kopi Buttercream 在顾客中很受欢迎，口感香浓且顺滑，同时也提供多样饮品选择。",
         "intro_en": "A popular Vietnamese coffee chain serving authentic and aromatic coffee. Signature drinks include Kopi Saigon and Kopi Buttercream, known for their rich flavor and smooth texture.",
         "category": [
-            "咖啡店",
+            "咖啡店/美食阁",
             "马来与印度风味"
         ],
         "categories": [
@@ -2164,7 +2164,7 @@ export const initialRestaurants = [
         "intro_zh": "居銮著名咖啡品牌的古来分店，提供经典的传统咖啡、烤面包和本地美食。是享用南洋风味早餐和下午茶的好地方。",
         "intro_en": "The Kulai branch of the famous Kluang coffee brand, serving classic traditional coffee, toast, and local delights. A great spot for Nanyang-style breakfast and tea time.",
         "category": [
-            "咖啡店"
+            "咖啡店/美食阁"
         ],
         "categories": [
             "饭类",
@@ -2336,7 +2336,7 @@ export const initialRestaurants = [
         "intro_zh": "位于 Indahpura 的日式/韩式风味平价餐厅，提供多样盖饭、咖喱饭、拉面和汤饭套餐，以及小吃和饮品，菜色选择丰富且价格亲民，适合日常用餐。",
         "intro_en": "A cozy eatery offering a wide variety of local and Western delights. With extensive food choices and affordable prices, it is a great spot for daily dining.",
         "category": [
-            "咖啡店"
+            "咖啡店/美食阁"
         ],
         "categories": [
             "饭类",
@@ -2721,7 +2721,7 @@ export const initialRestaurants = [
         "intro_zh": "位于 Aeon Kulai Jaya 的传统南洋咖啡店。提供经典的烤面包、半生熟蛋、咖啡以及多种本地美食如椰浆饭、面粉粿等。环境怀旧舒适，适合家庭用餐。",
         "intro_en": "A traditional Nanyang-style coffee shop located in Aeon Kulai Jaya. Serving classic toast, half-boiled eggs, coffee, and a variety of local delights like Nasi Lemak and Mee Hoon Kueh. A nostalgic and cozy environment suitable for family dining.",
         "category": [
-            "咖啡店"
+            "咖啡店/美食阁"
         ],
         "categories": [
             "Cafe"
@@ -2848,10 +2848,10 @@ export const initialRestaurants = [
         "intro_zh": "Indahpura 著名的美食中心，汇集了多个档口。早市有著名的猪肠粉、云吞面、鸡饭等。环境宽敞，是当地居民早餐和午餐的热门选择。",
         "intro_en": "A popular food court in Indahpura hosting various stalls. The morning market features famous Chee Cheong Fun, Wanton Mee, and Chicken Rice. Spacious environment and a hot spot for locals' breakfast and lunch.",
         "category": [
-            "咖啡店"
+            "咖啡店/美食阁"
         ],
         "categories": [
-            "咖啡店"
+            "咖啡店/美食阁"
         ],
         "rating": 0,
         "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRu2cQuldli1y1WLnTsbBv5H6pzyHJGlhRV3A&s",
@@ -3055,10 +3055,10 @@ export const initialRestaurants = [
         "intro_zh": "传统的华人茶餐室，提供经济实惠的早餐选择。有经济粉、椰浆饭、糕点和传统咖啡。是附近上班族和居民解决早餐的好地方。",
         "intro_en": "A traditional Chinese coffee shop offering affordable breakfast options. Features economy noodles, Nasi Lemak, kuih, and traditional coffee. A great place for nearby office workers and residents to grab breakfast.",
         "category": [
-            "咖啡店"
+            "咖啡店/美食阁"
         ],
         "categories": [
-            "咖啡店"
+            "咖啡店/美食阁"
         ],
         "rating": 0,
         "image": "https://i.ibb.co/mVcj0R8j/image.jpg",
@@ -3254,10 +3254,10 @@ export const initialRestaurants = [
         "intro_zh": "传统的老字号茶餐室，以其古早味咖啡和烤面包闻名。环境保留了旧时的风貌，充满了怀旧气息。是体验古来传统早餐文化的好地方。",
         "intro_en": "A traditional heritage coffee shop known for its old-school coffee and toast. The environment retains the charm of the past, full of nostalgia. A great place to experience Kulai's traditional breakfast culture.",
         "category": [
-            "咖啡店"
+            "咖啡店/美食阁"
         ],
         "categories": [
-            "咖啡店"
+            "咖啡店/美食阁"
         ],
         "rating": 0,
         "image": "https://i.ibb.co/ZpwYx2Fw/image.jpg",
@@ -3337,10 +3337,10 @@ export const initialRestaurants = [
         "intro_zh": "汇集多种本地美食的现代化美食中心。提供从面食到饭类的多样化选择。环境舒适，适合日常用餐。",
         "intro_en": "A modern food court gathering various local delicacies. Offers a wide range of choices from noodles to rice dishes. Comfortable environment for daily dining.",
         "category": [
-            "咖啡店"
+            "咖啡店/美食阁"
         ],
         "categories": [
-            "咖啡店"
+            "咖啡店/美食阁"
         ],
         "rating": 0,
         "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSbD1tkAE1LF70FntiSYgZoGpaEYPNosne3_Q&s",
@@ -3379,7 +3379,7 @@ export const initialRestaurants = [
         "intro_zh": "著名的传统咖啡店，源自笨珍。以其香浓的传统咖啡、烤面包和半生熟蛋闻名。也提供云吞面、叻沙等本地美食，是享用南洋早餐的好去处。",
         "intro_en": "A famous traditional coffee shop originating from Pontian. Known for its aromatic traditional coffee, toast, and half-boiled eggs. Also offers local delights like Wanton Mee and Laksa. A great place for a Nanyang-style breakfast.",
         "category": [
-            "咖啡店"
+            "咖啡店/美食阁"
         ],
         "categories": [
             "Cafe",
@@ -3465,7 +3465,7 @@ export const initialRestaurants = [
         "intro_zh": "位于 古来 Indahpura 的舒适咖啡馆，提供多种咖啡饮品与轻食/主食选择（如本地早餐、烤面包、炒饭、西餐、面类及传统南洋咖啡等），环境轻松适合悠闲喝咖啡或早午餐聚会。",
         "intro_en": "A cozy cafe offering Western-style breakfasts, pasta, and specialty coffee. Signatures include their Big Breakfast and specialty lattes, making it a great spot for a relaxing brunch.",
         "category": [
-            "咖啡店"
+            "咖啡店/美食阁"
         ],
         "categories": [
             "饭类",
@@ -3551,7 +3551,7 @@ export const initialRestaurants = [
         "intro_zh": "传统海南咖啡店，提供经典的烤面包、半熟蛋和香浓咖啡。环境怀旧，是当地人喜爱的早餐和下午茶地点。",
         "intro_en": "Traditional Hainanese Kopitiam serving classic toast, half-boiled eggs, and aromatic coffee. A nostalgic spot favored by locals for breakfast and tea time.",
         "category": [
-            "咖啡店"
+            "咖啡店/美食阁"
         ],
         "categories": [
             "饭类",
@@ -3638,7 +3638,7 @@ export const initialRestaurants = [
         "intro_zh": "一家位于古来 Indahpura 的怡保风味餐馆，主打 怡保特色料理，包括 鸡丝河粉、猪肠粉、咖喱面等招牌口味，让你在古来也能吃到有南洋风格的怡保风味。",
         "intro_en": "Offers authentic Ipoh cuisine, featuring signature Bean Sprout Chicken and smooth Hor Fun noodles. Authentic flavors bringing the taste of Ipoh to Kulai.",
         "category": [
-            "咖啡店"
+            "咖啡店/美食阁"
         ],
         "categories": [
             "Cafe",
@@ -3806,7 +3806,7 @@ export const initialRestaurants = [
         "intro_zh": "古来热门的复古风格咖啡馆，环境舒适。提供各式本地风味早餐和西式餐点，是聚会聊天的理想场所。",
         "intro_en": "A popular retro-style cafe in Kulai with a cozy atmosphere. Offers a variety of local breakfast favorites and Western dishes, ideal for gatherings.",
         "category": [
-            "咖啡店"
+            "咖啡店/美食阁"
         ],
         "categories": [
             "Cafe",
@@ -3890,7 +3890,7 @@ export const initialRestaurants = [
         "intro_zh": "提供正宗砂拉越古晋美食，如哥罗面（Kolo Mee）和砂拉越叻沙。味道道地，让人在柔佛也能吃到东马风味。",
         "intro_en": "Offers authentic Sarawak Kuching cuisine, such as Kolo Mee and Sarawak Laksa. Authentic flavors that bring the taste of East Malaysia to Johor.",
         "category": [
-            "咖啡店"
+            "咖啡店/美食阁"
         ],
         "categories": [
             "Cafe",
@@ -4235,7 +4235,7 @@ export const initialRestaurants = [
         "intro_zh": "位于 古来 Indahpura 的南洋风味早餐咖啡馆，主打 烤面包/太空包搭配半熟蛋和南洋咖啡，还提供多样早餐与轻食选择。环境轻松，是享受经典南洋早餐/早午餐的好去处。",
         "intro_en": "Nanyang-style kopitiam serving traditional toast, soft-boiled eggs, and aromatic coffee. A classic choice for breakfast and lunch.",
         "category": [
-            "咖啡店"
+            "咖啡店/美食阁"
         ],
         "categories": [
             "Cafe"
@@ -4395,7 +4395,7 @@ export const initialRestaurants = [
         "intro_zh": "传统海南咖啡店，保留了古早味的咖啡香和烤面包。是体验古来传统早餐的好地方。",
         "intro_en": "Traditional Hainanese kopitiam preserving the old-school aroma of coffee and toast. A great place to experience traditional Kulai breakfast.",
         "category": [
-            "咖啡店"
+            "咖啡店/美食阁"
         ],
         "categories": [
             "饭类",
@@ -4525,7 +4525,7 @@ export const initialRestaurants = [
         "intro_zh": "一家以 传统炭火烧腊 闻名的连锁烧腊餐厅，主打 炭烧叉烧、烧鸭、烤鸡和烧肉等烧腊类料理，烧腊香气浓郁、肉质鲜嫩。这里也有烧腊饭、烧腊面以及拼盘选择，适合喜欢经典南洋风味烧腊的食客。",
         "intro_en": "Established roasted meat chain famous for charcoal-roasted meats. Signature dishes include perfectly balanced Char Siew and crispy roasted duck.",
         "category": [
-            "咖啡店"
+            "咖啡店/美食阁"
         ],
         "categories": [
             "Cafe",
@@ -4569,7 +4569,7 @@ export const initialRestaurants = [
         "intro_zh": "位于古来 Indahpura 的粉面小馆，主打 牛肉粉、猪肉粉和海鲜粉等汤粉与干捞粉类料理，汤头清爽、肉质鲜嫩，味道地道，份量充足且价格亲民，是很多当地人常去的 早餐到午餐粉面美食小馆。",
         "intro_en": "One of Kulai's old-school kopitiams offering affordable breakfast and lunch. Traditional coffee and toast are must-tries, full of nostalgic flavor.",
         "category": [
-            "咖啡店"
+            "咖啡店/美食阁"
         ],
         "categories": [
             "粉类"
@@ -4697,10 +4697,10 @@ export const initialRestaurants = [
         "intro_zh": "人气旺盛的咖啡店，汇集了多个美食档口。从面食、鸡饭到小吃应有尽有，是解决一日三餐的好去处。",
         "intro_en": "Bustling kopitiam housing multiple food stalls. Offers a wide range of food from noodles and chicken rice to snacks, a great spot for any meal.",
         "category": [
-            "咖啡店"
+            "咖啡店/美食阁"
         ],
         "categories": [
-            "咖啡店"
+            "咖啡店/美食阁"
         ],
         "rating": 0,
         "image": "https://i.ibb.co/S4FfmjtZ/image.jpg",
@@ -5157,7 +5157,7 @@ export const initialRestaurants = [
         "intro_zh": "温馨的家庭式小厨房，提供家常小菜和面食。味道像家里的饭菜一样亲切，价格实惠。",
         "intro_en": "A cozy family-style kitchen serving home-cooked dishes and noodles. Tastes like home with affordable prices.",
         "category": [
-            "咖啡店"
+            "咖啡店/美食阁"
         ],
         "categories": [
             "Cafe"
@@ -5858,7 +5858,7 @@ export const initialRestaurants = [
         "intro_zh": "传奇海南咖啡店，以招牌海南鸡扒和传统烤面包早餐闻名。",
         "intro_en": "Legendary Hainanese Kopitiam famous for its Chicken Chop and traditional breakfast toast.",
         "category": [
-            "咖啡店"
+            "咖啡店/美食阁"
         ],
         "categories": [
             "Cafe",
@@ -5947,7 +5947,7 @@ export const initialRestaurants = [
         "intro_zh": "位于 古来 Indahpura 的本地餐厅，提供 丰富的本地美食、便当和饮料。这里既支持 堂食用餐，也提供 外送/外卖服务。菜单包括鸡肉饭、椰浆饭、炒饭、面类、小吃和多种饮品选择，环境休闲实惠，适合日常正餐和轻松吃饭。",
         "intro_en": "Convenient food delivery service offering a variety of local favorites and bento boxes.",
         "category": [
-            "咖啡店"
+            "咖啡店/美食阁"
         ],
         "categories": [
             "Cafe"
@@ -6071,11 +6071,11 @@ export const initialRestaurants = [
         "address": "Kawasan Perindustrian SME, 33, Jalan SME 2, Indahpura, 81000 Kulai, Johor",
         "opening_hours": "7 am–2 pm Tuesday Closed",
         "category": [
-            "咖啡店",
+            "咖啡店/美食阁",
             "点心"
         ],
         "categories": [
-            "咖啡店",
+            "咖啡店/美食阁",
             "点心"
         ],
         "rating": 0,
@@ -6452,7 +6452,7 @@ export const initialRestaurants = [
         "address": "G23A,Ground Floor,IOI Mall",
         "opening_hours": "Monday: 10am - 10pm\nTuesday: 10am - 10pm\nWednesday: 10am - 10pm\nThursday: 10am - 10pm\nFriday: 10am - 10pm\nSaturday: 10am - 10pm\nSunday: 10am - 10pm",
         "category": [
-            "咖啡店"
+            "咖啡店/美食阁"
         ],
         "categories": [
             "Cafe"
@@ -6540,7 +6540,7 @@ export const initialRestaurants = [
         "address": "5013, Jalan Kenari, Bandar Putra Kulai, 81000 Kulai, Johor Darul Ta'zim",
         "opening_hours": "Monday: 10am - 10pm\nTuesday: 10am - 10pm\nWednesday: 10am - 10pm\nThursday: 10am - 10pm\nFriday: 10am - 10pm\nSaturday: 10am - 10pm\nSunday: 10am - 10pm",
         "category": [
-            "咖啡店"
+            "咖啡店/美食阁"
         ],
         "categories": [
             "Cafe"
@@ -6584,7 +6584,7 @@ export const initialRestaurants = [
         "address": "5011, Jalan Kenari, Bandar Putra Kulai, 81000 Kulai, Johor Darul Ta'zim",
         "opening_hours": "Monday: 7am - 3:45pm\nTuesday: 7am - 3:45pm\nWednesday: 7am - 3:45pm\nThursday: 7am - 3:45pm\nFriday: 7am - 3:45pm\nSaturday: 7am - 3:45pm\nSunday: 7am - 3:45pm",
         "category": [
-            "咖啡店"
+            "咖啡店/美食阁"
         ],
         "categories": [
             "Cafe"
@@ -6836,10 +6836,10 @@ export const initialRestaurants = [
         "address": "5484, Jalan Kenari 19, Bandar Putra Kulai, 81000 Kulai, Johor Darul Ta'zim",
         "opening_hours": "Monday: 7:30 am–1:30 pm\nTuesday: 7:30 am–1:30 pm\nWednesday: 7:30 am–1:30 pm\nThursday: 7:30 am–1:30 pm\nFriday: 7:30 am–1:30 pm\nSaturday: 7:30 am–1:30 pm\nSunday: 7:30 am–1:30 pm",
         "category": [
-            "咖啡店"
+            "咖啡店/美食阁"
         ],
         "categories": [
-            "咖啡店"
+            "咖啡店/美食阁"
         ],
         "rating": 0,
         "image": "https://i.ibb.co/ZzSHC1xV/image.jpg",
@@ -7299,7 +7299,7 @@ export const initialRestaurants = [
         "address": "306, Jalan Kenanga 29/9, Bandar Indahpura, 81000 Kulai, Johor Darul Ta'zim",
         "opening_hours": "Monday: 8:30am - 8:30pm\nTuesday: 8:30am - 8:30pm\nWednesday: 8:30am - 8:30pm\nThursday: 8:30am - 8:30pm\nFriday: 8:30am - 8:30pm\nSaturday: 8:30am - 8:30pm\nSunday: 8:30am - 8:30pm",
         "category": [
-            "咖啡店"
+            "咖啡店/美食阁"
         ],
         "categories": [
             "饭类",
@@ -7899,10 +7899,10 @@ export const initialRestaurants = [
         "address": "40, Jalan Kelapa Sawit 2, Kampung Sri Paya, 81030 Kulai, Johor Darul Ta'zim",
         "opening_hours": "Monday: 5:30 am–4:30 pm\nTuesday: 5:30 am–4:30 pm\nWednesday: 5:30 am–4:30 pm\nThursday: 5:30 am–4:30 pm\nFriday: 5:30 am–4:30 pm\nSaturday: 5:30 am–4:30 pm\nSunday: 5:30 am–4:30 pm",
         "category": [
-            "咖啡店"
+            "咖啡店/美食阁"
         ],
         "categories": [
-            "咖啡店"
+            "咖啡店/美食阁"
         ],
         "rating": 0,
         "image": "https://i.ibb.co/Fb8FrPGX/image.jpg",
@@ -7982,10 +7982,10 @@ export const initialRestaurants = [
         "address": "Kelapa Sawit, Kulai",
         "opening_hours": "Monday: 10am - 10pm\nTuesday: 10am - 10pm\nWednesday: 10am - 10pm\nThursday: 10am - 10pm\nFriday: 10am - 10pm\nSaturday: 10am - 10pm\nSunday: 10am - 10pm",
         "category": [
-            "咖啡店"
+            "咖啡店/美食阁"
         ],
         "categories": [
-            "咖啡店"
+            "咖啡店/美食阁"
         ],
         "rating": 0,
         "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTlTzKFVgjzgFu4tFVizPl-UZHf4Uj1A4LEyg&s",
@@ -8025,10 +8025,10 @@ export const initialRestaurants = [
         "address": "S-71, Jalan Kelapa Sawit 3, Kampung Sri Paya, 81000 Kulai, Johor Darul Ta'zim",
         "opening_hours": "Monday: 7:30am - 5pm\nTuesday: 7:30am - 5pm\nWednesday: 7:30am - 5pm\nThursday: 7:30am - 5pm\nFriday: 7:30am - 5pm\nSaturday: 7:30am - 5pm\nSunday: 7:30am - 5pm",
         "category": [
-            "咖啡店"
+            "咖啡店/美食阁"
         ],
         "categories": [
-            "咖啡店",
+            "咖啡店/美食阁",
             "Cafe"
         ],
         "rating": 0,
@@ -8137,10 +8137,10 @@ export const initialRestaurants = [
         "address": "S-43, Jalan Kelapa Sawit 2, Kampung Sri Paya, 81030 Kulai, Johor Darul Ta'zim",
         "opening_hours": "8 am–1 pm Sun & Tue Closed",
         "category": [
-            "咖啡店"
+            "咖啡店/美食阁"
         ],
         "categories": [
-            "咖啡店"
+            "咖啡店/美食阁"
         ],
         "rating": 0,
         "image": "https://i.ibb.co/Jws0YDdW/image.jpg",
@@ -8235,10 +8235,10 @@ export const initialRestaurants = [
         "address": "A28A, Jalan Kelapa Sawit, Kelapa Sawit, 81000 Kulai, Johor Darul Ta'zim",
         "opening_hours": "6 am–3 pm Wed Closed",
         "category": [
-            "咖啡店"
+            "咖啡店/美食阁"
         ],
         "categories": [
-            "咖啡店"
+            "咖啡店/美食阁"
         ],
         "rating": 0,
         "image": "https://i.ibb.co/VcX0W47P/image.jpg",
@@ -8278,10 +8278,10 @@ export const initialRestaurants = [
         "address": "S-32, Kelapa Sawit, 81000 Kulai, Johor Darul Ta'zim",
         "opening_hours": "5:30 am–3:30 pm Sun Closed",
         "category": [
-            "咖啡店"
+            "咖啡店/美食阁"
         ],
         "categories": [
-            "咖啡店"
+            "咖啡店/美食阁"
         ],
         "rating": 0,
         "image": "https://i.ibb.co/5X50Xk9x/image.jpg",
@@ -8360,10 +8360,10 @@ export const initialRestaurants = [
         "address": "4103, Jalan Kelapa Sawit 2, Kampung Sri Paya, 81000 Kulai, Johor Darul Ta'zim",
         "opening_hours": "Monday: 9:30 am–5 pm\nTuesday: 9:30 am–5 pm\nWednesday: 9:30 am–5 pm\nThursday: 9:30 am–5 pm\nFriday: 9:30 am–5 pm\nSaturday: 9:30 am–5 pm\nSunday: 9:30 am–5 pm",
         "category": [
-            "咖啡店"
+            "咖啡店/美食阁"
         ],
         "categories": [
-            "咖啡店"
+            "咖啡店/美食阁"
         ],
         "rating": 0,
         "image": "https://i.ibb.co/FvJG5k7/image.jpg",
@@ -8484,10 +8484,10 @@ export const initialRestaurants = [
         "address": "91, Jln Impiana 3, 81000, Johor Darul Ta'zim",
         "opening_hours": "Monday: 7 am–12 am\nTuesday: 7 am–12 am\nWednesday: 7 am–12 am\nThursday: 7 am–12 am\nFriday: 7 am–12 am\nSaturday: 7 am–12 am\nSunday: 7 am–12 am",
         "category": [
-            "咖啡店"
+            "咖啡店/美食阁"
         ],
         "categories": [
-            "咖啡店"
+            "咖啡店/美食阁"
         ],
         "rating": 0,
         "image": "https://i.ibb.co/rK5m19SC/126.jpg",
@@ -8525,10 +8525,10 @@ export const initialRestaurants = [
         "address": "S-34, Jalan Kelapa Sawit 2, Kampung Sri Paya, 81000 Kulai, Johor Darul Ta'zim",
         "opening_hours": "5:30 am–1:30 pm Tue Closed",
         "category": [
-            "咖啡店"
+            "咖啡店/美食阁"
         ],
         "categories": [
-            "咖啡店"
+            "咖啡店/美食阁"
         ],
         "rating": 0,
         "image": "https://i.ibb.co/84SD6V8L/image.webp",
@@ -8656,11 +8656,11 @@ export const initialRestaurants = [
         "address": "123, Jalan Kenanga 29/6, Bandar Indahpura, 81000 Kulai, Johor Darul Ta'zim",
         "opening_hours": "Monday: 11am - 10pm\nTuesday: 11am - 10pm\nWednesday: 11am - 10pm\nThursday: 11am - 10pm\nFriday: 11am - 10pm\nSaturday: 11am - 10pm\nSunday: 11am - 10pm",
         "category": [
-            "咖啡店",
+            "咖啡店/美食阁",
             "西餐"
         ],
         "categories": [
-            "咖啡店",
+            "咖啡店/美食阁",
             "西餐"
         ],
         "rating": 0,
@@ -9507,10 +9507,10 @@ export const initialRestaurants = [
         "address": "32, Jalan Seruling 2, Taman Sri Kulai Baru, 81000 Kulai, Johor Darul Ta'zim",
         "opening_hours": "Monday: 5 am–9 pm\nTuesday: 5 am–9 pm\nWednesday: 5 am–9 pm\nThursday: 5 am–9 pm\nFriday: 5 am–9 pm\nSaturday: 5 am–9 pm\nSunday: 5 am–9 pm",
         "category": [
-            "咖啡店"
+            "咖啡店/美食阁"
         ],
         "categories": [
-            "咖啡店"
+            "咖啡店/美食阁"
         ],
         "rating": 0,
         "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR1M0F-VCBeSENyDyqrDQ4IjTeuyOU1ZHS05Q&s",
@@ -9630,10 +9630,10 @@ export const initialRestaurants = [
         "address": "640, Jalan Gangsa 6, Taman Gunung Pulai, 81000 Kulai, Johor Darul Ta'zim",
         "opening_hours": "11:30 am–4:30 pm Thu Closed",
         "category": [
-            "咖啡店"
+            "咖啡店/美食阁"
         ],
         "categories": [
-            "咖啡店"
+            "咖啡店/美食阁"
         ],
         "rating": 0,
         "image": "https://i.ibb.co/RGksz1k3/image.webp",
@@ -10356,10 +10356,10 @@ export const initialRestaurants = [
         "address": "Jalan Kenanga 29/9, Bandar Indahpura, 81000 Kulai, Johor Darul Ta'zim",
         "opening_hours": "6 am–1 pm Wed closed",
         "category": [
-            "咖啡店"
+            "咖啡店/美食阁"
         ],
         "categories": [
-            "咖啡店"
+            "咖啡店/美食阁"
         ],
         "rating": 0,
         "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTqq4s0kSov4dLw-XxN0-1fhDz-MaSLxnAtCw&s",
@@ -10419,7 +10419,7 @@ export const initialRestaurants = [
         "address": "325, Jalan Kenanga 29/9, Bandar Indahpura, 81000 Kulai, Johor Darul Ta'zim",
         "opening_hours": "Monday: 10am - 10pm\nTuesday: 10am - 10pm\nWednesday: 10am - 10pm\nThursday: 10am - 10pm\nFriday: Closed\nSaturday: 10am - 10pm\nSunday: 10am - 10pm",
         "category": [
-            "咖啡店"
+            "咖啡店/美食阁"
         ],
         "categories": [
             "Cafe"
@@ -10504,10 +10504,10 @@ export const initialRestaurants = [
         "address": "345, Jalan Kenanga 29/9, Bandar Indahpura, 81000 Kulai, Johor Darul Ta'zim",
         "opening_hours": "Monday: 7:30 am–4:30 pm\nTuesday: 7:30 am–4:30 pm\nWednesday: 7:30 am–4:30 pm\nThursday: 7:30 am–4:30 pm\nFriday: 7:30 am–4:30 pm\nSaturday: 7:30 am–4:30 pm\nSunday: 7:30 am–4:30 pm",
         "category": [
-            "咖啡店"
+            "咖啡店/美食阁"
         ],
         "categories": [
-            "咖啡店"
+            "咖啡店/美食阁"
         ],
         "rating": 0,
         "image": "https://scontent.fmkz1-2.fna.fbcdn.net/v/t39.30808-6/344553969_263566129375204_288368938095225583_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=6ee11a&_nc_ohc=k8AyvYD3jnwQ7kNvwFWahGc&_nc_oc=Adk7Dutzf8FtKwVj1QOYaNYApJ-8O1ZA_OM4j1Dz5-yXZzWlIo5fn4fL5ElBCKJaYyM&_nc_zt=23&_nc_ht=scontent.fmkz1-2.fna&_nc_gid=QNy55yi-ziX6iqegtuycwA&oh=00_AfoITUm9DQnaSSQlBKVQjvhQomNWkTAbKwD1bv1PD-9xgw&oe=697A365E",
@@ -11754,10 +11754,10 @@ export const initialRestaurants = [
         "address": "15, Jalan SME 1, Bandar Indahpura, 81000 Kulai, Johor Darul Ta'zim",
         "opening_hours": "Monday: 5:30 am–1 am\nTuesday: 5:30 am–1 am\nWednesday: 5:30 am–1 am\nThursday: 5:30 am–1 am\nFriday: 5:30 am–1 am\nSaturday: 5:30 am–1 am\nSunday: 5:30 am–1 am",
         "category": [
-            "咖啡店"
+            "咖啡店/美食阁"
         ],
         "categories": [
-            "咖啡店"
+            "咖啡店/美食阁"
         ],
         "rating": 0,
         "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTqLjuAY28LEL20ep5ll8WodSUnuEtqe-BAMA&s",
@@ -12181,7 +12181,7 @@ export const initialRestaurants = [
         "opening_hours": "Monday: 10am - 10pm\nTuesday: 10am - 10pm\nWednesday: 10am - 10pm\nThursday: 10am - 10pm\nFriday: 10am - 10pm\nSaturday: 10am - 10pm\nSunday: 10am - 10pm",
         "category": [
             "Cafe",
-            "咖啡店"
+            "咖啡店/美食阁"
         ],
         "categories": [
             "Cafe"
@@ -12319,7 +12319,7 @@ export const initialRestaurants = [
             "饮品"
         ],
         "rating": 0,
-        "image": "https://static.wixstatic.com/media/aa5d41_423e534bbeda4c9a9eca31db3ae2bd61~mv2.png/v1/fill/w_250,h_153,al_c,q_95,enc_auto/aa5d41_423e534bbeda4c9a9eca31db3ae2bd61~mv2.png",
+        "image": "https://i.ibb.co/ns3b3r4b/Bask-Bear-Coffee.jpg",
         "subStalls": [],
         "price_range": "RM 10-20",
         "menu_link": "",
@@ -12528,7 +12528,7 @@ export const initialRestaurants = [
             "饭类"
         ],
         "rating": 0,
-        "image": "https://i.ibb.co/tTLrdMTL/image.webp",
+        "image": "https://i.ibb.co/RGB199xv/image.jpg",
         "subStalls": [],
         "price_range": "RM 10-20",
         "menu_link": "",
@@ -12799,13 +12799,13 @@ export const initialRestaurants = [
             "下午茶"
         ],
         "category": [
-            "咖啡店",
+            "咖啡店/美食阁",
             "蛋糕甜点",
             "粉类",
             "饭类"
         ],
         "categories": [
-            "咖啡店",
+            "咖啡店/美食阁",
             "蛋糕甜点",
             "粉类",
             "饭类"
@@ -12936,10 +12936,10 @@ export const initialRestaurants = [
         "address": "106, Jalan Harmoni 1, Taman Harmoni, 81000 Kulai, Johor Darul Ta'zim",
         "opening_hours": "7am–9pm (Closed on Tue & Sat)",
         "category": [
-            "咖啡店"
+            "咖啡店/美食阁"
         ],
         "categories": [
-            "咖啡店"
+            "咖啡店/美食阁"
         ],
         "rating": 0,
         "image": "https://i.ibb.co/p6BjvsQJ/image.jpg",
@@ -12975,10 +12975,10 @@ export const initialRestaurants = [
         "address": "28, 29 Jalan Desa Baiduri 1, 81000 Kulai, Johor Darul Ta'zim",
         "opening_hours": "Monday: Unknown\nTuesday: Unknown\nWednesday: Unknown\nThursday: Unknown\nFriday: Unknown\nSaturday: Unknown\nSunday: Unknown",
         "category": [
-            "咖啡店"
+            "咖啡店/美食阁"
         ],
         "categories": [
-            "咖啡店"
+            "咖啡店/美食阁"
         ],
         "rating": 0,
         "image": "https://i.ibb.co/N2xkJPRY/Desa-Baiduri.jpg",
@@ -13014,10 +13014,10 @@ export const initialRestaurants = [
         "address": "No.3, Taman Desa Baiduri, Jalan Desa Baiduri 1, 81000 Kulai, Johor Darul Ta'zim",
         "opening_hours": "Monday: Unknown\nTuesday: Unknown\nWednesday: Unknown\nThursday: Unknown\nFriday: Unknown\nSaturday: Unknown\nSunday: Unknown",
         "category": [
-            "咖啡店"
+            "咖啡店/美食阁"
         ],
         "categories": [
-            "咖啡店"
+            "咖啡店/美食阁"
         ],
         "rating": 0,
         "image": "https://i.ibb.co/CpxmxVsT/178.jpg",
@@ -13139,10 +13139,10 @@ export const initialRestaurants = [
         "intro_zh": "",
         "intro_en": "",
         "category": [
-            "咖啡店"
+            "咖啡店/美食阁"
         ],
         "categories": [
-            "咖啡店"
+            "咖啡店/美食阁"
         ],
         "rating": 0,
         "image": "https://i.ibb.co/MxXDhtrc/118-Kopitiam.jpg",
@@ -13179,10 +13179,10 @@ export const initialRestaurants = [
         "intro_zh": "",
         "intro_en": "",
         "category": [
-            "咖啡店"
+            "咖啡店/美食阁"
         ],
         "categories": [
-            "咖啡店"
+            "咖啡店/美食阁"
         ],
         "rating": 0,
         "image": "https://i.ibb.co/FkVx6xqk/image.jpg",
@@ -13700,10 +13700,10 @@ export const initialRestaurants = [
         "intro_zh": "",
         "intro_en": "",
         "category": [
-            "咖啡店"
+            "咖啡店/美食阁"
         ],
         "categories": [
-            "咖啡店"
+            "咖啡店/美食阁"
         ],
         "rating": 0,
         "image": "https://i.ibb.co/PGF8YFJ8/image.jpg",
@@ -13748,7 +13748,7 @@ export const initialRestaurants = [
             "蛋糕甜点"
         ],
         "rating": 0,
-        "image": "https://placehold.co/600x400/png?text=No+Image",
+        "image": "https://i.ibb.co/b5Pd1wkN/Secret-Recipe.png",
         "subStalls": [],
         "price_range": "RM 10-20",
         "menu_link": "",
@@ -13788,7 +13788,7 @@ export const initialRestaurants = [
             "蛋糕甜点"
         ],
         "rating": 0,
-        "image": "https://placehold.co/600x400/png?text=No+Image",
+        "image": "https://i.ibb.co/zWzYS6NC/Baker-s-Cottage.jpg",
         "subStalls": [],
         "price_range": "RM 10-20",
         "menu_link": "",
@@ -13828,7 +13828,7 @@ export const initialRestaurants = [
             "马来与印度风味"
         ],
         "rating": 0,
-        "image": "https://placehold.co/600x400/png?text=No+Image",
+        "image": "https://i.ibb.co/twtMw1XB/Madras-to-Malaya-Cafe.jpg",
         "subStalls": [],
         "price_range": "RM 10-20",
         "menu_link": "",
@@ -13868,7 +13868,7 @@ export const initialRestaurants = [
             "火锅烧烤"
         ],
         "rating": 0,
-        "image": "https://placehold.co/600x400/png?text=No+Image",
+        "image": "https://i.ibb.co/6RfBxyFf/image.jpg",
         "subStalls": [],
         "price_range": "RM 10-20",
         "menu_link": "",
@@ -13908,7 +13908,7 @@ export const initialRestaurants = [
             "Cafe"
         ],
         "rating": 0,
-        "image": "https://placehold.co/600x400/png?text=No+Image",
+        "image": "https://i.ibb.co/whrvHQVM/image.jpg",
         "subStalls": [],
         "price_range": "RM 10-20",
         "menu_link": "",
@@ -13950,7 +13950,7 @@ export const initialRestaurants = [
             "蛋糕甜点"
         ],
         "rating": 0,
-        "image": "https://placehold.co/600x400/png?text=No+Image",
+        "image": "https://i.ibb.co/35jQJxHy/image.png",
         "subStalls": [],
         "price_range": "RM 10-20",
         "menu_link": "",
@@ -13990,7 +13990,7 @@ export const initialRestaurants = [
             "马来与印度风味"
         ],
         "rating": 0,
-        "image": "https://placehold.co/600x400/png?text=No+Image",
+        "image": "https://i.ibb.co/HL72rp0q/Tomyam-Meletop.jpg",
         "subStalls": [],
         "price_range": "RM 10-20",
         "menu_link": "",
@@ -14030,7 +14030,7 @@ export const initialRestaurants = [
             "马来与印度风味"
         ],
         "rating": 0,
-        "image": "https://placehold.co/600x400/png?text=No+Image",
+        "image": "https://i.ibb.co/YBt0MH6g/Restoran-Juara-Seafood.jpg",
         "subStalls": [],
         "price_range": "RM 10-20",
         "menu_link": "",
@@ -14070,7 +14070,7 @@ export const initialRestaurants = [
             "马来与印度风味"
         ],
         "rating": 0,
-        "image": "https://placehold.co/600x400/png?text=No+Image",
+        "image": "https://i.ibb.co/9HSpcR22/Sanabil-Al-Arabi.jpg",
         "subStalls": [],
         "price_range": "RM 10-20",
         "menu_link": "",
@@ -14110,7 +14110,7 @@ export const initialRestaurants = [
             "马来与印度风味"
         ],
         "rating": 0,
-        "image": "https://placehold.co/600x400/png?text=No+Image",
+        "image": "https://i.ibb.co/cctJpLQh/Selera-Rasa-Hasnah.jpg",
         "subStalls": [],
         "price_range": "RM 10-20",
         "menu_link": "",
@@ -14150,7 +14150,7 @@ export const initialRestaurants = [
             "马来与印度风味"
         ],
         "rating": 0,
-        "image": "https://placehold.co/600x400/png?text=No+Image",
+        "image": "https://i.ibb.co/Mk7rxNSt/Tom-Yam-Ramai-ramai-Cawangan.jpg",
         "subStalls": [],
         "price_range": "RM 10-20",
         "menu_link": "",
@@ -14190,7 +14190,7 @@ export const initialRestaurants = [
             "马来与印度风味"
         ],
         "rating": 0,
-        "image": "https://placehold.co/600x400/png?text=No+Image",
+        "image": "https://i.ibb.co/cKfMvdMS/Nasi-Ayam-Mak-Pah.jpg",
         "subStalls": [],
         "price_range": "RM 10-20",
         "menu_link": "",
@@ -14230,7 +14230,7 @@ export const initialRestaurants = [
             "马来与印度风味"
         ],
         "rating": 0,
-        "image": "https://placehold.co/600x400/png?text=No+Image",
+        "image": "https://i.ibb.co/k6wTcY2j/Seri-Pantai-Seafood.jpg",
         "subStalls": [],
         "price_range": "RM 10-20",
         "menu_link": "",
@@ -14270,7 +14270,7 @@ export const initialRestaurants = [
             "马来与印度风味"
         ],
         "rating": 0,
-        "image": "https://placehold.co/600x400/png?text=No+Image",
+        "image": "https://i.ibb.co/XxGFRjcK/Mama-Thai-Tomyam.jpg",
         "subStalls": [],
         "price_range": "RM 10-20",
         "menu_link": "",
@@ -14310,7 +14310,7 @@ export const initialRestaurants = [
             "马来与印度风味"
         ],
         "rating": 0,
-        "image": "https://placehold.co/600x400/png?text=No+Image",
+        "image": "https://i.ibb.co/nsH8hNVW/Sofiyah-Cafe.jpg",
         "subStalls": [],
         "price_range": "RM 10-20",
         "menu_link": "",
@@ -14350,7 +14350,7 @@ export const initialRestaurants = [
             "马来与印度风味"
         ],
         "rating": 0,
-        "image": "https://placehold.co/600x400/png?text=No+Image",
+        "image": "https://i.ibb.co/mC0jcqTk/Restaurant-Aziz-Bilal.jpg",
         "subStalls": [],
         "price_range": "RM 10-20",
         "menu_link": "",
@@ -14390,7 +14390,7 @@ export const initialRestaurants = [
             "马来与印度风味"
         ],
         "rating": 0,
-        "image": "https://placehold.co/600x400/png?text=No+Image",
+        "image": "https://i.ibb.co/zTzKg63S/Restaurant-ezma-corner.jpg",
         "subStalls": [],
         "price_range": "RM 10-20",
         "menu_link": "",
@@ -14434,7 +14434,7 @@ export const initialRestaurants = [
         ],
         "tags": [],
         "price_range": "RM 10 - RM 20",
-        "image": "https://placehold.co/600x400/e0e0e0/333333?text=No+Image",
+        "image": "https://i.ibb.co/W4cBMbwR/image.jpg",
         "rating": 0,
         "google_maps": "",
         "location": {
@@ -14467,7 +14467,7 @@ export const initialRestaurants = [
         ],
         "tags": [],
         "price_range": "RM 10 - RM 20",
-        "image": "https://placehold.co/600x400/e0e0e0/333333?text=No+Image",
+        "image": "https://i.ibb.co/bgpbFjBB/Restoran-D-Ambang.jpg",
         "rating": 0,
         "google_maps": "",
         "location": {
@@ -14488,7 +14488,7 @@ export const initialRestaurants = [
         "subscriptionLevel": 0,
         "manualStatus": "auto",
         "address": "1763, Jalan Senai Utama 1/2, Taman Senai Utama, 81400 Senai, Johor Darul Ta'zim",
-        "opening_hours": "9am–5pm\nTuesday: Closed",
+        "opening_hours": "Monday: 9am - 5pm\nTuesday: Closed\nWednesday: 9am - 5pm\nThursday: 9am - 5pm\nFriday: 9am - 5pm\nSaturday: 9am - 5pm\nSunday: 9am - 5pm",
         "intro_zh": "",
         "intro_en": "",
         "category": [
@@ -14499,12 +14499,12 @@ export const initialRestaurants = [
         ],
         "tags": [],
         "price_range": "RM 10 - RM 20",
-        "image": "https://placehold.co/600x400/e0e0e0/333333?text=No+Image",
+        "image": "https://i.ibb.co/c4H465L/image.jpg",
         "rating": 0,
         "google_maps": "",
         "location": {
-            "lat": null,
-            "lng": null
+            "lat": "1.610349",
+            "lng": "103.647239"
         },
         "phone": "016-972 8135",
         "link": "https://www.facebook.com/profile.php?id=100063655324098",
@@ -14525,14 +14525,14 @@ export const initialRestaurants = [
         "intro_zh": "",
         "intro_en": "",
         "category": [
-            "咖啡店"
+            "咖啡店/美食阁"
         ],
         "categories": [
-            "咖啡店"
+            "咖啡店/美食阁"
         ],
         "tags": [],
         "price_range": "RM 10 - RM 20",
-        "image": "https://placehold.co/600x400/e0e0e0/333333?text=No+Image",
+        "image": "https://i.ibb.co/ZzfvKTLZ/image.jpg",
         "rating": 0,
         "google_maps": "",
         "location": {
@@ -14565,7 +14565,7 @@ export const initialRestaurants = [
         ],
         "tags": [],
         "price_range": "RM 10 - RM 20",
-        "image": "https://placehold.co/600x400/e0e0e0/333333?text=No+Image",
+        "image": "https://i.ibb.co/pBpXGd7H/Restoran-Singgah-Maju.jpg",
         "rating": 0,
         "google_maps": "",
         "location": {
@@ -14600,7 +14600,7 @@ export const initialRestaurants = [
         ],
         "tags": [],
         "price_range": "RM 10 - RM 20",
-        "image": "https://placehold.co/600x400/e0e0e0/333333?text=No+Image",
+        "image": "https://i.ibb.co/DPpZX75Q/Restoran-Nasi-Ayam-Hainan.jpg",
         "rating": 0,
         "google_maps": "",
         "location": {
@@ -14625,14 +14625,14 @@ export const initialRestaurants = [
         "intro_zh": "",
         "intro_en": "",
         "category": [
-            "咖啡店"
+            "咖啡店/美食阁"
         ],
         "categories": [
-            "咖啡店"
+            "咖啡店/美食阁"
         ],
         "tags": [],
         "price_range": "RM 10 - RM 20",
-        "image": "https://placehold.co/600x400/e0e0e0/333333?text=No+Image",
+        "image": "https://i.ibb.co/PGrkghPx/image.jpg",
         "rating": 0,
         "google_maps": "",
         "location": {
@@ -14664,7 +14664,7 @@ export const initialRestaurants = [
         ],
         "tags": [],
         "price_range": "RM 10 - RM 20",
-        "image": "https://placehold.co/600x400/e0e0e0/333333?text=No+Image",
+        "image": "https://i.ibb.co/5hDVTLBd/image.jpg",
         "rating": 0,
         "google_maps": "",
         "location": {
@@ -14696,7 +14696,7 @@ export const initialRestaurants = [
         ],
         "tags": [],
         "price_range": "RM 10 - RM 20",
-        "image": "https://placehold.co/600x400/e0e0e0/333333?text=No+Image",
+        "image": "https://i.ibb.co/HTgYk6LR/image.jpg",
         "rating": 0,
         "google_maps": "",
         "location": {
@@ -14729,7 +14729,7 @@ export const initialRestaurants = [
         ],
         "tags": [],
         "price_range": "RM 10 - RM 20",
-        "image": "https://placehold.co/600x400/e0e0e0/333333?text=No+Image",
+        "image": "https://i.ibb.co/hrvGYGh/image.jpg",
         "rating": 0,
         "google_maps": "",
         "location": {
@@ -14761,7 +14761,7 @@ export const initialRestaurants = [
         ],
         "tags": [],
         "price_range": "RM 10 - RM 20",
-        "image": "https://placehold.co/600x400/e0e0e0/333333?text=No+Image",
+        "image": "https://i.ibb.co/FbZWgTqr/Restoran-Bunga-Dahlia-Taman-Impian-Senai.jpg",
         "rating": 0,
         "google_maps": "",
         "location": {
@@ -14793,7 +14793,7 @@ export const initialRestaurants = [
         ],
         "tags": [],
         "price_range": "RM 10 - RM 20",
-        "image": "https://placehold.co/600x400/e0e0e0/333333?text=No+Image",
+        "image": "https://i.ibb.co/xSmX4wD9/ABMH-Restaurant.jpg",
         "rating": 0,
         "google_maps": "",
         "location": {
@@ -14825,7 +14825,7 @@ export const initialRestaurants = [
         ],
         "tags": [],
         "price_range": "RM 10 - RM 20",
-        "image": "https://placehold.co/600x400/e0e0e0/333333?text=No+Image",
+        "image": "https://i.ibb.co/23czP2WX/image.jpg",
         "rating": 0,
         "google_maps": "",
         "location": {
@@ -14891,7 +14891,7 @@ export const initialRestaurants = [
         ],
         "tags": [],
         "price_range": "RM 10 - RM 20",
-        "image": "https://placehold.co/600x400/e0e0e0/333333?text=No+Image",
+        "image": "https://i.ibb.co/mrGz11Gc/KCC.jpg",
         "rating": 0,
         "google_maps": "",
         "location": {
@@ -14924,7 +14924,7 @@ export const initialRestaurants = [
         ],
         "tags": [],
         "price_range": "RM 10 - RM 20",
-        "image": "https://placehold.co/600x400/e0e0e0/333333?text=No+Image",
+        "image": "https://i.ibb.co/HfvrHd8T/image.jpg",
         "rating": 0,
         "google_maps": "",
         "location": {
@@ -14956,7 +14956,7 @@ export const initialRestaurants = [
         ],
         "tags": [],
         "price_range": "RM 10 - RM 20",
-        "image": "https://placehold.co/600x400/e0e0e0/333333?text=No+Image",
+        "image": "https://i.ibb.co/67VR1Qd8/image.jpg",
         "rating": 0,
         "google_maps": "",
         "location": {
@@ -14988,7 +14988,7 @@ export const initialRestaurants = [
         ],
         "tags": [],
         "price_range": "RM 10 - RM 20",
-        "image": "https://placehold.co/600x400/e0e0e0/333333?text=No+Image",
+        "image": "https://i.ibb.co/NgKxhX59/Kafe-Dulang-Ayan.jpg",
         "rating": 0,
         "google_maps": "",
         "location": {
@@ -15056,7 +15056,7 @@ export const initialRestaurants = [
             "日本餐"
         ],
         "rating": 0,
-        "image": "https://placehold.co/600x400/ff9900/ffffff?text=Empire+Sushi",
+        "image": "https://i.ibb.co/d449tFzk/Empire-Sushi.jpg",
         "subStalls": [],
         "price_range": "RM 10-20",
         "menu_link": "",
@@ -15108,7 +15108,7 @@ export const initialRestaurants = [
             "马来与印度风味"
         ],
         "rating": 0,
-        "image": "https://placehold.co/600x400/e0e0e0/333333?text=No+Image",
+        "image": "https://i.ibb.co/qF7bnfgg/Tulang-JR-Cafe.jpg",
         "subStalls": [],
         "price_range": "RM 10-20",
         "menu_link": "",
@@ -15151,7 +15151,7 @@ export const initialRestaurants = [
             "西餐"
         ],
         "rating": 0,
-        "image": "https://placehold.co/600x400/e0e0e0/333333?text=No+Image",
+        "image": "https://i.ibb.co/zgCLmvz/Chicken-Chop-Senai-Kg-Jaya-Sepakat.jpg",
         "subStalls": [],
         "price_range": "RM 10-20",
         "menu_link": "",
@@ -15192,7 +15192,7 @@ export const initialRestaurants = [
             "马来与印度风味"
         ],
         "rating": 0,
-        "image": "https://placehold.co/600x400/e0e0e0/333333?text=No+Image",
+        "image": "https://i.ibb.co/WN75JxLN/Nasi-Kukus-Scientex-Utama.jpg",
         "subStalls": [],
         "price_range": "RM 10-20",
         "menu_link": "",
@@ -15233,7 +15233,7 @@ export const initialRestaurants = [
             "马来与印度风味"
         ],
         "rating": 0,
-        "image": "https://placehold.co/600x400/e0e0e0/333333?text=No+Image",
+        "image": "https://i.ibb.co/v6nwhTdY/Restoran-Nusantara-Tok-Rin.jpg",
         "subStalls": [],
         "price_range": "RM 10-20",
         "menu_link": "",
@@ -15274,7 +15274,7 @@ export const initialRestaurants = [
             "马来与印度风味"
         ],
         "rating": 0,
-        "image": "https://placehold.co/600x400/e0e0e0/333333?text=No+Image",
+        "image": "https://i.ibb.co/rf77p41y/Hungry-Habibi.webp",
         "subStalls": [],
         "price_range": "RM 10-20",
         "menu_link": "",
@@ -15315,7 +15315,7 @@ export const initialRestaurants = [
             "蛋糕甜点"
         ],
         "rating": 0,
-        "image": "https://placehold.co/600x400/e0e0e0/333333?text=No+Image",
+        "image": "https://i.ibb.co/gLLGLRQ7/Kelem-Ice-Cream-Gula-Apong.jpg",
         "subStalls": [],
         "price_range": "RM 10-20",
         "menu_link": "",
@@ -15356,7 +15356,7 @@ export const initialRestaurants = [
             "马来与印度风味"
         ],
         "rating": 0,
-        "image": "https://placehold.co/600x400/e0e0e0/333333?text=No+Image",
+        "image": "https://i.ibb.co/3YyhbMy1/Happy-Tomyam-Kitchen-Restaurant.jpg",
         "subStalls": [],
         "price_range": "RM 10-20",
         "menu_link": "",
@@ -15397,7 +15397,7 @@ export const initialRestaurants = [
             "马来与印度风味"
         ],
         "rating": 0,
-        "image": "https://placehold.co/600x400/e0e0e0/333333?text=No+Image",
+        "image": "https://i.ibb.co/Pv29BQbH/Nasi-Kandar-Mamu.jpg",
         "subStalls": [],
         "price_range": "RM 10-20",
         "menu_link": "",
@@ -15439,7 +15439,7 @@ export const initialRestaurants = [
             "马来与印度风味"
         ],
         "rating": 0,
-        "image": "https://placehold.co/600x400/e0e0e0/333333?text=No+Image",
+        "image": "https://i.ibb.co/W4kN4QZP/Deli-C-Cafe.jpg",
         "subStalls": [],
         "price_range": "RM 10-20",
         "menu_link": "",
@@ -15480,7 +15480,7 @@ export const initialRestaurants = [
             "马来与印度风味"
         ],
         "rating": 0,
-        "image": "https://placehold.co/600x400/e0e0e0/333333?text=No+Image",
+        "image": "https://i.ibb.co/CpnfLzd2/Naseeb-Capati-Nan-Senai.jpg",
         "subStalls": [],
         "price_range": "RM 10-20",
         "menu_link": "",
@@ -15521,7 +15521,7 @@ export const initialRestaurants = [
             "马来与印度风味"
         ],
         "rating": 0,
-        "image": "https://placehold.co/600x400/e0e0e0/333333?text=No+Image",
+        "image": "https://i.ibb.co/xqj69mf8/Nasi-Royale-JB.jpg",
         "subStalls": [],
         "price_range": "RM 10-20",
         "menu_link": "",
@@ -15562,7 +15562,7 @@ export const initialRestaurants = [
             "马来与印度风味"
         ],
         "rating": 0,
-        "image": "https://placehold.co/600x400/e0e0e0/333333?text=No+Image",
+        "image": "https://i.ibb.co/7xRgfqnT/Warung-Mee-Bandung-Pak-Abu.jpg",
         "subStalls": [],
         "price_range": "RM 10-20",
         "menu_link": "",
@@ -15603,7 +15603,7 @@ export const initialRestaurants = [
             "马来与印度风味"
         ],
         "rating": 0,
-        "image": "https://placehold.co/600x400/e0e0e0/333333?text=No+Image",
+        "image": "https://i.ibb.co/BxppwPJ/Bakso-Beranak-Kulai.jpg",
         "subStalls": [],
         "price_range": "RM 10-20",
         "menu_link": "",
@@ -15644,7 +15644,7 @@ export const initialRestaurants = [
             "饭类"
         ],
         "rating": 0,
-        "image": "https://placehold.co/600x400/e0e0e0/333333?text=No+Image",
+        "image": "https://i.ibb.co/C3pS9GcH/image.jpg",
         "subStalls": [],
         "price_range": "RM 10-20",
         "menu_link": "",
@@ -15688,7 +15688,7 @@ export const initialRestaurants = [
             "饭类"
         ],
         "rating": 0,
-        "image": "https://placehold.co/600x400/e0e0e0/333333?text=No+Image",
+        "image": "https://i.ibb.co/sJCwszMZ/image.jpg",
         "subStalls": [],
         "price_range": "RM 10-20",
         "menu_link": "",
@@ -15731,7 +15731,7 @@ export const initialRestaurants = [
             "煮炒海鲜楼"
         ],
         "rating": 0,
-        "image": "https://placehold.co/600x400/e0e0e0/333333?text=No+Image",
+        "image": "https://i.ibb.co/mFNGd251/image.jpg",
         "subStalls": [],
         "price_range": "RM 10-20",
         "menu_link": "",
@@ -15774,7 +15774,7 @@ export const initialRestaurants = [
             "马来与印度风味"
         ],
         "rating": 0,
-        "image": "https://placehold.co/600x400/e0e0e0/333333?text=No+Image",
+        "image": "https://i.ibb.co/BHWk9ss7/Mastura-Tomyam-Seafood.jpg",
         "subStalls": [],
         "price_range": "RM 10-20",
         "menu_link": "",
@@ -15815,7 +15815,7 @@ export const initialRestaurants = [
             "饭类"
         ],
         "rating": 0,
-        "image": "https://placehold.co/600x400/e0e0e0/333333?text=No+Image",
+        "image": "https://i.ibb.co/JWxJzs1d/image.jpg",
         "subStalls": [],
         "price_range": "RM 10-20",
         "menu_link": "",
@@ -15858,7 +15858,7 @@ export const initialRestaurants = [
             "马来与印度风味"
         ],
         "rating": 0,
-        "image": "https://placehold.co/600x400/e0e0e0/333333?text=No+Image",
+        "image": "https://i.ibb.co/GQ865yQQ/Restoran-Bunga-Dahlia-Taman-Bintang.jpg",
         "subStalls": [],
         "price_range": "RM 10-20",
         "menu_link": "",
@@ -15942,7 +15942,7 @@ export const initialRestaurants = [
             "马来与印度风味"
         ],
         "rating": 0,
-        "image": "https://placehold.co/600x400/e0e0e0/333333?text=No+Image",
+        "image": "https://i.ibb.co/Gv3knTLS/Masal-Vadai-Restaurant.jpg",
         "subStalls": [],
         "price_range": "RM 10-20",
         "menu_link": "",
@@ -15983,7 +15983,7 @@ export const initialRestaurants = [
             "马来与印度风味"
         ],
         "rating": 0,
-        "image": "https://placehold.co/600x400/e0e0e0/333333?text=No+Image",
+        "image": "https://i.ibb.co/HTSKPZBB/Restoran-Farook-23-Jam.jpg",
         "subStalls": [],
         "price_range": "RM 10-20",
         "menu_link": "",
@@ -16024,7 +16024,7 @@ export const initialRestaurants = [
             "马来与印度风味"
         ],
         "rating": 0,
-        "image": "https://placehold.co/600x400/e0e0e0/333333?text=No+Image",
+        "image": "https://i.ibb.co/RGRpjPDj/Restaurant-Awe-Kelantan.jpg",
         "subStalls": [],
         "price_range": "RM 10-20",
         "menu_link": "",
@@ -16065,7 +16065,7 @@ export const initialRestaurants = [
             "马来与印度风味"
         ],
         "rating": 0,
-        "image": "https://placehold.co/600x400/e0e0e0/333333?text=No+Image",
+        "image": "https://i.ibb.co/rKtvZg9c/Llakkias-Curry-House.jpg",
         "subStalls": [],
         "price_range": "RM 10-20",
         "menu_link": "",
@@ -16106,7 +16106,7 @@ export const initialRestaurants = [
             "马来与印度风味"
         ],
         "rating": 0,
-        "image": "https://placehold.co/600x400/e0e0e0/333333?text=No+Image",
+        "image": "https://i.ibb.co/D2qYxj3/Asam-Pedas-Jb.jpg",
         "subStalls": [],
         "price_range": "RM 10-20",
         "menu_link": "",
@@ -16139,7 +16139,7 @@ export const initialRestaurants = [
         "intro_zh": "",
         "intro_en": "",
         "address": "30, Jalan Terminal 5, 81400 Senai, Johor",
-        "opening_hours": "7am–7pm",
+        "opening_hours": "Monday: 7am - 7pm\nTuesday: 7am - 7pm\nWednesday: 7am - 7pm\nThursday: 7am - 7pm\nFriday: 7am - 7pm\nSaturday: 7am - 7pm\nSunday: 7am - 7pm",
         "category": [
             "马来与印度风味"
         ],
@@ -16147,7 +16147,7 @@ export const initialRestaurants = [
             "马来与印度风味"
         ],
         "rating": 0,
-        "image": "https://placehold.co/600x400/e0e0e0/333333?text=No+Image",
+        "image": "https://i.ibb.co/DfM6vHF9/Chamek-Kopitiam.jpg",
         "subStalls": [],
         "price_range": "RM 10-20",
         "menu_link": "",
@@ -16163,8 +16163,8 @@ export const initialRestaurants = [
         "priority": 0,
         "whatsappLink": "",
         "location": {
-            "lat": null,
-            "lng": null
+            "lat": "1.635735",
+            "lng": "103.663147"
         },
         "phone": "0173603215",
         "halalStatus": "muslim_owned",
@@ -16188,7 +16188,7 @@ export const initialRestaurants = [
             "马来与印度风味"
         ],
         "rating": 0,
-        "image": "https://placehold.co/600x400/e0e0e0/333333?text=No+Image",
+        "image": "https://i.ibb.co/TD3hdzgy/Omak-Den-Restaurant.jpg",
         "subStalls": [],
         "price_range": "RM 10-20",
         "menu_link": "",
@@ -16231,7 +16231,7 @@ export const initialRestaurants = [
             "饮品"
         ],
         "rating": 0,
-        "image": "https://upload.wikimedia.org/wikipedia/zh/thumb/d/d3/Starbucks_Corporation_Logo_2011.svg/440px-Starbucks_Corporation_Logo_2011.svg.png",
+        "image": "https://i.ibb.co/MDJc81TL/Starbucks.jpg",
         "subStalls": [],
         "price_range": "RM 15-30",
         "menu_link": "https://www.starbucks.com.my/menu",
@@ -16348,7 +16348,7 @@ export const initialRestaurants = [
             "煮炒海鲜楼"
         ],
         "rating": 0,
-        "image": "https://placehold.co/600x400/1e1e1e/FFF?text=Kim+Shan",
+        "image": "https://i.ibb.co/M56df0VM/image.jpg",
         "subStalls": [],
         "categories": [
             "饭类",
@@ -16396,13 +16396,13 @@ export const initialRestaurants = [
         "address": "857, Jalan Teratai 36/17, Taman Indahpura, 81000 Kulai, Johor Darul Ta'zim",
         "opening_hours": "Monday: 5am - 4:30pm\nTuesday: 5am - 4:30pm\nWednesday: 5am - 4:30pm\nThursday: 5am - 4:30pm\nFriday: 5am - 4:30pm\nSaturday: 5am - 4:30pm\nSunday: 5am - 4:30pm",
         "category": [
-            "咖啡店"
+            "咖啡店/美食阁"
         ],
         "categories": [
-            "咖啡店"
+            "咖啡店/美食阁"
         ],
         "rating": 0,
-        "image": "https://placehold.co/600x400/1e1e1e/FFF?text=Xiao+Zhou",
+        "image": "https://i.ibb.co/C38dYL34/image.jpg",
         "subStalls": [],
         "price_range": "RM 5-15",
         "menu_link": "",
@@ -16447,7 +16447,7 @@ export const initialRestaurants = [
             "马来与印度风味"
         ],
         "rating": 0,
-        "image": "https://placehold.co/600x400/1e1e1e/FFF?text=Mutiara+Garden",
+        "image": "https://i.ibb.co/KjWMzVwj/Mutiara-Garden-Restaurant.jpg",
         "subStalls": [],
         "price_range": "RM 5-20",
         "menu_link": "",
@@ -16493,7 +16493,7 @@ export const initialRestaurants = [
             "马来与印度风味"
         ],
         "rating": 0,
-        "image": "https://placehold.co/600x400/1e1e1e/FFF?text=Hasny",
+        "image": "https://i.ibb.co/jvQB36dK/Restoran-Hasny.jpg",
         "subStalls": [],
         "price_range": "RM 5-20",
         "menu_link": "",
@@ -16540,7 +16540,7 @@ export const initialRestaurants = [
             "饮品"
         ],
         "rating": 0,
-        "image": "https://placehold.co/600x400/1e1e1e/FFF?text=The+Brew+Orchestra",
+        "image": "https://i.ibb.co/7dp6sGfZ/The-Brew-Orchestra.jpg",
         "subStalls": [],
         "price_range": "RM 20-40",
         "menu_link": "",
@@ -16585,7 +16585,7 @@ export const initialRestaurants = [
             "日本餐"
         ],
         "rating": 0,
-        "image": "https://placehold.co/600x400/1e1e1e/FFF?text=Sushi+Plus",
+        "image": "https://i.ibb.co/rGkZf6W3/Sushi-Plus.png",
         "subStalls": [],
         "price_range": "RM 10-30",
         "menu_link": "",
@@ -16631,7 +16631,7 @@ export const initialRestaurants = [
             "韩国餐"
         ],
         "rating": 0,
-        "image": "https://placehold.co/600x400/1e1e1e/FFF?text=GoGiYo",
+        "image": "https://i.ibb.co/vvR4DV2D/Go-Gi-Yo-Korean-BBQ-House.jpg",
         "subStalls": [],
         "price_range": "RM 30-60",
         "menu_link": "",
@@ -16675,7 +16675,7 @@ export const initialRestaurants = [
             "Cafe"
         ],
         "rating": 0,
-        "image": "https://placehold.co/600x400/1e1e1e/FFF?text=Glanz+Bistro",
+        "image": "https://i.ibb.co/r2Md3Ctz/Glanz-Bistro-House.jpg",
         "subStalls": [],
         "price_range": "RM 20-50",
         "menu_link": "",
@@ -16720,7 +16720,7 @@ export const initialRestaurants = [
             "煮炒海鲜楼"
         ],
         "rating": 0,
-        "image": "https://placehold.co/600x400/1e1e1e/FFF?text=Yu+Min+Two",
+        "image": "https://i.ibb.co/Hf5T7c0x/image.jpg",
         "subStalls": [],
         "price_range": "RM 15-40",
         "menu_link": "",
@@ -16766,7 +16766,7 @@ export const initialRestaurants = [
             "韩国餐"
         ],
         "rating": 0,
-        "image": "https://placehold.co/600x400/1e1e1e/FFF?text=Gangnam+BBQ",
+        "image": "https://i.ibb.co/SXZFtVJL/Gangnam-BBQ.jpg",
         "subStalls": [],
         "price_range": "RM 30-60",
         "menu_link": "",
@@ -16810,7 +16810,7 @@ export const initialRestaurants = [
             "饭类"
         ],
         "rating": 0,
-        "image": "https://placehold.co/600x400/1e1e1e/FFF?text=Restoran+Unik",
+        "image": "https://i.ibb.co/JRht83Vv/image.jpg",
         "subStalls": [],
         "price_range": "RM 15-30",
         "menu_link": "",
@@ -16855,7 +16855,7 @@ export const initialRestaurants = [
             "煮炒海鲜楼"
         ],
         "rating": 0,
-        "image": "https://placehold.co/600x400/1e1e1e/FFF?text=Qi+Le",
+        "image": "https://i.ibb.co/hJFW8f1T/image.jpg",
         "subStalls": [],
         "price_range": "RM 10-30",
         "menu_link": "",
@@ -16901,7 +16901,7 @@ export const initialRestaurants = [
             "马来与印度风味"
         ],
         "rating": 0,
-        "image": "https://placehold.co/600x400/1e1e1e/FFF?text=Alaf+Maju",
+        "image": "https://i.ibb.co/0pfDbBQD/Alaf-Maju-Restaurant.jpg",
         "subStalls": [],
         "price_range": "RM 5-20",
         "menu_link": "",
@@ -16946,7 +16946,7 @@ export const initialRestaurants = [
             "韩国餐"
         ],
         "rating": 0,
-        "image": "https://placehold.co/600x400/1e1e1e/FFF?text=ZM+Bulgogi",
+        "image": "https://i.ibb.co/Gf8vMkvc/ZM-bulgogi-mix-BBQ.jpg",
         "subStalls": [],
         "price_range": "RM 30-60",
         "menu_link": "",
@@ -16990,7 +16990,7 @@ export const initialRestaurants = [
             "Cafe"
         ],
         "rating": 0,
-        "image": "https://placehold.co/600x400/1e1e1e/FFF?text=The+Upper+Floor",
+        "image": "https://i.ibb.co/Wv2JLGWQ/The-Upper-Floor-Cafe.jpg",
         "subStalls": [],
         "price_range": "RM 15-35",
         "menu_link": "",
@@ -17019,56 +17019,7 @@ export const initialRestaurants = [
         "dietaryOption": null,
         "slug": "the-upper-floor-cafe"
     },
-    {
-        "id": 416,
-        "fb_post_link": "",
-        "name": "江满小食馆",
-        "name_en": "Restoran Jiang Man",
-        "intro_zh": "位于 Taman Nam Tak (21哩) 的老字号小食馆，提供各式地道面食与小吃。有一间分行。",
-        "intro_en": "Traditional eatery located in Taman Nam Tak (21 Miles), known for its authentic noodles and snacks. Has a branch.",
-        "address": "Jalan Susur Kulai 5, Taman Nam Tak, 81000 Kulai, Johor Darul Ta'zim",
-        "opening_hours": "Monday: 7am - 3pm\nTuesday: 7am - 3pm\nWednesday: 7am - 3pm\nThursday: 7am - 3pm\nFriday: 7am - 3pm\nSaturday: 7am - 3pm\nSunday: 7am - 3pm",
-        "category": [
-            "中餐",
-            "粉类"
-        ],
-        "categories": [
-            "中餐",
-            "粉类"
-        ],
-        "rating": 0,
-        "image": "https://placehold.co/600x400/1e1e1e/FFF?text=Jiang+Man",
-        "subStalls": [],
-        "price_range": "RM 5-15",
-        "menu_link": "",
-        "website_link": "",
-        "delivery_link": "",
-        "isVegetarian": false,
-        "isNoBeef": false,
-        "manualStatus": "auto",
-        "branches": [],
-        "tags": [
-            "Chinese",
-            "Noodles",
-            "Kulai",
-            "Traditional",
-            "Breakfast",
-            "Lunch"
-        ],
-        "subscriptionLevel": 0,
-        "isVIP": false,
-        "priority": 0,
-        "whatsappLink": "",
-        "location": {
-            "lat": null,
-            "lng": null
-        },
-        "phone": "",
-        "halalStatus": "non_halal",
-        "area": "Kulai 21 Miles",
-        "dietaryOption": null,
-        "slug": "restoran-jiang-man-1"
-    },
+
     {
         "id": 417,
         "fb_post_link": "",
@@ -17085,7 +17036,7 @@ export const initialRestaurants = [
             "点心"
         ],
         "rating": 0,
-        "image": "https://placehold.co/600x400/1e1e1e/FFF?text=Haw+Siang",
+        "image": "https://i.ibb.co/20vmLQYV/image.jpg",
         "subStalls": [],
         "price_range": "RM 10-30",
         "menu_link": "",
@@ -17181,7 +17132,7 @@ export const initialRestaurants = [
             "日本餐"
         ],
         "rating": 0,
-        "image": "https://placehold.co/600x400/1e1e1e/FFF?text=Waichi+Yakiniku",
+        "image": "https://i.ibb.co/bj7nfQ8L/Waichi-Yakiniku.jpg",
         "subStalls": [],
         "price_range": "RM 30-100",
         "menu_link": "",
@@ -17228,7 +17179,7 @@ export const initialRestaurants = [
             "粉类"
         ],
         "rating": 0,
-        "image": "https://placehold.co/600x400/1e1e1e/FFF?text=Restoran+Zhong+Sheng",
+        "image": "https://i.ibb.co/Ldh20GMp/image.jpg",
         "subStalls": [],
         "price_range": "RM 10-25",
         "menu_link": "",
@@ -17271,13 +17222,13 @@ export const initialRestaurants = [
         "address": "230, Jln Kenanga 29/8, Indahpura, 81000 Kulai, Johor",
         "opening_hours": "Monday: 7am - 11pm\nTuesday: 7am - 11pm\nWednesday: 7am - 11pm\nThursday: 7am - 11pm\nFriday: 7am - 11pm\nSaturday: 7am - 11pm\nSunday: 7am - 11pm",
         "category": [
-            "咖啡店"
+            "咖啡店/美食阁"
         ],
         "categories": [
-            "咖啡店"
+            "咖啡店/美食阁"
         ],
         "rating": 0,
-        "image": "https://i.ibb.co/9k24LdXj/IMG-20260127-150841.jpg",
+        "image": "https://i.ibb.co/d0wMh8wT/126.jpg",
         "subStalls": [
             {
                 "name": "",
@@ -17367,13 +17318,13 @@ export const initialRestaurants = [
         "address": "434, Jalan Kenanga 29/10, Bandar Indahpura, 81000 Kulai, Johor Darul Ta'zim",
         "opening_hours": "Monday: 4pm - 2am\nTuesday: 4pm - 2am\nWednesday: 4pm - 2am\nThursday: 4pm - 2am\nFriday: 4pm - 2am\nSaturday: 4pm - 2am\nSunday: 4pm - 2am",
         "category": [
-            "咖啡店"
+            "咖啡店/美食阁"
         ],
         "categories": [
-            "咖啡店"
+            "咖啡店/美食阁"
         ],
         "rating": 0,
-        "image": "https://i.ibb.co/hxLHhfHr/IMG-20260127-135600.jpg",
+        "image": "https://i.ibb.co/FqsQCcXB/image.jpg",
         "subStalls": [
             {
                 "name": "",
@@ -17456,7 +17407,7 @@ export const initialRestaurants = [
             "点心"
         ],
         "rating": 0,
-        "image": "https://placehold.co/600x400/1e1e1e/FFF?text=Xin+Cheng+Dim+Sum",
+        "image": "https://i.ibb.co/MygMt9nR/image.jpg",
         "subStalls": [],
         "price_range": "RM 10-30",
         "menu_link": "",
@@ -17495,10 +17446,10 @@ export const initialRestaurants = [
         "address": "Bandar Putra, 81000 Kulai, Johor",
         "opening_hours": "Monday: 7am - 10pm\nTuesday: 7am - 10pm\nWednesday: 7am - 10pm\nThursday: 7am - 10pm\nFriday: 7am - 10pm\nSaturday: 7am - 10pm\nSunday: 7am - 10pm",
         "category": [
-            "咖啡店"
+            "咖啡店/美食阁"
         ],
         "categories": [
-            "咖啡店"
+            "咖啡店/美食阁"
         ],
         "rating": 0,
         "image": "https://placehold.co/600x400/1e1e1e/FFF?text=Restoran+Ah+Hwa",
@@ -17567,11 +17518,11 @@ export const initialRestaurants = [
         "address": "575 & 576, Jalan Kenanga 29/10, Bandar Indahpura, 81000 Kulai, Johor Darul Ta'zim",
         "opening_hours": "Monday: 5:30am - 1:30pm\nTuesday: 5:30am - 1:30pm\nWednesday: 5:30am - 1:30pm\nThursday: 5:30am - 1:30pm\nFriday: 5:30am - 1:30pm\nSaturday: 5:30am - 1:30pm\nSunday: 5:30am - 1:30pm",
         "category": [
-            "咖啡店",
+            "咖啡店/美食阁",
             "点心"
         ],
         "categories": [
-            "咖啡店",
+            "咖啡店/美食阁",
             "点心"
         ],
         "rating": 0,
@@ -17651,10 +17602,10 @@ export const initialRestaurants = [
         "address": "Jalan Kenanga 29/10, Bandar Indahpura, 81000 Kulai, Johor Darul Ta'zim",
         "opening_hours": "Monday: 7am - 11pm\nTuesday: 7am - 11pm\nWednesday: 7am - 11pm\nThursday: 7am - 11pm\nFriday: 7am - 11pm\nSaturday: 7am - 11pm\nSunday: 7am - 11pm",
         "category": [
-            "咖啡店"
+            "咖啡店/美食阁"
         ],
         "categories": [
-            "咖啡店"
+            "咖啡店/美食阁"
         ],
         "rating": 0,
         "image": "https://ibb.co/2Y7Fy3zv",
@@ -17732,10 +17683,10 @@ export const initialRestaurants = [
         "address": "Bandar Indahpura, 81000 Kulai, Johor",
         "opening_hours": "Daily: 7am - 11pm",
         "category": [
-            "咖啡店"
+            "咖啡店/美食阁"
         ],
         "categories": [
-            "咖啡店"
+            "咖啡店/美食阁"
         ],
         "rating": 0,
         "image": "https://ibb.co/rGDCQYWC",
@@ -18228,5 +18179,520 @@ export const initialRestaurants = [
         "priority": 0,
         "dietaryOption": null,
         "slug": "jane-deer-dessert"
+    },
+    {
+        "id": 440,
+        "fb_post_link": "",
+        "name": "大众茶餐室(沙令)",
+        "name_en": "Restoran Tai Chiang",
+        "intro_zh": "走过半个世纪的沙令大眾咖啡秉着一份传承的使命，坚持采用优质的咖啡豆和传统的炭炒咖啡方式以保留着咖啡独特的香气与味道。严谨把关把品质最好的传统炭咖啡继续传承",
+        "intro_en": "With a history spanning half a century, Restoran Tai Chiang remains committed to its heritage, using premium beans and traditional charcoal roasting to preserve its unique aroma. We uphold strict standards to pass down the finest traditional charcoal coffee to every generation",
+        "address": "7, Jalan Jelawat, Taman Sri Saleng, 81400 Kulai, Johor Darul Ta'zim",
+        "opening_hours": "7am–2pm",
+        "category": [
+            "咖啡店/美食阁"
+        ],
+        "categories": [
+            "咖啡店/美食阁"
+        ],
+        "rating": 0,
+        "image": "https://placehold.co/600x400/1e1e1e/FFF?text=Restoran+Tai+Chiang",
+        "subStalls": [],
+        "price_range": "RM 5-15",
+        "menu_link": "",
+        "website_link": "https://www.facebook.com/taichiangcoffee/",
+        "delivery_link": "",
+        "isVegetarian": false,
+        "isNoBeef": false,
+        "manualStatus": "auto",
+        "branches": [],
+        "tags": [
+            "Traditional Coffee",
+            "Charcoal Coffee"
+        ],
+        "subscriptionLevel": 0,
+        "isVIP": false,
+        "priority": 0,
+        "whatsappLink": "",
+        "location": {
+            "lat": null,
+            "lng": null
+        },
+        "phone": "0127899787",
+        "halalStatus": "non_halal",
+        "area": "Saleng",
+        "dietaryOption": null,
+        "slug": "restoran-tai-chiang"
+    },
+    {
+        "id": 441,
+        "fb_post_link": "",
+        "name": "Cawan Mas Coffee",
+        "name_en": "Cawan Mas Coffee",
+        "intro_zh": "",
+        "intro_en": "",
+        "address": "Lot 153 TJ Mart, Taman Pancasila, 81400 Kulai Johor",
+        "opening_hours": "",
+        "category": [
+            "Cafe"
+        ],
+        "categories": [
+            "Cafe"
+        ],
+        "rating": 0,
+        "image": "https://placehold.co/600x400/1e1e1e/FFF?text=Cawan+Mas+Coffee",
+        "subStalls": [],
+        "price_range": "RM 10-25",
+        "menu_link": "",
+        "website_link": "https://cawanmas.com.my/",
+        "delivery_link": "",
+        "isVegetarian": false,
+        "isNoBeef": true,
+        "manualStatus": "auto",
+        "branches": [],
+        "tags": [
+            "Coffee"
+        ],
+        "subscriptionLevel": 0,
+        "isVIP": false,
+        "priority": 0,
+        "whatsappLink": "",
+        "location": {
+            "lat": null,
+            "lng": null
+        },
+        "phone": "0127815717",
+        "halalStatus": "pork_free",
+        "area": "Saleng",
+        "dietaryOption": null,
+        "slug": "cawan-mas-coffee"
+    },
+    {
+        "id": 442,
+        "fb_post_link": "",
+        "name": "TJ Food Court",
+        "name_en": "TJ Food Court",
+        "intro_zh": "",
+        "intro_en": "",
+        "address": "12, Jalan Kampung Tang Ho, Taman Pancasila, 81400 Kulai, Johor Darul Ta'zim",
+        "opening_hours": "7:30am–11:30pm",
+        "category": [
+            "咖啡店/美食阁"
+        ],
+        "categories": [
+            "咖啡店/美食阁"
+        ],
+        "rating": 0,
+        "image": "https://placehold.co/600x400/1e1e1e/FFF?text=TJ+Food+Court",
+        "subStalls": [],
+        "price_range": "RM 10-20",
+        "menu_link": "",
+        "website_link": "",
+        "delivery_link": "",
+        "isVegetarian": false,
+        "isNoBeef": false,
+        "manualStatus": "auto",
+        "branches": [],
+        "tags": [
+            "Food Court"
+        ],
+        "subscriptionLevel": 0,
+        "isVIP": false,
+        "priority": 0,
+        "whatsappLink": "",
+        "location": {
+            "lat": null,
+            "lng": null
+        },
+        "phone": "0187850276",
+        "halalStatus": "non_halal",
+        "area": "Saleng",
+        "dietaryOption": null,
+        "slug": "tj-food-court"
+    },
+    {
+        "id": 443,
+        "fb_post_link": "",
+        "name": "Krabby Planet Steamboat & Grill",
+        "name_en": "Krabby Planet Steamboat & Grill",
+        "intro_zh": "",
+        "intro_en": "",
+        "address": "Tjmart Lot CN, Lot 5035, Jalan Air Hitam, Taman Pancasila, 81400 Senai, Johor",
+        "opening_hours": "5pm–11:45pm",
+        "category": [
+            "马来与印度风味"
+        ],
+        "categories": [
+            "马来与印度风味"
+        ],
+        "rating": 0,
+        "image": "https://placehold.co/600x400/1e1e1e/FFF?text=Krabby+Planet",
+        "subStalls": [],
+        "price_range": "RM 30-60",
+        "menu_link": "",
+        "website_link": "",
+        "delivery_link": "",
+        "isVegetarian": false,
+        "isNoBeef": true,
+        "manualStatus": "auto",
+        "branches": [],
+        "tags": [
+            "Steamboat",
+            "Grill"
+        ],
+        "subscriptionLevel": 0,
+        "isVIP": false,
+        "priority": 0,
+        "whatsappLink": "",
+        "location": {
+            "lat": null,
+            "lng": null
+        },
+        "phone": "0197882911",
+        "halalStatus": "muslim_owned",
+        "area": "Saleng",
+        "dietaryOption": null,
+        "slug": "krabby-planet-steamboat-grill"
+    },
+    {
+        "id": 444,
+        "fb_post_link": "",
+        "name": "好旺角",
+        "name_en": "Restoran Hao Wang Jiao",
+        "intro_zh": "",
+        "intro_en": "",
+        "address": "46A &, 47A, Jalan Cermai 7, Taman Mesra, 81400 Senai, Johor Darul Ta'zim",
+        "opening_hours": "7am–5pm",
+        "category": [
+            "咖啡店/美食阁"
+        ],
+        "categories": [
+            "咖啡店/美食阁"
+        ],
+        "rating": 0,
+        "image": "https://placehold.co/600x400/1e1e1e/FFF?text=Hao+Wang+Jiao",
+        "subStalls": [],
+        "price_range": "RM 5-15",
+        "menu_link": "",
+        "website_link": "",
+        "delivery_link": "",
+        "isVegetarian": false,
+        "isNoBeef": false,
+        "manualStatus": "auto",
+        "branches": [],
+        "tags": [],
+        "subscriptionLevel": 0,
+        "isVIP": false,
+        "priority": 0,
+        "whatsappLink": "",
+        "location": {
+            "lat": null,
+            "lng": null
+        },
+        "phone": "",
+        "halalStatus": "non_halal",
+        "area": "Saleng",
+        "dietaryOption": null,
+        "slug": "restoran-hao-wang-jiao"
+    },
+    {
+        "id": 445,
+        "fb_post_link": "",
+        "name": "咖啡佬茶餐室",
+        "name_en": "Kedai Kopi Rao",
+        "intro_zh": "",
+        "intro_en": "",
+        "address": "48, Jalan Cermai 3, Taman Mesra, 81400 Kulai, Johor Darul Ta'zim",
+        "opening_hours": "",
+        "category": [
+            "咖啡店/美食阁"
+        ],
+        "categories": [
+            "咖啡店/美食阁"
+        ],
+        "rating": 0,
+        "image": "https://placehold.co/600x400/1e1e1e/FFF?text=Kedai+Kopi+Rao",
+        "subStalls": [],
+        "price_range": "RM 5-15",
+        "menu_link": "",
+        "website_link": "",
+        "delivery_link": "",
+        "isVegetarian": false,
+        "isNoBeef": false,
+        "manualStatus": "auto",
+        "branches": [],
+        "tags": [],
+        "subscriptionLevel": 0,
+        "isVIP": false,
+        "priority": 0,
+        "whatsappLink": "",
+        "location": {
+            "lat": null,
+            "lng": null
+        },
+        "phone": "",
+        "halalStatus": "non_halal",
+        "area": "Saleng",
+        "dietaryOption": null,
+        "slug": "kedai-kopi-rao"
+    },
+    {
+        "id": 446,
+        "fb_post_link": "",
+        "name": "興興燒臘",
+        "name_en": "Restoran Heng Heng Chicken Rice",
+        "intro_zh": "",
+        "intro_en": "",
+        "address": "40, Jalan Cermai 7, Taman Mesra, 81400 Kulai, Johor Darul Ta'zim",
+        "opening_hours": "",
+        "category": [
+            "饭类"
+        ],
+        "categories": [
+            "饭类"
+        ],
+        "rating": 0,
+        "image": "https://placehold.co/600x400/1e1e1e/FFF?text=Heng+Heng",
+        "subStalls": [],
+        "price_range": "RM 10-20",
+        "menu_link": "",
+        "website_link": "",
+        "delivery_link": "",
+        "isVegetarian": false,
+        "isNoBeef": false,
+        "manualStatus": "auto",
+        "branches": [],
+        "tags": [
+            "Chicken Rice",
+            "Roasted Meat"
+        ],
+        "subscriptionLevel": 0,
+        "isVIP": false,
+        "priority": 0,
+        "whatsappLink": "",
+        "location": {
+            "lat": null,
+            "lng": null
+        },
+        "phone": "0127632206",
+        "halalStatus": "non_halal",
+        "area": "Saleng",
+        "dietaryOption": null,
+        "slug": "restoran-heng-heng-chicken-rice"
+    },
+    {
+        "id": 447,
+        "fb_post_link": "",
+        "name": "Restoran ABMH Satu",
+        "name_en": "Restoran ABMH Satu",
+        "intro_zh": "",
+        "intro_en": "",
+        "address": "Jalan Cermai 7, Taman Mesra, 81400 Senai, Johor Darul Ta'zim",
+        "opening_hours": "",
+        "category": [
+            "马来与印度风味"
+        ],
+        "categories": [
+            "马来与印度风味"
+        ],
+        "rating": 0,
+        "image": "https://placehold.co/600x400/1e1e1e/FFF?text=ABMH+Satu",
+        "subStalls": [],
+        "price_range": "RM 5-15",
+        "menu_link": "",
+        "website_link": "",
+        "delivery_link": "",
+        "isVegetarian": false,
+        "isNoBeef": true,
+        "manualStatus": "auto",
+        "branches": [],
+        "tags": [
+            "Mamak"
+        ],
+        "subscriptionLevel": 0,
+        "isVIP": false,
+        "priority": 0,
+        "whatsappLink": "",
+        "location": {
+            "lat": null,
+            "lng": null
+        },
+        "phone": "",
+        "halalStatus": "muslim_owned",
+        "area": "Saleng",
+        "dietaryOption": null,
+        "slug": "restoran-abmh-satu"
+    },
+    {
+        "id": 448,
+        "fb_post_link": "",
+        "name": "娇姐面馆",
+        "name_en": "Kiow Jie Restaurant",
+        "intro_zh": "",
+        "intro_en": "",
+        "address": "19, Jalan Cermai 2, Saleng, 81400 Kulai, Johor Darul Ta'zim",
+        "opening_hours": "",
+        "category": [
+            "粉类"
+        ],
+        "categories": [
+            "粉类"
+        ],
+        "rating": 0,
+        "image": "https://placehold.co/600x400/1e1e1e/FFF?text=Kiow+Jie",
+        "subStalls": [],
+        "price_range": "RM 10-20",
+        "menu_link": "",
+        "website_link": "",
+        "delivery_link": "",
+        "isVegetarian": false,
+        "isNoBeef": false,
+        "manualStatus": "auto",
+        "branches": [],
+        "tags": [
+            "Noodles"
+        ],
+        "subscriptionLevel": 0,
+        "isVIP": false,
+        "priority": 0,
+        "whatsappLink": "",
+        "location": {
+            "lat": null,
+            "lng": null
+        },
+        "phone": "0102097368",
+        "halalStatus": "non_halal",
+        "area": "Saleng",
+        "dietaryOption": null,
+        "slug": "kiow-jie-restaurant"
+    },
+    {
+        "id": 449,
+        "fb_post_link": "",
+        "name": "白宮美食阁",
+        "name_en": "Restoran Rumah Putih",
+        "intro_zh": "",
+        "intro_en": "",
+        "address": "30, Jalan Cermai 2, Taman Mesra, 81400 Senai, Johor Darul Ta'zim",
+        "opening_hours": "",
+        "category": [
+            "咖啡店/美食阁"
+        ],
+        "categories": [
+            "咖啡店/美食阁"
+        ],
+        "rating": 0,
+        "image": "https://placehold.co/600x400/1e1e1e/FFF?text=Rumah+Putih",
+        "subStalls": [],
+        "price_range": "RM 10-20",
+        "menu_link": "",
+        "website_link": "",
+        "delivery_link": "",
+        "isVegetarian": false,
+        "isNoBeef": false,
+        "manualStatus": "auto",
+        "branches": [],
+        "tags": [
+            "Food Court"
+        ],
+        "subscriptionLevel": 0,
+        "isVIP": false,
+        "priority": 0,
+        "whatsappLink": "",
+        "location": {
+            "lat": null,
+            "lng": null
+        },
+        "phone": "073579054",
+        "halalStatus": "non_halal",
+        "area": "Saleng",
+        "dietaryOption": null,
+        "slug": "restoran-rumah-putih"
+    },
+    {
+        "id": 450,
+        "fb_post_link": "",
+        "name": "长城美食中心",
+        "name_en": "Restoran Tang Food Centre",
+        "intro_zh": "",
+        "intro_en": "",
+        "address": "1, Jalan Sutra 1, Taman Sutera Utama81400 Kulai, Johor Darul Ta'zim",
+        "opening_hours": "5:30am–3pm\nMonday: Closed",
+        "category": [
+            "咖啡店/美食阁"
+        ],
+        "categories": [
+            "咖啡店/美食阁"
+        ],
+        "rating": 0,
+        "image": "https://placehold.co/600x400/1e1e1e/FFF?text=Tang+Food+Centre",
+        "subStalls": [],
+        "price_range": "RM 10-20",
+        "menu_link": "",
+        "website_link": "",
+        "delivery_link": "",
+        "isVegetarian": false,
+        "isNoBeef": false,
+        "manualStatus": "auto",
+        "branches": [],
+        "tags": [
+            "Food Court"
+        ],
+        "subscriptionLevel": 0,
+        "isVIP": false,
+        "priority": 0,
+        "whatsappLink": "",
+        "location": {
+            "lat": null,
+            "lng": null
+        },
+        "phone": "",
+        "halalStatus": "non_halal",
+        "area": "Saleng",
+        "dietaryOption": null,
+        "slug": "restoran-tang-food-centre"
+    },
+    {
+        "id": 451,
+        "fb_post_link": "",
+        "name": "Warong Crew Taman Muhibbah",
+        "name_en": "Warong Crew Taman Muhibbah",
+        "intro_zh": "",
+        "intro_en": "",
+        "address": "No.1136, Jalan jambu batu 6, Taman muhibbah, Saleng, 81400 Senai, Johor",
+        "opening_hours": "Tuesday: Closed\nWednesday: Closed",
+        "category": [
+            "马来与印度风味"
+        ],
+        "categories": [
+            "马来与印度风味"
+        ],
+        "rating": 0,
+        "image": "https://placehold.co/600x400/1e1e1e/FFF?text=Warong+Crew",
+        "subStalls": [],
+        "price_range": "RM 5-15",
+        "menu_link": "",
+        "website_link": "",
+        "delivery_link": "",
+        "isVegetarian": false,
+        "isNoBeef": true,
+        "manualStatus": "auto",
+        "branches": [],
+        "tags": [
+            "Warong"
+        ],
+        "subscriptionLevel": 0,
+        "isVIP": false,
+        "priority": 0,
+        "whatsappLink": "",
+        "location": {
+            "lat": null,
+            "lng": null
+        },
+        "phone": "01110800109",
+        "halalStatus": "muslim_owned",
+        "area": "Saleng",
+        "dietaryOption": null,
+        "slug": "warong-crew-taman-muhibbah"
     }
 ];

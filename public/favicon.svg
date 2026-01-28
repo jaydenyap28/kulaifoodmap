@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+  <defs>
+    <linearGradient id="grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#f97316;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#ea580c;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  <path d="M12 2c-4.97 0-9 4.03-9 9 0 7 9 13 9 13s9-6 9-13c0-4.97-4.03-9-9-9z" fill="url(#grad)" stroke="none"/>
+  <path d="M12 2c-4.97 0-9 4.03-9 9 0 7 9 13 9 13s9-6 9-13c0-4.97-4.03-9-9-9z" fill="none" stroke="#fff" stroke-width="1.5" stroke-opacity="0.3"/>
+  <path d="M10 13V7a2 2 0 0 1 2-2" stroke="white" stroke-width="1.5"/> 
+  <path d="M14 7v6" stroke="white" stroke-width="1.5"/>
+  <path d="M10 7v6" stroke="white" stroke-width="1.5"/>
+  <path d="M14 7a2 2 0 0 0-2-2" stroke="white" stroke-width="1.5"/>
+  <path d="M12 13v2" stroke="white" stroke-width="1.5"/>
+  <path d="M9 10s.5-3 3-3 3 3 3 3" stroke="none"/> 
+  <!-- Simple Fork/Spoon representation -->
+  <path d="M11 7v5a1 1 0 0 0 2 0V7" stroke="white" stroke-width="1.5"/>
+  <path d="M12 12v3" stroke="white" stroke-width="1.5"/>
+</svg>

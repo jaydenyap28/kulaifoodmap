@@ -709,7 +709,7 @@ const ResultModal = ({ restaurant, onClose, isAdmin, onUpdateRestaurant, categor
 
                   {/* Sub Stalls Editor */}
                   <div>
-                    <label className="text-xs text-gray-400">咖啡店档口 (Stalls)</label>
+                    <label className="text-xs text-gray-400">咖啡店/美食阁档口 (Stalls)</label>
                     <div className="space-y-3 mb-3">
                         {editForm.subStalls && editForm.subStalls.map((stall, idx) => (
                             <div key={idx} className="bg-[#333] p-2 rounded border border-gray-600 flex gap-2 items-start">
@@ -1049,7 +1049,7 @@ Tuesday: Closed
                     style={{ backgroundColor: '#ffffff' }}
                   >
                     <Navigation size={20} className="fill-current group-hover:scale-110 transition-transform" />
-                    使用Google Maps导航 (Navigate)
+                    {i18n.language === 'en' ? 'Navigate with Google Maps' : '使用谷歌地图导航'}
                   </button>
 
                   {/* Waze Navigation Button (Secondary) */}
@@ -1070,7 +1070,7 @@ Tuesday: Closed
                     style={{ backgroundColor: '#33CCFF' }}
                   >
                     <Navigation size={20} className="fill-current group-hover:scale-110 transition-transform" />
-                    使用 Waze 导航 (Waze)
+                    {i18n.language === 'en' ? 'Navigate with Waze' : '使用Waze导航'}
                   </button>
 
                   {/* Branches Display (For Chain Restaurants) */}
@@ -1101,7 +1101,7 @@ Tuesday: Closed
                     <div className="bg-[#2d2d2d] p-4 rounded-xl border border-gray-700">
                         <p className="text-xs text-gray-400 font-bold uppercase tracking-wider mb-2 flex items-center gap-2">
                             <UtensilsCrossed size={14} className="text-yellow-500" />
-                            {t('modal.stalls', '咖啡店档口 (Stalls)')}
+                            {t('modal.stalls', '咖啡店/美食阁档口 (Stalls)')}
                         </p>
                         <div className="grid grid-cols-2 gap-3">
                             {restaurant.subStalls.map((stall, idx) => {
@@ -1202,11 +1202,8 @@ Tuesday: Closed
                             className="w-full flex items-center justify-center gap-2 py-3 bg-[#2d2d2d] text-gray-300 border border-gray-600 rounded-xl font-bold shadow-lg hover:bg-[#3d3d3d] hover:text-white transition-all active:scale-95"
                         >
                             <MessageCircle size={20} />
-                            🙋‍♂️ 还没有人讨论？去视频留言！
+                            快来分享你的用餐体验吧！
                         </a>
-                        <p className="text-center text-[10px] text-gray-500">
-                            引导用户去主视频贡献流量
-                        </p>
                     </div>
                 )}
               </div>
