@@ -1,6 +1,7 @@
 import React from 'react';
 import { Facebook, Lock } from 'lucide-react';
 import { useTranslation } from 'react-i18next';
+import ReactGA from "react-ga4";
 import { MAIN_VIDEO_LINK } from '../data/restaurants';
 
 const Footer = ({ onAdminLogin }) => {
@@ -16,6 +17,7 @@ const Footer = ({ onAdminLogin }) => {
                 href={MAIN_VIDEO_LINK}
                 target="_blank" 
                 rel="noreferrer"
+                onClick={() => ReactGA.event({ category: "Conversion", action: "Click_Facebook", label: "Footer_Video" })}
                 className="px-6 py-3 bg-gradient-to-r from-blue-600 to-indigo-600 hover:from-blue-500 hover:to-indigo-500 text-white rounded-full font-bold shadow-lg hover:shadow-blue-500/30 hover:-translate-y-0.5 transition-all flex items-center justify-center gap-2 group"
             >
                 <Facebook size={20} className="group-hover:rotate-12 transition-transform" />

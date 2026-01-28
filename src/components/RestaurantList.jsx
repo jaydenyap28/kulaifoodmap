@@ -1,5 +1,6 @@
 import React, { useState, useEffect, useMemo } from 'react';
 import { MapPin, Edit2, Trash2, ArrowUp, Search, Plus, Leaf, Sprout, Ban, Star, GripVertical, Flame, Medal, MessageCircle, Loader2, User } from 'lucide-react';
+import ReactGA from "react-ga4";
 import {
   DndContext,
   closestCenter,
@@ -51,6 +52,17 @@ const RestaurantList = ({ restaurants, allRestaurants, isAdmin, onUpdateRestaura
   const [searchTerm, setSearchTerm] = useState('');
   const [showBackToTop, setShowBackToTop] = useState(false);
   const [seed] = useState(Date.now());
+
+  // Google Analytics: Track Search (Debounce)
+  useEffect(() => {
+    const delayDebounceFn = setTimeout(() => {
+      if (searchTerm) {
+        ReactGA.event({ category: "User", action: "Search", label: searchTerm });
+      }
+    }, 1000);
+
+    return () => clearTimeout(delayDebounceFn);
+  }, [searchTerm]);
 
   // Filter and Sort Logic
   const filteredRestaurants = useMemo(() => {
@@ -174,7 +186,10 @@ const RestaurantList = ({ restaurants, allRestaurants, isAdmin, onUpdateRestaura
                   isAdmin={isAdmin} 
                   onUpdate={onUpdateRestaurant} 
                   onDelete={onDeleteRestaurant}
-                  onClick={() => onRestaurantClick(restaurant)}
+                  onClick={() => {
+                    ReactGA.event({ category: "Restaurant", action: "View_Details", label: restaurant.name });
+                    onRestaurantClick(restaurant);
+                  }}
                   onCategoryClick={onCategoryClick}
                   onUpdateArea={onUpdateArea}
                 />
@@ -189,7 +204,10 @@ const RestaurantList = ({ restaurants, allRestaurants, isAdmin, onUpdateRestaura
               isAdmin={isAdmin} 
               onUpdate={onUpdateRestaurant} 
               onDelete={onDeleteRestaurant}
-              onClick={() => onRestaurantClick(restaurant)}
+              onClick={() => {
+                ReactGA.event({ category: "Restaurant", action: "View_Details", label: restaurant.name });
+                onRestaurantClick(restaurant);
+              }}
               onCategoryClick={onCategoryClick}
               onUpdateArea={onUpdateArea}
             />

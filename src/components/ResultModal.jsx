@@ -1,6 +1,6 @@
 import React, { useState, useRef } from 'react';
 import { createPortal } from 'react-dom';
-import { X, Star, MapPin, ExternalLink, Send, Save, Clock, Info, UtensilsCrossed, Upload, BookOpen, Globe, Bike, Navigation, Leaf, Sprout, User, MessageCircle } from 'lucide-react';
+import { X, Star, MapPin, ExternalLink, Save, Clock, Info, UtensilsCrossed, Upload, BookOpen, Globe, Bike, Navigation, Leaf, Sprout, User, MessageCircle } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { useTranslation } from 'react-i18next';
 import ImageWithFallback from './ImageWithFallback';
@@ -9,10 +9,8 @@ import { compressImage } from '../utils/imageUtils';
 import { AVAILABLE_AREAS } from '../data/constants';
 import { MAIN_VIDEO_LINK } from '../data/restaurants';
 
-const ResultModal = ({ restaurant, onClose, onAddReview, isAdmin, onUpdateRestaurant, onDeleteReview, categories = [], onAddCategory }) => {
+const ResultModal = ({ restaurant, onClose, isAdmin, onUpdateRestaurant, categories = [], onAddCategory }) => {
   const { t, i18n } = useTranslation();
-  const [reviewerName, setReviewerName] = useState('');
-  const [reviewComment, setReviewComment] = useState('');
   const [isEditing, setIsEditing] = useState(false);
   const [editForm, setEditForm] = useState({ 
     name: restaurant.name,
@@ -221,19 +219,6 @@ const ResultModal = ({ restaurant, onClose, onAddReview, isAdmin, onUpdateRestau
   }, [restaurant]);
 
   if (!restaurant) return null;
-
-  const handleSubmitReview = (e) => {
-    e.preventDefault();
-    if (reviewerName.trim() && reviewComment.trim()) {
-      onAddReview(restaurant.id, {
-        user: reviewerName,
-        comment: reviewComment,
-        date: new Date().toISOString().split('T')[0]
-      });
-      setReviewerName('');
-      setReviewComment('');
-    }
-  };
 
   const handleSaveEdit = () => {
     onUpdateRestaurant(restaurant.id, editForm);
@@ -1189,78 +1174,15 @@ Tuesday: Closed
 
             <hr className="border-gray-700" />
 
-            {/* Reviews */}
-            <div>
-              <h3 className="font-bold text-white mb-4 text-lg">食客评价 (Reviews)</h3>
-              <div className="space-y-3 max-h-60 overflow-y-auto mb-6 pr-1 custom-scrollbar">
-                {restaurant.reviews && restaurant.reviews.length > 0 ? (
-                  restaurant.reviews.map((review, idx) => (
-                    <div key={idx} className="bg-[#2d2d2d] p-3 rounded-xl shadow-sm border border-gray-700 relative group">
-                      <div className="flex justify-between items-center mb-1">
-                        <span className="font-bold text-white text-sm">{review.user}</span>
-                        <div className="flex items-center gap-2">
-                            <span className="text-[10px] text-gray-500">{review.date}</span>
-                            {isAdmin && (
-                                <button
-                                    onClick={() => {
-                                        if (window.confirm("确定删除这条评论吗？(Delete Review?)")) {
-                                            onDeleteReview(restaurant.id, idx);
-                                        }
-                                    }}
-                                    className="text-red-400 hover:text-red-500 opacity-0 group-hover:opacity-100 transition-opacity p-1"
-                                    title="删除评论"
-                                >
-                                    <X size={12} />
-                                </button>
-                            )}
-                        </div>
-                      </div>
-                      <p className="text-gray-300 text-sm">{review.comment}</p>
-                    </div>
-                  ))
-                ) : (
-                  <div className="text-center py-4 bg-white/5 rounded-xl border border-dashed border-gray-700">
-                      <p className="text-gray-500 italic text-sm">暂无评价，快来抢沙发！</p>
-                  </div>
-                )}
-              </div>
-
-              {/* Add Review */}
-              <form onSubmit={handleSubmitReview} className="bg-[#2d2d2d] p-4 rounded-xl shadow-sm border border-gray-700">
-                <p className="text-sm font-bold text-white mb-3">写条评论...</p>
-                <input
-                  type="text"
-                  placeholder="您的昵称 (Name)"
-                  className="w-full bg-[#1a1a1a] border-b border-gray-600 py-2 mb-3 text-sm text-white focus:border-white outline-none"
-                  value={reviewerName}
-                  onChange={(e) => setReviewerName(e.target.value)}
-                  required
-                />
-                <textarea
-                  placeholder="味道如何？(Comment)"
-                  className="w-full bg-[#1a1a1a] border-b border-gray-600 py-2 mb-3 text-sm text-white focus:border-white outline-none resize-none"
-                  rows="2"
-                  value={reviewComment}
-                  onChange={(e) => setReviewComment(e.target.value)}
-                  required
-                ></textarea>
-                <button
-                  type="submit"
-                  className="w-full bg-white text-black py-2 rounded-lg text-sm font-bold hover:bg-gray-200 transition flex items-center justify-center"
-                >
-                  <Send size={14} className="mr-2" />
-                  提交评价 (Submit)
-                </button>
-              </form>
-
-              {/* Facebook Traffic Strategy Button */}
-              <div className="mt-6">
+            {/* Facebook Traffic Strategy Button (Replaces Reviews) */}
+            <div className="mt-6">
                 {restaurant.fb_post_link ? (
                     <div className="space-y-2">
                         <a 
                             href={restaurant.fb_post_link}
                             target="_blank"
                             rel="noopener noreferrer"
+                            onClick={() => ReactGA.event({ category: "Conversion", action: "Click_Facebook", label: restaurant.name })}
                             className="w-full flex items-center justify-center gap-2 py-3 bg-[#1877F2] text-white rounded-xl font-bold shadow-lg hover:brightness-110 transition-all active:scale-95"
                         >
                             <MessageCircle size={20} className="fill-current" />
@@ -1276,6 +1198,7 @@ Tuesday: Closed
                             href={MAIN_VIDEO_LINK}
                             target="_blank"
                             rel="noopener noreferrer"
+                            onClick={() => ReactGA.event({ category: "Conversion", action: "Click_Facebook", label: restaurant.name || "Main_Video" })}
                             className="w-full flex items-center justify-center gap-2 py-3 bg-[#2d2d2d] text-gray-300 border border-gray-600 rounded-xl font-bold shadow-lg hover:bg-[#3d3d3d] hover:text-white transition-all active:scale-95"
                         >
                             <MessageCircle size={20} />
@@ -1287,7 +1210,6 @@ Tuesday: Closed
                     </div>
                 )}
               </div>
-            </div>
           </div>
         </motion.div>
       </motion.div>
