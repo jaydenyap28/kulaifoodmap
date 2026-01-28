@@ -223,7 +223,10 @@ const ResultModal = ({ restaurant, onClose, isAdmin, onUpdateRestaurant, categor
     if (restaurant.location?.lat && restaurant.location?.lng) {
       return `https://www.google.com/maps/search/?api=1&query=${restaurant.location.lat},${restaurant.location.lng}`;
     }
-    return `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(restaurant.address || restaurant.name)}`;
+    // 优先使用店名+地址，避免只搜索路名导致导航不准
+    // Prioritize Shop Name + Address to avoid inaccurate navigation by just searching road name
+    const query = `${restaurant.name} ${restaurant.address || ''}`.trim();
+    return `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(query)}`;
   }, [restaurant]);
 
   const handleSaveEdit = () => {
@@ -1059,7 +1062,9 @@ Tuesday: Closed
                         if (lat && lng) {
                             url = `https://waze.com/ul?ll=${lat},${lng}&navigate=yes`;
                         } else {
-                            const query = encodeURIComponent(restaurant.address || restaurant.name);
+                            // 同步 Google Maps 的逻辑，优先搜名字+地址
+                            const qStr = `${restaurant.name} ${restaurant.address || ''}`.trim();
+                            const query = encodeURIComponent(qStr);
                             url = `https://waze.com/ul?q=${query}&navigate=yes`;
                         }
                         window.open(url, '_blank');
