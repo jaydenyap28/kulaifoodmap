@@ -3,6 +3,7 @@ import { createPortal } from 'react-dom';
 import { X, Star, MapPin, ExternalLink, Save, Clock, Info, UtensilsCrossed, Upload, BookOpen, Globe, Bike, Navigation, Leaf, Sprout, User, MessageCircle, Send } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { useTranslation } from 'react-i18next';
+import ReactGA from "react-ga4";
 import ImageWithFallback from './ImageWithFallback';
 import { checkOpenStatus } from '../utils/businessHours';
 import { compressImage } from '../utils/imageUtils';
@@ -217,6 +218,33 @@ const ResultModal = ({ restaurant, onClose, isAdmin, onUpdateRestaurant, categor
         return { isOpen: false, text: '' };
     }
   }, [restaurant]);
+
+  const handleSaveEdit = () => {
+    onUpdateRestaurant({ ...restaurant, ...editForm });
+    setIsEditing(false);
+  };
+
+  const handleImageUpload = async (e, field, index = null) => {
+    const file = e.target.files[0];
+    if (!file) return;
+
+    try {
+      const compressed = await compressImage(file);
+      
+      if (index !== null && field === 'image') {
+         // Sub-stall image update
+         const newStalls = [...editForm.subStalls];
+         newStalls[index] = { ...newStalls[index], image: compressed };
+         setEditForm(prev => ({ ...prev, subStalls: newStalls }));
+      } else {
+         // Main image update
+         setEditForm(prev => ({ ...prev, [field]: compressed }));
+      }
+    } catch (err) {
+      console.error("Image upload failed", err);
+      alert("Failed to compress image");
+    }
+  };
 
   if (!restaurant) return null;
 
