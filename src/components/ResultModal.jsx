@@ -220,57 +220,20 @@ const ResultModal = ({ restaurant, onClose, isAdmin, onUpdateRestaurant, categor
 
   if (!restaurant) return null;
 
-  const handleSaveEdit = () => {
-    onUpdateRestaurant(restaurant.id, editForm);
-    setIsEditing(false);
-  };
-
-  const handleImageUpload = async (e, targetField, stallIndex = null) => {
-    const file = e.target.files[0];
-    if (!file) return;
-
-    try {
-        // Warn user
-        if (!window.confirm("使用本地上传会将图片转换为 Base64 文本，这会导致数据文件变得非常大 (可能几百KB或MB)。\n\n建议: 仅上传小图片或使用网络链接。\n\n是否继续?")) {
-            e.target.value = ''; // Reset input
-            return;
-        }
-
-        const base64 = await compressImage(file);
-        
-        if (stallIndex !== null) {
-            // Update subStall
-            const newStalls = [...editForm.subStalls];
-            newStalls[stallIndex] = { ...newStalls[stallIndex], image: base64 };
-            setEditForm({...editForm, subStalls: newStalls});
-        } else {
-            // Update main image
-            setEditForm(prev => ({ ...prev, [targetField]: base64 }));
-        }
-    } catch (err) {
-        console.error("Image processing failed", err);
-        alert("图片处理失败");
-    }
-  };
-
-  const mapUrl = (restaurant.location?.lat && restaurant.location?.lng)
-    ? `https://www.google.com/maps/dir/?api=1&destination=${restaurant.location.lat},${restaurant.location.lng}`
-    : `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(restaurant.name + ' 古来')}`;
-
-  return (
+  return createPortal(
     <AnimatePresence>
       <motion.div
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         exit={{ opacity: 0 }}
-        className="fixed inset-0 bg-black/60 backdrop-blur-sm z-50 flex items-center justify-center p-4"
+        className="fixed inset-0 bg-black/60 backdrop-blur-sm z-[100] flex items-center justify-center p-4"
         onClick={onClose}
       >
         <motion.div
           initial={{ scale: 0.8, opacity: 0, y: 50 }}
           animate={{ scale: 1, opacity: 1, y: 0 }}
           exit={{ scale: 0.8, opacity: 0, y: 50 }}
-          className="bg-[#1e1e1e] rounded-[32px] shadow-2xl w-full max-w-md max-h-[90vh] overflow-y-auto border border-gray-700"
+          className="bg-[#1e1e1e] rounded-[32px] shadow-2xl w-full max-w-md max-h-[90vh] overflow-y-auto border border-gray-700 relative"
           onClick={(e) => e.stopPropagation()}
         >
           {/* Header Image */}
@@ -1239,7 +1202,8 @@ Tuesday: Closed
             </div>
         </motion.div>
       )}
-    </AnimatePresence>
+    </AnimatePresence>,
+    document.body
   );
 };
 
