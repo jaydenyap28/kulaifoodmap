@@ -9245,8 +9245,8 @@ export const initialRestaurants = [
         "area": "Indahpura",
         "name": "绿园",
         "name_en": "Restaurant Evergreen",
-        "intro_zh": "绿园海鲜楼，拥有A级卫生评级。招牌菜包括锡纸咖喱烧鱼头、清炖草羊煲和宝宝豆腐。",
-        "intro_en": "Restaurant Evergreen, known for its A-grade hygiene. Signature dishes include Foil-Baked Curry Fish Head, Claypot Mutton, and Baby Beancurd.",
+        "intro_zh": "绿园海鲜楼 是一家始于 2004 年的柔佛老字号连锁中餐厅，总行位于新山高雅花园 (Taman Pelangi Indah)。凭借地道的“大炒”功底，该品牌现已进驻古来最新的商场 The Commune。餐厅以保留传统镬气与不断创新的菜色著称，是当地家庭聚餐和宴客的热门选择。",
+        "intro_en": "Restaurant Evergreen is a well-established Chinese restaurant chain in Johor, founded in 2004 with its main branch located in Taman Pelangi Indah, Johor Bahru. Known for its authentic \"Zi Char\" flavours, it has recently expanded its presence to Kulai’s latest lifestyle mall, The Commune. The restaurant is a favorite for family gatherings and celebrations, offering a blend of traditional cooking techniques and a modern dining environment.",
         "address": "L1-05 & L1-06, 291, Jalan Kiambang 10, Indahpura, 81000 Kulai, Johor",
         "opening_hours": "Monday: 8 am–10 pm\nTuesday: 8 am–10 pm\nWednesday: 8 am–10 pm\nThursday: 8 am–10 pm\nFriday: 8 am–10 pm\nSaturday: 8 am–10 pm\nSunday: 8 am–10 pm",
         "category": [
