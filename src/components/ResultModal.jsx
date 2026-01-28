@@ -227,7 +227,7 @@ const ResultModal = ({ restaurant, onClose, isAdmin, onUpdateRestaurant, categor
   }, [restaurant]);
 
   const handleSaveEdit = () => {
-    onUpdateRestaurant({ ...restaurant, ...editForm });
+    onUpdateRestaurant(restaurant.id, editForm);
     setIsEditing(false);
   };
 
