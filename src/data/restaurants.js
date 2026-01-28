@@ -44,7 +44,8 @@ export const initialRestaurants = [
         },
         "phone": "016-752 8026",
         "halalStatus": "non_halal",
-        "dietaryOption": null
+        "dietaryOption": null,
+        "slug": "restoran-sze-wah-bak-kuh-teh"
     },
     {
         "id": 2,
@@ -89,7 +90,8 @@ export const initialRestaurants = [
         },
         "phone": "012-727 8272",
         "halalStatus": "non_halal",
-        "dietaryOption": null
+        "dietaryOption": null,
+        "slug": "new-century-claypot-chicken-rice"
     },
     {
         "id": 3,
@@ -137,7 +139,8 @@ export const initialRestaurants = [
         },
         "phone": "012-710 9772",
         "halalStatus": "non_halal",
-        "dietaryOption": null
+        "dietaryOption": null,
+        "slug": "kulai-mok-gao-beef-noodles"
     },
     {
         "id": 4,
@@ -184,7 +187,8 @@ export const initialRestaurants = [
         },
         "phone": "016-795 0302",
         "halalStatus": "non_halal",
-        "dietaryOption": null
+        "dietaryOption": null,
+        "slug": "lei-cha-21-miles"
     },
     {
         "id": 5,
@@ -232,7 +236,8 @@ export const initialRestaurants = [
         },
         "phone": "019-759 3635",
         "halalStatus": "non_halal",
-        "dietaryOption": null
+        "dietaryOption": null,
+        "slug": "restaurant-hainan-hojiak-corner"
     },
     {
         "id": 6,
@@ -272,7 +277,8 @@ export const initialRestaurants = [
         },
         "phone": "016-731 9910",
         "halalStatus": "non_halal",
-        "dietaryOption": null
+        "dietaryOption": null,
+        "slug": "kulai-big-street-char-kway-teow"
     },
     {
         "id": 7,
@@ -313,7 +319,8 @@ export const initialRestaurants = [
             "lng": null
         },
         "halalStatus": "non_halal",
-        "dietaryOption": null
+        "dietaryOption": null,
+        "slug": "lapan-bintang-chicken-rice"
     },
     {
         "id": 8,
@@ -363,7 +370,8 @@ export const initialRestaurants = [
         },
         "phone": "07-663 1111",
         "halalStatus": "non_halal",
-        "dietaryOption": null
+        "dietaryOption": null,
+        "slug": "restaurant-yuw-meng"
     },
     {
         "id": 9,
@@ -401,7 +409,8 @@ export const initialRestaurants = [
             "lng": null
         },
         "halalStatus": "non_halal",
-        "dietaryOption": null
+        "dietaryOption": null,
+        "slug": "ji-noodles"
     },
     {
         "id": 10,
@@ -447,7 +456,8 @@ export const initialRestaurants = [
             "lng": null
         },
         "halalStatus": "non_halal",
-        "dietaryOption": null
+        "dietaryOption": null,
+        "slug": "daily-wanton-mee"
     },
     {
         "id": 12,
@@ -487,7 +497,8 @@ export const initialRestaurants = [
         },
         "phone": "012-789 4073",
         "halalStatus": "non_halal",
-        "dietaryOption": null
+        "dietaryOption": null,
+        "slug": "yong-juan-hin"
     },
     {
         "id": 13,
@@ -564,7 +575,8 @@ export const initialRestaurants = [
             "lng": null
         },
         "halalStatus": "non_halal",
-        "dietaryOption": null
+        "dietaryOption": null,
+        "slug": "restaurant-yon-lai"
     },
     {
         "id": 14,
@@ -600,7 +612,8 @@ export const initialRestaurants = [
             "lng": null
         },
         "halalStatus": "non_halal",
-        "dietaryOption": null
+        "dietaryOption": null,
+        "slug": "kedai-makan-man-ting-fong"
     },
     {
         "id": 15,
@@ -640,7 +653,8 @@ export const initialRestaurants = [
             "lng": null
         },
         "halalStatus": "non_halal",
-        "dietaryOption": null
+        "dietaryOption": null,
+        "slug": "chop-pun-heong-dim-sum"
     },
     {
         "id": 16,
@@ -686,7 +700,8 @@ export const initialRestaurants = [
         },
         "phone": "012-754 3818",
         "halalStatus": "muslim_owned",
-        "dietaryOption": null
+        "dietaryOption": null,
+        "slug": "nasi-lemak-wak-kentut-kulai-besar"
     },
     {
         "id": 17,
@@ -727,7 +742,8 @@ export const initialRestaurants = [
             "lng": null
         },
         "halalStatus": "muslim_owned",
-        "dietaryOption": null
+        "dietaryOption": null,
+        "slug": "yellow-corner"
     },
     {
         "id": 18,
@@ -768,7 +784,8 @@ export const initialRestaurants = [
             "lng": null
         },
         "halalStatus": "non_halal",
-        "dietaryOption": null
+        "dietaryOption": null,
+        "slug": "delicious-corner"
     },
     {
         "id": 19,
@@ -810,7 +827,8 @@ export const initialRestaurants = [
             "lng": null
         },
         "halalStatus": "non_halal",
-        "dietaryOption": null
+        "dietaryOption": null,
+        "slug": "restoran-xin-yuan-bak-kut-teh"
     },
     {
         "id": 20,
@@ -850,7 +868,8 @@ export const initialRestaurants = [
             "lng": null
         },
         "halalStatus": "non_halal",
-        "dietaryOption": null
+        "dietaryOption": null,
+        "slug": "restoran-xiang-mann"
     },
     {
         "id": 21,
@@ -888,7 +907,8 @@ export const initialRestaurants = [
             "lng": null
         },
         "halalStatus": "non_halal",
-        "dietaryOption": null
+        "dietaryOption": null,
+        "slug": "ho-ma-homemade-wanton-mee"
     },
     {
         "id": 22,
@@ -928,7 +948,8 @@ export const initialRestaurants = [
             "lng": null
         },
         "halalStatus": "non_halal",
-        "dietaryOption": null
+        "dietaryOption": null,
+        "slug": "cj21-kopitiam"
     },
     {
         "id": 23,
@@ -968,7 +989,8 @@ export const initialRestaurants = [
             "lng": null
         },
         "halalStatus": "non_halal",
-        "dietaryOption": null
+        "dietaryOption": null,
+        "slug": "best-flavor-food-restaurant"
     },
     {
         "id": 24,
@@ -1009,7 +1031,8 @@ export const initialRestaurants = [
             "lng": null
         },
         "halalStatus": "non_halal",
-        "dietaryOption": null
+        "dietaryOption": null,
+        "slug": "boon-kee-hainan-chicken-rice"
     },
     {
         "id": 25,
@@ -1051,7 +1074,8 @@ export const initialRestaurants = [
             "lng": null
         },
         "halalStatus": "non_halal",
-        "dietaryOption": null
+        "dietaryOption": null,
+        "slug": "kwong-guan-lai-restaurant"
     },
     {
         "id": 26,
@@ -1094,7 +1118,8 @@ export const initialRestaurants = [
             "lng": null
         },
         "halalStatus": "non_halal",
-        "dietaryOption": null
+        "dietaryOption": null,
+        "slug": "restoran-lu-tian"
     },
     {
         "id": 27,
@@ -1137,7 +1162,8 @@ export const initialRestaurants = [
             "lng": null
         },
         "halalStatus": "non_halal",
-        "dietaryOption": null
+        "dietaryOption": null,
+        "slug": "khoh-foong-restaurant"
     },
     {
         "id": 28,
@@ -1179,7 +1205,8 @@ export const initialRestaurants = [
             "lng": null
         },
         "halalStatus": "non_halal",
-        "dietaryOption": null
+        "dietaryOption": null,
+        "slug": "meei-shih-seafood-restaurant"
     },
     {
         "id": 29,
@@ -1217,7 +1244,8 @@ export const initialRestaurants = [
         },
         "phone": "07-662 5678",
         "halalStatus": "non_halal",
-        "dietaryOption": null
+        "dietaryOption": null,
+        "slug": "restoran-ji-guan"
     },
     {
         "id": 30,
@@ -1255,7 +1283,8 @@ export const initialRestaurants = [
             "lng": null
         },
         "halalStatus": "non_halal",
-        "dietaryOption": null
+        "dietaryOption": null,
+        "slug": "cathay-restaurant"
     },
     {
         "id": 31,
@@ -1293,7 +1322,8 @@ export const initialRestaurants = [
             "lng": null
         },
         "halalStatus": "muslim_owned",
-        "dietaryOption": null
+        "dietaryOption": null,
+        "slug": "der-cabin-bistro"
     },
     {
         "id": 32,
@@ -1333,7 +1363,8 @@ export const initialRestaurants = [
             "lng": null
         },
         "halalStatus": "non_halal",
-        "dietaryOption": null
+        "dietaryOption": null,
+        "slug": "yoon-lai"
     },
     {
         "id": 33,
@@ -1397,7 +1428,8 @@ export const initialRestaurants = [
             "lng": null
         },
         "halalStatus": "certified",
-        "dietaryOption": null
+        "dietaryOption": null,
+        "slug": "kfc"
     },
     {
         "id": 34,
@@ -1452,7 +1484,8 @@ export const initialRestaurants = [
             "lng": null
         },
         "halalStatus": "certified",
-        "dietaryOption": null
+        "dietaryOption": null,
+        "slug": "mcdonalds"
     },
     {
         "id": 36,
@@ -1491,7 +1524,8 @@ export const initialRestaurants = [
             "lng": null
         },
         "halalStatus": "non_halal",
-        "dietaryOption": null
+        "dietaryOption": null,
+        "slug": "manggo-tree"
     },
     {
         "id": 37,
@@ -1532,7 +1566,8 @@ export const initialRestaurants = [
             "lng": null
         },
         "halalStatus": "non_halal",
-        "dietaryOption": null
+        "dietaryOption": null,
+        "slug": "origin-cafe"
     },
     {
         "id": 38,
@@ -1573,7 +1608,8 @@ export const initialRestaurants = [
             "lng": null
         },
         "halalStatus": "non_halal",
-        "dietaryOption": null
+        "dietaryOption": null,
+        "slug": "three-and-a-half"
     },
     {
         "id": 39,
@@ -1613,7 +1649,8 @@ export const initialRestaurants = [
             "lng": null
         },
         "halalStatus": "non_halal",
-        "dietaryOption": null
+        "dietaryOption": null,
+        "slug": "cafe-jufei"
     },
     {
         "id": 40,
@@ -1650,7 +1687,8 @@ export const initialRestaurants = [
             "lng": null
         },
         "halalStatus": "non_halal",
-        "dietaryOption": null
+        "dietaryOption": null,
+        "slug": "yun-yun-loy-wanton-noodle"
     },
     {
         "id": 41,
@@ -1690,7 +1728,8 @@ export const initialRestaurants = [
             "lng": null
         },
         "halalStatus": "non_halal",
-        "dietaryOption": null
+        "dietaryOption": null,
+        "slug": "tofu-lao-curry-laksa"
     },
     {
         "id": 42,
@@ -1731,7 +1770,8 @@ export const initialRestaurants = [
             "lng": null
         },
         "halalStatus": "non_halal",
-        "dietaryOption": null
+        "dietaryOption": null,
+        "slug": "kelab-kopi-lama"
     },
     {
         "id": 43,
@@ -1773,7 +1813,8 @@ export const initialRestaurants = [
             "lng": null
         },
         "halalStatus": "muslim_owned",
-        "dietaryOption": null
+        "dietaryOption": null,
+        "slug": "street-crew"
     },
     {
         "id": 44,
@@ -1813,7 +1854,8 @@ export const initialRestaurants = [
             "lng": null
         },
         "halalStatus": "non_halal",
-        "dietaryOption": null
+        "dietaryOption": null,
+        "slug": "restoran-hock-chin"
     },
     {
         "id": 45,
@@ -1853,7 +1895,8 @@ export const initialRestaurants = [
             "lng": null
         },
         "halalStatus": "non_halal",
-        "dietaryOption": null
+        "dietaryOption": null,
+        "slug": "starblu-cafe"
     },
     {
         "id": 46,
@@ -1895,7 +1938,8 @@ export const initialRestaurants = [
             "lng": null
         },
         "halalStatus": "non_halal",
-        "dietaryOption": null
+        "dietaryOption": null,
+        "slug": "21-indahpura"
     },
     {
         "id": 47,
@@ -1935,7 +1979,8 @@ export const initialRestaurants = [
             "lng": null
         },
         "halalStatus": "non_halal",
-        "dietaryOption": null
+        "dietaryOption": null,
+        "slug": "mykori-dessert-cafe-kulai"
     },
     {
         "id": 48,
@@ -1973,7 +2018,8 @@ export const initialRestaurants = [
             "lng": null
         },
         "halalStatus": "non_halal",
-        "dietaryOption": null
+        "dietaryOption": null,
+        "slug": "restoran-ah-pang"
     },
     {
         "id": 49,
@@ -2015,7 +2061,8 @@ export const initialRestaurants = [
             "lng": null
         },
         "halalStatus": "muslim_owned",
-        "dietaryOption": null
+        "dietaryOption": null,
+        "slug": "kopi-saigon"
     },
     {
         "id": 50,
@@ -2053,7 +2100,8 @@ export const initialRestaurants = [
             "lng": null
         },
         "halalStatus": "non_halal",
-        "dietaryOption": null
+        "dietaryOption": null,
+        "slug": "yue-xiang-ting"
     },
     {
         "id": 51,
@@ -2097,7 +2145,8 @@ export const initialRestaurants = [
             "lng": null
         },
         "halalStatus": "non_halal",
-        "dietaryOption": null
+        "dietaryOption": null,
+        "slug": "mykluang-coffee"
     },
     {
         "id": 52,
@@ -2139,7 +2188,8 @@ export const initialRestaurants = [
             "lng": null
         },
         "halalStatus": "non_halal",
-        "dietaryOption": null
+        "dietaryOption": null,
+        "slug": "ufb-union-fashion-bar-balcony"
     },
     {
         "id": 53,
@@ -2179,7 +2229,8 @@ export const initialRestaurants = [
             "lng": null
         },
         "halalStatus": "non_halal",
-        "dietaryOption": null
+        "dietaryOption": null,
+        "slug": "broovies-cafe"
     },
     {
         "id": 54,
@@ -2217,7 +2268,8 @@ export const initialRestaurants = [
             "lng": null
         },
         "halalStatus": "non_halal",
-        "dietaryOption": null
+        "dietaryOption": null,
+        "slug": "wei-palace-chinese-restaurant"
     },
     {
         "id": 55,
@@ -2260,7 +2312,8 @@ export const initialRestaurants = [
             "lng": null
         },
         "halalStatus": "non_halal",
-        "dietaryOption": null
+        "dietaryOption": null,
+        "slug": "wafu-indahpura"
     },
     {
         "id": 56,
@@ -2298,7 +2351,8 @@ export const initialRestaurants = [
             "lng": null
         },
         "halalStatus": "non_halal",
-        "dietaryOption": null
+        "dietaryOption": null,
+        "slug": "jang-won-korean-bbq-restaurant"
     },
     {
         "id": 57,
@@ -2336,7 +2390,8 @@ export const initialRestaurants = [
             "lng": null
         },
         "halalStatus": "non_halal",
-        "dietaryOption": null
+        "dietaryOption": null,
+        "slug": "chiyo-sushi"
     },
     {
         "id": 58,
@@ -2377,7 +2432,8 @@ export const initialRestaurants = [
             "lng": null
         },
         "halalStatus": "non_halal",
-        "dietaryOption": null
+        "dietaryOption": null,
+        "slug": "3rd-junction-cafe-indahpura"
     },
     {
         "id": 59,
@@ -2425,7 +2481,8 @@ export const initialRestaurants = [
             "lng": null
         },
         "halalStatus": "non_halal",
-        "dietaryOption": null
+        "dietaryOption": null,
+        "slug": "lanxi"
     },
     {
         "id": 60,
@@ -2466,7 +2523,8 @@ export const initialRestaurants = [
             "lng": null
         },
         "halalStatus": "non_halal",
-        "dietaryOption": null
+        "dietaryOption": null,
+        "slug": "chuanlai-chuanqu-mala-hotpot-kulai"
     },
     {
         "id": 61,
@@ -2506,7 +2564,8 @@ export const initialRestaurants = [
             "lng": null
         },
         "halalStatus": "non_halal",
-        "dietaryOption": null
+        "dietaryOption": null,
+        "slug": "four-beans"
     },
     {
         "id": 62,
@@ -2547,7 +2606,8 @@ export const initialRestaurants = [
             "lng": null
         },
         "halalStatus": "non_halal",
-        "dietaryOption": null
+        "dietaryOption": null,
+        "slug": "bar-wang-rice"
     },
     {
         "id": 63,
@@ -2585,7 +2645,8 @@ export const initialRestaurants = [
             "lng": null
         },
         "halalStatus": "non_halal",
-        "dietaryOption": null
+        "dietaryOption": null,
+        "slug": "chagee"
     },
     {
         "id": 64,
@@ -2624,7 +2685,8 @@ export const initialRestaurants = [
             "lng": null
         },
         "halalStatus": "non_halal",
-        "dietaryOption": null
+        "dietaryOption": null,
+        "slug": "pacific-kopi"
     },
     {
         "id": 65,
@@ -2664,7 +2726,8 @@ export const initialRestaurants = [
             "lng": null
         },
         "halalStatus": "non_halal",
-        "dietaryOption": null
+        "dietaryOption": null,
+        "slug": "vivo-pizza"
     },
     {
         "id": 66,
@@ -2705,7 +2768,8 @@ export const initialRestaurants = [
             "lng": null
         },
         "halalStatus": "non_halal",
-        "dietaryOption": null
+        "dietaryOption": null,
+        "slug": "xiao-xin-hot-restaurant"
     },
     {
         "id": 67,
@@ -2786,7 +2850,8 @@ export const initialRestaurants = [
             "lng": null
         },
         "halalStatus": "non_halal",
-        "dietaryOption": null
+        "dietaryOption": null,
+        "slug": "restoran-wee-huat"
     },
     {
         "id": 68,
@@ -2827,7 +2892,8 @@ export const initialRestaurants = [
             "lng": null
         },
         "halalStatus": "non_halal",
-        "dietaryOption": null
+        "dietaryOption": null,
+        "slug": "ma-chin-all-steamboat-restaurant"
     },
     {
         "id": 69,
@@ -2867,7 +2933,8 @@ export const initialRestaurants = [
             "lng": null
         },
         "halalStatus": "non_halal",
-        "dietaryOption": null
+        "dietaryOption": null,
+        "slug": "qiao-di-kopitiam"
     },
     {
         "id": 70,
@@ -2904,7 +2971,8 @@ export const initialRestaurants = [
             "lng": null
         },
         "halalStatus": "non_halal",
-        "dietaryOption": null
+        "dietaryOption": null,
+        "slug": "restaurant-lau-ma-zi"
     },
     {
         "id": 71,
@@ -2989,7 +3057,8 @@ export const initialRestaurants = [
             "lng": null
         },
         "halalStatus": "non_halal",
-        "dietaryOption": null
+        "dietaryOption": null,
+        "slug": "popular-tea-room"
     },
     {
         "id": 72,
@@ -3030,7 +3099,8 @@ export const initialRestaurants = [
             "lng": null
         },
         "halalStatus": "non_halal",
-        "dietaryOption": null
+        "dietaryOption": null,
+        "slug": "ep-xian-restaurant"
     },
     {
         "id": 73,
@@ -3097,7 +3167,8 @@ export const initialRestaurants = [
             "lng": null
         },
         "halalStatus": "non_halal",
-        "dietaryOption": null
+        "dietaryOption": null,
+        "slug": "restoran-jiang-man"
     },
     {
         "id": 74,
@@ -3178,7 +3249,8 @@ export const initialRestaurants = [
             "lng": null
         },
         "halalStatus": "non_halal",
-        "dietaryOption": null
+        "dietaryOption": null,
+        "slug": "restoran-yuan-fa"
     },
     {
         "id": 75,
@@ -3218,7 +3290,8 @@ export const initialRestaurants = [
             "lng": null
         },
         "halalStatus": "non_halal",
-        "dietaryOption": null
+        "dietaryOption": null,
+        "slug": "food-generation"
     },
     {
         "id": 76,
@@ -3262,7 +3335,8 @@ export const initialRestaurants = [
             "lng": null
         },
         "halalStatus": "non_halal",
-        "dietaryOption": null
+        "dietaryOption": null,
+        "slug": "pontian-coffee-9"
     },
     {
         "id": 77,
@@ -3300,7 +3374,8 @@ export const initialRestaurants = [
             "lng": null
         },
         "halalStatus": "non_halal",
-        "dietaryOption": null
+        "dietaryOption": null,
+        "slug": "nanyang-old-street"
     },
     {
         "id": 78,
@@ -3344,7 +3419,8 @@ export const initialRestaurants = [
             "lng": null
         },
         "halalStatus": "non_halal",
-        "dietaryOption": null
+        "dietaryOption": null,
+        "slug": "uncle-five-coffee"
     },
     {
         "id": 79,
@@ -3382,7 +3458,8 @@ export const initialRestaurants = [
             "lng": null
         },
         "halalStatus": "non_halal",
-        "dietaryOption": null
+        "dietaryOption": null,
+        "slug": "ps-abalone"
     },
     {
         "id": 80,
@@ -3424,7 +3501,8 @@ export const initialRestaurants = [
             "lng": null
         },
         "halalStatus": "non_halal",
-        "dietaryOption": null
+        "dietaryOption": null,
+        "slug": "goodluck-kopitiam"
     },
     {
         "id": 81,
@@ -3465,7 +3543,8 @@ export const initialRestaurants = [
             "lng": null
         },
         "halalStatus": "non_halal",
-        "dietaryOption": null
+        "dietaryOption": null,
+        "slug": "mystery-dessertland-cafe"
     },
     {
         "id": 82,
@@ -3507,7 +3586,8 @@ export const initialRestaurants = [
             "lng": null
         },
         "halalStatus": "non_halal",
-        "dietaryOption": null
+        "dietaryOption": null,
+        "slug": "taste-of-ipoh"
     },
     {
         "id": 83,
@@ -3547,7 +3627,8 @@ export const initialRestaurants = [
             "lng": null
         },
         "halalStatus": "non_halal",
-        "dietaryOption": null
+        "dietaryOption": null,
+        "slug": "yubao-chicken-rice"
     },
     {
         "id": 84,
@@ -3583,7 +3664,8 @@ export const initialRestaurants = [
             "lng": null
         },
         "halalStatus": "non_halal",
-        "dietaryOption": null
+        "dietaryOption": null,
+        "slug": "hermeal-healthy-food"
     },
     {
         "id": 85,
@@ -3625,7 +3707,8 @@ export const initialRestaurants = [
             "lng": null
         },
         "halalStatus": "non_halal",
-        "dietaryOption": null
+        "dietaryOption": null,
+        "slug": "chicken-delights"
     },
     {
         "id": 86,
@@ -3667,7 +3750,8 @@ export const initialRestaurants = [
             "lng": null
         },
         "halalStatus": "non_halal",
-        "dietaryOption": null
+        "dietaryOption": null,
+        "slug": "kopiloco"
     },
     {
         "id": 87,
@@ -3705,7 +3789,8 @@ export const initialRestaurants = [
             "lng": null
         },
         "halalStatus": "non_halal",
-        "dietaryOption": null
+        "dietaryOption": null,
+        "slug": "tao-yuan-noodle-house"
     },
     {
         "id": 88,
@@ -3747,7 +3832,8 @@ export const initialRestaurants = [
             "lng": null
         },
         "halalStatus": "non_halal",
-        "dietaryOption": null
+        "dietaryOption": null,
+        "slug": "kuching-style-restaurant"
     },
     {
         "id": 89,
@@ -3789,7 +3875,8 @@ export const initialRestaurants = [
             "lng": null
         },
         "halalStatus": "non_halal",
-        "dietaryOption": null
+        "dietaryOption": null,
+        "slug": "la-primeur"
     },
     {
         "id": 90,
@@ -3832,7 +3919,8 @@ export const initialRestaurants = [
             "lng": null
         },
         "halalStatus": "non_halal",
-        "dietaryOption": null
+        "dietaryOption": null,
+        "slug": "the-bierhaus"
     },
     {
         "id": 91,
@@ -3873,7 +3961,8 @@ export const initialRestaurants = [
             "lng": null
         },
         "halalStatus": "non_halal",
-        "dietaryOption": null
+        "dietaryOption": null,
+        "slug": "restoran-q-house"
     },
     {
         "id": 92,
@@ -3914,7 +4003,8 @@ export const initialRestaurants = [
             "lng": null
         },
         "halalStatus": "non_halal",
-        "dietaryOption": null
+        "dietaryOption": null,
+        "slug": "meatvking-bistro"
     },
     {
         "id": 93,
@@ -3955,7 +4045,8 @@ export const initialRestaurants = [
             "lng": null
         },
         "halalStatus": "non_halal",
-        "dietaryOption": null
+        "dietaryOption": null,
+        "slug": "siao-hong-deng-hotpot"
     },
     {
         "id": 94,
@@ -3993,7 +4084,8 @@ export const initialRestaurants = [
             "lng": null
         },
         "halalStatus": "non_halal",
-        "dietaryOption": null
+        "dietaryOption": null,
+        "slug": "dessert-library"
     },
     {
         "id": 95,
@@ -4034,7 +4126,8 @@ export const initialRestaurants = [
             "lng": null
         },
         "halalStatus": "non_halal",
-        "dietaryOption": null
+        "dietaryOption": null,
+        "slug": "zen-bee-siang"
     },
     {
         "id": 96,
@@ -4075,7 +4168,8 @@ export const initialRestaurants = [
             "lng": null
         },
         "halalStatus": "non_halal",
-        "dietaryOption": null
+        "dietaryOption": null,
+        "slug": "eight-toast-nanyang-kopitiam"
     },
     {
         "id": 97,
@@ -4112,7 +4206,8 @@ export const initialRestaurants = [
             "lng": null
         },
         "halalStatus": "non_halal",
-        "dietaryOption": null
+        "dietaryOption": null,
+        "slug": "auntie-zhang"
     },
     {
         "id": 98,
@@ -4149,7 +4244,8 @@ export const initialRestaurants = [
             "lng": null
         },
         "halalStatus": "non_halal",
-        "dietaryOption": null
+        "dietaryOption": null,
+        "slug": "the-cloud-restaurant"
     },
     {
         "id": 99,
@@ -4186,7 +4282,8 @@ export const initialRestaurants = [
             "lng": null
         },
         "halalStatus": "non_halal",
-        "dietaryOption": null
+        "dietaryOption": null,
+        "slug": "khunya-thai-kitchen"
     },
     {
         "id": 100,
@@ -4228,7 +4325,8 @@ export const initialRestaurants = [
             "lng": null
         },
         "halalStatus": "non_halal",
-        "dietaryOption": null
+        "dietaryOption": null,
+        "slug": "fang-yuan-kopitiam"
     },
     {
         "id": 101,
@@ -4269,7 +4367,8 @@ export const initialRestaurants = [
             "lng": null
         },
         "halalStatus": "non_halal",
-        "dietaryOption": null
+        "dietaryOption": null,
+        "slug": "dino-house-cafe"
     },
     {
         "id": 102,
@@ -4310,7 +4409,8 @@ export const initialRestaurants = [
             "lng": null
         },
         "halalStatus": "non_halal",
-        "dietaryOption": null
+        "dietaryOption": null,
+        "slug": "k-lolly-steamboat-bbq"
     },
     {
         "id": 103,
@@ -4352,7 +4452,8 @@ export const initialRestaurants = [
             "lng": null
         },
         "halalStatus": "non_halal",
-        "dietaryOption": null
+        "dietaryOption": null,
+        "slug": "kang-bee-hong"
     },
     {
         "id": 104,
@@ -4392,7 +4493,8 @@ export const initialRestaurants = [
             "lng": null
         },
         "halalStatus": "non_halal",
-        "dietaryOption": null
+        "dietaryOption": null,
+        "slug": "restaurant-xin-mo-gao"
     },
     {
         "id": 105,
@@ -4433,7 +4535,8 @@ export const initialRestaurants = [
             "lng": null
         },
         "halalStatus": "non_halal",
-        "dietaryOption": null
+        "dietaryOption": null,
+        "slug": "loongkee"
     },
     {
         "id": 106,
@@ -4474,7 +4577,8 @@ export const initialRestaurants = [
             "lng": null
         },
         "halalStatus": "non_halal",
-        "dietaryOption": null
+        "dietaryOption": null,
+        "slug": "tan-tan-charcoal-steamboat-kulai"
     },
     {
         "id": 107,
@@ -4514,7 +4618,8 @@ export const initialRestaurants = [
             "lng": null
         },
         "halalStatus": "non_halal",
-        "dietaryOption": null
+        "dietaryOption": null,
+        "slug": "restoran-tong-nam-pph"
     },
     {
         "id": 108,
@@ -4555,7 +4660,8 @@ export const initialRestaurants = [
             "lng": null
         },
         "halalStatus": "non_halal",
-        "dietaryOption": null
+        "dietaryOption": null,
+        "slug": "powertea"
     },
     {
         "id": 109,
@@ -4597,7 +4703,8 @@ export const initialRestaurants = [
             "lng": null
         },
         "halalStatus": "non_halal",
-        "dietaryOption": null
+        "dietaryOption": null,
+        "slug": "restoran-soon-fa-bat-kut-teh"
     },
     {
         "id": 110,
@@ -4639,7 +4746,8 @@ export const initialRestaurants = [
             "lng": null
         },
         "halalStatus": "non_halal",
-        "dietaryOption": null
+        "dietaryOption": null,
+        "slug": "yu-min-one"
     },
     {
         "id": 111,
@@ -4680,7 +4788,8 @@ export const initialRestaurants = [
             "lng": null
         },
         "halalStatus": "non_halal",
-        "dietaryOption": null
+        "dietaryOption": null,
+        "slug": "yu-min-bitter-gourd-soup"
     },
     {
         "id": 112,
@@ -4718,7 +4827,8 @@ export const initialRestaurants = [
             "lng": null
         },
         "halalStatus": "non_halal",
-        "dietaryOption": null
+        "dietaryOption": null,
+        "slug": "like-mee-noodle-house"
     },
     {
         "id": 113,
@@ -4756,7 +4866,8 @@ export const initialRestaurants = [
             "lng": null
         },
         "halalStatus": "non_halal",
-        "dietaryOption": null
+        "dietaryOption": null,
+        "slug": "jiah-xiang-dim-sum"
     },
     {
         "id": 114,
@@ -4798,7 +4909,8 @@ export const initialRestaurants = [
             "lng": null
         },
         "halalStatus": "non_halal",
-        "dietaryOption": null
+        "dietaryOption": null,
+        "slug": "lnp-pontian-flavor-bak-kut-teh"
     },
     {
         "id": 115,
@@ -4836,7 +4948,8 @@ export const initialRestaurants = [
             "lng": null
         },
         "halalStatus": "non_halal",
-        "dietaryOption": null
+        "dietaryOption": null,
+        "slug": "justwant-dessert"
     },
     {
         "id": 116,
@@ -4874,7 +4987,8 @@ export const initialRestaurants = [
             "lng": null
         },
         "halalStatus": "non_halal",
-        "dietaryOption": null
+        "dietaryOption": null,
+        "slug": "js-tasty-restaurant"
     },
     {
         "id": 117,
@@ -4912,7 +5026,8 @@ export const initialRestaurants = [
             "lng": null
         },
         "halalStatus": "non_halal",
-        "dietaryOption": null
+        "dietaryOption": null,
+        "slug": "wong-fong-tee-mee-hun-kueh"
     },
     {
         "id": 118,
@@ -4952,7 +5067,8 @@ export const initialRestaurants = [
             "lng": null
         },
         "halalStatus": "non_halal",
-        "dietaryOption": null
+        "dietaryOption": null,
+        "slug": "fu-qi-fang"
     },
     {
         "id": 119,
@@ -4994,7 +5110,8 @@ export const initialRestaurants = [
             "lng": null
         },
         "halalStatus": "non_halal",
-        "dietaryOption": null
+        "dietaryOption": null,
+        "slug": "restoran-cuan-yue"
     },
     {
         "id": 120,
@@ -5036,7 +5153,8 @@ export const initialRestaurants = [
             "lng": null
         },
         "halalStatus": "non_halal",
-        "dietaryOption": null
+        "dietaryOption": null,
+        "slug": "chili-pan-mee"
     },
     {
         "id": 121,
@@ -5076,7 +5194,8 @@ export const initialRestaurants = [
             "lng": null
         },
         "halalStatus": "non_halal",
-        "dietaryOption": null
+        "dietaryOption": null,
+        "slug": "lemon-tree-restaurant"
     },
     {
         "id": 122,
@@ -5114,7 +5233,8 @@ export const initialRestaurants = [
             "lng": null
         },
         "halalStatus": "non_halal",
-        "dietaryOption": null
+        "dietaryOption": null,
+        "slug": "grandma-ong"
     },
     {
         "id": 123,
@@ -5155,7 +5275,8 @@ export const initialRestaurants = [
             "lng": null
         },
         "halalStatus": "non_halal",
-        "dietaryOption": null
+        "dietaryOption": null,
+        "slug": "my-cafe"
     },
     {
         "id": 124,
@@ -5193,7 +5314,8 @@ export const initialRestaurants = [
             "lng": null
         },
         "halalStatus": "non_halal",
-        "dietaryOption": null
+        "dietaryOption": null,
+        "slug": "restoran-bahao"
     },
     {
         "id": 125,
@@ -5231,7 +5353,8 @@ export const initialRestaurants = [
             "lng": null
         },
         "halalStatus": "non_halal",
-        "dietaryOption": null
+        "dietaryOption": null,
+        "slug": "auntea-jenny"
     },
     {
         "id": 126,
@@ -5269,7 +5392,8 @@ export const initialRestaurants = [
             "lng": null
         },
         "halalStatus": "non_halal",
-        "dietaryOption": null
+        "dietaryOption": null,
+        "slug": "hanabi-robata-izakaya-kulai"
     },
     {
         "id": 127,
@@ -5307,7 +5431,8 @@ export const initialRestaurants = [
             "lng": null
         },
         "halalStatus": "non_halal",
-        "dietaryOption": null
+        "dietaryOption": null,
+        "slug": "beansfactory"
     },
     {
         "id": 128,
@@ -5348,7 +5473,8 @@ export const initialRestaurants = [
             "lng": null
         },
         "halalStatus": "non_halal",
-        "dietaryOption": null
+        "dietaryOption": null,
+        "slug": "aunt-vicky"
     },
     {
         "id": 129,
@@ -5386,7 +5512,8 @@ export const initialRestaurants = [
             "lng": null
         },
         "halalStatus": "non_halal",
-        "dietaryOption": null
+        "dietaryOption": null,
+        "slug": "hinokage"
     },
     {
         "id": 130,
@@ -5426,7 +5553,8 @@ export const initialRestaurants = [
             "lng": null
         },
         "halalStatus": "non_halal",
-        "dietaryOption": null
+        "dietaryOption": null,
+        "slug": "guoma-seafood-express"
     },
     {
         "id": 131,
@@ -5463,7 +5591,8 @@ export const initialRestaurants = [
             "lng": null
         },
         "halalStatus": "non_halal",
-        "dietaryOption": null
+        "dietaryOption": null,
+        "slug": "restoran-jwd-mee-tarik"
     },
     {
         "id": 132,
@@ -5503,7 +5632,8 @@ export const initialRestaurants = [
             "lng": null
         },
         "halalStatus": "non_halal",
-        "dietaryOption": null
+        "dietaryOption": null,
+        "slug": "chuan-shi-fu"
     },
     {
         "id": 133,
@@ -5541,7 +5671,8 @@ export const initialRestaurants = [
             "lng": null
         },
         "halalStatus": "non_halal",
-        "dietaryOption": null
+        "dietaryOption": null,
+        "slug": "k-patisserie"
     },
     {
         "id": 134,
@@ -5579,7 +5710,8 @@ export const initialRestaurants = [
             "lng": null
         },
         "halalStatus": "non_halal",
-        "dietaryOption": null
+        "dietaryOption": null,
+        "slug": "alliews-bakehouse"
     },
     {
         "id": 135,
@@ -5621,7 +5753,8 @@ export const initialRestaurants = [
             "lng": null
         },
         "halalStatus": "non_halal",
-        "dietaryOption": null
+        "dietaryOption": null,
+        "slug": "restoran-hua-mui"
     },
     {
         "id": 136,
@@ -5664,7 +5797,8 @@ export const initialRestaurants = [
             "lng": null
         },
         "halalStatus": "non_halal",
-        "dietaryOption": null
+        "dietaryOption": null,
+        "slug": "chai-ji-fish-soup"
     },
     {
         "id": 137,
@@ -5704,7 +5838,8 @@ export const initialRestaurants = [
             "lng": null
         },
         "halalStatus": "non_halal",
-        "dietaryOption": null
+        "dietaryOption": null,
+        "slug": "uncle-lim-delivery"
     },
     {
         "id": 138,
@@ -5742,7 +5877,8 @@ export const initialRestaurants = [
             "lng": null
         },
         "halalStatus": "non_halal",
-        "dietaryOption": null
+        "dietaryOption": null,
+        "slug": "restoran-kulai-99"
     },
     {
         "id": 139,
@@ -5782,7 +5918,8 @@ export const initialRestaurants = [
             "lng": null
         },
         "halalStatus": "no_pork",
-        "dietaryOption": "vegetarian_only"
+        "dietaryOption": "vegetarian_only",
+        "slug": "restaurant-yi-sin-vegetarian"
     },
     {
         "id": 140,
@@ -5824,7 +5961,8 @@ export const initialRestaurants = [
             "lng": null
         },
         "halalStatus": "non_halal",
-        "dietaryOption": null
+        "dietaryOption": null,
+        "slug": "xin-xin-dian-xin"
     },
     {
         "id": 141,
@@ -5865,7 +6003,8 @@ export const initialRestaurants = [
             "lng": null
         },
         "halalStatus": "non_halal",
-        "dietaryOption": null
+        "dietaryOption": null,
+        "slug": "restoran-chao-shan"
     },
     {
         "id": 142,
@@ -5905,7 +6044,8 @@ export const initialRestaurants = [
             "lng": null
         },
         "halalStatus": "non_halal",
-        "dietaryOption": null
+        "dietaryOption": null,
+        "slug": "qulai-pizza-kayu-api"
     },
     {
         "id": 144,
@@ -5951,7 +6091,8 @@ export const initialRestaurants = [
         },
         "halalStatus": "muslim_owned",
         "area": "Senai",
-        "dietaryOption": null
+        "dietaryOption": null,
+        "slug": "roti-king-saleng"
     },
     {
         "id": 145,
@@ -5989,7 +6130,8 @@ export const initialRestaurants = [
             "lng": null
         },
         "halalStatus": "non_halal",
-        "dietaryOption": null
+        "dietaryOption": null,
+        "slug": "defortune-restaurant"
     },
     {
         "id": 146,
@@ -6027,7 +6169,8 @@ export const initialRestaurants = [
             "lng": null
         },
         "halalStatus": "non_halal",
-        "dietaryOption": null
+        "dietaryOption": null,
+        "slug": "aicha"
     },
     {
         "id": 147,
@@ -6065,7 +6208,8 @@ export const initialRestaurants = [
             "lng": null
         },
         "halalStatus": "non_halal",
-        "dietaryOption": null
+        "dietaryOption": null,
+        "slug": "verbena-patisserie-shop-bandar-putra"
     },
     {
         "id": 148,
@@ -6108,7 +6252,8 @@ export const initialRestaurants = [
             "lng": null
         },
         "halalStatus": "non_halal",
-        "dietaryOption": null
+        "dietaryOption": null,
+        "slug": "nandos"
     },
     {
         "id": 149,
@@ -6146,7 +6291,8 @@ export const initialRestaurants = [
             "lng": null
         },
         "halalStatus": "non_halal",
-        "dietaryOption": null
+        "dietaryOption": null,
+        "slug": "ichiban-ramen"
     },
     {
         "id": 150,
@@ -6188,7 +6334,8 @@ export const initialRestaurants = [
             "lng": null
         },
         "halalStatus": "non_halal",
-        "dietaryOption": null
+        "dietaryOption": null,
+        "slug": "rengit-coffee-by-dagan"
     },
     {
         "id": 151,
@@ -6229,7 +6376,8 @@ export const initialRestaurants = [
             "lng": null
         },
         "halalStatus": "certified",
-        "dietaryOption": null
+        "dietaryOption": null,
+        "slug": "the-chicken-rice-shop"
     },
     {
         "id": 152,
@@ -6271,7 +6419,8 @@ export const initialRestaurants = [
             "lng": null
         },
         "halalStatus": "non_halal",
-        "dietaryOption": null
+        "dietaryOption": null,
+        "slug": "home-taste-coffee"
     },
     {
         "id": 153,
@@ -6313,7 +6462,8 @@ export const initialRestaurants = [
             "lng": null
         },
         "halalStatus": "non_halal",
-        "dietaryOption": null
+        "dietaryOption": null,
+        "slug": "classic-coffee"
     },
     {
         "id": 154,
@@ -6354,7 +6504,8 @@ export const initialRestaurants = [
             "lng": null
         },
         "halalStatus": "non_halal",
-        "dietaryOption": null
+        "dietaryOption": null,
+        "slug": "madam-loqloq"
     },
     {
         "id": 155,
@@ -6395,7 +6546,8 @@ export const initialRestaurants = [
             "lng": null
         },
         "halalStatus": "non_halal",
-        "dietaryOption": null
+        "dietaryOption": null,
+        "slug": "mke-harmony-cafe"
     },
     {
         "id": 156,
@@ -6433,7 +6585,8 @@ export const initialRestaurants = [
             "lng": null
         },
         "halalStatus": "non_halal",
-        "dietaryOption": null
+        "dietaryOption": null,
+        "slug": "mon-delice-patisserie"
     },
     {
         "id": 157,
@@ -6470,7 +6623,8 @@ export const initialRestaurants = [
             "lng": null
         },
         "halalStatus": "non_halal",
-        "dietaryOption": null
+        "dietaryOption": null,
+        "slug": "sutera-mee-restaurant"
     },
     {
         "id": 158,
@@ -6511,7 +6665,8 @@ export const initialRestaurants = [
             "lng": null
         },
         "halalStatus": "non_halal",
-        "dietaryOption": null
+        "dietaryOption": null,
+        "slug": "kimbarking-cafe"
     },
     {
         "id": 159,
@@ -6553,7 +6708,8 @@ export const initialRestaurants = [
             "lng": null
         },
         "halalStatus": "non_halal",
-        "dietaryOption": null
+        "dietaryOption": null,
+        "slug": "good-coffee-restaurant"
     },
     {
         "id": 160,
@@ -6595,7 +6751,8 @@ export const initialRestaurants = [
             "lng": null
         },
         "halalStatus": "non_halal",
-        "dietaryOption": null
+        "dietaryOption": null,
+        "slug": "yue-shan-cafe"
     },
     {
         "id": 161,
@@ -6633,7 +6790,8 @@ export const initialRestaurants = [
             "lng": null
         },
         "halalStatus": "muslim_owned",
-        "dietaryOption": null
+        "dietaryOption": null,
+        "slug": "7-beradik-restaurant"
     },
     {
         "id": 162,
@@ -6674,7 +6832,8 @@ export const initialRestaurants = [
             "lng": null
         },
         "halalStatus": "non_halal",
-        "dietaryOption": null
+        "dietaryOption": null,
+        "slug": "redycafe"
     },
     {
         "id": 163,
@@ -6712,7 +6871,8 @@ export const initialRestaurants = [
             "lng": null
         },
         "halalStatus": "muslim_owned",
-        "dietaryOption": null
+        "dietaryOption": null,
+        "slug": "nasi-ayam-angah"
     },
     {
         "id": 164,
@@ -6751,7 +6911,8 @@ export const initialRestaurants = [
             "lng": null
         },
         "halalStatus": "non_halal",
-        "dietaryOption": null
+        "dietaryOption": null,
+        "slug": "hua-shu-fire-steam-chicken"
     },
     {
         "id": 165,
@@ -6794,7 +6955,8 @@ export const initialRestaurants = [
             "lng": null
         },
         "halalStatus": "non_halal",
-        "dietaryOption": null
+        "dietaryOption": null,
+        "slug": "chicky-don-ayam-goreng-paprika"
     },
     {
         "id": 166,
@@ -6835,7 +6997,8 @@ export const initialRestaurants = [
             "lng": null
         },
         "halalStatus": "non_halal",
-        "dietaryOption": null
+        "dietaryOption": null,
+        "slug": "restoran-law-cafe"
     },
     {
         "id": 167,
@@ -6873,7 +7036,8 @@ export const initialRestaurants = [
             "lng": null
         },
         "halalStatus": "non_halal",
-        "dietaryOption": null
+        "dietaryOption": null,
+        "slug": "restoran-niang-pin-jia"
     },
     {
         "id": 168,
@@ -6911,7 +7075,8 @@ export const initialRestaurants = [
             "lng": null
         },
         "halalStatus": "non_halal",
-        "dietaryOption": null
+        "dietaryOption": null,
+        "slug": "ding-dimsum"
     },
     {
         "id": 169,
@@ -6952,7 +7117,8 @@ export const initialRestaurants = [
             "lng": null
         },
         "halalStatus": "non_halal",
-        "dietaryOption": null
+        "dietaryOption": null,
+        "slug": "kejia-cafe"
     },
     {
         "id": 170,
@@ -6993,7 +7159,8 @@ export const initialRestaurants = [
             "lng": null
         },
         "halalStatus": "non_halal",
-        "dietaryOption": null
+        "dietaryOption": null,
+        "slug": "lao-pa-sat-kopitiam"
     },
     {
         "id": 171,
@@ -7031,7 +7198,8 @@ export const initialRestaurants = [
             "lng": null
         },
         "halalStatus": "non_halal",
-        "dietaryOption": null
+        "dietaryOption": null,
+        "slug": "akino-japanese-restaurant"
     },
     {
         "id": 172,
@@ -7072,7 +7240,8 @@ export const initialRestaurants = [
             "lng": null
         },
         "halalStatus": "non_halal",
-        "dietaryOption": null
+        "dietaryOption": null,
+        "slug": "june-coffee-grill-spaghetti"
     },
     {
         "id": 173,
@@ -7113,7 +7282,8 @@ export const initialRestaurants = [
             "lng": null
         },
         "halalStatus": "non_halal",
-        "dietaryOption": null
+        "dietaryOption": null,
+        "slug": "thai-lala"
     },
     {
         "id": 174,
@@ -7155,7 +7325,8 @@ export const initialRestaurants = [
             "lng": null
         },
         "halalStatus": "non_halal",
-        "dietaryOption": null
+        "dietaryOption": null,
+        "slug": "kedai-makanan-hakka-sawit"
     },
     {
         "id": 175,
@@ -7211,7 +7382,8 @@ export const initialRestaurants = [
         },
         "halalStatus": "certified",
         "dietaryOption": null,
-        "area": "Indahpura"
+        "area": "Indahpura",
+        "slug": "richiamo-coffee"
     },
     {
         "id": 176,
@@ -7248,7 +7420,8 @@ export const initialRestaurants = [
             "lng": null
         },
         "halalStatus": "non_halal",
-        "dietaryOption": null
+        "dietaryOption": null,
+        "slug": "kelapa-sawit-uncle-liew"
     },
     {
         "id": 177,
@@ -7287,7 +7460,8 @@ export const initialRestaurants = [
             "lng": null
         },
         "halalStatus": "non_halal",
-        "dietaryOption": null
+        "dietaryOption": null,
+        "slug": "kedai-makanan-sawit"
     },
     {
         "id": 178,
@@ -7327,7 +7501,8 @@ export const initialRestaurants = [
             "lng": null
         },
         "halalStatus": "non_halal",
-        "dietaryOption": null
+        "dietaryOption": null,
+        "slug": "rasa-hakka-restaurant"
     },
     {
         "id": 179,
@@ -7364,7 +7539,8 @@ export const initialRestaurants = [
             "lng": null
         },
         "halalStatus": "non_halal",
-        "dietaryOption": null
+        "dietaryOption": null,
+        "slug": "xiu-hua-cai-ban"
     },
     {
         "id": 180,
@@ -7404,7 +7580,8 @@ export const initialRestaurants = [
             "lng": null
         },
         "halalStatus": "non_halal",
-        "dietaryOption": null
+        "dietaryOption": null,
+        "slug": "wuka-coffee"
     },
     {
         "id": 181,
@@ -7447,7 +7624,8 @@ export const initialRestaurants = [
             "lng": null
         },
         "halalStatus": "non_halal",
-        "dietaryOption": null
+        "dietaryOption": null,
+        "slug": "volcano-coffee-house-lei-cha"
     },
     {
         "id": 182,
@@ -7488,7 +7666,8 @@ export const initialRestaurants = [
             "lng": null
         },
         "halalStatus": "non_halal",
-        "dietaryOption": null
+        "dietaryOption": null,
+        "slug": "kwang-kee-restaurant"
     },
     {
         "id": 183,
@@ -7525,7 +7704,8 @@ export const initialRestaurants = [
             "lng": null
         },
         "halalStatus": "non_halal",
-        "dietaryOption": null
+        "dietaryOption": null,
+        "slug": "lian-yi-ding-bian-hu"
     },
     {
         "id": 184,
@@ -7564,7 +7744,8 @@ export const initialRestaurants = [
             "lng": null
         },
         "halalStatus": "non_halal",
-        "dietaryOption": null
+        "dietaryOption": null,
+        "slug": "ee-ee-loi-restaurant"
     },
     {
         "id": 185,
@@ -7604,7 +7785,8 @@ export const initialRestaurants = [
             "lng": null
         },
         "halalStatus": "non_halal",
-        "dietaryOption": null
+        "dietaryOption": null,
+        "slug": "restoran-yin-ji"
     },
     {
         "id": 187,
@@ -7645,7 +7827,8 @@ export const initialRestaurants = [
             "lng": null
         },
         "halalStatus": "non_halal",
-        "dietaryOption": null
+        "dietaryOption": null,
+        "slug": "coffee-shop"
     },
     {
         "id": 188,
@@ -7687,7 +7870,8 @@ export const initialRestaurants = [
             "lng": null
         },
         "halalStatus": "non_halal",
-        "dietaryOption": null
+        "dietaryOption": null,
+        "slug": "xiang-cun-cafe"
     },
     {
         "id": 189,
@@ -7753,7 +7937,8 @@ export const initialRestaurants = [
             "lng": null
         },
         "halalStatus": "certified",
-        "dietaryOption": null
+        "dietaryOption": null,
+        "slug": "zus-coffee"
     },
     {
         "id": 190,
@@ -7792,7 +7977,8 @@ export const initialRestaurants = [
             "lng": null
         },
         "halalStatus": "non_halal",
-        "dietaryOption": null
+        "dietaryOption": null,
+        "slug": "shun-fatt-restaurant"
     },
     {
         "id": 191,
@@ -7847,7 +8033,8 @@ export const initialRestaurants = [
             "lng": null
         },
         "halalStatus": "certified",
-        "dietaryOption": null
+        "dietaryOption": null,
+        "slug": "mixue"
     },
     {
         "id": 192,
@@ -7888,7 +8075,8 @@ export const initialRestaurants = [
             "lng": null
         },
         "halalStatus": "non_halal",
-        "dietaryOption": null
+        "dietaryOption": null,
+        "slug": "tien-tien-jian-coffee-shop"
     },
     {
         "id": 193,
@@ -7929,7 +8117,8 @@ export const initialRestaurants = [
             "lng": null
         },
         "halalStatus": "non_halal",
-        "dietaryOption": null
+        "dietaryOption": null,
+        "slug": "yuan-dong-coffee-shop"
     },
     {
         "id": 194,
@@ -7966,7 +8155,8 @@ export const initialRestaurants = [
             "lng": null
         },
         "halalStatus": "no_pork",
-        "dietaryOption": "vegetarian_only"
+        "dietaryOption": "vegetarian_only",
+        "slug": "26c-vegetarian-food"
     },
     {
         "id": 195,
@@ -8005,7 +8195,8 @@ export const initialRestaurants = [
             "lng": null
         },
         "halalStatus": "non_halal",
-        "dietaryOption": null
+        "dietaryOption": null,
+        "slug": "fruit-ice-kacang"
     },
     {
         "id": 196,
@@ -8044,7 +8235,8 @@ export const initialRestaurants = [
             "lng": null
         },
         "halalStatus": "non_halal",
-        "dietaryOption": null
+        "dietaryOption": null,
+        "slug": "kedai-makanan-dan-minuman-xing-wang"
     },
     {
         "id": 197,
@@ -8084,7 +8276,8 @@ export const initialRestaurants = [
             "lng": null
         },
         "halalStatus": "non_halal",
-        "dietaryOption": null
+        "dietaryOption": null,
+        "slug": "sawit-fried-chicken"
     },
     {
         "id": 198,
@@ -8123,7 +8316,8 @@ export const initialRestaurants = [
             "lng": null
         },
         "halalStatus": "non_halal",
-        "dietaryOption": null
+        "dietaryOption": null,
+        "slug": "new-sawit-126-food-court"
     },
     {
         "id": 199,
@@ -8164,7 +8358,8 @@ export const initialRestaurants = [
             "lng": null
         },
         "halalStatus": "non_halal",
-        "dietaryOption": null
+        "dietaryOption": null,
+        "slug": "ah-hua-coffee-shop"
     },
     {
         "id": 200,
@@ -8209,7 +8404,8 @@ export const initialRestaurants = [
             "lng": null
         },
         "halalStatus": "non_halal",
-        "dietaryOption": null
+        "dietaryOption": null,
+        "slug": "mc-cola"
     },
     {
         "id": 201,
@@ -8248,7 +8444,8 @@ export const initialRestaurants = [
             "lng": null
         },
         "halalStatus": "non_halal",
-        "dietaryOption": null
+        "dietaryOption": null,
+        "slug": "eataste-restaurant"
     },
     {
         "id": 204,
@@ -8292,7 +8489,8 @@ export const initialRestaurants = [
         },
         "halalStatus": "non_halal",
         "dietaryOption": null,
-        "area": "Indahpura"
+        "area": "Indahpura",
+        "slug": "p-loko-caf"
     },
     {
         "id": 205,
@@ -8331,7 +8529,8 @@ export const initialRestaurants = [
             "lng": null
         },
         "halalStatus": "non_halal",
-        "dietaryOption": null
+        "dietaryOption": null,
+        "slug": "auspicious-geese-restaurant"
     },
     {
         "id": 206,
@@ -8371,7 +8570,8 @@ export const initialRestaurants = [
             "lng": null
         },
         "halalStatus": "non_halal",
-        "dietaryOption": null
+        "dietaryOption": null,
+        "slug": "3rd-junction-cafe"
     },
     {
         "id": 208,
@@ -8411,7 +8611,8 @@ export const initialRestaurants = [
             "lng": null
         },
         "halalStatus": "non_halal",
-        "dietaryOption": null
+        "dietaryOption": null,
+        "slug": "rasa-sayang-kopitiam"
     },
     {
         "id": 211,
@@ -8459,7 +8660,8 @@ export const initialRestaurants = [
             "lng": null
         },
         "halalStatus": "non_halal",
-        "dietaryOption": null
+        "dietaryOption": null,
+        "slug": "happy-land-cafeteria"
     },
     {
         "id": 212,
@@ -8496,7 +8698,8 @@ export const initialRestaurants = [
             "lng": null
         },
         "halalStatus": "non_halal",
-        "dietaryOption": "vegetarian_only"
+        "dietaryOption": "vegetarian_only",
+        "slug": "restoran-sayur-sayuran-ji-yuan"
     },
     {
         "id": 216,
@@ -8535,7 +8738,8 @@ export const initialRestaurants = [
             "lng": null
         },
         "halalStatus": "non_halal",
-        "dietaryOption": null
+        "dietaryOption": null,
+        "slug": "long-sheng-restaurant"
     },
     {
         "id": 217,
@@ -8572,7 +8776,8 @@ export const initialRestaurants = [
             "lng": null
         },
         "halalStatus": "non_halal",
-        "dietaryOption": "vegetarian_only"
+        "dietaryOption": "vegetarian_only",
+        "slug": "restoran-sayur-sayuran-tong-sin"
     },
     {
         "id": 218,
@@ -8611,7 +8816,8 @@ export const initialRestaurants = [
             "lng": null
         },
         "halalStatus": "non_halal",
-        "dietaryOption": null
+        "dietaryOption": null,
+        "slug": "restoran-xin-xian-ren"
     },
     {
         "id": 219,
@@ -8648,7 +8854,8 @@ export const initialRestaurants = [
             "lng": null
         },
         "halalStatus": "non_halal",
-        "dietaryOption": "vegetarian_only"
+        "dietaryOption": "vegetarian_only",
+        "slug": "restoran-sayur-sayuran-fong-chuan"
     },
     {
         "id": 220,
@@ -8691,7 +8898,8 @@ export const initialRestaurants = [
             "lng": null
         },
         "halalStatus": "non_halal",
-        "dietaryOption": null
+        "dietaryOption": null,
+        "slug": "uncle-dons"
     },
     {
         "id": 222,
@@ -8730,7 +8938,8 @@ export const initialRestaurants = [
             "lng": null
         },
         "halalStatus": "muslim_owned",
-        "dietaryOption": null
+        "dietaryOption": null,
+        "slug": "asam-pedas-madu-tiga"
     },
     {
         "id": 223,
@@ -8770,7 +8979,8 @@ export const initialRestaurants = [
             "lng": null
         },
         "halalStatus": "non_halal",
-        "dietaryOption": null
+        "dietaryOption": null,
+        "slug": "bamboo-land"
     },
     {
         "id": 224,
@@ -8813,7 +9023,8 @@ export const initialRestaurants = [
             "lng": null
         },
         "halalStatus": "non_halal",
-        "dietaryOption": null
+        "dietaryOption": null,
+        "slug": "anmour-cafe"
     },
     {
         "id": 225,
@@ -8854,7 +9065,8 @@ export const initialRestaurants = [
             "lng": null
         },
         "halalStatus": "non_halal",
-        "dietaryOption": null
+        "dietaryOption": null,
+        "slug": "restaurant-evergreen"
     },
     {
         "id": 226,
@@ -8897,7 +9109,8 @@ export const initialRestaurants = [
             "lng": null
         },
         "halalStatus": "no_pork",
-        "dietaryOption": "vegetarian_only"
+        "dietaryOption": "vegetarian_only",
+        "slug": "naches-oven-nutri-wellness-cafe"
     },
     {
         "id": 227,
@@ -8940,7 +9153,8 @@ export const initialRestaurants = [
             "lng": null
         },
         "halalStatus": "non_halal",
-        "dietaryOption": null
+        "dietaryOption": null,
+        "slug": "jll-brotherhoods"
     },
     {
         "id": 228,
@@ -8980,7 +9194,8 @@ export const initialRestaurants = [
             "lng": null
         },
         "halalStatus": "non_halal",
-        "dietaryOption": null
+        "dietaryOption": null,
+        "slug": "glanz-tropika-kulai"
     },
     {
         "id": 229,
@@ -9022,7 +9237,8 @@ export const initialRestaurants = [
             "lng": null
         },
         "halalStatus": "non_halal",
-        "dietaryOption": null
+        "dietaryOption": null,
+        "slug": "win-win"
     },
     {
         "id": 230,
@@ -9059,7 +9275,8 @@ export const initialRestaurants = [
             "lng": null
         },
         "halalStatus": "no_pork",
-        "dietaryOption": "vegetarian_only"
+        "dietaryOption": "vegetarian_only",
+        "slug": "en-hui-vegetarian-food"
     },
     {
         "id": 231,
@@ -9098,7 +9315,8 @@ export const initialRestaurants = [
             "lng": null
         },
         "halalStatus": "non_halal",
-        "dietaryOption": null
+        "dietaryOption": null,
+        "slug": "restoran-fuchun"
     },
     {
         "id": 232,
@@ -9139,7 +9357,8 @@ export const initialRestaurants = [
             "lng": null
         },
         "halalStatus": "non_halal",
-        "dietaryOption": null
+        "dietaryOption": null,
+        "slug": "21-ku-gua-tang"
     },
     {
         "id": 233,
@@ -9176,7 +9395,8 @@ export const initialRestaurants = [
             "lng": null
         },
         "halalStatus": "non_halal",
-        "dietaryOption": null
+        "dietaryOption": null,
+        "slug": "authentic-hainaneses"
     },
     {
         "id": 234,
@@ -9215,7 +9435,8 @@ export const initialRestaurants = [
             "lng": null
         },
         "halalStatus": "non_halal",
-        "dietaryOption": null
+        "dietaryOption": null,
+        "slug": "restoran-de-diodon"
     },
     {
         "id": 235,
@@ -9253,7 +9474,8 @@ export const initialRestaurants = [
             "lng": null
         },
         "halalStatus": "non_halal",
-        "dietaryOption": null
+        "dietaryOption": null,
+        "slug": "ai-cha"
     },
     {
         "id": 236,
@@ -9294,7 +9516,8 @@ export const initialRestaurants = [
             "lng": null
         },
         "halalStatus": "non_halal",
-        "dietaryOption": null
+        "dietaryOption": null,
+        "slug": "chui-zhu-yuan-seafood"
     },
     {
         "id": 237,
@@ -9328,7 +9551,8 @@ export const initialRestaurants = [
             "lng": null
         },
         "halalStatus": "non_halal",
-        "dietaryOption": null
+        "dietaryOption": null,
+        "slug": "yi-pin-chuan-xiang"
     },
     {
         "id": 239,
@@ -9368,7 +9592,8 @@ export const initialRestaurants = [
             "lng": null
         },
         "halalStatus": "non_halal",
-        "dietaryOption": null
+        "dietaryOption": null,
+        "slug": "garden-restaurant"
     },
     {
         "id": 240,
@@ -9406,7 +9631,8 @@ export const initialRestaurants = [
             "lng": null
         },
         "halalStatus": "muslim_owned",
-        "dietaryOption": null
+        "dietaryOption": null,
+        "slug": "kopi-tenggek"
     },
     {
         "id": 241,
@@ -9444,7 +9670,8 @@ export const initialRestaurants = [
             "lng": null
         },
         "halalStatus": "non_halal",
-        "dietaryOption": null
+        "dietaryOption": null,
+        "slug": "tangkak-beef-kulai"
     },
     {
         "id": 242,
@@ -9483,7 +9710,8 @@ export const initialRestaurants = [
             "lng": null
         },
         "halalStatus": "non_halal",
-        "dietaryOption": null
+        "dietaryOption": null,
+        "slug": "simple-recipe"
     },
     {
         "id": 243,
@@ -9515,7 +9743,8 @@ export const initialRestaurants = [
             "lng": null
         },
         "halalStatus": "non_halal",
-        "dietaryOption": null
+        "dietaryOption": null,
+        "slug": "xiang-yu-lou"
     },
     {
         "id": 244,
@@ -9554,7 +9783,8 @@ export const initialRestaurants = [
             "lng": null
         },
         "halalStatus": "non_halal",
-        "dietaryOption": null
+        "dietaryOption": null,
+        "slug": "champion-tea-house"
     },
     {
         "id": 245,
@@ -9592,7 +9822,8 @@ export const initialRestaurants = [
             "lng": null
         },
         "halalStatus": "non_halal",
-        "dietaryOption": null
+        "dietaryOption": null,
+        "slug": "wallace"
     },
     {
         "id": 246,
@@ -9629,7 +9860,8 @@ export const initialRestaurants = [
             "lng": null
         },
         "halalStatus": "non_halal",
-        "dietaryOption": null
+        "dietaryOption": null,
+        "slug": "im-star-mala-soup-dumplings"
     },
     {
         "id": 247,
@@ -9671,7 +9903,8 @@ export const initialRestaurants = [
             "lng": null
         },
         "halalStatus": "non_halal",
-        "dietaryOption": null
+        "dietaryOption": null,
+        "slug": "young-sanna-mee"
     },
     {
         "id": 248,
@@ -9711,7 +9944,8 @@ export const initialRestaurants = [
             "lng": null
         },
         "halalStatus": "non_halal",
-        "dietaryOption": null
+        "dietaryOption": null,
+        "slug": "fatt-hei-len-kulai"
     },
     {
         "id": 249,
@@ -9749,7 +9983,8 @@ export const initialRestaurants = [
             "lng": null
         },
         "halalStatus": "non_halal",
-        "dietaryOption": null
+        "dietaryOption": null,
+        "slug": "first-class-bar-club"
     },
     {
         "id": 250,
@@ -9785,7 +10020,8 @@ export const initialRestaurants = [
             "lng": null
         },
         "halalStatus": "non_halal",
-        "dietaryOption": null
+        "dietaryOption": null,
+        "slug": "noodles-q"
     },
     {
         "id": 251,
@@ -9825,7 +10061,8 @@ export const initialRestaurants = [
             "lng": null
         },
         "halalStatus": "non_halal",
-        "dietaryOption": null
+        "dietaryOption": null,
+        "slug": "the-east-court"
     },
     {
         "id": 252,
@@ -9865,7 +10102,8 @@ export const initialRestaurants = [
             "lng": null
         },
         "halalStatus": "non_halal",
-        "dietaryOption": null
+        "dietaryOption": null,
+        "slug": "all-heart-recipe"
     },
     {
         "id": 253,
@@ -9926,7 +10164,8 @@ export const initialRestaurants = [
             "lng": null
         },
         "halalStatus": "non_halal",
-        "dietaryOption": null
+        "dietaryOption": null,
+        "slug": "restoran-kopitiam-hong-ye"
     },
     {
         "id": 254,
@@ -9966,7 +10205,8 @@ export const initialRestaurants = [
             "lng": null
         },
         "halalStatus": "non_halal",
-        "dietaryOption": null
+        "dietaryOption": null,
+        "slug": "shun-delicious-food-valley"
     },
     {
         "id": 255,
@@ -10007,7 +10247,8 @@ export const initialRestaurants = [
             "lng": null
         },
         "halalStatus": "non_halal",
-        "dietaryOption": null
+        "dietaryOption": null,
+        "slug": "best-3-cafe"
     },
     {
         "id": 256,
@@ -10047,7 +10288,8 @@ export const initialRestaurants = [
             "lng": null
         },
         "halalStatus": "non_halal",
-        "dietaryOption": null
+        "dietaryOption": null,
+        "slug": "canton-street"
     },
     {
         "id": 257,
@@ -10088,7 +10330,8 @@ export const initialRestaurants = [
             "lng": null
         },
         "halalStatus": "non_halal",
-        "dietaryOption": null
+        "dietaryOption": null,
+        "slug": "gc-good-coffee"
     },
     {
         "id": 258,
@@ -10124,7 +10367,8 @@ export const initialRestaurants = [
             "lng": null
         },
         "halalStatus": "non_halal",
-        "dietaryOption": null
+        "dietaryOption": null,
+        "slug": "jiuyi-kitchenindahpura"
     },
     {
         "id": 259,
@@ -10165,7 +10409,8 @@ export const initialRestaurants = [
             "lng": null
         },
         "halalStatus": "non_halal",
-        "dietaryOption": null
+        "dietaryOption": null,
+        "slug": "frenche-roast-cafe"
     },
     {
         "id": 261,
@@ -10233,7 +10478,8 @@ export const initialRestaurants = [
             "lng": null
         },
         "halalStatus": "certified",
-        "dietaryOption": null
+        "dietaryOption": null,
+        "slug": "tea-garden"
     },
     {
         "id": 262,
@@ -10271,7 +10517,8 @@ export const initialRestaurants = [
             "lng": null
         },
         "halalStatus": "non_halal",
-        "dietaryOption": null
+        "dietaryOption": null,
+        "slug": "blackball-original-taiwanese-tea-dessert"
     },
     {
         "id": 263,
@@ -10311,7 +10558,8 @@ export const initialRestaurants = [
             "lng": null
         },
         "halalStatus": "non_halal",
-        "dietaryOption": null
+        "dietaryOption": null,
+        "slug": "restoran-peking"
     },
     {
         "id": 264,
@@ -10349,7 +10597,8 @@ export const initialRestaurants = [
             "lng": null
         },
         "halalStatus": "non_halal",
-        "dietaryOption": null
+        "dietaryOption": null,
+        "slug": "sushi-mentai-kulai"
     },
     {
         "id": 265,
@@ -10389,7 +10638,8 @@ export const initialRestaurants = [
             "lng": null
         },
         "halalStatus": "non_halal",
-        "dietaryOption": null
+        "dietaryOption": null,
+        "slug": "restoran-jin-hai"
     },
     {
         "id": 266,
@@ -10432,7 +10682,8 @@ export const initialRestaurants = [
             "lng": null
         },
         "halalStatus": "non_halal",
-        "dietaryOption": null
+        "dietaryOption": null,
+        "slug": "4fingers-crispy-chicken"
     },
     {
         "id": 267,
@@ -10470,7 +10721,8 @@ export const initialRestaurants = [
             "lng": null
         },
         "halalStatus": "non_halal",
-        "dietaryOption": null
+        "dietaryOption": null,
+        "slug": "beutea"
     },
     {
         "id": 268,
@@ -10511,7 +10763,8 @@ export const initialRestaurants = [
             "lng": null
         },
         "halalStatus": "non_halal",
-        "dietaryOption": null
+        "dietaryOption": null,
+        "slug": "jco-donut-coffee"
     },
     {
         "id": 269,
@@ -10552,7 +10805,8 @@ export const initialRestaurants = [
             "lng": null
         },
         "halalStatus": "non_halal",
-        "dietaryOption": null
+        "dietaryOption": null,
+        "slug": "d-laksa-aeon-kulai"
     },
     {
         "id": 270,
@@ -10590,7 +10844,8 @@ export const initialRestaurants = [
             "lng": null
         },
         "halalStatus": "non_halal",
-        "dietaryOption": null
+        "dietaryOption": null,
+        "slug": "koi-th-johor"
     },
     {
         "id": 271,
@@ -10633,7 +10888,8 @@ export const initialRestaurants = [
             "lng": null
         },
         "halalStatus": "certified",
-        "dietaryOption": null
+        "dietaryOption": null,
+        "slug": "subway"
     },
     {
         "id": 272,
@@ -10676,7 +10932,8 @@ export const initialRestaurants = [
             "lng": null
         },
         "halalStatus": "certified",
-        "dietaryOption": null
+        "dietaryOption": null,
+        "slug": "sds-bakery-cafe"
     },
     {
         "id": 274,
@@ -10717,7 +10974,8 @@ export const initialRestaurants = [
             "lng": null
         },
         "halalStatus": "non_halal",
-        "dietaryOption": null
+        "dietaryOption": null,
+        "slug": "oochid-bistro"
     },
     {
         "id": 275,
@@ -10758,7 +11016,8 @@ export const initialRestaurants = [
             "lng": null
         },
         "halalStatus": "certified",
-        "dietaryOption": null
+        "dietaryOption": null,
+        "slug": "gigi-coffee"
     },
     {
         "id": 276,
@@ -10799,7 +11058,8 @@ export const initialRestaurants = [
             "lng": null
         },
         "halalStatus": "non_halal",
-        "dietaryOption": null
+        "dietaryOption": null,
+        "slug": "hanshe"
     },
     {
         "id": 277,
@@ -10837,7 +11097,8 @@ export const initialRestaurants = [
             "lng": null
         },
         "halalStatus": "non_halal",
-        "dietaryOption": null
+        "dietaryOption": null,
+        "slug": "choong-man-chicken"
     },
     {
         "id": 278,
@@ -10879,7 +11140,8 @@ export const initialRestaurants = [
             "lng": null
         },
         "halalStatus": "non_halal",
-        "dietaryOption": null
+        "dietaryOption": null,
+        "slug": "yit-sheng-fish-head-curry"
     },
     {
         "id": 279,
@@ -10920,7 +11182,8 @@ export const initialRestaurants = [
             "lng": null
         },
         "halalStatus": "non_halal",
-        "dietaryOption": null
+        "dietaryOption": null,
+        "slug": "828-restoran-wan-jiao"
     },
     {
         "id": 280,
@@ -10961,7 +11224,8 @@ export const initialRestaurants = [
             "lng": null
         },
         "halalStatus": "non_halal",
-        "dietaryOption": null
+        "dietaryOption": null,
+        "slug": "aunty-ku"
     },
     {
         "id": 281,
@@ -10999,7 +11263,8 @@ export const initialRestaurants = [
             "lng": null
         },
         "halalStatus": "muslim_owned",
-        "dietaryOption": null
+        "dietaryOption": null,
+        "slug": "restoran-ayam-penyet-3-abdul"
     },
     {
         "id": 282,
@@ -11039,7 +11304,8 @@ export const initialRestaurants = [
             "lng": null
         },
         "halalStatus": "non_halal",
-        "dietaryOption": null
+        "dietaryOption": null,
+        "slug": "modern-taste-restaurant"
     },
     {
         "id": 284,
@@ -11077,7 +11343,8 @@ export const initialRestaurants = [
             "lng": null
         },
         "halalStatus": "non_halal",
-        "dietaryOption": null
+        "dietaryOption": null,
+        "slug": "shihlin-taiwan-street-food"
     },
     {
         "id": 285,
@@ -11117,7 +11384,8 @@ export const initialRestaurants = [
             "lng": null
         },
         "halalStatus": "non_halal",
-        "dietaryOption": null
+        "dietaryOption": null,
+        "slug": "ahzhang-lobak"
     },
     {
         "id": 287,
@@ -11157,7 +11425,8 @@ export const initialRestaurants = [
             "lng": null
         },
         "halalStatus": "non_halal",
-        "dietaryOption": null
+        "dietaryOption": null,
+        "slug": "restaurant-hai-vai-tien"
     },
     {
         "id": 288,
@@ -11199,7 +11468,8 @@ export const initialRestaurants = [
             "lng": null
         },
         "halalStatus": "non_halal",
-        "dietaryOption": null
+        "dietaryOption": null,
+        "slug": "restoran-ming-xuan"
     },
     {
         "id": 289,
@@ -11412,7 +11682,8 @@ export const initialRestaurants = [
             "lng": null
         },
         "halalStatus": "non_halal",
-        "dietaryOption": null
+        "dietaryOption": null,
+        "slug": "number-two-food-court"
     },
     {
         "id": 290,
@@ -11450,7 +11721,8 @@ export const initialRestaurants = [
             "lng": null
         },
         "halalStatus": "non_halal",
-        "dietaryOption": null
+        "dietaryOption": null,
+        "slug": "jollibee"
     },
     {
         "id": 291,
@@ -11493,7 +11765,8 @@ export const initialRestaurants = [
             "lng": null
         },
         "halalStatus": "non_halal",
-        "dietaryOption": null
+        "dietaryOption": null,
+        "slug": "souper-tang-restaurant"
     },
     {
         "id": 292,
@@ -11531,7 +11804,8 @@ export const initialRestaurants = [
             "lng": null
         },
         "halalStatus": "non_halal",
-        "dietaryOption": null
+        "dietaryOption": null,
+        "slug": "absolute-thai"
     },
     {
         "id": 293,
@@ -11572,7 +11846,8 @@ export const initialRestaurants = [
             "lng": null
         },
         "halalStatus": "non_halal",
-        "dietaryOption": null
+        "dietaryOption": null,
+        "slug": "madam-kwans"
     },
     {
         "id": 294,
@@ -11614,7 +11889,8 @@ export const initialRestaurants = [
             "lng": null
         },
         "halalStatus": "non_halal",
-        "dietaryOption": null
+        "dietaryOption": null,
+        "slug": "dme"
     },
     {
         "id": 295,
@@ -11656,7 +11932,8 @@ export const initialRestaurants = [
         },
         "halalStatus": "certified",
         "area": "Senai",
-        "dietaryOption": null
+        "dietaryOption": null,
+        "slug": "oldtown-white-coffee-jpo"
     },
     {
         "id": 296,
@@ -11699,7 +11976,8 @@ export const initialRestaurants = [
             "lng": null
         },
         "halalStatus": "non_halal",
-        "dietaryOption": null
+        "dietaryOption": null,
+        "slug": "dubuyo-mini"
     },
     {
         "id": 297,
@@ -11740,7 +12018,8 @@ export const initialRestaurants = [
             "lng": null
         },
         "halalStatus": "non_halal",
-        "dietaryOption": null
+        "dietaryOption": null,
+        "slug": "godiva-cafe"
     },
     {
         "id": 298,
@@ -11781,7 +12060,8 @@ export const initialRestaurants = [
             "lng": null
         },
         "halalStatus": "certified",
-        "dietaryOption": null
+        "dietaryOption": null,
+        "slug": "bask-bear-coffee"
     },
     {
         "id": 299,
@@ -11822,7 +12102,8 @@ export const initialRestaurants = [
             "lng": null
         },
         "halalStatus": "muslim_owned",
-        "dietaryOption": null
+        "dietaryOption": null,
+        "slug": "asam-pedas-by-d-laksa"
     },
     {
         "id": 300,
@@ -11863,7 +12144,8 @@ export const initialRestaurants = [
             "lng": null
         },
         "halalStatus": "non_halal",
-        "dietaryOption": null
+        "dietaryOption": null,
+        "slug": "d-laksa-jpo"
     },
     {
         "id": 301,
@@ -11901,7 +12183,8 @@ export const initialRestaurants = [
             "lng": null
         },
         "halalStatus": "non_halal",
-        "dietaryOption": null
+        "dietaryOption": null,
+        "slug": "ming-fang-kway-teow-kia"
     },
     {
         "id": 304,
@@ -11941,7 +12224,8 @@ export const initialRestaurants = [
             "lng": null
         },
         "halalStatus": "non_halal",
-        "dietaryOption": null
+        "dietaryOption": null,
+        "slug": "restoran-chi-yuen"
     },
     {
         "id": 307,
@@ -11980,7 +12264,8 @@ export const initialRestaurants = [
             "lng": null
         },
         "halalStatus": "non_halal",
-        "dietaryOption": null
+        "dietaryOption": null,
+        "slug": "swee-kee-hainanese-chicken-rice"
     },
     {
         "id": 308,
@@ -12041,7 +12326,8 @@ export const initialRestaurants = [
             "lng": null
         },
         "halalStatus": "certified",
-        "dietaryOption": null
+        "dietaryOption": null,
+        "slug": "pizza-hut"
     },
     {
         "id": 309,
@@ -12102,7 +12388,8 @@ export const initialRestaurants = [
             "lng": null
         },
         "halalStatus": "certified",
-        "dietaryOption": null
+        "dietaryOption": null,
+        "slug": "marrybrown"
     },
     {
         "id": 310,
@@ -12154,7 +12441,8 @@ export const initialRestaurants = [
             "lng": null
         },
         "halalStatus": "certified",
-        "dietaryOption": null
+        "dietaryOption": null,
+        "slug": "dominos-pizza"
     },
     {
         "id": 311,
@@ -12197,7 +12485,8 @@ export const initialRestaurants = [
             "lng": null
         },
         "halalStatus": "non_halal",
-        "dietaryOption": null
+        "dietaryOption": null,
+        "slug": "late-night-bridge-cooking-kota-kulai-no-signboard-prawn-noodles"
     },
     {
         "id": 312,
@@ -12249,7 +12538,8 @@ export const initialRestaurants = [
             "lng": null
         },
         "halalStatus": "non_halal",
-        "dietaryOption": null
+        "dietaryOption": null,
+        "slug": "kota-kulai-tong-sui-stall"
     },
     {
         "id": 313,
@@ -12293,7 +12583,8 @@ export const initialRestaurants = [
             "lng": null
         },
         "halalStatus": "non_halal",
-        "dietaryOption": null
+        "dietaryOption": null,
+        "slug": "chuchat"
     },
     {
         "id": 314,
@@ -12338,7 +12629,8 @@ export const initialRestaurants = [
             "lng": null
         },
         "halalStatus": "non_halal",
-        "dietaryOption": null
+        "dietaryOption": null,
+        "slug": "kulai-wengyaoji"
     },
     {
         "id": 315,
@@ -12375,7 +12667,8 @@ export const initialRestaurants = [
             "lng": null
         },
         "halalStatus": "non_halal",
-        "dietaryOption": null
+        "dietaryOption": null,
+        "slug": "restoran-yue-lai-yue-xiang"
     },
     {
         "id": 316,
@@ -12412,7 +12705,8 @@ export const initialRestaurants = [
             "lng": null
         },
         "halalStatus": "non_halal",
-        "dietaryOption": null
+        "dietaryOption": null,
+        "slug": "yun-lai-desa-baiduri"
     },
     {
         "id": 317,
@@ -12449,7 +12743,8 @@ export const initialRestaurants = [
             "lng": null
         },
         "halalStatus": "non_halal",
-        "dietaryOption": null
+        "dietaryOption": null,
+        "slug": "restoran-fuk-he-178"
     },
     {
         "id": 318,
@@ -12490,7 +12785,8 @@ export const initialRestaurants = [
             "lng": 103.582793
         },
         "halalStatus": "muslim_owned",
-        "dietaryOption": null
+        "dietaryOption": null,
+        "slug": "restoran-pelita-mas"
     },
     {
         "id": 319,
@@ -12531,7 +12827,8 @@ export const initialRestaurants = [
             "lng": null
         },
         "halalStatus": "non_halal",
-        "dietaryOption": null
+        "dietaryOption": null,
+        "slug": "sky-garden-bakuteh"
     },
     {
         "id": 320,
@@ -12569,7 +12866,8 @@ export const initialRestaurants = [
         },
         "phone": "",
         "halalStatus": "non_halal",
-        "dietaryOption": null
+        "dietaryOption": null,
+        "slug": "118-kopitiam"
     },
     {
         "id": 321,
@@ -12607,7 +12905,8 @@ export const initialRestaurants = [
         },
         "phone": "",
         "halalStatus": "non_halal",
-        "dietaryOption": null
+        "dietaryOption": null,
+        "slug": "pasang-kopitiam"
     },
     {
         "id": 322,
@@ -12645,7 +12944,8 @@ export const initialRestaurants = [
         },
         "phone": "",
         "halalStatus": "muslim_owned",
-        "dietaryOption": null
+        "dietaryOption": null,
+        "slug": "jibril-corner"
     },
     {
         "id": 323,
@@ -12683,7 +12983,8 @@ export const initialRestaurants = [
         },
         "phone": "",
         "halalStatus": "non_halal",
-        "dietaryOption": null
+        "dietaryOption": null,
+        "slug": "meisan-restaurant"
     },
     {
         "id": 324,
@@ -12721,7 +13022,8 @@ export const initialRestaurants = [
         },
         "phone": "",
         "halalStatus": "muslim_owned",
-        "dietaryOption": null
+        "dietaryOption": null,
+        "slug": "bd-nasri-tomyam"
     },
     {
         "id": 325,
@@ -12759,7 +13061,8 @@ export const initialRestaurants = [
         },
         "phone": "",
         "halalStatus": "muslim_owned",
-        "dietaryOption": null
+        "dietaryOption": null,
+        "slug": "azlan-seafood"
     },
     {
         "id": 326,
@@ -12797,7 +13100,8 @@ export const initialRestaurants = [
         },
         "phone": "",
         "halalStatus": "non_halal",
-        "dietaryOption": null
+        "dietaryOption": null,
+        "slug": "tao-yuan-restaurant"
     },
     {
         "id": 327,
@@ -12836,7 +13140,8 @@ export const initialRestaurants = [
         "phone": "",
         "halalStatus": "muslim_owned",
         "dietaryOption": null,
-        "area": "Indahpura"
+        "area": "Indahpura",
+        "slug": "kedai-makan-kak-sal-selera-kelantan"
     },
     {
         "id": 328,
@@ -12874,7 +13179,8 @@ export const initialRestaurants = [
         },
         "phone": "",
         "halalStatus": "muslim_owned",
-        "dietaryOption": null
+        "dietaryOption": null,
+        "slug": "restoran-gear-box"
     },
     {
         "id": 329,
@@ -12912,7 +13218,8 @@ export const initialRestaurants = [
         },
         "phone": "",
         "halalStatus": "non_halal",
-        "dietaryOption": null
+        "dietaryOption": null,
+        "slug": "cai-ji-dim-sum"
     },
     {
         "id": 330,
@@ -12950,7 +13257,8 @@ export const initialRestaurants = [
         },
         "phone": "",
         "halalStatus": "non_halal",
-        "dietaryOption": null
+        "dietaryOption": null,
+        "slug": "charcoal-bean-cafe"
     },
     {
         "id": 331,
@@ -12988,7 +13296,8 @@ export const initialRestaurants = [
         },
         "phone": "",
         "halalStatus": "muslim_owned",
-        "dietaryOption": null
+        "dietaryOption": null,
+        "slug": "restoran-asam-pedas-aeshah"
     },
     {
         "id": 332,
@@ -13026,7 +13335,8 @@ export const initialRestaurants = [
         },
         "phone": "",
         "halalStatus": "muslim_owned",
-        "dietaryOption": null
+        "dietaryOption": null,
+        "slug": "ina-tom-yam-sea-food"
     },
     {
         "id": 333,
@@ -13064,7 +13374,8 @@ export const initialRestaurants = [
         },
         "phone": "",
         "halalStatus": "non_halal",
-        "dietaryOption": null
+        "dietaryOption": null,
+        "slug": "kedai-kek-lian-pang"
     },
     {
         "id": 334,
@@ -13102,7 +13413,8 @@ export const initialRestaurants = [
         },
         "phone": "",
         "halalStatus": "non_halal",
-        "dietaryOption": null
+        "dietaryOption": null,
+        "slug": "restoran-kedai-makan-tian-heng"
     },
     {
         "id": 335,
@@ -13142,7 +13454,8 @@ export const initialRestaurants = [
         },
         "phone": "076632082",
         "halalStatus": "certified",
-        "dietaryOption": null
+        "dietaryOption": null,
+        "slug": "secret-recipe"
     },
     {
         "id": 336,
@@ -13180,7 +13493,8 @@ export const initialRestaurants = [
         },
         "phone": "076615479",
         "halalStatus": "non_halal",
-        "dietaryOption": null
+        "dietaryOption": null,
+        "slug": "bakers-cottage"
     },
     {
         "id": 337,
@@ -13218,7 +13532,8 @@ export const initialRestaurants = [
         },
         "phone": "",
         "halalStatus": "muslim_owned",
-        "dietaryOption": null
+        "dietaryOption": null,
+        "slug": "madras-to-malaya-cafe"
     },
     {
         "id": 338,
@@ -13256,7 +13571,8 @@ export const initialRestaurants = [
         },
         "phone": "076608398",
         "halalStatus": "non_halal",
-        "dietaryOption": null
+        "dietaryOption": null,
+        "slug": "guoma-steamboat"
     },
     {
         "id": 339,
@@ -13294,7 +13610,8 @@ export const initialRestaurants = [
         },
         "phone": "0199783485",
         "halalStatus": "non_halal",
-        "dietaryOption": null
+        "dietaryOption": null,
+        "slug": "he-kado-kopi"
     },
     {
         "id": 340,
@@ -13334,7 +13651,8 @@ export const initialRestaurants = [
         },
         "phone": "",
         "halalStatus": "non_halal",
-        "dietaryOption": null
+        "dietaryOption": null,
+        "slug": "lol-soon-kee-desserts"
     },
     {
         "id": 341,
@@ -13372,7 +13690,8 @@ export const initialRestaurants = [
         },
         "phone": "0183760887",
         "halalStatus": "muslim_owned",
-        "dietaryOption": null
+        "dietaryOption": null,
+        "slug": "tomyam-meletop"
     },
     {
         "id": 342,
@@ -13410,7 +13729,8 @@ export const initialRestaurants = [
         },
         "phone": "0177397097",
         "halalStatus": "muslim_owned",
-        "dietaryOption": null
+        "dietaryOption": null,
+        "slug": "restoran-juara-seafood"
     },
     {
         "id": 343,
@@ -13448,7 +13768,8 @@ export const initialRestaurants = [
         },
         "phone": "0133920184",
         "halalStatus": "muslim_owned",
-        "dietaryOption": null
+        "dietaryOption": null,
+        "slug": "sanabil-al-arabi"
     },
     {
         "id": 344,
@@ -13486,7 +13807,8 @@ export const initialRestaurants = [
         },
         "phone": "01111817500",
         "halalStatus": "muslim_owned",
-        "dietaryOption": null
+        "dietaryOption": null,
+        "slug": "selera-rasa-hasnah"
     },
     {
         "id": 345,
@@ -13524,7 +13846,8 @@ export const initialRestaurants = [
         },
         "phone": "01128765578",
         "halalStatus": "muslim_owned",
-        "dietaryOption": null
+        "dietaryOption": null,
+        "slug": "tom-yam-ramai-ramai-cawangan"
     },
     {
         "id": 346,
@@ -13562,7 +13885,8 @@ export const initialRestaurants = [
         },
         "phone": "0162163499",
         "halalStatus": "muslim_owned",
-        "dietaryOption": null
+        "dietaryOption": null,
+        "slug": "nasi-ayam-mak-pah"
     },
     {
         "id": 347,
@@ -13600,7 +13924,8 @@ export const initialRestaurants = [
         },
         "phone": "",
         "halalStatus": "muslim_owned",
-        "dietaryOption": null
+        "dietaryOption": null,
+        "slug": "seri-pantai-seafood"
     },
     {
         "id": 348,
@@ -13638,7 +13963,8 @@ export const initialRestaurants = [
         },
         "phone": "",
         "halalStatus": "muslim_owned",
-        "dietaryOption": null
+        "dietaryOption": null,
+        "slug": "mama-thai-tomyam"
     },
     {
         "id": 349,
@@ -13676,7 +14002,8 @@ export const initialRestaurants = [
         },
         "phone": "0177859537",
         "halalStatus": "muslim_owned",
-        "dietaryOption": null
+        "dietaryOption": null,
+        "slug": "sofiyah-cafe"
     },
     {
         "id": 350,
@@ -13714,7 +14041,8 @@ export const initialRestaurants = [
         },
         "phone": "01168304749",
         "halalStatus": "muslim_owned",
-        "dietaryOption": null
+        "dietaryOption": null,
+        "slug": "restaurant-aziz-bilal"
     },
     {
         "id": 351,
@@ -13752,7 +14080,8 @@ export const initialRestaurants = [
         },
         "phone": "0167261470",
         "halalStatus": "muslim_owned",
-        "dietaryOption": null
+        "dietaryOption": null,
+        "slug": "restaurant-ezma-corner"
     },
     {
         "id": 352,
@@ -13783,7 +14112,8 @@ export const initialRestaurants = [
         "phone": "07-599 1850",
         "link": "https://www.facebook.com/JimLongCatering/",
         "halalStatus": "non_halal",
-        "dietaryOption": null
+        "dietaryOption": null,
+        "slug": "kim-long-restaurant-sdn-bhd"
     },
     {
         "id": 353,
@@ -13813,7 +14143,8 @@ export const initialRestaurants = [
         },
         "phone": "018-872 4269",
         "halalStatus": "muslim_owned",
-        "dietaryOption": null
+        "dietaryOption": null,
+        "slug": "restoran-dambang"
     },
     {
         "id": 354,
@@ -13844,7 +14175,8 @@ export const initialRestaurants = [
         "phone": "016-972 8135",
         "link": "https://www.facebook.com/profile.php?id=100063655324098",
         "halalStatus": "non_halal",
-        "dietaryOption": null
+        "dietaryOption": null,
+        "slug": "restoran-sang-sang-sang"
     },
     {
         "id": 355,
@@ -13875,7 +14207,8 @@ export const initialRestaurants = [
         "phone": "012-736 1219",
         "link": "https://www.facebook.com/RestoranSenaiHY/",
         "halalStatus": "non_halal",
-        "dietaryOption": null
+        "dietaryOption": null,
+        "slug": "restoran-senai-hn"
     },
     {
         "id": 356,
@@ -13906,7 +14239,8 @@ export const initialRestaurants = [
         "phone": "011-1280 5434",
         "link": "https://www.facebook.com/p/Restoran-Singgah-Maju-100063733675498/",
         "halalStatus": "muslim_owned",
-        "dietaryOption": null
+        "dietaryOption": null,
+        "slug": "restoran-singgah-maju"
     },
     {
         "id": 357,
@@ -13938,7 +14272,8 @@ export const initialRestaurants = [
         },
         "phone": "014-277 0299",
         "halalStatus": "muslim_owned",
-        "dietaryOption": null
+        "dietaryOption": null,
+        "slug": "restoran-nasi-ayam-hainan"
     },
     {
         "id": 358,
@@ -13968,7 +14303,8 @@ export const initialRestaurants = [
         },
         "phone": "07-598 5133",
         "halalStatus": "non_halal",
-        "dietaryOption": null
+        "dietaryOption": null,
+        "slug": "restoran-senyi-sinron"
     },
     {
         "id": 359,
@@ -13998,7 +14334,8 @@ export const initialRestaurants = [
         },
         "phone": "012-742 3328",
         "halalStatus": "non_halal",
-        "dietaryOption": null
+        "dietaryOption": null,
+        "slug": "restoran-sin-peng"
     },
     {
         "id": 360,
@@ -14029,7 +14366,8 @@ export const initialRestaurants = [
         "phone": "",
         "link": "https://www.facebook.com/profile.php?id=61571374596803",
         "halalStatus": "non_halal",
-        "dietaryOption": null
+        "dietaryOption": null,
+        "slug": "the-tiny-lake"
     },
     {
         "id": 361,
@@ -14059,7 +14397,8 @@ export const initialRestaurants = [
         },
         "phone": "012-719 8567",
         "halalStatus": "non_halal",
-        "dietaryOption": null
+        "dietaryOption": null,
+        "slug": "kedai-makanan-minuman-soon-kee"
     },
     {
         "id": 362,
@@ -14089,7 +14428,8 @@ export const initialRestaurants = [
         },
         "phone": "",
         "halalStatus": "muslim_owned",
-        "dietaryOption": null
+        "dietaryOption": null,
+        "slug": "restoran-bunga-dahlia"
     },
     {
         "id": 363,
@@ -14119,7 +14459,8 @@ export const initialRestaurants = [
         },
         "phone": "014-313 5200",
         "halalStatus": "muslim_owned",
-        "dietaryOption": null
+        "dietaryOption": null,
+        "slug": "abmh-restaurant"
     },
     {
         "id": 364,
@@ -14150,7 +14491,8 @@ export const initialRestaurants = [
         "phone": "018-376 3625",
         "link": "https://www.facebook.com/profile.php?id=100069963770411",
         "halalStatus": "non_halal",
-        "dietaryOption": null
+        "dietaryOption": null,
+        "slug": "the-sunrise-cafe"
     },
     {
         "id": 365,
@@ -14181,7 +14523,8 @@ export const initialRestaurants = [
         "phone": "019-678 0198",
         "link": "https://easyeat.ai/r/projek-kebab/2",
         "halalStatus": "muslim_owned",
-        "dietaryOption": null
+        "dietaryOption": null,
+        "slug": "projek-kebab-cafe"
     },
     {
         "id": 366,
@@ -14212,7 +14555,8 @@ export const initialRestaurants = [
         "phone": "07-599 5800",
         "link": "https://www.facebook.com/ShiNaikccJinLongFanDian/",
         "halalStatus": "non_halal",
-        "dietaryOption": null
+        "dietaryOption": null,
+        "slug": "kim-m-long-restaurant"
     },
     {
         "id": 367,
@@ -14242,7 +14586,8 @@ export const initialRestaurants = [
         },
         "phone": "017-736 2618",
         "halalStatus": "non_halal",
-        "dietaryOption": null
+        "dietaryOption": null,
+        "slug": "hao-yun-restaurant"
     },
     {
         "id": 368,
@@ -14272,7 +14617,8 @@ export const initialRestaurants = [
         },
         "phone": "012-773 2281",
         "halalStatus": "non_halal",
-        "dietaryOption": null
+        "dietaryOption": null,
+        "slug": "restaurant-368"
     },
     {
         "id": 369,
@@ -14302,7 +14648,8 @@ export const initialRestaurants = [
         },
         "phone": "011-2084 2287",
         "halalStatus": "muslim_owned",
-        "dietaryOption": null
+        "dietaryOption": null,
+        "slug": "kafe-dulang-ayan"
     },
     {
         "id": 370,
@@ -14340,7 +14687,8 @@ export const initialRestaurants = [
             "lng": null
         },
         "halalStatus": "muslim_owned",
-        "dietaryOption": null
+        "dietaryOption": null,
+        "slug": "7-beradik-restaurant-senai"
     },
     {
         "id": 371,
@@ -14390,7 +14738,8 @@ export const initialRestaurants = [
             "lng": null
         },
         "halalStatus": "certified",
-        "dietaryOption": null
+        "dietaryOption": null,
+        "slug": "empire-sushi"
     },
     {
         "id": 372,
@@ -14429,7 +14778,8 @@ export const initialRestaurants = [
         "phone": "0182559296",
         "halalStatus": "muslim_owned",
         "area": "Senai",
-        "dietaryOption": null
+        "dietaryOption": null,
+        "slug": "tulang-jr-cafe"
     },
     {
         "id": 373,
@@ -14470,7 +14820,8 @@ export const initialRestaurants = [
         "phone": "0182359412",
         "halalStatus": "muslim_owned",
         "area": "Senai",
-        "dietaryOption": null
+        "dietaryOption": null,
+        "slug": "chicken-chop-senai-kg-jaya-sepakat"
     },
     {
         "id": 374,
@@ -14509,7 +14860,8 @@ export const initialRestaurants = [
         "phone": "0172396335",
         "halalStatus": "muslim_owned",
         "area": "Senai",
-        "dietaryOption": null
+        "dietaryOption": null,
+        "slug": "nasi-kukus-scientex-utama"
     },
     {
         "id": 375,
@@ -14548,7 +14900,8 @@ export const initialRestaurants = [
         "phone": "",
         "halalStatus": "muslim_owned",
         "area": "Senai",
-        "dietaryOption": null
+        "dietaryOption": null,
+        "slug": "restoran-nusantara-tok-rin"
     },
     {
         "id": 376,
@@ -14587,7 +14940,8 @@ export const initialRestaurants = [
         "phone": "075984781",
         "halalStatus": "muslim_owned",
         "area": "Senai",
-        "dietaryOption": null
+        "dietaryOption": null,
+        "slug": "hungry-habibi"
     },
     {
         "id": 377,
@@ -14626,7 +14980,8 @@ export const initialRestaurants = [
         "phone": "0105706367",
         "halalStatus": "muslim_owned",
         "area": "Senai",
-        "dietaryOption": null
+        "dietaryOption": null,
+        "slug": "kelem-ice-cream-gula-apong"
     },
     {
         "id": 378,
@@ -14665,7 +15020,8 @@ export const initialRestaurants = [
         "phone": "01162027215",
         "halalStatus": "muslim_owned",
         "area": "Senai",
-        "dietaryOption": null
+        "dietaryOption": null,
+        "slug": "happy-tomyam-kitchen-restaurant"
     },
     {
         "id": 379,
@@ -14703,7 +15059,8 @@ export const initialRestaurants = [
         },
         "phone": "075988934",
         "halalStatus": "muslim_owned",
-        "dietaryOption": null
+        "dietaryOption": null,
+        "slug": "nasi-kandar-mamu"
     },
     {
         "id": 380,
@@ -14744,7 +15101,8 @@ export const initialRestaurants = [
         "phone": "0106627020",
         "halalStatus": "muslim_owned",
         "area": "Senai",
-        "dietaryOption": null
+        "dietaryOption": null,
+        "slug": "delic-cafe"
     },
     {
         "id": 381,
@@ -14783,7 +15141,8 @@ export const initialRestaurants = [
         "phone": "0167359364",
         "halalStatus": "muslim_owned",
         "area": "Senai",
-        "dietaryOption": null
+        "dietaryOption": null,
+        "slug": "naseeb-capati-nan-senai"
     },
     {
         "id": 382,
@@ -14822,7 +15181,8 @@ export const initialRestaurants = [
         "phone": "0187934005",
         "halalStatus": "muslim_owned",
         "area": "Senai",
-        "dietaryOption": null
+        "dietaryOption": null,
+        "slug": "nasi-royale-jb"
     },
     {
         "id": 383,
@@ -14861,7 +15221,8 @@ export const initialRestaurants = [
         "phone": "075992279",
         "halalStatus": "muslim_owned",
         "area": "Senai",
-        "dietaryOption": null
+        "dietaryOption": null,
+        "slug": "warung-mee-bandung-pak-abu"
     },
     {
         "id": 384,
@@ -14900,7 +15261,8 @@ export const initialRestaurants = [
         "phone": "0193770456",
         "halalStatus": "muslim_owned",
         "area": "Senai",
-        "dietaryOption": null
+        "dietaryOption": null,
+        "slug": "bakso-beranak-kulai"
     },
     {
         "id": 385,
@@ -14942,7 +15304,8 @@ export const initialRestaurants = [
         "phone": "0127125822",
         "halalStatus": "non_halal",
         "area": "Senai",
-        "dietaryOption": null
+        "dietaryOption": null,
+        "slug": "quah-ji-restaurant"
     },
     {
         "id": 386,
@@ -14983,7 +15346,8 @@ export const initialRestaurants = [
         "phone": "0102818668",
         "halalStatus": "no_pork",
         "area": "Senai",
-        "dietaryOption": "vegetarian_only"
+        "dietaryOption": "vegetarian_only",
+        "slug": "uncle-vege-restaurant"
     },
     {
         "id": 387,
@@ -15024,7 +15388,8 @@ export const initialRestaurants = [
         "phone": "0167874900",
         "halalStatus": "non_halal",
         "area": "Senai",
-        "dietaryOption": null
+        "dietaryOption": null,
+        "slug": "restoran-makanan-hakka"
     },
     {
         "id": 388,
@@ -15063,7 +15428,8 @@ export const initialRestaurants = [
         "phone": "0177536597",
         "halalStatus": "muslim_owned",
         "area": "Senai",
-        "dietaryOption": null
+        "dietaryOption": null,
+        "slug": "mastura-tomyam-seafood"
     },
     {
         "id": 389,
@@ -15104,7 +15470,8 @@ export const initialRestaurants = [
         "phone": "0167120456",
         "halalStatus": "non_halal",
         "area": "Senai",
-        "dietaryOption": null
+        "dietaryOption": null,
+        "slug": "restoran-zhuang-yuan"
     },
     {
         "id": 390,
@@ -15143,7 +15510,8 @@ export const initialRestaurants = [
         "phone": "0192895929",
         "halalStatus": "muslim_owned",
         "area": "Senai",
-        "dietaryOption": null
+        "dietaryOption": null,
+        "slug": "restoran-bunga-dahlia-1"
     },
     {
         "id": 391,
@@ -15184,7 +15552,8 @@ export const initialRestaurants = [
         "phone": "075984231",
         "halalStatus": "non_halal",
         "area": "Senai",
-        "dietaryOption": null
+        "dietaryOption": null,
+        "slug": "swee-kee-hainan-chicken-rice"
     },
     {
         "id": 392,
@@ -15223,7 +15592,8 @@ export const initialRestaurants = [
         "phone": "0143334622",
         "halalStatus": "muslim_owned",
         "area": "Senai",
-        "dietaryOption": null
+        "dietaryOption": null,
+        "slug": "masal-vadai-restaurant"
     },
     {
         "id": 393,
@@ -15262,7 +15632,8 @@ export const initialRestaurants = [
         "phone": "075908918",
         "halalStatus": "muslim_owned",
         "area": "Senai",
-        "dietaryOption": null
+        "dietaryOption": null,
+        "slug": "restoran-farook-23jam"
     },
     {
         "id": 394,
@@ -15301,7 +15672,8 @@ export const initialRestaurants = [
         "phone": "",
         "halalStatus": "muslim_owned",
         "area": "Senai",
-        "dietaryOption": null
+        "dietaryOption": null,
+        "slug": "restaurant-awe-kelantan"
     },
     {
         "id": 395,
@@ -15340,7 +15712,8 @@ export const initialRestaurants = [
         "phone": "0173737922",
         "halalStatus": "muslim_owned",
         "area": "Senai",
-        "dietaryOption": null
+        "dietaryOption": null,
+        "slug": "lakkias-curry-house"
     },
     {
         "id": 396,
@@ -15379,7 +15752,8 @@ export const initialRestaurants = [
         "phone": "0178430483",
         "halalStatus": "muslim_owned",
         "area": "Senai",
-        "dietaryOption": null
+        "dietaryOption": null,
+        "slug": "asam-pedas-jb"
     },
     {
         "id": 397,
@@ -15418,7 +15792,8 @@ export const initialRestaurants = [
         "phone": "0173603215",
         "halalStatus": "muslim_owned",
         "area": "Senai",
-        "dietaryOption": null
+        "dietaryOption": null,
+        "slug": "chamek"
     },
     {
         "id": 398,
@@ -15457,7 +15832,8 @@ export const initialRestaurants = [
         "phone": "0189810255",
         "halalStatus": "muslim_owned",
         "area": "Senai",
-        "dietaryOption": null
+        "dietaryOption": null,
+        "slug": "omak-den-restaurant"
     },
     {
         "id": 399,
@@ -15514,7 +15890,8 @@ export const initialRestaurants = [
             "lng": null
         },
         "halalStatus": "certified",
-        "dietaryOption": null
+        "dietaryOption": null,
+        "slug": "starbucks"
     },
     {
         "id": 400,
@@ -15574,7 +15951,8 @@ export const initialRestaurants = [
             "lng": null
         },
         "halalStatus": "certified",
-        "dietaryOption": null
+        "dietaryOption": null,
+        "slug": "bask-bear-coffee-1"
     },
     {
         "id": 401,
@@ -15624,7 +16002,8 @@ export const initialRestaurants = [
             "南洋中餐",
             "酒家"
         ],
-        "dietaryOption": null
+        "dietaryOption": null,
+        "slug": "restoran-kim-shan"
     },
     {
         "id": 402,
@@ -15667,7 +16046,8 @@ export const initialRestaurants = [
         "phone": "07-660 8897",
         "halalStatus": "non_halal",
         "area": "Indahpura",
-        "dietaryOption": null
+        "dietaryOption": null,
+        "slug": "restoran-xiao-zhou"
     },
     {
         "id": 403,
@@ -15711,7 +16091,8 @@ export const initialRestaurants = [
         "phone": "016-704 7860",
         "halalStatus": "muslim_owned",
         "area": "Indahpura",
-        "dietaryOption": null
+        "dietaryOption": null,
+        "slug": "mutiara-garden-restaurant"
     },
     {
         "id": 404,
@@ -15754,7 +16135,8 @@ export const initialRestaurants = [
         "phone": "011-1077 0299",
         "halalStatus": "muslim_owned",
         "area": "Indahpura",
-        "dietaryOption": null
+        "dietaryOption": null,
+        "slug": "restoran-hasny"
     },
     {
         "id": 405,
@@ -15799,7 +16181,8 @@ export const initialRestaurants = [
         "phone": "",
         "halalStatus": "no_pork",
         "area": "Senai",
-        "dietaryOption": null
+        "dietaryOption": null,
+        "slug": "the-brew-orchestra"
     },
     {
         "id": 406,
@@ -15843,7 +16226,8 @@ export const initialRestaurants = [
         "phone": "",
         "halalStatus": "non_halal",
         "area": "Indahpura",
-        "dietaryOption": null
+        "dietaryOption": null,
+        "slug": "sushi-plus-kulai"
     },
     {
         "id": 407,
@@ -15885,7 +16269,8 @@ export const initialRestaurants = [
         "phone": "017-470 8754",
         "halalStatus": "non_halal",
         "area": "Bandar Putra",
-        "dietaryOption": null
+        "dietaryOption": null,
+        "slug": "gogiyo-korean-bbq-house"
     },
     {
         "id": 408,
@@ -15928,7 +16313,8 @@ export const initialRestaurants = [
         "phone": "012-766 6698",
         "halalStatus": "non_halal",
         "area": "Bandar Putra",
-        "dietaryOption": null
+        "dietaryOption": null,
+        "slug": "glanz-bistro-house"
     },
     {
         "id": 409,
@@ -15972,7 +16358,8 @@ export const initialRestaurants = [
         "phone": "07-598 8289",
         "halalStatus": "non_halal",
         "area": "Bandar Putra",
-        "dietaryOption": null
+        "dietaryOption": null,
+        "slug": "yu-min-two-restaurant"
     },
     {
         "id": 410,
@@ -16014,7 +16401,8 @@ export const initialRestaurants = [
         "phone": "016-703 2677",
         "halalStatus": "non_halal",
         "area": "Bandar Putra",
-        "dietaryOption": null
+        "dietaryOption": null,
+        "slug": "gangnam-bbq"
     },
     {
         "id": 411,
@@ -16057,7 +16445,8 @@ export const initialRestaurants = [
         "phone": "012-317 8816",
         "halalStatus": "non_halal",
         "area": "Bandar Putra",
-        "dietaryOption": null
+        "dietaryOption": null,
+        "slug": "restoran-unik"
     },
     {
         "id": 412,
@@ -16101,7 +16490,8 @@ export const initialRestaurants = [
         "phone": "010-226 6362",
         "halalStatus": "non_halal",
         "area": "Bandar Putra",
-        "dietaryOption": null
+        "dietaryOption": null,
+        "slug": "qi-le-restaurant"
     },
     {
         "id": 413,
@@ -16144,7 +16534,8 @@ export const initialRestaurants = [
         "phone": "07-552 0302",
         "halalStatus": "muslim_owned",
         "area": "Bandar Putra",
-        "dietaryOption": null
+        "dietaryOption": null,
+        "slug": "alaf-maju-restaurant"
     },
     {
         "id": 414,
@@ -16186,7 +16577,8 @@ export const initialRestaurants = [
         "phone": "011-1173 7212",
         "halalStatus": "non_halal",
         "area": "Bandar Putra",
-        "dietaryOption": null
+        "dietaryOption": null,
+        "slug": "zm-bulgogi-mix-bbq"
     },
     {
         "id": 415,
@@ -16229,7 +16621,8 @@ export const initialRestaurants = [
         "phone": "",
         "halalStatus": "no_pork",
         "area": "Kulai Town",
-        "dietaryOption": null
+        "dietaryOption": null,
+        "slug": "the-upper-floor-cafe"
     },
     {
         "id": 416,
@@ -16277,7 +16670,8 @@ export const initialRestaurants = [
         "phone": "",
         "halalStatus": "non_halal",
         "area": "Kulai 21 Miles",
-        "dietaryOption": null
+        "dietaryOption": null,
+        "slug": "restoran-jiang-man-1"
     },
     {
         "id": 417,
@@ -16321,7 +16715,8 @@ export const initialRestaurants = [
         "phone": "016-751 5056",
         "halalStatus": "non_halal",
         "area": "Kulai 21 Miles",
-        "dietaryOption": null
+        "dietaryOption": null,
+        "slug": "restoran-haw-siang"
     },
     {
         "id": 418,
@@ -16369,7 +16764,8 @@ export const initialRestaurants = [
         "phone": "010-200 3731",
         "halalStatus": "non_halal",
         "area": "Indahpura",
-        "dietaryOption": null
+        "dietaryOption": null,
+        "slug": "trio-guys-ramen"
     },
     {
         "id": 419,
@@ -16414,7 +16810,8 @@ export const initialRestaurants = [
         "phone": "017-580 1129",
         "halalStatus": "non_halal",
         "area": "Indahpura",
-        "dietaryOption": null
+        "dietaryOption": null,
+        "slug": "waichi-yakiniku"
     },
     {
         "id": 420,
@@ -16460,7 +16857,8 @@ export const initialRestaurants = [
         "phone": "",
         "halalStatus": "non_halal",
         "area": "Indahpura",
-        "dietaryOption": null
+        "dietaryOption": null,
+        "slug": "restoran-zhong-sheng"
     },
     {
         "id": 421,
@@ -16554,7 +16952,8 @@ export const initialRestaurants = [
             "lng": null
         },
         "halalStatus": "non_halal",
-        "dietaryOption": null
+        "dietaryOption": null,
+        "slug": "restoran-126"
     },
     {
         "id": 422,
@@ -16635,7 +17034,8 @@ export const initialRestaurants = [
         },
         "phone": "07-660 0823",
         "halalStatus": "non_halal",
-        "dietaryOption": null
+        "dietaryOption": null,
+        "slug": "galaxy-dragon-food-and-beverage"
     },
     {
         "id": 423,
@@ -16678,7 +17078,8 @@ export const initialRestaurants = [
         },
         "phone": "011-3669 6168",
         "halalStatus": "non_halal",
-        "dietaryOption": null
+        "dietaryOption": null,
+        "slug": "restoran-xin-cheng-dim-sum"
     },
     {
         "id": 424,
@@ -16748,7 +17149,8 @@ export const initialRestaurants = [
             "lng": 103.614474
         },
         "halalStatus": "non_halal",
-        "dietaryOption": null
+        "dietaryOption": null,
+        "slug": "restoran-ah-hwa"
     },
     {
         "id": 425,
@@ -16830,7 +17232,8 @@ export const initialRestaurants = [
         },
         "phone": "013-787 8788",
         "halalStatus": "non_halal",
-        "dietaryOption": null
+        "dietaryOption": null,
+        "slug": "dian-xin-yuan"
     },
     {
         "id": 426,
@@ -16909,7 +17312,8 @@ export const initialRestaurants = [
         },
         "phone": "",
         "halalStatus": "non_halal",
-        "dietaryOption": null
+        "dietaryOption": null,
+        "slug": "restoran-126-1"
     },
     {
         "id": 427,
@@ -16996,9 +17400,9 @@ export const initialRestaurants = [
         },
         "phone": "",
         "halalStatus": "non_halal",
-        "dietaryOption": null
-    }
-,
+        "dietaryOption": null,
+        "slug": "kopitiam-kaki-lima"
+    },
     {
         "id": 428,
         "area": "Indahpura",
@@ -17032,7 +17436,8 @@ export const initialRestaurants = [
         "subscriptionLevel": 0,
         "isVIP": false,
         "priority": 0,
-        "dietaryOption": null
+        "dietaryOption": null,
+        "slug": "ll-cafe-house"
     },
     {
         "id": 429,
@@ -17065,7 +17470,8 @@ export const initialRestaurants = [
         "subscriptionLevel": 0,
         "isVIP": false,
         "priority": 0,
-        "dietaryOption": null
+        "dietaryOption": null,
+        "slug": "ben-shan-xian-restaurant"
     },
     {
         "id": 430,
@@ -17099,7 +17505,8 @@ export const initialRestaurants = [
         "subscriptionLevel": 0,
         "isVIP": false,
         "priority": 0,
-        "dietaryOption": null
+        "dietaryOption": null,
+        "slug": "moments-bistro-cafe"
     },
     {
         "id": 431,
@@ -17133,7 +17540,8 @@ export const initialRestaurants = [
         "subscriptionLevel": 0,
         "isVIP": false,
         "priority": 0,
-        "dietaryOption": null
+        "dietaryOption": null,
+        "slug": "restoran-seafood-noodles-pot"
     },
     {
         "id": 432,
@@ -17163,7 +17571,8 @@ export const initialRestaurants = [
         "subscriptionLevel": 0,
         "isVIP": false,
         "priority": 0,
-        "dietaryOption": null
+        "dietaryOption": null,
+        "slug": "lingo-bakery"
     },
     {
         "id": 433,
@@ -17192,7 +17601,8 @@ export const initialRestaurants = [
         "subscriptionLevel": 0,
         "isVIP": false,
         "priority": 0,
-        "dietaryOption": null
+        "dietaryOption": null,
+        "slug": "restoran-nanpo-kogeki"
     },
     {
         "id": 434,
@@ -17225,7 +17635,8 @@ export const initialRestaurants = [
         "subscriptionLevel": 0,
         "isVIP": false,
         "priority": 0,
-        "dietaryOption": null
+        "dietaryOption": null,
+        "slug": "restoran-bak-kut-teh-gu-fang"
     },
     {
         "id": 435,
@@ -17259,7 +17670,8 @@ export const initialRestaurants = [
         "subscriptionLevel": 0,
         "isVIP": false,
         "priority": 0,
-        "dietaryOption": null
+        "dietaryOption": null,
+        "slug": "nasi-gulai-isteri"
     },
     {
         "id": 436,
@@ -17292,7 +17704,8 @@ export const initialRestaurants = [
         "subscriptionLevel": 0,
         "isVIP": false,
         "priority": 0,
-        "dietaryOption": null
+        "dietaryOption": null,
+        "slug": "good-friend-pastry"
     },
     {
         "id": 437,
@@ -17325,7 +17738,8 @@ export const initialRestaurants = [
         "subscriptionLevel": 0,
         "isVIP": false,
         "priority": 0,
-        "dietaryOption": null
+        "dietaryOption": null,
+        "slug": "restoran-da-cheng-lok-lok"
     },
     {
         "id": 438,
@@ -17359,7 +17773,8 @@ export const initialRestaurants = [
         "subscriptionLevel": 0,
         "isVIP": false,
         "priority": 0,
-        "dietaryOption": null
+        "dietaryOption": null,
+        "slug": "restoran-indah-tomyam"
     },
     {
         "id": 439,
@@ -17392,6 +17807,7 @@ export const initialRestaurants = [
         "subscriptionLevel": 0,
         "isVIP": false,
         "priority": 0,
-        "dietaryOption": null
+        "dietaryOption": null,
+        "slug": "jane-deer-dessert"
     }
 ];

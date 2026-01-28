@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useMemo } from 'react';
-import { MapPin, Edit2, Trash2, ArrowUp, Search, Plus, Leaf, Sprout, Ban, Star, GripVertical, Flame, Medal, MessageCircle, Loader2 } from 'lucide-react';
+import { MapPin, Edit2, Trash2, ArrowUp, Search, Plus, Leaf, Sprout, Ban, Star, GripVertical, Flame, Medal, MessageCircle, Loader2, User } from 'lucide-react';
 import {
   DndContext,
   closestCenter,
@@ -354,7 +354,7 @@ const RestaurantCard = ({ restaurant, isAdmin, onUpdate, onDelete, onClick, onCa
                     )}
                     {restaurant.halalStatus === 'muslim_owned' && (
                         <span className="px-1.5 py-0.5 bg-green-900/50 text-green-400 border border-green-800 text-[10px] rounded flex items-center gap-1 leading-none">
-                            ☪️ {t('filter.halal_options.muslim_owned')}
+                            <User size={10} /> {t('filter.halal_options.muslim_owned')}
                         </span>
                     )}
                     {restaurant.halalStatus === 'no_pork' && (

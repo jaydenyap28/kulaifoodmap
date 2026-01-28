@@ -1,6 +1,6 @@
 import React, { useState, useRef } from 'react';
 import { createPortal } from 'react-dom';
-import { X, Star, MapPin, ExternalLink, Send, Save, Clock, Info, UtensilsCrossed, Upload, BookOpen, Globe, Bike, Navigation, Leaf, Sprout } from 'lucide-react';
+import { X, Star, MapPin, ExternalLink, Send, Save, Clock, Info, UtensilsCrossed, Upload, BookOpen, Globe, Bike, Navigation, Leaf, Sprout, User } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { useTranslation } from 'react-i18next';
 import ImageWithFallback from './ImageWithFallback';
@@ -335,7 +335,7 @@ const ResultModal = ({ restaurant, onClose, onAddReview, isAdmin, onUpdateRestau
                     )}
                     {restaurant.halalStatus === 'muslim_owned' && (
                         <span className="bg-green-600/80 text-white border border-green-500 px-2 py-0.5 rounded text-xs font-bold mr-2 backdrop-blur-md flex items-center shadow-sm">
-                            <span className="mr-1">☪️</span> {t('filter.halal_options.muslim_owned')}
+                            <User size={12} className="mr-1" /> {t('filter.halal_options.muslim_owned')}
                         </span>
                     )}
                     {restaurant.halalStatus === 'no_pork' && (

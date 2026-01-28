@@ -23,7 +23,7 @@ const DEFAULT_HERO_BG = "https://i.ibb.co/7J5qjZtv/image.png";
 
 // Version control for data structure changes
 // Increment this when you make breaking changes to data structure to force a reset
-const DATA_VERSION = 'v39';
+const DATA_VERSION = 'v40';
 
 function App() {
   const { t, i18n } = useTranslation();
@@ -377,10 +377,10 @@ function App() {
 
   // Sync URL with Selected Restaurant
   useEffect(() => {
-    const match = matchPath('/restaurant/:id', location.pathname);
-    if (match && match.params.id) {
-        const id = parseInt(match.params.id, 10);
-        const restaurant = restaurants.find(r => r.id === id);
+    const match = matchPath('/restaurant/:slug', location.pathname);
+    if (match && match.params.slug) {
+        const slug = match.params.slug;
+        const restaurant = restaurants.find(r => r.slug === slug);
         if (restaurant) {
             // Only update if not already selected to avoid loops/re-renders
             if (selectedRestaurant?.id !== restaurant.id) {
@@ -390,7 +390,7 @@ function App() {
             }
         }
     } else {
-        // If URL is not /restaurant/:id, ensure modal is closed
+        // If URL is not /restaurant/:slug, ensure modal is closed
         if (selectedRestaurant) {
             setSelectedRestaurant(null);
         }
@@ -602,7 +602,7 @@ function App() {
     setTimeout(() => {
       // Navigate to the URL, let the useEffect handle the state update and analytics
       // This ensures that closing the modal (which navigates to '/') correctly resets the state
-      navigate(`/restaurant/${result.id}`);
+      navigate(`/restaurant/${result.slug}`);
     }, 1000);
   };
 
@@ -762,8 +762,8 @@ function App() {
   };
 
   const handleRestaurantClick = (restaurant) => {
-      // Navigate to the URL, let the useEffect handle the state update and analytics
-      navigate(`/restaurant/${restaurant.id}`);
+    // Navigate to the URL, let the useEffect handle the state update and analytics
+    navigate(`/restaurant/${restaurant.slug}`);
   };
 
   return (
