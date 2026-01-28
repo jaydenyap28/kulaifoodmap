@@ -7,6 +7,7 @@ import ImageWithFallback from './ImageWithFallback';
 import { checkOpenStatus } from '../utils/businessHours';
 import { compressImage } from '../utils/imageUtils';
 import { AVAILABLE_AREAS } from '../data/constants';
+import { MAIN_VIDEO_LINK } from '../data/restaurants';
 
 const ResultModal = ({ restaurant, onClose, onAddReview, isAdmin, onUpdateRestaurant, onDeleteReview, categories = [], onAddCategory }) => {
   const { t, i18n } = useTranslation();
@@ -1251,6 +1252,41 @@ Tuesday: Closed
                   提交评价 (Submit)
                 </button>
               </form>
+
+              {/* Facebook Traffic Strategy Button */}
+              <div className="mt-6">
+                {restaurant.fb_post_link ? (
+                    <div className="space-y-2">
+                        <a 
+                            href={restaurant.fb_post_link}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="w-full flex items-center justify-center gap-2 py-3 bg-[#1877F2] text-white rounded-xl font-bold shadow-lg hover:brightness-110 transition-all active:scale-95"
+                        >
+                            <MessageCircle size={20} className="fill-current" />
+                            💬 去 FB 专页讨论这间店
+                        </a>
+                        <p className="text-center text-[10px] text-gray-500">
+                            这是针对热门商家的专属讨论帖
+                        </p>
+                    </div>
+                ) : (
+                    <div className="space-y-2">
+                        <a 
+                            href={MAIN_VIDEO_LINK}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="w-full flex items-center justify-center gap-2 py-3 bg-[#2d2d2d] text-gray-300 border border-gray-600 rounded-xl font-bold shadow-lg hover:bg-[#3d3d3d] hover:text-white transition-all active:scale-95"
+                        >
+                            <MessageCircle size={20} />
+                            🙋‍♂️ 还没有人讨论？去视频留言！
+                        </a>
+                        <p className="text-center text-[10px] text-gray-500">
+                            引导用户去主视频贡献流量
+                        </p>
+                    </div>
+                )}
+              </div>
             </div>
           </div>
         </motion.div>

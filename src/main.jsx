@@ -13,7 +13,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
       <BrowserRouter>
         <App />
       </BrowserRouter>
-      <Analytics />
+      {import.meta.env.PROD && <Analytics />}
     </ErrorBoundary>
   </React.StrictMode>,
 )

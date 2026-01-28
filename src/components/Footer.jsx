@@ -1,6 +1,7 @@
 import React from 'react';
 import { Facebook, Lock } from 'lucide-react';
 import { useTranslation } from 'react-i18next';
+import { MAIN_VIDEO_LINK } from '../data/restaurants';
 
 const Footer = ({ onAdminLogin }) => {
   const { t } = useTranslation();
@@ -12,13 +13,13 @@ const Footer = ({ onAdminLogin }) => {
         <div className="flex flex-col gap-4 items-center">
             <h3 className="text-white font-bold text-lg">{t('footer.recommend')}</h3>
             <a 
-                href="https://www.facebook.com/jnqjourney/" 
+                href={MAIN_VIDEO_LINK}
                 target="_blank" 
                 rel="noreferrer"
                 className="px-6 py-3 bg-gradient-to-r from-blue-600 to-indigo-600 hover:from-blue-500 hover:to-indigo-500 text-white rounded-full font-bold shadow-lg hover:shadow-blue-500/30 hover:-translate-y-0.5 transition-all flex items-center justify-center gap-2 group"
             >
                 <Facebook size={20} className="group-hover:rotate-12 transition-transform" />
-                {t('footer.contact_fb')}
+                📺 去视频留言 (推荐商家/纠错)
             </a>
         </div>
 
