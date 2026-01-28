@@ -5647,8 +5647,8 @@ export const initialRestaurants = [
     {
         "id": 130,
         "fb_post_link": "",
-        "name": "锅妈台式火锅",
-        "name_en": "Guoma Seafood Express",
+        "name": "Guoma Seafood Express",
+        "name_en": "",
         "address": "Ground floor G-05, The Commune Lifestyle Mall",
         "opening_hours": "Monday: 11am - 10pm\nTuesday: 11am - 10pm\nWednesday: 11am - 10pm\nThursday: 11am - 10pm\nFriday: 11am - 10pm\nSaturday: 11am - 10pm\nSunday: 11am - 10pm",
         "intro_zh": "台式个人小火锅。自选汤底和食材，新鲜方便。",
@@ -14842,12 +14842,12 @@ export const initialRestaurants = [
         "id": 365,
         "fb_post_link": "",
         "area": "Senai",
-        "name": "Projek KEBAB Cafe",
-        "name_en": "Projek KEBAB Cafe",
+        "name": "Projek Kebab Cafe",
+        "name_en": "",
         "subscriptionLevel": 0,
         "manualStatus": "auto",
         "address": "14, Jalan Impian Senai Utama, Taman Impian Senai, 81400 Senai, Johor Darul Ta'zim",
-        "opening_hours": "",
+        "opening_hours": "Monday: 10am - 10pm\nTuesday: 10am - 10pm\nWednesday: 10am - 10pm\nThursday: 10am - 10pm\nFriday: 10am - 10pm\nSaturday: 10am - 10pm\nSunday: 10am - 10pm",
         "intro_zh": "",
         "intro_en": "",
         "category": [
@@ -15883,7 +15883,49 @@ export const initialRestaurants = [
         "dietaryOption": null,
         "slug": "restoran-bunga-dahlia-1"
     },
-
+    {
+        "id": 391,
+        "fb_post_link": "",
+        "name": "瑞记海南鸡饭",
+        "name_en": "Swee Kee Hainan Chicken Rice",
+        "intro_zh": "",
+        "intro_en": "",
+        "address": "98, Jln Bintang, Taman Bintang, 81400 Senai, Johor Darul Ta'zim",
+        "opening_hours": "10:30am–7pm\nMonday: Closed",
+        "category": [
+            "饭类"
+        ],
+        "categories": [
+            "饭类"
+        ],
+        "rating": 0,
+        "image": "https://placehold.co/600x400/e0e0e0/333333?text=No+Image",
+        "subStalls": [],
+        "price_range": "RM 10-20",
+        "menu_link": "",
+        "website_link": "",
+        "delivery_link": "",
+        "isVegetarian": false,
+        "isNoBeef": false,
+        "manualStatus": "auto",
+        "branches": [],
+        "tags": [
+            "海南鸡饭"
+        ],
+        "subscriptionLevel": 0,
+        "isVIP": false,
+        "priority": 0,
+        "whatsappLink": "",
+        "location": {
+            "lat": null,
+            "lng": null
+        },
+        "phone": "075984231",
+        "halalStatus": "non_halal",
+        "area": "Senai",
+        "dietaryOption": null,
+        "slug": "swee-kee-hainan-chicken-rice"
+    },
     {
         "id": 392,
         "fb_post_link": "",
@@ -16011,11 +16053,11 @@ export const initialRestaurants = [
         "id": 395,
         "fb_post_link": "",
         "name": "Lakkias Curry House",
-        "name_en": "Lakkias Curry House",
+        "name_en": "",
         "intro_zh": "",
         "intro_en": "",
         "address": "41 & 42, 41 42, Jalan Cyber 16, Kawasan Perindustrian Senai Fasa 3, 81400 Senai, Johor",
-        "opening_hours": "",
+        "opening_hours": "Monday: 6:30am - 9:30pm\nTuesday: 6:30am - 9:30pm\nWednesday: 6:30am - 9:30pm\nThursday: 6:30am - 9:30pm\nFriday: 6:30am - 9:30pm\nSaturday: 6:30am - 9:30pm\nSunday: 6:30am - 9:30pm",
         "category": [
             "马来与印度风味"
         ],
@@ -16051,12 +16093,12 @@ export const initialRestaurants = [
     {
         "id": 396,
         "fb_post_link": "",
-        "name": "Asam Pedas Jb",
-        "name_en": "Asam Pedas Jb",
+        "name": "Asam Pedas JB",
+        "name_en": "",
         "intro_zh": "",
         "intro_en": "",
         "address": "Kawasan Perindustrian Senai Fasa 3, 81400 Senai, Johor",
-        "opening_hours": "10am–9pm\nFriday: Closed\nSaturday: Closed\nSunday: Closed",
+        "opening_hours": "Monday: 10am - 9pm\nTuesday: 10am - 9pm\nWednesday: 10am - 9pm\nThursday: 10am - 9pm\nFriday: Closed\nSaturday: Closed\nSunday: Closed",
         "category": [
             "马来与印度风味"
         ],
@@ -16080,8 +16122,8 @@ export const initialRestaurants = [
         "priority": 0,
         "whatsappLink": "",
         "location": {
-            "lat": null,
-            "lng": null
+            "lat": "1.6273300080846929",
+            "lng": "103.65391343801426"
         },
         "phone": "0178430483",
         "halalStatus": "muslim_owned",
@@ -16093,7 +16135,7 @@ export const initialRestaurants = [
         "id": 397,
         "fb_post_link": "",
         "name": "Chamek",
-        "name_en": "Chamek",
+        "name_en": "",
         "intro_zh": "",
         "intro_en": "",
         "address": "30, Jalan Terminal 5, 81400 Senai, Johor",
@@ -16121,8 +16163,8 @@ export const initialRestaurants = [
         "priority": 0,
         "whatsappLink": "",
         "location": {
-            "lat": "1.635735",
-            "lng": "103.663147"
+            "lat": "1.6357430480520228",
+            "lng": "103.66318974360627"
         },
         "phone": "0173603215",
         "halalStatus": "muslim_owned",
@@ -16134,11 +16176,11 @@ export const initialRestaurants = [
         "id": 398,
         "fb_post_link": "",
         "name": "Omak Den Restaurant",
-        "name_en": "Omak Den Restaurant",
+        "name_en": "",
         "intro_zh": "",
         "intro_en": "",
         "address": "Jalan Jumbo, 81250 Senai, Johor Darul Ta'zim",
-        "opening_hours": "8am–5pm\nSunday: Closed",
+        "opening_hours": "Monday: 8am - 5pm\nTuesday: 8am - 5pm\nWednesday: 8am - 5pm\nThursday: 8am - 5pm\nFriday: 8am - 5pm\nSaturday: 8am - 5pm\nSunday: Closed",
         "category": [
             "马来与印度风味"
         ],
@@ -16175,11 +16217,11 @@ export const initialRestaurants = [
         "id": 399,
         "fb_post_link": "",
         "name": "Starbucks",
-        "name_en": "Starbucks",
+        "name_en": "",
         "intro_zh": "星巴克（Starbucks）是全球最大的咖啡连锁店，以其高品质的烘焙咖啡豆和丰富的手工调制饮品而闻名。无论是经典的拿铁、卡布奇诺，还是季节限定的星冰乐，都能满足您的味蕾。舒适的环境和免费Wi-Fi，是工作、学习或与朋友聚会的理想场所。",
         "intro_en": "Starbucks is the world's largest coffeehouse chain, known for its high-quality roasted coffee beans and handcrafted beverages. From classic Lattes and Cappuccinos to seasonal Frappuccinos, there's something for everyone. With a cozy atmosphere and free Wi-Fi, it's the perfect place to work, study, or catch up with friends.",
         "address": "Multiple Locations in Kulai",
-        "opening_hours": "Daily: 10am - 10pm",
+        "opening_hours": "Monday: 10am - 10pm\nTuesday: 10am - 10pm\nWednesday: 10am - 10pm\nThursday: 10am - 10pm\nFriday: 10am - 10pm\nSaturday: 10am - 10pm\nSunday: 10am - 10pm",
         "category": [
             "Cafe",
             "饮品"
@@ -16234,10 +16276,10 @@ export const initialRestaurants = [
         "id": 400,
         "fb_post_link": "",
         "name": "Bask Bear Coffee",
-        "name_en": "Bask Bear Coffee",
+        "name_en": "",
         "address": "Multiple Locations in Kulai & Senai",
         "area": "Bandar Putra",
-        "opening_hours": "Daily: 10am - 10pm",
+        "opening_hours": "Monday: 10am - 10pm\nTuesday: 10am - 10pm\nWednesday: 10am - 10pm\nThursday: 10am - 10pm\nFriday: 10am - 10pm\nSaturday: 10am - 10pm\nSunday: 10am - 10pm",
         "intro_zh": "马来西亚领先的创新咖啡品牌，以特调咖啡和著名的Bask Bear吐司闻名。结合了独特的咖啡风味和酥脆的吐司，是下午茶或轻食的绝佳选择。",
         "intro_en": "Malaysia's leading innovative coffee brand, famous for its specialty coffee and signature Bask Bear Toast. Combining unique coffee flavors with crispy toast, it's a perfect choice for tea time or a light meal.",
         "category": [
@@ -16300,7 +16342,7 @@ export const initialRestaurants = [
         "intro_zh": "金山食馆是古来家喻户晓的老字号酒家，坐落于 Taman Sri Kulai Baru。这里以正宗南洋中餐和道地煮炒著称，凭借扎实的“锅气”和亲民的价格，成为了当地人家庭聚餐与喜庆设宴的首选。餐馆保留了最淳朴的古来味道，每一道菜都承载着几代人的集体回忆。",
         "intro_en": "Restoran Kim Shan is a renowned legacy restaurant in Kulai, specializing in authentic Nanyang Chinese cuisine and traditional Zhi Char. Located at Taman Sri Kulai Baru, it is the go-to spot for locals for family dinners and celebrations, thanks to its signature \"Wok Hei\" and affordable pricing. It remains a nostalgic culinary landmark that perfectly captures the heritage flavors of Kulai.",
         "address": "13-16, Jalan Susur Kulai 1, Taman Sri Kulai Baru, 81000 Kulai, Johor",
-        "opening_hours": "Monday: 4pm - 9pm\nTuesday: Closed\nWednesday: Closed\nThursday: 4pm - 9pm\nFriday: Closed\nSaturday: 4pm - 9pm\nSunday: 4pm - 9pm",
+        "opening_hours": "Monday: 4pm - 9pm\nTuesday: Closed\nWednesday: Closed\nThursday: Closed\nFriday: 4pm - 9pm\nSaturday: 4pm - 9pm\nSunday: 4pm - 9pm",
         "category": [
             "饭类",
             "煮炒海鲜楼"
@@ -16380,8 +16422,8 @@ export const initialRestaurants = [
         "priority": 0,
         "whatsappLink": "",
         "location": {
-            "lat": null,
-            "lng": null
+            "lat": "1.6378467777172017",
+            "lng": "103.6179450396522"
         },
         "phone": "07-660 8897",
         "halalStatus": "non_halal",
@@ -16393,11 +16435,11 @@ export const initialRestaurants = [
         "id": 403,
         "fb_post_link": "",
         "name": "Mutiara Garden Restaurant",
-        "name_en": "Mutiara Garden Restaurant",
+        "name_en": "",
         "intro_zh": "24小时营业的印裔穆斯林餐厅（Mamak），提供各种马来与印度风味美食。",
         "intro_en": "24-hour Mamak restaurant serving a variety of Malay and Indian dishes.",
         "address": "865, Jalan Teratai 36/17, Bandar Indahpura, 81000 Kulai, Johor Darul Ta'zim",
-        "opening_hours": "Monday: Open 24 Hours\nTuesday: Open 24 Hours\nWednesday: Open 24 Hours\nThursday: Open 24 Hours\nFriday: Open 24 Hours\nSaturday: Open 24 Hours\nSunday: Open 24 Hours",
+        "opening_hours": "Monday: 12am - 12am\nTuesday: 12am - 12am\nWednesday: 12am - 12am\nThursday: 12am - 12am\nFriday: 12am - 12am\nSaturday: 12am - 12am\nSunday: 12am - 12am",
         "category": [
             "马来与印度风味"
         ],
@@ -16439,7 +16481,7 @@ export const initialRestaurants = [
         "id": 404,
         "fb_post_link": "",
         "name": "Restoran Hasny",
-        "name_en": "Restoran Hasny",
+        "name_en": "",
         "intro_zh": "Indahpura 的热门 Mamak 档，营业至凌晨。",
         "intro_en": "Popular Mamak spot in Indahpura, open until late night.",
         "address": "Jalan Teratai 36/17, Bandar Indahpura, 81000 Kulai, Johor Darul Ta'zim",
@@ -16484,7 +16526,7 @@ export const initialRestaurants = [
         "id": 405,
         "fb_post_link": "",
         "name": "The Brew Orchestra",
-        "name_en": "The Brew Orchestra",
+        "name_en": "",
         "intro_zh": "士乃的一家精致咖啡馆，提供优质咖啡和舒适环境。",
         "intro_en": "A refined cafe in Senai offering quality coffee and a comfortable ambiance.",
         "address": "Ground Floor, 1045, Jalan Muhibah 1, Taman Perindustrian Muhibah, 81400 Senai, Johor",
@@ -16530,8 +16572,8 @@ export const initialRestaurants = [
     {
         "id": 406,
         "fb_post_link": "",
-        "name": "Sushi Plus (Kulai)",
-        "name_en": "Sushi Plus (Kulai)",
+        "name": "Sushi Plus",
+        "name_en": "",
         "intro_zh": "Sushi Plus (Kulai) 是位于 Indahpura 商业区的一家日式寿司专卖店。与传统点餐式日料店不同，这里主打便捷的自助挑选模式。店内柜台整齐陈列着琳琅满目的单件寿司及组合套餐，口味涵盖了从经典握寿司、军舰寿司到深受本地人喜爱的美式卷物。该店以高透明度的计费方式和出色的便利性深受当地街坊欢迎。虽然店内提供少量简易桌椅供顾客即时用餐，但由于其快捷的特性，大多数食客选择在此定制自己的寿司拼盘并外带分享",
         "intro_en": "Sushi Plus (Kulai) is a popular Japanese sushi outlet located in the vibrant Indahpura commercial hub. It operates on a self-service grab-and-go concept, where customers can browse through a wide selection of individually displayed sushi and assorted platters. The store is well-regarded for its convenience and transparent pricing, offering everything from traditional nigiri and gunkan to fusion maki rolls tailored to local tastes. While a limited seating area is available for a quick sit-down meal, the outlet primarily serves as a high-traffic takeaway spot, allowing diners to curate their own sushi boxes for home or office enjoyment",
         "address": "244, Jalan Kenanga 29/8, Bandar Indahpura, 81000 Kulai, Johor",
@@ -16577,7 +16619,7 @@ export const initialRestaurants = [
         "id": 407,
         "fb_post_link": "",
         "name": "GoGiYo Korean BBQ House",
-        "name_en": "GoGiYo Korean BBQ House",
+        "name_en": "",
         "intro_zh": "位于太子城的韩式烤肉店，提供正宗韩国料理。",
         "intro_en": "Korean BBQ house in Bandar Putra serving authentic Korean cuisine.",
         "address": "7509, Jln Enggang 19, Bandar Putra Kulai, 81000 Kulai, Johor Darul Ta'zim",
@@ -16621,7 +16663,7 @@ export const initialRestaurants = [
         "id": 408,
         "fb_post_link": "",
         "name": "Glanz Bistro House",
-        "name_en": "Glanz Bistro House",
+        "name_en": "",
         "intro_zh": "太子城的休闲 Bistro，营业至深夜。",
         "intro_en": "Casual bistro in Bandar Putra, open until late night.",
         "address": "7502, Jln Enggang 19, Bandar Putra Kulai, 81000, Johor Darul Ta'zim",
@@ -16670,7 +16712,7 @@ export const initialRestaurants = [
         "intro_zh": "太子城的煮炒海鲜楼，适合家庭聚餐。",
         "intro_en": "Seafood and Zhi Char restaurant in Bandar Putra, good for family dining.",
         "address": "7513, Jln Enggang 19, Bandar Putra Kulai, 81000, Johor Darul Ta'zim",
-        "opening_hours": "Monday: 2:30pm - 12am\nTuesday: 2:30pm - 12am\nWednesday: 2:30pm - 12am\nThursday: 2:30pm - 12am\nFriday: 2:30pm - 12am\nSaturday: 2:30pm - 12am\nSunday: 2:30pm - 12am",
+        "opening_hours": "Monday: Closed\nTuesday: 2:30pm - 12am\nWednesday: 2:30pm - 12am\nThursday: 2:30pm - 12am\nFriday: 2:30pm - 12am\nSaturday: 2:30pm - 12am\nSunday: 2:30pm - 12am",
         "category": [
             "煮炒海鲜楼"
         ],
@@ -16686,7 +16728,7 @@ export const initialRestaurants = [
         "delivery_link": "",
         "isVegetarian": false,
         "isNoBeef": false,
-        "manualStatus": "auto",
+        "manualStatus": "open",
         "branches": [],
         "tags": [
             "Seafood",
@@ -16699,8 +16741,8 @@ export const initialRestaurants = [
         "priority": 0,
         "whatsappLink": "",
         "location": {
-            "lat": null,
-            "lng": null
+            "lat": "1.660105047286776",
+            "lng": "103.63836174186082"
         },
         "phone": "07-598 8289",
         "halalStatus": "non_halal",
@@ -16712,7 +16754,7 @@ export const initialRestaurants = [
         "id": 410,
         "fb_post_link": "",
         "name": "Gangnam BBQ",
-        "name_en": "Gangnam BBQ",
+        "name_en": "",
         "intro_zh": "正宗韩式烧烤，位于太子城。",
         "intro_en": "Authentic Korean BBQ located in Bandar Putra.",
         "address": "7516, Jln Enggang 19, Bandar Putra Kulai, 81000 Kulai, Johor Darul Ta'zim",
@@ -16801,11 +16843,11 @@ export const initialRestaurants = [
         "id": 412,
         "fb_post_link": "",
         "name": "齐乐美食阁",
-        "name_en": "QI LE RESTAURANT",
+        "name_en": "Qi Le Restaurant",
         "intro_zh": "太子城的中式餐厅，提供午餐和晚餐。",
         "intro_en": "Chinese restaurant in Bandar Putra serving lunch and dinner.",
         "address": "7521, Jln Enggang 19, Bandar Putra Kulai, 81000 Kulai, Johor Darul Ta'zim",
-        "opening_hours": "Monday: 10am - 3pm, 5pm - 10pm\nTuesday: Closed\nWednesday: 10am - 3pm, 5pm - 10pm\nThursday: 10am - 3pm, 5pm - 10pm\nFriday: 10am - 3pm, 5pm - 10pm\nSaturday: 10am - 3pm, 5pm - 10pm\nSunday: 10am - 3pm, 5pm - 10pm",
+        "opening_hours": "Monday: 10am - 10pm\nTuesday: Closed\nWednesday: 10am - 10pm\nThursday: 10am - 10pm\nFriday: 10am - 10pm\nSaturday: 10am - 10pm\nSunday: 10am - 10pm",
         "category": [
             "煮炒海鲜楼"
         ],
@@ -16847,7 +16889,7 @@ export const initialRestaurants = [
         "id": 413,
         "fb_post_link": "",
         "name": "Alaf Maju Restaurant",
-        "name_en": "Alaf Maju Restaurant",
+        "name_en": "",
         "intro_zh": "位于太子城的 Mamak 餐厅，提供各式印度与马来美食。",
         "intro_en": "Mamak restaurant in Bandar Putra serving Indian and Malay cuisine.",
         "address": "19, Jalan Enggang, Bandar Putra Kulai, 81000 Kulai, Johor",
@@ -16892,11 +16934,11 @@ export const initialRestaurants = [
         "id": 414,
         "fb_post_link": "",
         "name": "ZM bulgogi mix BBQ",
-        "name_en": "ZM bulgogi mix BBQ",
+        "name_en": "",
         "intro_zh": "太子城的韩式烤肉店。",
         "intro_en": "Korean BBQ restaurant in Bandar Putra.",
         "address": "7535, Jln Enggang 19, Bandar Putra Kulai, 81000 Kulai, Johor Darul Ta'zim",
-        "opening_hours": "Monday: 11am - 10pm\nTuesday: 11am - 10pm\nWednesday: 11am - 10pm\nThursday: 11am - 10pm\nFriday: 11am - 10pm\nSaturday: 11am - 10pm\nSunday: 11am - 10pm",
+        "opening_hours": "Monday: 12am - 12am\nTuesday: 12am - 12am\nWednesday: 12am - 12am\nThursday: 12am - 12am\nFriday: 12am - 12am\nSaturday: 12am - 12am\nSunday: 12am - 12am",
         "category": [
             "韩国餐"
         ],
@@ -16936,7 +16978,7 @@ export const initialRestaurants = [
         "id": 415,
         "fb_post_link": "",
         "name": "The Upper Floor Cafe",
-        "name_en": "The Upper Floor Cafe",
+        "name_en": "",
         "intro_zh": "位于 Taman Mas 的舒适咖啡馆。",
         "intro_en": "Cozy cafe located in Taman Mas.",
         "address": "7A, Jln Selamat, Taman Mas, 81000 Kulai, Johor Darul Ta'zim",
@@ -16977,7 +17019,56 @@ export const initialRestaurants = [
         "dietaryOption": null,
         "slug": "the-upper-floor-cafe"
     },
-
+    {
+        "id": 416,
+        "fb_post_link": "",
+        "name": "江满小食馆",
+        "name_en": "Restoran Jiang Man",
+        "intro_zh": "位于 Taman Nam Tak (21哩) 的老字号小食馆，提供各式地道面食与小吃。有一间分行。",
+        "intro_en": "Traditional eatery located in Taman Nam Tak (21 Miles), known for its authentic noodles and snacks. Has a branch.",
+        "address": "Jalan Susur Kulai 5, Taman Nam Tak, 81000 Kulai, Johor Darul Ta'zim",
+        "opening_hours": "Monday: 5:30pm - 1:30am\nTuesday: 5:30pm - 1:30am\nWednesday: 5:30pm - 1:30am\nThursday: Closed\nFriday: 5:30pm - 1:30am\nSaturday: 5:30pm - 1:30am\nSunday: 5:30pm - 1:30am",
+        "category": [
+            "中餐",
+            "粉类"
+        ],
+        "categories": [
+            "中餐",
+            "粉类"
+        ],
+        "rating": 0,
+        "image": "https://placehold.co/600x400/1e1e1e/FFF?text=Jiang+Man",
+        "subStalls": [],
+        "price_range": "RM 5-15",
+        "menu_link": "",
+        "website_link": "",
+        "delivery_link": "",
+        "isVegetarian": false,
+        "isNoBeef": false,
+        "manualStatus": "auto",
+        "branches": [],
+        "tags": [
+            "Chinese",
+            "Noodles",
+            "Kulai",
+            "Traditional",
+            "Breakfast",
+            "Lunch"
+        ],
+        "subscriptionLevel": 0,
+        "isVIP": false,
+        "priority": 0,
+        "whatsappLink": "",
+        "location": {
+            "lat": null,
+            "lng": null
+        },
+        "phone": "",
+        "halalStatus": "non_halal",
+        "area": "Kulai 21 Miles",
+        "dietaryOption": null,
+        "slug": "restoran-jiang-man-1"
+    },
     {
         "id": 417,
         "fb_post_link": "",
@@ -17031,8 +17122,8 @@ export const initialRestaurants = [
         "name_en": "Trio Guys Ramen",
         "intro_zh": "位于 Indahpura 的日式拉面馆，提供多种口味的拉面和小吃。",
         "intro_en": "Japanese ramen shop located in Indahpura, serving various flavors of ramen and snacks.",
-        "address": "PUSAT KOMERSIAL INDAH, 264, Jalan Kiambang 10, Bandar Indahpura, 81000 Kulai, Johor Darul Ta'zim",
-        "opening_hours": "Monday: 12pm - 3:30pm, 5:30pm - 9:15pm\nTuesday: 12pm - 3:30pm, 5:30pm - 9:15pm\nWednesday: 12pm - 3:30pm, 5:30pm - 9:15pm\nThursday: 12pm - 3:30pm, 5:30pm - 9:15pm\nFriday: 12pm - 3:30pm, 5:30pm - 9:15pm\nSaturday: 12pm - 3:30pm, 5:30pm - 9:15pm\nSunday: 12pm - 3:30pm, 5:30pm - 9:15pm",
+        "address": "Pusat Komersial Indah, 264, Jalan Kiambang 10, Bandar Indahpura, 81000 Kulai, Johor Darul Ta'zim",
+        "opening_hours": "Monday: 12pm - 9:15pm\nTuesday: 12pm - 9:15pm\nWednesday: 12pm - 9:15pm\nThursday: 12pm - 9:15pm\nFriday: 12pm - 9:15pm\nSaturday: 12pm - 9:15pm\nSunday: 12pm - 9:15pm",
         "category": [
             "日本餐",
             "粉类"
@@ -17078,7 +17169,7 @@ export const initialRestaurants = [
         "id": 419,
         "fb_post_link": "",
         "name": "Waichi Yakiniku",
-        "name_en": "Waichi Yakiniku",
+        "name_en": "",
         "intro_zh": "位于 Indahpura 的日式烧烤(Yakiniku)专卖店，提供优质肉类和正宗日式烧烤体验。",
         "intro_en": "Japanese Yakiniku restaurant located in Indahpura, offering premium meats and authentic Japanese BBQ experience.",
         "address": "G-03A, Ground Floor, 291, Jalan Kiambang 10, Pusat Komersial Indah Indahpura, 81000 Kulai, Johor Darul Ta'zim",
@@ -17178,7 +17269,7 @@ export const initialRestaurants = [
         "intro_zh": "位于Indahpura的热闹美食阁，汇集了多种本地美食档口。从早市到夜市都有丰富选择，环境宽敞通风。",
         "intro_en": "A bustling food court in Indahpura featuring a wide variety of local food stalls. Offers extensive choices from morning to night in a spacious and airy environment.",
         "address": "230, Jln Kenanga 29/8, Indahpura, 81000 Kulai, Johor",
-        "opening_hours": "Monday: 7am - 11pm\nTuesday: 7am - 11pm\nWednesday: 7am - 11pm\nThursday: 7am - 11pm\nFriday: 7am - 11pm\nSaturday: 7am - 11pm\nSunday: 7am - 11pm",
+        "opening_hours": "Monday: 7am - 2pm\nTuesday: 7am - 2pm\nWednesday: 7am - 2pm\nThursday: 7am - 2pm\nFriday: 7am - 2pm\nSaturday: 7am - 2pm\nSunday: 7am - 2pm",
         "category": [
             "咖啡店/美食阁"
         ],
@@ -17558,7 +17649,7 @@ export const initialRestaurants = [
         "intro_zh": "位于优美城(Indahpura)的热闹美食阁，汇集了多种本地美食档口。",
         "intro_en": "Bustling food court in Indahpura featuring a wide variety of local food stalls.",
         "address": "Jalan Kenanga 29/10, Bandar Indahpura, 81000 Kulai, Johor Darul Ta'zim",
-        "opening_hours": "Monday: 7am - 11pm\nTuesday: 7am - 11pm\nWednesday: 7am - 11pm\nThursday: 7am - 11pm\nFriday: 7am - 11pm\nSaturday: 7am - 11pm\nSunday: 7am - 11pm",
+        "opening_hours": "Monday: 8am - 2pm\nTuesday: 8am - 2pm\nWednesday: 8am - 2pm\nThursday: 8am - 2pm\nFriday: 8am - 2pm\nSaturday: 8am - 2pm\nSunday: 8am - 2pm",
         "category": [
             "咖啡店/美食阁"
         ],
@@ -17638,8 +17729,8 @@ export const initialRestaurants = [
         "name_en": "Kopitiam Kaki Lima",
         "intro_zh": "位于优美城(Indahpura)的咖啡店，提供各类本地美食。",
         "intro_en": "Kopitiam located in Indahpura offering various local delights.",
-        "address": "Bandar Indahpura, 81000 Kulai, Johor",
-        "opening_hours": "Daily: 7am - 11pm",
+        "address": "595, Jalan Kenanga 29/19, Bandar Indahpura, 81000 Kulai, Johor Darul Ta'zim",
+        "opening_hours": "Monday: 7am - 11pm\nTuesday: 7am - 11pm\nWednesday: 7am - 11pm\nThursday: 7am - 11pm\nFriday: 7am - 11pm\nSaturday: 7am - 11pm\nSunday: 7am - 11pm",
         "category": [
             "咖啡店/美食阁"
         ],
@@ -17711,8 +17802,8 @@ export const initialRestaurants = [
         "priority": 0,
         "whatsappLink": "",
         "location": {
-            "lat": 1.642765,
-            "lng": 103.615597
+            "lat": "1.6428238825862447",
+            "lng": "103.61562636551605"
         },
         "phone": "",
         "halalStatus": "non_halal",
@@ -17724,10 +17815,10 @@ export const initialRestaurants = [
         "fb_post_link": "",
         "area": "Indahpura",
         "name": "L&L Cafe House",
-        "name_en": "L&L Cafe House",
+        "name_en": "",
         "name_zh": "L&L西餐酿品屋",
         "address": "597, Jalan Kenanga 29/19, Bandar Indahpura, 81000 Kulai, Johor Darul Ta'zim",
-        "opening_hours": "10am–9:30pm",
+        "opening_hours": "Monday: 10am - 9:30pm\nTuesday: 10am - 9:30pm\nWednesday: 10am - 9:30pm\nThursday: 10am - 9:30pm\nFriday: 10am - 9:30pm\nSaturday: 10am - 9:30pm\nSunday: 10am - 9:30pm",
         "phone": "017-582 2653",
         "website_link": "https://www.facebook.com/profile.php?id=100054495623153",
         "category": [
@@ -17760,11 +17851,11 @@ export const initialRestaurants = [
         "id": 429,
         "fb_post_link": "",
         "area": "Indahpura",
-        "name": "Ben Shan Xian Restaurant",
+        "name": "犇羴鱻餐馆",
         "name_en": "Ben Shan Xian Restaurant",
         "name_zh": "犇羴鱻餐馆",
         "address": "604A, Jalan Kenanga 29/19, Bandar Indahpura, 81000 Kulai, Johor Darul Ta'zim",
-        "opening_hours": "8am–12am",
+        "opening_hours": "Monday: 8am - 12am\nTuesday: 8am - 12am\nWednesday: 8am - 12am\nThursday: 8am - 12am\nFriday: 8am - 12am\nSaturday: 8am - 12am\nSunday: 8am - 12am",
         "phone": "019-365 5512",
         "category": [
             "中国餐"
@@ -17781,8 +17872,8 @@ export const initialRestaurants = [
             "中国菜"
         ],
         "location": {
-            "lat": null,
-            "lng": null
+            "lat": "1.6425932457916612",
+            "lng": "103.61573159582905"
         },
         "manualStatus": "auto",
         "subscriptionLevel": 0,
@@ -17795,10 +17886,10 @@ export const initialRestaurants = [
         "id": 430,
         "fb_post_link": "",
         "area": "Indahpura",
-        "name": "MOMENTS BISTRO & CAFE",
-        "name_en": "MOMENTS BISTRO & CAFE",
+        "name": "Moments Bistro & Cafe",
+        "name_en": "",
         "address": "603, Jalan Kenanga 29/19, Bandar Indahpura, 81000 Kulai, Johor Darul Ta'zim",
-        "opening_hours": "5pm–3am (Mon Closed)",
+        "opening_hours": "Monday: Closed\nTuesday: 5pm - 3am\nWednesday: 5pm - 3am\nThursday: 5pm - 3am\nFriday: 5pm - 3am\nSaturday: 5pm - 3am\nSunday: 5pm - 3am",
         "phone": "07-663 1311",
         "website_link": "https://www.facebook.com/momentsbistro",
         "category": [
@@ -17832,7 +17923,7 @@ export const initialRestaurants = [
         "fb_post_link": "",
         "area": "Indahpura",
         "name": "Restoran Seafood Noodles & Pot",
-        "name_en": "Restoran Seafood Noodles & Pot",
+        "name_en": "",
         "name_zh": "海鲜兄弟 海鲜粉•锅",
         "address": "",
         "location": {
@@ -17861,14 +17952,15 @@ export const initialRestaurants = [
         "isVIP": false,
         "priority": 0,
         "dietaryOption": null,
-        "slug": "restoran-seafood-noodles-pot"
+        "slug": "restoran-seafood-noodles-pot",
+        "opening_hours": "Monday: 10am - 10pm\nTuesday: 10am - 10pm\nWednesday: 10am - 10pm\nThursday: 10am - 10pm\nFriday: 10am - 10pm\nSaturday: 10am - 10pm\nSunday: 10am - 10pm"
     },
     {
         "id": 432,
         "fb_post_link": "",
         "area": "Indahpura",
         "name": "Lingo Bakery",
-        "name_en": "Lingo Bakery",
+        "name_en": "",
         "address": "Jalan Kenanga 29/9, Bandar Indahpura, 81000 Kulai, Johor Darul Ta'zim",
         "category": [
             "蛋糕甜点"
@@ -17893,14 +17985,15 @@ export const initialRestaurants = [
         "isVIP": false,
         "priority": 0,
         "dietaryOption": null,
-        "slug": "lingo-bakery"
+        "slug": "lingo-bakery",
+        "opening_hours": "Monday: 8am - 7pm\nTuesday: 8am - 7pm\nWednesday: 8am - 7pm\nThursday: 8am - 7pm\nFriday: 8am - 7pm\nSaturday: 8am - 7pm\nSunday: 8am - 7pm"
     },
     {
         "id": 433,
         "fb_post_link": "",
         "area": "Indahpura",
         "name": "Restoran Nanpo Kogeki",
-        "name_en": "Restoran Nanpo Kogeki",
+        "name_en": "",
         "address": "77, Jln. Kenanga 29/11, Bandar Indahpura, 81000 Kulai, Johor Darul Ta'zim",
         "phone": "011-1123 6431",
         "category": [
@@ -17924,17 +18017,18 @@ export const initialRestaurants = [
         "isVIP": false,
         "priority": 0,
         "dietaryOption": null,
-        "slug": "restoran-nanpo-kogeki"
+        "slug": "restoran-nanpo-kogeki",
+        "opening_hours": "Monday: 10am - 10pm\nTuesday: 10am - 10pm\nWednesday: 10am - 10pm\nThursday: 10am - 10pm\nFriday: 10am - 10pm\nSaturday: 10am - 10pm\nSunday: 10am - 10pm"
     },
     {
         "id": 434,
         "fb_post_link": "",
         "area": "Indahpura",
-        "name": "RESTORAN BAK KUT TEH GU FANG",
-        "name_en": "RESTORAN BAK KUT TEH GU FANG",
+        "name": "古方瓦煲肉骨茶",
+        "name_en": "Restoran Bak Kut Teh Gu Fang",
         "name_zh": "古方瓦煲肉骨茶",
         "address": "76, Jln. Kenanga 29/11, Bandar Indahpura, 81000 Kulai, Johor Darul Ta'zim",
-        "opening_hours": "10am–9pm (Mon Closed)",
+        "opening_hours": "Monday: Closed\nTuesday: 10am - 9pm\nWednesday: 10am - 9pm\nThursday: 10am - 9pm\nFriday: 10am - 9pm\nSaturday: 10am - 9pm\nSunday: 10am - 9pm",
         "phone": "011-3963 3391",
         "category": [
             "饭类"
@@ -17966,9 +18060,9 @@ export const initialRestaurants = [
         "fb_post_link": "",
         "area": "Bandar Putra",
         "name": "Nasi Gulai Isteri",
-        "name_en": "Nasi Gulai Isteri",
+        "name_en": "",
         "address": "4915, Jalan Merbau 12, Bandar Putra Kulai, 81000 Kulai, Johor Darul Ta'zim",
-        "opening_hours": "11am–3pm (Fri Closed)",
+        "opening_hours": "Monday: 11am - 3pm\nTuesday: 11am - 3pm\nWednesday: 11am - 3pm\nThursday: 11am - 3pm\nFriday: Closed\nSaturday: 11am - 3pm\nSunday: 11am - 3pm",
         "phone": "016-217 0646",
         "category": [
             "饭类",
@@ -18002,7 +18096,7 @@ export const initialRestaurants = [
         "fb_post_link": "",
         "area": "Indahpura",
         "name": "Good Friend Pastry",
-        "name_en": "Good Friend Pastry",
+        "name_en": "",
         "name_zh": "好朋友烘焙坊",
         "address": "312, Jalan Kenanga 29/9, Bandar Indahpura, 81000 Kulai, Johor Darul Ta'zim",
         "phone": "07-663 2889",
@@ -18030,17 +18124,18 @@ export const initialRestaurants = [
         "isVIP": false,
         "priority": 0,
         "dietaryOption": null,
-        "slug": "good-friend-pastry"
+        "slug": "good-friend-pastry",
+        "opening_hours": "Monday: Closed\nTuesday: 1pm - 10pm\nWednesday: 1pm - 10pm\nThursday: 1pm - 10pm\nFriday: 1pm - 10pm\nSaturday: 1pm - 10pm\nSunday: 1pm - 10pm"
     },
     {
         "id": 437,
         "fb_post_link": "",
         "area": "Indahpura",
-        "name": "Restoran Da Cheng Lok Lok",
+        "name": "大成渌渌",
         "name_en": "Restoran Da Cheng Lok Lok",
         "name_zh": "大成渌渌",
         "address": "253, Jln Kenanga 29/8, Indahpura, 81000 Kulai, Johor",
-        "opening_hours": "11am–11pm",
+        "opening_hours": "Monday: 7:30pm - 1am\nTuesday: 7:30pm - 1am\nWednesday: 7:30pm - 1am\nThursday: 7:30pm - 1am\nFriday: 7:30pm - 1am\nSaturday: 7:30pm - 1am\nSunday: 7:30pm - 1am",
         "phone": "011-1127 6716",
         "category": [
             "火锅烧烤"
@@ -18072,7 +18167,7 @@ export const initialRestaurants = [
         "fb_post_link": "",
         "area": "Indahpura",
         "name": "Restoran Indah Tomyam",
-        "name_en": "Restoran Indah Tomyam",
+        "name_en": "",
         "address": "117, Jln Kiambang 14, Bandar Indahpura, 81000 Kulai, Johor Darul Ta'zim",
         "phone": "011-5659 3832",
         "website_link": "https://www.foodpanda.my/restaurant/cgs2/restoran-indah-tomyam-seafood-indahpura",
@@ -18101,17 +18196,18 @@ export const initialRestaurants = [
         "isVIP": false,
         "priority": 0,
         "dietaryOption": null,
-        "slug": "restoran-indah-tomyam"
+        "slug": "restoran-indah-tomyam",
+        "opening_hours": "Monday: 4:50am - 3am\nTuesday: 4:50am - 3am\nWednesday: 4:50am - 3am\nThursday: 4:50am - 3am\nFriday: 4:50am - 3am\nSaturday: 4:50am - 3am\nSunday: 4:50am - 3am"
     },
     {
         "id": 439,
         "fb_post_link": "",
         "area": "Indahpura",
-        "name": "Jane Deer Dessert",
+        "name": "简鹿糖水铺",
         "name_en": "Jane Deer Dessert",
         "name_zh": "简鹿糖水铺",
         "address": "153, Jalan Kiambang 13, Bandar Indahpura, 81000 Kulai, Johor Darul Ta'zim",
-        "opening_hours": "11:30am–10:30pm",
+        "opening_hours": "Monday: 11:30am - 10:30pm\nTuesday: 11:30am - 10:30pm\nWednesday: 11:30am - 10:30pm\nThursday: 11:30am - 10:30pm\nFriday: 11:30am - 10:30pm\nSaturday: 11:30am - 10:30pm\nSunday: 11:30am - 10:30pm",
         "phone": "017-762 2288",
         "category": [
             "蛋糕甜点"
@@ -18146,7 +18242,7 @@ export const initialRestaurants = [
         "intro_zh": "走过半个世纪的沙令大眾咖啡秉着一份传承的使命，坚持采用优质的咖啡豆和传统的炭炒咖啡方式以保留着咖啡独特的香气与味道。严谨把关把品质最好的传统炭咖啡继续传承",
         "intro_en": "With a history spanning half a century, Restoran Tai Chiang remains committed to its heritage, using premium beans and traditional charcoal roasting to preserve its unique aroma. We uphold strict standards to pass down the finest traditional charcoal coffee to every generation",
         "address": "7, Jalan Jelawat, Taman Sri Saleng, 81400 Kulai, Johor Darul Ta'zim",
-        "opening_hours": "7am–2pm",
+        "opening_hours": "Monday: 7am - 2pm\nTuesday: Closed\nWednesday: 7am - 2pm\nThursday: 7am - 2pm\nFriday: 7am - 2pm\nSaturday: 7am - 2pm\nSunday: 7am - 2pm",
         "category": [
             "咖啡店/美食阁"
         ],
@@ -18186,11 +18282,11 @@ export const initialRestaurants = [
         "id": 441,
         "fb_post_link": "",
         "name": "Cawan Mas Coffee",
-        "name_en": "Cawan Mas Coffee",
+        "name_en": "",
         "intro_zh": "",
         "intro_en": "",
         "address": "Lot 153 TJ Mart, Taman Pancasila, 81400 Kulai Johor",
-        "opening_hours": "",
+        "opening_hours": "Monday: 8:30am - 10pm\nTuesday: 8:30am - 10pm\nWednesday: 8:30am - 10pm\nThursday: 8:30am - 10pm\nFriday: 8:30am - 10pm\nSaturday: 8:30am - 10pm\nSunday: 8:30am - 10pm",
         "category": [
             "Cafe"
         ],
@@ -18229,11 +18325,11 @@ export const initialRestaurants = [
         "id": 442,
         "fb_post_link": "",
         "name": "TJ Food Court",
-        "name_en": "TJ Food Court",
+        "name_en": "",
         "intro_zh": "",
         "intro_en": "",
         "address": "12, Jalan Kampung Tang Ho, Taman Pancasila, 81400 Kulai, Johor Darul Ta'zim",
-        "opening_hours": "7:30am–11:30pm",
+        "opening_hours": "Monday: 7:30am - 11:30pm\nTuesday: 7:30am - 11:30pm\nWednesday: 7:30am - 11:30pm\nThursday: 7:30am - 11:30pm\nFriday: 7:30am - 11:30pm\nSaturday: 7:30am - 11:30pm\nSunday: 7:30am - 11:30pm",
         "category": [
             "咖啡店/美食阁"
         ],
@@ -18272,16 +18368,17 @@ export const initialRestaurants = [
         "id": 443,
         "fb_post_link": "",
         "name": "Krabby Planet Steamboat & Grill",
-        "name_en": "Krabby Planet Steamboat & Grill",
+        "name_en": "",
         "intro_zh": "",
         "intro_en": "",
         "address": "Tjmart Lot CN, Lot 5035, Jalan Air Hitam, Taman Pancasila, 81400 Senai, Johor",
-        "opening_hours": "5pm–11:45pm",
+        "opening_hours": "Monday: 5pm - 11:45pm\nTuesday: 5pm - 11:45pm\nWednesday: 5pm - 11:45pm\nThursday: 5pm - 11:45pm\nFriday: 5pm - 11:45pm\nSaturday: 5pm - 11:45pm\nSunday: 5pm - 11:45pm",
         "category": [
             "马来与印度风味"
         ],
         "categories": [
-            "马来与印度风味"
+            "马来与印度风味",
+            "火锅烧烤"
         ],
         "rating": 0,
         "image": "https://placehold.co/600x400/1e1e1e/FFF?text=Krabby+Planet",
@@ -18320,7 +18417,7 @@ export const initialRestaurants = [
         "intro_zh": "",
         "intro_en": "",
         "address": "46A &, 47A, Jalan Cermai 7, Taman Mesra, 81400 Senai, Johor Darul Ta'zim",
-        "opening_hours": "7am–5pm",
+        "opening_hours": "Monday: 7am - 5pm\nTuesday: 7am - 5pm\nWednesday: 7am - 5pm\nThursday: 7am - 5pm\nFriday: 7am - 5pm\nSaturday: 7am - 5pm\nSunday: 7am - 5pm",
         "category": [
             "咖啡店/美食阁"
         ],
@@ -18397,12 +18494,12 @@ export const initialRestaurants = [
     {
         "id": 446,
         "fb_post_link": "",
-        "name": "興興燒臘",
+        "name": "兴兴烧腊",
         "name_en": "Restoran Heng Heng Chicken Rice",
         "intro_zh": "",
         "intro_en": "",
         "address": "40, Jalan Cermai 7, Taman Mesra, 81400 Kulai, Johor Darul Ta'zim",
-        "opening_hours": "",
+        "opening_hours": "Monday: 8am - 5pm\nTuesday: 8am - 5pm\nWednesday: 8am - 5pm\nThursday: 8am - 5pm\nFriday: 8am - 5pm\nSaturday: 8am - 5pm\nSunday: 8am - 5pm",
         "category": [
             "饭类"
         ],
@@ -18442,11 +18539,11 @@ export const initialRestaurants = [
         "id": 447,
         "fb_post_link": "",
         "name": "Restoran ABMH Satu",
-        "name_en": "Restoran ABMH Satu",
+        "name_en": "",
         "intro_zh": "",
         "intro_en": "",
         "address": "Jalan Cermai 7, Taman Mesra, 81400 Senai, Johor Darul Ta'zim",
-        "opening_hours": "",
+        "opening_hours": "Monday: 12am - 12am\nTuesday: 12am - 12am\nWednesday: 12am - 12am\nThursday: 12am - 12am\nFriday: 12am - 12am\nSaturday: 12am - 12am\nSunday: 12am - 12am",
         "category": [
             "马来与印度风味"
         ],
@@ -18489,7 +18586,7 @@ export const initialRestaurants = [
         "intro_zh": "",
         "intro_en": "",
         "address": "19, Jalan Cermai 2, Saleng, 81400 Kulai, Johor Darul Ta'zim",
-        "opening_hours": "",
+        "opening_hours": "Monday: Closed\nTuesday: 8am - 4pm\nWednesday: 8am - 4pm\nThursday: 8am - 4pm\nFriday: 8am - 4pm\nSaturday: 8am - 4pm\nSunday: 8am - 4pm",
         "category": [
             "粉类"
         ],
@@ -18532,7 +18629,7 @@ export const initialRestaurants = [
         "intro_zh": "",
         "intro_en": "",
         "address": "30, Jalan Cermai 2, Taman Mesra, 81400 Senai, Johor Darul Ta'zim",
-        "opening_hours": "",
+        "opening_hours": "Monday: 6:30am - 6:30pm\nTuesday: 6:30am - 6:30pm\nWednesday: 6:30am - 6:30pm\nThursday: 6:30am - 6:30pm\nFriday: 6:30am - 6:30pm\nSaturday: 6:30am - 6:30pm\nSunday: Closed",
         "category": [
             "咖啡店/美食阁"
         ],
@@ -18575,7 +18672,7 @@ export const initialRestaurants = [
         "intro_zh": "",
         "intro_en": "",
         "address": "1, Jalan Sutra 1, Taman Sutera Utama81400 Kulai, Johor Darul Ta'zim",
-        "opening_hours": "5:30am–3pm\nMonday: Closed",
+        "opening_hours": "Monday: Closed\nTuesday: 5:30am - 3pm\nWednesday: 5:30am - 3pm\nThursday: 5:30am - 3pm\nFriday: 5:30am - 3pm\nSaturday: 5:30am - 3pm\nSunday: 5:30am - 3pm",
         "category": [
             "咖啡店/美食阁"
         ],
@@ -18614,11 +18711,11 @@ export const initialRestaurants = [
         "id": 451,
         "fb_post_link": "",
         "name": "Warong Crew Taman Muhibbah",
-        "name_en": "Warong Crew Taman Muhibbah",
+        "name_en": "",
         "intro_zh": "",
         "intro_en": "",
         "address": "No.1136, Jalan jambu batu 6, Taman muhibbah, Saleng, 81400 Senai, Johor",
-        "opening_hours": "Tuesday: Closed\nWednesday: Closed",
+        "opening_hours": "Monday: 12pm - 11pm\nTuesday: Closed\nWednesday: 12pm - 11pm\nThursday: 12pm - 11pm\nFriday: 12pm - 11pm\nSaturday: 12pm - 11pm\nSunday: 12pm - 11pm",
         "category": [
             "马来与印度风味"
         ],
