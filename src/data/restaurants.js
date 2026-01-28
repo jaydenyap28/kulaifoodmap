@@ -204,8 +204,8 @@ export const initialRestaurants = [
         "name_en": "Restaurant Hainan Hojiak Corner",
         "address": "548, Jalan Kenanga 29/18, Bandar Indahpura, 81000 Kulai, Johor",
         "opening_hours": "Monday: 6am - 3pm\nTuesday: 6am - 3pm\nWednesday: Closed\nThursday: 6am - 3pm\nFriday: 6am - 3pm\nSaturday: 6am - 3pm\nSunday: 6am - 3pm",
-        "intro_zh": "Indahpura 的实力派面馆。这里不卖海南鸡饭，招牌是海南牛肉粉与猪肉粉。牛肉片烫得非常滑嫩，汤头清甜。许多本地人认为这里的味道足以媲美老字号名店。",
-        "intro_en": "A hidden gem in Indahpura. Note that they do not serve Chicken Rice! The stars here are the Hainanese Beef Noodles and Pork Noodles. The meat is incredibly tender and the soup is sweet and flavorful. Highly rated by locals as a top-tier noodle spot.",
+        "intro_zh": "林仙真好吃海南粉 是古来优美城（Indahpura）极具人气的一家特色面馆。这里主打的是柔佛州内较为少见的传统海南风味粉面，凭借纯正的汤头和新鲜的食材，迅速成为当地饕客的聚餐首选。",
+        "intro_en": "Restaurant Hainan Hojiak Corner is a popular noodle house in Indahpura, Kulai, specializing in authentic Hainanese-style noodles, a unique find in the local food scene. The restaurant has earned a solid reputation for its flavorful broths and high-quality ingredients, making it a go-to spot for a hearty breakfast or lunch.",
         "category": [
             "粉类"
         ],
