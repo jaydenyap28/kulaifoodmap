@@ -16998,4 +16998,400 @@ export const initialRestaurants = [
         "halalStatus": "non_halal",
         "dietaryOption": null
     }
+,
+    {
+        "id": 428,
+        "area": "Indahpura",
+        "name": "L&L Cafe House",
+        "name_en": "L&L Cafe House",
+        "name_zh": "L&L西餐酿品屋",
+        "address": "597, Jalan Kenanga 29/19, Bandar Indahpura, 81000 Kulai, Johor Darul Ta'zim",
+        "opening_hours": "10am–9:30pm",
+        "phone": "017-582 2653",
+        "website_link": "https://www.facebook.com/profile.php?id=100054495623153",
+        "category": [
+            "Cafe"
+        ],
+        "categories": [
+            "Cafe"
+        ],
+        "halalStatus": "non_halal",
+        "rating": 0,
+        "image": "",
+        "subStalls": [],
+        "price_range": "RM 10-20",
+        "tags": [
+            "酿品",
+            "西餐"
+        ],
+        "location": {
+            "lat": null,
+            "lng": null
+        },
+        "manualStatus": "auto",
+        "subscriptionLevel": 0,
+        "isVIP": false,
+        "priority": 0,
+        "dietaryOption": null
+    },
+    {
+        "id": 429,
+        "area": "Indahpura",
+        "name": "Ben Shan Xian Restaurant",
+        "name_en": "Ben Shan Xian Restaurant",
+        "name_zh": "犇羴鱻餐馆",
+        "address": "604A, Jalan Kenanga 29/19, Bandar Indahpura, 81000 Kulai, Johor Darul Ta'zim",
+        "opening_hours": "8am–12am",
+        "phone": "019-365 5512",
+        "category": [
+            "中国餐"
+        ],
+        "categories": [
+            "中国餐"
+        ],
+        "halalStatus": "non_halal",
+        "rating": 0,
+        "image": "",
+        "subStalls": [],
+        "price_range": "RM 10-20",
+        "tags": [
+            "中国菜"
+        ],
+        "location": {
+            "lat": null,
+            "lng": null
+        },
+        "manualStatus": "auto",
+        "subscriptionLevel": 0,
+        "isVIP": false,
+        "priority": 0,
+        "dietaryOption": null
+    },
+    {
+        "id": 430,
+        "area": "Indahpura",
+        "name": "MOMENTS BISTRO & CAFE",
+        "name_en": "MOMENTS BISTRO & CAFE",
+        "address": "603, Jalan Kenanga 29/19, Bandar Indahpura, 81000 Kulai, Johor Darul Ta'zim",
+        "opening_hours": "5pm–3am (Mon Closed)",
+        "phone": "07-663 1311",
+        "website_link": "https://www.facebook.com/momentsbistro",
+        "category": [
+            "酒吧"
+        ],
+        "categories": [
+            "酒吧"
+        ],
+        "halalStatus": "non_halal",
+        "rating": 0,
+        "image": "",
+        "subStalls": [],
+        "price_range": "RM 20-40",
+        "tags": [
+            "Bistro",
+            "Late Night"
+        ],
+        "location": {
+            "lat": null,
+            "lng": null
+        },
+        "manualStatus": "auto",
+        "subscriptionLevel": 0,
+        "isVIP": false,
+        "priority": 0,
+        "dietaryOption": null
+    },
+    {
+        "id": 431,
+        "area": "Indahpura",
+        "name": "Restoran Seafood Noodles & Pot",
+        "name_en": "Restoran Seafood Noodles & Pot",
+        "name_zh": "海鲜兄弟 海鲜粉•锅",
+        "address": "",
+        "location": {
+            "lat": 1.64244,
+            "lng": 103.615893
+        },
+        "category": [
+            "面类",
+            "饭类"
+        ],
+        "categories": [
+            "面类",
+            "饭类"
+        ],
+        "halalStatus": "non_halal",
+        "rating": 0,
+        "image": "",
+        "subStalls": [],
+        "price_range": "RM 10-20",
+        "tags": [
+            "海鲜粉",
+            "锅物"
+        ],
+        "manualStatus": "auto",
+        "subscriptionLevel": 0,
+        "isVIP": false,
+        "priority": 0,
+        "dietaryOption": null
+    },
+    {
+        "id": 432,
+        "area": "Indahpura",
+        "name": "Lingo Bakery",
+        "name_en": "Lingo Bakery",
+        "address": "Jalan Kenanga 29/9, Bandar Indahpura, 81000 Kulai, Johor Darul Ta'zim",
+        "category": [
+            "蛋糕甜点"
+        ],
+        "categories": [
+            "蛋糕甜点"
+        ],
+        "halalStatus": "pork_free",
+        "rating": 0,
+        "image": "",
+        "subStalls": [],
+        "price_range": "RM 10-20",
+        "tags": [
+            "Bakery"
+        ],
+        "location": {
+            "lat": null,
+            "lng": null
+        },
+        "manualStatus": "auto",
+        "subscriptionLevel": 0,
+        "isVIP": false,
+        "priority": 0,
+        "dietaryOption": null
+    },
+    {
+        "id": 433,
+        "area": "Indahpura",
+        "name": "Restoran Nanpo Kogeki",
+        "name_en": "Restoran Nanpo Kogeki",
+        "address": "77, Jln. Kenanga 29/11, Bandar Indahpura, 81000 Kulai, Johor Darul Ta'zim",
+        "phone": "011-1123 6431",
+        "category": [
+            "马来餐"
+        ],
+        "categories": [
+            "马来餐"
+        ],
+        "halalStatus": "muslim_owned",
+        "rating": 0,
+        "image": "",
+        "subStalls": [],
+        "price_range": "RM 10-20",
+        "tags": [],
+        "location": {
+            "lat": null,
+            "lng": null
+        },
+        "manualStatus": "auto",
+        "subscriptionLevel": 0,
+        "isVIP": false,
+        "priority": 0,
+        "dietaryOption": null
+    },
+    {
+        "id": 434,
+        "area": "Indahpura",
+        "name": "RESTORAN BAK KUT TEH GU FANG",
+        "name_en": "RESTORAN BAK KUT TEH GU FANG",
+        "name_zh": "古方瓦煲肉骨茶",
+        "address": "76, Jln. Kenanga 29/11, Bandar Indahpura, 81000 Kulai, Johor Darul Ta'zim",
+        "opening_hours": "10am–9pm (Mon Closed)",
+        "phone": "011-3963 3391",
+        "category": [
+            "饭类"
+        ],
+        "categories": [
+            "饭类"
+        ],
+        "halalStatus": "non_halal",
+        "rating": 0,
+        "image": "",
+        "subStalls": [],
+        "price_range": "RM 15-25",
+        "tags": [
+            "肉骨茶"
+        ],
+        "location": {
+            "lat": null,
+            "lng": null
+        },
+        "manualStatus": "auto",
+        "subscriptionLevel": 0,
+        "isVIP": false,
+        "priority": 0,
+        "dietaryOption": null
+    },
+    {
+        "id": 435,
+        "area": "Bandar Putra",
+        "name": "Nasi Gulai Isteri",
+        "name_en": "Nasi Gulai Isteri",
+        "address": "4915, Jalan Merbau 12, Bandar Putra Kulai, 81000 Kulai, Johor Darul Ta'zim",
+        "opening_hours": "11am–3pm (Fri Closed)",
+        "phone": "016-217 0646",
+        "category": [
+            "饭类",
+            "马来餐"
+        ],
+        "categories": [
+            "饭类",
+            "马来餐"
+        ],
+        "halalStatus": "muslim_owned",
+        "rating": 0,
+        "image": "",
+        "subStalls": [],
+        "price_range": "RM 10-20",
+        "tags": [
+            "Gulai"
+        ],
+        "location": {
+            "lat": null,
+            "lng": null
+        },
+        "manualStatus": "auto",
+        "subscriptionLevel": 0,
+        "isVIP": false,
+        "priority": 0,
+        "dietaryOption": null
+    },
+    {
+        "id": 436,
+        "area": "Indahpura",
+        "name": "Good Friend Pastry",
+        "name_en": "Good Friend Pastry",
+        "name_zh": "好朋友烘焙坊",
+        "address": "312, Jalan Kenanga 29/9, Bandar Indahpura, 81000 Kulai, Johor Darul Ta'zim",
+        "phone": "07-663 2889",
+        "website_link": "https://goodfriendpastry.orderla.my/home-bakery-kulai",
+        "category": [
+            "蛋糕甜点"
+        ],
+        "categories": [
+            "蛋糕甜点"
+        ],
+        "halalStatus": "pork_free",
+        "rating": 0,
+        "image": "",
+        "subStalls": [],
+        "price_range": "RM 10-30",
+        "tags": [
+            "Bakery"
+        ],
+        "location": {
+            "lat": null,
+            "lng": null
+        },
+        "manualStatus": "auto",
+        "subscriptionLevel": 0,
+        "isVIP": false,
+        "priority": 0,
+        "dietaryOption": null
+    },
+    {
+        "id": 437,
+        "area": "Indahpura",
+        "name": "Restoran Da Cheng Lok Lok",
+        "name_en": "Restoran Da Cheng Lok Lok",
+        "name_zh": "大成渌渌",
+        "address": "253, Jln Kenanga 29/8, Indahpura, 81000 Kulai, Johor",
+        "opening_hours": "11am–11pm",
+        "phone": "011-1127 6716",
+        "category": [
+            "火锅烧烤"
+        ],
+        "categories": [
+            "火锅烧烤"
+        ],
+        "halalStatus": "non_halal",
+        "rating": 0,
+        "image": "",
+        "subStalls": [],
+        "price_range": "RM 1-2 (Per stick)",
+        "tags": [
+            "Lok Lok"
+        ],
+        "location": {
+            "lat": null,
+            "lng": null
+        },
+        "manualStatus": "auto",
+        "subscriptionLevel": 0,
+        "isVIP": false,
+        "priority": 0,
+        "dietaryOption": null
+    },
+    {
+        "id": 438,
+        "area": "Indahpura",
+        "name": "Restoran Indah Tomyam",
+        "name_en": "Restoran Indah Tomyam",
+        "address": "117, Jln Kiambang 14, Bandar Indahpura, 81000 Kulai, Johor Darul Ta'zim",
+        "phone": "011-5659 3832",
+        "website_link": "https://www.foodpanda.my/restaurant/cgs2/restoran-indah-tomyam-seafood-indahpura",
+        "category": [
+            "泰国餐",
+            "马来餐"
+        ],
+        "categories": [
+            "泰国餐",
+            "马来餐"
+        ],
+        "halalStatus": "muslim_owned",
+        "rating": 0,
+        "image": "",
+        "subStalls": [],
+        "price_range": "RM 10-20",
+        "tags": [
+            "Tomyam"
+        ],
+        "location": {
+            "lat": null,
+            "lng": null
+        },
+        "manualStatus": "auto",
+        "subscriptionLevel": 0,
+        "isVIP": false,
+        "priority": 0,
+        "dietaryOption": null
+    },
+    {
+        "id": 439,
+        "area": "Indahpura",
+        "name": "Jane Deer Dessert",
+        "name_en": "Jane Deer Dessert",
+        "name_zh": "简鹿糖水铺",
+        "address": "153, Jalan Kiambang 13, Bandar Indahpura, 81000 Kulai, Johor Darul Ta'zim",
+        "opening_hours": "11:30am–10:30pm",
+        "phone": "017-762 2288",
+        "category": [
+            "蛋糕甜点"
+        ],
+        "categories": [
+            "蛋糕甜点"
+        ],
+        "halalStatus": "pork_free",
+        "rating": 0,
+        "image": "",
+        "subStalls": [],
+        "price_range": "RM 10-20",
+        "tags": [
+            "糖水"
+        ],
+        "location": {
+            "lat": null,
+            "lng": null
+        },
+        "manualStatus": "auto",
+        "subscriptionLevel": 0,
+        "isVIP": false,
+        "priority": 0,
+        "dietaryOption": null
+    }
 ];
