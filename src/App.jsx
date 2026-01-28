@@ -23,7 +23,7 @@ const DEFAULT_HERO_BG = "https://i.ibb.co/7J5qjZtv/image.png";
 
 // Version control for data structure changes
 // Increment this when you make breaking changes to data structure to force a reset
-const DATA_VERSION = 'v40';
+const DATA_VERSION = 'v41';
 
 function App() {
   const { t, i18n } = useTranslation();
@@ -325,7 +325,7 @@ function App() {
     let processedCats = new Set();
     
     // Define deprecated categories to filter out
-    const deprecatedCats = new Set(["Pizza", "炸鸡", "中餐", "无招牌美食", "马来餐", "印度档", "甜品饮料", "面食", "面类"]);
+    const deprecatedCats = new Set(["Pizza", "炸鸡", "中餐", "无招牌美食", "马来餐", "印度档", "甜品饮料", "面食", "面类", "咖啡店"]);
 
     // 1. Try to load from LocalStorage FIRST (Preserve Order)
     try {
