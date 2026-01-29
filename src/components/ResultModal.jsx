@@ -1,6 +1,6 @@
-import React, { useState, useRef } from 'react';
+import React, { useState, useRef, useEffect } from 'react';
 import { createPortal } from 'react-dom';
-import { X, Star, MapPin, ExternalLink, Save, Clock, Info, UtensilsCrossed, Upload, BookOpen, Globe, Bike, Navigation, Leaf, Sprout, User, MessageCircle, Send } from 'lucide-react';
+import { X, Star, MapPin, ExternalLink, Save, Clock, Info, UtensilsCrossed, Upload, BookOpen, Globe, Bike, Navigation, Leaf, Sprout, User, MessageCircle, Send, ChevronLeft, ChevronRight, Search } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { useTranslation } from 'react-i18next';
 import ReactGA from "react-ga4";
@@ -1099,37 +1099,38 @@ Tuesday: Closed
                     </div>
                   )}
 
-                  {/* Sub Stalls Display (For Kopitiams) */}
+                  {/* Sub Stalls Display (For Kopitiams) - Lightbox Enhanced */}
                   {restaurant.subStalls && Array.isArray(restaurant.subStalls) && restaurant.subStalls.length > 0 && (
                     <div className="bg-[#2d2d2d] p-4 rounded-xl border border-gray-700">
                         <p className="text-xs text-gray-400 font-bold uppercase tracking-wider mb-2 flex items-center gap-2">
                             <UtensilsCrossed size={14} className="text-yellow-500" />
                             {t('modal.stalls', '咖啡店/美食阁档口 (Stalls)')}
                         </p>
-                        <div className="grid grid-cols-2 gap-3">
+                        <div className="grid grid-cols-2 sm:grid-cols-3 gap-3">
                             {restaurant.subStalls.map((stall, idx) => {
                                 if (!stall) return null;
                                 const stallName = typeof stall === 'object' ? stall.name : stall;
                                 const stallImage = typeof stall === 'object' ? stall.image : null;
 
                                 return (
-                                <div 
+                                <motion.div 
                                     key={idx} 
-                                    className="bg-[#1a1a1a] rounded-lg border border-gray-600 overflow-hidden flex flex-col group/stall"
-                                    onDoubleClick={() => stallImage && setZoomedImage(stallImage)}
-                                    title={stallImage ? "双击放大查看菜单 (Double click to zoom)" : ""}
+                                    whileHover={{ scale: 1.02 }}
+                                    whileTap={{ scale: 0.98 }}
+                                    className="bg-[#1a1a1a] rounded-lg border border-gray-600 overflow-hidden flex flex-col group/stall cursor-pointer relative"
+                                    onClick={() => stallImage && setSelectedStallIndex(idx)}
                                 >
-                                    <div className="h-24 w-full bg-gray-800 relative cursor-pointer">
+                                    <div className="h-24 w-full bg-gray-800 relative">
                                         {stallImage ? (
                                             <>
                                                 <ImageWithFallback 
                                                     src={stallImage} 
                                                     alt={stallName}
-                                                    className="w-full h-full object-cover transition-transform duration-300 group-hover/stall:scale-105"
+                                                    className="w-full h-full object-cover transition-transform duration-500 group-hover/stall:scale-110"
                                                 />
                                                 <div className="absolute inset-0 bg-black/0 group-hover/stall:bg-black/20 transition-colors flex items-center justify-center">
-                                                    <span className="opacity-0 group-hover/stall:opacity-100 text-white text-[10px] bg-black/60 px-2 py-1 rounded-full backdrop-blur-sm transition-opacity">
-                                                        双击放大 (Double Click)
+                                                    <span className="opacity-0 group-hover/stall:opacity-100 text-white text-[10px] bg-black/60 px-2 py-1 rounded-full backdrop-blur-sm transition-opacity flex items-center gap-1">
+                                                        <Search size={10} /> 查看 (View)
                                                     </span>
                                                 </div>
                                             </>
@@ -1139,10 +1140,10 @@ Tuesday: Closed
                                             </div>
                                         )}
                                     </div>
-                                    <div className="p-2">
-                                        <span className="text-gray-200 text-sm font-bold block truncate" title={stallName}>{stallName}</span>
+                                    <div className="p-2 bg-gradient-to-t from-black/80 to-transparent absolute bottom-0 w-full pt-6">
+                                        <span className="text-white text-xs font-bold block truncate drop-shadow-md" title={stallName}>{stallName}</span>
                                     </div>
-                                </div>
+                                </motion.div>
                                 );
                             })}
                         </div>
