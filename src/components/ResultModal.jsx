@@ -49,8 +49,8 @@ const ResultModal = ({ restaurant, onClose, isAdmin, onUpdateRestaurant, categor
     closedDays: []
   });
 
-  // State for zoomed image
-  const [zoomedImage, setZoomedImage] = useState(null);
+  // State for Lightbox (Sub-stalls)
+  const [selectedStallIndex, setSelectedStallIndex] = useState(null);
   
   // State for Halal Dropdown
   const [showHalalDropdown, setShowHalalDropdown] = useState(false);
@@ -1214,37 +1214,114 @@ Tuesday: Closed
         </motion.div>
       </motion.div>
 
-      {/* Zoomed Image Overlay */}
-      {zoomedImage && (
-        <motion.div 
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            exit={{ opacity: 0 }}
-            className="fixed inset-0 z-[60] flex items-center justify-center bg-black/90 p-4 backdrop-blur-sm"
-            onClick={() => setZoomedImage(null)}
-        >
-            <div className="relative max-w-full max-h-full flex flex-col items-center">
-                <img 
-                    src={zoomedImage} 
-                    alt="Zoomed Stall" 
-                    className="max-w-full max-h-[85vh] object-contain rounded-lg shadow-2xl border border-gray-700"
-                    onClick={(e) => e.stopPropagation()} // Prevent closing when clicking image
-                />
-                <p className="text-white/70 text-sm mt-4 font-medium bg-black/50 px-4 py-2 rounded-full backdrop-blur-md">
-                    点击任意处关闭 (Click anywhere to close)
-                </p>
-                <button 
-                    onClick={() => setZoomedImage(null)}
-                    className="absolute top-[-40px] right-0 md:top-4 md:right-4 bg-white/10 hover:bg-white/20 text-white p-2 rounded-full transition backdrop-blur-md"
-                >
-                    <X size={24} />
-                </button>
-            </div>
-        </motion.div>
+      {/* Lightbox Viewer */}
+      {selectedStallIndex !== null && restaurant.subStalls && (
+        <LightboxViewer 
+            stalls={restaurant.subStalls}
+            initialIndex={selectedStallIndex}
+            onClose={() => setSelectedStallIndex(null)}
+        />
       )}
     </AnimatePresence>,
     document.body
   );
+};
+
+const LightboxViewer = ({ stalls, initialIndex, onClose }) => {
+    const [currentIndex, setCurrentIndex] = useState(initialIndex);
+
+    // Keyboard Navigation
+    useEffect(() => {
+        const handleKeyDown = (e) => {
+            if (e.key === 'Escape') onClose();
+            if (e.key === 'ArrowRight') handleNext();
+            if (e.key === 'ArrowLeft') handlePrev();
+        };
+        window.addEventListener('keydown', handleKeyDown);
+        return () => window.removeEventListener('keydown', handleKeyDown);
+    }, [currentIndex]);
+
+    const handleNext = (e) => {
+        e?.stopPropagation();
+        setCurrentIndex((prev) => (prev + 1) % stalls.length);
+    };
+
+    const handlePrev = (e) => {
+        e?.stopPropagation();
+        setCurrentIndex((prev) => (prev - 1 + stalls.length) % stalls.length);
+    };
+
+    const currentStall = stalls[currentIndex];
+    const stallName = typeof currentStall === 'object' ? currentStall.name : currentStall;
+    const stallImage = typeof currentStall === 'object' ? currentStall.image : null;
+
+    return (
+        <motion.div 
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+            className="fixed inset-0 z-[150] flex items-center justify-center bg-black/95 backdrop-blur-md"
+            onClick={onClose}
+        >
+            {/* Close Button */}
+            <button 
+                onClick={onClose}
+                className="absolute top-4 right-4 text-white/70 hover:text-white p-2 z-[160]"
+            >
+                <X size={32} />
+            </button>
+
+            {/* Navigation Arrows */}
+            <button 
+                onClick={handlePrev}
+                className="absolute left-4 top-1/2 -translate-y-1/2 text-white/50 hover:text-white p-4 z-[160] hover:bg-white/10 rounded-full transition"
+            >
+                <ChevronLeft size={48} />
+            </button>
+            <button 
+                onClick={handleNext}
+                className="absolute right-4 top-1/2 -translate-y-1/2 text-white/50 hover:text-white p-4 z-[160] hover:bg-white/10 rounded-full transition"
+            >
+                <ChevronRight size={48} />
+            </button>
+
+            {/* Image Container */}
+            <div 
+                className="flex flex-col items-center max-w-full max-h-screen p-4"
+                onClick={(e) => e.stopPropagation()}
+            >
+                <div className="relative">
+                    {stallImage ? (
+                        <motion.img 
+                            key={currentIndex}
+                            initial={{ opacity: 0, x: 20 }}
+                            animate={{ opacity: 1, x: 0 }}
+                            src={stallImage} 
+                            alt={stallName} 
+                            className="max-h-[80vh] max-w-full object-contain rounded-lg shadow-2xl"
+                        />
+                    ) : (
+                        <div className="w-[80vw] h-[60vh] flex items-center justify-center text-gray-500 bg-gray-900 rounded-lg">
+                            <UtensilsCrossed size={64} />
+                            <span className="ml-4">无图片 (No Image)</span>
+                        </div>
+                    )}
+                </div>
+                
+                <motion.div 
+                    key={`text-${currentIndex}`}
+                    initial={{ opacity: 0, y: 10 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    className="mt-6 text-center"
+                >
+                    <h3 className="text-white text-2xl font-bold tracking-wide">{stallName}</h3>
+                    <p className="text-gray-400 text-sm mt-1">
+                        {currentIndex + 1} / {stalls.length}
+                    </p>
+                </motion.div>
+            </div>
+        </motion.div>
+    );
 };
 
 export default ResultModal;
