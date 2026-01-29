@@ -19169,7 +19169,18 @@ export const initialRestaurants = [
         "subscriptionLevel": 0,
         "manualStatus": "auto",
         "branches": [],
-        "subStalls": [],
+        "subStalls": [
+            { "name": "", "image": "https://ibb.co/PGHz2q7f" },
+            { "name": "", "image": "https://ibb.co/7xt9nT5V" },
+            { "name": "", "image": "https://ibb.co/4nhHNT6G" },
+            { "name": "", "image": "https://ibb.co/CjmRgfX" },
+            { "name": "", "image": "https://ibb.co/pv2MPRg3" },
+            { "name": "", "image": "https://ibb.co/RpPpNsHx" },
+            { "name": "", "image": "https://ibb.co/NnSPtYLC" },
+            { "name": "", "image": "https://ibb.co/QvVWvrkZ" },
+            { "name": "", "image": "https://ibb.co/zdfRmqN" },
+            { "name": "", "image": "https://ibb.co/NgdZhJ4T" }
+        ],
         "dietaryOption": null,
         "slug": "chuan-yuan-kopitiam",
         "phone": ""
