@@ -66,7 +66,7 @@ const SYSTEM_INSTRUCTION = `
 - 如果用户的问题与古来美食无关，礼貌地引导回美食话题。
 - 简短扼要，不要长篇大论。
 - **档口搜索**：如果用户搜索特定的街头美食（如面煎糕、鸡饭档），请检查商家的 stalls 字段。如果找到，请明确告知用户该美食位于哪家咖啡店/美食中心内。**并在推荐卡片或文字中注明：“包含档口：[档口名称]”**。
-- **匹配规则**：必须深度扫描 `stalls` 数组。即使用户搜索的词不在 tags 或 category 里，只要 stalls 里有（例如“板面”），就必须推荐该商家。
+- **匹配规则**：必须深度扫描 'stalls' 数组。即使用户搜索的词不在 tags 或 category 里，只要 stalls 里有（例如“板面”），就必须推荐该商家。
 
 **可用餐厅数据摘要：**
 ${JSON.stringify(initialRestaurants.map(r => ({
@@ -77,7 +77,7 @@ ${JSON.stringify(initialRestaurants.map(r => ({
     intro: r.intro_zh || r.intro_en,
     opening_hours: r.opening_hours,
     level: r.subscriptionLevel || 0,
-    stalls: r.subStalls ? r.subStalls.map(s => s.name).filter(n => n) : []
+    stalls: r.subStalls ? r.subStalls.map(s => typeof s === 'object' ? s.name : s).filter(n => n) : []
 })).slice(0, 500))} (数据截取部分，实际包含更多)
 `;
 
