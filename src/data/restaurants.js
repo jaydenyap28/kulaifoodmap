@@ -11791,7 +11791,7 @@ export const initialRestaurants = [
         },
         "area": "Indahpura",
         "address": "15, Jalan SME 1, Bandar Indahpura, 81000 Kulai, Johor Darul Ta'zim",
-        "opening_hours": "Monday: 5:30 am–1 am\nTuesday: 5:30 am–1 am\nWednesday: 5:30 am–1 am\nThursday: 5:30 am–1 am\nFriday: 5:30 am–1 am\nSaturday: 5:30 am–1 am\nSunday: 5:30 am–1 am",
+        "opening_hours": "Monday: 5:30am - 1am\nTuesday: 5:30am - 1am\nWednesday: 5:30am - 1am\nThursday: 5:30am - 1am\nFriday: 5:30am - 1am\nSaturday: 5:30am - 1am\nSunday: 5:30am - 1am",
         "whatsappLink": "",
         "intro_zh": "汇集了多种本地美食摊位，从炒果条、云吞面到烧鱼等应有尽有，是品尝多样化小贩美食的好地方。",
         "intro_en": "Gathers a variety of local food stalls, ranging from Char Kway Teow and Wonton Noodles to Grilled Fish, making it a great place to taste diverse hawker food.",
@@ -11821,151 +11821,151 @@ export const initialRestaurants = [
         "branches": [],
         "subStalls": [
             {
-                "name": "",
+                "name": "麻香客麻辣香锅•麻辣烫",
                 "image": "https://i.ibb.co/hRrRVz2Q/IMG-20260127-152544.jpg"
             },
             {
-                "name": "",
+                "name": "Banditlicious Burger & Satay",
                 "image": "https://i.ibb.co/xKdWqtvy/IMG-20260127-152553.jpg"
             },
             {
-                "name": "",
+                "name": "顺顺来烧鱼",
                 "image": "https://i.ibb.co/4ZKS1MTS/IMG-20260127-152601.jpg"
             },
             {
-                "name": "",
+                "name": "国民小吃MR Keropok",
                 "image": "https://i.ibb.co/YF7KDvbL/IMG-20260127-152613.jpg"
             },
             {
-                "name": "",
+                "name": "源香烤鸡翅",
                 "image": "https://i.ibb.co/BKcDBYQ8/IMG-20260127-152622.jpg"
             },
             {
-                "name": "",
+                "name": "21哩八宝冰",
                 "image": "https://i.ibb.co/QFrCgH7k/IMG-20260127-152631.jpg"
             },
             {
-                "name": "",
+                "name": "TakoKing章鱼烧",
                 "image": "https://i.ibb.co/gbvVs7Zj/IMG-20260127-152636.jpg"
             },
             {
-                "name": "",
+                "name": "炸鸡西餐档",
                 "image": "https://i.ibb.co/sJ98SMnG/IMG-20260127-152653.jpg"
             },
             {
-                "name": "",
+                "name": "越南美食",
                 "image": "https://i.ibb.co/Ndqtd50F/IMG-20260127-152659.jpg"
             },
             {
-                "name": "",
+                "name": "肥婆猪杂汤",
                 "image": "https://i.ibb.co/cnFDx2D/IMG-20260127-152704.jpg"
             },
             {
-                "name": "",
+                "name": "泰国餐",
                 "image": "https://i.ibb.co/7txjpBtM/IMG-20260127-152709.jpg"
             },
             {
-                "name": "",
+                "name": "薄饼",
                 "image": "https://i.ibb.co/Fbs3Y6ND/IMG-20260127-152715.jpg"
             },
             {
-                "name": "",
+                "name": "东北饺子",
                 "image": "https://i.ibb.co/Gf5FXLy5/IMG-20260127-152720.jpg"
             },
             {
-                "name": "",
+                "name": "西餐",
                 "image": "https://i.ibb.co/8LtJkYHF/IMG-20260127-152729.jpg"
             },
             {
-                "name": "",
+                "name": "幸运马老板煮炒",
                 "image": "https://i.ibb.co/JwH17y8y/IMG-20260127-152734.jpg"
             },
             {
-                "name": "",
+                "name": "Ayam Penyet",
                 "image": "https://i.ibb.co/6R8CbZf4/IMG-20260127-152741.jpg"
             },
             {
-                "name": "",
+                "name": "啰惹先生MrRojak",
                 "image": "https://i.ibb.co/JFxM74Qb/IMG-20260127-152744.jpg"
             },
             {
-                "name": "",
+                "name": "煲仔饭",
                 "image": "https://i.ibb.co/r2GmsSsW/IMG-20260127-152753.jpg"
             },
             {
-                "name": "",
+                "name": "蒸的可鱼",
                 "image": "https://i.ibb.co/9HQzSf1t/IMG-20260127-152817.jpg"
             },
             {
-                "name": "",
+                "name": "阿公阿嫲肉骨茶",
                 "image": "https://i.ibb.co/zTmdTyXM/IMG-20260127-152829.jpg"
             },
             {
-                "name": "",
+                "name": "23马六甲椰浆饭",
                 "image": "https://i.ibb.co/ks5tTG4z/IMG-20260127-152837.jpg"
             },
             {
-                "name": "",
+                "name": "阿威瓦煲美食",
                 "image": "https://i.ibb.co/VcXtJgP7/IMG-20260127-152854.jpg"
             },
             {
-                "name": "",
+                "name": "福满猪肠粉",
                 "image": "https://i.ibb.co/k28Df7Nj/IMG-20260127-152904.jpg"
             },
             {
-                "name": "",
+                "name": "鸡饭烧腊",
                 "image": "https://i.ibb.co/5gtCYFN6/IMG-20260127-152916.jpg"
             },
             {
-                "name": "",
+                "name": "夫妻档炸年糕",
                 "image": "https://i.ibb.co/Q3r3GVJF/IMG-20260127-152926.jpg"
             },
             {
-                "name": "",
+                "name": "坝罗酿豆腐",
                 "image": "https://i.ibb.co/zTvYPKdH/IMG-20260127-152940.jpg"
             },
             {
-                "name": "",
+                "name": "天王米线",
                 "image": "https://i.ibb.co/2187vrPS/IMG-20260127-152947.jpg"
             },
             {
-                "name": "",
+                "name": "香港洲 宫保田鸡",
                 "image": "https://i.ibb.co/9kZYfSXh/IMG-20260127-152954.jpg"
             },
             {
-                "name": "",
+                "name": "赵沙巴面",
                 "image": "https://i.ibb.co/MD8TMFvD/IMG-20260127-152959.jpg"
             },
             {
-                "name": "",
+                "name": "新加坡炒虾面/炒果条",
                 "image": "https://i.ibb.co/FLk230ZF/IMG-20260127-153023.jpg"
             },
             {
-                "name": "",
+                "name": "阿妹槟城高渊猪肉粉",
                 "image": "https://i.ibb.co/spDjks3r/IMG-20260127-153031.jpg"
             },
             {
-                "name": "",
+                "name": "Roti Canai",
                 "image": "https://i.ibb.co/NdcL6KFT/IMG-20260127-153038.jpg"
             },
             {
-                "name": "",
+                "name": "士乃大众苦瓜汤",
                 "image": "https://i.ibb.co/99zyD6t0/IMG-20260127-153047.jpg"
             },
             {
-                "name": "",
+                "name": "老陈粿条汤",
                 "image": "https://i.ibb.co/JW188NWR/IMG-20260127-153054.jpg"
             },
             {
-                "name": "",
+                "name": "槟城文华福建虾面",
                 "image": "https://i.ibb.co/rGN4dnbd/IMG-20260127-153105.jpg"
             },
             {
-                "name": "",
+                "name": "皇后刘记粿条仔",
                 "image": "https://i.ibb.co/v9Q8jbN/IMG-20260127-153116.jpg"
             },
             {
-                "name": "",
+                "name": "食到家手工辣椒板面",
                 "image": "https://i.ibb.co/qLMMZL30/IMG-20260127-153127.jpg"
             },
             {
@@ -11977,19 +11977,19 @@ export const initialRestaurants = [
                 "image": "https://i.ibb.co/bR5CF4yb/IMG-20260127-153146.jpg"
             },
             {
-                "name": "",
+                "name": "杂菜饭",
                 "image": "https://i.ibb.co/MTDfXJ6/IMG-20260127-153217.jpg"
             },
             {
-                "name": "",
+                "name": "大港老夫子蚝煎",
                 "image": "https://i.ibb.co/TMF8gbby/IMG-20260127-153223.jpg"
             },
             {
-                "name": "",
+                "name": "串味江湖",
                 "image": "https://i.ibb.co/Q7MHmPss/IMG-20260127-153234.jpg"
             },
             {
-                "name": "",
+                "name": "辰卯龙须糖",
                 "image": "https://i.ibb.co/ynQ4zrn3/IMG-20260127-153247.jpg"
             }
         ],
