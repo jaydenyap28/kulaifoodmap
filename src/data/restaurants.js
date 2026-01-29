@@ -12777,9 +12777,10 @@ export const initialRestaurants = [
         "name": "深夜过桥小煮(大古来城无招牌虾面)",
         "name_en": "Late Night Bridge Cooking (Kota Kulai No Signboard Prawn Noodles)",
         "location": {
-            "lat": null,
-            "lng": null
+            "lat": "1.667411",
+            "lng": "103.581950"
         },
+        "area": "Kulai 21 Miles",
         "address": "Taman Kota Kulai, 81000 Kulai, Johor",
         "opening_hours": "Monday: 7pm - 3am\nTuesday: 7pm - 3am\nWednesday: 7pm - 3am\nThursday: 7pm - 3am\nFriday: 7pm - 3am\nSaturday: 7pm - 3am\nSunday: 7pm - 3am",
         "whatsappLink": "",
