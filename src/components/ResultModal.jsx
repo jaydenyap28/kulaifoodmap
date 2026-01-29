@@ -5,6 +5,7 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { useTranslation } from 'react-i18next';
 import ReactGA from "react-ga4";
 import ImageWithFallback from './ImageWithFallback';
+import BranchSelector from './BranchSelector';
 import { checkOpenStatus } from '../utils/businessHours';
 import { compressImage } from '../utils/imageUtils';
 import { AVAILABLE_AREAS } from '../data/constants';
@@ -90,6 +91,7 @@ const ResultModal = ({ restaurant, onClose, isAdmin, onUpdateRestaurant, categor
         intro_zh: restaurant.intro_zh || '',
         intro_en: restaurant.intro_en || '',
         tags: restaurant.tags || [],
+        tagsInput: (restaurant.tags || []).join(', '),
         subscriptionLevel: restaurant.subscriptionLevel || 0,
         priority: restaurant.priority || 0,
         whatsappLink: restaurant.whatsappLink || "",
@@ -694,8 +696,15 @@ const ResultModal = ({ restaurant, onClose, isAdmin, onUpdateRestaurant, categor
                   <div>
                     <label className="text-xs text-gray-400">AI 标签 (Tags - Comma separated)</label>
                     <input 
-                      value={editForm.tags ? editForm.tags.join(', ') : ''}
-                      onChange={e => setEditForm({...editForm, tags: e.target.value.split(/[,，]/).map(t => t.trim()).filter(Boolean)})}
+                      value={editForm.tagsInput !== undefined ? editForm.tagsInput : (editForm.tags ? editForm.tags.join(', ') : '')}
+                      onChange={e => {
+                          const val = e.target.value;
+                          setEditForm({
+                              ...editForm, 
+                              tagsInput: val,
+                              tags: val.split(/[,，]/).map(t => t.trim()).filter(Boolean)
+                          });
+                      }}
                       className="w-full bg-[#1a1a1a] border-b border-gray-600 py-1 text-sm text-white focus:border-white outline-none"
                       placeholder="例如: 适合小孩, 平价, 冷气 (e.g. Kids Friendly, Cheap)"
                     />
@@ -769,6 +778,19 @@ const ResultModal = ({ restaurant, onClose, isAdmin, onUpdateRestaurant, categor
                                          </label>
                                          <span className="text-[8px] text-gray-500">会自动压缩</span>
                                     </div>
+                                    <input 
+                                        value={stall.tags ? stall.tags.join(', ') : ''}
+                                        onChange={(e) => {
+                                            const newStalls = [...editForm.subStalls];
+                                            newStalls[idx] = { 
+                                                ...newStalls[idx], 
+                                                tags: e.target.value.split(/[,，]/).map(t => t.trim()).filter(Boolean) 
+                                            };
+                                            setEditForm({...editForm, subStalls: newStalls});
+                                        }}
+                                        className="w-full bg-[#1a1a1a] border-b border-gray-600 py-1 text-[10px] text-gray-300 focus:border-white outline-none"
+                                        placeholder="标签 (Tags: 必吃, 辣, 招牌)"
+                                    />
                                 </div>
 
                                 <button 
@@ -826,6 +848,28 @@ const ResultModal = ({ restaurant, onClose, isAdmin, onUpdateRestaurant, categor
                                         className="w-full bg-[#1a1a1a] border-b border-gray-600 py-1 text-xs text-white focus:border-white outline-none"
                                         placeholder="分店地址 (Branch Address)"
                                     />
+                                    <div className="flex gap-2">
+                                        <input 
+                                            value={branch.wazeUrl || ''}
+                                            onChange={(e) => {
+                                                const newBranches = [...(editForm.branches || [])];
+                                                newBranches[idx] = { ...newBranches[idx], wazeUrl: e.target.value };
+                                                setEditForm({...editForm, branches: newBranches});
+                                            }}
+                                            className="flex-1 bg-[#1a1a1a] border-b border-gray-600 py-1 text-[10px] text-blue-300 focus:border-white outline-none"
+                                            placeholder="Waze Link"
+                                        />
+                                        <input 
+                                            value={branch.googleMapsUrl || ''}
+                                            onChange={(e) => {
+                                                const newBranches = [...(editForm.branches || [])];
+                                                newBranches[idx] = { ...newBranches[idx], googleMapsUrl: e.target.value };
+                                                setEditForm({...editForm, branches: newBranches});
+                                            }}
+                                            className="flex-1 bg-[#1a1a1a] border-b border-gray-600 py-1 text-[10px] text-green-300 focus:border-white outline-none"
+                                            placeholder="Google Maps Link"
+                                        />
+                                    </div>
                                 </div>
                                 <button 
                                     onClick={() => {
@@ -1078,25 +1122,7 @@ Tuesday: Closed
 
                   {/* Branches Display (For Chain Restaurants) */}
                   {restaurant.branches && restaurant.branches.length > 0 && (
-                    <div className="bg-[#2d2d2d] p-4 rounded-xl border border-gray-700">
-                        <p className="text-xs text-gray-400 font-bold uppercase tracking-wider mb-2 flex items-center gap-2">
-                            <MapPin size={14} className="text-red-500" />
-                            {t('modal.branches', '分行列表 (Branches)')}
-                        </p>
-                        <div className="space-y-2">
-                            {restaurant.branches.map((branch, idx) => (
-                                <div key={idx} className="bg-[#1a1a1a] rounded-lg border border-gray-600 p-3 flex flex-col">
-                                    <span className="text-gray-200 text-sm font-bold block mb-1">{branch.name}</span>
-                                    {branch.address && (
-                                        <div className="flex items-start text-xs text-gray-500">
-                                            <MapPin size={12} className="mt-0.5 mr-1 shrink-0 opacity-70" />
-                                            <span>{branch.address}</span>
-                                        </div>
-                                    )}
-                                </div>
-                            ))}
-                        </div>
-                    </div>
+                    <BranchSelector branches={restaurant.branches} />
                   )}
 
                   {/* Sub Stalls Display (For Kopitiams) - Lightbox Enhanced */}
@@ -1140,8 +1166,17 @@ Tuesday: Closed
                                             </div>
                                         )}
                                     </div>
-                                    <div className="p-2 bg-gradient-to-t from-black/80 to-transparent absolute bottom-0 w-full pt-6">
+                                    <div className="p-2 bg-gradient-to-t from-black/80 to-transparent absolute bottom-0 w-full pt-6 flex flex-col justify-end">
                                         <span className="text-white text-xs font-bold block truncate drop-shadow-md" title={stallName}>{stallName}</span>
+                                        {typeof stall === 'object' && stall.tags && stall.tags.length > 0 && (
+                                            <div className="flex flex-wrap gap-1 mt-1">
+                                                {stall.tags.slice(0, 3).map((tag, i) => (
+                                                    <span key={i} className="px-1.5 py-0.5 bg-purple-600/80 text-white text-[9px] rounded-md shadow-sm backdrop-blur-sm">
+                                                        {tag}
+                                                    </span>
+                                                ))}
+                                            </div>
+                                        )}
                                     </div>
                                 </motion.div>
                                 );
@@ -1316,6 +1351,18 @@ const LightboxViewer = ({ stalls, initialIndex, onClose }) => {
                     className="mt-6 text-center"
                 >
                     <h3 className="text-white text-2xl font-bold tracking-wide">{stallName}</h3>
+                    
+                    {/* Tags Display in Lightbox */}
+                    {typeof currentStall === 'object' && currentStall.tags && currentStall.tags.length > 0 && (
+                        <div className="flex flex-wrap gap-2 justify-center mt-3 mb-2">
+                            {currentStall.tags.map((tag, idx) => (
+                                <span key={idx} className="px-3 py-1 bg-purple-600/20 text-purple-200 border border-purple-500/30 text-sm rounded-full backdrop-blur-md">
+                                    ✨ {tag}
+                                </span>
+                            ))}
+                        </div>
+                    )}
+
                     <p className="text-gray-400 text-sm mt-1">
                         {currentIndex + 1} / {stalls.length}
                     </p>

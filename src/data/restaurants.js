@@ -1,6 +1,4 @@
-export const MAIN_VIDEO_LINK = "https://www.facebook.com/jnqjourney";
-
-export const initialRestaurants = [
+export const restaurants = [
     {
         "id": 1,
         "name": "世华肉骨茶",
@@ -128,7 +126,7 @@ export const initialRestaurants = [
             "粉类"
         ],
         "halalStatus": "non_halal",
-        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTh3VGbioYrrksxKWvI4y18UsE5-fJS5BdGjw&s",
+        "image": "https://i.ibb.co/rGrgPShq/image.jpg",
         "price_range": "RM 10-20",
         "rating": 0,
         "fb_post_link": "",
@@ -177,7 +175,7 @@ export const initialRestaurants = [
             "饭类"
         ],
         "halalStatus": "non_halal",
-        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ1EBTr6EWNEpZbmsaautNHOet-GHf0uVgscA&s",
+        "image": "https://i.ibb.co/Qv6FcKVT/image.jpg",
         "price_range": "RM 10-20",
         "rating": 0,
         "fb_post_link": "",
@@ -269,7 +267,7 @@ export const initialRestaurants = [
             "粉类"
         ],
         "halalStatus": "non_halal",
-        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTMkCI0NcbkauqOuFlnrDqXQoO4Pan7eWeTHg&s",
+        "image": "https://i.ibb.co/1fvZMFrR/image.jpg",
         "price_range": "RM 10-20",
         "rating": 0,
         "fb_post_link": "",
@@ -313,7 +311,7 @@ export const initialRestaurants = [
             "饭类"
         ],
         "halalStatus": "non_halal",
-        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRu8Prx5DvjkYD88X5E-ObNOQrXhafAT5zT2w&s",
+        "image": "https://i.ibb.co/fV0grB1x/image.jpg",
         "price_range": "RM 10-20",
         "rating": 0,
         "fb_post_link": "",
@@ -494,7 +492,7 @@ export const initialRestaurants = [
             "咖啡店/美食阁"
         ],
         "halalStatus": "non_halal",
-        "image": "https://scontent.fmkz1-2.fna.fbcdn.net/v/t39.30808-6/237482257_1241570576319493_1119263468831903382_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=6ee11a&_nc_ohc=xt8q0PtNL20Q7kNvwG0jgVM&_nc_oc=AdnFxPbU9Ob896S7xTlCfUTHkRpZWu-p21FUgvpuwXOXVd9xelFsHJJhGatKxRGHE44&_nc_zt=23&_nc_ht=scontent.fmkz1-2.fna&_nc_gid=oQWLGX8FgtCGNxwouuq29w&oh=00_AfoojL7saSPbj6l6t3qxXRt0k88Ur2R5zAAr_eONpmpywQ&oe=697BD58B",
+        "image": "https://i.ibb.co/yBpdg4Lm/image.jpg",
         "price_range": "RM 10-20",
         "rating": 0,
         "fb_post_link": "",
@@ -545,7 +543,7 @@ export const initialRestaurants = [
             "咖啡店/美食阁"
         ],
         "halalStatus": "non_halal",
-        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTS4IT7xvF0wJvbCe_ChlCt8E7nKEEDeQFB-g&s",
+        "image": "https://i.ibb.co/YBWmK1wH/21.jpg",
         "price_range": "RM 10-20",
         "rating": 0,
         "fb_post_link": "",
@@ -612,7 +610,7 @@ export const initialRestaurants = [
         "category": [],
         "categories": [],
         "halalStatus": "non_halal",
-        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQIjZBDRgHdfF9jA-m0zcxKgfORWbSqfrTMQA&s",
+        "image": "https://i.ibb.co/4DB66dQ/image.jpg",
         "price_range": "RM 10-20",
         "rating": 0,
         "fb_post_link": "",
@@ -998,7 +996,7 @@ export const initialRestaurants = [
             "饭类"
         ],
         "halalStatus": "non_halal",
-        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRdXdd7UnUzpDQ9EcUgg67RO8pV3rcnFERdIg&s",
+        "image": "https://i.ibb.co/p6RcFwcF/image.jpg",
         "price_range": "RM 10-20",
         "rating": 0,
         "fb_post_link": "",
@@ -1474,7 +1472,7 @@ export const initialRestaurants = [
             "lng": null
         },
         "address": "Multiple Locations in Kulai",
-        "opening_hours": "Monday: 24 Hours (Selected Branches)\nTuesday: 24 Hours (Selected Branches)\nWednesday: 24 Hours (Selected Branches)\nThursday: 24 Hours (Selected Branches)\nFriday: 24 Hours (Selected Branches)\nSaturday: 24 Hours (Selected Branches)\nSunday: 24 Hours (Selected Branches)",
+        "opening_hours": "Monday: 10am - 10pm\nTuesday: 10am - 10pm\nWednesday: 10am - 10pm\nThursday: 10am - 10pm\nFriday: 10am - 10pm\nSaturday: 10am - 10pm\nSunday: 10am - 10pm",
         "whatsappLink": "",
         "intro_zh": "全球知名的快餐品牌，提供经典的巨无霸汉堡、薯条和麦乐鸡。快捷便利，是随时随地享受美味的最佳选择。",
         "intro_en": "World-famous fast food brand offering classic Big Mac burgers, fries, and McNuggets. Quick and convenient, it's the best choice for a delicious meal anytime, anywhere.",
@@ -1491,7 +1489,7 @@ export const initialRestaurants = [
             "快餐"
         ],
         "halalStatus": "certified",
-        "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/36/McDonald%27s_Golden_Arches.svg/1200px-McDonald%27s_Golden_Arches.svg.png",
+        "image": "https://i.ibb.co/YFYxM53k/image.webp",
         "price_range": "RM 15-30",
         "rating": 0,
         "fb_post_link": "",
@@ -3088,43 +3086,43 @@ export const initialRestaurants = [
                 "image": "https://i.ibb.co/dst56Z8P/IMG-20260127-133908.jpg"
             },
             {
-                "name": "",
+                "name": "煎面粉糕",
                 "image": "https://i.ibb.co/dszFQgvs/IMG-20260127-133925.jpg"
             },
             {
-                "name": "",
+                "name": "曼煎糕",
                 "image": "https://i.ibb.co/twhj5y2B/IMG-20260127-133729.jpg"
             },
             {
-                "name": "",
+                "name": "砂拉越面 哥罗面 咖喱面",
                 "image": "https://i.ibb.co/wFQ6hsy3/IMG-20260127-133736.jpg"
             },
             {
-                "name": "",
+                "name": "吉隆坡沙登驰名面粉糕",
                 "image": "https://i.ibb.co/rfQcvwcm/IMG-20260127-133741.jpg"
             },
             {
-                "name": "",
+                "name": "马来餐",
                 "image": "https://i.ibb.co/DfdRPhfX/IMG-20260127-133752.jpg"
             },
             {
-                "name": "",
+                "name": "古来擂茶",
                 "image": "https://i.ibb.co/5gQDzHpg/IMG-20260127-133805.jpg"
             },
             {
-                "name": "",
+                "name": "云吞面",
                 "image": "https://i.ibb.co/Ng1Pf6WB/IMG-20260127-133815.jpg"
             },
             {
-                "name": "",
+                "name": "鱼片米粉 芋头米粉 猪肉粉",
                 "image": "https://i.ibb.co/HfN3qt4P/IMG-20260127-133823.jpg"
             },
             {
-                "name": "",
+                "name": "兴旺槟城驰名龚尾古早味",
                 "image": "https://i.ibb.co/FG85fsG/IMG-20260127-133836.jpg"
             },
             {
-                "name": "",
+                "name": "品轩港式猪肠粉",
                 "image": "https://i.ibb.co/27r2nz3z/IMG-20260127-133850.jpg"
             }
         ],
@@ -3410,7 +3408,12 @@ export const initialRestaurants = [
         "subscriptionLevel": 0,
         "manualStatus": "auto",
         "branches": [],
-        "subStalls": [],
+        "subStalls": [
+            {
+                "name": "新档口",
+                "image": ""
+            }
+        ],
         "dietaryOption": null,
         "slug": "pontian-coffee-9"
     },
@@ -7997,7 +8000,12 @@ export const initialRestaurants = [
         "priority": 0,
         "subscriptionLevel": 0,
         "manualStatus": "auto",
-        "branches": [],
+        "branches": [
+            {
+                "name": "Indahpura",
+                "address": "6057, Jalan Siantan 1, Bandar Indahpura, 81000 Kulai, Johor Darul Ta'zim"
+            }
+        ],
         "subStalls": [],
         "dietaryOption": null,
         "slug": "restoran-yin-ji"
@@ -9577,18 +9585,54 @@ export const initialRestaurants = [
         "manualStatus": "auto",
         "branches": [],
         "subStalls": [
-            { "name": "", "image": "https://ibb.co/MxLjsyrp" },
-            { "name": "", "image": "https://ibb.co/qFrSMXyQ" },
-            { "name": "", "image": "https://ibb.co/ccLLy8dz" },
-            { "name": "", "image": "https://ibb.co/xnzvcWH" },
-            { "name": "", "image": "https://ibb.co/1Yfmh84X" },
-            { "name": "", "image": "https://ibb.co/WNZq5T4t" },
-            { "name": "", "image": "https://ibb.co/fVDzG9Py" },
-            { "name": "", "image": "https://ibb.co/ksMw0kts" },
-            { "name": "", "image": "https://ibb.co/ZRqBMPtS" },
-            { "name": "", "image": "https://ibb.co/VKCCRkq" },
-            { "name": "", "image": "https://ibb.co/BVBBqgpp" },
-            { "name": "", "image": "https://ibb.co/Q72HTFP4" }
+            {
+                "name": "",
+                "image": "https://ibb.co/MxLjsyrp"
+            },
+            {
+                "name": "",
+                "image": "https://ibb.co/qFrSMXyQ"
+            },
+            {
+                "name": "",
+                "image": "https://ibb.co/ccLLy8dz"
+            },
+            {
+                "name": "",
+                "image": "https://ibb.co/xnzvcWH"
+            },
+            {
+                "name": "",
+                "image": "https://ibb.co/1Yfmh84X"
+            },
+            {
+                "name": "",
+                "image": "https://ibb.co/WNZq5T4t"
+            },
+            {
+                "name": "",
+                "image": "https://ibb.co/fVDzG9Py"
+            },
+            {
+                "name": "",
+                "image": "https://ibb.co/ksMw0kts"
+            },
+            {
+                "name": "",
+                "image": "https://ibb.co/ZRqBMPtS"
+            },
+            {
+                "name": "",
+                "image": "https://ibb.co/VKCCRkq"
+            },
+            {
+                "name": "",
+                "image": "https://ibb.co/BVBBqgpp"
+            },
+            {
+                "name": "",
+                "image": "https://ibb.co/Q72HTFP4"
+            }
         ],
         "dietaryOption": null,
         "slug": "restoran-fuchun"
@@ -10949,6 +10993,8 @@ export const initialRestaurants = [
                 "name": "Bandar Putra",
                 "address": "34, Jalan Kenanga 29/1, Bandar Indahpura, 81000 Kulai, Johor Darul Ta'zim",
                 "opening_hours": "11 am–2:30 pm, 5–9 pm Mon closed",
+                "wazeUrl": "https://waze.com/ul?q=Restoran%20Jin%20Hai%20Indahpura",
+                "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Restoran+Jin+Hai+Indahpura",
                 "location": {
                     "lat": null,
                     "lng": null
@@ -10958,6 +11004,8 @@ export const initialRestaurants = [
                 "name": "Senai",
                 "address": "Lot 5035, Batu 17 1/2, Jalan Air Hitam, Saleng, 81400 Senai, Johor",
                 "opening_hours": "Monday: 11am-4pm, 7pm-9pm\nTuesday: 11am-4pm, 7pm-9pm\nWednesday: 11am-4pm, 7pm-9pm\nThursday: 11am-4pm, 7pm-9pm\nFriday: 11am-4pm, 7pm-9pm\nSaturday: 11am-4pm, 7pm-9pm\nSunday: 11am-4pm, 7pm-9pm",
+                "wazeUrl": "https://waze.com/ul?q=Restoran%20Jin%20Hai%20Senai",
+                "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Restoran+Jin+Hai+Senai",
                 "location": {
                     "lat": null,
                     "lng": null
@@ -13858,6 +13906,7 @@ export const initialRestaurants = [
             "lat": null,
             "lng": null
         },
+        "area": "Bandar Putra",
         "address": "No. 29, Jalan Seri Putra 1, Bandar Putra Kulai, 81000 Kulai, Johor Darul Ta'zim",
         "opening_hours": "11 am–9 pm",
         "whatsappLink": "",
@@ -13898,6 +13947,7 @@ export const initialRestaurants = [
             "lat": null,
             "lng": null
         },
+        "area": "Bandar Putra",
         "address": "12, Jalan Seri Putra 1, Bandar Putra Kulai, 81000 Kulai, Johor Darul Ta'zim",
         "opening_hours": "7 am–8:30 pm",
         "whatsappLink": "",
@@ -13938,6 +13988,7 @@ export const initialRestaurants = [
             "lat": null,
             "lng": null
         },
+        "area": "Bandar Putra",
         "address": "10&11, Jalan Seri Putra 1, Bandar Putra Kulai, 81000 Kulai, Johor Darul Ta'zim",
         "opening_hours": "",
         "whatsappLink": "",
@@ -13978,6 +14029,7 @@ export const initialRestaurants = [
             "lat": null,
             "lng": null
         },
+        "area": "Bandar Putra",
         "address": "36, Jalan Seri Putra 1, Bandar Putra Kulai, 81000 Kulai, Johor Darul Ta'zim",
         "opening_hours": "7:30 am–4 pm Friday closed",
         "whatsappLink": "",
@@ -14018,6 +14070,7 @@ export const initialRestaurants = [
             "lat": null,
             "lng": null
         },
+        "area": "Bandar Putra",
         "address": "37, Jalan Seri Putra 1, Bandar Putra Kulai, 81000 Kulai, Johor Darul Ta'zim",
         "opening_hours": "12–10 pm",
         "whatsappLink": "",
@@ -14060,6 +14113,7 @@ export const initialRestaurants = [
             "lat": null,
             "lng": null
         },
+        "area": "Bandar Putra",
         "address": "Jalan Merbau 3, Bandar Putra Kulai, 81000, Johor Darul Ta'zim",
         "opening_hours": "4 pm–12 am",
         "whatsappLink": "",
@@ -14100,6 +14154,7 @@ export const initialRestaurants = [
             "lat": null,
             "lng": null
         },
+        "area": "Bandar Putra",
         "address": "2931, 2920, Jalan Merbau 3, Bandar Putra Kulai, 81000 Kulai, Johor",
         "opening_hours": "4:30 pm–2 am",
         "whatsappLink": "",
@@ -14140,6 +14195,7 @@ export const initialRestaurants = [
             "lat": null,
             "lng": null
         },
+        "area": "Bandar Putra",
         "address": "3045, Jalan Merbau 3, Bandar Putra Kulai, 81000 Kulai, Johor Darul Ta'zim",
         "opening_hours": "12–10 pm",
         "whatsappLink": "",
@@ -14180,6 +14236,7 @@ export const initialRestaurants = [
             "lat": null,
             "lng": null
         },
+        "area": "Bandar Putra",
         "address": "3049, Jalan Merbau 1, Bandar Putra Kulai, 81000 Kulai, Johor Darul Ta'zim",
         "opening_hours": "5 pm–2:30 am",
         "whatsappLink": "",
@@ -14220,6 +14277,7 @@ export const initialRestaurants = [
             "lat": null,
             "lng": null
         },
+        "area": "Bandar Putra",
         "address": "3055-A, Jalan Merbau 3, Bandar Putra Kulai, 81000 Kulai, Johor Darul Ta'zim",
         "opening_hours": "",
         "whatsappLink": "",
@@ -14260,6 +14318,7 @@ export const initialRestaurants = [
             "lat": null,
             "lng": null
         },
+        "area": "Bandar Putra",
         "address": "4957, Jalan Merbau 1, Bandar Putra Kulai, 81000 Kulai, Johor Darul Ta'zim",
         "opening_hours": "7 am–5 pm",
         "whatsappLink": "",
@@ -14300,6 +14359,7 @@ export const initialRestaurants = [
             "lat": null,
             "lng": null
         },
+        "area": "Bandar Putra",
         "address": "",
         "opening_hours": "4 pm–2 am",
         "whatsappLink": "",
@@ -14340,6 +14400,7 @@ export const initialRestaurants = [
             "lat": null,
             "lng": null
         },
+        "area": "Bandar Putra",
         "address": "4973, Jalan Merbau 11, Bandar Putra Kulai, 81000 Kulai, Johor Darul Ta'zim",
         "opening_hours": "4 pm–2 am",
         "whatsappLink": "",
@@ -14380,6 +14441,7 @@ export const initialRestaurants = [
             "lat": null,
             "lng": null
         },
+        "area": "Bandar Putra",
         "address": "4978, Jalan Merbau 11, Bandar Putra Kulai, 81000 Kulai, Johor Darul Ta'zim",
         "opening_hours": "7 am–3 pm Friday Closed",
         "whatsappLink": "",
@@ -14420,6 +14482,7 @@ export const initialRestaurants = [
             "lat": null,
             "lng": null
         },
+        "area": "Bandar Putra",
         "address": "Jalan Putra 1, Bandar Putra Kulai, 81000 Kulai, Johor Darul Ta'zim",
         "opening_hours": "",
         "whatsappLink": "",
@@ -14460,6 +14523,7 @@ export const initialRestaurants = [
             "lat": null,
             "lng": null
         },
+        "area": "Bandar Putra",
         "address": "13000-13030, Jalan Rajawali 1, Bandar Putra Kulai, 81000 Kulai, Johor Darul Ta'zim",
         "opening_hours": "",
         "whatsappLink": "",
@@ -18581,8 +18645,8 @@ export const initialRestaurants = [
         "address": "40, Jalan Cermai 7, Taman Mesra, 81400 Kulai, Johor Darul Ta'zim",
         "opening_hours": "Monday: 8am - 5pm\nTuesday: 8am - 5pm\nWednesday: 8am - 5pm\nThursday: 8am - 5pm\nFriday: 8am - 5pm\nSaturday: 8am - 5pm\nSunday: 8am - 5pm",
         "whatsappLink": "",
-        "intro_zh": "",
-        "intro_en": "",
+        "intro_zh": "兴兴烧腊 是古来家喻户晓的传统烧腊老字号。店面虽然保留着朴实的咖啡店装潢，但凭借数十年如一日的稳定水准，每到午餐时段必定座无虚席。这里的烧腊以“镬气”和传统炭烤风味著称，是许多古来家庭几代人的共同美食记忆",
+        "intro_en": "Restoran Heng Heng Chicken Rice is a household name in Kulai, famous for its authentic and traditional Chinese roasted meats. Located in Taman Kulai Besar, this long-standing eatery is constantly bustling with locals, especially during the lunch peak. It is best known for preserving the classic flavors of charcoal-roasted meats, complemented by their signature savory gravies",
         "tags": [
             "Chicken Rice",
             "Roasted Meat"
@@ -19031,16 +19095,46 @@ export const initialRestaurants = [
         "manualStatus": "auto",
         "branches": [],
         "subStalls": [
-            { "name": "", "image": "https://ibb.co/QvVpgBzM" },
-            { "name": "", "image": "https://ibb.co/21PWGXsn" },
-            { "name": "", "image": "https://ibb.co/n8M6RtXs" },
-            { "name": "", "image": "https://ibb.co/wZQ9xgDr" },
-            { "name": "", "image": "https://ibb.co/Rkhx5Xc7" },
-            { "name": "", "image": "https://ibb.co/cXMVVp1b" },
-            { "name": "", "image": "https://ibb.co/Y7t2h61t" },
-            { "name": "", "image": "https://ibb.co/hPL5pCX" },
-            { "name": "", "image": "https://ibb.co/XxQ9C6xt" },
-            { "name": "", "image": "https://ibb.co/C3gWGfpD" }
+            {
+                "name": "",
+                "image": "https://ibb.co/QvVpgBzM"
+            },
+            {
+                "name": "",
+                "image": "https://ibb.co/21PWGXsn"
+            },
+            {
+                "name": "",
+                "image": "https://ibb.co/n8M6RtXs"
+            },
+            {
+                "name": "",
+                "image": "https://ibb.co/wZQ9xgDr"
+            },
+            {
+                "name": "",
+                "image": "https://ibb.co/Rkhx5Xc7"
+            },
+            {
+                "name": "",
+                "image": "https://ibb.co/cXMVVp1b"
+            },
+            {
+                "name": "",
+                "image": "https://ibb.co/Y7t2h61t"
+            },
+            {
+                "name": "",
+                "image": "https://ibb.co/hPL5pCX"
+            },
+            {
+                "name": "",
+                "image": "https://ibb.co/XxQ9C6xt"
+            },
+            {
+                "name": "",
+                "image": "https://ibb.co/C3gWGfpD"
+            }
         ],
         "dietaryOption": null,
         "slug": "kedai-kopi-thiong-huat",
@@ -19083,10 +19177,22 @@ export const initialRestaurants = [
         "manualStatus": "auto",
         "branches": [],
         "subStalls": [
-            { "name": "", "image": "https://ibb.co/nM2hDGb0" },
-            { "name": "", "image": "https://ibb.co/0VMhQNyr" },
-            { "name": "", "image": "https://ibb.co/SD1rV8nm" },
-            { "name": "", "image": "https://ibb.co/FqBNLN97" }
+            {
+                "name": "",
+                "image": "https://ibb.co/nM2hDGb0"
+            },
+            {
+                "name": "",
+                "image": "https://ibb.co/0VMhQNyr"
+            },
+            {
+                "name": "",
+                "image": "https://ibb.co/SD1rV8nm"
+            },
+            {
+                "name": "",
+                "image": "https://ibb.co/FqBNLN97"
+            }
         ],
         "dietaryOption": null,
         "slug": "restoran-sin-tong-hai",
@@ -19170,16 +19276,46 @@ export const initialRestaurants = [
         "manualStatus": "auto",
         "branches": [],
         "subStalls": [
-            { "name": "", "image": "https://ibb.co/PGHz2q7f" },
-            { "name": "", "image": "https://ibb.co/7xt9nT5V" },
-            { "name": "", "image": "https://ibb.co/4nhHNT6G" },
-            { "name": "", "image": "https://ibb.co/CjmRgfX" },
-            { "name": "", "image": "https://ibb.co/pv2MPRg3" },
-            { "name": "", "image": "https://ibb.co/RpPpNsHx" },
-            { "name": "", "image": "https://ibb.co/NnSPtYLC" },
-            { "name": "", "image": "https://ibb.co/QvVWvrkZ" },
-            { "name": "", "image": "https://ibb.co/zdfRmqN" },
-            { "name": "", "image": "https://ibb.co/NgdZhJ4T" }
+            {
+                "name": "",
+                "image": "https://ibb.co/PGHz2q7f"
+            },
+            {
+                "name": "",
+                "image": "https://ibb.co/7xt9nT5V"
+            },
+            {
+                "name": "",
+                "image": "https://ibb.co/4nhHNT6G"
+            },
+            {
+                "name": "",
+                "image": "https://ibb.co/CjmRgfX"
+            },
+            {
+                "name": "",
+                "image": "https://ibb.co/pv2MPRg3"
+            },
+            {
+                "name": "",
+                "image": "https://ibb.co/RpPpNsHx"
+            },
+            {
+                "name": "",
+                "image": "https://ibb.co/NnSPtYLC"
+            },
+            {
+                "name": "",
+                "image": "https://ibb.co/QvVWvrkZ"
+            },
+            {
+                "name": "",
+                "image": "https://ibb.co/zdfRmqN"
+            },
+            {
+                "name": "",
+                "image": "https://ibb.co/NgdZhJ4T"
+            }
         ],
         "dietaryOption": null,
         "slug": "chuan-yuan-kopitiam",
@@ -19348,5 +19484,387 @@ export const initialRestaurants = [
         "dietaryOption": null,
         "slug": "good-morning-cafe",
         "phone": "0143496882"
+    },
+    {
+        "name": "Restoran Mustika Zam Zam",
+        "name_en": "Restoran Mustika Zam Zam",
+        "location": {
+            "lat": null,
+            "lng": null
+        },
+        "area": "Indahpura",
+        "address": "6066, Jalan Siantan 1, Bandar Indahpura, 81000 Kulai, Johor Darul Ta'zim",
+        "phone": "0197769500",
+        "opening_hours": "Open 24 hours",
+        "category": [
+            "马来与印度风味"
+        ],
+        "categories": [
+            "马来与印度风味"
+        ],
+        "halalStatus": "muslim_owned",
+        "image": "https://placehold.co/600x400/1e1e1e/FFF?text=Mustika+Zam+Zam",
+        "delivery_link": "https://www.foodpanda.my/restaurant/s6nu/restoran-mustika-zam-zam-kulai?utm_campaign=google_reserve_place_order_action_CH-SEO_",
+        "tags": [
+            "Mamak",
+            "24 Hours"
+        ],
+        "slug": "restoran-mustika-zam-zam",
+        "intro_zh": "",
+        "intro_en": "",
+        "price_range": "RM 5-15",
+        "rating": 0,
+        "isVegetarian": false,
+        "isNoBeef": true,
+        "isVIP": false,
+        "priority": 0,
+        "subscriptionLevel": 0,
+        "manualStatus": "auto",
+        "branches": [],
+        "subStalls": [],
+        "dietaryOption": null,
+        "id": 464
+    },
+    {
+        "name": "De Selera Pantai Timur",
+        "name_en": "De Selera Pantai Timur",
+        "location": {
+            "lat": null,
+            "lng": null
+        },
+        "area": "Indahpura",
+        "address": "5837 & 5838, Jalan Siantan 3, Bandar Indahpura, 81000 Kulai, Johor Darul Ta'zim",
+        "phone": "0177629892",
+        "opening_hours": "7:30am - 4pm",
+        "category": [
+            "马来与印度风味"
+        ],
+        "categories": [
+            "马来与印度风味"
+        ],
+        "halalStatus": "muslim_owned",
+        "image": "https://placehold.co/600x400/1e1e1e/FFF?text=De+Selera+Pantai+Timur",
+        "tags": [],
+        "slug": "de-selera-pantai-timur",
+        "intro_zh": "",
+        "intro_en": "",
+        "price_range": "RM 5-15",
+        "rating": 0,
+        "isVegetarian": false,
+        "isNoBeef": true,
+        "isVIP": false,
+        "priority": 0,
+        "subscriptionLevel": 0,
+        "manualStatus": "auto",
+        "branches": [],
+        "subStalls": [],
+        "dietaryOption": null,
+        "id": 465
+    },
+    {
+        "name": "Kulai Cafe",
+        "name_en": "Kulai Cafe",
+        "location": {
+            "lat": 1.651881,
+            "lng": 103.596423
+        },
+        "area": "Indahpura",
+        "address": "Indahpura, Kulai",
+        "phone": "01161748161",
+        "opening_hours": "",
+        "category": [
+            "马来与印度风味"
+        ],
+        "categories": [
+            "马来与印度风味"
+        ],
+        "halalStatus": "muslim_owned",
+        "image": "https://placehold.co/600x400/1e1e1e/FFF?text=Kulai+Cafe",
+        "tags": [],
+        "slug": "kulai-cafe",
+        "intro_zh": "",
+        "intro_en": "",
+        "price_range": "RM 5-15",
+        "rating": 0,
+        "isVegetarian": false,
+        "isNoBeef": true,
+        "isVIP": false,
+        "priority": 0,
+        "subscriptionLevel": 0,
+        "manualStatus": "auto",
+        "branches": [],
+        "subStalls": [],
+        "dietaryOption": null,
+        "id": 466
+    },
+    {
+        "name": "Restoran Puteri",
+        "name_en": "Restoran Puteri",
+        "location": {
+            "lat": null,
+            "lng": null
+        },
+        "area": "Indahpura",
+        "address": "5801, Jalan Siantan 11, Bandar Indahpura, 81000 Kulai, Johor Darul Ta'zim",
+        "phone": "0197344473",
+        "opening_hours": "11am - 4pm (Tue, Wed Closed)",
+        "category": [
+            "马来与印度风味"
+        ],
+        "categories": [
+            "马来与印度风味"
+        ],
+        "halalStatus": "muslim_owned",
+        "image": "https://placehold.co/600x400/1e1e1e/FFF?text=Restoran+Puteri",
+        "tags": [],
+        "slug": "restoran-puteri",
+        "intro_zh": "",
+        "intro_en": "",
+        "price_range": "RM 5-15",
+        "rating": 0,
+        "isVegetarian": false,
+        "isNoBeef": true,
+        "isVIP": false,
+        "priority": 0,
+        "subscriptionLevel": 0,
+        "manualStatus": "auto",
+        "branches": [],
+        "subStalls": [],
+        "dietaryOption": null,
+        "id": 467
+    },
+    {
+        "name": "一路发美食坊",
+        "name_en": "Restoran Yi Lu Fa 168",
+        "location": {
+            "lat": null,
+            "lng": null
+        },
+        "area": "Indahpura",
+        "address": "6043, Jalan Siantan 1, Bandar Indahpura, 81000 Kulai, Johor Darul Ta'zim",
+        "phone": "",
+        "opening_hours": "",
+        "category": [
+            "咖啡店/美食阁"
+        ],
+        "categories": [
+            "咖啡店/美食阁"
+        ],
+        "halalStatus": "non_halal",
+        "image": "https://placehold.co/600x400/1e1e1e/FFF?text=Yi+Lu+Fa+168",
+        "tags": [],
+        "slug": "restoran-yi-lu-fa-168",
+        "intro_zh": "",
+        "intro_en": "",
+        "price_range": "RM 10-20",
+        "rating": 0,
+        "isVegetarian": false,
+        "isNoBeef": false,
+        "isVIP": false,
+        "priority": 0,
+        "subscriptionLevel": 0,
+        "manualStatus": "auto",
+        "branches": [],
+        "subStalls": [],
+        "dietaryOption": null,
+        "id": 468
+    },
+    {
+        "name": "乡园咖啡",
+        "name_en": "Xiang Yuan Kopitiam",
+        "location": {
+            "lat": null,
+            "lng": null
+        },
+        "area": "Indahpura",
+        "address": "6042, Jalan Siantan 1, Bandar Indahpura, 81000 Kulai, Johor Darul Ta'zim",
+        "phone": "0182085911",
+        "opening_hours": "",
+        "category": [
+            "咖啡店/美食阁"
+        ],
+        "categories": [
+            "咖啡店/美食阁"
+        ],
+        "halalStatus": "non_halal",
+        "image": "https://placehold.co/600x400/1e1e1e/FFF?text=Xiang+Yuan+Kopitiam",
+        "tags": [],
+        "slug": "xiang-yuan-kopitiam",
+        "intro_zh": "",
+        "intro_en": "",
+        "price_range": "RM 10-20",
+        "rating": 0,
+        "isVegetarian": false,
+        "isNoBeef": false,
+        "isVIP": false,
+        "priority": 0,
+        "subscriptionLevel": 0,
+        "manualStatus": "auto",
+        "branches": [],
+        "subStalls": [],
+        "dietaryOption": null,
+        "id": 469
+    },
+    {
+        "name": "科威咖啡餐食",
+        "name_en": "Koway Trading",
+        "location": {
+            "lat": null,
+            "lng": null
+        },
+        "area": "Indahpura",
+        "address": "6039, Jalan Siantan 1, Bandar Indahpura, 81000 Kulai, Johor Darul Ta'zim",
+        "phone": "0123381319",
+        "opening_hours": "5am - 3pm",
+        "category": [
+            "咖啡店/美食阁"
+        ],
+        "categories": [
+            "咖啡店/美食阁"
+        ],
+        "halalStatus": "non_halal",
+        "image": "https://placehold.co/600x400/1e1e1e/FFF?text=Koway+Trading",
+        "price_range": "RM 10-20",
+        "rating": 0,
+        "fb_post_link": "",
+        "menu_link": "",
+        "website_link": "",
+        "delivery_link": "",
+        "isVegetarian": false,
+        "isNoBeef": false,
+        "isVIP": false,
+        "priority": 0,
+        "subscriptionLevel": 0,
+        "manualStatus": "auto",
+        "branches": [],
+        "subStalls": [],
+        "dietaryOption": null,
+        "slug": "koway-trading",
+        "intro_zh": "",
+        "intro_en": "",
+        "tags": [],
+        "id": 470
+    },
+    {
+        "name": "老地方",
+        "name_en": "Lao Di Fang",
+        "location": {
+            "lat": null,
+            "lng": null
+        },
+        "area": "Indahpura",
+        "address": "6038, Jalan Siantan 1, Bandar Indahpura, 81000 Kulai, Johor Darul Ta'zim",
+        "phone": "0167179861",
+        "opening_hours": "",
+        "category": [
+            "咖啡店/美食阁"
+        ],
+        "categories": [
+            "咖啡店/美食阁"
+        ],
+        "halalStatus": "non_halal",
+        "image": "https://placehold.co/600x400/1e1e1e/FFF?text=Lao+Di+Fang",
+        "price_range": "RM 10-20",
+        "rating": 0,
+        "fb_post_link": "",
+        "menu_link": "",
+        "website_link": "",
+        "delivery_link": "",
+        "isVegetarian": false,
+        "isNoBeef": false,
+        "isVIP": false,
+        "priority": 0,
+        "subscriptionLevel": 0,
+        "manualStatus": "auto",
+        "branches": [],
+        "subStalls": [],
+        "dietaryOption": null,
+        "slug": "lao-di-fang",
+        "intro_zh": "",
+        "intro_en": "",
+        "tags": [],
+        "id": 471
+    },
+    {
+        "name": "梦幻茶餐室",
+        "name_en": "Restoran Fantasy",
+        "location": {
+            "lat": null,
+            "lng": null
+        },
+        "area": "Indahpura",
+        "address": "6030, Jalan Siantan 1, Bandar Indahpura, 81000 Kulai, Johor Darul Ta'zim",
+        "phone": "",
+        "opening_hours": "8:30am - 9:30pm",
+        "category": [
+            "咖啡店/美食阁",
+            "煮炒海鲜楼"
+        ],
+        "categories": [
+            "咖啡店/美食阁",
+            "煮炒海鲜楼"
+        ],
+        "halalStatus": "non_halal",
+        "image": "https://placehold.co/600x400/1e1e1e/FFF?text=Restoran+Fantasy",
+        "price_range": "RM 10-20",
+        "rating": 0,
+        "fb_post_link": "",
+        "menu_link": "",
+        "website_link": "",
+        "delivery_link": "",
+        "isVegetarian": false,
+        "isNoBeef": false,
+        "isVIP": false,
+        "priority": 0,
+        "subscriptionLevel": 0,
+        "manualStatus": "auto",
+        "branches": [],
+        "subStalls": [],
+        "dietaryOption": null,
+        "slug": "restoran-fantasy",
+        "intro_zh": "",
+        "intro_en": "",
+        "tags": [],
+        "id": 472
+    },
+    {
+        "name": "古来轩美食坊",
+        "name_en": "Xuan Food Corner",
+        "location": {
+            "lat": null,
+            "lng": null
+        },
+        "area": "Kulai",
+        "address": "Taman Khet Loong, 81000 Kulai, Johor",
+        "phone": "0163543854",
+        "opening_hours": "",
+        "category": [
+            "咖啡店/美食阁"
+        ],
+        "categories": [
+            "咖啡店/美食阁"
+        ],
+        "halalStatus": "non_halal",
+        "image": "https://placehold.co/600x400/1e1e1e/FFF?text=Xuan+Food+Corner",
+        "price_range": "RM 10-20",
+        "rating": 0,
+        "fb_post_link": "",
+        "menu_link": "",
+        "website_link": "",
+        "delivery_link": "",
+        "isVegetarian": false,
+        "isNoBeef": false,
+        "isVIP": false,
+        "priority": 0,
+        "subscriptionLevel": 0,
+        "manualStatus": "auto",
+        "branches": [],
+        "subStalls": [],
+        "dietaryOption": null,
+        "slug": "xuan-food-corner",
+        "intro_zh": "",
+        "intro_en": "",
+        "tags": [],
+        "id": 473
     }
 ];
