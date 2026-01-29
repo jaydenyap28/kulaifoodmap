@@ -3287,39 +3287,39 @@ export const initialRestaurants = [
                 "image": "https://i.ibb.co/VY6nD0Ct/IMG-20260127-134438.jpg"
             },
             {
-                "name": "",
+                "name": "6863油条",
                 "image": "https://i.ibb.co/YBhrwJm9/IMG-20260127-134454.jpg"
             },
             {
-                "name": "",
+                "name": "旺旺炸鸡饭",
                 "image": "https://i.ibb.co/Mx1DrQXW/IMG-20260127-134458.jpg"
             },
             {
-                "name": "",
+                "name": "阿林酿豆腐",
                 "image": "https://i.ibb.co/FqWGjcHw/IMG-20260127-134505.jpg"
             },
             {
-                "name": "",
+                "name": "壹发包点",
                 "image": "https://i.ibb.co/nqfkvxS5/IMG-20260127-134514.jpg"
             },
             {
-                "name": "",
+                "name": "玲姐",
                 "image": "https://i.ibb.co/g83jbKX/IMG-20260127-134530.jpg"
             },
             {
-                "name": "",
+                "name": "炒粿",
                 "image": "https://i.ibb.co/K4Vy9W4/IMG-20260127-134535.jpg"
             },
             {
-                "name": "",
+                "name": "宝记苦瓜汤",
                 "image": "https://i.ibb.co/xtNvkpx0/IMG-20260127-134604.jpg"
             },
             {
-                "name": "",
+                "name": "乡村味擂茶",
                 "image": "https://i.ibb.co/BHvhj2hp/IMG-20260127-134616.jpg"
             },
             {
-                "name": "",
+                "name": "槟城炒果条",
                 "image": "https://i.ibb.co/tt9THM3/IMG-20260127-134640.jpg"
             }
         ],
@@ -15077,6 +15077,46 @@ export const initialRestaurants = [
         "slug": "kafe-dulang-ayan",
         "google_maps": "",
         "phone": "011-2084 2287"
+    },
+    {
+        "id": 370,
+        "name": "#7 Beradik Restaurant • Senai",
+        "name_en": "#7 Beradik Restaurant (Senai)",
+        "area": "Senai",
+        "address": "Lot 5035, Batu 17 1/2, Jalan Air Hitam, Saleng, 81400 Senai, Johor",
+        "location": {
+            "lat": null,
+            "lng": null
+        },
+        "opening_hours": "Monday: 11am-4pm, 7pm-9pm\nTuesday: 11am-4pm, 7pm-9pm\nWednesday: 11am-4pm, 7pm-9pm\nThursday: 11am-4pm, 7pm-9pm\nFriday: 11am-4pm, 7pm-9pm\nSaturday: 11am-4pm, 7pm-9pm\nSunday: 11am-4pm, 7pm-9pm",
+        "whatsappLink": "",
+        "intro_zh": "著名的马来餐厅，以独特的香料炸鸡椰浆饭（Nasi Lemak Ayam Goreng Berempah）闻名。酸辣鱼（Asam Pedas）和咖喱面也是必试佳肴，深受食客喜爱。",
+        "intro_en": "A famous Malay restaurant known for its Nasi Lemak with Spiced Fried Chicken. Asam Pedas and Curry Mee are also must-try dishes, highly favored by locals.",
+        "tags": [],
+        "category": [
+            "马来与印度风味"
+        ],
+        "categories": [
+            "马来与印度风味"
+        ],
+        "halalStatus": "muslim_owned",
+        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTbtWPJLxWTWgAK1VKMPDsS9EHe6BcyuHxYrg&s",
+        "price_range": "RM 10-20",
+        "rating": 0,
+        "fb_post_link": "",
+        "menu_link": "",
+        "website_link": "",
+        "delivery_link": "",
+        "isVegetarian": false,
+        "isNoBeef": false,
+        "isVIP": false,
+        "priority": 0,
+        "subscriptionLevel": 0,
+        "manualStatus": "auto",
+        "branches": [],
+        "subStalls": [],
+        "dietaryOption": null,
+        "slug": "7-beradik-restaurant-senai"
     },
     {
         "id": 371,
