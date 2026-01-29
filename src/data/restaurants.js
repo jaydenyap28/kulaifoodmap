@@ -4611,6 +4611,7 @@ export const initialRestaurants = [
         "area": "Indahpura",
         "address": "Pusat Komersial Indah, 178, Jalan Kiambang 12, Indahpura, 81000 Kulai, Johor",
         "opening_hours": "Monday: 2–10 pm\nTuesday: 2–10 pm\nWednesday: 2–10 pm\nThursday: 2–10 pm\nFriday: 2–10 pm\nSaturday: 2–10 pm\nSunday: 2–10 pm",
+        "phone": "01136683849",
         "whatsappLink": "",
         "intro_zh": "主打炭烧鱼头炉，汤底鲜甜浓郁，鱼肉新鲜。适合家庭聚餐，围炉共尝热腾腾的美味。",
         "intro_en": "Specializes in charcoal fish head steamboat with rich, sweet soup and fresh fish. Perfect for family gatherings to enjoy a hot and hearty meal.",
@@ -9575,7 +9576,20 @@ export const initialRestaurants = [
         "subscriptionLevel": 0,
         "manualStatus": "auto",
         "branches": [],
-        "subStalls": [],
+        "subStalls": [
+            { "name": "", "image": "https://ibb.co/MxLjsyrp" },
+            { "name": "", "image": "https://ibb.co/qFrSMXyQ" },
+            { "name": "", "image": "https://ibb.co/ccLLy8dz" },
+            { "name": "", "image": "https://ibb.co/xnzvcWH" },
+            { "name": "", "image": "https://ibb.co/1Yfmh84X" },
+            { "name": "", "image": "https://ibb.co/WNZq5T4t" },
+            { "name": "", "image": "https://ibb.co/fVDzG9Py" },
+            { "name": "", "image": "https://ibb.co/ksMw0kts" },
+            { "name": "", "image": "https://ibb.co/ZRqBMPtS" },
+            { "name": "", "image": "https://ibb.co/VKCCRkq" },
+            { "name": "", "image": "https://ibb.co/BVBBqgpp" },
+            { "name": "", "image": "https://ibb.co/Q72HTFP4" }
+        ],
         "dietaryOption": null,
         "slug": "restoran-fuchun"
     },
@@ -18773,5 +18787,515 @@ export const initialRestaurants = [
         "dietaryOption": null,
         "slug": "warong-crew-taman-muhibbah",
         "phone": "01110800109"
+    },
+    {
+        "id": 452,
+        "name": "兰姐擂茶馆",
+        "name_en": "",
+        "location": {
+            "lat": null,
+            "lng": null
+        },
+        "area": "Kulai",
+        "address": "112, Jalan Harmoni 1",
+        "opening_hours": "",
+        "whatsappLink": "",
+        "intro_zh": "",
+        "intro_en": "",
+        "tags": [],
+        "category": [
+            "饭类",
+            "健康餐"
+        ],
+        "categories": [
+            "饭类",
+            "健康餐"
+        ],
+        "halalStatus": "non_halal",
+        "image": "https://placehold.co/600x400/1e1e1e/FFF?text=Lan+Jie+Lei+Cha",
+        "price_range": "RM 10-20",
+        "rating": 0,
+        "fb_post_link": "",
+        "menu_link": "",
+        "website_link": "",
+        "delivery_link": "",
+        "isVegetarian": false,
+        "isNoBeef": false,
+        "isVIP": false,
+        "priority": 0,
+        "subscriptionLevel": 0,
+        "manualStatus": "auto",
+        "branches": [],
+        "subStalls": [],
+        "dietaryOption": null,
+        "slug": "lan-jie-lei-cha",
+        "phone": ""
+    },
+    {
+        "id": 453,
+        "name": "SWISS PROMISE BAKERY",
+        "name_en": "SWISS PROMISE BAKERY",
+        "location": {
+            "lat": null,
+            "lng": null
+        },
+        "area": "Kulai",
+        "address": "102, Jalan Harmoni 1, Taman Harmoni, 81000 Kulai, Johor Darul Ta'zim",
+        "opening_hours": "Monday: 9am - 6pm\nTuesday: 9am - 6pm\nWednesday: 9am - 6pm\nThursday: 9am - 6pm\nFriday: 9am - 6pm\nSaturday: Closed\nSunday: 9am - 6pm",
+        "whatsappLink": "",
+        "intro_zh": "",
+        "intro_en": "",
+        "tags": [],
+        "category": [
+            "蛋糕甜点"
+        ],
+        "categories": [
+            "蛋糕甜点"
+        ],
+        "halalStatus": "non_halal",
+        "image": "https://placehold.co/600x400/1e1e1e/FFF?text=SWISS+PROMISE+BAKERY",
+        "price_range": "RM 10-20",
+        "rating": 0,
+        "fb_post_link": "",
+        "menu_link": "",
+        "website_link": "",
+        "delivery_link": "",
+        "isVegetarian": false,
+        "isNoBeef": false,
+        "isVIP": false,
+        "priority": 0,
+        "subscriptionLevel": 0,
+        "manualStatus": "auto",
+        "branches": [],
+        "subStalls": [],
+        "dietaryOption": null,
+        "slug": "swiss-promise-bakery",
+        "phone": "0183741277"
+    },
+    {
+        "id": 454,
+        "name": "唯美咖啡店",
+        "name_en": "Kedai Kopi Wei Mei",
+        "location": {
+            "lat": null,
+            "lng": null
+        },
+        "area": "Kulai",
+        "address": "Jalan Serunai, Taman Sri Kulai Baru 2, 81000 Kulai, Johor Darul Ta'zim",
+        "opening_hours": "",
+        "whatsappLink": "",
+        "intro_zh": "",
+        "intro_en": "",
+        "tags": [],
+        "category": [
+            "咖啡店/美食阁"
+        ],
+        "categories": [
+            "咖啡店/美食阁"
+        ],
+        "halalStatus": "non_halal",
+        "image": "https://placehold.co/600x400/1e1e1e/FFF?text=Kedai+Kopi+Wei+Mei",
+        "price_range": "RM 10-20",
+        "rating": 0,
+        "fb_post_link": "",
+        "menu_link": "",
+        "website_link": "",
+        "delivery_link": "",
+        "isVegetarian": false,
+        "isNoBeef": false,
+        "isVIP": false,
+        "priority": 0,
+        "subscriptionLevel": 0,
+        "manualStatus": "auto",
+        "branches": [],
+        "subStalls": [],
+        "dietaryOption": null,
+        "slug": "kedai-kopi-wei-mei",
+        "phone": ""
+    },
+    {
+        "id": 455,
+        "name": "古来21哩50年老字号炒果条",
+        "name_en": "",
+        "location": {
+            "lat": null,
+            "lng": null
+        },
+        "area": "Kulai 21 Miles",
+        "address": "Jalan Bunga Raya 4, Taman Kulai Utama, 81000 Kulai, Johor Darul Ta'zim",
+        "opening_hours": "",
+        "whatsappLink": "",
+        "intro_zh": "",
+        "intro_en": "",
+        "tags": [],
+        "category": [
+            "粉类"
+        ],
+        "categories": [
+            "粉类"
+        ],
+        "halalStatus": "non_halal",
+        "image": "https://placehold.co/600x400/1e1e1e/FFF?text=Kulai+21+Miles+Char+Kway+Teow",
+        "price_range": "RM 5-15",
+        "rating": 0,
+        "fb_post_link": "",
+        "menu_link": "",
+        "website_link": "",
+        "delivery_link": "",
+        "isVegetarian": false,
+        "isNoBeef": false,
+        "isVIP": false,
+        "priority": 0,
+        "subscriptionLevel": 0,
+        "manualStatus": "auto",
+        "branches": [],
+        "subStalls": [],
+        "dietaryOption": null,
+        "slug": "kulai-21-miles-char-kway-teow",
+        "phone": "0167510556"
+    },
+    {
+        "id": 456,
+        "name": "长发咖啡店",
+        "name_en": "Kedai Kopi Thiong Huat",
+        "location": {
+            "lat": null,
+            "lng": null
+        },
+        "area": "Kulai 21 Miles",
+        "address": "1, Jalan Seruling 1, Taman Sri Kulai Baru 2, 81000 Kulai, Johor Darul Ta'zim",
+        "opening_hours": "Monday: Closed\nTuesday: 5:30am - 3pm\nWednesday: 5:30am - 3pm\nThursday: 5:30am - 3pm\nFriday: 5:30am - 3pm\nSaturday: 5:30am - 3pm\nSunday: 5:30am - 3pm",
+        "whatsappLink": "",
+        "intro_zh": "",
+        "intro_en": "",
+        "tags": [],
+        "category": [
+            "咖啡店/美食阁"
+        ],
+        "categories": [
+            "咖啡店/美食阁"
+        ],
+        "halalStatus": "non_halal",
+        "image": "https://placehold.co/600x400/1e1e1e/FFF?text=Kedai+Kopi+Thiong+Huat",
+        "price_range": "RM 5-15",
+        "rating": 0,
+        "fb_post_link": "",
+        "menu_link": "",
+        "website_link": "",
+        "delivery_link": "",
+        "isVegetarian": false,
+        "isNoBeef": false,
+        "isVIP": false,
+        "priority": 0,
+        "subscriptionLevel": 0,
+        "manualStatus": "auto",
+        "branches": [],
+        "subStalls": [
+            { "name": "", "image": "https://ibb.co/QvVpgBzM" },
+            { "name": "", "image": "https://ibb.co/21PWGXsn" },
+            { "name": "", "image": "https://ibb.co/n8M6RtXs" },
+            { "name": "", "image": "https://ibb.co/wZQ9xgDr" },
+            { "name": "", "image": "https://ibb.co/Rkhx5Xc7" },
+            { "name": "", "image": "https://ibb.co/cXMVVp1b" },
+            { "name": "", "image": "https://ibb.co/Y7t2h61t" },
+            { "name": "", "image": "https://ibb.co/hPL5pCX" },
+            { "name": "", "image": "https://ibb.co/XxQ9C6xt" },
+            { "name": "", "image": "https://ibb.co/C3gWGfpD" }
+        ],
+        "dietaryOption": null,
+        "slug": "kedai-kopi-thiong-huat",
+        "phone": "0127230430"
+    },
+    {
+        "id": 457,
+        "name": "东海美食阁",
+        "name_en": "Restoran Sin Tong Hai",
+        "location": {
+            "lat": null,
+            "lng": null
+        },
+        "area": "Kulai 21 Miles",
+        "address": "46, Jalan Susur Kulai 4, Taman Sri Kulai Baru, 81000 Kulai, Johor Darul Ta'zim",
+        "opening_hours": "",
+        "whatsappLink": "",
+        "intro_zh": "",
+        "intro_en": "",
+        "tags": [],
+        "category": [
+            "咖啡店/美食阁"
+        ],
+        "categories": [
+            "咖啡店/美食阁"
+        ],
+        "halalStatus": "non_halal",
+        "image": "https://placehold.co/600x400/1e1e1e/FFF?text=Restoran+Sin+Tong+Hai",
+        "price_range": "RM 10-20",
+        "rating": 0,
+        "fb_post_link": "",
+        "menu_link": "",
+        "website_link": "",
+        "delivery_link": "",
+        "isVegetarian": false,
+        "isNoBeef": false,
+        "isVIP": false,
+        "priority": 0,
+        "subscriptionLevel": 0,
+        "manualStatus": "auto",
+        "branches": [],
+        "subStalls": [
+            { "name": "", "image": "https://ibb.co/nM2hDGb0" },
+            { "name": "", "image": "https://ibb.co/0VMhQNyr" },
+            { "name": "", "image": "https://ibb.co/SD1rV8nm" },
+            { "name": "", "image": "https://ibb.co/FqBNLN97" }
+        ],
+        "dietaryOption": null,
+        "slug": "restoran-sin-tong-hai",
+        "phone": ""
+    },
+    {
+        "id": 458,
+        "name": "新缤缤咖喱面",
+        "name_en": "Restoran Sin Beng Beng",
+        "location": {
+            "lat": null,
+            "lng": null
+        },
+        "area": "Kulai 21 Miles",
+        "address": "Jalan Susur Kulai 4, Taman Sri Kulai Baru 2, 81000 Kulai, Johor Darul Ta'zim",
+        "opening_hours": "",
+        "whatsappLink": "",
+        "intro_zh": "",
+        "intro_en": "",
+        "tags": [],
+        "category": [
+            "咖啡店/美食阁"
+        ],
+        "categories": [
+            "咖啡店/美食阁"
+        ],
+        "halalStatus": "non_halal",
+        "image": "https://placehold.co/600x400/1e1e1e/FFF?text=Restoran+Sin+Beng+Beng",
+        "price_range": "RM 10-20",
+        "rating": 0,
+        "fb_post_link": "",
+        "menu_link": "",
+        "website_link": "",
+        "delivery_link": "",
+        "isVegetarian": false,
+        "isNoBeef": false,
+        "isVIP": false,
+        "priority": 0,
+        "subscriptionLevel": 0,
+        "manualStatus": "auto",
+        "branches": [],
+        "subStalls": [],
+        "dietaryOption": null,
+        "slug": "restoran-sin-beng-beng",
+        "phone": "0167808888"
+    },
+    {
+        "id": 459,
+        "name": "川源咖啡店",
+        "name_en": "",
+        "location": {
+            "lat": null,
+            "lng": null
+        },
+        "area": "Kulai 21 Miles",
+        "address": "38, Jalan Anggerik 2, Taman Kulai Utama, 81000 Kulai, Johor Darul Ta'zim",
+        "opening_hours": "",
+        "whatsappLink": "",
+        "intro_zh": "",
+        "intro_en": "",
+        "tags": [],
+        "category": [
+            "咖啡店/美食阁"
+        ],
+        "categories": [
+            "咖啡店/美食阁"
+        ],
+        "halalStatus": "non_halal",
+        "image": "https://placehold.co/600x400/1e1e1e/FFF?text=Chuan+Yuan+Kopitiam",
+        "price_range": "RM 5-15",
+        "rating": 0,
+        "fb_post_link": "",
+        "menu_link": "",
+        "website_link": "",
+        "delivery_link": "",
+        "isVegetarian": false,
+        "isNoBeef": false,
+        "isVIP": false,
+        "priority": 0,
+        "subscriptionLevel": 0,
+        "manualStatus": "auto",
+        "branches": [],
+        "subStalls": [],
+        "dietaryOption": null,
+        "slug": "chuan-yuan-kopitiam",
+        "phone": ""
+    },
+    {
+        "id": 460,
+        "name": "忝兴美食阁",
+        "name_en": "Heng Park Junction Foodcourt",
+        "location": {
+            "lat": null,
+            "lng": null
+        },
+        "area": "Indahpura",
+        "address": "Jalan Kiambang 12, 81000 Kulai, Johor Darul Ta'zim",
+        "opening_hours": "Monday: 6am - 12am\nTuesday: 6am - 12am\nWednesday: 6am - 12am\nThursday: 6am - 12am\nFriday: 6am - 12am\nSaturday: 6am - 12am\nSunday: 6am - 12am",
+        "whatsappLink": "",
+        "intro_zh": "",
+        "intro_en": "",
+        "tags": [],
+        "category": [
+            "咖啡店/美食阁"
+        ],
+        "categories": [
+            "咖啡店/美食阁"
+        ],
+        "halalStatus": "non_halal",
+        "image": "https://placehold.co/600x400/1e1e1e/FFF?text=Heng+Park+Junction+Foodcourt",
+        "price_range": "RM 10-20",
+        "rating": 0,
+        "fb_post_link": "",
+        "menu_link": "",
+        "website_link": "",
+        "delivery_link": "",
+        "isVegetarian": false,
+        "isNoBeef": false,
+        "isVIP": false,
+        "priority": 0,
+        "subscriptionLevel": 0,
+        "manualStatus": "auto",
+        "branches": [],
+        "subStalls": [],
+        "dietaryOption": null,
+        "slug": "heng-park-junction-foodcourt",
+        "phone": ""
+    },
+    {
+        "id": 461,
+        "name": "Restoran Bach Viet Vietnamese Cuise",
+        "name_en": "Restoran Bach Viet Vietnamese Cuise",
+        "location": {
+            "lat": 1.642789,
+            "lng": 103.605141
+        },
+        "area": "Indahpura",
+        "address": "Indahpura, Kulai, Johor",
+        "opening_hours": "",
+        "whatsappLink": "",
+        "intro_zh": "",
+        "intro_en": "",
+        "tags": [],
+        "category": [
+            "Cafe"
+        ],
+        "categories": [
+            "Cafe"
+        ],
+        "halalStatus": "non_halal",
+        "image": "https://placehold.co/600x400/1e1e1e/FFF?text=Bach+Viet+Vietnamese",
+        "price_range": "RM 10-20",
+        "rating": 0,
+        "fb_post_link": "",
+        "menu_link": "",
+        "website_link": "",
+        "delivery_link": "",
+        "isVegetarian": false,
+        "isNoBeef": false,
+        "isVIP": false,
+        "priority": 0,
+        "subscriptionLevel": 0,
+        "manualStatus": "auto",
+        "branches": [],
+        "subStalls": [],
+        "dietaryOption": null,
+        "slug": "restoran-bach-viet-vietnamese-cuise",
+        "phone": ""
+    },
+    {
+        "id": 462,
+        "name": "双福手工面粉粿",
+        "name_en": "Shuang Hock Noodle",
+        "location": {
+            "lat": null,
+            "lng": null
+        },
+        "area": "Indahpura",
+        "address": "235, Jalan Kiambang 15, Bandar Indahpura, 81000 Kulai, Johor Darul Ta'zim",
+        "opening_hours": "",
+        "whatsappLink": "",
+        "intro_zh": "",
+        "intro_en": "",
+        "tags": [],
+        "category": [
+            "粉类"
+        ],
+        "categories": [
+            "粉类"
+        ],
+        "halalStatus": "non_halal",
+        "image": "https://placehold.co/600x400/1e1e1e/FFF?text=Shuang+Hock+Noodle",
+        "price_range": "RM 5-15",
+        "rating": 0,
+        "fb_post_link": "",
+        "menu_link": "",
+        "website_link": "",
+        "delivery_link": "",
+        "isVegetarian": false,
+        "isNoBeef": false,
+        "isVIP": false,
+        "priority": 0,
+        "subscriptionLevel": 0,
+        "manualStatus": "auto",
+        "branches": [],
+        "subStalls": [],
+        "dietaryOption": null,
+        "slug": "shuang-hock-noodle",
+        "phone": "0107721322"
+    },
+    {
+        "id": 463,
+        "name": "时尚早点",
+        "name_en": "Good Morning",
+        "location": {
+            "lat": null,
+            "lng": null
+        },
+        "area": "Indahpura",
+        "address": "237, Pusat Komersial Indah, Jalan Kiambang 15, Bandar Indahpura, 81000 Kulai, Johor Darul Ta'zim",
+        "opening_hours": "Monday: 7am - 5pm\nTuesday: 7am - 5pm\nWednesday: 7am - 5pm\nThursday: 7am - 5pm\nFriday: 7am - 5pm\nSaturday: 7am - 5pm\nSunday: 7am - 5pm",
+        "whatsappLink": "",
+        "intro_zh": "",
+        "intro_en": "",
+        "tags": [],
+        "category": [
+            "Cafe"
+        ],
+        "categories": [
+            "Cafe"
+        ],
+        "halalStatus": "non_halal",
+        "image": "https://placehold.co/600x400/1e1e1e/FFF?text=Good+Morning",
+        "price_range": "RM 10-20",
+        "rating": 0,
+        "fb_post_link": "https://www.facebook.com/goodmorningfoodtruck/",
+        "menu_link": "",
+        "website_link": "",
+        "delivery_link": "",
+        "isVegetarian": false,
+        "isNoBeef": false,
+        "isVIP": false,
+        "priority": 0,
+        "subscriptionLevel": 0,
+        "manualStatus": "auto",
+        "branches": [],
+        "subStalls": [],
+        "dietaryOption": null,
+        "slug": "good-morning-cafe",
+        "phone": "0143496882"
     }
 ];
