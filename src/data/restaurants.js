@@ -2889,9 +2889,11 @@ export const restaurants = [
                 ]
             },
             {
-                "name": "",
+                "name": "潮蒸记",
                 "image": "https://i.ibb.co/whgqkxm7/IMG-20260127-124939.jpg",
-                "tags": []
+                "tags": [
+                    "蒸米粉"
+                ]
             },
             {
                 "name": "匠心糖水",
@@ -17627,40 +17629,62 @@ export const restaurants = [
         "branches": [],
         "subStalls": [
             {
-                "name": "",
-                "image": "https://i.ibb.co/hxLHhfHr/IMG-20260127-135600.jpg"
+                "name": "来点啰吔",
+                "image": "https://i.ibb.co/hxLHhfHr/IMG-20260127-135600.jpg",
+                "tags": [
+                    "啰吔",
+                    "Rojak"
+                ]
+            },
+            {
+                "name": "88海鲜小厨",
+                "image": "https://i.ibb.co/bM9F43tT/IMG-20260127-135608.jpg",
+                "tags": [
+                    "煮炒"
+                ]
+            },
+            {
+                "name": "砂拉越哥罗面",
+                "image": "https://i.ibb.co/Xr49VRgk/IMG-20260127-135617.jpg",
+                "tags": [
+                    "哥罗面",
+                    "云吞面",
+                    "酿豆腐",
+                    "干捞粉"
+                ]
+            },
+            {
+                "name": "Wondeful Western Food",
+                "image": "https://i.ibb.co/QvP0LSbp/IMG-20260127-135623.jpg",
+                "tags": [
+                    "西餐",
+                    "鸡扒"
+                ]
+            },
+            {
+                "name": "麻坡乌达",
+                "image": "https://i.ibb.co/1fYqnqr1/IMG-20260127-135632.jpg",
+                "tags": []
+            },
+            {
+                "name": "粥 粉类",
+                "image": "https://i.ibb.co/202TdRj4/IMG-20260127-135639.jpg",
+                "tags": []
             },
             {
                 "name": "",
-                "image": "https://i.ibb.co/bM9F43tT/IMG-20260127-135608.jpg"
+                "image": "https://i.ibb.co/Ld95ZHpM/IMG-20260127-135647.jpg",
+                "tags": []
             },
             {
                 "name": "",
-                "image": "https://i.ibb.co/Xr49VRgk/IMG-20260127-135617.jpg"
+                "image": "https://i.ibb.co/6Jcz8H14/IMG-20260127-135656.jpg",
+                "tags": []
             },
             {
                 "name": "",
-                "image": "https://i.ibb.co/QvP0LSbp/IMG-20260127-135623.jpg"
-            },
-            {
-                "name": "",
-                "image": "https://i.ibb.co/1fYqnqr1/IMG-20260127-135632.jpg"
-            },
-            {
-                "name": "",
-                "image": "https://i.ibb.co/202TdRj4/IMG-20260127-135639.jpg"
-            },
-            {
-                "name": "",
-                "image": "https://i.ibb.co/Ld95ZHpM/IMG-20260127-135647.jpg"
-            },
-            {
-                "name": "",
-                "image": "https://i.ibb.co/6Jcz8H14/IMG-20260127-135656.jpg"
-            },
-            {
-                "name": "",
-                "image": "https://i.ibb.co/spj5FTFN/IMG-20260127-135702.jpg"
+                "image": "https://i.ibb.co/spj5FTFN/IMG-20260127-135702.jpg",
+                "tags": []
             }
         ],
         "dietaryOption": null,
