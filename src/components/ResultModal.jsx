@@ -88,6 +88,7 @@ const ResultModal = ({ restaurant, onClose, isAdmin, onUpdateRestaurant, categor
             if (typeof s === 'string') return { name: s, image: '', tags: [], tagsInput: '' };
             return {
                 ...s,
+                tags: s.tags || [],
                 tagsInput: (s.tags || []).join(', ')
             };
         }),
@@ -808,6 +809,14 @@ const ResultModal = ({ restaurant, onClose, isAdmin, onUpdateRestaurant, categor
                                         className="w-full bg-[#1a1a1a] border-b border-gray-600 py-1 text-[10px] text-gray-300 focus:border-white outline-none"
                                         placeholder="标签 (Tags: 必吃, 辣, 招牌)"
                                     />
+                                    {/* Tag Pills for Stalls */}
+                                    <div className="flex flex-wrap gap-1 mt-1">
+                                        {stall.tags && stall.tags.map((tag, tIdx) => (
+                                            <span key={tIdx} className="px-1.5 py-0.5 bg-purple-900/30 text-purple-300 border border-purple-800/50 text-[9px] rounded flex items-center gap-1">
+                                                ✨ {tag}
+                                            </span>
+                                        ))}
+                                    </div>
                                 </div>
 
                                 <button 

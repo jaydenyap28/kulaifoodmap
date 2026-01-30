@@ -19868,3 +19868,6 @@ export const restaurants = [
         "id": 473
     }
 ];
+export const MAIN_VIDEO_LINK = 'https://www.facebook.com/kulaifoodmap';
+
+export const initialRestaurants = restaurants;
