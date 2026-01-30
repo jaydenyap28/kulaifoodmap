@@ -10619,71 +10619,6 @@ export const restaurants = [
         "slug": "sushi-mentai-kulai"
     },
     {
-        "id": 265,
-        "name": "#7 Beradik Restaurant",
-        "name_en": "#7 Beradik Restaurant",
-        "location": {
-            "lat": null,
-            "lng": null
-        },
-        "area": "Indahpura",
-        "address": "Multiple Locations in Kulai & Senai",
-        "opening_hours": "11 am–2:30 pm, 5–9 pm Mon closed",
-        "whatsappLink": "",
-        "intro_zh": "优美城知名的海鲜餐馆，以煮炒和新鲜海鲜为主，提供多种美味佳肴，深受当地人喜爱。",
-        "intro_en": "A well-known seafood restaurant in Indahpura, specializing in zi char and fresh seafood, offering a variety of delicious dishes loved by locals.",
-        "tags": [
-            "干"
-        ],
-        "category": [
-            "煮炒海鲜楼"
-        ],
-        "categories": [
-            "煮炒海鲜楼"
-        ],
-        "halalStatus": "non_halal",
-        "image": "https://i.ibb.co/DPWKVzPk/image.jpg",
-        "price_range": "RM 10-20",
-        "rating": 0,
-        "fb_post_link": "",
-        "menu_link": "",
-        "website_link": "",
-        "delivery_link": "",
-        "isVegetarian": false,
-        "isNoBeef": false,
-        "isVIP": false,
-        "priority": 0,
-        "subscriptionLevel": 0,
-        "manualStatus": "auto",
-        "branches": [
-            {
-                "name": "Bandar Putra",
-                "address": "34, Jalan Kenanga 29/1, Bandar Indahpura, 81000 Kulai, Johor Darul Ta'zim",
-                "opening_hours": "11 am–2:30 pm, 5–9 pm Mon closed",
-                "wazeUrl": "https://waze.com/ul?q=Restoran%20Jin%20Hai%20Indahpura",
-                "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Restoran+Jin+Hai+Indahpura",
-                "location": {
-                    "lat": null,
-                    "lng": null
-                }
-            },
-            {
-                "name": "Senai",
-                "address": "Lot 5035, Batu 17 1/2, Jalan Air Hitam, Saleng, 81400 Senai, Johor",
-                "opening_hours": "Monday: 11am-4pm, 7pm-9pm\nTuesday: 11am-4pm, 7pm-9pm\nWednesday: 11am-4pm, 7pm-9pm\nThursday: 11am-4pm, 7pm-9pm\nFriday: 11am-4pm, 7pm-9pm\nSaturday: 11am-4pm, 7pm-9pm\nSunday: 11am-4pm, 7pm-9pm",
-                "wazeUrl": "https://waze.com/ul?q=Restoran%20Jin%20Hai%20Senai",
-                "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Restoran+Jin+Hai+Senai",
-                "location": {
-                    "lat": null,
-                    "lng": null
-                }
-            }
-        ],
-        "subStalls": [],
-        "dietaryOption": null,
-        "slug": "restoran-jin-hai"
-    },
-    {
         "id": 266,
         "name": "4Fingers Crispy Chicken",
         "name_en": "",
@@ -15571,90 +15506,6 @@ export const restaurants = [
         "phone": "0167120456"
     },
     {
-        "id": 390,
-        "name": "Restoran Bunga Dahlia",
-        "name_en": "Restoran Bunga Dahlia",
-        "location": {
-            "lat": null,
-            "lng": null
-        },
-        "area": "Senai",
-        "address": "88, Jln Bintang, Taman Bintang, 81400 Senai, Johor Darul Ta'zim",
-        "opening_hours": "6:30am–6pm\nMonday: Closed",
-        "whatsappLink": "",
-        "intro_zh": "",
-        "intro_en": "",
-        "tags": [],
-        "category": [
-            "马来与印度风味"
-        ],
-        "categories": [
-            "马来与印度风味"
-        ],
-        "halalStatus": "muslim_owned",
-        "image": "https://i.ibb.co/GQ865yQQ/Restoran-Bunga-Dahlia-Taman-Bintang.jpg",
-        "price_range": "RM 10-20",
-        "rating": 0,
-        "fb_post_link": "",
-        "menu_link": "",
-        "website_link": "https://www.facebook.com/p/Restoran-Bunga-Dahlia-100066599084975/",
-        "delivery_link": "",
-        "isVegetarian": false,
-        "isNoBeef": true,
-        "isVIP": false,
-        "priority": 0,
-        "subscriptionLevel": 0,
-        "manualStatus": "auto",
-        "branches": [],
-        "subStalls": [],
-        "dietaryOption": null,
-        "slug": "restoran-bunga-dahlia-1",
-        "phone": "0192895929"
-    },
-    {
-        "id": 391,
-        "name": "瑞记海南鸡饭",
-        "name_en": "Swee Kee Hainan Chicken Rice",
-        "location": {
-            "lat": null,
-            "lng": null
-        },
-        "area": "Senai",
-        "address": "98, Jln Bintang, Taman Bintang, 81400 Senai, Johor Darul Ta'zim",
-        "opening_hours": "10:30am–7pm\nMonday: Closed",
-        "whatsappLink": "",
-        "intro_zh": "",
-        "intro_en": "",
-        "tags": [
-            "海南鸡饭"
-        ],
-        "category": [
-            "饭类"
-        ],
-        "categories": [
-            "饭类"
-        ],
-        "halalStatus": "non_halal",
-        "image": "https://placehold.co/600x400/e0e0e0/333333?text=No+Image",
-        "price_range": "RM 10-20",
-        "rating": 0,
-        "fb_post_link": "",
-        "menu_link": "",
-        "website_link": "",
-        "delivery_link": "",
-        "isVegetarian": false,
-        "isNoBeef": false,
-        "isVIP": false,
-        "priority": 0,
-        "subscriptionLevel": 0,
-        "manualStatus": "auto",
-        "branches": [],
-        "subStalls": [],
-        "dietaryOption": null,
-        "slug": "swee-kee-hainan-chicken-rice",
-        "phone": "075984231"
-    },
-    {
         "id": 392,
         "name": "Masal Vadai Restaurant",
         "name_en": "Masal Vadai Restaurant",
@@ -15999,68 +15850,6 @@ export const restaurants = [
         "subStalls": [],
         "dietaryOption": null,
         "slug": "starbucks"
-    },
-    {
-        "id": 400,
-        "name": "Bask Bear Coffee",
-        "name_en": "",
-        "location": {
-            "lat": null,
-            "lng": null
-        },
-        "area": "Bandar Putra",
-        "address": "Multiple Locations in Kulai & Senai",
-        "opening_hours": "Monday: 10am - 10pm\nTuesday: 10am - 10pm\nWednesday: 10am - 10pm\nThursday: 10am - 10pm\nFriday: 10am - 10pm\nSaturday: 10am - 10pm\nSunday: 10am - 10pm",
-        "whatsappLink": "",
-        "intro_zh": "马来西亚领先的创新咖啡品牌，以特调咖啡和著名的Bask Bear吐司闻名。结合了独特的咖啡风味和酥脆的吐司，是下午茶或轻食的绝佳选择。",
-        "intro_en": "Malaysia's leading innovative coffee brand, famous for its specialty coffee and signature Bask Bear Toast. Combining unique coffee flavors with crispy toast, it's a perfect choice for tea time or a light meal.",
-        "tags": [
-            "Coffee",
-            "Toast",
-            "Halal",
-            "Cafe",
-            "Tea"
-        ],
-        "category": [
-            "Cafe",
-            "饮品",
-            "蛋糕甜点"
-        ],
-        "categories": [
-            "Cafe",
-            "饮品",
-            "蛋糕甜点"
-        ],
-        "halalStatus": "certified",
-        "image": "https://images.deliveryhero.io/image/fd-my/LH/v9yn-hero.jpg",
-        "price_range": "RM 10-25",
-        "rating": 0,
-        "fb_post_link": "",
-        "menu_link": "https://www.baskbear.com/menu",
-        "website_link": "https://www.baskbear.com",
-        "delivery_link": "",
-        "isVegetarian": false,
-        "isNoBeef": true,
-        "isVIP": false,
-        "priority": 0,
-        "subscriptionLevel": 0,
-        "manualStatus": "auto",
-        "branches": [
-            {
-                "name": "Bask Bear Coffee - IOI Mall Kulai",
-                "address": "G-22, Ground Floor, IOI Mall Kulai, Lebuh Putra Utama, Bandar Putra Kulai"
-            },
-            {
-                "name": "Bask Bear Coffee - Johor Premium Outlets (JPO)",
-                "address": "Stall 1, Gucci - Johor Premium Outlet, Jalan Premium Outlets, Bandar Indahpura"
-            },
-            {
-                "name": "Bask Bear Coffee Senai Centre Point",
-                "address": "No. 34 (Ground Floor), Jalan Terminal 5, Central Point, Lapangan Terbang, 81400 Senai, Johor"
-            }
-        ],
-        "dietaryOption": null,
-        "slug": "bask-bear-coffee-1"
     },
     {
         "id": 401,
@@ -19527,3 +19316,4 @@ export const restaurants = [
         "id": 475
     }
 ];
+export const MAIN_VIDEO_LINK = 'https://www.facebook.com/kulaifoodmap';
