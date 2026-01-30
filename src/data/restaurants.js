@@ -1,4 +1,4 @@
-export const restaurants = [
+export const initialRestaurants = [
     {
         "id": 1,
         "name": "世华肉骨茶",

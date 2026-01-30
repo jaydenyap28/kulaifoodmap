@@ -5,7 +5,7 @@ const restaurantsFilePath = path.join(__dirname, '../src/data/restaurants.js');
 
 let content = fs.readFileSync(restaurantsFilePath, 'utf8');
 
-const startMarker = 'export const restaurants = [';
+const startMarker = 'export const initialRestaurants = [';
 const startIndex = content.indexOf(startMarker);
 
 if (startIndex === -1) {
