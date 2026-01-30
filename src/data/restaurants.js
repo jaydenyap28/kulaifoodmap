@@ -12053,7 +12053,7 @@ export const initialRestaurants = [
             "饮品"
         ],
         "halalStatus": "certified",
-        "image": "https://i.ibb.co/ns3b3r4b/Bask-Bear-Coffee.jpg",
+        "image": "https://i.ibb.co/3ykJ7Q8J/image.jpg",
         "price_range": "RM 10-20",
         "rating": 0,
         "fb_post_link": "",
@@ -19313,3 +19313,5 @@ export const initialRestaurants = [
         "id": 475
     }
 ];
+
+export const MAIN_VIDEO_LINK = 'https://www.facebook.com/kulaifoodmap';
