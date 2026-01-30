@@ -18322,7 +18322,7 @@ export const initialRestaurants = [
             "蛋糕甜点"
         ],
         "halalStatus": "non_halal",
-        "image": "https://placehold.co/600x400/1e1e1e/FFF?text=SWISS+PROMISE+BAKERY",
+        "image": "https://i.ibb.co/S4fJjBFb/Swiss-Promise-Bakery.jpg",
         "price_range": "RM 10-20",
         "rating": 0,
         "fb_post_link": "",
@@ -18363,7 +18363,7 @@ export const initialRestaurants = [
             "咖啡店/美食阁"
         ],
         "halalStatus": "non_halal",
-        "image": "https://placehold.co/600x400/1e1e1e/FFF?text=Kedai+Kopi+Wei+Mei",
+        "image": "https://i.ibb.co/CpfX07cZ/image.jpg",
         "price_range": "RM 10-20",
         "rating": 0,
         "fb_post_link": "",
@@ -18404,7 +18404,7 @@ export const initialRestaurants = [
             "粉类"
         ],
         "halalStatus": "non_halal",
-        "image": "https://placehold.co/600x400/1e1e1e/FFF?text=Kulai+21+Miles+Char+Kway+Teow",
+        "image": "https://i.ibb.co/Dq7Zvnb/21.jpg",
         "price_range": "RM 5-15",
         "rating": 0,
         "fb_post_link": "",
@@ -18445,7 +18445,7 @@ export const initialRestaurants = [
             "咖啡店/美食阁"
         ],
         "halalStatus": "non_halal",
-        "image": "https://placehold.co/600x400/1e1e1e/FFF?text=Kedai+Kopi+Thiong+Huat",
+        "image": "https://i.ibb.co/3JHWq76/image.jpg",
         "price_range": "RM 5-15",
         "rating": 0,
         "fb_post_link": "",
@@ -18589,7 +18589,7 @@ export const initialRestaurants = [
             "咖啡店/美食阁"
         ],
         "halalStatus": "non_halal",
-        "image": "https://placehold.co/600x400/1e1e1e/FFF?text=Restoran+Sin+Beng+Beng",
+        "image": "https://i.ibb.co/RrXFfQB/image.jpg",
         "price_range": "RM 10-20",
         "rating": 0,
         "fb_post_link": "",
@@ -18630,7 +18630,7 @@ export const initialRestaurants = [
             "咖啡店/美食阁"
         ],
         "halalStatus": "non_halal",
-        "image": "https://placehold.co/600x400/1e1e1e/FFF?text=Chuan+Yuan+Kopitiam",
+        "image": "https://i.ibb.co/p6K1KKjc/image.jpg",
         "price_range": "RM 5-15",
         "rating": 0,
         "fb_post_link": "",
@@ -18722,7 +18722,7 @@ export const initialRestaurants = [
             "咖啡店/美食阁"
         ],
         "halalStatus": "non_halal",
-        "image": "https://placehold.co/600x400/1e1e1e/FFF?text=Heng+Park+Junction+Foodcourt",
+        "image": "https://i.ibb.co/C5KLjZFz/image.jpg",
         "price_range": "RM 10-20",
         "rating": 0,
         "fb_post_link": "",
@@ -18763,7 +18763,7 @@ export const initialRestaurants = [
             "Cafe"
         ],
         "halalStatus": "non_halal",
-        "image": "https://placehold.co/600x400/1e1e1e/FFF?text=Bach+Viet+Vietnamese",
+        "image": "https://i.ibb.co/4g4yywn3/Restoran-Bach-Viet-Vietnamese-Cuise.jpg",
         "price_range": "RM 10-20",
         "rating": 0,
         "fb_post_link": "",
@@ -18804,7 +18804,7 @@ export const initialRestaurants = [
             "粉类"
         ],
         "halalStatus": "non_halal",
-        "image": "https://placehold.co/600x400/1e1e1e/FFF?text=Shuang+Hock+Noodle",
+        "image": "https://i.ibb.co/Z1z5Ssmw/image.jpg",
         "price_range": "RM 5-15",
         "rating": 0,
         "fb_post_link": "",
@@ -18845,7 +18845,7 @@ export const initialRestaurants = [
             "Cafe"
         ],
         "halalStatus": "non_halal",
-        "image": "https://placehold.co/600x400/1e1e1e/FFF?text=Good+Morning",
+        "image": "https://i.ibb.co/39dN6sb4/image.jpg",
         "price_range": "RM 10-20",
         "rating": 0,
         "fb_post_link": "https://www.facebook.com/goodmorningfoodtruck/",
@@ -18882,7 +18882,7 @@ export const initialRestaurants = [
             "马来与印度风味"
         ],
         "halalStatus": "muslim_owned",
-        "image": "https://placehold.co/600x400/1e1e1e/FFF?text=Mustika+Zam+Zam",
+        "image": "https://i.ibb.co/2065V9dm/Restoran-Mustika-Zam-Zam.jpg",
         "delivery_link": "https://www.foodpanda.my/restaurant/s6nu/restoran-mustika-zam-zam-kulai?utm_campaign=google_reserve_place_order_action_CH-SEO_",
         "tags": [
             "Mamak",
@@ -18922,7 +18922,7 @@ export const initialRestaurants = [
             "马来与印度风味"
         ],
         "halalStatus": "muslim_owned",
-        "image": "https://placehold.co/600x400/1e1e1e/FFF?text=De+Selera+Pantai+Timur",
+        "image": "https://i.ibb.co/1YmKBzjF/De-Selera-Pantai-Timur.jpg",
         "tags": [],
         "slug": "de-selera-pantai-timur",
         "intro_zh": "",
@@ -18958,7 +18958,7 @@ export const initialRestaurants = [
             "马来与印度风味"
         ],
         "halalStatus": "muslim_owned",
-        "image": "https://placehold.co/600x400/1e1e1e/FFF?text=Kulai+Cafe",
+        "image": "https://i.ibb.co/gZGv5ZX5/Kulai-Cafe.jpg",
         "tags": [],
         "slug": "kulai-cafe",
         "intro_zh": "",
@@ -18994,7 +18994,7 @@ export const initialRestaurants = [
             "马来与印度风味"
         ],
         "halalStatus": "muslim_owned",
-        "image": "https://placehold.co/600x400/1e1e1e/FFF?text=Restoran+Puteri",
+        "image": "https://i.ibb.co/hJD4qg7Q/Restoran-Puteri.jpg",
         "tags": [],
         "slug": "restoran-puteri",
         "intro_zh": "",
@@ -19030,7 +19030,7 @@ export const initialRestaurants = [
             "咖啡店/美食阁"
         ],
         "halalStatus": "non_halal",
-        "image": "https://placehold.co/600x400/1e1e1e/FFF?text=Yi+Lu+Fa+168",
+        "image": "https://i.ibb.co/MKFZKM3/168.jpg",
         "tags": [],
         "slug": "restoran-yi-lu-fa-168",
         "intro_zh": "",
@@ -19066,7 +19066,7 @@ export const initialRestaurants = [
             "咖啡店/美食阁"
         ],
         "halalStatus": "non_halal",
-        "image": "https://placehold.co/600x400/1e1e1e/FFF?text=Xiang+Yuan+Kopitiam",
+        "image": "https://i.ibb.co/GfDgrT4d/image.jpg",
         "tags": [],
         "slug": "xiang-yuan-kopitiam",
         "intro_zh": "",
@@ -19102,7 +19102,7 @@ export const initialRestaurants = [
             "咖啡店/美食阁"
         ],
         "halalStatus": "non_halal",
-        "image": "https://placehold.co/600x400/1e1e1e/FFF?text=Koway+Trading",
+        "image": "https://i.ibb.co/SqLycr3/image.jpg",
         "price_range": "RM 10-20",
         "rating": 0,
         "fb_post_link": "",
@@ -19142,7 +19142,7 @@ export const initialRestaurants = [
             "咖啡店/美食阁"
         ],
         "halalStatus": "non_halal",
-        "image": "https://placehold.co/600x400/1e1e1e/FFF?text=Lao+Di+Fang",
+        "image": "https://i.ibb.co/WTVBK76/image.jpg",
         "price_range": "RM 10-20",
         "rating": 0,
         "fb_post_link": "",
@@ -19184,7 +19184,7 @@ export const initialRestaurants = [
             "煮炒海鲜楼"
         ],
         "halalStatus": "non_halal",
-        "image": "https://placehold.co/600x400/1e1e1e/FFF?text=Restoran+Fantasy",
+        "image": "https://i.ibb.co/Ng9QPJWv/image.jpg",
         "price_range": "RM 10-20",
         "rating": 0,
         "fb_post_link": "",
@@ -19224,7 +19224,7 @@ export const initialRestaurants = [
             "咖啡店/美食阁"
         ],
         "halalStatus": "non_halal",
-        "image": "https://placehold.co/600x400/1e1e1e/FFF?text=Xuan+Food+Corner",
+        "image": "https://i.ibb.co/WCj74Ls/image.jpg",
         "price_range": "RM 10-20",
         "rating": 0,
         "fb_post_link": "",
