@@ -41,8 +41,12 @@ const SortableRestaurantCard = ({ restaurant, ...props }) => {
   };
 
   return (
-    <div ref={setNodeRef} style={style} {...attributes} {...listeners} className="h-full touch-none">
-      <RestaurantCard restaurant={restaurant} {...props} />
+    <div ref={setNodeRef} style={style} className="h-full">
+      <RestaurantCard 
+        restaurant={restaurant} 
+        dragHandleProps={{...attributes, ...listeners}}
+        {...props} 
+      />
     </div>
   );
 };
@@ -238,7 +242,7 @@ const RestaurantList = ({ restaurants, allRestaurants, isAdmin, onUpdateRestaura
   );
 };
 
-const RestaurantCard = ({ restaurant, isAdmin, onUpdate, onDelete, onClick, onCategoryClick, onUpdateArea }) => {
+const RestaurantCard = ({ restaurant, isAdmin, onUpdate, onDelete, onClick, onCategoryClick, onUpdateArea, dragHandleProps }) => {
   const { t, i18n } = useTranslation();
   const openStatus = restaurant.manualStatus && restaurant.manualStatus !== 'auto'
     ? { 
@@ -257,6 +261,18 @@ const RestaurantCard = ({ restaurant, isAdmin, onUpdate, onDelete, onClick, onCa
     >
       {/* Image Header: Aspect Ratio 16/9 for better mobile view */}
       <div className="aspect-video w-full relative bg-gray-800 overflow-hidden shadow-inner shrink-0">
+        
+        {/* Drag Handle */}
+        {isAdmin && dragHandleProps && (
+             <div 
+                {...dragHandleProps}
+                className="absolute top-2 left-2 z-20 p-2 bg-black/50 rounded-full text-white cursor-grab active:cursor-grabbing backdrop-blur-sm touch-none"
+                onClick={(e) => e.stopPropagation()}
+             >
+                <GripVertical size={16} />
+             </div>
+        )}
+
         <ImageWithFallback 
             src={restaurant.image} 
             alt={restaurant.name}
@@ -324,9 +340,11 @@ const RestaurantCard = ({ restaurant, isAdmin, onUpdate, onDelete, onClick, onCa
                     </h3>
                 </div>
                 {/* Rating Badge */}
+                {isAdmin && (
                 <div className="flex items-center bg-[#2d2d2d] border border-gray-700 text-yellow-400 px-1.5 py-0.5 rounded text-xs font-bold shadow-sm shrink-0">
                     <Star size={10} className="fill-yellow-400 mr-1" /> {restaurant.rating}
                 </div>
+                )}
             </div>
 
             {/* English Name / Desc2 */}
@@ -441,8 +459,8 @@ const RestaurantCard = ({ restaurant, isAdmin, onUpdate, onDelete, onClick, onCa
                     <span className="line-clamp-2 leading-tight">{restaurant.address}</span>
                 </div>
 
-                {/* WhatsApp Button for VIP */}
-                {isVIP && restaurant.whatsappLink && (
+                {/* WhatsApp Button */}
+                {restaurant.whatsappLink && (
                     <a 
                         href={restaurant.whatsappLink} 
                         target="_blank" 

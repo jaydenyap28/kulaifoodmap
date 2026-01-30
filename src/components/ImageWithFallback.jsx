@@ -26,7 +26,6 @@ const ImageWithFallback = ({ src, alt, className }) => {
       alt={alt}
       className={className}
       onError={() => setError(true)}
-      crossOrigin="anonymous"
       referrerPolicy="no-referrer"
       loading="lazy"
     />

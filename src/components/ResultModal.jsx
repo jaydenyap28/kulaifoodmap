@@ -348,11 +348,6 @@ const ResultModal = ({ restaurant, onClose, isAdmin, onUpdateRestaurant, categor
                             <span className="mr-1">🍖</span> {t('filter.halal_options.no_pork')}
                         </span>
                     )}
-                    <span className="bg-white/10 border border-white/20 px-2 py-0.5 rounded text-white font-bold text-xs mr-2 backdrop-blur-md">
-                        {restaurant.price_range}
-                    </span>
-                    <Star fill="white" stroke="none" size={14} className="mr-1" />
-                    <span className="font-bold">{restaurant.rating}</span>
                 </div>
             </div>
           </div>
@@ -1244,6 +1239,16 @@ Tuesday: Closed
                         <span className="text-[10px] font-bold">{t('modal.menu', '菜单 (Menu)')}</span>
                     </a>
                  )}
+                 {(() => {
+                    const waUrl = restaurant.whatsappLink || (restaurant.phone && restaurant.phone.replace(/[^0-9]/g, '').startsWith('01') ? `https://wa.me/6${restaurant.phone.replace(/[^0-9]/g, '')}` : null);
+                    if (!waUrl) return null;
+                    return (
+                        <a href={waUrl} target="_blank" rel="noopener noreferrer" className="flex-1 flex flex-col items-center justify-center py-3 bg-[#2d2d2d] hover:bg-[#3d3d3d] rounded-xl text-white transition border border-gray-700">
+                            <Send size={18} className="mb-1 text-green-400"/>
+                            <span className="text-[10px] font-bold">WhatsApp</span>
+                        </a>
+                    );
+                 })()}
                  {restaurant.website_link && (
                     <a href={restaurant.website_link} target="_blank" rel="noopener noreferrer" className="flex-1 flex flex-col items-center justify-center py-3 bg-[#2d2d2d] hover:bg-[#3d3d3d] rounded-xl text-white transition border border-gray-700">
                         <Globe size={18} className="mb-1 text-purple-400"/>

@@ -9,6 +9,12 @@ const BranchSelector = ({ branches }) => {
         if (url) window.open(url, '_blank');
     };
 
+    const getGoogleMapsUrl = (branch) => {
+        if (branch.googleMapsUrl) return branch.googleMapsUrl;
+        const query = `${branch.branchName || branch.name} ${branch.address || ''}`.trim();
+        return `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(query)}`;
+    };
+
     return (
         <div className="bg-[#2d2d2d] p-4 rounded-xl border border-gray-700 mb-4">
             <h3 className="text-white text-sm font-bold mb-3 flex items-center gap-2">
@@ -23,7 +29,7 @@ const BranchSelector = ({ branches }) => {
                             <p className="text-gray-400 text-[10px] line-clamp-2">{branch.address}</p>
                         </div>
                         <div className="flex gap-2">
-                             {branch.wazeUrl && (
+                            {branch.wazeUrl && (
                                 <button 
                                     onClick={(e) => handleNavigate(branch.wazeUrl, e)}
                                     className="p-2 bg-blue-500/20 text-blue-400 rounded-lg hover:bg-blue-500/30 transition border border-blue-500/30"
@@ -32,15 +38,13 @@ const BranchSelector = ({ branches }) => {
                                     <Navigation size={14} className="fill-current" />
                                 </button>
                             )}
-                            {branch.googleMapsUrl && (
-                                <button 
-                                    onClick={(e) => handleNavigate(branch.googleMapsUrl, e)}
-                                    className="p-2 bg-green-500/20 text-green-400 rounded-lg hover:bg-green-500/30 transition border border-green-500/30"
-                                    title="Google Maps"
-                                >
-                                    <MapPin size={14} />
-                                </button>
-                            )}
+                            <button 
+                                onClick={(e) => handleNavigate(getGoogleMapsUrl(branch), e)}
+                                className="p-2 bg-green-500/20 text-green-400 rounded-lg hover:bg-green-500/30 transition border border-green-500/30"
+                                title="Google Maps"
+                            >
+                                <MapPin size={14} />
+                            </button>
                         </div>
                     </div>
                 ))}
