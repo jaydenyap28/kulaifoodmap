@@ -523,8 +523,8 @@ export const restaurants = [
         "address": "37, Jalan Anggerik 2, Taman Kulai Utama, 81000 Kulai, Johor Darul Ta'zim",
         "opening_hours": "Monday: 6am - 4pm\nTuesday: 6am - 4pm\nWednesday: 6am - 4pm\nThursday: 6am - 4pm\nFriday: 6am - 4pm\nSaturday: 6am - 4pm\nSunday: 6am - 4pm",
         "whatsappLink": "",
-        "intro_zh": "古来 21 哩极具代表性的传统早市咖啡店。除了以手工制作、皮薄馅靓的“大包”和“叉烧包”闻名外，店内还聚集了许多优质档口，如著名的猪肉粉、干捞面等，是古来人享受丰富多样化早餐的热门聚集地。",
-        "intro_en": "An iconic traditional breakfast spot at Batu 21, Kulai. While famous for its handmade 'Big Pao' and BBQ Pork Buns, it also houses various popular stalls offering pork noodles and konlo mee, making it a perfect hub for a diverse local breakfast.",
+        "intro_zh": "古来 21 哩极具代表性的传统早市咖啡店。除了以手工制作、皮薄馅靓的“大包”和“叉烧包”闻名外，店内还聚集了许多优质档口，如著名的猪肉粉、干捞面等，是古来人享受丰富多样化早餐的热门聚集地。（注：云吞面档口已搬迁或口味见仁见智，不做特别推荐）",
+        "intro_en": "An iconic traditional breakfast spot at Batu 21, Kulai. While famous for its handmade 'Big Pao' and BBQ Pork Buns, it also houses various popular stalls offering pork noodles and konlo mee, making it a perfect hub for a diverse local breakfast. (Note: The Wanton Mee stall is not widely considered a signature highlight).",
         "tags": [
             "手工包点",
             "点心",
