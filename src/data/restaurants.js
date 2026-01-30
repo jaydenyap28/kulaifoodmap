@@ -2847,8 +2847,8 @@ export const restaurants = [
         "address": "587, Jalan Kenanga 29/19, Bandar Indahpura, 81000 Kulai, Johor Darul Ta'zim",
         "opening_hours": "Monday: 6am - 4pm\nTuesday: 6am - 4pm\nWednesday: 6am - 4pm\nThursday: 6am - 4pm\nFriday: 6am - 4pm\nSaturday: 6am - 4pm\nSunday: 6am - 4pm",
         "whatsappLink": "",
-        "intro_zh": "Indahpura 著名的美食中心，汇集了多个档口。早市有著名的猪肠粉、云吞面、鸡饭等。环境宽敞，是当地居民早餐和午餐的热门选择。",
-        "intro_en": "A popular food court in Indahpura hosting various stalls. The morning market features famous Chee Cheong Fun, Wanton Mee, and Chicken Rice. Spacious environment and a hot spot for locals' breakfast and lunch.",
+        "intro_zh": "Indahpura 著名的美食中心，汇集了多个档口 是当地居民早餐和午餐的热门选择",
+        "intro_en": "A well-known food centre in Indahpura that houses a variety of stalls offering diverse local delicacies. It is a popular hotspot among local residents for breakfast and lunch, known for its vibrant atmosphere and affordable prices",
         "tags": [
             "平价"
         ],
@@ -2875,44 +2875,83 @@ export const restaurants = [
         "branches": [],
         "subStalls": [
             {
-                "name": "",
-                "image": "https://i.ibb.co/qMFR9kMT/IMG-20260127-124913.jpg"
+                "name": "新德利正宗海南鸡饭",
+                "image": "https://i.ibb.co/qMFR9kMT/IMG-20260127-124913.jpg",
+                "tags": [
+                    "鸡饭"
+                ]
+            },
+            {
+                "name": "金宝猪肠粉",
+                "image": "https://i.ibb.co/NnrHYxpg/IMG-20260127-124933.jpg",
+                "tags": [
+                    "猪肠粉"
+                ]
             },
             {
                 "name": "",
-                "image": "https://i.ibb.co/NnrHYxpg/IMG-20260127-124933.jpg"
+                "image": "https://i.ibb.co/whgqkxm7/IMG-20260127-124939.jpg",
+                "tags": []
             },
             {
-                "name": "",
-                "image": "https://i.ibb.co/whgqkxm7/IMG-20260127-124939.jpg"
+                "name": "匠心糖水",
+                "image": "https://i.ibb.co/XxBs2xh6/IMG-20260127-124949.jpg",
+                "tags": [
+                    "糖水"
+                ]
             },
             {
-                "name": "",
-                "image": "https://i.ibb.co/XxBs2xh6/IMG-20260127-124949.jpg"
+                "name": "潮记猪肉粉",
+                "image": "https://i.ibb.co/tMD1h31v/IMG-20260127-125000.jpg",
+                "tags": [
+                    "干捞面",
+                    "粿条汤",
+                    "鱼圆面汤"
+                ]
             },
             {
-                "name": "",
-                "image": "https://i.ibb.co/tMD1h31v/IMG-20260127-125000.jpg"
+                "name": "Uncle Tan Penang Ori",
+                "image": "https://i.ibb.co/wFGXg0g4/IMG-20260127-125018.jpg",
+                "tags": [
+                    "槟城福建虾面",
+                    "槟城爪哇面",
+                    "槟城卤面"
+                ]
             },
             {
-                "name": "",
-                "image": "https://i.ibb.co/wFGXg0g4/IMG-20260127-125018.jpg"
+                "name": "乐记云吞面",
+                "image": "https://i.ibb.co/YBLr4gXm/IMG-20260127-125030.jpg",
+                "tags": [
+                    "云吞面",
+                    "肉碎面",
+                    "鸡脚面",
+                    "哥罗面",
+                    "干咖喱鸡面"
+                ]
             },
             {
-                "name": "",
-                "image": "https://i.ibb.co/YBLr4gXm/IMG-20260127-125030.jpg"
+                "name": "兴兴早市",
+                "image": "https://i.ibb.co/35NgbjcV/IMG-20260127-125118.jpg",
+                "tags": [
+                    "炒果条",
+                    "炒饭"
+                ]
             },
             {
-                "name": "",
-                "image": "https://i.ibb.co/35NgbjcV/IMG-20260127-125118.jpg"
+                "name": "坝罗酿豆腐",
+                "image": "https://i.ibb.co/7dBGtK4k/IMG-20260127-125130.jpg",
+                "tags": [
+                    "酿豆腐"
+                ]
             },
             {
-                "name": "",
-                "image": "https://i.ibb.co/7dBGtK4k/IMG-20260127-125130.jpg"
-            },
-            {
-                "name": "",
-                "image": "https://i.ibb.co/fzG7fnY4/IMG-20260127-125149.jpg"
+                "name": "阿Kam JB",
+                "image": "https://i.ibb.co/fzG7fnY4/IMG-20260127-125149.jpg",
+                "tags": [
+                    "福建面",
+                    "锅仔咸鱼老鼠粉",
+                    "白卤面"
+                ]
             }
         ],
         "dietaryOption": null,
