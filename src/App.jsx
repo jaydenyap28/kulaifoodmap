@@ -23,7 +23,7 @@ const DEFAULT_HERO_BG = "https://i.ibb.co/7J5qjZtv/image.png";
 
 // Version control for data structure changes
 // Increment this when you make breaking changes to data structure to force a reset
-const DATA_VERSION = 'v42';
+const DATA_VERSION = 'v43';
 
 function App() {
   const { t, i18n } = useTranslation();
@@ -433,7 +433,7 @@ function App() {
 
   // Save Categories Only
   useEffect(() => {
-    localStorage.setItem('kulaifood-categories-v2', JSON.stringify(categories));
+    localStorage.setItem('kulaifood-categories-v3', JSON.stringify(categories));
   }, [categories]);
 
   // Log Restaurants changes to Console for Manual Update
