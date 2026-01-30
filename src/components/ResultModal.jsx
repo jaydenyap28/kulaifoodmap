@@ -84,7 +84,13 @@ const ResultModal = ({ restaurant, onClose, isAdmin, onUpdateRestaurant, categor
         isNoBeef: restaurant.isNoBeef || false,
         halalStatus: restaurant.halalStatus || 'non_halal',
         manualStatus: restaurant.manualStatus || 'auto',
-        subStalls: restaurant.subStalls || [],
+        subStalls: (restaurant.subStalls || []).map(s => {
+            if (typeof s === 'string') return { name: s, image: '', tags: [], tagsInput: '' };
+            return {
+                ...s,
+                tagsInput: (s.tags || []).join(', ')
+            };
+        }),
         branches: restaurant.branches || [],
         rating: restaurant.rating !== undefined ? restaurant.rating : 0,
         area: restaurant.area || '',
@@ -232,7 +238,16 @@ const ResultModal = ({ restaurant, onClose, isAdmin, onUpdateRestaurant, categor
   }, [restaurant]);
 
   const handleSaveEdit = () => {
-    onUpdateRestaurant(restaurant.id, editForm);
+    // Clean up temporary fields before saving
+    const cleanedSubStalls = editForm.subStalls.map(({ tagsInput, ...rest }) => rest);
+    const cleanedForm = {
+        ...editForm,
+        subStalls: cleanedSubStalls
+    };
+    // Remove main tagsInput as well if it exists in the object (though usually state is separate)
+    delete cleanedForm.tagsInput;
+
+    onUpdateRestaurant(restaurant.id, cleanedForm);
     setIsEditing(false);
   };
 
@@ -779,12 +794,14 @@ const ResultModal = ({ restaurant, onClose, isAdmin, onUpdateRestaurant, categor
                                          <span className="text-[8px] text-gray-500">会自动压缩</span>
                                     </div>
                                     <input 
-                                        value={stall.tags ? stall.tags.join(', ') : ''}
+                                        value={stall.tagsInput !== undefined ? stall.tagsInput : (stall.tags ? stall.tags.join(', ') : '')}
                                         onChange={(e) => {
+                                            const val = e.target.value;
                                             const newStalls = [...editForm.subStalls];
                                             newStalls[idx] = { 
                                                 ...newStalls[idx], 
-                                                tags: e.target.value.split(/[,，]/).map(t => t.trim()).filter(Boolean) 
+                                                tagsInput: val,
+                                                tags: val.split(/[,，]/).map(t => t.trim()).filter(Boolean) 
                                             };
                                             setEditForm({...editForm, subStalls: newStalls});
                                         }}
@@ -812,7 +829,7 @@ const ResultModal = ({ restaurant, onClose, isAdmin, onUpdateRestaurant, categor
                         onClick={() => {
                             setEditForm(prev => ({
                                 ...prev,
-                                subStalls: [...(prev.subStalls || []), { name: '新档口', image: '' }]
+                                subStalls: [...(prev.subStalls || []), { name: '新档口', image: '', tags: [], tagsInput: '' }]
                             }));
                         }}
                         className="w-full py-2 border border-dashed border-gray-600 text-gray-400 text-xs rounded hover:border-white hover:text-white transition"
