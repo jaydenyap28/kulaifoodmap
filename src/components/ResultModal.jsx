@@ -721,6 +721,21 @@ const ResultModal = ({ restaurant, onClose, isAdmin, onUpdateRestaurant, categor
                               tags: val.split(/[,，]/).map(t => t.trim()).filter(Boolean)
                           });
                       }}
+                      onKeyDown={(e) => {
+                          if (e.key === 'Enter') {
+                              e.preventDefault();
+                              const val = editForm.tagsInput || (editForm.tags ? editForm.tags.join(', ') : '');
+                              // Only append if not already ending with comma
+                              if (!val.trim().endsWith(',') && !val.trim().endsWith('，')) {
+                                  const newVal = val + ', ';
+                                  setEditForm({
+                                      ...editForm, 
+                                      tagsInput: newVal,
+                                      tags: newVal.split(/[,，]/).map(t => t.trim()).filter(Boolean)
+                                  });
+                              }
+                          }
+                      }}
                       className="w-full bg-[#1a1a1a] border-b border-gray-600 py-1 text-sm text-white focus:border-white outline-none"
                       placeholder="例如: 适合小孩, 平价, 冷气 (e.g. Kids Friendly, Cheap)"
                     />
@@ -805,6 +820,23 @@ const ResultModal = ({ restaurant, onClose, isAdmin, onUpdateRestaurant, categor
                                                 tags: val.split(/[,，]/).map(t => t.trim()).filter(Boolean) 
                                             };
                                             setEditForm({...editForm, subStalls: newStalls});
+                                        }}
+                                        onKeyDown={(e) => {
+                                            if (e.key === 'Enter') {
+                                                e.preventDefault();
+                                                const val = stall.tagsInput || '';
+                                                // Only append if not already ending with comma
+                                                if (!val.trim().endsWith(',') && !val.trim().endsWith('，')) {
+                                                    const newVal = val + ', ';
+                                                    const newStalls = [...editForm.subStalls];
+                                                    newStalls[idx] = { 
+                                                        ...newStalls[idx], 
+                                                        tagsInput: newVal,
+                                                        tags: newVal.split(/[,，]/).map(t => t.trim()).filter(Boolean)
+                                                    };
+                                                    setEditForm({...editForm, subStalls: newStalls});
+                                                }
+                                            }
                                         }}
                                         className="w-full bg-[#1a1a1a] border-b border-gray-600 py-1 text-[10px] text-gray-300 focus:border-white outline-none"
                                         placeholder="标签 (Tags: 必吃, 辣, 招牌)"
@@ -1194,15 +1226,7 @@ Tuesday: Closed
                                     </div>
                                     <div className="p-2 bg-gradient-to-t from-black/80 to-transparent absolute bottom-0 w-full pt-6 flex flex-col justify-end">
                                         <span className="text-white text-xs font-bold block truncate drop-shadow-md" title={stallName}>{stallName}</span>
-                                        {typeof stall === 'object' && stall.tags && stall.tags.length > 0 && (
-                                            <div className="flex flex-wrap gap-1 mt-1">
-                                                {stall.tags.slice(0, 3).map((tag, i) => (
-                                                    <span key={i} className="px-1.5 py-0.5 bg-purple-600/80 text-white text-[9px] rounded-md shadow-sm backdrop-blur-sm">
-                                                        {tag}
-                                                    </span>
-                                                ))}
-                                            </div>
-                                        )}
+
                                     </div>
                                 </motion.div>
                                 );
