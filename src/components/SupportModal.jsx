@@ -142,7 +142,7 @@ const SupportModal = ({ isOpen, onClose, isAdmin, supportQR, onUpdateQR }) => {
 
                 {/* Method B: Buy Me a Coffee Link */}
                 <a
-                  href="https://buymeacoffee.com/jnqmedia" 
+                  href="https://buymeacoffee.com/jnqmedia"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex items-center justify-center w-full py-3.5 bg-[#FFDD00] hover:bg-[#FFEA00] text-[#3E2723] rounded-xl font-bold transition-transform active:scale-95 shadow-lg shadow-yellow-400/20"
