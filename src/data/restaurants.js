@@ -19314,4 +19314,4 @@ export const initialRestaurants = [
     }
 ];
 
-export const MAIN_VIDEO_LINK = 'https://www.facebook.com/kulaifoodmap';
+export const MAIN_VIDEO_LINK = 'https://www.facebook.com/jnqjourney/';
