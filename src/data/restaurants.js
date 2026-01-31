@@ -4314,7 +4314,7 @@ export const initialRestaurants = [
             "火锅烧烤"
         ],
         "halalStatus": "non_halal",
-        "image": "https://scontent.fmkz1-2.fna.fbcdn.net/v/t39.30808-6/400254655_122093863790119720_5398425732002091737_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=6ee11a&_nc_ohc=e44IiklsuHkQ7kNvwEtz1_U&_nc_oc=AdmJvn9tMxJ86fRG_4Oz9FryxEMsActJlvd1rytOwj8pya0IuqSUzSbxvg6MYazUuQk&_nc_zt=23&_nc_ht=scontent.fmkz1-2.fna&_nc_gid=CIhSTbs8_vvexwlhREeukw&oh=00_AfqcLht019H7P0CgWLLSEKAbfQdx15uyuzR1pW8vPkp4iA&oe=697BF952",
+        "image": "https://i.ibb.co/b5TpJCFp/image.jpg",
         "price_range": "RM 10-20",
         "rating": 0,
         "fb_post_link": "",
@@ -4986,7 +4986,7 @@ export const initialRestaurants = [
             "粉类"
         ],
         "halalStatus": "non_halal",
-        "image": "https://scontent.fmkz1-2.fna.fbcdn.net/v/t39.30808-6/486328912_2977895039040697_8588387040612446779_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=6ee11a&_nc_ohc=KdW1C3MgjjkQ7kNvwF4u8Xr&_nc_oc=AdnaXZmmPwHmRhUwAuk0CbKDd0KFmqeVdeI6Z6Ktrh874lhS0P7r-GPzC7fuOVmU_is&_nc_zt=23&_nc_ht=scontent.fmkz1-2.fna&_nc_gid=c6qqjKj6wHbDrS3_nUdRiQ&oh=00_AfqTx7BM0y50wwNKOihhWX6CbPSv22H4UWOAyHQmku-oNQ&oe=697C0752",
+        "image": "https://i.ibb.co/HDCgMnXd/image.jpg",
         "price_range": "RM 10-20",
         "rating": 0,
         "fb_post_link": "",
@@ -5353,7 +5353,7 @@ export const initialRestaurants = [
             "粉类"
         ],
         "halalStatus": "non_halal",
-        "image": "https://scontent.fmkz1-2.fna.fbcdn.net/v/t39.30808-6/560805676_122221307780253278_4612031094349074604_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=6ee11a&_nc_ohc=TKFRtzNc6lAQ7kNvwGrVG2B&_nc_oc=Adlw1Cbr3c8oeDrDSl4FhDq_38_BVC2TM3BCV69XQUfG5mnXV84kXdqCwo7CNbpUKhw&_nc_zt=23&_nc_ht=scontent.fmkz1-2.fna&_nc_gid=Zdhwn5VKJOnDtrMe1FaLXw&oh=00_AfqZjvpJKCFmMDiCHyXtRuZFW7wHxdOzEoZ8Lrfrq-Pctw&oe=697C0A63",
+        "image": "https://i.ibb.co/kgC44dg7/Restoran-JWD-Mee-Tarik.jpg",
         "price_range": "RM 10-20",
         "rating": 0,
         "fb_post_link": "",
@@ -5475,7 +5475,7 @@ export const initialRestaurants = [
             "蛋糕甜点"
         ],
         "halalStatus": "non_halal",
-        "image": "https://scontent.fmkz1-1.fna.fbcdn.net/v/t39.30808-6/241438485_103024545488439_3385628183548652433_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=6ee11a&_nc_ohc=_xgDVA1g_1YQ7kNvwFJmqOd&_nc_oc=AdngEwpCWmGg_-7K-HDnARjff5-TzImyRkQitrZ3MseYKf-DSEHL-JaOvi1JWdiG47w&_nc_zt=23&_nc_ht=scontent.fmkz1-1.fna&_nc_gid=e68il0JQuFGw1ZhYjQJ5iQ&oh=00_AfrE4FpMLhLrhvuJSI0EY1S8sEe2bH3Lk8tkJEXiiU19QQ&oe=697BE165",
+        "image": "https://i.ibb.co/mV95GRhY/Alliews-Bakehouse.jpg",
         "price_range": "RM 10-20",
         "rating": 0,
         "fb_post_link": "",
@@ -5564,7 +5564,7 @@ export const initialRestaurants = [
             "饭类"
         ],
         "halalStatus": "non_halal",
-        "image": "https://scontent.fmkz1-2.fna.fbcdn.net/v/t39.30808-6/351467477_236749582400630_3750673459465662906_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=a5f93a&_nc_ohc=PxP9SVmGSXQQ7kNvwEKtvYw&_nc_oc=AdlYh8IT7u8BpJRo3fwfuoPWqJB4ggtLQ3hC9wC4cnIepMXdSVljMU7okaUBdObbg0o&_nc_zt=23&_nc_ht=scontent.fmkz1-2.fna&_nc_gid=aWq5oUND0wIWv25w4RGkrA&oh=00_Afo6CaBIDGAY84MKMGHoLaoia2szBQa5TBV7izdPZbD7rQ&oe=697BE77D",
+        "image": "https://i.ibb.co/wNG3xF1w/image.jpg",
         "price_range": "RM 10-20",
         "rating": 0,
         "fb_post_link": "",
@@ -5985,7 +5985,7 @@ export const initialRestaurants = [
             "蛋糕甜点"
         ],
         "halalStatus": "non_halal",
-        "image": "https://scontent.fmkz1-2.fna.fbcdn.net/v/t39.30808-6/269819984_107405715145085_4200369316651062056_n.png?_nc_cat=105&ccb=1-7&_nc_sid=6ee11a&_nc_ohc=hZbMnUgCPVEQ7kNvwGO-E4S&_nc_oc=AdlIp4mCXol9WAPW9-f7NCnE3WZKlTUjK8hT6OSfOCmkF5v5xjCVs06Z64-8vf__9KI&_nc_zt=23&_nc_ht=scontent.fmkz1-2.fna&_nc_gid=lIBKBDEjOuob5yKJejFAjw&oh=00_Afr4Wdn5dcaCJRNBy1lWun6L6Kkvo6lzNnJBRFyx-eicRg&oe=697BE12C",
+        "image": "https://i.ibb.co/wZDxcBH0/Verbena-Patisserie-Shop.png",
         "price_range": "RM 10-20",
         "rating": 0,
         "fb_post_link": "",
@@ -6157,7 +6157,7 @@ export const initialRestaurants = [
             "饭类"
         ],
         "halalStatus": "certified",
-        "image": "https://scontent.fmkz1-2.fna.fbcdn.net/v/t39.30808-6/351499236_645514067085177_3364422854381515643_n.png?_nc_cat=109&ccb=1-7&_nc_sid=6ee11a&_nc_ohc=YgUGfO6IUZ4Q7kNvwHmpuS-&_nc_oc=AdkWGBWcfwq4RuNnRvYV1pA1SdT1P-C9VX4xuvPUPUGb-02XQ2vC-z2lIOXmPv5attE&_nc_zt=23&_nc_ht=scontent.fmkz1-2.fna&_nc_gid=VQy6ajWNawSrcQCDHuhikQ&oh=00_Afrxw2ArQ8jqqHvKXcAoyHls-vzwJxaKdsjcx42Py06EGw&oe=697BECCB",
+        "image": "https://i.ibb.co/8Lxjg1cL/The-Chicken-Rice-Shop.png",
         "price_range": "RM 10-20",
         "rating": 0,
         "fb_post_link": "",
@@ -6371,7 +6371,7 @@ export const initialRestaurants = [
             "蛋糕甜点"
         ],
         "halalStatus": "non_halal",
-        "image": "https://scontent.fmkz1-2.fna.fbcdn.net/v/t39.30808-6/291879620_507006064557323_7328180247096977716_n.png?_nc_cat=108&ccb=1-7&_nc_sid=6ee11a&_nc_ohc=kWs4dpMBk2UQ7kNvwEnmC6r&_nc_oc=Adle9hmOqMaIzofHNLWHFDu6vMNyGeET-059qsujcN6G9UAmi8_zEB2BCVWqs52TDuY&_nc_zt=23&_nc_ht=scontent.fmkz1-2.fna&_nc_gid=37eEkfxbCVFCeQT5ZJryEQ&oh=00_AfpacLUdKUKKR3L14s192z1g7_3JKY1b0AVdZIty7kIp-Q&oe=697BF6A5",
+        "image": "https://i.ibb.co/RGS7NMDy/Mon-Delice-Patisserie.png",
         "price_range": "RM 10-20",
         "rating": 0,
         "fb_post_link": "",
@@ -7629,7 +7629,7 @@ export const initialRestaurants = [
             "饭类"
         ],
         "halalStatus": "non_halal",
-        "image": "https://scontent.fmkz1-2.fna.fbcdn.net/v/t39.30808-6/565122025_1278719297602539_3350786168098136248_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=6ee11a&_nc_ohc=BVO5Cv4bSvYQ7kNvwG2Lh9t&_nc_oc=AdmijvBtZY_o91WdZhHumF5awU1SKHJguwgdetsLd1_RENn-LgvjYPkxWUnEa5Zwdlw&_nc_zt=23&_nc_ht=scontent.fmkz1-2.fna&_nc_gid=qMqBQoYeVNhDQLXTIqGYjw&oh=00_Afr5sQ8v16p0jPpRdVvMhguWzK6-J55CTSDBx5LRHhRWKQ&oe=697C04EC",
+        "image": "https://i.ibb.co/5WRTzhtj/image.jpg",
         "price_range": "RM 10-20",
         "rating": 0,
         "fb_post_link": "",
@@ -9867,7 +9867,7 @@ export const initialRestaurants = [
             "健康餐"
         ],
         "halalStatus": "non_halal",
-        "image": "https://scontent.fmkz1-1.fna.fbcdn.net/v/t39.30808-6/457450078_818352520413807_2850482837353781938_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=6ee11a&_nc_ohc=jb3v6WcistIQ7kNvwFLsCg3&_nc_oc=AdkmtPOdzRAx-jTzlkWh5NF5G2Wctpt0rjaa29_tjpuIiT5eoNkLn7ZDYD2Iq9q6KIk&_nc_zt=23&_nc_ht=scontent.fmkz1-1.fna&_nc_gid=uZPOGMfqCGVLZQjK_dkX0w&oh=00_Afrz6FZzVIXaXngjrIuTdVJVsPtwMBeB1hr7RZ2yj3KzuA&oe=697C1304",
+        "image": "https://i.ibb.co/gL1Y5S7p/Young-Sanna-Mee.jpg",
         "price_range": "RM 10-20",
         "rating": 0,
         "fb_post_link": "",
@@ -10285,7 +10285,7 @@ export const initialRestaurants = [
             "咖啡店/美食阁"
         ],
         "halalStatus": "non_halal",
-        "image": "https://scontent.fmkz1-2.fna.fbcdn.net/v/t39.30808-6/344553969_263566129375204_288368938095225583_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=6ee11a&_nc_ohc=k8AyvYD3jnwQ7kNvwFWahGc&_nc_oc=Adk7Dutzf8FtKwVj1QOYaNYApJ-8O1ZA_OM4j1Dz5-yXZzWlIo5fn4fL5ElBCKJaYyM&_nc_zt=23&_nc_ht=scontent.fmkz1-2.fna&_nc_gid=QNy55yi-ziX6iqegtuycwA&oh=00_AfoITUm9DQnaSSQlBKVQjvhQomNWkTAbKwD1bv1PD-9xgw&oe=697A365E",
+        "image": "https://i.ibb.co/vxNqwnWr/image.jpg",
         "price_range": "RM 10-20",
         "rating": 0,
         "fb_post_link": "",
@@ -10328,7 +10328,7 @@ export const initialRestaurants = [
             "Cafe"
         ],
         "halalStatus": "non_halal",
-        "image": "https://scontent.fmkz1-1.fna.fbcdn.net/v/t39.30808-6/477768498_1222831289849489_6585098598682255922_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=6ee11a&_nc_ohc=pkyro24-7ZQQ7kNvwFIwB8U&_nc_oc=Admj_7hERQnHbRN6m92_DEdssPr7lJOrTb_J9YfzQPAQbsd2HS6KOo2rHu_4mHowvSg&_nc_zt=23&_nc_ht=scontent.fmkz1-1.fna&_nc_gid=ATijycanQv5GDsllKqXvCw&oh=00_AfoKQzwI07RE88aoFJ8nj7mOughhqlikwwoUI84WUes8Ag&oe=697A5002",
+        "image": "https://i.ibb.co/nsmq4ydw/GC-Good-Coffee.jpg",
         "price_range": "RM 10-20",
         "rating": 0,
         "fb_post_link": "",
@@ -12157,48 +12157,7 @@ export const initialRestaurants = [
         "dietaryOption": null,
         "slug": "d-laksa-jpo"
     },
-    {
-        "id": 304,
-        "name": "聚园酒家",
-        "name_en": "Restoran Chi Yuen",
-        "location": {
-            "lat": "2.8810967170342665",
-            "lng": "101.49391613123721"
-        },
-        "area": "Kulai",
-        "address": "Kulai, Johor",
-        "opening_hours": "Monday: 11am - 10pm\nTuesday: 11am - 10pm\nWednesday: 11am - 10pm\nThursday: 11am - 10pm\nFriday: 11am - 10pm\nSaturday: 11am - 10pm\nSunday: 11am - 10pm",
-        "whatsappLink": "",
-        "intro_zh": "深受当地人喜爱的中餐厅，提供各类海鲜和肉类料理。菜色丰富，锅气十足，价格公道。",
-        "intro_en": "A Chinese restaurant loved by locals, offering various seafood and meat dishes. Rich menu, good 'wok hei', and reasonable prices.",
-        "tags": [
-            "平价"
-        ],
-        "category": [
-            "煮炒海鲜楼"
-        ],
-        "categories": [
-            "煮炒海鲜楼"
-        ],
-        "halalStatus": "non_halal",
-        "image": "https://i.ibb.co/7xLGp31X/image.jpg",
-        "price_range": "RM 10-30",
-        "rating": 0,
-        "fb_post_link": "",
-        "menu_link": "",
-        "website_link": "",
-        "delivery_link": "",
-        "isVegetarian": false,
-        "isNoBeef": false,
-        "isVIP": false,
-        "priority": 0,
-        "subscriptionLevel": 0,
-        "manualStatus": "auto",
-        "branches": [],
-        "subStalls": [],
-        "dietaryOption": null,
-        "slug": "restoran-chi-yuen"
-    },
+ 
     {
         "id": 307,
         "name": "瑞记海南鸡饭",
@@ -17495,38 +17454,7 @@ export const initialRestaurants = [
         "dietaryOption": null,
         "slug": "lingo-bakery"
     },
-    {
-        "id": 433,
-        "name": "Restoran Nanpo Kogeki",
-        "name_en": "",
-        "location": {
-            "lat": null,
-            "lng": null
-        },
-        "area": "Indahpura",
-        "address": "77, Jln. Kenanga 29/11, Bandar Indahpura, 81000 Kulai, Johor Darul Ta'zim",
-        "opening_hours": "Monday: 10am - 10pm\nTuesday: 10am - 10pm\nWednesday: 10am - 10pm\nThursday: 10am - 10pm\nFriday: 10am - 10pm\nSaturday: 10am - 10pm\nSunday: 10am - 10pm",
-        "tags": [],
-        "category": [
-            "马来餐"
-        ],
-        "categories": [
-            "马来餐"
-        ],
-        "halalStatus": "muslim_owned",
-        "image": "",
-        "price_range": "RM 10-20",
-        "rating": 0,
-        "fb_post_link": "",
-        "isVIP": false,
-        "priority": 0,
-        "subscriptionLevel": 0,
-        "manualStatus": "auto",
-        "subStalls": [],
-        "dietaryOption": null,
-        "slug": "restoran-nanpo-kogeki",
-        "phone": "011-1123 6431"
-    },
+ 
     {
         "id": 434,
         "name": "古方瓦煲肉骨茶",
@@ -19277,6 +19205,7 @@ export const initialRestaurants = [
             "lat": null,
             "lng": null
         },
+        "slug": "restoran-sin-keong-kee",
         "id": 474
     },
     {
@@ -19310,7 +19239,536 @@ export const initialRestaurants = [
             "lat": null,
             "lng": null
         },
+        "slug": "lapan-kati",
         "id": 475
+    },
+    {
+        "id": 13,
+        "name": "云来包点 • 21哩",
+        "name_en": "Restaurant Yon Lai",
+        "location": {
+            "lat": "1.6652034225934553",
+            "lng": "103.5929708712239"
+        },
+        "area": "Kulai 21 Miles",
+        "address": "37, Jalan Anggerik 2, Taman Kulai Utama, 81000 Kulai, Johor Darul Ta'zim",
+        "opening_hours": "Monday: 6am - 4pm\nTuesday: 6am - 4pm\nWednesday: 6am - 4pm\nThursday: 6am - 4pm\nFriday: 6am - 4pm\nSaturday: 6am - 4pm\nSunday: 6am - 4pm",
+        "whatsappLink": "",
+        "intro_zh": "古来 21 哩极具代表性的传统早市咖啡店。除了以手工制作、皮薄馅靓的“大包”和“叉烧包”闻名外，店内还聚集了许多优质档口，如著名的猪肉粉、干捞面等，是古来人享受丰富多样化早餐的热门聚集地。（注：云吞面档口已搬迁或口味见仁见智，不做特别推荐）",
+        "intro_en": "An iconic traditional breakfast spot at Batu 21, Kulai. While famous for its handmade 'Big Pao' and BBQ Pork Buns, it also houses various popular stalls offering pork noodles and konlo mee, making it a perfect hub for a diverse local breakfast. (Note: The Wanton Mee stall is not widely considered a signature highlight).",
+        "tags": [
+            "手工包点",
+            "点心",
+            "猪肉粉",
+            "早餐",
+            "多样化选择",
+            "地标老店",
+            "21哩"
+        ],
+        "category": [
+            "点心",
+            "咖啡店/美食阁"
+        ],
+        "categories": [
+            "点心",
+            "咖啡店/美食阁"
+        ],
+        "halalStatus": "non_halal",
+        "image": "https://i.ibb.co/YBWmK1wH/21.jpg",
+        "price_range": "RM 10-20",
+        "rating": 0,
+        "fb_post_link": "",
+        "menu_link": "",
+        "website_link": "",
+        "delivery_link": "",
+        "isVegetarian": false,
+        "isNoBeef": false,
+        "isVIP": false,
+        "priority": 0,
+        "subscriptionLevel": 0,
+        "manualStatus": "auto",
+        "branches": [],
+        "subStalls": [
+            {
+                "name": "兴兴鸡饭",
+                "image": "https://i.ibb.co/Qv24RQc5/21.jpg"
+            },
+            {
+                "name": "印尼餐",
+                "image": "https://i.ibb.co/6Rx50YXY/21.jpg"
+            },
+            {
+                "name": "云吞面",
+                "image": "https://i.ibb.co/mr4NbPYF/21.jpg"
+            },
+            {
+                "name": "煮炒",
+                "image": "https://i.ibb.co/3Yj1JKxr/21.jpg"
+            },
+            {
+                "name": "猪肠粉",
+                "image": "https://i.ibb.co/VWDKY1ZZ/21.jpg"
+            },
+            {
+                "name": "面粉板",
+                "image": "https://i.ibb.co/8ncBpvj7/21.jpg"
+            },
+            {
+                "name": "油条",
+                "image": "https://i.ibb.co/5h0jtbY2/21.jpg"
+            }
+        ],
+        "dietaryOption": null,
+        "slug": "restaurant-yon-lai"
+    },
+    {
+        "id": 15,
+        "name": "品香茶室",
+        "name_en": "Chop Pun Heong Dim Sum",
+        "location": {
+            "lat": null,
+            "lng": null
+        },
+        "area": "Indahpura",
+        "address": "398, Jalan Kenanga 29/10, Bandar Indahpura, 81000 Kulai, Johor Darul Ta'zim",
+        "opening_hours": "Monday: Closed\nTuesday: 6:30am - 4pm\nWednesday: 6:30am - 4pm\nThursday: 6:30am - 4pm\nFriday: 6:30am - 4pm\nSaturday: 6:30am - 4pm\nSunday: 6:30am - 4pm",
+        "whatsappLink": "",
+        "intro_zh": "古来老字号点心茶楼。提供各种传统手工点心，如烧卖、虾饺、排骨等。大包和糯米鸡也是必点的招牌。",
+        "intro_en": "A long-established Dim Sum teahouse in Kulai. Offers a variety of traditional handmade dim sum such as Siew Mai, Har Gow, and Pork Ribs. Their Big Pau and Lo Mai Gai are also must-try signatures.",
+        "tags": [
+            "平价"
+        ],
+        "category": [
+            "点心"
+        ],
+        "categories": [
+            "点心"
+        ],
+        "halalStatus": "non_halal",
+        "image": "https://i.ibb.co/99TTCtzz/image.jpg",
+        "price_range": "RM 10-20",
+        "rating": 0,
+        "fb_post_link": "",
+        "menu_link": "",
+        "website_link": "",
+        "delivery_link": "",
+        "isVegetarian": false,
+        "isNoBeef": false,
+        "isVIP": false,
+        "priority": 0,
+        "subscriptionLevel": 0,
+        "manualStatus": "auto",
+        "branches": [],
+        "subStalls": [],
+        "dietaryOption": null,
+        "slug": "chop-pun-heong-dim-sum"
+    },
+    {
+        "id": 20,
+        "name": "香满城",
+        "name_en": "Restoran Xiang Mann",
+        "location": {
+            "lat": null,
+            "lng": null
+        },
+        "area": "Kulai 21 Miles",
+        "address": "1, Jln Bunga Mawar 1, Taman Sri Kulai Baru, 81000 Kulai, Johor Darul Ta'zim",
+        "opening_hours": "Monday: 11am - 11:30pm\nTuesday: 11am - 11:30pm\nWednesday: 11am - 11:30pm\nThursday: 11am - 11:30pm\nFriday: 11am - 11:30pm\nSaturday: 11am - 11:30pm\nSunday: 11am - 11:30pm",
+        "whatsappLink": "",
+        "intro_zh": "古来著名的煮炒海鲜楼，菜色多样且价格公道。招牌菜包括各类海鲜料理和锅气十足的煮炒，是家庭聚餐的理想选择。",
+        "intro_en": "A famous seafood and 'Zhu Chao' restaurant in Kulai, offering a wide variety of dishes at reasonable prices. Known for their fresh seafood and 'Wok Hei' dishes, making it an ideal spot for family gatherings.",
+        "tags": [
+            "干"
+        ],
+        "category": [
+            "煮炒海鲜楼"
+        ],
+        "categories": [
+            "煮炒海鲜楼"
+        ],
+        "halalStatus": "non_halal",
+        "image": "https://i.ibb.co/Kj93NkPz/image.jpg",
+        "price_range": "RM 10-20",
+        "rating": 0,
+        "fb_post_link": "",
+        "menu_link": "",
+        "website_link": "",
+        "delivery_link": "",
+        "isVegetarian": false,
+        "isNoBeef": false,
+        "isVIP": false,
+        "priority": 0,
+        "subscriptionLevel": 0,
+        "manualStatus": "auto",
+        "branches": [],
+        "subStalls": [],
+        "dietaryOption": null,
+        "slug": "restoran-xiang-mann"
+    },
+    {
+        "id": 21,
+        "name": "何妈传承自制手工云吞面",
+        "name_en": "Ho Ma Homemade Wanton Mee",
+        "location": {
+            "lat": null,
+            "lng": null
+        },
+        "area": "Kulai 21 Miles",
+        "address": "58, Jalan Bunga Santalia, Taman Sri Kulai Baru, 81000 Kulai, Johor Darul Ta'zim",
+        "opening_hours": "Monday: Closed\nTuesday: 8am - 6pm\nWednesday: 8am - 6pm\nThursday: 8am - 6pm\nFriday: 8am - 6pm\nSaturday: 8am - 6pm\nSunday: 8am - 6pm",
+        "whatsappLink": "",
+        "intro_zh": "坚持传承古早味的手工云吞面。面条Q弹爽口，云吞饱满扎实。搭配秘制酱汁和炭烧叉烧，每一口都是满满的回忆。",
+        "intro_en": "Upholding the tradition of authentic handmade Wanton Mee. The noodles are springy and the wantons are plump. Served with a secret sauce and charcoal-roasted char siew, every bite is nostalgic.",
+        "tags": [],
+        "category": [
+            "粉类"
+        ],
+        "categories": [
+            "粉类"
+        ],
+        "halalStatus": "non_halal",
+        "image": "https://i.ibb.co/C3m8gGkp/image.jpg",
+        "price_range": "RM 10-20",
+        "rating": 0,
+        "fb_post_link": "",
+        "menu_link": "",
+        "website_link": "",
+        "delivery_link": "",
+        "isVegetarian": false,
+        "isNoBeef": false,
+        "isVIP": false,
+        "priority": 0,
+        "subscriptionLevel": 0,
+        "manualStatus": "auto",
+        "branches": [],
+        "subStalls": [],
+        "dietaryOption": null,
+        "slug": "ho-ma-homemade-wanton-mee"
+    },
+    {
+        "id": 23,
+        "name": "帝皇饭",
+        "name_en": "Best Flavor Food Restaurant",
+        "location": {
+            "lat": null,
+            "lng": null
+        },
+        "area": "Kulai 21 Miles",
+        "address": "42, Jalan Susur Kulai 4, Taman Sri Kulai Baru, 81000 Kulai, Johor Darul Ta'zim",
+        "opening_hours": "Monday: 10:30am - 3pm\nTuesday: 10:30am - 3pm\nWednesday: 10:30am - 3pm\nThursday: 10:30am - 3pm\nFriday: 10:30am - 3pm\nSaturday: 10:30am - 3pm\nSunday: Closed",
+        "whatsappLink": "",
+        "intro_zh": "古来的一家 杂菜饭正餐店，招牌 杂菜饭，环境随意亲民，适合日常午餐或晚餐。",
+        "intro_en": "Popular for its roast meats and chicken rice. The roast duck has crispy skin and tender meat, while the char siew has the perfect balance of fat and lean meat. A popular lunch spot in the Kulai 21 Miles area.",
+        "tags": [
+            "干"
+        ],
+        "category": [
+            "饭类"
+        ],
+        "categories": [
+            "饭类"
+        ],
+        "halalStatus": "non_halal",
+        "image": "https://i.ibb.co/p6RcFwcF/image.jpg",
+        "price_range": "RM 10-20",
+        "rating": 0,
+        "fb_post_link": "",
+        "menu_link": "",
+        "website_link": "",
+        "delivery_link": "",
+        "isVegetarian": false,
+        "isNoBeef": false,
+        "isVIP": false,
+        "priority": 0,
+        "subscriptionLevel": 0,
+        "manualStatus": "auto",
+        "branches": [],
+        "subStalls": [],
+        "dietaryOption": null,
+        "slug": "best-flavor-food-restaurant"
+    },
+    {
+        "id": 25,
+        "name": "广源来肉骨茶",
+        "name_en": "Kwong Guan Lai Restaurant",
+        "location": {
+            "lat": null,
+            "lng": null
+        },
+        "area": "Kulai 21 Miles",
+        "address": "23, Jalan Susur Kulai 4, Taman Sri Kulai Baru, 81000 Kulai, Johor Darul Ta'zim",
+        "opening_hours": "Monday: 8am - 3pm\nTuesday: 8am - 3pm\nWednesday: 8am - 3pm\nThursday: 8am - 3pm\nFriday: Closed\nSaturday: 8am - 3pm\nSunday: 8am - 3pm",
+        "whatsappLink": "",
+        "intro_zh": "提供传统肉骨茶，汤头浓郁药材味香。排骨炖煮得软嫩入味。适合喜欢浓口味的食客。",
+        "intro_en": "Offers traditional Bak Kut Teh with a rich, herbal broth. The pork ribs are stewed to tenderness. Suitable for diners who prefer strong flavors.",
+        "tags": [
+            "汤",
+            "热",
+            "干"
+        ],
+        "category": [
+            "饭类"
+        ],
+        "categories": [
+            "饭类"
+        ],
+        "halalStatus": "non_halal",
+        "image": "https://i.ibb.co/G3Jg7YbV/image.jpg",
+        "price_range": "RM 10-20",
+        "rating": 0,
+        "fb_post_link": "",
+        "menu_link": "",
+        "website_link": "",
+        "delivery_link": "",
+        "isVegetarian": false,
+        "isNoBeef": false,
+        "isVIP": false,
+        "priority": 0,
+        "subscriptionLevel": 0,
+        "manualStatus": "auto",
+        "branches": [],
+        "subStalls": [],
+        "dietaryOption": null,
+        "slug": "kwong-guan-lai-restaurant"
+    },
+    {
+        "id": 26,
+        "name": "露天海鲜馆",
+        "name_en": "Restoran Lu Tian",
+        "location": {
+            "lat": null,
+            "lng": null
+        },
+        "area": "Kulai 21 Miles",
+        "address": "Taman Nam Tak, 81000 Kulai, Johor",
+        "opening_hours": "Monday: See Google Maps\nTuesday: See Google Maps\nWednesday: See Google Maps\nThursday: See Google Maps\nFriday: See Google Maps\nSaturday: See Google Maps\nSunday: See Google Maps",
+        "whatsappLink": "",
+        "intro_zh": "著名的露天海鲜餐馆，提供各式新鲜海鲜煮炒。环境开阔，适合家庭和朋友大聚会。招牌菜包括各类螃蟹和鱼类料理。",
+        "intro_en": "Famous open-air seafood restaurant offering various fresh seafood dishes. Spacious environment, suitable for large gatherings of family and friends. Signature dishes include various crab and fish preparations.",
+        "tags": [
+            "干"
+        ],
+        "category": [
+            "饭类",
+            "粉类"
+        ],
+        "categories": [
+            "饭类",
+            "粉类",
+            "煮炒海鲜楼"
+        ],
+        "halalStatus": "non_halal",
+        "image": "https://i.ibb.co/ksJ1Cw1M/image.jpg",
+        "price_range": "RM 10-20",
+        "rating": 0,
+        "fb_post_link": "",
+        "menu_link": "",
+        "website_link": "",
+        "delivery_link": "",
+        "isVegetarian": false,
+        "isNoBeef": false,
+        "isVIP": false,
+        "priority": 0,
+        "subscriptionLevel": 0,
+        "manualStatus": "auto",
+        "branches": [],
+        "subStalls": [],
+        "dietaryOption": null,
+        "slug": "restoran-lu-tian"
+    },
+    {
+        "id": 28,
+        "name": "美食海鲜馆",
+        "name_en": "Meei Shih Seafood Restaurant",
+        "location": {
+            "lat": null,
+            "lng": null
+        },
+        "area": "Kulai 21 Miles",
+        "address": "69, Jalan Anggerik 3, Taman Kulai Utama, 81000 Kulai, Johor Darul Ta'zim",
+        "opening_hours": "Monday: 4:30pm - 11:30pm\nTuesday: Closed\nWednesday: 4:30pm - 11:30pm\nThursday: 4:30pm - 11:30pm\nFriday: 4:30pm - 11:30pm\nSaturday: 4:30pm - 11:30pm\nSunday: 4:30pm - 11:30pm",
+        "whatsappLink": "",
+        "intro_zh": "古来老字号海鲜楼，以咸蛋螃蟹、蒸甘榜鸡和胡椒猪肚汤闻名。食材新鲜，烹饪手法地道，是本地人招待亲友的首选。",
+        "intro_en": "A long-established seafood restaurant in Kulai, famous for its Salted Egg Crab, Steamed Kampung Chicken, and Pork Belly Pepper Soup. Fresh ingredients and authentic cooking make it a top choice for hosting friends and family.",
+        "tags": [
+            "干"
+        ],
+        "category": [
+            "饭类",
+            "粉类"
+        ],
+        "categories": [
+            "饭类",
+            "粉类"
+        ],
+        "halalStatus": "non_halal",
+        "image": "https://i.ibb.co/7JqMSXYT/image.jpg",
+        "price_range": "RM 10-20",
+        "rating": 0,
+        "fb_post_link": "",
+        "menu_link": "",
+        "website_link": "",
+        "delivery_link": "",
+        "isVegetarian": false,
+        "isNoBeef": false,
+        "isVIP": false,
+        "priority": 0,
+        "subscriptionLevel": 0,
+        "manualStatus": "auto",
+        "branches": [],
+        "subStalls": [],
+        "dietaryOption": null,
+        "slug": "meei-shih-seafood-restaurant"
+    },
+    {
+        "id": 32,
+        "name": "云来 • 东方花园",
+        "name_en": "Yoon Lai",
+        "location": {
+            "lat": null,
+            "lng": null
+        },
+        "area": "",
+        "address": "646, Jalan Gangsa 6, Taman Timur, 81000 Kulai, Johor Darul Ta'zim",
+        "opening_hours": "Monday: 6am - 4pm\nTuesday: 6am - 4pm\nWednesday: Closed\nThursday: 6am - 4pm\nFriday: 6am - 4pm\nSaturday: 6am - 4pm\nSunday: 6am - 4pm",
+        "whatsappLink": "",
+        "intro_zh": "古来 Taman Timur 的传统中式餐馆，以 点心、粿条、云吞面、鸡饭和其他本地早餐/正餐 吃法闻名，适合想吃简单早午餐或传统华人料理的食客。",
+        "intro_en": "Serves delicious Dim Sum, Chee Cheong Fun, and Wanton Noodles. The Chee Cheong Fun is smooth and fragrant, while the Tau Sar Pau is soft and sweet. Famous for its unique style of Wanton Noodles.",
+        "tags": [
+            "平价"
+        ],
+        "category": [
+            "咖啡店/美食阁"
+        ],
+        "categories": [
+            "咖啡店/美食阁"
+        ],
+        "halalStatus": "non_halal",
+        "image": "https://i.ibb.co/mFJmH4KG/Screen-Hunter-78-Jan-26-18-33.jpg",
+        "price_range": "RM 10-20",
+        "rating": 0,
+        "fb_post_link": "",
+        "menu_link": "",
+        "website_link": "",
+        "delivery_link": "",
+        "isVegetarian": false,
+        "isNoBeef": false,
+        "isVIP": false,
+        "priority": 0,
+        "subscriptionLevel": 0,
+        "manualStatus": "auto",
+        "branches": [],
+        "subStalls": [],
+        "dietaryOption": null,
+        "slug": "yoon-lai"
+    },
+    {
+        "id": 37,
+        "name": "初",
+        "name_en": "Origin Cafe",
+        "location": {
+            "lat": null,
+            "lng": null
+        },
+        "area": "",
+        "address": "41, Lorong Ismail, Taman Kulai, 81000 Kulai, Johor Darul Ta'zim",
+        "opening_hours": "Monday: Closed\nTuesday: 11am - 8pm\nWednesday: 11am - 8pm\nThursday: 11am - 8pm\nFriday: 11am - 8pm\nSaturday: 11am - 8pm\nSunday: 11am - 8pm",
+        "whatsappLink": "",
+        "intro_zh": "充满禅意的日式极简风格素食咖啡馆。环境清幽，复古木质装饰。主打精致的素食早午餐、现泡茶饮和手作甜点。",
+        "intro_en": "A Zen-inspired vegetarian cafe with minimalist Japanese decor. Features a quiet atmosphere with vintage wood elements. Specializes in exquisite vegetarian brunch, freshly brewed tea, and handmade desserts.",
+        "tags": [
+            "有冷气",
+            "适合聚餐"
+        ],
+        "category": [
+            "Cafe"
+        ],
+        "categories": [
+            "Cafe"
+        ],
+        "halalStatus": "non_halal",
+        "image": "https://i.ibb.co/Jw6Cpvkv/Origin-Cafe.jpg",
+        "price_range": "RM 10-20",
+        "rating": 0,
+        "fb_post_link": "",
+        "menu_link": "",
+        "website_link": "",
+        "delivery_link": "",
+        "isVegetarian": false,
+        "isNoBeef": false,
+        "isVIP": false,
+        "priority": 0,
+        "subscriptionLevel": 0,
+        "manualStatus": "auto",
+        "branches": [],
+        "subStalls": [],
+        "dietaryOption": "vegetarian_only",
+        "slug": "origin-cafe"
+    },
+    {
+        "id": 265,
+        "name": "#7 Beradik Restaurant",
+        "name_en": "#7 Beradik Restaurant",
+        "location": {
+            "lat": null,
+            "lng": null
+        },
+        "area": "Indahpura",
+        "address": "Multiple Locations in Kulai & Senai",
+        "opening_hours": "11am–2:30pm, 5–9pm Mon closed",
+        "whatsappLink": "",
+        "intro_zh": "优美城知名的海鲜餐馆，以煮炒和新鲜海鲜为主，提供多种美味佳肴，深受当地人喜爱。",
+        "intro_en": "A well-known seafood restaurant in Indahpura, specializing in zi char and fresh seafood, offering a variety of delicious dishes loved by locals.",
+        "tags": [
+            "干"
+        ],
+        "category": [
+            "煮炒海鲜楼"
+        ],
+        "categories": [
+            "煮炒海鲜楼"
+        ],
+        "halalStatus": "non_halal",
+        "image": "https://i.ibb.co/DPWKVzPk/image.jpg",
+        "price_range": "RM 10-20",
+        "rating": 0,
+        "fb_post_link": "",
+        "menu_link": "",
+        "website_link": "",
+        "delivery_link": "",
+        "isVegetarian": false,
+        "isNoBeef": false,
+        "isVIP": false,
+        "priority": 0,
+        "subscriptionLevel": 0,
+        "manualStatus": "auto",
+        "branches": [
+            {
+                "name": "Bandar Putra",
+                "address": "34, Jalan Kenanga 29/1, Bandar Indahpura, 81000 Kulai, Johor Darul Ta'zim",
+                "opening_hours": "11am–2:30pm, 5–9pm Mon closed",
+                "wazeUrl": "https://waze.com/ul?q=Restoran%20Jin%20Hai%20Indahpura",
+                "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Restoran+Jin+Hai+Indahpura",
+                "location": {
+                    "lat": null,
+                    "lng": null
+                }
+            },
+            {
+                "name": "Senai",
+                "address": "Lot 5035, Batu 17 1/2, Jalan Air Hitam, Saleng, 81400 Senai, Johor",
+                "opening_hours": "Monday: 11am-4pm, 7pm-9pm\nTuesday: 11am-4pm, 7pm-9pm\nWednesday: 11am-4pm, 7pm-9pm\nThursday: 11am-4pm, 7pm-9pm\nFriday: 11am-4pm, 7pm-9pm\nSaturday: 11am-4pm, 7pm-9pm\nSunday: 11am-4pm, 7pm-9pm",
+                "wazeUrl": "https://waze.com/ul?q=Restoran%20Jin%20Hai%20Senai",
+                "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Restoran+Jin+Hai+Senai",
+                "location": {
+                    "lat": null,
+                    "lng": null
+                }
+            }
+        ],
+        "subStalls": [],
+        "dietaryOption": null,
+        "slug": "7-beradik-restaurant"
     }
 ];
 
