@@ -19769,6 +19769,88 @@ export const initialRestaurants = [
         "subStalls": [],
         "dietaryOption": null,
         "slug": "7-beradik-restaurant"
+    },
+    {
+        "id": 474,
+        "name": "新勥记烧腊",
+        "name_en": "",
+        "location": {
+            "lat": null,
+            "lng": null
+        },
+        "area": "",
+        "address": "140, Jalan Susur Kulai 2, Taman Kulai Besar, 81000 Kulai, Johor Darul Ta'zim",
+        "opening_hours": "Monday: 7:30am - 4:30pm\nTuesday: Closed\nWednesday: 7:30am - 4:30pm\nThursday: 7:30am - 4:30pm\nFriday: 7:30am - 4:30pm\nSaturday: 7:30am - 4:30pm\nSunday: 7:30am - 4:30pm",
+        "whatsappLink": "",
+        "intro_zh": "",
+        "intro_en": "",
+        "tags": [],
+        "category": [
+            "饭类"
+        ],
+        "categories": [
+            "饭类"
+        ],
+        "halalStatus": "non_halal",
+        "image": "",
+        "price_range": "RM 10-20",
+        "rating": 0,
+        "fb_post_link": "",
+        "menu_link": "",
+        "website_link": "",
+        "delivery_link": "",
+        "isVegetarian": false,
+        "isNoBeef": false,
+        "isVIP": false,
+        "priority": 0,
+        "subscriptionLevel": 0,
+        "manualStatus": "auto",
+        "branches": [],
+        "subStalls": [],
+        "dietaryOption": null,
+        "slug": "restaurant-474"
+    },
+    {
+        "id": 475,
+        "name": "Lapan Kati Seafood Restaurant",
+        "name_en": "",
+        "location": {
+            "lat": null,
+            "lng": null
+        },
+        "area": "Indahpura",
+        "address": "161, Jalan Kenanga 29/4, Bandar Indahpura, 81000 Kulai, Johor Darul Ta'zim",
+        "opening_hours": "Monday: Closed\nTuesday: 1am - 10pm\nWednesday: 1am - 10pm\nThursday: 1am - 10pm\nFriday: 1am - 10pm\nSaturday: 1am - 10pm\nSunday: 1am - 10pm",
+        "whatsappLink": "",
+        "intro_zh": "",
+        "intro_en": "",
+        "tags": [],
+        "category": [
+            "煮炒海鲜楼",
+            "马来与印度风味"
+        ],
+        "categories": [
+            "煮炒海鲜楼",
+            "马来与印度风味"
+        ],
+        "halalStatus": "non_halal",
+        "image": "",
+        "price_range": "RM 10-20",
+        "rating": 0,
+        "fb_post_link": "",
+        "menu_link": "",
+        "website_link": "",
+        "delivery_link": "",
+        "isVegetarian": false,
+        "isNoBeef": false,
+        "isVIP": false,
+        "priority": 0,
+        "subscriptionLevel": 0,
+        "manualStatus": "auto",
+        "branches": [],
+        "subStalls": [],
+        "dietaryOption": null,
+        "slug": "lapan-kati-seafood-restaurant"
     }
 ];
 
