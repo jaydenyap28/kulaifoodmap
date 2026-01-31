@@ -9,7 +9,7 @@ import BranchSelector from './BranchSelector';
 import { checkOpenStatus } from '../utils/businessHours';
 import { compressImage } from '../utils/imageUtils';
 import { AVAILABLE_AREAS } from '../data/constants';
-import { MAIN_VIDEO_LINK } from '../data/restaurants';
+import { MAIN_VIDEO_LINK, EXPERIENCE_REEL_LINK } from '../data/restaurants';
 
 const ResultModal = ({ restaurant, onClose, isAdmin, onUpdateRestaurant, categories = [], onAddCategory }) => {
   const { t, i18n } = useTranslation();
@@ -1237,7 +1237,7 @@ Tuesday: Closed
                 ) : (
                     <div className="space-y-2">
                         <a 
-                            href={MAIN_VIDEO_LINK}
+                            href={EXPERIENCE_REEL_LINK}
                             target="_blank"
                             rel="noopener noreferrer"
                             onClick={() => ReactGA.event({ category: "Conversion", action: "Click_Facebook", label: restaurant.name || "Main_Video" })}
