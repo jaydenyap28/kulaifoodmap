@@ -11323,7 +11323,7 @@ export const initialRestaurants = [
             "快餐"
         ],
         "halalStatus": "non_halal",
-        "image": "https://scontent.fmkz1-1.fna.fbcdn.net/v/t39.30808-6/329815846_2060095307528023_6061706467649116564_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=a5f93a&_nc_ohc=byMnvRMpVssQ7kNvwGwcgc0&_nc_oc=AdnLHMNRks_xpE8GPUID4zBvhFKXzFe-ijcpLZnUd1OWRa35E8eIbECwH07v8Xx8bhE&_nc_zt=23&_nc_ht=scontent.fmkz1-1.fna&_nc_gid=0M5ErdI46WyVo0B9uw8-Sg&oh=00_Afo786Fqow7NHnyy8sWXTfo3EtYJNlMaes9DyxPgdAqJZg&oe=697BDD11",
+        "image": "https://i.ibb.co/Gf5vxLk7/image.jpg",
         "price_range": "RM 10-20",
         "rating": 0,
         "fb_post_link": "",
@@ -11751,7 +11751,7 @@ export const initialRestaurants = [
             "Cafe"
         ],
         "halalStatus": "non_halal",
-        "image": "https://scontent.fmkz1-1.fna.fbcdn.net/v/t39.30808-6/284823391_1922054301325602_7832913948863569527_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=6ee11a&_nc_ohc=XEnHWDDLA7EQ7kNvwE5AmXF&_nc_oc=Adm3_mgfILcVihdhhAz4oPaUUbxdjlc6x0h5Ji1J4Vm4EemgZiQwaZTKum4nuLzOyPY&_nc_zt=23&_nc_ht=scontent.fmkz1-1.fna&_nc_gid=urQ3v_qW8QvIxUGiw2ySvA&oh=00_AfrY58WVCt5A6usOaSkqLAAP2Y076UqrUszTiq7eRk8ZPA&oe=697BEA62",
+        "image": "https://i.ibb.co/chV2wcnz/image.jpg",
         "price_range": "RM 10-20",
         "rating": 0,
         "fb_post_link": "",
@@ -11834,7 +11834,7 @@ export const initialRestaurants = [
             "Cafe"
         ],
         "halalStatus": "non_halal",
-        "image": "https://scontent.fmkz1-2.fna.fbcdn.net/v/t39.30808-6/476876116_8913801565412037_5198401098019856791_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=a5f93a&_nc_ohc=chj6vJvZa7AQ7kNvwE3VDax&_nc_oc=Adl3HxEZ4cKY0oOzY7cfCwFIdqLHj_T3D-ds1Wqd5j7b5X44ELVhQ2Vh-aUl-y3IQ8o&_nc_zt=23&_nc_ht=scontent.fmkz1-2.fna&_nc_gid=j2bK7DkqZfh_05oBEWGcpw&oh=00_AfoNk0iiFPE-rXXWOkn5T_k8h261gV8yXeUlYL-QJhJ-zg&oe=697C0764",
+        "image": "https://i.ibb.co/SWvkgCs/Madam-Kwan-s.webp",
         "price_range": "RM 10-20",
         "rating": 0,
         "fb_post_link": "",
@@ -17386,15 +17386,15 @@ export const initialRestaurants = [
     },
     {
         "id": 431,
-        "name": "Restoran Seafood Noodles & Pot",
-        "name_en": "",
+        "name": "海鲜兄弟",
+        "name_en": "Haixin Seafood Noodles & Pot",
         "location": {
             "lat": 1.64244,
             "lng": 103.615893
         },
         "area": "Indahpura",
         "address": "",
-        "opening_hours": "Monday: 10am - 10pm\nTuesday: 10am - 10pm\nWednesday: 10am - 10pm\nThursday: 10am - 10pm\nFriday: 10am - 10pm\nSaturday: 10am - 10pm\nSunday: 10am - 10pm",
+        "opening_hours": "Monday: 3pm - 11pm\nTuesday: 3pm - 11pm\nWednesday: Closed\nThursday: 3pm - 11pm\nFriday: 3pm - 11pm\nSaturday: 3pm - 11pm\nSunday: 3pm - 11pm",
         "tags": [
             "海鲜粉",
             "锅物"
@@ -17408,7 +17408,7 @@ export const initialRestaurants = [
             "饭类"
         ],
         "halalStatus": "non_halal",
-        "image": "",
+        "image": "https://i.ibb.co/k259Y6y6/image.jpg",
         "price_range": "RM 10-20",
         "rating": 0,
         "fb_post_link": "",
@@ -18195,7 +18195,7 @@ export const initialRestaurants = [
         },
         "area": "Kulai",
         "address": "112, Jalan Harmoni 1",
-        "opening_hours": "",
+        "opening_hours": "Monday: 7am - 2pm\nTuesday: 7am - 2pm\nWednesday: 7am - 2pm\nThursday: 7am - 2pm\nFriday: 7am - 2pm\nSaturday: 7am - 2pm\nSunday: 7am - 2pm",
         "whatsappLink": "",
         "intro_zh": "",
         "intro_en": "",
@@ -18209,7 +18209,7 @@ export const initialRestaurants = [
             "健康餐"
         ],
         "halalStatus": "non_halal",
-        "image": "https://placehold.co/600x400/1e1e1e/FFF?text=Lan+Jie+Lei+Cha",
+        "image": "https://i.ibb.co/xSNdhkm5/image.jpg",
         "price_range": "RM 10-20",
         "rating": 0,
         "fb_post_link": "",
@@ -18455,7 +18455,7 @@ export const initialRestaurants = [
             "咖啡店/美食阁"
         ],
         "halalStatus": "non_halal",
-        "image": "https://placehold.co/600x400/1e1e1e/FFF?text=Restoran+Sin+Tong+Hai",
+        "image": "https://i.ibb.co/jvJFz3CT/image.jpg",
         "price_range": "RM 10-20",
         "rating": 0,
         "fb_post_link": "",
@@ -18471,22 +18471,22 @@ export const initialRestaurants = [
         "branches": [],
         "subStalls": [
             {
-                "name": "",
+                "name": "云吞面",
                 "image": "https://i.ibb.co/qYGbRSdn/IMG-20260129-112953.jpg",
                 "tags": []
             },
             {
-                "name": "",
+                "name": "粉类",
                 "image": "https://i.ibb.co/S7nRJTwB/IMG-20260129-113006.jpg",
                 "tags": []
             },
             {
-                "name": "",
+                "name": "财记鸡饭",
                 "image": "https://i.ibb.co/p6sy48zK/IMG-20260129-113020.jpg",
                 "tags": []
             },
             {
-                "name": "",
+                "name": "南食家小炒",
                 "image": "https://i.ibb.co/jZLBPBd4/IMG-20260129-113039.jpg",
                 "tags": []
             }
@@ -18500,8 +18500,8 @@ export const initialRestaurants = [
         "name": "新缤缤咖喱面",
         "name_en": "Restoran Sin Beng Beng",
         "location": {
-            "lat": null,
-            "lng": null
+            "lat": "1.6516778549168665",
+            "lng": "103.61028953833171"
         },
         "area": "Kulai 21 Miles",
         "address": "Jalan Susur Kulai 4, Taman Sri Kulai Baru 2, 81000 Kulai, Johor Darul Ta'zim",
@@ -19195,7 +19195,7 @@ export const initialRestaurants = [
             "咖啡店/美食阁"
         ],
         "halalStatus": "non_halal",
-        "image": "",
+        "image": "https://i.ibb.co/LMpQtjq/image.jpg",
         "price_range": "RM 10-20",
         "rating": 0,
         "phone": "012-770 6933",
@@ -19820,7 +19820,7 @@ export const initialRestaurants = [
         },
         "area": "Indahpura",
         "address": "161, Jalan Kenanga 29/4, Bandar Indahpura, 81000 Kulai, Johor Darul Ta'zim",
-        "opening_hours": "Monday: Closed\nTuesday: 1am - 10pm\nWednesday: 1am - 10pm\nThursday: 1am - 10pm\nFriday: 1am - 10pm\nSaturday: 1am - 10pm\nSunday: 1am - 10pm",
+        "opening_hours": "Monday: Closed\nTuesday: 10am - 10pm\nWednesday: 10am - 10pm\nThursday: 10am - 10pm\nFriday: 10am - 10pm\nSaturday: 10am - 10pm\nSunday: 10am - 10pm",
         "whatsappLink": "",
         "intro_zh": "",
         "intro_en": "",
@@ -19834,7 +19834,7 @@ export const initialRestaurants = [
             "马来与印度风味"
         ],
         "halalStatus": "non_halal",
-        "image": "",
+        "image": "https://i.ibb.co/bgMHnDP1/Lapan-Kati-8.jpg",
         "price_range": "RM 10-20",
         "rating": 0,
         "fb_post_link": "",
