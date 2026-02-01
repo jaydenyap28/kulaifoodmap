@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useMemo } from 'react';
-import { MapPin, Edit2, Trash2, ArrowUp, Search, Plus, Leaf, Sprout, Ban, Star, GripVertical, Flame, Medal, MessageCircle, Loader2, User } from 'lucide-react';
+import { MapPin, Edit2, Trash2, ArrowUp, Search, Plus, Leaf, Sprout, Ban, Star, GripVertical, Flame, Medal, Loader2, User } from 'lucide-react';
 import ReactGA from "react-ga4";
 import {
   DndContext,
@@ -459,18 +459,7 @@ const RestaurantCard = ({ restaurant, isAdmin, onUpdate, onDelete, onClick, onCa
                     <span className="line-clamp-2 leading-tight">{restaurant.address}</span>
                 </div>
 
-                {/* WhatsApp Button */}
-                {restaurant.whatsappLink && (
-                    <a 
-                        href={restaurant.whatsappLink} 
-                        target="_blank" 
-                        rel="noopener noreferrer"
-                        onClick={(e) => e.stopPropagation()}
-                        className="mt-2 w-full flex items-center justify-center gap-1.5 bg-green-600/20 hover:bg-green-600 text-green-500 hover:text-white border border-green-600/30 hover:border-green-600 py-1.5 rounded-lg text-xs font-bold transition-all duration-300"
-                    >
-                        <MessageCircle size={14} /> {t('contact_merchant', '联系商家')}
-                    </a>
-                )}
+                
             </div>
       </div>
     </div>
