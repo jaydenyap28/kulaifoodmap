@@ -19658,7 +19658,48 @@ export const initialRestaurants = [
         "subscriptionLevel": 0,
         "manualStatus": "auto",
         "branches": [],
-        "subStalls": [],
+        "subStalls": [
+            {
+                "name": "",
+                "image": "https://i.ibb.co/s999p6Py/IMG-20260201-081238.jpg",
+                "tags": []
+            },
+            {
+                "name": "",
+                "image": "https://i.ibb.co/q3fLybnv/IMG-20260201-081312.jpg",
+                "tags": []
+            },
+            {
+                "name": "",
+                "image": "https://i.ibb.co/1YFWBqwx/IMG-20260201-081323.jpg",
+                "tags": []
+            },
+            {
+                "name": "",
+                "image": "https://i.ibb.co/ynnP5xr7/IMG-20260201-081347.jpg",
+                "tags": []
+            },
+            {
+                "name": "",
+                "image": "https://i.ibb.co/ZR8pKK8L/IMG-20260201-081403.jpg",
+                "tags": []
+            },
+            {
+                "name": "",
+                "image": "https://i.ibb.co/F4TJVyQm/IMG-20260201-081421.jpg",
+                "tags": []
+            },
+            {
+                "name": "",
+                "image": "https://i.ibb.co/205NFndV/IMG-20260201-081450.jpg",
+                "tags": []
+            },
+            {
+                "name": "",
+                "image": "https://i.ibb.co/XTD0GjM/IMG-20260201-083334.jpg",
+                "tags": []
+            }
+        ],
         "dietaryOption": null,
         "slug": "yoon-lai"
     },
