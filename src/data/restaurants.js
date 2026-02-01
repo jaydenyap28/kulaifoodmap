@@ -19660,44 +19660,60 @@ export const initialRestaurants = [
         "branches": [],
         "subStalls": [
             {
-                "name": "",
+                "name": "鸡饭烧腊档",
                 "image": "https://i.ibb.co/s999p6Py/IMG-20260201-081238.jpg",
-                "tags": []
+                "tags": [
+                    "鸡饭",
+                    "叉烧",
+                    "烧腊"
+                ]
             },
             {
-                "name": "",
-                "image": "https://i.ibb.co/q3fLybnv/IMG-20260201-081312.jpg",
-                "tags": []
-            },
-            {
-                "name": "",
+                "name": "椰浆饭",
                 "image": "https://i.ibb.co/1YFWBqwx/IMG-20260201-081323.jpg",
-                "tags": []
+                "tags": [
+                    "椰浆饭",
+                    "NasiLemak"
+                ]
             },
             {
-                "name": "",
+                "name": "欣欣面粉粿",
                 "image": "https://i.ibb.co/ynnP5xr7/IMG-20260201-081347.jpg",
-                "tags": []
+                "tags": [
+                    "面粉粿",
+                    "咖喱面"
+                ]
             },
             {
-                "name": "",
+                "name": "特制港式猪肠粉",
                 "image": "https://i.ibb.co/ZR8pKK8L/IMG-20260201-081403.jpg",
                 "tags": []
             },
             {
-                "name": "",
+                "name": "沙威猪肉丸粉",
                 "image": "https://i.ibb.co/F4TJVyQm/IMG-20260201-081421.jpg",
-                "tags": []
+                "tags": [
+                    "猪肉粉"
+                ]
             },
             {
-                "name": "",
+                "name": "面档",
                 "image": "https://i.ibb.co/205NFndV/IMG-20260201-081450.jpg",
-                "tags": []
+                "tags": [
+                    "手工面",
+                    "云吞面",
+                    "凤爪面",
+                    "水饺面"
+                ]
             },
             {
-                "name": "",
+                "name": "辉哥槟城鲜蛤炒果条",
                 "image": "https://i.ibb.co/XTD0GjM/IMG-20260201-083334.jpg",
-                "tags": []
+                "tags": [
+                    "炒果条",
+                    "萝卜糕",
+                    "星洲冬粉"
+                ]
             }
         ],
         "dietaryOption": null,
