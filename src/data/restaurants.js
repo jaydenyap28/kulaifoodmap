@@ -528,8 +528,12 @@ export const initialRestaurants = [
         "tags": [
             "平价"
         ],
-        "category": [],
-        "categories": [],
+        "category": [
+            "其他"
+        ],
+        "categories": [
+            "其他"
+        ],
         "halalStatus": "non_halal",
         "image": "https://i.ibb.co/4DB66dQ/image.jpg",
         "price_range": "RM 10-20",
@@ -9503,8 +9507,12 @@ export const initialRestaurants = [
         "intro_zh": "专营正宗中国川菜与烧烤，提供麻辣鲜香的各式菜肴，是喜欢重口味食客的绝佳选择。",
         "intro_en": "Specializes in authentic Sichuan cuisine and BBQ, offering spicy and flavorful dishes, a great choice for those who love bold flavors.",
         "tags": [],
-        "category": [],
-        "categories": [],
+        "category": [
+            "其他"
+        ],
+        "categories": [
+            "其他"
+        ],
         "halalStatus": "non_halal",
         "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRY8idlAWMpd-h4xxtx3Y7TCQU30U0zorh0EA&s",
         "price_range": "RM 10-20",
@@ -9700,8 +9708,12 @@ export const initialRestaurants = [
         "opening_hours": "Monday: 11 am–3 pm, 4–10 pm\nTuesday: 11 am–3 pm, 4–10 pm\nWednesday: 11 am–3 pm, 4–10 pm\nThursday: 11 am–3 pm, 4–10 pm\nFriday: 11 am–3 pm, 4–10 pm\nSaturday: 11 am–3 pm, 4–10 pm\nSunday: 11 am–3 pm, 4–10 pm",
         "whatsappLink": "",
         "tags": [],
-        "category": [],
-        "categories": [],
+        "category": [
+            "其他"
+        ],
+        "categories": [
+            "其他"
+        ],
         "halalStatus": "non_halal",
         "image": "https://i.ibb.co/q3VKB50x/image.webp",
         "price_range": "RM 10-20",
@@ -9820,8 +9832,12 @@ export const initialRestaurants = [
             "重口味",
             "辣"
         ],
-        "category": [],
-        "categories": [],
+        "category": [
+            "其他"
+        ],
+        "categories": [
+            "其他"
+        ],
         "halalStatus": "non_halal",
         "image": "https://i.ibb.co/rRQmD6pV/image.jpg",
         "price_range": "RM 10-20",
@@ -12157,7 +12173,6 @@ export const initialRestaurants = [
         "dietaryOption": null,
         "slug": "d-laksa-jpo"
     },
- 
     {
         "id": 307,
         "name": "瑞记海南鸡饭",
@@ -12404,8 +12419,12 @@ export const initialRestaurants = [
             "晚餐",
             "宵夜"
         ],
-        "category": [],
-        "categories": [],
+        "category": [
+            "其他"
+        ],
+        "categories": [
+            "其他"
+        ],
         "halalStatus": "non_halal",
         "image": "https://i.ibb.co/KxW3LMnj/image.jpg",
         "price_range": "RM 10-20",
@@ -13882,7 +13901,7 @@ export const initialRestaurants = [
             "lng": null
         },
         "area": "Bandar Putra",
-        "address": "",
+        "address": "地址待补充 (Address TBD), Kulai, Johor",
         "opening_hours": "4 pm–2 am",
         "whatsappLink": "",
         "intro_zh": "",
@@ -17393,7 +17412,7 @@ export const initialRestaurants = [
             "lng": 103.615893
         },
         "area": "Indahpura",
-        "address": "",
+        "address": "地址待补充 (Address TBD), Kulai, Johor",
         "opening_hours": "Monday: 3pm - 11pm\nTuesday: 3pm - 11pm\nWednesday: Closed\nThursday: 3pm - 11pm\nFriday: 3pm - 11pm\nSaturday: 3pm - 11pm\nSunday: 3pm - 11pm",
         "tags": [
             "海鲜粉",
@@ -17454,7 +17473,6 @@ export const initialRestaurants = [
         "dietaryOption": null,
         "slug": "lingo-bakery"
     },
- 
     {
         "id": 434,
         "name": "古方瓦煲肉骨茶",
@@ -19825,10 +19843,10 @@ export const initialRestaurants = [
         ],
         "subStalls": [],
         "dietaryOption": null,
-        "slug": "7-beradik-restaurant"
+        "slug": "7-beradik-restaurant-2"
     },
     {
-        "id": 474,
+        "id": 476,
         "name": "新勥记烧腊",
         "name_en": "",
         "location": {
@@ -19868,7 +19886,7 @@ export const initialRestaurants = [
         "slug": "restaurant-474"
     },
     {
-        "id": 475,
+        "id": 477,
         "name": "Lapan Kati Seafood Restaurant",
         "name_en": "",
         "location": {
@@ -19910,6 +19928,3 @@ export const initialRestaurants = [
         "slug": "lapan-kati-seafood-restaurant"
     }
 ];
-
-export const MAIN_VIDEO_LINK = 'https://www.facebook.com/jnqjourney/';
-export const EXPERIENCE_REEL_LINK = 'https://www.facebook.com/reel/3201587736678715';
