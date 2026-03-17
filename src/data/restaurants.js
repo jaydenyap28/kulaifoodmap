@@ -1,3 +1,6 @@
+export const MAIN_VIDEO_LINK = "https://www.facebook.com/";
+export const EXPERIENCE_REEL_LINK = "https://www.facebook.com/";
+
 export const initialRestaurants = [
     {
         "id": 1,

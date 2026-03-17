@@ -25,7 +25,7 @@ const DEFAULT_HERO_BG = "https://i.ibb.co/7J5qjZtv/image.png";
 
 // Version control for data structure changes
 // Increment this when you make breaking changes to data structure to force a reset
-const DATA_VERSION = 'v46';
+const DATA_VERSION = 'v47';
 
 function App() {
   const { t, i18n } = useTranslation();
@@ -278,6 +278,27 @@ function App() {
 
     // 5. Fallback if storage was empty
     if (mergedData.length === 0) mergedData = [...initialRestaurants];
+
+    // 6. 防御性去重：避免旧 localStorage 把已删除商家带回来
+    const deduped = [];
+    const seenBusinessKey = new Set();
+    const seenSlug = new Set();
+
+    for (const item of mergedData) {
+      const nameForKey = (item.name || item.desc || '').trim().toLowerCase();
+      const addrForKey = (item.address || '').trim().toLowerCase();
+      const businessKey = `${nameForKey}|${addrForKey}`;
+      const slugKey = (item.slug || '').trim().toLowerCase();
+
+      if (businessKey !== '|' && seenBusinessKey.has(businessKey)) continue;
+      if (slugKey && seenSlug.has(slugKey)) continue;
+
+      if (businessKey !== '|') seenBusinessKey.add(businessKey);
+      if (slugKey) seenSlug.add(slugKey);
+      deduped.push(item);
+    }
+
+    mergedData = deduped;
 
     // Normalize Data on Init
     return mergedData.map(r => ({
