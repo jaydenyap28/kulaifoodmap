@@ -25,7 +25,7 @@ const DEFAULT_HERO_BG = "https://i.ibb.co/7J5qjZtv/image.png";
 
 // Version control for data structure changes
 // Increment this when you make breaking changes to data structure to force a reset
-const DATA_VERSION = 'v47';
+const DATA_VERSION = 'v48';
 
 function App() {
   const { t, i18n } = useTranslation();
@@ -283,6 +283,7 @@ function App() {
     const deduped = [];
     const seenBusinessKey = new Set();
     const seenSlug = new Set();
+    const seenName = new Map(); // name -> id
 
     for (const item of mergedData) {
       const nameForKey = (item.name || item.desc || '').trim().toLowerCase();
@@ -290,9 +291,16 @@ function App() {
       const businessKey = `${nameForKey}|${addrForKey}`;
       const slugKey = (item.slug || '').trim().toLowerCase();
 
+      // 按 name 去重：如果同名，保留 id 小的（通常是主条目）
+      if (nameForKey && seenName.has(nameForKey)) {
+        const existingId = seenName.get(nameForKey);
+        if (item.id > existingId) continue; // 跳过 id 大的（通常是重复项）
+      }
+
       if (businessKey !== '|' && seenBusinessKey.has(businessKey)) continue;
       if (slugKey && seenSlug.has(slugKey)) continue;
 
+      if (nameForKey) seenName.set(nameForKey, item.id);
       if (businessKey !== '|') seenBusinessKey.add(businessKey);
       if (slugKey) seenSlug.add(slugKey);
       deduped.push(item);
