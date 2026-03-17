@@ -1,16 +1,18 @@
-import React, { useState, useEffect, useRef } from 'react';
+import React, { useState, useEffect, useRef, lazy, Suspense } from 'react';
 import { useNavigate, useLocation, matchPath } from 'react-router-dom';
 import { initialRestaurants } from './data/restaurants';
 import HeroCardStack from './components/HeroCardStack';
-import ResultModal from './components/ResultModal';
 import RestaurantList from './components/RestaurantList';
 import FilterBar from './components/FilterBar';
 import Footer from './components/Footer';
 import AdBanner from './components/AdBanner';
-import SupportModal from './components/SupportModal';
 import LoginModal from './components/LoginModal';
-import AdminAnalytics from './components/AdminAnalytics';
-import AiFoodAssistant from './components/AiFoodAssistant';
+import { trackEvent, trackPageView } from './utils/trackEvent';
+
+const ResultModal = lazy(() => import('./components/ResultModal'));
+const SupportModal = lazy(() => import('./components/SupportModal'));
+const AdminAnalytics = lazy(() => import('./components/AdminAnalytics'));
+const AiFoodAssistant = lazy(() => import('./components/AiFoodAssistant'));
 import { UtensilsCrossed, Lock, X, Coffee, Image as ImageIcon, Upload, Save, Download, BarChart2, Globe, Clock, Dessert, RefreshCw, Sparkles } from 'lucide-react';
 import { useTranslation } from 'react-i18next';
 
@@ -387,6 +389,11 @@ function App() {
                 setSelectedRestaurant(restaurant);
                 // Increment view count when opened via URL (or navigation)
                 analytics.incrementView(restaurant.id);
+                trackEvent('restaurant_view', {
+                  restaurant_id: String(restaurant.id),
+                  restaurant_name: restaurant.name,
+                  restaurant_slug: restaurant.slug || ''
+                });
             }
         }
     } else {
@@ -396,6 +403,38 @@ function App() {
         }
     }
   }, [location.pathname, restaurants]);
+
+  useEffect(() => {
+    const baseTitle = '古来美食地图 Kulai Food Map | AI 智能找吃神器 (收录400+商家)';
+    const baseDesc = '不懂吃什么？Kulai Food Map 帮你随机抽取！内含 AI 助手，收录古来 400+ 间餐厅、路边摊及美食中心。';
+    const canonicalUrl = `https://kulaifoodmap.com${location.pathname === '/' ? '/' : location.pathname}`;
+
+    const setMeta = (selector, attr, value) => {
+      const el = document.querySelector(selector);
+      if (el && value) el.setAttribute(attr, value);
+    };
+
+    const title = selectedRestaurant
+      ? `${selectedRestaurant.name} | 古来美食地图 Kulai Food Map`
+      : baseTitle;
+
+    const description = selectedRestaurant
+      ? `${selectedRestaurant.name} · ${selectedRestaurant.address || ''}。营业时间：${selectedRestaurant.opening_hours || '未提供'}。`
+      : baseDesc;
+
+    document.title = title;
+    setMeta('meta[name="description"]', 'content', description);
+    setMeta('meta[name="title"]', 'content', title);
+    setMeta('link[rel="canonical"]', 'href', canonicalUrl);
+    setMeta('meta[property="og:url"]', 'content', canonicalUrl);
+    setMeta('meta[property="og:title"]', 'content', title);
+    setMeta('meta[property="og:description"]', 'content', description);
+    setMeta('meta[property="twitter:url"]', 'content', canonicalUrl);
+    setMeta('meta[property="twitter:title"]', 'content', title);
+    setMeta('meta[property="twitter:description"]', 'content', description);
+
+    trackPageView(location.pathname, title);
+  }, [location.pathname, selectedRestaurant]);
   const [selectedCategory, setSelectedCategory] = useState([]); // Changed to array for multi-select
   const [selectedArea, setSelectedArea] = useState(null); // New Area State
   const [showOpenOnly, setShowOpenOnly] = useState(false);
@@ -819,7 +858,10 @@ function App() {
             <HeroCardStack 
               restaurants={filteredRestaurants} 
               onChoose={handleChoose}
-              onSupportClick={() => setShowSupportModal(true)}
+              onSupportClick={() => {
+                trackEvent('support_click', { source: 'hero_slot' });
+                setShowSupportModal(true);
+              }}
             />
           ) : (
              <div className="flex flex-col items-center justify-center h-64 text-center p-8">
@@ -932,7 +974,10 @@ function App() {
         {/* Donate / Support Section (Moved here) */}
         <div className="flex justify-center mb-8 relative z-20">
             <button
-                onClick={() => setShowSupportModal(true)}
+                onClick={() => {
+                    trackEvent('support_click', { source: 'support_button' });
+                    setShowSupportModal(true);
+                }}
                 className="flex items-center gap-2 px-6 py-2.5 rounded-full bg-gradient-to-r from-amber-500 to-orange-600 text-white font-bold shadow-lg hover:scale-105 active:scale-95 transition-all duration-300 border border-white/20"
             >
                 <Coffee size={18} />
@@ -970,42 +1015,50 @@ function App() {
       </button>
 
       {/* AI Assistant Modal */}
-      <AiFoodAssistant 
-        isOpen={showAiAssistant} 
-        onClose={() => setShowAiAssistant(false)}
-        restaurants={restaurants}
-        onRestaurantClick={handleRestaurantClick}
-      />
+      <Suspense fallback={null}>
+        <AiFoodAssistant 
+          isOpen={showAiAssistant} 
+          onClose={() => setShowAiAssistant(false)}
+          restaurants={restaurants}
+          onRestaurantClick={handleRestaurantClick}
+        />
+      </Suspense>
 
       <Footer onAdminLogin={() => setShowLoginModal(true)} />
 
       {/* Result Modal */}
-      {selectedRestaurant && (
-        <ResultModal 
-          restaurant={selectedRestaurant} 
-          onClose={() => navigate('/')} 
-          isAdmin={isAdmin}
-          onUpdateRestaurant={handleUpdateRestaurant}
-          categories={categories} // Pass available categories
-          onAddCategory={handleAddCategory} // Allow adding from modal too
-        />
-      )}
+      <Suspense fallback={null}>
+        {selectedRestaurant && (
+          <ResultModal 
+            restaurant={selectedRestaurant} 
+            onClose={() => navigate('/')} 
+            isAdmin={isAdmin}
+            onUpdateRestaurant={handleUpdateRestaurant}
+            categories={categories} // Pass available categories
+            onAddCategory={handleAddCategory} // Allow adding from modal too
+          />
+        )}
+      </Suspense>
 
       {/* Support Modal */}
-      <SupportModal 
-        isOpen={showSupportModal} 
-        onClose={() => setShowSupportModal(false)} 
-        isAdmin={isAdmin}
-        supportQR={supportQR}
-        onUpdateQR={handleUpdateSupportQR}
-      />
+      <Suspense fallback={null}>
+        <SupportModal 
+          isOpen={showSupportModal} 
+          onClose={() => setShowSupportModal(false)} 
+          isAdmin={isAdmin}
+          supportQR={supportQR}
+          onUpdateQR={handleUpdateSupportQR}
+        />
+      </Suspense>
       
       {/* Admin Analytics Modal */}
-      <AdminAnalytics 
-        isOpen={showAnalyticsModal} 
-        onClose={() => setShowAnalyticsModal(false)}
-        restaurants={restaurants}
-      />
+      <Suspense fallback={null}>
+        <AdminAnalytics 
+          isOpen={showAnalyticsModal} 
+          onClose={() => setShowAnalyticsModal(false)}
+          restaurants={restaurants}
+        />
+      </Suspense>
 
       {/* Login Modal */}
       <LoginModal 

@@ -3,7 +3,7 @@ import { createPortal } from 'react-dom';
 import { X, Star, MapPin, ExternalLink, Save, Clock, Info, UtensilsCrossed, Upload, BookOpen, Globe, Bike, Navigation, Leaf, Sprout, User, MessageCircle, Send, ChevronLeft, ChevronRight, Search } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { useTranslation } from 'react-i18next';
-import ReactGA from "react-ga4";
+import { trackEvent } from '../utils/trackEvent';
 import ImageWithFallback from './ImageWithFallback';
 import BranchSelector from './BranchSelector';
 import { checkOpenStatus } from '../utils/businessHours';
@@ -1090,7 +1090,14 @@ Tuesday: Closed
                   
                   {/* Google Maps Navigation Button (Primary) */}
                   <button
-                    onClick={() => window.open(mapUrl, '_blank')}
+                    onClick={() => {
+                        trackEvent('navigate_click', {
+                            provider: 'google_maps',
+                            restaurant_id: String(restaurant.id),
+                            restaurant_name: restaurant.name,
+                        });
+                        window.open(mapUrl, '_blank');
+                    }}
                     className="w-full mt-4 flex items-center justify-center gap-2 py-3 rounded-xl font-bold text-black shadow-lg hover:brightness-110 transition-all active:scale-95 group"
                     style={{ backgroundColor: '#ffffff' }}
                   >
@@ -1112,6 +1119,11 @@ Tuesday: Closed
                             const query = encodeURIComponent(qStr);
                             url = `https://waze.com/ul?q=${query}&navigate=yes`;
                         }
+                        trackEvent('navigate_click', {
+                            provider: 'waze',
+                            restaurant_id: String(restaurant.id),
+                            restaurant_name: restaurant.name,
+                        });
                         window.open(url, '_blank');
                     }}
                     className="w-full mt-3 flex items-center justify-center gap-2 py-3 rounded-xl font-bold text-black shadow-lg hover:brightness-110 transition-all active:scale-95 group"
@@ -1182,7 +1194,7 @@ Tuesday: Closed
 
               <div className="flex gap-2 mb-1">
                  {restaurant.menu_link && (
-                    <a href={restaurant.menu_link} target="_blank" rel="noopener noreferrer" className="flex-1 flex flex-col items-center justify-center py-3 bg-[#2d2d2d] hover:bg-[#3d3d3d] rounded-xl text-white transition border border-gray-700">
+                    <a href={restaurant.menu_link} target="_blank" rel="noopener noreferrer" onClick={() => trackEvent('external_link_click', { type: 'menu', restaurant_id: String(restaurant.id), restaurant_name: restaurant.name })} className="flex-1 flex flex-col items-center justify-center py-3 bg-[#2d2d2d] hover:bg-[#3d3d3d] rounded-xl text-white transition border border-gray-700">
                         <BookOpen size={18} className="mb-1 text-blue-400"/>
                         <span className="text-[10px] font-bold">{t('modal.menu', '菜单 (Menu)')}</span>
                     </a>
@@ -1191,20 +1203,20 @@ Tuesday: Closed
                     const waUrl = restaurant.whatsappLink || (restaurant.phone && restaurant.phone.replace(/[^0-9]/g, '').startsWith('01') ? `https://wa.me/6${restaurant.phone.replace(/[^0-9]/g, '')}` : null);
                     if (!waUrl) return null;
                     return (
-                        <a href={waUrl} target="_blank" rel="noopener noreferrer" className="flex-1 flex flex-col items-center justify-center py-3 bg-[#2d2d2d] hover:bg-[#3d3d3d] rounded-xl text-white transition border border-gray-700">
+                        <a href={waUrl} target="_blank" rel="noopener noreferrer" onClick={() => trackEvent('external_link_click', { type: 'whatsapp', restaurant_id: String(restaurant.id), restaurant_name: restaurant.name })} className="flex-1 flex flex-col items-center justify-center py-3 bg-[#2d2d2d] hover:bg-[#3d3d3d] rounded-xl text-white transition border border-gray-700">
                             <Send size={18} className="mb-1 text-green-400"/>
                             <span className="text-[10px] font-bold">WhatsApp</span>
                         </a>
                     );
                  })()}
                  {restaurant.website_link && (
-                    <a href={restaurant.website_link} target="_blank" rel="noopener noreferrer" className="flex-1 flex flex-col items-center justify-center py-3 bg-[#2d2d2d] hover:bg-[#3d3d3d] rounded-xl text-white transition border border-gray-700">
+                    <a href={restaurant.website_link} target="_blank" rel="noopener noreferrer" onClick={() => trackEvent('external_link_click', { type: 'website', restaurant_id: String(restaurant.id), restaurant_name: restaurant.name })} className="flex-1 flex flex-col items-center justify-center py-3 bg-[#2d2d2d] hover:bg-[#3d3d3d] rounded-xl text-white transition border border-gray-700">
                         <Globe size={18} className="mb-1 text-purple-400"/>
                         <span className="text-[10px] font-bold">{t('modal.website', '网站 (Web)')}</span>
                     </a>
                  )}
                  {restaurant.delivery_link && (
-                    <a href={restaurant.delivery_link} target="_blank" rel="noopener noreferrer" className="flex-1 flex flex-col items-center justify-center py-3 bg-[#2d2d2d] hover:bg-[#3d3d3d] rounded-xl text-white transition border border-gray-700">
+                    <a href={restaurant.delivery_link} target="_blank" rel="noopener noreferrer" onClick={() => trackEvent('external_link_click', { type: 'delivery', restaurant_id: String(restaurant.id), restaurant_name: restaurant.name })} className="flex-1 flex flex-col items-center justify-center py-3 bg-[#2d2d2d] hover:bg-[#3d3d3d] rounded-xl text-white transition border border-gray-700">
                         <Bike size={18} className="mb-1 text-green-400"/>
                         <span className="text-[10px] font-bold">{t('modal.delivery', '外卖 (Order)')}</span>
                     </a>
@@ -1224,7 +1236,7 @@ Tuesday: Closed
                             href={restaurant.fb_post_link}
                             target="_blank"
                             rel="noopener noreferrer"
-                            onClick={() => ReactGA.event({ category: "Conversion", action: "Click_Facebook", label: restaurant.name })}
+                            onClick={() => trackEvent('social_click', { platform: 'facebook', restaurant_id: String(restaurant.id), restaurant_name: restaurant.name })}
                             className="w-full flex items-center justify-center gap-2 py-3 bg-[#1877F2] text-white rounded-xl font-bold shadow-lg hover:brightness-110 transition-all active:scale-95"
                         >
                             <MessageCircle size={20} className="fill-current" />
@@ -1240,7 +1252,7 @@ Tuesday: Closed
                             href={EXPERIENCE_REEL_LINK}
                             target="_blank"
                             rel="noopener noreferrer"
-                            onClick={() => ReactGA.event({ category: "Conversion", action: "Click_Facebook", label: restaurant.name || "Main_Video" })}
+                            onClick={() => trackEvent('social_click', { platform: 'facebook', restaurant_id: String(restaurant.id), restaurant_name: restaurant.name || 'Main_Video' })}
                             className="w-full flex items-center justify-center gap-2 py-3 bg-[#2d2d2d] text-gray-300 border border-gray-600 rounded-xl font-bold shadow-lg hover:bg-[#3d3d3d] hover:text-white transition-all active:scale-95"
                         >
                             <MessageCircle size={20} />

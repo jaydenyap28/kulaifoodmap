@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useMemo } from 'react';
 import { MapPin, Edit2, Trash2, ArrowUp, Search, Plus, Leaf, Sprout, Ban, Star, GripVertical, Flame, Medal, Loader2, User } from 'lucide-react';
-import ReactGA from "react-ga4";
+import { trackEvent } from '../utils/trackEvent';
 import {
   DndContext,
   closestCenter,
@@ -61,7 +61,7 @@ const RestaurantList = ({ restaurants, allRestaurants, isAdmin, onUpdateRestaura
   useEffect(() => {
     const delayDebounceFn = setTimeout(() => {
       if (searchTerm) {
-        ReactGA.event({ category: "User", action: "Search", label: searchTerm });
+        trackEvent('search', { search_term: searchTerm, search_length: searchTerm.length });
       }
     }, 1000);
 
@@ -191,7 +191,11 @@ const RestaurantList = ({ restaurants, allRestaurants, isAdmin, onUpdateRestaura
                   onUpdate={onUpdateRestaurant} 
                   onDelete={onDeleteRestaurant}
                   onClick={() => {
-                    ReactGA.event({ category: "Restaurant", action: "View_Details", label: restaurant.name });
+                    trackEvent('restaurant_click', {
+                      restaurant_id: String(restaurant.id),
+                      restaurant_name: restaurant.name,
+                      source: 'list'
+                    });
                     onRestaurantClick(restaurant);
                   }}
                   onCategoryClick={onCategoryClick}
@@ -209,7 +213,11 @@ const RestaurantList = ({ restaurants, allRestaurants, isAdmin, onUpdateRestaura
               onUpdate={onUpdateRestaurant} 
               onDelete={onDeleteRestaurant}
               onClick={() => {
-                ReactGA.event({ category: "Restaurant", action: "View_Details", label: restaurant.name });
+                trackEvent('restaurant_click', {
+                  restaurant_id: String(restaurant.id),
+                  restaurant_name: restaurant.name,
+                  source: 'list'
+                });
                 onRestaurantClick(restaurant);
               }}
               onCategoryClick={onCategoryClick}

@@ -4,6 +4,7 @@ import { Shuffle, Star, Coffee } from 'lucide-react';
 import { useTranslation } from 'react-i18next';
 import ImageWithFallback from './ImageWithFallback';
 import { analytics } from '../utils/analytics';
+import { trackEvent } from '../utils/trackEvent';
 import { playSpinSound, playWinSound } from '../utils/audio';
 
 const SlotReel = ({ restaurants, isShuffling, winner, onAnimationComplete }) => {
@@ -122,6 +123,7 @@ const HeroCardStack = ({ restaurants, onChoose, onSupportClick }) => {
     setShowWinner(false);
     setWinner(null);
     setIsShuffling(true);
+    trackEvent('random_pick_start', { candidate_count: restaurants.length });
     
     // Play sound loop
     playSpinSound(); // Play once immediately
@@ -166,6 +168,10 @@ const HeroCardStack = ({ restaurants, onChoose, onSupportClick }) => {
         // Analytics
         if (finalWinner) {
             analytics.incrementPick(finalWinner.id);
+            trackEvent('random_pick_result', {
+              restaurant_id: String(finalWinner.id),
+              restaurant_name: finalWinner.name,
+            });
         }
         
         // Delay opening modal slightly to let bounce animation finish
