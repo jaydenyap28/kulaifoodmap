@@ -7,7 +7,7 @@ const seenIds = new Map();
 const seenSlugs = new Map();
 const seenNameAddr = new Map();
 
-const allowedHalal = new Set(['non_halal', 'certified', 'muslim_owned', 'no_pork', null, undefined, '']);
+const allowedHalal = new Set(['non_halal', 'certified', 'muslim_owned', 'no_pork', 'pork_free', null, undefined, '']);
 
 const isValidUrl = (value) => {
   if (!value) return true;
@@ -75,10 +75,16 @@ for (const r of initialRestaurants) {
   }
 }
 
-console.log(JSON.stringify({
+const result = {
   total: initialRestaurants.length,
   issueCount: issues.length,
   warningCount: warnings.length,
   issues: issues.slice(0, 80),
   warnings: warnings.slice(0, 120)
-}, null, 2));
+};
+
+console.log(JSON.stringify(result, null, 2));
+
+if (issues.length > 0) {
+  process.exitCode = 1;
+}
