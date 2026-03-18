@@ -1,5 +1,5 @@
-export const MAIN_VIDEO_LINK = "https://www.facebook.com/";
-export const EXPERIENCE_REEL_LINK = "https://www.facebook.com/";
+export const MAIN_VIDEO_LINK = "https://www.facebook.com/jnqjourney";
+export const EXPERIENCE_REEL_LINK = "https://www.facebook.com/jnqjourney";
 
 export const initialRestaurants = [
     {

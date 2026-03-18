@@ -10,6 +10,7 @@ import { checkOpenStatus } from '../utils/businessHours';
 import { compressImage } from '../utils/imageUtils';
 import { AVAILABLE_AREAS } from '../data/constants';
 import { MAIN_VIDEO_LINK, EXPERIENCE_REEL_LINK } from '../data/restaurants';
+import { appendUtm } from '../utils/linkUtils';
 
 const ResultModal = ({ restaurant, onClose, isAdmin, onUpdateRestaurant, categories = [], onAddCategory }) => {
   const { t, i18n } = useTranslation();
@@ -52,6 +53,15 @@ const ResultModal = ({ restaurant, onClose, isAdmin, onUpdateRestaurant, categor
 
   // State for Lightbox (Sub-stalls)
   const [selectedStallIndex, setSelectedStallIndex] = useState(null);
+
+  // Facebook 导流链接（有商家贴文优先，没有则回流到主页/合集）
+  const hasFbPost = Boolean(restaurant.fb_post_link);
+  const fbTargetLink = appendUtm(hasFbPost ? restaurant.fb_post_link : (EXPERIENCE_REEL_LINK || MAIN_VIDEO_LINK), {
+    utm_source: 'kulaifoodmap',
+    utm_medium: 'referral',
+    utm_campaign: hasFbPost ? 'merchant_post' : 'merchant_fallback',
+    utm_content: restaurant.slug || String(restaurant.id || '')
+  });
   
   const HALAL_OPTIONS = [
     { value: 'non_halal', label: 'Non-Halal (非清真/未标注)' },
@@ -1228,38 +1238,28 @@ Tuesday: Closed
 
             <hr className="border-gray-700" />
 
-            {/* Facebook Traffic Strategy Button (Replaces Reviews) */}
+            {/* Facebook Traffic Strategy Button (Smart Fallback) */}
             <div className="mt-6">
-                {restaurant.fb_post_link ? (
-                    <div className="space-y-2">
-                        <a 
-                            href={restaurant.fb_post_link}
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            onClick={() => trackEvent('social_click', { platform: 'facebook', restaurant_id: String(restaurant.id), restaurant_name: restaurant.name })}
-                            className="w-full flex items-center justify-center gap-2 py-3 bg-[#1877F2] text-white rounded-xl font-bold shadow-lg hover:brightness-110 transition-all active:scale-95"
-                        >
-                            <MessageCircle size={20} className="fill-current" />
-                            💬 去 FB 专页讨论这间店
-                        </a>
-                        <p className="text-center text-[10px] text-gray-500">
-                            这是针对热门商家的专属讨论帖
-                        </p>
-                    </div>
-                ) : (
-                    <div className="space-y-2">
-                        <a 
-                            href={EXPERIENCE_REEL_LINK}
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            onClick={() => trackEvent('social_click', { platform: 'facebook', restaurant_id: String(restaurant.id), restaurant_name: restaurant.name || 'Main_Video' })}
-                            className="w-full flex items-center justify-center gap-2 py-3 bg-[#2d2d2d] text-gray-300 border border-gray-600 rounded-xl font-bold shadow-lg hover:bg-[#3d3d3d] hover:text-white transition-all active:scale-95"
-                        >
-                            <MessageCircle size={20} />
-                            快来分享你的用餐体验吧！
-                        </a>
-                    </div>
-                )}
+                <div className="space-y-2">
+                    <a 
+                        href={fbTargetLink}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        onClick={() => trackEvent('social_click', {
+                          platform: 'facebook',
+                          restaurant_id: String(restaurant.id),
+                          restaurant_name: restaurant.name,
+                          source: hasFbPost ? 'merchant_post' : 'fallback_page'
+                        })}
+                        className={`w-full flex items-center justify-center gap-2 py-3 rounded-xl font-bold shadow-lg transition-all active:scale-95 ${hasFbPost ? 'bg-[#1877F2] text-white hover:brightness-110' : 'bg-[#2d2d2d] text-gray-300 border border-gray-600 hover:bg-[#3d3d3d] hover:text-white'}`}
+                    >
+                        <MessageCircle size={20} className={hasFbPost ? 'fill-current' : ''} />
+                        {hasFbPost ? '🔥 去 Facebook 看完整探店' : '👉 去 Facebook 看更多探店'}
+                    </a>
+                    <p className="text-center text-[10px] text-gray-500">
+                        {hasFbPost ? '有这家店的专属贴文，欢迎留言互动。' : '这家暂时没有专属贴文，先带你去主页看更多内容。'}
+                    </p>
+                </div>
               </div>
           </div>
         </motion.div>
