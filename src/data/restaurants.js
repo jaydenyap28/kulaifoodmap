@@ -19824,5 +19824,54 @@ export const initialRestaurants = [
         "subStalls": [],
         "dietaryOption": null,
         "slug": "lapan-kati-seafood-restaurant"
+    },
+    {
+        "id": 478,
+        "name": "古来旧巴杀",
+        "name_en": "Kulai Old Market",
+        "location": {
+            "lat": "1.659962",
+            "lng": "103.603288"
+        },
+        "area": "Kulai 21 Miles",
+        "address": "古来旧巴杀（具体门牌待补充）, Kulai, Johor",
+        "opening_hours": "营业时间待补充",
+        "whatsappLink": "",
+        "intro_zh": "古来大街的烟火气。马来西亚经典早餐美食聚集地，从 Nasi Lemak、经济粉到各式糕点与热腾腾大包，选择丰富。",
+        "intro_en": "A lively old-market food spot in Kulai, known for classic Malaysian breakfast choices such as nasi lemak, economy noodles, pastries, and steamed buns.",
+        "tags": [
+            "早餐",
+            "巴刹",
+            "Nasi Lemak",
+            "经济粉",
+            "本地美食"
+        ],
+        "category": [
+            "饭类",
+            "面类"
+        ],
+        "categories": [
+            "饭类",
+            "面类"
+        ],
+        "halalStatus": null,
+        "image": "https://ibb.co/jZx7M3hn",
+        "price_range": "RM 1-20",
+        "rating": 0,
+        "fb_post_link": "https://www.facebook.com/jnqjourney/posts/pfbid0ttN4pvagvgobTFRC2eFGrHfqTzgvXoGRQyUNg35k9fCp36CexQntyZjtEkR678DPl",
+        "menu_link": "",
+        "website_link": "",
+        "delivery_link": "",
+        "isVegetarian": false,
+        "isNoBeef": false,
+        "isVIP": false,
+        "priority": 0,
+        "subscriptionLevel": 0,
+        "manualStatus": "auto",
+        "branches": [],
+        "subStalls": [],
+        "dietaryOption": null,
+        "slug": "kulai-old-market",
+        "phone": ""
     }
 ];
