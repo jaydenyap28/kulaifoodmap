@@ -52,6 +52,11 @@ for (const r of initialRestaurants) {
     if (!isValidUrl(r[f])) warnings.push(`${ctx} 字段 ${f} URL 可能无效: ${r[f]}`);
   }
 
+  // ImgBB 页面链接不可直接展示图片，建议改用 i.ibb.co 直链
+  if (typeof r.image === 'string' && r.image.includes('ibb.co/') && !r.image.includes('i.ibb.co/')) {
+    warnings.push(`${ctx} image 使用了 ibb 页面链接，建议改成 i.ibb.co 直链: ${r.image}`);
+  }
+
   // Coordinates
   if (r.location && (r.location.lat || r.location.lng)) {
     const lat = Number(r.location.lat);

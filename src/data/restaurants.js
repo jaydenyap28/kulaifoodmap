@@ -19855,7 +19855,7 @@ export const initialRestaurants = [
             "面类"
         ],
         "halalStatus": null,
-        "image": "https://ibb.co/jZx7M3hn",
+        "image": "https://i.ibb.co/qF4bsmBT/IMG-20260311-073551.jpg",
         "price_range": "RM 1-20",
         "rating": 0,
         "fb_post_link": "https://www.facebook.com/jnqjourney/posts/pfbid0ttN4pvagvgobTFRC2eFGrHfqTzgvXoGRQyUNg35k9fCp36CexQntyZjtEkR678DPl",

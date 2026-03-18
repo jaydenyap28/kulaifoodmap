@@ -12,7 +12,8 @@
     "build": "vite build",
     "preview": "vite preview",
     "data:check": "node scripts/validate-data.mjs",
-    "data:fix": "node scripts/fix-data-structure.mjs"
+    "data:fix": "node scripts/fix-data-structure.mjs",
+    "image:resolve": "node scripts/resolve-imgbb-link.mjs"
   },
   "devDependencies": {
     "@tailwindcss/postcss": "^4.1.18",
