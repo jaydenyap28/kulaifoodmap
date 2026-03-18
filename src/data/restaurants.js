@@ -19828,12 +19828,12 @@ export const initialRestaurants = [
     {
         "id": 478,
         "name": "古来旧巴杀",
-        "name_en": "Kulai Old Market",
+        "name_en": "",
         "location": {
             "lat": "1.659962",
             "lng": "103.603288"
         },
-        "area": "Kulai 21 Miles",
+        "area": "",
         "address": "古来旧巴杀（具体门牌待补充）, Kulai, Johor",
         "opening_hours": "营业时间待补充",
         "whatsappLink": "",
