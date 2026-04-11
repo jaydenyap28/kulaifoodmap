@@ -5,6 +5,7 @@ import { Analytics } from "@vercel/analytics/react"
 import ReactGA from "react-ga4";
 import App from './App.jsx'
 import ErrorBoundary from './components/ErrorBoundary'
+import { ToastProvider } from './components/toast/ToastProvider'
 import './index.css'
 import './i18n'
 
@@ -15,9 +16,11 @@ if (import.meta.env.PROD) {
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
     <ErrorBoundary>
-      <BrowserRouter>
-        <App />
-      </BrowserRouter>
+      <ToastProvider>
+        <BrowserRouter>
+          <App />
+        </BrowserRouter>
+      </ToastProvider>
       {import.meta.env.PROD && <Analytics />}
     </ErrorBoundary>
   </React.StrictMode>,

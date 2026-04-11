@@ -9,7 +9,7 @@ import BranchSelector from './BranchSelector';
 import { checkOpenStatus } from '../utils/businessHours';
 import { compressImage } from '../utils/imageUtils';
 import { AVAILABLE_AREAS } from '../data/constants';
-import { MAIN_VIDEO_LINK, EXPERIENCE_REEL_LINK } from '../data/restaurants';
+import { MAIN_VIDEO_LINK, EXPERIENCE_REEL_LINK } from '../data/mediaLinks';
 import { appendUtm } from '../utils/linkUtils';
 
 const ResultModal = ({ restaurant, onClose, isAdmin, onUpdateRestaurant, categories = [], onAddCategory }) => {

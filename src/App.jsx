@@ -1,6 +1,5 @@
-import React, { useState, useEffect, useRef, lazy, Suspense } from 'react';
+import React, { useState, useEffect, useRef, useMemo, lazy, Suspense } from 'react';
 import { useNavigate, useLocation, matchPath } from 'react-router-dom';
-import { initialRestaurants } from './data/restaurants';
 import HeroCardStack from './components/HeroCardStack';
 import RestaurantList from './components/RestaurantList';
 import FilterBar from './components/FilterBar';
@@ -8,24 +7,81 @@ import Footer from './components/Footer';
 import AdBanner from './components/AdBanner';
 import LoginModal from './components/LoginModal';
 import { trackEvent, trackPageView } from './utils/trackEvent';
+import { loadRestaurantsModule } from './data/runtimeRestaurants';
 
 const ResultModal = lazy(() => import('./components/ResultModal'));
 const SupportModal = lazy(() => import('./components/SupportModal'));
 const AdminAnalytics = lazy(() => import('./components/AdminAnalytics'));
 const AiFoodAssistant = lazy(() => import('./components/AiFoodAssistant'));
+const AuthUserPanel = lazy(() => import('./components/AuthUserPanel'));
 import { UtensilsCrossed, Lock, X, Coffee, Image as ImageIcon, Upload, Save, Download, BarChart2, Globe, Clock, Dessert, RefreshCw, Sparkles } from 'lucide-react';
 import { useTranslation } from 'react-i18next';
 
 import { checkOpenStatus } from './utils/businessHours';
 import { analytics } from './utils/analytics';
+import { compressImage } from './utils/imageUtils';
+import {
+  CATEGORY_STORAGE_KEY,
+  LEGACY_CATEGORY_STORAGE_KEY,
+  DATA_VERSION,
+  clearAppStorage,
+  initializeRestaurants,
+  getInitialAreaOverrides,
+  buildRestaurantPatchData,
+  createRestaurantPatchFileContent,
+  buildRestaurantDiffChanges,
+} from './utils/restaurantData';
 
 import { AVAILABLE_AREAS, DEFAULT_CATEGORIES } from './data/constants';
 
 const DEFAULT_HERO_BG = "https://i.ibb.co/7J5qjZtv/image.png";
 
-// Version control for data structure changes
-// Increment this when you make breaking changes to data structure to force a reset
-const DATA_VERSION = 'v48';
+const initializeCategories = (sourceRestaurants) => {
+  const finalCategories = [];
+  const processedCats = new Set();
+  const deprecatedCats = new Set(["Pizza", "炸鸡", "中餐", "无招牌美食", "马来餐", "印度档", "甜品饮料", "面食", "面类", "咖啡店"]);
+
+  try {
+    const storedCats = localStorage.getItem(CATEGORY_STORAGE_KEY) || localStorage.getItem(LEGACY_CATEGORY_STORAGE_KEY);
+    if (storedCats && storedCats !== 'undefined' && storedCats !== 'null') {
+      const parsedCats = JSON.parse(storedCats);
+      if (Array.isArray(parsedCats) && parsedCats.length > 0) {
+        parsedCats
+          .filter((category) => !deprecatedCats.has(category))
+          .forEach((category) => {
+            finalCategories.push(category);
+            processedCats.add(category);
+          });
+      }
+    }
+  } catch (error) {
+    console.warn('Failed to load categories from LocalStorage', error);
+  }
+
+  DEFAULT_CATEGORIES.forEach((category) => {
+    if (!processedCats.has(category) && !deprecatedCats.has(category)) {
+      finalCategories.push(category);
+      processedCats.add(category);
+    }
+  });
+
+  sourceRestaurants.forEach((restaurant) => {
+    const categoryList = Array.isArray(restaurant.category)
+      ? restaurant.category
+      : Array.isArray(restaurant.categories)
+        ? restaurant.categories
+        : [];
+
+    categoryList.forEach((category) => {
+      if (!processedCats.has(category) && !deprecatedCats.has(category)) {
+        finalCategories.push(category);
+        processedCats.add(category);
+      }
+    });
+  });
+
+  return finalCategories;
+};
 
 function App() {
   const { t, i18n } = useTranslation();
@@ -37,7 +93,7 @@ function App() {
     const currentVersion = localStorage.getItem('kulaifood-data-version');
     if (currentVersion !== DATA_VERSION) {
       console.log(`Version mismatch: ${currentVersion} vs ${DATA_VERSION}. Clearing storage.`);
-      localStorage.clear();
+      clearAppStorage();
       localStorage.setItem('kulaifood-data-version', DATA_VERSION);
       // Reload to ensure clean state
       window.location.reload();
@@ -46,17 +102,7 @@ function App() {
   const [showAiAssistant, setShowAiAssistant] = useState(false);
   
   // Area Overrides State (for manual fixes)
-  const [areaOverrides, setAreaOverrides] = useState(() => {
-    try {
-        // Check version first - if mismatch, clear overrides to avoid stale data
-        const storedVersion = localStorage.getItem('kulaifood-data-version');
-        if (storedVersion !== DATA_VERSION) {
-            return {}; 
-        }
-        const stored = localStorage.getItem('kulaifood-area-overrides');
-        return stored ? JSON.parse(stored) : {};
-    } catch(e) { return {}; }
-  });
+  const [areaOverrides, setAreaOverrides] = useState(() => getInitialAreaOverrides());
 
   const toggleLanguage = () => {
     const newLang = i18n.language === 'zh' ? 'en' : 'zh';
@@ -98,16 +144,21 @@ function App() {
 
   const fileInputRef = useRef(null);
 
-  const handleBgUpload = (e) => {
+  const handleBgUpload = async (e) => {
     const file = e.target.files[0];
-    if (file) {
-      const reader = new FileReader();
-      reader.onloadend = () => {
-        const base64String = reader.result;
-        setHeroBg(base64String);
-        localStorage.setItem('kulaifood-hero-bg', base64String);
-      };
-      reader.readAsDataURL(file);
+    if (!file) {
+      return;
+    }
+
+    try {
+      const compressedImage = await compressImage(file, 1600, 0.82);
+      setHeroBg(compressedImage);
+      localStorage.setItem('kulaifood-hero-bg', compressedImage);
+    } catch (error) {
+      console.error('Failed to process hero background image', error);
+      alert(t('copy_failed'));
+    } finally {
+      e.target.value = '';
     }
   };
 
@@ -121,288 +172,81 @@ function App() {
   const handleManualSave = () => {
       // Force save everything to LocalStorage (Redundant but reassuring)
       localStorage.setItem('kulaifood-restaurants', JSON.stringify(restaurants));
-      localStorage.setItem('kulaifood-categories', JSON.stringify(categories));
+      localStorage.setItem(CATEGORY_STORAGE_KEY, JSON.stringify(categories));
       localStorage.setItem('kulaifood-hero-bg', heroBg);
       
       alert(t('settings_saved'));
   };
 
   const handleExportData = () => {
-    // 1. Normalize Initial Data for fair comparison
-    const normalizedInitial = initialRestaurants.map(r => ({
-      ...r,
-      name: r.name || r.desc,
-      name_en: r.name_en || r.desc2,
-      categories: r.categories || r.category || [],
-      price_range: r.price_range || 'RM 10-20',
-      subStalls: (r.subStalls || []).map(s => typeof s === 'string' ? {name: s, image: ''} : s).filter(Boolean),
-      branches: (r.branches || []).map(b => typeof b === 'string' ? {name: b, address: ''} : b).filter(Boolean),
-    }));
-
-    const initialMap = new Map(normalizedInitial.map(r => [r.id, r]));
-
-    // 2. Identify Changed or New Items
-    const changedRestaurants = restaurants.map(r => {
-        const original = initialMap.get(r.id);
-        
-        // New item: Export full object
-        if (!original) return r;
-
-        // Existing item: Check for changes
-        const changes = { id: r.id };
-        let hasChanges = false;
-        
-        const check = (key) => {
-             // Simple equality check for primitives, JSON stringify for objects/arrays
-             const val1 = r[key];
-             const val2 = original[key];
-             const str1 = typeof val1 === 'object' ? JSON.stringify(val1) : val1;
-             const str2 = typeof val2 === 'object' ? JSON.stringify(val2) : val2;
-
-             if (str1 !== str2) {
-                 changes[key] = val1;
-                 hasChanges = true;
-             }
-        };
-
-        ['name', 'name_en', 'image', 'opening_hours', 'address', 'intro_zh', 'intro_en', 
-         'categories', 'price_range', 'subStalls', 'branches', 'isVegetarian', 'isNoBeef', 'area']
-        .forEach(check);
-
-        return hasChanges ? changes : null;
-    }).filter(Boolean);
-
-    const exportData = changedRestaurants.length > 0 ? changedRestaurants : [];
-
-    if (exportData.length === 0) {
-        alert(t('no_changes', '没有检测到更改 (No changes detected)'));
-        return;
+    if (!isDataReady || initialRestaurants.length === 0) {
+      return;
     }
 
-    // 3. Prepare Data Format
-    // For partial updates, we don't need to map category back unless it changed
-    const formattedData = exportData.map(item => {
-        if (item.categories) {
-            return { ...item, category: item.categories };
-        }
-        return item;
-    });
+    const patchData = buildRestaurantPatchData(restaurants, initialRestaurants);
 
-    const fileContent = `// ⚠️ PATCH DATA: Contains only changed fields. DO NOT REPLACE initialRestaurants directly.\n// Use this to update specific fields or send to developer.\nexport const restaurantUpdates = ${JSON.stringify(formattedData, null, 2)};`;
+    if (patchData.length === 0) {
+      alert(t('no_changes', 'No changes detected'));
+      return;
+    }
 
-    // 4. Copy to Clipboard
+    const fileContent = createRestaurantPatchFileContent(patchData);
+
     navigator.clipboard.writeText(fileContent).then(() => {
-         alert(t('copy_success_changes', { count: formattedData.length }));
+      alert(t('copy_success_changes', { count: patchData.length }));
     }).catch(err => {
-        console.error('Failed to copy: ', err);
-        alert(t('copy_failed'));
+      console.error('Failed to copy: ', err);
+      alert(t('copy_failed'));
     });
   };
 
   // Version Control for Data (Increment this when adding new hardcoded data to force refresh)
   // Moved to top of file as const DATA_VERSION  
 
-  // Load data: Prioritize Codebase (initialRestaurants) but keep user-added ones from LocalStorage
-  const [restaurants, setRestaurants] = useState(() => {
-    // Debug Log
-    console.log(`[App] Initializing Data. Codebase has ${initialRestaurants.length} items.`);
+  const [initialRestaurants, setInitialRestaurants] = useState([]);
+  const [restaurants, setRestaurants] = useState([]);
+  const [categories, setCategories] = useState([]);
+  const [isDataReady, setIsDataReady] = useState(false);
+  const [dataLoadError, setDataLoadError] = useState(null);
 
-    // 1. Check Data Version
-    let storedVersion = localStorage.getItem('kulaifood-data-version');
-    let shouldClearStorage = storedVersion !== DATA_VERSION;
-
-    if (shouldClearStorage) {
-        console.log(`[App] Data version mismatch (${storedVersion} vs ${DATA_VERSION}). Refreshing data...`);
-        // Force clear critical storage items to ensure fresh start
-        localStorage.removeItem('kulaifood-restaurants');
-        localStorage.removeItem('kulaifood-categories'); // Clear categories too!
-        localStorage.removeItem('kulaifood-area-overrides'); // Clear area overrides!
-    }
-
-    // 1. Load stored data to preserve ORDER and User-Added Items
-    let storedData = [];
-    try {
-        if (!shouldClearStorage) {
-            const item = localStorage.getItem('kulaifood-restaurants');
-            if (item) storedData = JSON.parse(item);
-        }
-    } catch(e) {
-        console.warn("Failed to load restaurants from LocalStorage", e);
-    }
-
-    // 2. Create Map of Codebase Data (The Source of Truth for Content)
-    const codeMap = new Map(initialRestaurants.map(r => [r.id, r]));
-    
-    let mergedData = [];
-    const processedIds = new Set();
-
-    if (Array.isArray(storedData) && storedData.length > 0) {
-        // 3. Process stored items (Preserve Order from LocalStorage)
-        storedData.forEach(stored => {
-            if (codeMap.has(stored.id)) {
-                // ID exists in code: Use code content (latest updates) but keep stored order
-                // BUT: Check for Area Overrides
-                const codeData = codeMap.get(stored.id);
-                let area = codeData.area;
-                const overrides = JSON.parse(localStorage.getItem('kulaifood-area-overrides') || '{}');
-                if (overrides[stored.id]) {
-                    area = overrides[stored.id];
-                }
-
-                // Preserve user branches if code branches are empty
-                const mergedItem = { ...stored, ...codeData, area };
-                if ((!codeData.branches || codeData.branches.length === 0) && stored.branches && stored.branches.length > 0) {
-                    mergedItem.branches = stored.branches;
-                }
-                mergedData.push(mergedItem);
-                processedIds.add(stored.id);
-            } else {
-                // ID not in code: User-added item (Admin), keep it
-                mergedData.push(stored);
-                processedIds.add(stored.id);
-            }
-        });
-    }
-
-    // 4. Append any NEW items from code that weren't in storage
-    initialRestaurants.forEach(r => {
-        if (!processedIds.has(r.id)) {
-            let area = r.area;
-            const overrides = JSON.parse(localStorage.getItem('kulaifood-area-overrides') || '{}');
-            if (overrides[r.id]) {
-                area = overrides[r.id];
-            }
-            mergedData.push({ ...r, area });
-        }
-    });
-
-    // 5. Fallback if storage was empty
-    if (mergedData.length === 0) mergedData = [...initialRestaurants];
-
-    // 6. 防御性去重：避免旧 localStorage 把已删除商家带回来
-    const deduped = [];
-    const seenBusinessKey = new Set();
-    const seenSlug = new Set();
-    const seenName = new Map(); // name -> id
-
-    for (const item of mergedData) {
-      const nameForKey = (item.name || item.desc || '').trim().toLowerCase();
-      const addrForKey = (item.address || '').trim().toLowerCase();
-      const businessKey = `${nameForKey}|${addrForKey}`;
-      const slugKey = (item.slug || '').trim().toLowerCase();
-
-      // 按 name 去重：如果同名，保留 id 小的（通常是主条目）
-      if (nameForKey && seenName.has(nameForKey)) {
-        const existingId = seenName.get(nameForKey);
-        if (item.id > existingId) continue; // 跳过 id 大的（通常是重复项）
-      }
-
-      if (businessKey !== '|' && seenBusinessKey.has(businessKey)) continue;
-      if (slugKey && seenSlug.has(slugKey)) continue;
-
-      if (nameForKey) seenName.set(nameForKey, item.id);
-      if (businessKey !== '|') seenBusinessKey.add(businessKey);
-      if (slugKey) seenSlug.add(slugKey);
-      deduped.push(item);
-    }
-
-    mergedData = deduped;
-
-    // Normalize Data on Init
-    return mergedData.map(r => ({
-      ...r,
-      // Map desc to name (Primary Display) - Prioritize name (New standard) over desc (Old standard)
-      name: r.name || r.desc,
-      // Map desc2 to name_en (Secondary Display) - Prioritize name_en over desc2
-      name_en: r.name_en || r.desc2,
-      // Ensure categories exists (map from category if needed)
-      categories: r.categories || r.category || [],
-      
-      // Commercial Fields
-      subscriptionLevel: r.subscriptionLevel || 0,
-      isVIP: (r.subscriptionLevel || 0) > 0,
-      priority: r.priority || 0,
-      whatsappLink: r.whatsappLink || "",
-
-      // Ensure price_range exists
-      price_range: r.price_range || 'RM 10-20',
-      // Ensure subStalls is an array of objects
-      subStalls: (r.subStalls || []).map(stall => {
-        if (!stall) return null; // Handle null/undefined
-        if (typeof stall === 'string') {
-            return { name: stall, image: '' };
-        }
-        return stall;
-      }).filter(Boolean), // Remove nulls
-      // Ensure branches is an array of objects
-      branches: (r.branches || []).map(branch => {
-          if (!branch) return null;
-          if (typeof branch === 'string') {
-              return { name: branch, address: '' };
-          }
-          return branch;
-      }).filter(Boolean)
-    }));
-  });
-
-  // Save Restaurants to LocalStorage on change
   useEffect(() => {
-     localStorage.setItem('kulaifood-restaurants', JSON.stringify(restaurants));
-     localStorage.setItem('kulaifood-data-version', DATA_VERSION);
-  }, [restaurants]);
+    let cancelled = false;
 
-  const [categories, setCategories] = useState(() => {
-    let finalCategories = [];
-    let processedCats = new Set();
-    
-    // Define deprecated categories to filter out
-    const deprecatedCats = new Set(["Pizza", "炸鸡", "中餐", "无招牌美食", "马来餐", "印度档", "甜品饮料", "面食", "面类", "咖啡店"]);
+    const bootstrapData = async () => {
+      try {
+        const { initialRestaurants: sourceRestaurants = [] } = await loadRestaurantsModule();
 
-    // 1. Try to load from LocalStorage FIRST (Preserve Order)
-    try {
-      // Changed key to v2 to force reset order for Malay/Indian update
-      const storedCats = localStorage.getItem('kulaifood-categories-v2');
-      if (storedCats && storedCats !== "undefined" && storedCats !== "null") {
-        const parsedCats = JSON.parse(storedCats);
-        if (Array.isArray(parsedCats) && parsedCats.length > 0) {
-          // Filter deprecated from storage
-          finalCategories = parsedCats.filter(c => !deprecatedCats.has(c));
-          finalCategories.forEach(c => processedCats.add(c));
+        if (cancelled) {
+          return;
+        }
+
+        setInitialRestaurants(sourceRestaurants);
+        setRestaurants(initializeRestaurants(sourceRestaurants));
+        setCategories(initializeCategories(sourceRestaurants));
+        setIsDataReady(true);
+      } catch (error) {
+        console.error('Failed to load restaurant data', error);
+        if (!cancelled) {
+          setDataLoadError(error);
         }
       }
-    } catch (e) {
-      console.warn("Failed to load categories from LocalStorage", e);
+    };
+
+    bootstrapData();
+
+    return () => {
+      cancelled = true;
+    };
+  }, []);
+
+  useEffect(() => {
+    if (!isDataReady) {
+      return;
     }
 
-    // 2. Merge Defaults (Ensure new system categories appear)
-    DEFAULT_CATEGORIES.forEach(c => {
-        if (!processedCats.has(c) && !deprecatedCats.has(c)) {
-            finalCategories.push(c);
-            processedCats.add(c);
-        }
-    });
-
-    // 3. Merge from Data (Ensure used categories appear)
-    initialRestaurants.forEach(r => {
-      if (Array.isArray(r.category)) {
-        r.category.forEach(c => {
-            if (!processedCats.has(c) && !deprecatedCats.has(c)) {
-                finalCategories.push(c);
-                processedCats.add(c);
-            }
-        });
-      } else if (Array.isArray(r.categories)) {
-        r.categories.forEach(c => {
-            if (!processedCats.has(c) && !deprecatedCats.has(c)) {
-                finalCategories.push(c);
-                processedCats.add(c);
-            }
-        });
-      }
-    });
-    
-    return finalCategories;
-  });
+    localStorage.setItem('kulaifood-restaurants', JSON.stringify(restaurants));
+    localStorage.setItem('kulaifood-data-version', DATA_VERSION);
+  }, [restaurants, isDataReady]);
 
   const [selectedRestaurant, setSelectedRestaurant] = useState(null);
 
@@ -501,13 +345,21 @@ function App() {
 
   // Save Categories Only
   useEffect(() => {
-    localStorage.setItem('kulaifood-categories-v3', JSON.stringify(categories));
-  }, [categories]);
+    if (!isDataReady) {
+      return;
+    }
+
+    localStorage.setItem(CATEGORY_STORAGE_KEY, JSON.stringify(categories));
+  }, [categories, isDataReady]);
 
   // Log Restaurants changes to Console for Manual Update
   useEffect(() => {
+    if (!import.meta.env.DEV || !isDataReady) {
+        return;
+    }
+
     if (restaurants !== initialRestaurants) {
-        console.log("--------------- UPDATED DATA (Copy below to src/data/restaurants.js) ---------------");
+        console.log("--------------- UPDATED DATA (Copy below to src/data/restaurants.json) ---------------");
         const exportData = restaurants.map(({ name, name_en, ...rest }) => ({
             ...rest,
             desc: name,
@@ -516,10 +368,14 @@ function App() {
         console.log(JSON.stringify(exportData, null, 2));
         console.log("------------------------------------------------------------------------------------");
     }
-  }, [restaurants]);
+  }, [restaurants, initialRestaurants, isDataReady]);
 
   // Log AdBanner changes
   useEffect(() => {
+    if (!import.meta.env.DEV) {
+        return;
+    }
+
     if (adBannerData && adBannerData.length > 0) {
         console.log("--------------- UPDATED AD BANNER DATA (Update useState in src/App.jsx) ---------------");
         console.log(JSON.stringify(adBannerData, null, 2));
@@ -528,7 +384,7 @@ function App() {
   }, [adBannerData]);
 
   // Filtering Logic
-  let filteredRestaurants = restaurants.filter(r => {
+  const filteredRestaurants = useMemo(() => restaurants.filter(r => {
     // 1. Open Now Filter
     if (showOpenOnly) {
       const { isOpen } = checkOpenStatus(r.opening_hours);
@@ -553,10 +409,8 @@ function App() {
     }
 
     // 3. Halal Status Filter
-    if (halalFilter) {
-        if (r.halalStatus !== halalFilter) {
-            return false;
-        }
+    if (halalFilter && r.halalStatus !== halalFilter) {
+        return false;
     }
 
     // 4. Category Filter (Multi-select)
@@ -572,14 +426,12 @@ function App() {
     }
 
     // 5. Area Filter
-    if (selectedArea) {
-        if (!r.address || !r.address.includes(selectedArea)) {
-            return false;
-        }
+    if (selectedArea && r.area !== selectedArea) {
+        return false;
     }
 
     return true;
-  });
+  }), [restaurants, showOpenOnly, hideDrinksDesserts, halalFilter, selectedCategory, selectedArea]);
 
   const handleUpdateArea = (id, newArea) => {
     // 1. Update State
@@ -592,77 +444,24 @@ function App() {
   };
 
   const handleExportChanges = () => {
-    // 1. Identify Changed or New Restaurants
-    const changes = restaurants.reduce((acc, current) => {
-        const original = initialRestaurants.find(init => init.id === current.id);
-        
-        // Case A: New Restaurant (Not in initial data)
-        if (!original) {
-            acc.push(current);
-            return acc;
-        }
-
-        // Case B: Modified Restaurant
-        const diff = { id: current.id };
-        let hasChanges = false;
-        
-        const keysToCheck = [
-            'name', 'name_en', 'address', 'opening_hours', 
-            'price_range', 'image', 'rating', 'area',
-            'menu_link', 'website_link', 'delivery_link',
-            'isVegetarian', 'isNoBeef', 'manualStatus',
-            'intro_zh', 'intro_en', 'categories', 'subStalls', 'branches',
-            'location', 'tags', 'subscriptionLevel', 'priority', 'whatsappLink'
-        ];
-
-        keysToCheck.forEach(key => {
-            const valCurrent = current[key];
-            const valOriginal = original[key];
-
-            // Handle Objects & Arrays (Categories, SubStalls, Location, Tags)
-            if (typeof valCurrent === 'object' && valCurrent !== null) {
-                const jsonCurrent = JSON.stringify(valCurrent);
-                const jsonOriginal = JSON.stringify(valOriginal || (Array.isArray(valCurrent) ? [] : {})); // Handle null/undefined original
-                
-                if (jsonCurrent !== jsonOriginal) {
-                    diff[key] = valCurrent;
-                    hasChanges = true;
-                }
-                return;
-            }
-
-            // Handle normal values (strings, numbers, booleans)
-            const normCurrent = valCurrent === undefined || valCurrent === null ? '' : valCurrent;
-            const normOriginal = valOriginal === undefined || valOriginal === null ? '' : valOriginal;
-            
-            if (normCurrent != normOriginal) {
-                diff[key] = valCurrent;
-                hasChanges = true;
-            }
-        });
-
-        if (hasChanges) {
-            acc.push(diff);
-        }
-        
-        return acc;
-    }, []);
-
-    if (changes.length === 0) {
-        alert(t('no_changes_to_export') || "没有检测到更改 (No changes detected)");
+    if (!isDataReady || initialRestaurants.length === 0) {
         return;
     }
 
-    // 2. Format Output
+    const changes = buildRestaurantDiffChanges(restaurants, initialRestaurants);
+
+    if (changes.length === 0) {
+        alert(t('no_changes_to_export') || "No changes detected");
+        return;
+    }
+
     const json = JSON.stringify(changes, null, 2);
     
-    // 3. Copy
     navigator.clipboard.writeText(json).then(() => {
-        const msg = `已复制 ${changes.length} 个商家的修改数据！(仅包含变动部分)\nCopied ${changes.length} modified items (Diff Only).`;
-        alert(msg);
+        alert(`Copied ${changes.length} modified items (Diff Only).`);
     }).catch(err => {
         console.error('Failed to copy: ', err);
-        alert("复制失败 (Copy Failed)");
+        alert("Copy Failed");
     });
   };
 
@@ -728,6 +527,22 @@ function App() {
     }
   };
 
+  const handleRestaurantHotScoreChange = (restaurantId, hotScore) => {
+    setRestaurants((prevRestaurants) =>
+      prevRestaurants.map((restaurant) =>
+        restaurant.id === restaurantId
+          ? { ...restaurant, hot_score: hotScore }
+          : restaurant
+      )
+    );
+
+    if (selectedRestaurant?.id === restaurantId) {
+      setSelectedRestaurant((prevSelected) => (
+        prevSelected ? { ...prevSelected, hot_score: hotScore } : prevSelected
+      ));
+    }
+  };
+
   const handleAddRestaurant = () => {
     const newRestaurant = {
       id: Date.now(),
@@ -764,6 +579,35 @@ function App() {
     // Navigate to the URL, let the useEffect handle the state update and analytics
     navigate(`/restaurant/${restaurant.slug}`);
   };
+
+  if (dataLoadError) {
+    return (
+      <div className="min-h-screen bg-[#121212] text-white flex items-center justify-center px-6">
+        <div className="max-w-md text-center">
+          <h2 className="text-2xl font-bold mb-3">Failed to load data</h2>
+          <p className="text-gray-400 mb-6">The restaurant dataset could not be loaded. Please reload and try again.</p>
+          <button
+            onClick={() => window.location.reload()}
+            className="px-6 py-3 bg-white text-black rounded-full font-bold hover:bg-gray-200 transition"
+          >
+            Reload Page
+          </button>
+        </div>
+      </div>
+    );
+  }
+
+  if (!isDataReady) {
+    return (
+      <div className="min-h-screen bg-[#121212] text-white flex items-center justify-center px-6">
+        <div className="max-w-md text-center">
+          <div className="w-14 h-14 border-4 border-white/15 border-t-white rounded-full animate-spin mx-auto mb-5"></div>
+          <h2 className="text-2xl font-bold mb-3">Loading Kulai Food Map</h2>
+          <p className="text-gray-400">Preparing restaurants, filters, and recommendations...</p>
+        </div>
+      </div>
+    );
+  }
 
   return (
     <div className="min-h-screen bg-[#121212] font-sans text-gray-100">
@@ -811,7 +655,7 @@ function App() {
             <button 
               onClick={() => {
                 if(window.confirm("确定要重置所有本地数据吗？这将清除缓存并刷新页面。\nAre you sure to reset all local data?")) {
-                    localStorage.clear();
+                    clearAppStorage();
                     window.location.reload();
                 }
               }}
@@ -833,7 +677,7 @@ function App() {
         )}
 
         {/* Header */}
-        <header className="flex justify-between items-center mb-6 relative z-10">
+        <header className="flex flex-col gap-4 md:flex-row md:justify-between md:items-start mb-6 relative z-10">
           <div>
             <h1 
               onClick={handleAdminLoginClick}
@@ -847,15 +691,19 @@ function App() {
             </p>
           </div>
           
-          {/* Language Switcher */}
-          <button 
-            onClick={toggleLanguage}
-            className="flex items-center gap-2 px-3 py-1.5 bg-white/10 hover:bg-white/20 backdrop-blur-md rounded-full text-white border border-white/20 transition-all shadow-lg"
-            title="Switch Language"
-          >
-            <Globe size={18} />
-            <span className="font-bold text-sm">{i18n.language === 'zh' ? 'EN' : '中'}</span>
-          </button>
+          <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-3 self-start md:self-auto">
+            <Suspense fallback={<div className="h-[42px] w-[182px] rounded-full bg-white/10 border border-white/10" />}>
+              <AuthUserPanel />
+            </Suspense>
+            <button 
+              onClick={toggleLanguage}
+              className="flex items-center justify-center gap-2 px-3 py-1.5 bg-white/10 hover:bg-white/20 backdrop-blur-md rounded-full text-white border border-white/20 transition-all shadow-lg"
+              title="Switch Language"
+            >
+              <Globe size={18} />
+              <span className="font-bold text-sm">{i18n.language === 'zh' ? 'EN' : '??'}</span>
+            </button>
+          </div>
         </header>
 
         {/* Filter Bar */}
@@ -887,6 +735,7 @@ function App() {
             <HeroCardStack 
               restaurants={filteredRestaurants} 
               onChoose={handleChoose}
+              onRestaurantHotScoreChange={handleRestaurantHotScoreChange}
               onSupportClick={() => {
                 trackEvent('support_click', { source: 'hero_slot' });
                 setShowSupportModal(true);
@@ -1025,9 +874,10 @@ function App() {
             onDeleteRestaurant={handleDeleteRestaurant}
             onRestaurantClick={handleRestaurantClick}
             onAddRestaurant={handleAddRestaurant}
-            onCategoryClick={setSelectedCategory} // New Prop
+            onCategoryClick={handleCategoryClick}
             onReorder={handleReorder}
             onUpdateArea={handleUpdateArea}
+            onRestaurantHotScoreChange={handleRestaurantHotScoreChange}
         />
         
       </div>

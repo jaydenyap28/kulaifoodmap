@@ -1,82 +1,9 @@
-import React, { useState } from 'react';
-import { Plus, X, Edit2, MapPin, Download } from 'lucide-react';
+import React, { lazy, Suspense, useState } from 'react';
+import { Plus, Edit2, MapPin, Download } from 'lucide-react';
 import { useTranslation } from 'react-i18next';
-import {
-  DndContext,
-  closestCenter,
-  KeyboardSensor,
-  MouseSensor,
-  TouchSensor,
-  useSensor,
-  useSensors,
-} from '@dnd-kit/core';
-import {
-  arrayMove,
-  SortableContext,
-  sortableKeyboardCoordinates,
-  useSortable,
-  rectSortingStrategy,
-} from '@dnd-kit/sortable';
-import { CSS } from '@dnd-kit/utilities';
 
 import { AVAILABLE_AREAS } from '../data/constants';
-
-const SortableCategoryChip = ({ cat, selectedCategory, onSelectCategory, onDeleteCategory, isEditMode, t, isAdmin }) => {
-  const {
-    attributes,
-    listeners,
-    setNodeRef,
-    transform,
-    transition,
-    isDragging,
-  } = useSortable({ id: cat, disabled: !isAdmin });
-
-  const style = {
-    transform: CSS.Transform.toString(transform),
-    transition,
-    opacity: isDragging ? 0.5 : 1,
-    cursor: isAdmin ? 'grab' : 'pointer',
-    touchAction: 'manipulation'
-  };
-
-  return (
-    <div 
-        ref={setNodeRef} 
-        style={style} 
-        {...attributes} 
-        {...listeners}
-        className="relative shrink-0"
-    >
-      <button
-        onClick={(e) => {
-            if (isDragging) return;
-            onSelectCategory(cat);
-        }}
-        className={`px-5 py-2 rounded-full text-base font-medium transition-all ${
-          selectedCategory.includes(cat)
-            ? 'bg-white text-black border-white'
-            : 'bg-[#1e1e1e] text-gray-400 hover:text-white hover:bg-[#2d2d2d] border-[#333]'
-        } shadow-sm border select-none`}
-      >
-        {t(`categories.${cat}`, cat)}
-      </button>
-      {isEditMode && (
-        <button
-          onClick={(e) => {
-            e.stopPropagation();
-            if (window.confirm(t('filter.confirm_delete_cat', { cat }))) {
-              onDeleteCategory(cat);
-            }
-          }}
-          className="absolute -top-1 -right-1 bg-red-500 text-white rounded-full p-0.5 shadow-sm hover:bg-red-600 transition-colors z-10 cursor-pointer"
-          onPointerDown={(e) => e.stopPropagation()} 
-        >
-          <X size={10} />
-        </button>
-      )}
-    </div>
-  );
-};
+const AdminSortableCategoryRow = lazy(() => import('./AdminSortableCategoryRow'));
 
 const FilterBar = ({ 
   categories, 
@@ -92,34 +19,6 @@ const FilterBar = ({
 }) => {
   const { t } = useTranslation();
   const [isEditMode, setIsEditMode] = useState(false);
-
-  const sensors = useSensors(
-    useSensor(MouseSensor, {
-        activationConstraint: {
-            distance: 10, 
-        },
-    }),
-    useSensor(TouchSensor, {
-        activationConstraint: {
-            delay: 250,
-            tolerance: 5,
-        },
-    }),
-    useSensor(KeyboardSensor, {
-      coordinateGetter: sortableKeyboardCoordinates,
-    })
-  );
-
-  const handleDragEnd = (event) => {
-    const { active, over } = event;
-    if (active.id !== over.id) {
-      const oldIndex = categories.indexOf(active.id);
-      const newIndex = categories.indexOf(over.id);
-      if (onReorderCategories) {
-          onReorderCategories(arrayMove(categories, oldIndex, newIndex));
-      }
-    }
-  };
 
   return (
     <div className="w-full max-w-[1600px] mx-auto px-4 mb-4 relative z-20 flex flex-col gap-3">
@@ -218,29 +117,33 @@ const FilterBar = ({
 
         {/* Right: Sortable Categories (Scrollable on mobile, Wrap on desktop) */}
         <div className="flex overflow-x-auto md:flex-wrap gap-2 items-center flex-1 pb-2 scrollbar-hide">
-          <DndContext 
-              sensors={sensors} 
-              collisionDetection={closestCenter} 
-              onDragEnd={handleDragEnd}
-          >
-              <SortableContext 
-                  items={categories} 
-                  strategy={rectSortingStrategy}
+          {isAdmin ? (
+            <Suspense fallback={<div className="text-sm text-gray-500 px-2">{t('common.loading', 'Loading...')}</div>}>
+              <AdminSortableCategoryRow
+                categories={categories}
+                selectedCategory={selectedCategory}
+                onSelectCategory={onSelectCategory}
+                onDeleteCategory={onDeleteCategory}
+                isEditMode={isEditMode}
+                onReorderCategories={onReorderCategories}
+                t={t}
+              />
+            </Suspense>
+          ) : (
+            categories.map(cat => (
+              <button
+                key={cat}
+                onClick={() => onSelectCategory(cat)}
+                className={`shrink-0 px-5 py-2 rounded-full text-base font-medium transition-all ${
+                  selectedCategory.includes(cat)
+                    ? 'bg-white text-black border-white'
+                    : 'bg-[#1e1e1e] text-gray-400 hover:text-white hover:bg-[#2d2d2d] border-[#333]'
+                } shadow-sm border select-none`}
               >
-                  {categories.map(cat => (
-                     <SortableCategoryChip 
-                          key={cat}
-                          cat={cat}
-                          selectedCategory={selectedCategory}
-                          onSelectCategory={onSelectCategory}
-                          onDeleteCategory={onDeleteCategory}
-                          isEditMode={isEditMode}
-                          t={t}
-                          isAdmin={isAdmin}
-                     />
-                  ))}
-              </SortableContext>
-          </DndContext>
+                {t(`categories.${cat}`, cat)}
+              </button>
+            ))
+          )}
         </div>
 
       </div>

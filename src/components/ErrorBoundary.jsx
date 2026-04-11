@@ -1,5 +1,22 @@
 import React from 'react';
 
+const clearAppStorage = () => {
+  try {
+    const keysToRemove = [];
+
+    for (let index = 0; index < localStorage.length; index += 1) {
+      const key = localStorage.key(index);
+      if (key && key.startsWith('kulaifood-')) {
+        keysToRemove.push(key);
+      }
+    }
+
+    keysToRemove.forEach((key) => localStorage.removeItem(key));
+  } catch (error) {
+    console.warn('Failed to clear app storage safely', error);
+  }
+};
+
 class ErrorBoundary extends React.Component {
   constructor(props) {
     super(props);
@@ -33,7 +50,7 @@ class ErrorBoundary extends React.Component {
           <div className="flex flex-col gap-4 w-full max-w-xs">
             <button 
                 onClick={() => {
-                    localStorage.clear();
+                    clearAppStorage();
                     window.location.reload();
                 }}
                 className="w-full px-6 py-3 bg-red-600 hover:bg-red-700 text-white rounded-xl font-bold transition shadow-lg shadow-red-900/20 flex items-center justify-center gap-2"

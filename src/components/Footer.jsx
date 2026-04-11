@@ -2,7 +2,7 @@ import React from 'react';
 import { Facebook, Lock } from 'lucide-react';
 import { useTranslation } from 'react-i18next';
 import ReactGA from "react-ga4";
-import { MAIN_VIDEO_LINK } from '../data/restaurants';
+import { MAIN_VIDEO_LINK } from '../data/mediaLinks';
 
 const Footer = ({ onAdminLogin }) => {
   const { t } = useTranslation();
