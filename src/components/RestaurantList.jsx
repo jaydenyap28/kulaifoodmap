@@ -66,7 +66,7 @@ const RestaurantList = ({
   onCategoryClick,
   onReorder,
   onUpdateArea,
-  onRestaurantHotScoreChange,
+  onRefreshRestaurants,
 }) => {
   const { t } = useTranslation();
   const toast = useToast();
@@ -184,7 +184,7 @@ const RestaurantList = ({
         return;
       }
 
-      onRestaurantHotScoreChange?.(restaurant.id, result.restaurant_hot_score);
+      await onRefreshRestaurants?.();
       window.dispatchEvent(new CustomEvent('profile-refresh'));
       applySupportCooldown(restaurant.id);
       toast.success(result.message || '助力成功，已扣除 10 积分，商家热度 +10。');

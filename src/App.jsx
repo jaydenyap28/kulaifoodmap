@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef, useMemo, lazy, Suspense } from 'react';
+import React, { useState, useEffect, useRef, useMemo, useCallback, lazy, Suspense } from 'react';
 import { useNavigate, useLocation, matchPath } from 'react-router-dom';
 import HeroCardStack from './components/HeroCardStack';
 import RestaurantList from './components/RestaurantList';
@@ -33,6 +33,7 @@ import {
 } from './utils/restaurantData';
 
 import { AVAILABLE_AREAS, DEFAULT_CATEGORIES } from './data/constants';
+import { getRestaurantHotScores, mergeRestaurantsWithRemoteHotScores } from './services/restaurantService';
 
 const DEFAULT_HERO_BG = "https://i.ibb.co/7J5qjZtv/image.png";
 
@@ -208,6 +209,47 @@ function App() {
   const [categories, setCategories] = useState([]);
   const [isDataReady, setIsDataReady] = useState(false);
   const [dataLoadError, setDataLoadError] = useState(null);
+  const restaurantsRef = useRef([]);
+
+  useEffect(() => {
+    restaurantsRef.current = restaurants;
+  }, [restaurants]);
+
+  const [selectedRestaurant, setSelectedRestaurant] = useState(null);
+  const selectedRestaurantRef = useRef(null);
+
+  useEffect(() => {
+    selectedRestaurantRef.current = selectedRestaurant;
+  }, [selectedRestaurant]);
+
+  const refreshRestaurants = useCallback(async (baseRestaurants) => {
+    const sourceRestaurants = Array.isArray(baseRestaurants) ? baseRestaurants : restaurantsRef.current;
+
+    if (!Array.isArray(sourceRestaurants) || sourceRestaurants.length === 0) {
+      return sourceRestaurants;
+    }
+
+    try {
+      const remoteRestaurants = await getRestaurantHotScores();
+      const syncedRestaurants = mergeRestaurantsWithRemoteHotScores(sourceRestaurants, remoteRestaurants);
+
+      restaurantsRef.current = syncedRestaurants;
+      setRestaurants(syncedRestaurants);
+
+      const selectedId = selectedRestaurantRef.current?.id;
+      if (selectedId) {
+        const nextSelectedRestaurant = syncedRestaurants.find((restaurant) => restaurant.id === selectedId);
+        if (nextSelectedRestaurant) {
+          setSelectedRestaurant(nextSelectedRestaurant);
+        }
+      }
+
+      return syncedRestaurants;
+    } catch (error) {
+      console.error('Failed to refresh restaurants from Supabase', error);
+      return sourceRestaurants;
+    }
+  }, []);
 
   useEffect(() => {
     let cancelled = false;
@@ -215,13 +257,23 @@ function App() {
     const bootstrapData = async () => {
       try {
         const { initialRestaurants: sourceRestaurants = [] } = await loadRestaurantsModule();
+        const initializedRestaurants = initializeRestaurants(sourceRestaurants);
+        let syncedRestaurants = initializedRestaurants;
+
+        try {
+          const remoteRestaurants = await getRestaurantHotScores();
+          syncedRestaurants = mergeRestaurantsWithRemoteHotScores(initializedRestaurants, remoteRestaurants);
+        } catch (error) {
+          console.warn('Falling back to local restaurant hot scores during bootstrap', error);
+        }
 
         if (cancelled) {
           return;
         }
 
         setInitialRestaurants(sourceRestaurants);
-        setRestaurants(initializeRestaurants(sourceRestaurants));
+        restaurantsRef.current = syncedRestaurants;
+        setRestaurants(syncedRestaurants);
         setCategories(initializeCategories(sourceRestaurants));
         setIsDataReady(true);
       } catch (error) {
@@ -247,8 +299,6 @@ function App() {
     localStorage.setItem('kulaifood-restaurants', JSON.stringify(restaurants));
     localStorage.setItem('kulaifood-data-version', DATA_VERSION);
   }, [restaurants, isDataReady]);
-
-  const [selectedRestaurant, setSelectedRestaurant] = useState(null);
 
   // Sync URL with Selected Restaurant
   useEffect(() => {
@@ -382,6 +432,30 @@ function App() {
         console.log("---------------------------------------------------------------------------------------");
     }
   }, [adBannerData]);
+
+  useEffect(() => {
+    if (!isDataReady) {
+      return undefined;
+    }
+
+    const handleFocus = () => {
+      refreshRestaurants();
+    };
+
+    const handleVisibilityChange = () => {
+      if (document.visibilityState === 'visible') {
+        refreshRestaurants();
+      }
+    };
+
+    window.addEventListener('focus', handleFocus);
+    document.addEventListener('visibilitychange', handleVisibilityChange);
+
+    return () => {
+      window.removeEventListener('focus', handleFocus);
+      document.removeEventListener('visibilitychange', handleVisibilityChange);
+    };
+  }, [isDataReady, refreshRestaurants]);
 
   // Filtering Logic
   const filteredRestaurants = useMemo(() => restaurants.filter(r => {
@@ -524,22 +598,6 @@ function App() {
     setRestaurants(prev => prev.filter(r => r.id !== restaurantId));
     if (selectedRestaurant?.id === restaurantId) {
       setSelectedRestaurant(null);
-    }
-  };
-
-  const handleRestaurantHotScoreChange = (restaurantId, hotScore) => {
-    setRestaurants((prevRestaurants) =>
-      prevRestaurants.map((restaurant) =>
-        restaurant.id === restaurantId
-          ? { ...restaurant, hot_score: hotScore }
-          : restaurant
-      )
-    );
-
-    if (selectedRestaurant?.id === restaurantId) {
-      setSelectedRestaurant((prevSelected) => (
-        prevSelected ? { ...prevSelected, hot_score: hotScore } : prevSelected
-      ));
     }
   };
 
@@ -735,7 +793,7 @@ function App() {
             <HeroCardStack 
               restaurants={filteredRestaurants} 
               onChoose={handleChoose}
-              onRestaurantHotScoreChange={handleRestaurantHotScoreChange}
+              onRefreshRestaurants={refreshRestaurants}
               onSupportClick={() => {
                 trackEvent('support_click', { source: 'hero_slot' });
                 setShowSupportModal(true);
@@ -877,7 +935,7 @@ function App() {
             onCategoryClick={handleCategoryClick}
             onReorder={handleReorder}
             onUpdateArea={handleUpdateArea}
-            onRestaurantHotScoreChange={handleRestaurantHotScoreChange}
+            onRefreshRestaurants={refreshRestaurants}
         />
         
       </div>

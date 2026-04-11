@@ -114,7 +114,7 @@ const SlotReel = ({ restaurants, isShuffling, winner }) => {
   );
 };
 
-const HeroCardStack = ({ restaurants, onChoose, onRestaurantHotScoreChange }) => {
+const HeroCardStack = ({ restaurants, onChoose, onRefreshRestaurants }) => {
   const { t, i18n } = useTranslation();
   const toast = useToast();
   const [isShuffling, setIsShuffling] = useState(false);
@@ -175,7 +175,7 @@ const HeroCardStack = ({ restaurants, onChoose, onRestaurantHotScoreChange }) =>
         return;
       }
 
-      onRestaurantHotScoreChange?.(finalWinner.id, rewardResult.restaurant_hot_score);
+      await onRefreshRestaurants?.();
       window.dispatchEvent(new CustomEvent('profile-refresh'));
       window.dispatchEvent(new CustomEvent('spin-status-refresh'));
       await refreshSpinStatus(sessionUser);
