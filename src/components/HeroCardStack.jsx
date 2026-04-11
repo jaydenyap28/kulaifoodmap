@@ -167,7 +167,7 @@ const HeroCardStack = ({ restaurants, onChoose, onRefreshRestaurants }) => {
     setIsSettlingReward(true);
 
     try {
-      const rewardResult = await claimSpinReward(finalWinner.id);
+      const rewardResult = await claimSpinReward(finalWinner.database_id ?? finalWinner.id);
 
       if (!rewardResult?.success) {
         toast.error(rewardResult?.message || '今天的转盘次数已经用完了。');
@@ -221,7 +221,7 @@ const HeroCardStack = ({ restaurants, onChoose, onRefreshRestaurants }) => {
       if (finalWinner) {
         analytics.incrementPick(finalWinner.id);
         trackEvent('random_pick_result', {
-          restaurant_id: String(finalWinner.id),
+          restaurant_id: String(finalWinner.database_id ?? finalWinner.id),
           restaurant_name: finalWinner.name,
           preview_mode: previewMode,
         });

@@ -33,7 +33,7 @@ import {
 } from './utils/restaurantData';
 
 import { AVAILABLE_AREAS, DEFAULT_CATEGORIES } from './data/constants';
-import { getRestaurantHotScores, mergeRestaurantsWithRemoteHotScores } from './services/restaurantService';
+import { getRestaurantsFromSupabase, hydrateRestaurantsFromSupabase } from './services/restaurantService';
 
 const DEFAULT_HERO_BG = "https://i.ibb.co/7J5qjZtv/image.png";
 
@@ -210,6 +210,7 @@ function App() {
   const [isDataReady, setIsDataReady] = useState(false);
   const [dataLoadError, setDataLoadError] = useState(null);
   const restaurantsRef = useRef([]);
+  const sourceRestaurantsRef = useRef([]);
 
   useEffect(() => {
     restaurantsRef.current = restaurants;
@@ -223,15 +224,17 @@ function App() {
   }, [selectedRestaurant]);
 
   const refreshRestaurants = useCallback(async (baseRestaurants) => {
-    const sourceRestaurants = Array.isArray(baseRestaurants) ? baseRestaurants : restaurantsRef.current;
+    const fallbackBaseRestaurants = Array.isArray(baseRestaurants) && baseRestaurants.length > 0
+      ? baseRestaurants
+      : initializeRestaurants(sourceRestaurantsRef.current);
 
-    if (!Array.isArray(sourceRestaurants) || sourceRestaurants.length === 0) {
-      return sourceRestaurants;
+    if (!Array.isArray(fallbackBaseRestaurants) || fallbackBaseRestaurants.length === 0) {
+      return fallbackBaseRestaurants;
     }
 
     try {
-      const remoteRestaurants = await getRestaurantHotScores();
-      const syncedRestaurants = mergeRestaurantsWithRemoteHotScores(sourceRestaurants, remoteRestaurants);
+      const remoteRestaurants = await getRestaurantsFromSupabase();
+      const syncedRestaurants = hydrateRestaurantsFromSupabase(remoteRestaurants, fallbackBaseRestaurants);
 
       restaurantsRef.current = syncedRestaurants;
       setRestaurants(syncedRestaurants);
@@ -247,7 +250,7 @@ function App() {
       return syncedRestaurants;
     } catch (error) {
       console.error('Failed to refresh restaurants from Supabase', error);
-      return sourceRestaurants;
+      return fallbackBaseRestaurants;
     }
   }, []);
 
@@ -258,13 +261,14 @@ function App() {
       try {
         const { initialRestaurants: sourceRestaurants = [] } = await loadRestaurantsModule();
         const initializedRestaurants = initializeRestaurants(sourceRestaurants);
+        sourceRestaurantsRef.current = sourceRestaurants;
         let syncedRestaurants = initializedRestaurants;
 
         try {
-          const remoteRestaurants = await getRestaurantHotScores();
-          syncedRestaurants = mergeRestaurantsWithRemoteHotScores(initializedRestaurants, remoteRestaurants);
+          const remoteRestaurants = await getRestaurantsFromSupabase();
+          syncedRestaurants = hydrateRestaurantsFromSupabase(remoteRestaurants, initializedRestaurants);
         } catch (error) {
-          console.warn('Falling back to local restaurant hot scores during bootstrap', error);
+          console.warn('Falling back to local restaurant dataset during bootstrap', error);
         }
 
         if (cancelled) {

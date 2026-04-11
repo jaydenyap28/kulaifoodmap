@@ -117,6 +117,34 @@ begin
 end;
 $$;
 
+create or replace function public.get_restaurants_snapshot()
+returns table (
+  id bigint,
+  source_restaurant_id bigint,
+  name text,
+  category text,
+  address text,
+  image_url text,
+  hot_score integer,
+  updated_at timestamptz
+)
+language sql
+security definer
+set search_path = public
+as $$
+  select
+    restaurants.id,
+    restaurants.source_restaurant_id,
+    restaurants.name,
+    restaurants.category,
+    restaurants.address,
+    restaurants.image_url,
+    restaurants.hot_score,
+    restaurants.updated_at
+  from public.restaurants
+  order by restaurants.id asc;
+$$;
+
 create or replace function public.claim_spin_reward(target_restaurant_id bigint)
 returns table (
   success boolean,
@@ -315,3 +343,5 @@ grant execute on function public.claim_spin_reward(bigint) to authenticated;
 grant execute on function public.support_restaurant(bigint) to authenticated;
 grant execute on function public.can_spin_today() to authenticated;
 grant execute on function public.can_spin_today() to anon;
+grant execute on function public.get_restaurants_snapshot() to authenticated;
+grant execute on function public.get_restaurants_snapshot() to anon;

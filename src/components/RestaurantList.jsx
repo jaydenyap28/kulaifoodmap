@@ -139,7 +139,7 @@ const RestaurantList = ({
 
   const handleRestaurantClick = (restaurant) => {
     trackEvent('restaurant_click', {
-      restaurant_id: String(restaurant.id),
+      restaurant_id: String(restaurant.database_id ?? restaurant.id),
       restaurant_name: restaurant.name,
       source: 'list',
     });
@@ -177,7 +177,7 @@ const RestaurantList = ({
     setSupportingRestaurantId(restaurant.id);
 
     try {
-      const result = await supportRestaurant(restaurant.id);
+      const result = await supportRestaurant(restaurant.database_id ?? restaurant.id);
 
       if (!result?.success) {
         toast.error(result?.message || '这次助力没有成功，请稍后再试。');
@@ -198,7 +198,7 @@ const RestaurantList = ({
 
   const renderRestaurantCard = (restaurant, extraProps = {}) => (
     <RestaurantCard
-      key={restaurant.id}
+      key={restaurant.database_id ?? restaurant.id}
       restaurant={restaurant}
       isAdmin={isAdmin}
       onUpdate={onUpdateRestaurant}
