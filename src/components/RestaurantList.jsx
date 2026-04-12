@@ -27,8 +27,6 @@ import { getCurrentSessionUser } from '../services/spinService';
 import { supportRestaurant } from '../services/supportService';
 import { useToast } from './toast/ToastProvider';
 
-const AdminSortableRestaurantGrid = lazy(() => import('./AdminSortableRestaurantGrid'));
-
 const SORT_OPTIONS = [
   { id: 'hot', label: '热门推荐' },
   { id: 'random', label: '随机看看' },
@@ -62,15 +60,8 @@ const sortRestaurantsByMode = (items, mode) => {
 
 const RestaurantList = ({
   restaurants,
-  allRestaurants,
-  isAdmin,
-  onUpdateRestaurant,
-  onDeleteRestaurant,
   onRestaurantClick,
-  onAddRestaurant,
   onCategoryClick,
-  onReorder,
-  onUpdateArea,
   onRefreshRestaurants,
 }) => {
   const { t } = useTranslation();
@@ -116,12 +107,7 @@ const RestaurantList = ({
     return sortRestaurantsByMode(filtered, sortMode);
   }, [restaurants, deferredSearchTerm, sortMode]);
 
-  const isReorderable =
-    isAdmin &&
-    sortMode === 'recommended' &&
-    allRestaurants &&
-    restaurants.length === allRestaurants.length &&
-    !deferredSearchTerm;
+
 
   useEffect(() => {
     const handleScroll = () => {
@@ -205,12 +191,8 @@ const RestaurantList = ({
     <RestaurantCard
       key={restaurant.database_id ?? restaurant.id}
       restaurant={restaurant}
-      isAdmin={isAdmin}
-      onUpdate={onUpdateRestaurant}
-      onDelete={onDeleteRestaurant}
       onClick={() => handleRestaurantClick(restaurant)}
       onCategoryClick={onCategoryClick}
-      onUpdateArea={onUpdateArea}
       onSupport={handleSupportRestaurant}
       isSupporting={supportingRestaurantId === restaurant.id}
       isSupportCoolingDown={Boolean(supportCooldownMap[restaurant.id])}
@@ -247,17 +229,6 @@ const RestaurantList = ({
                   </button>
                 ))}
               </div>
-
-              {isAdmin && (
-                <div className="flex gap-2">
-                  <button
-                    onClick={onAddRestaurant}
-                    className="flex items-center gap-1.5 rounded-full bg-white px-4 py-1.5 text-sm font-medium text-black shadow-sm transition-colors hover:bg-gray-200"
-                  >
-                    <Plus size={16} /> {t('list.add_restaurant')}
-                  </button>
-                </div>
-              )}
             </div>
 
             <div className="relative w-full lg:w-80">
@@ -275,17 +246,7 @@ const RestaurantList = ({
       </div>
 
       <div className="grid grid-cols-2 gap-4 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 2xl:grid-cols-6">
-        {isReorderable ? (
-          <Suspense fallback={filteredRestaurants.map((restaurant) => renderRestaurantCard(restaurant))}>
-            <AdminSortableRestaurantGrid
-              restaurants={filteredRestaurants}
-              renderRestaurantCard={renderRestaurantCard}
-              onReorder={onReorder}
-            />
-          </Suspense>
-        ) : (
-          filteredRestaurants.map((restaurant) => renderRestaurantCard(restaurant))
-        )}
+        {filteredRestaurants.map((restaurant) => renderRestaurantCard(restaurant))}
       </div>
 
       {filteredRestaurants.length === 0 && (
@@ -311,15 +272,11 @@ const RestaurantList = ({
 
 const RestaurantCard = ({
   restaurant,
-  isAdmin,
-  onDelete,
   onClick,
   onCategoryClick,
-  onUpdateArea,
   onSupport,
   isSupporting,
   isSupportCoolingDown,
-  dragHandleProps,
 }) => {
   const { t, i18n } = useTranslation();
   const openStatus = restaurant.manualStatus && restaurant.manualStatus !== 'auto'
@@ -339,15 +296,6 @@ const RestaurantCard = ({
       className={`group relative flex h-full cursor-pointer select-none flex-col overflow-hidden rounded-2xl border bg-[#1e1e1e] shadow-xl transition-all duration-300 hover:shadow-2xl hover:shadow-black/60 ${borderClass} ${isVIP ? 'hover:-translate-y-1' : ''}`}
     >
       <div className="relative aspect-video w-full shrink-0 overflow-hidden bg-gray-800 shadow-inner">
-        {isAdmin && dragHandleProps && (
-          <div
-            {...dragHandleProps}
-            className="absolute left-2 top-2 z-20 cursor-grab rounded-full bg-black/50 p-2 text-white backdrop-blur-sm touch-none active:cursor-grabbing"
-            onClick={(event) => event.stopPropagation()}
-          >
-            <GripVertical size={16} />
-          </div>
-        )}
 
         <ImageWithFallback
           src={restaurant.image}
@@ -360,36 +308,6 @@ const RestaurantCard = ({
           <div className="absolute right-0 top-0 z-20 flex items-center gap-1 rounded-bl-lg bg-amber-500/90 px-2 py-1 text-[10px] font-bold text-white shadow-sm backdrop-blur-sm">
             {restaurant.subscriptionLevel >= 3 ? <Flame size={12} className="fill-white" /> : <Medal size={12} className="fill-white" />}
             <span>{restaurant.subscriptionLevel >= 3 ? 'FEATURED' : '精选'}</span>
-          </div>
-        )}
-
-        {isAdmin && (
-          <div
-            className="absolute right-2 top-2 z-10 flex gap-1 opacity-0 transition-opacity group-hover:opacity-100"
-            onClick={(event) => event.stopPropagation()}
-          >
-            <button
-              onClick={(event) => {
-                event.stopPropagation();
-                onClick();
-              }}
-              className="rounded-full bg-black/50 p-2 text-gray-300 shadow-sm backdrop-blur-sm hover:text-white"
-              title={t('list.edit')}
-            >
-              <Edit2 size={14} />
-            </button>
-            <button
-              onClick={(event) => {
-                event.stopPropagation();
-                if (window.confirm(t('list.confirm_delete'))) {
-                  onDelete(restaurant.id);
-                }
-              }}
-              className="rounded-full bg-black/50 p-2 text-red-400 shadow-sm backdrop-blur-sm hover:text-red-600"
-              title={t('list.delete')}
-            >
-              <Trash2 size={14} />
-            </button>
           </div>
         )}
 
@@ -411,14 +329,6 @@ const RestaurantCard = ({
               {i18n.language === 'en' && restaurant.name_en ? restaurant.name_en : restaurant.name}
             </h3>
           </div>
-
-          {isAdmin && (
-            <div className="shrink-0 rounded border border-gray-700 bg-[#2d2d2d] px-1.5 py-0.5 text-xs font-bold text-yellow-400 shadow-sm">
-              <span className="flex items-center">
-                <Star size={10} className="mr-1 fill-yellow-400" /> {restaurant.rating}
-              </span>
-            </div>
-          )}
         </div>
 
         <div className="mb-2 flex flex-wrap items-center gap-2">
@@ -490,20 +400,7 @@ const RestaurantCard = ({
           </div>
         )}
 
-        {isAdmin && onUpdateArea && (
-          <div className="mb-2" onClick={(event) => event.stopPropagation()}>
-            <select
-              value={restaurant.area || ''}
-              onChange={(event) => onUpdateArea(restaurant.id, event.target.value)}
-              className="w-full rounded border border-gray-600 bg-[#333] p-1 text-xs text-white focus:border-white focus:outline-none"
-            >
-              <option value="">Select Area...</option>
-              {AVAILABLE_AREAS.map((area) => (
-                <option key={area} value={area}>{t(`areas.${area}`, area)}</option>
-              ))}
-            </select>
-          </div>
-        )}
+
 
         <div className="mt-auto flex flex-col gap-2 border-t border-gray-800/50 pt-2">
           {restaurant.subStalls && Array.isArray(restaurant.subStalls) && restaurant.subStalls.length > 0 && (

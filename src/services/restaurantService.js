@@ -46,18 +46,23 @@ export const hydrateRestaurantsFromSupabase = (remoteRestaurants = [], baseResta
       baseBySourceId.get(remoteRestaurant.id) ||
       {};
 
+    const extraDetails = remoteRestaurant.extra_details || {};
+
     return normalizeRestaurant({
       ...sourceRestaurant,
+      ...extraDetails,
       id: sourceRestaurant.id ?? remoteRestaurant.source_restaurant_id ?? remoteRestaurant.id,
       database_id: remoteRestaurant.id,
       source_restaurant_id: remoteRestaurant.source_restaurant_id ?? sourceRestaurant.id ?? null,
-      name: sourceRestaurant.name || sourceRestaurant.desc || remoteRestaurant.name || 'Unknown Restaurant',
-      name_en: sourceRestaurant.name_en || sourceRestaurant.desc2 || '',
-      image: remoteRestaurant.image_url || sourceRestaurant.image || '',
-      address: remoteRestaurant.address || sourceRestaurant.address || '',
-      categories: sourceRestaurant.categories?.length
-        ? sourceRestaurant.categories
-        : normalizeRemoteCategory(remoteRestaurant.category),
+      name: extraDetails.name || sourceRestaurant.name || sourceRestaurant.desc || remoteRestaurant.name || 'Unknown Restaurant',
+      name_en: extraDetails.name_en || sourceRestaurant.name_en || sourceRestaurant.desc2 || '',
+      image: remoteRestaurant.image_url || extraDetails.image || sourceRestaurant.image || '',
+      address: remoteRestaurant.address || extraDetails.address || sourceRestaurant.address || '',
+      categories: extraDetails.categories?.length 
+        ? extraDetails.categories
+        : sourceRestaurant.categories?.length
+          ? sourceRestaurant.categories
+          : normalizeRemoteCategory(remoteRestaurant.category),
       hot_score: remoteRestaurant.hot_score ?? 0,
       is_featured: remoteRestaurant.is_featured ?? false,
       is_active: remoteRestaurant.is_active ?? true,

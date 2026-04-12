@@ -1,7 +1,7 @@
 import React, { useEffect, useMemo, useState } from 'react';
 import { Loader2, Save, Search, Store, Edit } from 'lucide-react';
 import { useToast } from './toast/ToastProvider';
-import { getAdminRestaurants, updateAdminRestaurant } from '../services/adminRestaurantService';
+import { getAdminRestaurants, updateAdminRestaurant, createAdminRestaurant } from '../services/adminRestaurantService';
 import AdminRestaurantEditModal from './AdminRestaurantEditModal';
 
 const EMPTY_EDITING_ROW = {
@@ -20,6 +20,7 @@ const AdminRestaurantsPage = ({ onRestaurantsSaved }) => {
   const [isLoading, setIsLoading] = useState(true);
   const [savingIds, setSavingIds] = useState({});
   const [editingRestaurant, setEditingRestaurant] = useState(null);
+  const [isModalOpen, setIsModalOpen] = useState(false);
 
   const fetchRestaurantsList = async () => {
     setIsLoading(true);
@@ -59,13 +60,29 @@ const AdminRestaurantsPage = ({ onRestaurantsSaved }) => {
     );
   };
 
-  const handleSaveModal = async (id, updatedFields) => {
+  const handleOpenCreateModal = () => {
+    setEditingRestaurant(null);
+    setIsModalOpen(true);
+  };
+
+  const handleOpenEditModal = (restaurant) => {
+    setEditingRestaurant(restaurant);
+    setIsModalOpen(true);
+  };
+
+  const handleSaveModal = async (id, updatedFields, isCreating) => {
     try {
-      const updatedObj = await updateAdminRestaurant(id, updatedFields);
-      updateLocalRestaurant(id, updatedObj);
+      if (isCreating) {
+        await createAdminRestaurant(updatedFields);
+        await fetchRestaurantsList(); // Refresh full list
+        toast.success('新商家创建成功！');
+      } else {
+        const updatedObj = await updateAdminRestaurant(id, updatedFields);
+        updateLocalRestaurant(id, updatedObj);
+        toast.success('商家核心资料已更新！');
+      }
       onRestaurantsSaved?.();
       window.dispatchEvent(new CustomEvent('restaurants-refresh'));
-      toast.success('商家核心资料已更新！');
     } catch (error) {
       console.error('Failed to save core restaurant fields', error);
       toast.error(error.message || '保存失败！');
@@ -127,6 +144,12 @@ const AdminRestaurantsPage = ({ onRestaurantsSaved }) => {
           </div>
 
           <div className="flex items-center gap-3">
+             <button
+               onClick={handleOpenCreateModal}
+               className="flex items-center gap-2 rounded-full bg-orange-600 px-4 py-2.5 text-sm font-bold text-white shadow-lg transition hover:bg-orange-500"
+             >
+               + 添加入驻商家
+             </button>
              <button
                onClick={fetchRestaurantsList}
                className="rounded-full border border-white/10 bg-white/5 px-4 py-2.5 text-sm outline-none transition hover:bg-white/10"
@@ -201,7 +224,7 @@ const AdminRestaurantsPage = ({ onRestaurantsSaved }) => {
                     <input type="text" value={row.ad_label || ''} onChange={(event) => updateLocalRestaurant(row.id, { ad_label: event.target.value })} className="w-full rounded bg-[#121212] border border-gray-700 px-2 py-1.5 text-xs text-white outline-none focus:border-white/50" placeholder="促销中" />
 
                     <div className="flex justify-end gap-1.5">
-                       <button type="button" onClick={() => setEditingRestaurant(row)} className="flex h-8 px-2.5 items-center justify-center gap-1 rounded bg-blue-600/20 hover:bg-blue-600/40 border border-blue-500/30 text-xs font-bold text-blue-400 transition" title="高级编辑">
+                       <button type="button" onClick={() => handleOpenEditModal(row)} className="flex h-8 px-2.5 items-center justify-center gap-1 rounded bg-blue-600/20 hover:bg-blue-600/40 border border-blue-500/30 text-xs font-bold text-blue-400 transition" title="高级编辑">
                          <Edit size={12} />编辑
                        </button>
                        <button type="button" onClick={() => handleSave(row)} disabled={isSaving} className="flex h-8 px-2.5 items-center justify-center gap-1 rounded bg-[#2d2d2d] hover:bg-[#3d3d3d] border border-gray-600 text-xs font-bold text-gray-200 transition disabled:opacity-50">
@@ -217,8 +240,8 @@ const AdminRestaurantsPage = ({ onRestaurantsSaved }) => {
         </div>
       </div>
       <AdminRestaurantEditModal
-        isOpen={!!editingRestaurant}
-        onClose={() => setEditingRestaurant(null)}
+        isOpen={isModalOpen}
+        onClose={() => setIsModalOpen(false)}
         restaurant={editingRestaurant}
         onSave={handleSaveModal}
       />
