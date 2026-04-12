@@ -375,7 +375,6 @@ const ResultModal = ({ restaurant, onClose, isAdmin, onUpdateRestaurant, categor
                     </a>
                )}
                
-               <div className="flex gap-3">
               {isAdmin && !isEditing && (
                 <button 
                   onClick={() => setIsEditing(true)}
