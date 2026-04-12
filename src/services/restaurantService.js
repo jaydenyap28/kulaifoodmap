@@ -32,7 +32,7 @@ const normalizeRemoteCategory = (categoryValue) => {
 
 export const hydrateRestaurantsFromSupabase = (remoteRestaurants = [], baseRestaurants = []) => {
   if (!Array.isArray(remoteRestaurants) || remoteRestaurants.length === 0) {
-    return [];
+    return baseRestaurants;
   }
 
   const baseBySourceId = new Map();

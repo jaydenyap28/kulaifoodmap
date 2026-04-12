@@ -1,7 +1,8 @@
 import React, { useEffect, useMemo, useState } from 'react';
-import { Loader2, Save, Search, Store } from 'lucide-react';
+import { Loader2, Save, Search, Store, Edit } from 'lucide-react';
 import { useToast } from './toast/ToastProvider';
 import { getAdminRestaurants, updateAdminRestaurant } from '../services/adminRestaurantService';
+import AdminRestaurantEditModal from './AdminRestaurantEditModal';
 
 const EMPTY_EDITING_ROW = {
   is_featured: false,
@@ -18,6 +19,7 @@ const AdminRestaurantsPage = ({ onRestaurantsSaved }) => {
   const [searchTerm, setSearchTerm] = useState('');
   const [isLoading, setIsLoading] = useState(true);
   const [savingIds, setSavingIds] = useState({});
+  const [editingRestaurant, setEditingRestaurant] = useState(null);
 
   const fetchRestaurantsList = async () => {
     setIsLoading(true);
@@ -55,6 +57,20 @@ const AdminRestaurantsPage = ({ onRestaurantsSaved }) => {
         restaurant.id === restaurantId ? { ...restaurant, ...patch } : restaurant
       ))
     );
+  };
+
+  const handleSaveModal = async (id, updatedFields) => {
+    try {
+      const updatedObj = await updateAdminRestaurant(id, updatedFields);
+      updateLocalRestaurant(id, updatedObj);
+      onRestaurantsSaved?.();
+      window.dispatchEvent(new CustomEvent('restaurants-refresh'));
+      toast.success('商家核心资料已更新！');
+    } catch (error) {
+      console.error('Failed to save core restaurant fields', error);
+      toast.error(error.message || '保存失败！');
+      throw error;
+    }
   };
 
   const handleSave = async (restaurant) => {
@@ -131,7 +147,7 @@ const AdminRestaurantsPage = ({ onRestaurantsSaved }) => {
         </div>
 
         <div className="overflow-hidden rounded-2xl border border-white/10 bg-[#1e1e1e] shadow-xl">
-          <div className="grid grid-cols-[1fr_50px_60px_60px_60px_80px_100px_120px_90px] gap-2 border-b border-gray-700 bg-black/40 px-4 py-3 text-xs font-bold text-gray-400">
+          <div className="grid grid-cols-[1fr_50px_60px_60px_60px_80px_100px_120px_140px] gap-2 border-b border-gray-700 bg-black/40 px-4 py-3 text-xs font-bold text-gray-400">
             <span>商家名称 (Name)</span>
             <span className="text-center">热度</span>
             <span className="text-center text-orange-400" title="在首页顶部加冕">精选</span>
@@ -157,7 +173,7 @@ const AdminRestaurantsPage = ({ onRestaurantsSaved }) => {
                 return (
                   <div
                     key={restaurant.id}
-                    className="grid grid-cols-[1fr_50px_60px_60px_60px_80px_100px_120px_90px] items-center gap-2 border-b border-gray-800 hover:bg-white/5 transition-colors px-4 py-3 text-sm"
+                    className="grid grid-cols-[1fr_50px_60px_60px_60px_80px_100px_120px_140px] items-center gap-2 border-b border-gray-800 hover:bg-white/5 transition-colors px-4 py-3 text-sm"
                   >
                     <div className="min-w-0 pr-2">
                       <p className="truncate font-semibold text-white">{row.name}</p>
@@ -184,10 +200,13 @@ const AdminRestaurantsPage = ({ onRestaurantsSaved }) => {
 
                     <input type="text" value={row.ad_label || ''} onChange={(event) => updateLocalRestaurant(row.id, { ad_label: event.target.value })} className="w-full rounded bg-[#121212] border border-gray-700 px-2 py-1.5 text-xs text-white outline-none focus:border-white/50" placeholder="促销中" />
 
-                    <div className="flex justify-end">
-                       <button type="button" onClick={() => handleSave(row)} disabled={isSaving} className="flex h-8 items-center justify-center w-full gap-1 rounded bg-[#2d2d2d] hover:bg-[#3d3d3d] border border-gray-600 text-xs font-bold text-gray-200 transition disabled:opacity-50">
+                    <div className="flex justify-end gap-1.5">
+                       <button type="button" onClick={() => setEditingRestaurant(row)} className="flex h-8 px-2.5 items-center justify-center gap-1 rounded bg-blue-600/20 hover:bg-blue-600/40 border border-blue-500/30 text-xs font-bold text-blue-400 transition" title="高级编辑">
+                         <Edit size={12} />编辑
+                       </button>
+                       <button type="button" onClick={() => handleSave(row)} disabled={isSaving} className="flex h-8 px-2.5 items-center justify-center gap-1 rounded bg-[#2d2d2d] hover:bg-[#3d3d3d] border border-gray-600 text-xs font-bold text-gray-200 transition disabled:opacity-50">
                          {isSaving ? <Loader2 size={12} className="animate-spin" /> : <Save size={12} />}
-                         {isSaving ? '...' : '保存'}
+                         保存
                        </button>
                     </div>
                   </div>
@@ -197,6 +216,12 @@ const AdminRestaurantsPage = ({ onRestaurantsSaved }) => {
           </div>
         </div>
       </div>
+      <AdminRestaurantEditModal
+        isOpen={!!editingRestaurant}
+        onClose={() => setEditingRestaurant(null)}
+        restaurant={editingRestaurant}
+        onSave={handleSaveModal}
+      />
     </div>
   );
 };

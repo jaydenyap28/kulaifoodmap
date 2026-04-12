@@ -14,6 +14,7 @@ const ADMIN_RESTAURANT_COLUMNS = `
   sort_priority,
   badge_label,
   ad_label,
+  affiliate_url,
   updated_at
 `;
 

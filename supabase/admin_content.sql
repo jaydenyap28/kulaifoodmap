@@ -160,6 +160,8 @@ to authenticated
 using (public.is_admin())
 with check (public.is_admin());
 
+drop function if exists public.get_restaurants_snapshot();
+
 create or replace function public.get_restaurants_snapshot()
 returns table (
   id bigint,
