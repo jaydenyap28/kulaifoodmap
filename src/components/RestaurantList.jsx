@@ -52,7 +52,12 @@ const sortRestaurantsByMode = (items, mode) => {
     return shuffleRestaurants(items);
   }
 
-  return [...items].sort((a, b) => (b.hot_score || 0) - (a.hot_score || 0) || a.id - b.id);
+  return [...items].sort((a, b) =>
+    Number(Boolean(b.is_featured)) - Number(Boolean(a.is_featured)) ||
+    (b.sort_priority || 0) - (a.sort_priority || 0) ||
+    (b.hot_score || 0) - (a.hot_score || 0) ||
+    a.id - b.id
+  );
 };
 
 const RestaurantList = ({
@@ -417,6 +422,16 @@ const RestaurantCard = ({
         </div>
 
         <div className="mb-2 flex flex-wrap items-center gap-2">
+          {restaurant.badge_label ? (
+            <span className="inline-flex items-center rounded-full border border-cyan-400/20 bg-cyan-400/10 px-2 py-0.5 text-[10px] font-bold leading-none text-cyan-100">
+              {restaurant.badge_label}
+            </span>
+          ) : null}
+          {restaurant.ad_label ? (
+            <span className="inline-flex items-center rounded-full border border-amber-400/20 bg-amber-400/10 px-2 py-0.5 text-[10px] font-bold leading-none text-amber-100">
+              {restaurant.ad_label}
+            </span>
+          ) : null}
           <RestaurantRankBadge hotScore={restaurant.hot_score || 0} />
           <span className="inline-flex items-center gap-1 rounded-full border border-orange-500/20 bg-orange-500/10 px-2 py-0.5 text-[10px] font-bold leading-none text-orange-200">
             <FlameIcon size={10} className="text-orange-300" />
@@ -533,6 +548,18 @@ const RestaurantCard = ({
             <MapPin size={12} className="mr-1.5 mt-0.5 shrink-0 opacity-70" />
             <span className="line-clamp-2 leading-tight">{restaurant.address}</span>
           </div>
+
+          {restaurant.affiliate_url && (
+            <a
+              href={restaurant.affiliate_url}
+              target="_blank"
+              rel="noopener noreferrer"
+              onClick={(e) => e.stopPropagation()}
+              className="mt-2 flex w-full items-center justify-center gap-2 rounded-xl bg-gradient-to-r from-orange-500 to-red-600 py-2.5 text-xs font-bold text-white shadow-lg transition-all hover:scale-[1.02] hover:shadow-orange-500/20 active:scale-95"
+            >
+              🛵 叫外卖 (ShopeeFood)
+            </a>
+          )}
 
           <div className="mt-2 flex items-center justify-between gap-2 rounded-xl border border-white/10 bg-white/5 px-2.5 py-2">
             <div className="min-w-0">

@@ -22,6 +22,7 @@ const ResultModal = ({ restaurant, onClose, isAdmin, onUpdateRestaurant, categor
     menu_link: restaurant.menu_link || '',
     website_link: restaurant.website_link || '',
     delivery_link: restaurant.delivery_link || '',
+    affiliate_url: restaurant.affiliate_url || '',
     opening_hours: restaurant.opening_hours,
     price_range: restaurant.price_range || '',
     image: restaurant.image || '',
@@ -81,6 +82,7 @@ const ResultModal = ({ restaurant, onClose, isAdmin, onUpdateRestaurant, categor
         menu_link: restaurant.menu_link || '',
         website_link: restaurant.website_link || '',
         delivery_link: restaurant.delivery_link || '',
+        affiliate_url: restaurant.affiliate_url || '',
         opening_hours: restaurant.opening_hours || '',
         price_range: restaurant.price_range || '',
         image: restaurant.image || '',
@@ -358,8 +360,22 @@ const ResultModal = ({ restaurant, onClose, isAdmin, onUpdateRestaurant, categor
           </div>
 
           <div className="p-6 space-y-6">
-            {/* Info */}
+            {/* Links and Nav */}
             <div className="space-y-4">
+               {restaurant.affiliate_url && (
+                    <a 
+                      href={restaurant.affiliate_url} 
+                      target="_blank" 
+                      rel="noopener noreferrer" 
+                      onClick={() => trackEvent('affiliate_click', { type: 'shopeefood', restaurant_id: String(restaurant.id), restaurant_name: restaurant.name })} 
+                      className="flex items-center justify-center gap-3 w-full py-4 bg-gradient-to-r from-orange-500 to-red-600 rounded-2xl text-white font-black shadow-xl hover:scale-[1.02] transition-transform active:scale-95 mb-4"
+                    >
+                        <Bike size={24}/>
+                        <span className="text-lg">🛵 叫外卖 (ShopeeFood)</span>
+                    </a>
+               )}
+               
+               <div className="flex gap-3">
               {isAdmin && !isEditing && (
                 <button 
                   onClick={() => setIsEditing(true)}
@@ -580,6 +596,15 @@ const ResultModal = ({ restaurant, onClose, isAdmin, onUpdateRestaurant, categor
                           onChange={e => setEditForm({...editForm, delivery_link: e.target.value})}
                           className="w-full bg-[#1a1a1a] border-b border-gray-600 py-1 text-xs text-white focus:border-white outline-none"
                           placeholder="https://..."
+                        />
+                    </div>
+                    <div>
+                        <label className="text-xs text-orange-400 font-bold flex items-center gap-1">🛵 联盟营销链接 (Affiliate Link)</label>
+                        <input 
+                          value={editForm.affiliate_url}
+                          onChange={e => setEditForm({...editForm, affiliate_url: e.target.value})}
+                          className="w-full bg-[#1a1a1a] border-b border-gray-600 py-1 text-xs text-white focus:border-white outline-none"
+                          placeholder="ShopeeFood/Affiliate link..."
                         />
                     </div>
                   </div>

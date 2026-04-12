@@ -24,6 +24,7 @@ export const buildFallbackProfile = (user) => ({
   user_points: 0,
   last_checkin_date: null,
   consecutive_days: 0,
+  role: 'user',
 });
 
 export const syncProfileForUser = async (user) => {
@@ -35,7 +36,7 @@ export const syncProfileForUser = async (user) => {
 
   const { data: existingProfile, error: fetchError } = await supabase
     .from('profiles')
-    .select('id, full_name, avatar_url, user_points, last_checkin_date, consecutive_days')
+    .select('id, full_name, avatar_url, user_points, last_checkin_date, consecutive_days, role')
     .eq('id', user.id)
     .maybeSingle();
 
@@ -47,7 +48,7 @@ export const syncProfileForUser = async (user) => {
     const { data: insertedProfile, error: insertError } = await supabase
       .from('profiles')
       .insert(fallbackProfile)
-      .select('id, full_name, avatar_url, user_points, last_checkin_date, consecutive_days')
+      .select('id, full_name, avatar_url, user_points, last_checkin_date, consecutive_days, role')
       .single();
 
     if (insertError) {
@@ -67,13 +68,13 @@ export const syncProfileForUser = async (user) => {
 
   const { data: updatedProfile, error: updateError } = await supabase
     .from('profiles')
-    .update({
-      full_name: fallbackProfile.full_name,
-      avatar_url: fallbackProfile.avatar_url,
-    })
-    .eq('id', user.id)
-    .select('id, full_name, avatar_url, user_points, last_checkin_date, consecutive_days')
-    .single();
+      .update({
+        full_name: fallbackProfile.full_name,
+        avatar_url: fallbackProfile.avatar_url,
+      })
+      .eq('id', user.id)
+      .select('id, full_name, avatar_url, user_points, last_checkin_date, consecutive_days, role')
+      .single();
 
   if (updateError) {
     throw updateError;

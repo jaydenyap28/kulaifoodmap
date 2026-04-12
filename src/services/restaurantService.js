@@ -59,6 +59,13 @@ export const hydrateRestaurantsFromSupabase = (remoteRestaurants = [], baseResta
         ? sourceRestaurant.categories
         : normalizeRemoteCategory(remoteRestaurant.category),
       hot_score: remoteRestaurant.hot_score ?? 0,
+      is_featured: remoteRestaurant.is_featured ?? false,
+      is_active: remoteRestaurant.is_active ?? true,
+      is_hidden: remoteRestaurant.is_hidden ?? false,
+      sort_priority: remoteRestaurant.sort_priority ?? 0,
+      badge_label: remoteRestaurant.badge_label || '',
+      ad_label: remoteRestaurant.ad_label || '',
+      affiliate_url: remoteRestaurant.affiliate_url || '',
     });
   });
 };
@@ -74,20 +81,18 @@ export const getRestaurantHotScores = async () => {
 };
 
 export const getTopRestaurants = async (limit = 20) => {
-  if (!supabase) {
+  const restaurants = await getRestaurantsFromSupabase();
+  if (!restaurants?.length) {
     return [];
   }
 
-  const { data, error } = await supabase
-    .from('restaurants')
-    .select('id, source_restaurant_id, name, category, address, image_url, hot_score')
-    .order('hot_score', { ascending: false })
-    .order('id', { ascending: true })
-    .limit(limit);
-
-  if (error) {
-    throw error;
-  }
-
-  return data || [];
+  return restaurants
+    .filter((restaurant) => restaurant.is_active !== false && restaurant.is_hidden !== true)
+    .sort((a, b) =>
+      Number(Boolean(b.is_featured)) - Number(Boolean(a.is_featured)) ||
+      (b.sort_priority || 0) - (a.sort_priority || 0) ||
+      (b.hot_score || 0) - (a.hot_score || 0) ||
+      a.id - b.id
+    )
+    .slice(0, limit);
 };
