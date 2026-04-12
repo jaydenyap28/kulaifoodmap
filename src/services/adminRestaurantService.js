@@ -39,10 +39,10 @@ export const getAdminRestaurants = async () => {
   const loadMod = await import('../data/runtimeRestaurants').catch(() => null);
   const initialRestaurants = loadMod ? (await loadMod.loadRestaurantsModule()).initialRestaurants : [];
   const baseBySourceId = new Map();
-  initialRestaurants.forEach((r) => baseBySourceId.set(r.id, r));
+  initialRestaurants.forEach((r) => baseBySourceId.set(String(r.id), r));
 
   return (data || []).map((restaurant) => {
-    const sourceRestaurant = baseBySourceId.get(restaurant.source_restaurant_id) || baseBySourceId.get(restaurant.id) || {};
+    const sourceRestaurant = baseBySourceId.get(String(restaurant.source_restaurant_id)) || baseBySourceId.get(String(restaurant.id)) || {};
     const extraDetails = restaurant.extra_details || {};
     return {
       ...sourceRestaurant,
