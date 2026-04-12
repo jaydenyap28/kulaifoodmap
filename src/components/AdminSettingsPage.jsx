@@ -23,7 +23,7 @@ const AdminSettingsPage = ({ onSettingsSaved }) => {
       } catch (error) {
         console.error('Failed to load site settings', error);
         if (active) {
-          toast.error(error.message || '��ҳ���ö�ȡʧ�ܣ����Ժ����ԡ�');
+          toast.error(error.message || '获取设置失败，请稍后再试。');
         }
       } finally {
         if (active) {
@@ -54,10 +54,10 @@ const AdminSettingsPage = ({ onSettingsSaved }) => {
       setForm(savedSettings);
       onSettingsSaved?.(savedSettings);
       window.dispatchEvent(new CustomEvent('site-settings-refresh'));
-      toast.success('��ҳ�����ѱ��档');
+      toast.success('首页设置已保存');
     } catch (error) {
       console.error('Failed to save site settings', error);
-      toast.error(error.message || '��ҳ���ñ���ʧ�ܣ����Ժ����ԡ�');
+      toast.error(error.message || '保存设置失败，请稍后再试。');
     } finally {
       setIsSaving(false);
     }
@@ -65,83 +65,73 @@ const AdminSettingsPage = ({ onSettingsSaved }) => {
 
   if (isLoading) {
     return (
-      <div className="min-h-screen bg-[#121212] px-4 py-8 text-white">
+      <div className="min-h-[50vh] flex items-center justify-center bg-[#121212] px-4 py-8 text-white">
         <div className="mx-auto flex max-w-4xl items-center justify-center rounded-3xl border border-white/10 bg-white/5 px-6 py-20">
           <Loader2 size={22} className="mr-3 animate-spin text-white/70" />
-          <span className="text-white/80">���ڶ�ȡ��ҳ����...</span>
+          <span className="text-white/80">正在读取首页设置...</span>
         </div>
       </div>
     );
   }
 
   return (
-    <div className="min-h-screen bg-[#121212] px-4 py-8 text-white">
-      <div className="mx-auto flex max-w-4xl flex-col gap-6">
-        <div className="flex flex-col gap-3 rounded-3xl border border-white/10 bg-white/5 p-6 shadow-xl backdrop-blur-sm sm:flex-row sm:items-center sm:justify-between">
+    <div className="min-h-[50vh] bg-[#121212] px-4 py-8 text-white max-w-5xl mx-auto w-full">
+      <div className="mx-auto flex w-full flex-col gap-6">
+        <div className="flex flex-col gap-3 rounded-2xl border border-white/10 bg-white/5 p-6 shadow-xl backdrop-blur-sm sm:flex-row sm:items-center sm:justify-between">
           <div>
-            <p className="text-sm font-semibold uppercase tracking-[0.28em] text-white/45">Admin</p>
-            <h1 className="mt-2 text-3xl font-black text-white">��ҳ����</h1>
-            <p className="mt-2 text-sm text-white/60">�Ȱ���ҳ����ĵ� Hero �İ��ͱ���ͼ������̨������</p>
+            <p className="text-sm font-semibold uppercase tracking-[0.28em] text-white/45">Admin CMS</p>
+            <h1 className="mt-2 text-3xl font-black text-white">首页设置后台</h1>
+            <p className="mt-2 text-sm text-white/60">可在这里配置首页的宣传图片与网站标语</p>
           </div>
-
-          <button
-            type="button"
-            onClick={() => navigate('/')}
-            className="inline-flex items-center gap-2 self-start rounded-full border border-white/15 bg-white/5 px-4 py-2 text-sm font-semibold text-white/80 transition hover:bg-white/10 hover:text-white"
-          >
-            <ArrowLeft size={16} />
-            ������ҳ
-          </button>
         </div>
 
-        <form onSubmit={handleSubmit} className="rounded-3xl border border-white/10 bg-[#181818] p-6 shadow-xl">
+        <form onSubmit={handleSubmit} className="rounded-3xl border border-white/10 bg-[#181818] p-6 shadow-xl w-full">
           <div className="grid gap-5">
             <label className="grid gap-2">
-              <span className="text-sm font-semibold text-white/80">Hero ����ͼ URL</span>
+              <span className="text-sm font-semibold text-white/80">Hero 宣传图 URL (建议 16:9 横图)</span>
               <input
                 type="text"
                 value={form.hero_bg_url || ''}
                 onChange={(event) => handleChange('hero_bg_url', event.target.value)}
-                className="rounded-2xl border border-white/10 bg-white/5 px-4 py-3 text-sm text-white outline-none transition focus:border-white/30"
-                placeholder="https://example.com/hero.jpg"
+                className="rounded-xl border border-white/10 bg-[#121212] px-4 py-3 text-sm text-white outline-none transition focus:border-white/30 focus:border-orange-500 focus:ring-1 focus:ring-orange-500/50"
+                placeholder="https://网站图片链接.jpg"
               />
             </label>
 
             <label className="grid gap-2">
-              <span className="text-sm font-semibold text-white/80">Hero ������</span>
+              <span className="text-sm font-semibold text-white/80">主标题 (Hero Title)</span>
               <input
                 type="text"
                 value={form.hero_title || ''}
                 onChange={(event) => handleChange('hero_title', event.target.value)}
-                className="rounded-2xl border border-white/10 bg-white/5 px-4 py-3 text-sm text-white outline-none transition focus:border-white/30"
-                placeholder="������ʳ��ͼ"
+                className="rounded-xl border border-white/10 bg-[#121212] px-4 py-3 text-sm text-white outline-none transition focus:border-white/30 focus:border-orange-500 focus:ring-1 focus:ring-orange-500/50"
+                placeholder="古来美食地图"
               />
             </label>
 
             <label className="grid gap-2">
-              <span className="text-sm font-semibold text-white/80">Hero ������</span>
+              <span className="text-sm font-semibold text-white/80">副标题 (Hero Subtitle)</span>
               <input
                 type="text"
                 value={form.hero_subtitle || ''}
                 onChange={(event) => handleChange('hero_subtitle', event.target.value)}
-                className="rounded-2xl border border-white/10 bg-white/5 px-4 py-3 text-sm text-white outline-none transition focus:border-white/30"
+                className="rounded-xl border border-white/10 bg-[#121212] px-4 py-3 text-sm text-white outline-none transition focus:border-white/30 focus:border-orange-500 focus:ring-1 focus:ring-orange-500/50"
                 placeholder="Kulai Food Map"
               />
             </label>
 
-            <label className="flex items-center justify-between rounded-2xl border border-white/10 bg-white/5 px-4 py-3">
+            <label className="flex items-center justify-between rounded-xl border border-white/10 bg-white/5 px-4 py-3 cursor-pointer">
               <div>
-                <p className="text-sm font-semibold text-white/80">������ҳ Hero</p>
-                <p className="mt-1 text-xs text-white/50">�رպ���ҳ�Ա���ͷ����ɸѡ������չʾ Hero ������鿨����</p>
+                <p className="text-sm font-semibold text-white/80">展示首页 Hero 转盘版块</p>
+                <p className="mt-1 text-xs text-white/50">若关闭，首页顶部将直接显示所有商家列表</p>
               </div>
 
-              <button
-                type="button"
-                onClick={() => handleChange('hero_enabled', !form.hero_enabled)}
-                className={`relative inline-flex h-7 w-14 items-center rounded-full transition ${form.hero_enabled ? 'bg-emerald-500' : 'bg-white/15'}`}
-              >
-                <span className={`inline-block h-5 w-5 rounded-full bg-white transition ${form.hero_enabled ? 'translate-x-8' : 'translate-x-1'}`} />
-              </button>
+              <input 
+                type="checkbox"
+                checked={form.hero_enabled !== false}
+                onChange={(e) => handleChange('hero_enabled', e.target.checked)}
+                className="h-5 w-5 rounded border-gray-600 bg-gray-700 text-orange-500 focus:ring-orange-500"
+              />
             </label>
           </div>
 
@@ -149,10 +139,10 @@ const AdminSettingsPage = ({ onSettingsSaved }) => {
             <button
               type="submit"
               disabled={isSaving}
-              className="inline-flex items-center gap-2 rounded-full bg-white px-5 py-2.5 text-sm font-bold text-black transition hover:bg-gray-200 disabled:cursor-not-allowed disabled:opacity-70"
+              className="inline-flex items-center justify-center gap-2 rounded-xl bg-orange-500 hover:bg-orange-600 px-6 py-3 text-sm font-bold text-white shadow-lg transition-all disabled:opacity-50 disabled:cursor-not-allowed w-full sm:w-auto"
             >
               {isSaving ? <Loader2 size={16} className="animate-spin" /> : <Save size={16} />}
-              {isSaving ? '������...' : '������ҳ����'}
+              {isSaving ? '保存中...' : '保存更改'}
             </button>
           </div>
         </form>

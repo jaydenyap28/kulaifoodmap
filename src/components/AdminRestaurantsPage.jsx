@@ -1,6 +1,5 @@
 import React, { useEffect, useMemo, useState } from 'react';
-import { ArrowLeft, Loader2, Save, Search } from 'lucide-react';
-import { useNavigate } from 'react-router-dom';
+import { Loader2, Save, Search, Store } from 'lucide-react';
 import { useToast } from './toast/ToastProvider';
 import { getAdminRestaurants, updateAdminRestaurant } from '../services/adminRestaurantService';
 
@@ -14,38 +13,27 @@ const EMPTY_EDITING_ROW = {
 };
 
 const AdminRestaurantsPage = ({ onRestaurantsSaved }) => {
-  const navigate = useNavigate();
   const toast = useToast();
   const [restaurants, setRestaurants] = useState([]);
   const [searchTerm, setSearchTerm] = useState('');
   const [isLoading, setIsLoading] = useState(true);
   const [savingIds, setSavingIds] = useState({});
 
+  const fetchRestaurantsList = async () => {
+    setIsLoading(true);
+    try {
+      const data = await getAdminRestaurants();
+      setRestaurants(data);
+    } catch (error) {
+      console.error('Failed to load admin restaurants', error);
+      toast.error(error.message || '获取商家列表失败，请确认您已运行 SQL 更新!');
+    } finally {
+      setIsLoading(false);
+    }
+  };
+
   useEffect(() => {
-    let active = true;
-
-    const loadRestaurants = async () => {
-      try {
-        const data = await getAdminRestaurants();
-        if (active) {
-          setRestaurants(data);
-        }
-      } catch (error) {
-        console.error('Failed to load admin restaurants', error);
-        if (active) {
-          toast.error(error.message || '�̼Һ�̨���ݶ�ȡʧ�ܣ����Ժ����ԡ�');
-        }
-      } finally {
-        if (active) {
-          setIsLoading(false);
-        }
-      }
-    };
-
-    loadRestaurants();
-    return () => {
-      active = false;
-    };
+    fetchRestaurantsList();
   }, [toast]);
 
   const visibleRestaurants = useMemo(() => {
@@ -85,10 +73,10 @@ const AdminRestaurantsPage = ({ onRestaurantsSaved }) => {
       updateLocalRestaurant(restaurant.id, updatedRestaurant);
       onRestaurantsSaved?.();
       window.dispatchEvent(new CustomEvent('restaurants-refresh'));
-      toast.success(`�ѱ��� ${updatedRestaurant.name}��`);
+      toast.success(`成功更新: ${updatedRestaurant.name}`);
     } catch (error) {
       console.error('Failed to save restaurant admin fields', error);
-      toast.error(error.message || '�̼����ñ���ʧ�ܣ����Ժ����ԡ�');
+      toast.error(error.message || '保存失败！请确保您的账号权限正常，且数据库配置正确。');
     } finally {
       setSavingIds((current) => {
         const next = { ...current };
@@ -100,64 +88,67 @@ const AdminRestaurantsPage = ({ onRestaurantsSaved }) => {
 
   if (isLoading) {
     return (
-      <div className="min-h-screen bg-[#121212] px-4 py-8 text-white">
-        <div className="mx-auto flex max-w-6xl items-center justify-center rounded-3xl border border-white/10 bg-white/5 px-6 py-20">
-          <Loader2 size={22} className="mr-3 animate-spin text-white/70" />
-          <span className="text-white/80">���ڶ�ȡ�̼Һ�̨����...</span>
+      <div className="min-h-[50vh] flex items-center justify-center bg-[#121212] px-4 py-8 text-white">
+        <div className="mx-auto flex flex-col items-center justify-center rounded-3xl border border-white/10 bg-white/5 py-20 px-10">
+          <Loader2 size={30} className="mb-3 animate-spin text-orange-500" />
+          <span className="text-white/80 font-bold">正在拉取全套商家数据...</span>
         </div>
       </div>
     );
   }
 
   return (
-    <div className="min-h-screen bg-[#121212] px-4 py-8 text-white">
-      <div className="mx-auto flex max-w-6xl flex-col gap-6">
-        <div className="flex flex-col gap-4 rounded-3xl border border-white/10 bg-white/5 p-6 shadow-xl backdrop-blur-sm lg:flex-row lg:items-center lg:justify-between">
+    <div className="px-4 py-8 text-white max-w-7xl mx-auto w-full">
+      <div className="flex flex-col gap-6">
+        <div className="flex flex-col gap-4 mb-4 sm:flex-row sm:items-center sm:justify-between">
           <div>
-            <p className="text-sm font-semibold uppercase tracking-[0.28em] text-white/45">Admin</p>
-            <h1 className="mt-2 text-3xl font-black text-white">�̼ҹ���</h1>
-            <p className="mt-2 text-sm text-white/60">�����ȹ��Ƽ�λ����ʾ״̬�Ϳ�Ƭ��ǩ���������� CMS��</p>
+            <h2 className="text-2xl font-black text-white flex items-center gap-2">
+              <Store size={22} className="text-cyan-400" /> 商家推广排版
+            </h2>
+            <p className="mt-1 text-sm text-gray-400">
+              您可以拖动设置列表顺序，或给特定商家增加引流和重点推荐标记功能。
+            </p>
           </div>
 
-          <div className="flex flex-col gap-3 sm:flex-row sm:items-center">
-            <div className="relative w-full sm:w-80">
-              <Search size={16} className="absolute left-4 top-1/2 -translate-y-1/2 text-white/35" />
+          <div className="flex items-center gap-3">
+             <button
+               onClick={fetchRestaurantsList}
+               className="rounded-full border border-white/10 bg-white/5 px-4 py-2.5 text-sm outline-none transition hover:bg-white/10"
+             >
+               重新刷新
+             </button>
+            <div className="relative w-full sm:w-64">
+              <Search size={16} className="absolute left-3 top-1/2 -translate-y-1/2 text-white/35" />
               <input
                 type="text"
                 value={searchTerm}
                 onChange={(event) => setSearchTerm(event.target.value)}
-                placeholder="�������� / ��ַ / ����"
-                className="w-full rounded-full border border-white/10 bg-white/5 py-3 pl-10 pr-4 text-sm text-white outline-none transition focus:border-white/30"
+                placeholder="搜索商家名字/地址..."
+                className="w-full rounded-full border border-white/10 bg-white/5 py-2.5 pl-10 pr-4 text-sm text-white outline-none transition focus:border-orange-500"
               />
             </div>
-
-            <button
-              type="button"
-              onClick={() => navigate('/')}
-              className="inline-flex items-center gap-2 rounded-full border border-white/15 bg-white/5 px-4 py-2 text-sm font-semibold text-white/80 transition hover:bg-white/10 hover:text-white"
-            >
-              <ArrowLeft size={16} />
-              ������ҳ
-            </button>
           </div>
         </div>
 
-        <div className="overflow-hidden rounded-3xl border border-white/10 bg-[#181818] shadow-xl">
-          <div className="grid grid-cols-[minmax(220px,2.2fr)_minmax(120px,1fr)_repeat(3,minmax(88px,0.8fr))_minmax(96px,0.8fr)_minmax(160px,1.2fr)_minmax(160px,1.2fr)_110px] gap-3 border-b border-white/10 px-4 py-3 text-xs font-bold uppercase tracking-[0.18em] text-white/40">
-            <span>�̼�</span>
-            <span>�ȶ�</span>
-            <span>�Ƽ�</span>
-            <span>����</span>
-            <span>����</span>
-            <span>����ֵ</span>
-            <span>Badge</span>
-            <span>����İ�</span>
-            <span>����</span>
+        <div className="overflow-hidden rounded-2xl border border-white/10 bg-[#1e1e1e] shadow-xl">
+          <div className="grid grid-cols-[1fr_50px_60px_60px_60px_80px_100px_120px_90px] gap-2 border-b border-gray-700 bg-black/40 px-4 py-3 text-xs font-bold text-gray-400">
+            <span>商家名称 (Name)</span>
+            <span className="text-center">热度</span>
+            <span className="text-center text-orange-400" title="在首页顶部加冕">精选</span>
+            <span className="text-center text-green-400" title="对外展示开启">营业</span>
+            <span className="text-center text-red-500" title="在前端不可见">隐藏</span>
+            <span className="text-center" title="数字越低排越前面">排序(0最前)</span>
+            <span>特殊小牌匾</span>
+            <span>广告推流文字</span>
+            <span className="text-right">操作</span>
           </div>
 
-          <div className="max-h-[70vh] overflow-auto">
+          <div className="max-h-[65vh] overflow-y-auto">
             {visibleRestaurants.length === 0 ? (
-              <div className="px-6 py-16 text-center text-sm text-white/55">û���ҵ�ƥ����̼ҡ�</div>
+              <div className="px-6 py-20 text-center text-sm text-gray-500 bg-[#121212]">
+                <span className="text-4xl block mb-2">🍽️</span>
+                您的数据库目前没有获取到任何商家。<br/>若一直如此，可能是 RLS 权限，或者没有运行之前的 SQL 升级导致接口报错为空。 
+              </div>
             ) : (
               visibleRestaurants.map((restaurant) => {
                 const row = { ...EMPTY_EDITING_ROW, ...restaurant };
@@ -166,37 +157,39 @@ const AdminRestaurantsPage = ({ onRestaurantsSaved }) => {
                 return (
                   <div
                     key={restaurant.id}
-                    className="grid grid-cols-[minmax(220px,2.2fr)_minmax(120px,1fr)_repeat(3,minmax(88px,0.8fr))_minmax(96px,0.8fr)_minmax(160px,1.2fr)_minmax(160px,1.2fr)_110px] gap-3 border-b border-white/5 px-4 py-4 text-sm"
+                    className="grid grid-cols-[1fr_50px_60px_60px_60px_80px_100px_120px_90px] items-center gap-2 border-b border-gray-800 hover:bg-white/5 transition-colors px-4 py-3 text-sm"
                   >
-                    <div className="min-w-0">
+                    <div className="min-w-0 pr-2">
                       <p className="truncate font-semibold text-white">{row.name}</p>
-                      <p className="mt-1 truncate text-xs text-white/45">{row.address || 'δ��д��ַ'}</p>
+                      <p className="mt-0.5 truncate text-[11px] text-gray-500">{row.category || '暂无分类'}</p>
                     </div>
 
-                    <div className="flex items-center text-white/75">{row.hot_score ?? 0}</div>
+                    <div className="flex justify-center text-orange-300 font-mono text-xs">{row.hot_score ?? 0}</div>
 
-                    <label className="flex items-center justify-center">
-                      <input type="checkbox" checked={Boolean(row.is_featured)} onChange={(event) => updateLocalRestaurant(row.id, { is_featured: event.target.checked })} className="h-4 w-4 rounded border-white/20 bg-transparent accent-white" />
+                    <label className="flex items-center justify-center cursor-pointer">
+                      <input type="checkbox" checked={Boolean(row.is_featured)} onChange={(event) => updateLocalRestaurant(row.id, { is_featured: event.target.checked })} className="h-4 w-4 rounded border-gray-600 bg-gray-700 text-orange-500 focus:ring-orange-500" />
                     </label>
 
-                    <label className="flex items-center justify-center">
-                      <input type="checkbox" checked={Boolean(row.is_active)} onChange={(event) => updateLocalRestaurant(row.id, { is_active: event.target.checked })} className="h-4 w-4 rounded border-white/20 bg-transparent accent-white" />
+                    <label className="flex items-center justify-center cursor-pointer">
+                      <input type="checkbox" checked={Boolean(row.is_active)} onChange={(event) => updateLocalRestaurant(row.id, { is_active: event.target.checked })} className="h-4 w-4 rounded border-gray-600 bg-gray-700 text-green-500 focus:ring-green-500" />
                     </label>
 
-                    <label className="flex items-center justify-center">
-                      <input type="checkbox" checked={Boolean(row.is_hidden)} onChange={(event) => updateLocalRestaurant(row.id, { is_hidden: event.target.checked })} className="h-4 w-4 rounded border-white/20 bg-transparent accent-white" />
+                    <label className="flex items-center justify-center cursor-pointer">
+                      <input type="checkbox" checked={Boolean(row.is_hidden)} onChange={(event) => updateLocalRestaurant(row.id, { is_hidden: event.target.checked })} className="h-4 w-4 rounded border-gray-600 bg-gray-700 text-red-500 focus:ring-red-500" />
                     </label>
 
-                    <input type="number" value={row.sort_priority ?? 0} onChange={(event) => updateLocalRestaurant(row.id, { sort_priority: event.target.value })} className="rounded-2xl border border-white/10 bg-white/5 px-3 py-2 text-sm text-white outline-none transition focus:border-white/30" />
+                    <input type="number" value={row.sort_priority ?? 0} onChange={(event) => updateLocalRestaurant(row.id, { sort_priority: event.target.value })} className="w-full text-center rounded bg-[#121212] border border-gray-700 px-1 py-1.5 text-xs text-white outline-none focus:border-white/50" />
 
-                    <input type="text" value={row.badge_label || ''} onChange={(event) => updateLocalRestaurant(row.id, { badge_label: event.target.value })} className="rounded-2xl border border-white/10 bg-white/5 px-3 py-2 text-sm text-white outline-none transition focus:border-white/30" placeholder="���磺�����Ƽ�" />
+                    <input type="text" value={row.badge_label || ''} onChange={(event) => updateLocalRestaurant(row.id, { badge_label: event.target.value })} className="w-full rounded bg-[#121212] border border-gray-700 px-2 py-1.5 text-xs text-white outline-none focus:border-white/50" placeholder="e.g. VIP" />
 
-                    <input type="text" value={row.ad_label || ''} onChange={(event) => updateLocalRestaurant(row.id, { ad_label: event.target.value })} className="rounded-2xl border border-white/10 bg-white/5 px-3 py-2 text-sm text-white outline-none transition focus:border-white/30" placeholder="���磺�����Ƽ�" />
+                    <input type="text" value={row.ad_label || ''} onChange={(event) => updateLocalRestaurant(row.id, { ad_label: event.target.value })} className="w-full rounded bg-[#121212] border border-gray-700 px-2 py-1.5 text-xs text-white outline-none focus:border-white/50" placeholder="促销中" />
 
-                    <button type="button" onClick={() => handleSave(row)} disabled={isSaving} className="inline-flex items-center justify-center gap-2 rounded-full bg-white px-3 py-2 text-xs font-bold text-black transition hover:bg-gray-200 disabled:cursor-not-allowed disabled:opacity-70">
-                      {isSaving ? <Loader2 size={14} className="animate-spin" /> : <Save size={14} />}
-                      {isSaving ? '������' : '����'}
-                    </button>
+                    <div className="flex justify-end">
+                       <button type="button" onClick={() => handleSave(row)} disabled={isSaving} className="flex h-8 items-center justify-center w-full gap-1 rounded bg-[#2d2d2d] hover:bg-[#3d3d3d] border border-gray-600 text-xs font-bold text-gray-200 transition disabled:opacity-50">
+                         {isSaving ? <Loader2 size={12} className="animate-spin" /> : <Save size={12} />}
+                         {isSaving ? '...' : '保存'}
+                       </button>
+                    </div>
                   </div>
                 );
               })
