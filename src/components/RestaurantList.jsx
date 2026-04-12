@@ -326,7 +326,10 @@ const RestaurantCard = ({
         <div className="mb-1 flex items-start justify-between">
           <div className="mr-2 flex-1">
             <h3 className="line-clamp-2 text-lg font-bold leading-tight text-white">
-              {i18n.language === 'en' && restaurant.name_en ? restaurant.name_en : restaurant.name}
+              <span className="mr-2">{restaurant.name}</span>
+              {restaurant.name_en && (
+                <span className="text-sm font-medium text-gray-400">{restaurant.name_en}</span>
+              )}
             </h3>
           </div>
         </div>
@@ -349,11 +352,7 @@ const RestaurantCard = ({
           </span>
         </div>
 
-        {restaurant.name_en && (
-          <p className="mb-3 line-clamp-1 text-xs font-medium leading-tight text-gray-400">
-            {restaurant.name_en}
-          </p>
-        )}
+
 
         {(restaurant.categories?.length > 0 || restaurant.isVegetarian || (restaurant.halalStatus && restaurant.halalStatus !== 'non_halal')) && (
           <div className="mb-2 flex flex-wrap gap-1">
