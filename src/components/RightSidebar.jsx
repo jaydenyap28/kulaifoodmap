@@ -1,11 +1,13 @@
 import React, { useState, useEffect } from 'react';
 import { supabase } from '../lib/supabaseClient';
+import { getSiteSettings } from '../services/siteSettingsService';
 import { MessageCircle, X, Coffee, ExternalLink, ChevronRight } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
 
 const RightSidebar = ({ onSupportClick }) => {
   const [ads, setAds] = useState([]);
   const [loading, setLoading] = useState(true);
+  const [settings, setSettings] = useState(null);
   const [currentIndex, setCurrentIndex] = useState(0);
   const [showCommunity, setShowCommunity] = useState(true);
 
@@ -16,15 +18,14 @@ const RightSidebar = ({ onSupportClick }) => {
         return;
       }
       try {
-        const { data, error } = await supabase
-          .from('global_ads')
-          .select('*')
-          .eq('position', 'sidebar')
-          .eq('is_active', true)
-          .order('id', { ascending: false });
-
-        if (error) throw error;
-        setAds(data || []);
+        const [settingsData, adsResponse] = await Promise.all([
+          getSiteSettings().catch(() => null),
+          supabase.from('global_ads').select('*').eq('position', 'sidebar').eq('is_active', true).order('id', { ascending: false })
+        ]);
+        
+        if (settingsData) setSettings(settingsData);
+        if (adsResponse.data) setAds(adsResponse.data);
+        if (adsResponse.error) throw adsResponse.error;
       } catch (err) {
         console.error('Failed to fetch sidebar ads:', err);
       } finally {
@@ -105,12 +106,14 @@ const RightSidebar = ({ onSupportClick }) => {
               <h4 className="text-[15px] font-bold text-white mb-1 drop-shadow-sm">加入古来吃货群!</h4>
               <p className="text-xs text-emerald-100/90 leading-tight mb-3">不定期搞活动送福利，还能一起拼桌约饭。</p>
               <a 
-                href="#"
+                href={settings?.whatsapp_link || "#"}
                 onClick={(e) => {
-                    e.preventDefault();
-                    // 这里可以放真实的加群链接，如果没有就弹窗或留空
-                    alert('加群链接即将开放，敬请期待！');
+                    if (!settings?.whatsapp_link) {
+                      e.preventDefault();
+                      alert('站长还未配置加群链接哦！');
+                    }
                 }}
+                target={settings?.whatsapp_link ? "_blank" : undefined}
                 className="inline-flex items-center gap-1.5 rounded-full bg-white px-4 py-1.5 text-xs font-bold text-emerald-800 transition-transform hover:scale-105 shadow-sm active:scale-95"
               >
                 马上加入 👉

@@ -46,7 +46,7 @@ const AdminRestaurantsPage = ({ onRestaurantsSaved }) => {
     }
 
     return restaurants.filter((restaurant) =>
-      [restaurant.name, restaurant.address, restaurant.category]
+      [restaurant.name, restaurant.name_en, restaurant.address, restaurant.category]
         .filter(Boolean)
         .some((field) => field.toLowerCase().includes(term))
     );
@@ -200,6 +200,9 @@ const AdminRestaurantsPage = ({ onRestaurantsSaved }) => {
                   >
                     <div className="min-w-0 pr-2">
                       <p className="truncate font-semibold text-white">{row.name}</p>
+                      {row.name_en && (
+                        <p className="truncate text-xs text-gray-400">{row.name_en}</p>
+                      )}
                       <p className="mt-0.5 truncate text-[11px] text-gray-500">{row.category || '暂无分类'}</p>
                     </div>
 

@@ -662,11 +662,18 @@ function App() {
   const heroBackground = siteSettings.hero_bg_url || DEFAULT_HERO_BG;
 
   return (
-    <div className="min-h-screen bg-[#121212] font-sans text-gray-100">
-      <div
-        className="relative w-full bg-cover bg-center px-4 pt-4 pb-8"
-        style={{ backgroundImage: heroEnabled ? `linear-gradient(to bottom, rgba(18,18,18,0.3), #121212), url("${heroBackground}")` : 'linear-gradient(to bottom, rgba(18,18,18,0.3), #121212)' }}
-      >
+    <div className="min-h-screen bg-[#121212] font-sans text-gray-100 relative">
+      {/* Background Layer properly sized to avoid stretching/blur */}
+      {heroEnabled && (
+        <div
+          className="absolute inset-x-0 top-0 h-[400px] w-full bg-cover bg-top pointer-events-none z-0 lg:h-[600px]"
+          style={{ 
+            backgroundImage: `linear-gradient(to bottom, rgba(18,18,18,0) 0%, rgba(18,18,18,0.7) 75%, #121212 100%), url("${heroBackground}")` 
+          }}
+        ></div>
+      )}
+
+      <div className="relative z-10 w-full pt-4 pb-12">
         {isAdmin && (
           <div className="absolute top-4 right-4 z-50 flex gap-2 rounded-full border border-white/10 bg-black/40 p-1.5 shadow-lg backdrop-blur-md">
             <button onClick={() => setShowAnalyticsModal(true)} className="rounded-full bg-purple-600/80 p-2 text-white transition hover:bg-purple-700/80" title="数据统计与热度"><BarChart2 size={18} /></button>
@@ -686,7 +693,7 @@ function App() {
           </div>
         )}
 
-        <header className="relative z-10 mb-6 flex flex-col gap-4 md:flex-row md:items-start md:justify-between">
+        <header className="mb-6 flex flex-col gap-4 px-4 md:flex-row md:items-start md:justify-between">
           <div>
             <h1 onClick={handleAdminLoginClick} className="cursor-pointer text-4xl font-black tracking-tight text-white transition-opacity hover:opacity-90 md:text-5xl" style={{ textShadow: '2px 2px 4px rgba(0,0,0,0.7)' }}>
               {siteSettings.hero_title || t('app_title')}
@@ -732,6 +739,10 @@ function App() {
 
         <div className="mx-auto w-full max-w-[1600px] px-2 md:px-4 mt-2 mb-10 flex flex-col lg:flex-row gap-6 xl:gap-8">
           <main className="flex-1 min-w-0 flex flex-col">
+          
+            {/* Above Wheel Ad Position */}
+            <GlobalAdBanner position="above_wheel" />
+
             {heroEnabled && (
               <div className="relative mb-5 flex min-h-[350px] w-full flex-col items-center md:min-h-[450px]">
                 {filteredRestaurants.length > 1 ? (
@@ -828,7 +839,7 @@ function App() {
       </Suspense>
 
       <Suspense fallback={null}>
-        <SupportModal isOpen={showSupportModal} onClose={() => setShowSupportModal(false)} isAdmin={isAdmin} supportQR={supportQR} onUpdateQR={handleUpdateSupportQR} />
+        <SupportModal isOpen={showSupportModal} onClose={() => setShowSupportModal(false)} isAdmin={isAdmin} supportQR={siteSettings.tng_qr_url || supportQR} onUpdateQR={handleUpdateSupportQR} />
       </Suspense>
 
       <Suspense fallback={null}>

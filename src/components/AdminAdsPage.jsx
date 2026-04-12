@@ -258,8 +258,9 @@ const AdminAdsPage = () => {
                        onChange={e => setEditingAd({...editingAd, position: e.target.value})}
                        className="w-full bg-[#121212] border border-gray-700 rounded-xl px-4 py-2.5 text-sm text-white focus:outline-none focus:border-orange-500"
                     >
+                       <option value="above_wheel">above_wheel (大转盘上方)</option>
                        <option value="under_wheel">under_wheel (大转盘下方)</option>
-                       {/* You can add more slots in the future: top_banner, popup, etc. */}
+                       <option value="sidebar">sidebar (侧边栏)</option>
                     </select>
                  </div>
 

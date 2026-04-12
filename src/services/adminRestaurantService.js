@@ -36,16 +36,24 @@ export const getAdminRestaurants = async () => {
     throw error;
   }
 
+  const loadMod = await import('../data/runtimeRestaurants').catch(() => null);
+  const initialRestaurants = loadMod ? (await loadMod.loadRestaurantsModule()).initialRestaurants : [];
+  const baseBySourceId = new Map();
+  initialRestaurants.forEach((r) => baseBySourceId.set(r.id, r));
+
   return (data || []).map((restaurant) => {
+    const sourceRestaurant = baseBySourceId.get(restaurant.source_restaurant_id) || baseBySourceId.get(restaurant.id) || {};
     const extraDetails = restaurant.extra_details || {};
     return {
+      ...sourceRestaurant,
       ...restaurant,
       ...extraDetails,
       // Give precedence to the hard columns
-      name: restaurant.name || extraDetails.name || '',
-      category: restaurant.category || extraDetails.category || '',
-      address: restaurant.address || extraDetails.address || '',
-      image_url: restaurant.image_url || extraDetails.image_url || extraDetails.image || '',
+      name: restaurant.name || extraDetails.name || sourceRestaurant.name || sourceRestaurant.desc || '',
+      name_en: extraDetails.name_en || sourceRestaurant.name_en || sourceRestaurant.desc2 || '',
+      category: restaurant.category || extraDetails.category || sourceRestaurant.categories?.join(' | ') || '',
+      address: restaurant.address || extraDetails.address || sourceRestaurant.address || '',
+      image_url: restaurant.image_url || extraDetails.image_url || extraDetails.image || sourceRestaurant.image || '',
     };
   });
 };

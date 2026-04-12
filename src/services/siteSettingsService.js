@@ -5,9 +5,11 @@ export const DEFAULT_SITE_SETTINGS = {
   hero_title: '古来美食地图',
   hero_subtitle: 'Kulai Food Map',
   hero_enabled: true,
+  whatsapp_link: 'https://chat.whatsapp.com/GzBIsY60q0P7uI8SOfE2C7',
+  tng_qr_url: '',
 };
 
-const SETTINGS_COLUMNS = 'id, hero_bg_url, hero_title, hero_subtitle, hero_enabled, updated_at';
+const SETTINGS_COLUMNS = 'id, hero_bg_url, hero_title, hero_subtitle, hero_enabled, whatsapp_link, tng_qr_url, updated_at';
 
 export const normalizeSiteSettings = (settings) => ({
   ...DEFAULT_SITE_SETTINGS,
@@ -59,6 +61,8 @@ export const saveSiteSettings = async (payload) => {
         hero_title: normalizedPayload.hero_title,
         hero_subtitle: normalizedPayload.hero_subtitle,
         hero_enabled: normalizedPayload.hero_enabled,
+        whatsapp_link: normalizedPayload.whatsapp_link,
+        tng_qr_url: normalizedPayload.tng_qr_url,
       })
       .eq('id', existingRecord.id)
       .select(SETTINGS_COLUMNS)
@@ -78,6 +82,8 @@ export const saveSiteSettings = async (payload) => {
       hero_title: normalizedPayload.hero_title,
       hero_subtitle: normalizedPayload.hero_subtitle,
       hero_enabled: normalizedPayload.hero_enabled,
+      whatsapp_link: normalizedPayload.whatsapp_link,
+      tng_qr_url: normalizedPayload.tng_qr_url,
     })
     .select(SETTINGS_COLUMNS)
     .single();
