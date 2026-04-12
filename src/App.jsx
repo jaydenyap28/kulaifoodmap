@@ -37,6 +37,7 @@ const AuthUserPanel = lazy(() => import('./components/AuthUserPanel'));
 const AdminSettingsPage = lazy(() => import('./components/AdminSettingsPage'));
 const AdminRestaurantsPage = lazy(() => import('./components/AdminRestaurantsPage'));
 const AdminAdsPage = lazy(() => import('./components/AdminAdsPage'));
+import RightSidebar from './components/RightSidebar';
 
 const initializeCategories = (sourceRestaurants) => {
   const finalCategories = [];
@@ -729,79 +730,84 @@ function App() {
           />
         </div>
 
-        {heroEnabled && (
-          <div className="relative mb-5 flex min-h-[350px] w-full flex-col items-center md:min-h-[450px]">
-            {filteredRestaurants.length > 1 ? (
-              <HeroCardStack
-                restaurants={filteredRestaurants}
-                onChoose={handleChoose}
-                onRefreshRestaurants={refreshRestaurants}
-                onSupportClick={() => {
-                  trackEvent('support_click', { source: 'hero_slot' });
-                  setShowSupportModal(true);
-                }}
-              />
-            ) : (
-              <div className="flex h-64 flex-col items-center justify-center p-8 text-center">
-                <div className="mb-4 text-6xl">??</div>
-                <h3 className="mb-2 text-2xl font-bold text-white">商家不足以转动</h3>
-                <p className="mx-auto max-w-xs text-base text-gray-400">当前筛选条件下商家少于 2 家，请尝试其他分类、地区，或先清除筛选。</p>
-                <button onClick={() => { setSelectedCategory([]); setSelectedArea(null); setShowOpenOnly(false); setHideDrinksDesserts(false); setHalalFilter(null); }} className="mt-6 rounded-full bg-white px-8 py-3 font-bold text-black shadow-md transition hover:bg-gray-200">清除筛选</button>
+        <div className="mx-auto w-full max-w-[1600px] px-2 md:px-4 mt-2 mb-10 flex flex-col lg:flex-row gap-6 xl:gap-8">
+          <main className="flex-1 min-w-0 flex flex-col">
+            {heroEnabled && (
+              <div className="relative mb-5 flex min-h-[350px] w-full flex-col items-center md:min-h-[450px]">
+                {filteredRestaurants.length > 1 ? (
+                  <HeroCardStack
+                    restaurants={filteredRestaurants}
+                    onChoose={handleChoose}
+                    onRefreshRestaurants={refreshRestaurants}
+                    onSupportClick={() => {
+                      trackEvent('support_click', { source: 'hero_slot' });
+                      setShowSupportModal(true);
+                    }}
+                  />
+                ) : (
+                  <div className="flex h-64 flex-col items-center justify-center p-8 text-center">
+                    <div className="mb-4 text-6xl">😕</div>
+                    <h3 className="mb-2 text-2xl font-bold text-white">商家不足以转动</h3>
+                    <p className="mx-auto max-w-xs text-base text-gray-400">当前筛选条件下商家少于 2 家，请尝试其他分类、地区，或先清除筛选。</p>
+                    <button onClick={() => { setSelectedCategory([]); setSelectedArea(null); setShowOpenOnly(false); setHideDrinksDesserts(false); setHalalFilter(null); }} className="mt-6 rounded-full bg-white px-8 py-3 font-bold text-black shadow-md transition hover:bg-gray-200">清除筛选</button>
+                  </div>
+                )}
               </div>
             )}
-          </div>
-        )}
 
-        <GlobalAdBanner position="under_wheel" />
+            <GlobalAdBanner position="under_wheel" />
 
-        <div className="relative z-30 mb-8 flex flex-col items-center gap-4">
-          <div className="flex flex-wrap justify-center gap-3">
-            <button onClick={() => setShowOpenOnly(!showOpenOnly)} className={`flex items-center gap-1.5 rounded-full border px-4 py-2 text-sm font-bold shadow-sm transition-all ${showOpenOnly ? 'border-emerald-500/50 bg-emerald-900/50 text-emerald-400 ring-1 ring-emerald-500/50' : 'border-[#333] bg-[#1e1e1e] text-gray-400 hover:bg-[#2d2d2d]'}`}><Clock size={16} className={showOpenOnly ? 'fill-current' : ''} />{t('filter.open_now')}</button>
-            <button onClick={() => setHideDrinksDesserts(!hideDrinksDesserts)} className={`flex items-center gap-1.5 rounded-full border px-4 py-2 text-sm font-bold shadow-sm transition-all ${hideDrinksDesserts ? 'border-orange-500/50 bg-orange-900/50 text-orange-400 ring-1 ring-orange-500/50' : 'border-[#333] bg-[#1e1e1e] text-gray-400 hover:bg-[#2d2d2d]'}`}><Coffee size={16} />{t('filter.no_drinks_desserts')}</button>
-            <div className="relative">
-              <button onClick={() => setShowHalalMenu(!showHalalMenu)} className={`flex items-center gap-1.5 rounded-full border px-4 py-2 text-sm font-bold shadow-sm transition-all ${halalFilter ? 'border-green-500/50 bg-green-900/50 text-green-400 ring-1 ring-green-500/50' : 'border-[#333] bg-[#1e1e1e] text-gray-400 hover:bg-[#2d2d2d]'}`}><UtensilsCrossed size={16} />{halalFilter ? t(`filter.halal_options.${halalFilter}`) : t('filter.halal_status')}</button>
-              {showHalalMenu && (
-                <>
-                  <div className="fixed inset-0 z-40" onClick={() => setShowHalalMenu(false)} />
-                  <div className="absolute top-full left-1/2 z-50 mt-2 flex min-w-[12rem] w-max -translate-x-1/2 flex-col overflow-hidden rounded-xl border border-gray-700 bg-[#1e1e1e] p-1 shadow-xl md:top-0 md:left-full md:ml-2 md:translate-x-0">
-                    <button onClick={() => { setHalalFilter(null); setShowHalalMenu(false); }} className={`rounded-lg px-4 py-2 text-center text-sm hover:bg-white/10 ${!halalFilter ? 'font-bold text-white' : 'text-gray-400'}`}>{t('filter.all')}</button>
-                    {['certified', 'muslim_owned', 'no_pork', 'non_halal'].map((status) => (
-                      <button key={status} onClick={() => { setHalalFilter(status); setShowHalalMenu(false); }} className={`rounded-lg px-4 py-2 text-center text-sm hover:bg-white/10 ${halalFilter === status ? 'font-bold text-green-400' : 'text-gray-400'}`}>{t(`filter.halal_options.${status}`)}</button>
-                    ))}
-                  </div>
-                </>
-              )}
+            <div className="relative z-30 mb-8 flex flex-col items-center gap-4">
+              <div className="flex flex-wrap justify-center gap-3">
+                <button onClick={() => setShowOpenOnly(!showOpenOnly)} className={`flex items-center gap-1.5 rounded-full border px-4 py-2 text-sm font-bold shadow-sm transition-all ${showOpenOnly ? 'border-emerald-500/50 bg-emerald-900/50 text-emerald-400 ring-1 ring-emerald-500/50' : 'border-[#333] bg-[#1e1e1e] text-gray-400 hover:bg-[#2d2d2d]'}`}><Clock size={16} className={showOpenOnly ? 'fill-current' : ''} />{t('filter.open_now')}</button>
+                <button onClick={() => setHideDrinksDesserts(!hideDrinksDesserts)} className={`flex items-center gap-1.5 rounded-full border px-4 py-2 text-sm font-bold shadow-sm transition-all ${hideDrinksDesserts ? 'border-orange-500/50 bg-orange-900/50 text-orange-400 ring-1 ring-orange-500/50' : 'border-[#333] bg-[#1e1e1e] text-gray-400 hover:bg-[#2d2d2d]'}`}><Coffee size={16} />{t('filter.no_drinks_desserts')}</button>
+                <div className="relative">
+                  <button onClick={() => setShowHalalMenu(!showHalalMenu)} className={`flex items-center gap-1.5 rounded-full border px-4 py-2 text-sm font-bold shadow-sm transition-all ${halalFilter ? 'border-green-500/50 bg-green-900/50 text-green-400 ring-1 ring-green-500/50' : 'border-[#333] bg-[#1e1e1e] text-gray-400 hover:bg-[#2d2d2d]'}`}><UtensilsCrossed size={16} />{halalFilter ? t(`filter.halal_options.${halalFilter}`) : t('filter.halal_status')}</button>
+                  {showHalalMenu && (
+                    <>
+                      <div className="fixed inset-0 z-40" onClick={() => setShowHalalMenu(false)} />
+                      <div className="absolute top-full left-1/2 z-50 mt-2 flex min-w-[12rem] w-max -translate-x-1/2 flex-col overflow-hidden rounded-xl border border-gray-700 bg-[#1e1e1e] p-1 shadow-xl md:top-0 md:left-full md:ml-2 md:translate-x-0">
+                        <button onClick={() => { setHalalFilter(null); setShowHalalMenu(false); }} className={`rounded-lg px-4 py-2 text-center text-sm hover:bg-white/10 ${!halalFilter ? 'font-bold text-white' : 'text-gray-400'}`}>{t('filter.all')}</button>
+                        {['certified', 'muslim_owned', 'no_pork', 'non_halal'].map((status) => (
+                          <button key={status} onClick={() => { setHalalFilter(status); setShowHalalMenu(false); }} className={`rounded-lg px-4 py-2 text-center text-sm hover:bg-white/10 ${halalFilter === status ? 'font-bold text-green-400' : 'text-gray-400'}`}>{t(`filter.halal_options.${status}`)}</button>
+                        ))}
+                      </div>
+                    </>
+                  )}
+                </div>
+              </div>
+
+              <button onClick={() => setShowAiAssistant(true)} className="group mx-auto flex w-full max-w-sm items-center justify-center gap-2 rounded-xl border border-white/10 bg-gradient-to-r from-purple-900/80 to-blue-900/80 px-6 py-3 font-bold text-white shadow-lg transition-all duration-300 hover:scale-[1.02] hover:border-white/30 hover:shadow-purple-500/20 active:scale-95">
+                <Sparkles size={18} className="text-purple-300 transition-colors group-hover:text-white" />
+                <span className="bg-gradient-to-r from-purple-200 to-blue-200 bg-clip-text text-transparent group-hover:bg-none group-hover:text-white">{t('hero.ai_tagline')}</span>
+              </button>
             </div>
-          </div>
 
-          <button onClick={() => setShowAiAssistant(true)} className="group mx-auto flex w-full max-w-sm items-center justify-center gap-2 rounded-xl border border-white/10 bg-gradient-to-r from-purple-900/80 to-blue-900/80 px-6 py-3 font-bold text-white shadow-lg transition-all duration-300 hover:scale-[1.02] hover:border-white/30 hover:shadow-purple-500/20 active:scale-95">
-            <Sparkles size={18} className="text-purple-300 transition-colors group-hover:text-white" />
-            <span className="bg-gradient-to-r from-purple-200 to-blue-200 bg-clip-text text-transparent group-hover:bg-none group-hover:text-white">{t('hero.ai_tagline')}</span>
-          </button>
+            <RestaurantList
+              restaurants={filteredRestaurants}
+              allRestaurants={restaurants}
+              isAdmin={isAdmin}
+              onUpdateRestaurant={handleUpdateRestaurant}
+              onDeleteRestaurant={handleDeleteRestaurant}
+              onRestaurantClick={handleRestaurantClick}
+              onAddRestaurant={handleAddRestaurant}
+              onCategoryClick={handleCategoryClick}
+              onReorder={handleReorder}
+              onUpdateArea={handleUpdateArea}
+              onRefreshRestaurants={refreshRestaurants}
+            />
+          </main>
+
+          <aside className="w-full lg:w-[320px] xl:w-[340px] shrink-0 mt-8 lg:mt-0">
+             <RightSidebar 
+                onSupportClick={() => {
+                  trackEvent('support_click', { source: 'sidebar_support_button' });
+                  setShowSupportModal(true);
+                }} 
+             />
+          </aside>
+          
         </div>
-
-        <div className="relative z-20 mb-8 flex justify-center">
-          <button onClick={() => { trackEvent('support_click', { source: 'support_button' }); setShowSupportModal(true); }} className="flex items-center gap-2 rounded-full border border-white/20 bg-gradient-to-r from-amber-500 to-orange-600 px-6 py-2.5 font-bold text-white shadow-lg transition-all duration-300 hover:scale-105 active:scale-95">
-            <Coffee size={18} />
-            <span>{t('hero.support_btn')}</span>
-          </button>
-        </div>
-      </div>
-
-      <div className="relative z-10 mx-auto w-full max-w-[1600px] bg-[#121212]">
-        <RestaurantList
-          restaurants={filteredRestaurants}
-          allRestaurants={restaurants}
-          isAdmin={isAdmin}
-          onUpdateRestaurant={handleUpdateRestaurant}
-          onDeleteRestaurant={handleDeleteRestaurant}
-          onRestaurantClick={handleRestaurantClick}
-          onAddRestaurant={handleAddRestaurant}
-          onCategoryClick={handleCategoryClick}
-          onReorder={handleReorder}
-          onUpdateArea={handleUpdateArea}
-          onRefreshRestaurants={refreshRestaurants}
-        />
       </div>
 
       <button onClick={() => setShowAiAssistant(true)} className="group fixed bottom-6 left-6 z-40 flex items-center gap-2 rounded-full border border-white/20 bg-gradient-to-tr from-purple-600 to-blue-600 p-4 text-white shadow-2xl transition-all duration-300 hover:scale-105 hover:shadow-purple-500/50">
