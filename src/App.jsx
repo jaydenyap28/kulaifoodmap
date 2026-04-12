@@ -36,7 +36,7 @@ const AiFoodAssistant = lazy(() => import('./components/AiFoodAssistant'));
 const AuthUserPanel = lazy(() => import('./components/AuthUserPanel'));
 const AdminSettingsPage = lazy(() => import('./components/AdminSettingsPage'));
 const AdminRestaurantsPage = lazy(() => import('./components/AdminRestaurantsPage'));
-const RestaurantLeaderboard = lazy(() => import('./components/RestaurantLeaderboard'));
+const AdminAdsPage = lazy(() => import('./components/AdminAdsPage'));
 
 const initializeCategories = (sourceRestaurants) => {
   const finalCategories = [];
@@ -126,7 +126,7 @@ function App() {
   const restaurantsRef = useRef([]);
   const sourceRestaurantsRef = useRef([]);
   const selectedRestaurantRef = useRef(null);
-  const isAdminRoute = location.pathname === '/admin/settings' || location.pathname === '/admin/restaurants';
+  const isAdminRoute = location.pathname === '/admin/settings' || location.pathname === '/admin/restaurants' || location.pathname === '/admin/ads';
   const isBackendAdmin = authProfile?.role === 'admin';
 
   useEffect(() => {
@@ -414,7 +414,7 @@ function App() {
     }
 
     if (hideDrinksDesserts) {
-      const drinksKeywords = ['楗�搧', '楗�枡', 'drink', 'beverage', '楗�搧搴?'];
+      const drinksKeywords = ['楗搧', '楗枡', 'drink', 'beverage', '楗搧搴?'];
       const dessertsKeywords = ['鐢滅偣', '铔嬬硶', 'dessert', 'cake', 'ice cream', 'waffle'];
       if (restaurant.categories && restaurant.categories.some((category) => {
         if (!category || typeof category !== 'string') return false;
@@ -427,7 +427,7 @@ function App() {
 
     if (selectedCategory.length > 0) {
       const hasCategoryMatch = restaurant.categories && selectedCategory.some((category) => restaurant.categories.includes(category));
-      const hasDietaryMatch = (selectedCategory.includes('绱犻�') || selectedCategory.includes('Vegetarian'))
+      const hasDietaryMatch = (selectedCategory.includes('绱犻') || selectedCategory.includes('Vegetarian'))
         && (restaurant.dietaryOption === 'vegetarian_only' || restaurant.dietaryOption === 'vegetarian_friendly');
       if (!hasCategoryMatch && !hasDietaryMatch) return false;
     }
@@ -636,12 +636,21 @@ function App() {
             >
               <span className="inline-flex items-center gap-2"><Store size={15} />商家管理</span>
             </button>
+            <button
+              type="button"
+              onClick={() => navigate('/admin/ads')}
+              className={`rounded-full px-4 py-2 text-sm font-semibold transition ${location.pathname === '/admin/ads' ? 'bg-white text-black' : 'border border-white/15 bg-white/5 text-white/75 hover:bg-white/10 hover:text-white'}`}
+            >
+              <span className="inline-flex items-center gap-2">📢 广告管理</span>
+            </button>
           </div>
         </div>
 
         <Suspense fallback={null}>
           {location.pathname === '/admin/settings'
             ? <AdminSettingsPage onSettingsSaved={setSiteSettings} />
+            : location.pathname === '/admin/ads'
+            ? <AdminAdsPage />
             : <AdminRestaurantsPage onRestaurantsSaved={() => refreshRestaurants()} />}
         </Suspense>
       </div>
@@ -744,10 +753,6 @@ function App() {
         )}
 
         <GlobalAdBanner position="under_wheel" />
-
-        <Suspense fallback={null}>
-           <RestaurantLeaderboard limit={10} />
-        </Suspense>
 
         <div className="relative z-30 mb-8 flex flex-col items-center gap-4">
           <div className="flex flex-wrap justify-center gap-3">

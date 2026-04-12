@@ -201,6 +201,7 @@ export const buildRestaurantPatchData = (restaurants, initialRestaurants) => {
         'isVegetarian',
         'isNoBeef',
         'area',
+        'affiliate_url'
       ].forEach(check);
 
       return hasChanges ? changes : null;
@@ -236,6 +237,7 @@ export const buildRestaurantDiffChanges = (restaurants, initialRestaurants) =>
       'menu_link',
       'website_link',
       'delivery_link',
+      'affiliate_url',
       'isVegetarian',
       'isNoBeef',
       'manualStatus',
