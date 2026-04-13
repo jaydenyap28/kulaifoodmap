@@ -2,8 +2,6 @@ import React, { useEffect, useState } from 'react';
 import { supabase } from '../lib/supabaseClient';
 import { Loader2, Plus, Edit2, Trash2, Save, X, ExternalLink, RefreshCw } from 'lucide-react';
 import { useToast } from './toast/ToastProvider';
-import { getSiteSettings, saveSiteSettings } from '../services/siteSettingsService';
-
 const AdminAdsPage = () => {
   const toast = useToast();
   const [ads, setAds] = useState([]);
@@ -13,10 +11,6 @@ const AdminAdsPage = () => {
   const [editingAd, setEditingAd] = useState(null);
   const [isModalOpen, setIsModalOpen] = useState(false);
 
-  // Settings
-  const [settingsForm, setSettingsForm] = useState({});
-  const [isSettingsLoading, setIsSettingsLoading] = useState(true);
-  const [isConfigSaving, setIsConfigSaving] = useState(false);
 
   // default new ad blueprint
   const defaultAd = {
@@ -29,20 +23,14 @@ const AdminAdsPage = () => {
 
   const fetchAdsAndSettings = async () => {
     setIsLoading(true);
-    setIsSettingsLoading(true);
     try {
-      const [settingsData, adsData] = await Promise.all([
-        getSiteSettings(),
-        supabase.from('global_ads').select('*').order('id', { ascending: false })
-      ]);
-      setSettingsForm(settingsData || {});
+      const adsData = await supabase.from('global_ads').select('*').order('id', { ascending: false });
       setAds(adsData.data || []);
     } catch (err) {
       console.error('Failed to fetch data:', err);
       toast.error('获取数据失败');
     } finally {
       setIsLoading(false);
-      setIsSettingsLoading(false);
     }
   };
 
@@ -50,24 +38,6 @@ const AdminAdsPage = () => {
     fetchAdsAndSettings();
   }, [toast]);
 
-  const handleSettingsChange = (field, value) => {
-    setSettingsForm(prev => ({ ...prev, [field]: value }));
-  };
-
-  const handleSaveSettings = async () => {
-    setIsConfigSaving(true);
-    try {
-      const updated = await saveSiteSettings(settingsForm);
-      setSettingsForm(updated);
-      toast.success('原生模块配置已保存');
-      window.dispatchEvent(new CustomEvent('site-settings-refresh'));
-    } catch (err) {
-      console.error(err);
-      toast.error('保存配置失败');
-    } finally {
-      setIsConfigSaving(false);
-    }
-  };
 
   const handleOpenEdit = (ad = null) => {
     setEditingAd(ad ? { ...ad } : { ...defaultAd });
@@ -352,125 +322,7 @@ const AdminAdsPage = () => {
         </div>
       )}
 
-      {/* 原生侧边栏组件配置 */}
-      <div className="mt-16 flex flex-col sm:flex-row sm:items-center justify-between gap-4 mb-6">
-        <div>
-          <h2 className="text-2xl font-black text-white flex items-center gap-2">
-            🧩 原生侧边栏组件与模块配置
-          </h2>
-          <p className="text-sm text-gray-400 mt-1">
-            除图片广告外，您还可以在此管理侧边栏的专属原生组件（如群链接与赞助模块）。
-          </p>
-        </div>
-        <div className="flex gap-2">
-           <button 
-             onClick={handleSaveSettings}
-             disabled={isConfigSaving || isSettingsLoading}
-             className="px-6 py-2.5 rounded-xl bg-orange-500 hover:bg-orange-600 border border-orange-400/50 transition-all flex items-center justify-center gap-2 text-sm font-bold text-white shadow-lg disabled:opacity-50 min-w-[120px]"
-           >
-             {isConfigSaving ? <Loader2 size={16} className="animate-spin" /> : <Save size={16} />}
-             {isConfigSaving ? '配置保存中...' : '保存模块配置'}
-           </button>
-        </div>
-      </div>
 
-      {isSettingsLoading ? (
-         <div className="py-12 flex justify-center"><Loader2 size={24} className="animate-spin text-white/50" /></div>
-      ) : (
-        <div className="grid md:grid-cols-2 gap-6">
-          {/* 加入社群模块 */}
-          <div className={`p-6 rounded-3xl border transition-all ${settingsForm.community_enabled ? 'border-emerald-500/30 bg-emerald-900/10' : 'border-gray-800 bg-[#181818] opacity-70'}`}>
-             <div className="flex items-center justify-between border-b border-white/10 pb-4 mb-5">
-                <h3 className="font-bold text-lg text-white flex items-center gap-2">📱 加入社群组件</h3>
-                <label className="flex items-center gap-2 cursor-pointer">
-                   <span className="text-xs font-semibold text-gray-400">{settingsForm.community_enabled ? '开启中' : '已停用'}</span>
-                   <input 
-                      type="checkbox" 
-                      checked={settingsForm.community_enabled !== false}
-                      onChange={e => handleSettingsChange('community_enabled', e.target.checked)}
-                      className="w-5 h-5 rounded border-gray-600 bg-gray-700 text-emerald-500 focus:ring-emerald-500 cursor-pointer"
-                   />
-                </label>
-             </div>
-             
-             <div className="space-y-4">
-               <div>
-                  <label className="block text-xs font-bold text-gray-400 mb-1.5">标题 (Title)</label>
-                  <input 
-                     value={settingsForm.community_title || ''} 
-                     onChange={e => handleSettingsChange('community_title', e.target.value)}
-                     className="w-full bg-[#121212] border border-gray-700 rounded-xl px-4 py-2.5 text-sm text-white focus:outline-none focus:border-emerald-500"
-                     placeholder="例如: 加入古来吃货群!"
-                  />
-               </div>
-               <div>
-                  <label className="block text-xs font-bold text-gray-400 mb-1.5">宣传短语 (Description)</label>
-                  <textarea 
-                     value={settingsForm.community_desc || ''} 
-                     onChange={e => handleSettingsChange('community_desc', e.target.value)}
-                     className="w-full bg-[#121212] border border-gray-700 rounded-xl px-4 py-2.5 text-sm text-white focus:outline-none focus:border-emerald-500 min-h-[80px]"
-                     placeholder="例如: 不定期搞活动..."
-                  />
-               </div>
-               <div>
-                  <label className="block text-xs font-bold text-gray-400 mb-1.5">WhatsApp 邀请链接 (Target URL)</label>
-                  <input 
-                     value={settingsForm.whatsapp_link || ''} 
-                     onChange={e => handleSettingsChange('whatsapp_link', e.target.value)}
-                     className="w-full bg-[#121212] border border-emerald-500/30 rounded-xl px-4 py-2.5 text-sm text-white focus:outline-none focus:border-emerald-500"
-                     placeholder="https://chat.whatsapp.com/..."
-                  />
-               </div>
-             </div>
-          </div>
-
-          {/* 打赏站长模块 */}
-          <div className={`p-6 rounded-3xl border transition-all ${settingsForm.support_enabled ? 'border-amber-500/30 bg-amber-900/10' : 'border-gray-800 bg-[#181818] opacity-70'}`}>
-             <div className="flex items-center justify-between border-b border-white/10 pb-4 mb-5">
-                <h3 className="font-bold text-lg text-white flex items-center gap-2">☕ 打赏站长组件</h3>
-                <label className="flex items-center gap-2 cursor-pointer">
-                   <span className="text-xs font-semibold text-gray-400">{settingsForm.support_enabled ? '开启中' : '已停用'}</span>
-                   <input 
-                      type="checkbox" 
-                      checked={settingsForm.support_enabled !== false}
-                      onChange={e => handleSettingsChange('support_enabled', e.target.checked)}
-                      className="w-5 h-5 rounded border-gray-600 bg-gray-700 text-amber-500 focus:ring-amber-500 cursor-pointer"
-                   />
-                </label>
-             </div>
-             
-             <div className="space-y-4">
-               <div>
-                  <label className="block text-xs font-bold text-gray-400 mb-1.5">标题 (Title)</label>
-                  <input 
-                     value={settingsForm.support_title || ''} 
-                     onChange={e => handleSettingsChange('support_title', e.target.value)}
-                     className="w-full bg-[#121212] border border-gray-700 rounded-xl px-4 py-2.5 text-sm text-white focus:outline-none focus:border-amber-500"
-                     placeholder="例如: 请站长喝杯 Kopi"
-                  />
-               </div>
-               <div>
-                  <label className="block text-xs font-bold text-gray-400 mb-1.5">感谢短语 (Description)</label>
-                  <textarea 
-                     value={settingsForm.support_desc || ''} 
-                     onChange={e => handleSettingsChange('support_desc', e.target.value)}
-                     className="w-full bg-[#121212] border border-gray-700 rounded-xl px-4 py-2.5 text-sm text-white focus:outline-none focus:border-amber-500 min-h-[80px]"
-                     placeholder="例如: 支持服务器续费..."
-                  />
-               </div>
-               <div>
-                  <label className="block text-xs font-bold text-gray-400 mb-1.5">TNG 二维码图床链接 (Image URL)</label>
-                  <input 
-                     value={settingsForm.tng_qr_url || ''} 
-                     onChange={e => handleSettingsChange('tng_qr_url', e.target.value)}
-                     className="w-full bg-[#121212] border border-amber-500/30 rounded-xl px-4 py-2.5 text-sm text-white focus:outline-none focus:border-amber-500"
-                     placeholder="https://i.ibb.co/..."
-                  />
-               </div>
-             </div>
-          </div>
-        </div>
-      )}
     </div>
   );
 };

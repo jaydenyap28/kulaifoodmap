@@ -112,14 +112,7 @@ function App() {
   const [supportQR, setSupportQR] = useState(() => {
     try { return localStorage.getItem('kulaifood-support-qr') || null; } catch { return null; }
   });
-  const [adBannerData, setAdBannerData] = useState(() => {
-    try {
-      const storedAds = localStorage.getItem('kulaifood-ads');
-      return storedAds ? JSON.parse(storedAds) : [];
-    } catch {
-      return [];
-    }
-  });
+
   const [authSession, setAuthSession] = useState(null);
   const [authProfile, setAuthProfile] = useState(null);
   const [isAuthLoading, setIsAuthLoading] = useState(hasSupabaseConfig);
@@ -208,8 +201,6 @@ function App() {
       setIsAuthLoading(false);
       return;
     }
-
-    setIsAuthLoading(true);
     try {
       const nextProfile = await syncProfileForUser(nextSession.user);
       setAuthProfile(nextProfile);
@@ -352,9 +343,7 @@ function App() {
     localStorage.setItem('kulaifood-support-qr', newQR);
   };
 
-  useEffect(() => {
-    localStorage.setItem('kulaifood-ads', JSON.stringify(adBannerData));
-  }, [adBannerData]);
+
 
   useEffect(() => {
     if (!isDataReady) return;
@@ -371,22 +360,19 @@ function App() {
     }
   }, [restaurants, initialRestaurants, isDataReady]);
 
-  useEffect(() => {
-    if (!import.meta.env.DEV || !adBannerData?.length) return;
-    console.log('--------------- UPDATED AD BANNER DATA (Update useState in src/App.jsx) ---------------');
-    console.log(JSON.stringify(adBannerData, null, 2));
-    console.log('---------------------------------------------------------------------------------------');
-  }, [adBannerData]);
+
 
   useEffect(() => {
     if (!isDataReady) return undefined;
 
     const handleFocus = () => {
+      if (window.location.pathname.startsWith('/admin')) return;
       refreshRestaurants();
       refreshSiteSettings();
     };
 
     const handleVisibilityChange = () => {
+      if (window.location.pathname.startsWith('/admin')) return;
       if (document.visibilityState === 'visible') {
         refreshRestaurants();
         refreshSiteSettings();
@@ -809,7 +795,7 @@ function App() {
             />
           </main>
 
-          <aside className="w-full lg:w-[320px] xl:w-[340px] shrink-0 mt-8 lg:mt-0">
+          <aside className="order-first lg:order-last w-full lg:w-[320px] xl:w-[340px] shrink-0 mb-2 lg:mb-0">
              <RightSidebar 
                 restaurants={filteredRestaurants}
                 onRestaurantClick={handleRestaurantClick}

@@ -43,3 +43,29 @@ export const canSpinToday = async () => {
 
   return Array.isArray(data) ? data[0] : data;
 };
+
+export const incrementRestaurantHotScore = async (restaurantId) => {
+  if (!supabase) return false;
+  try {
+    const { data, error: selectError } = await supabase
+      .from('restaurants')
+      .select('hot_score')
+      .eq('id', restaurantId)
+      .single();
+    
+    if (selectError) throw selectError;
+    
+    const newScore = (data?.hot_score || 0) + 1;
+    
+    const { error: updateError } = await supabase
+      .from('restaurants')
+      .update({ hot_score: newScore })
+      .eq('id', restaurantId);
+      
+    if (updateError) throw updateError;
+    return true;
+  } catch (error) {
+    console.error('Failed to increment hot_score:', error);
+    return false;
+  }
+};

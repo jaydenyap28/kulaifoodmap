@@ -20,9 +20,13 @@ const ImageWithFallback = ({ src, alt, className }) => {
     );
   }
 
+  const optimizedSrc = src && src.startsWith('http') && !src.includes('wsrv.nl') 
+    ? `https://wsrv.nl/?url=${encodeURIComponent(src)}&output=webp&w=800&q=80` 
+    : src;
+
   return (
     <img
-      src={src}
+      src={optimizedSrc}
       alt={alt}
       className={className}
       onError={() => setError(true)}

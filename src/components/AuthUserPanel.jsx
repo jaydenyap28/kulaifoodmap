@@ -1,6 +1,7 @@
 import React, { useCallback, useEffect, useMemo, useState } from 'react';
 import { CalendarCheck2, Coins, Loader2, LogIn, LogOut } from 'lucide-react';
 import { hasSupabaseConfig, supabase } from '../lib/supabaseClient';
+import { useTranslation } from 'react-i18next';
 import { buildFallbackProfile, claimDailyCheckin, syncProfileForUser } from '../services/profileService';
 import { useToast } from './toast/ToastProvider';
 
@@ -12,6 +13,7 @@ const getTodayInKualaLumpur = () => new Intl.DateTimeFormat('en-CA', {
 }).format(new Date());
 
 const AuthUserPanel = () => {
+  const { t } = useTranslation();
   const toast = useToast();
   const [session, setSession] = useState(null);
   const [profile, setProfile] = useState(null);
@@ -132,10 +134,10 @@ const AuthUserPanel = () => {
       if (error) {
         throw error;
       }
-      toast.info('已退出登录。');
+      toast.info(t('auth.logout_success', '已退出登录。'));
     } catch (error) {
       console.error('Logout failed', error);
-      toast.error(error.message || '退出登录失败，请稍后再试。');
+      toast.error(error.message || t('auth.logout_error', '退出登录失败，请稍后再试。'));
     } finally {
       setIsBusy(false);
     }
@@ -144,7 +146,7 @@ const AuthUserPanel = () => {
   const handleDailyCheckin = async () => {
     if (!session?.user || hasCheckedInToday) {
       if (hasCheckedInToday) {
-        toast.info('今天已经签到过啦，明天再来。');
+        toast.info(t('auth.already_checked_in', '今天已经签到过啦，明天再来。'));
       }
       return;
     }
@@ -163,14 +165,18 @@ const AuthUserPanel = () => {
       window.dispatchEvent(new CustomEvent('spin-status-refresh'));
       window.dispatchEvent(new CustomEvent('profile-refresh'));
 
-      toast.success(`签到成功，获得 ${result.awarded_points} 积分，已连续签到 ${result.consecutive_days} 天。`);
+      toast.success(t('auth.checkin_success', { 
+         points: result.awarded_points, 
+         days: result.consecutive_days,
+         defaultValue: `签到成功，获得 ${result.awarded_points} 积分，已连续签到 ${result.consecutive_days} 天。` 
+      }));
     } catch (error) {
       console.error('Daily check-in failed', error);
 
       if (error.message?.includes('ALREADY_CHECKED_IN_TODAY')) {
-        toast.info('今天已经签到过啦，明天再来。');
+        toast.info(t('auth.already_checked_in', '今天已经签到过啦，明天再来。'));
       } else {
-        toast.error(error.message || '签到失败了，请稍后再试。');
+        toast.error(error.message || t('auth.checkin_error', '签到失败了，请稍后再试。'));
       }
     } finally {
       setIsBusy(false);
@@ -233,11 +239,11 @@ const AuthUserPanel = () => {
           <div className="flex flex-wrap items-center gap-x-3 gap-y-1 text-xs text-white/70">
             <span className="flex items-center gap-1">
               <Coins size={12} className="text-amber-300" />
-              {isLoading ? '同步中...' : `${displayProfile?.user_points ?? 0} 吃货积分`}
+              {isLoading ? t('common.loading', '同步中...') : t('auth.points', { count: displayProfile?.user_points ?? 0, defaultValue: '{{count}} 吃货积分' })}
             </span>
             <span className="flex items-center gap-1">
               <CalendarCheck2 size={12} className="text-emerald-300" />
-              连签 {displayProfile?.consecutive_days ?? 0} 天
+              {t('auth.consecutive_days', { count: displayProfile?.consecutive_days ?? 0, defaultValue: '连签 {{count}} 天' })}
             </span>
           </div>
         </div>
@@ -254,7 +260,7 @@ const AuthUserPanel = () => {
               : 'bg-emerald-400 text-black hover:bg-emerald-300'
           } disabled:opacity-70`}
         >
-          {isBusy ? '签到中...' : hasCheckedInToday ? '今日已签到' : '每日签到'}
+          {isBusy ? t('auth.checking_in', '签到中...') : hasCheckedInToday ? t('auth.already_checked_in_btn', '今日已签到') : t('auth.daily_checkin', '每日签到')}
         </button>
 
         <button

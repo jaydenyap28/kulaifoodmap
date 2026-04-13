@@ -1,4 +1,16 @@
 {
+  "auth": {
+    "points": "{{count}} Points",
+    "consecutive_days": "Streak {{count}} Days",
+    "checking_in": "Checking in...",
+    "already_checked_in_btn": "Checked In",
+    "daily_checkin": "Daily Check-in",
+    "logout_success": "Successfully logged out.",
+    "logout_error": "Logout failed, please try again.",
+    "already_checked_in": "You have already checked in today. Come back tomorrow.",
+    "checkin_success": "Check-in successful! Earned {{points}} pts. Current streak: {{days}} days.",
+    "checkin_error": "Check-in failed, please try again."
+  },
   "app_title": "Kulai Food Map",
   "confirm_logout": "Logout Admin Mode?",
   "confirm_reset_bg": "Reset to default background?",

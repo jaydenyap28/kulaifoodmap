@@ -134,6 +134,99 @@ const AdminSettingsPage = ({ onSettingsSaved }) => {
               />
             </label>
 
+            <div className="grid md:grid-cols-2 gap-6 mt-4">
+              {/* 加入社群模块 */}
+              <div className={`p-6 rounded-3xl border transition-all ${form.community_enabled !== false ? 'border-emerald-500/30 bg-emerald-900/10' : 'border-gray-800 bg-[#181818] opacity-70'}`}>
+                <div className="flex items-center justify-between border-b border-white/10 pb-4 mb-5">
+                    <h3 className="font-bold text-lg text-white flex items-center gap-2">📱 加入社群组件</h3>
+                    <label className="flex items-center gap-2 cursor-pointer">
+                      <span className="text-xs font-semibold text-gray-400">{form.community_enabled !== false ? '开启中' : '已停用'}</span>
+                      <input 
+                          type="checkbox" 
+                          checked={form.community_enabled !== false}
+                          onChange={e => handleChange('community_enabled', e.target.checked)}
+                          className="w-5 h-5 rounded border-gray-600 bg-gray-700 text-emerald-500 focus:ring-emerald-500 cursor-pointer"
+                      />
+                    </label>
+                </div>
+                
+                <div className="space-y-4">
+                  <div>
+                      <label className="block text-xs font-bold text-gray-400 mb-1.5">标题 (Title)</label>
+                      <input 
+                        value={form.community_title || ''} 
+                        onChange={e => handleChange('community_title', e.target.value)}
+                        className="w-full bg-[#121212] border border-gray-700 rounded-xl px-4 py-2.5 text-sm text-white focus:outline-none focus:border-emerald-500"
+                        placeholder="例如: 加入古来吃货群!"
+                      />
+                  </div>
+                  <div>
+                      <label className="block text-xs font-bold text-gray-400 mb-1.5">宣传短语 (Description)</label>
+                      <textarea 
+                        value={form.community_desc || ''} 
+                        onChange={e => handleChange('community_desc', e.target.value)}
+                        className="w-full bg-[#121212] border border-gray-700 rounded-xl px-4 py-2.5 text-sm text-white focus:outline-none focus:border-emerald-500 min-h-[80px]"
+                        placeholder="例如: 不定期搞活动..."
+                      />
+                  </div>
+                  <div>
+                      <label className="block text-xs font-bold text-gray-400 mb-1.5">WhatsApp 邀请链接 (Target URL)</label>
+                      <input 
+                        value={form.whatsapp_link || ''} 
+                        onChange={e => handleChange('whatsapp_link', e.target.value)}
+                        className="w-full bg-[#121212] border border-emerald-500/30 rounded-xl px-4 py-2.5 text-sm text-white focus:outline-none focus:border-emerald-500"
+                        placeholder="https://chat.whatsapp.com/..."
+                      />
+                  </div>
+                </div>
+              </div>
+
+              {/* 打赏站长模块 */}
+              <div className={`p-6 rounded-3xl border transition-all ${form.support_enabled !== false ? 'border-amber-500/30 bg-amber-900/10' : 'border-gray-800 bg-[#181818] opacity-70'}`}>
+                <div className="flex items-center justify-between border-b border-white/10 pb-4 mb-5">
+                    <h3 className="font-bold text-lg text-white flex items-center gap-2">☕ 打赏站长组件</h3>
+                    <label className="flex items-center gap-2 cursor-pointer">
+                      <span className="text-xs font-semibold text-gray-400">{form.support_enabled !== false ? '开启中' : '已停用'}</span>
+                      <input 
+                          type="checkbox" 
+                          checked={form.support_enabled !== false}
+                          onChange={e => handleChange('support_enabled', e.target.checked)}
+                          className="w-5 h-5 rounded border-gray-600 bg-gray-700 text-amber-500 focus:ring-amber-500 cursor-pointer"
+                      />
+                    </label>
+                </div>
+                
+                <div className="space-y-4">
+                  <div>
+                      <label className="block text-xs font-bold text-gray-400 mb-1.5">标题 (Title)</label>
+                      <input 
+                        value={form.support_title || ''} 
+                        onChange={e => handleChange('support_title', e.target.value)}
+                        className="w-full bg-[#121212] border border-gray-700 rounded-xl px-4 py-2.5 text-sm text-white focus:outline-none focus:border-amber-500"
+                        placeholder="例如: 请站长喝杯 Kopi"
+                      />
+                  </div>
+                  <div>
+                      <label className="block text-xs font-bold text-gray-400 mb-1.5">感谢短语 (Description)</label>
+                      <textarea 
+                        value={form.support_desc || ''} 
+                        onChange={e => handleChange('support_desc', e.target.value)}
+                        className="w-full bg-[#121212] border border-gray-700 rounded-xl px-4 py-2.5 text-sm text-white focus:outline-none focus:border-amber-500 min-h-[80px]"
+                        placeholder="例如: 支持服务器续费..."
+                      />
+                  </div>
+                  <div>
+                      <label className="block text-xs font-bold text-gray-400 mb-1.5">TNG 二维码图床链接 (Image URL)</label>
+                      <input 
+                        value={form.tng_qr_url || ''} 
+                        onChange={e => handleChange('tng_qr_url', e.target.value)}
+                        className="w-full bg-[#121212] border border-amber-500/30 rounded-xl px-4 py-2.5 text-sm text-white focus:outline-none focus:border-amber-500"
+                        placeholder="https://i.ibb.co/..."
+                      />
+                  </div>
+                </div>
+              </div>
+            </div>
 
           </div>
 
