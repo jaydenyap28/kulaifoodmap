@@ -245,7 +245,7 @@ const RestaurantList = ({
         </div>
       </div>
 
-      <div className="grid grid-cols-2 gap-4 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 2xl:grid-cols-6">
+      <div className="grid grid-cols-2 gap-4 md:grid-cols-3 lg:grid-cols-4 2xl:grid-cols-5">
         {filteredRestaurants.map((restaurant) => renderRestaurantCard(restaurant))}
       </div>
 
@@ -440,22 +440,22 @@ const RestaurantCard = ({
             </div>
           )}
 
-          <div className="flex items-start text-xs text-gray-400">
-            <MapPin size={12} className="mr-1.5 mt-0.5 shrink-0 opacity-70" />
-            <span className="line-clamp-2 leading-tight">{restaurant.address}</span>
-          </div>
-
           {restaurant.affiliate_url && (
             <a
               href={restaurant.affiliate_url}
               target="_blank"
               rel="noopener noreferrer"
               onClick={(e) => e.stopPropagation()}
-              className="mt-2 flex w-full items-center justify-center gap-2 rounded-xl bg-gradient-to-r from-orange-500 to-red-600 py-2.5 text-xs font-bold text-white shadow-lg transition-all hover:scale-[1.02] hover:shadow-orange-500/20 active:scale-95"
+              className="mt-1 flex w-full items-center justify-center gap-2 rounded-xl bg-gradient-to-r from-orange-500 to-red-600 py-2.5 text-xs font-bold text-white shadow-lg transition-all hover:scale-[1.02] hover:shadow-orange-500/20 active:scale-95"
             >
               🛵 叫外卖 (ShopeeFood)
             </a>
           )}
+
+          <div className="flex items-start text-xs text-gray-400 mt-2">
+            <MapPin size={12} className="mr-1.5 mt-0.5 shrink-0 opacity-70" />
+            <span className="line-clamp-2 leading-tight">{restaurant.address}</span>
+          </div>
 
           <div className="mt-2 flex items-center justify-between gap-2 rounded-xl border border-white/10 bg-white/5 px-2.5 py-2">
             <div className="min-w-0">

@@ -39,10 +39,30 @@ export const getAdminRestaurants = async () => {
   const loadMod = await import('../data/runtimeRestaurants').catch(() => null);
   const initialRestaurants = loadMod ? (await loadMod.loadRestaurantsModule()).initialRestaurants : [];
   const baseBySourceId = new Map();
-  initialRestaurants.forEach((r) => baseBySourceId.set(String(r.id), r));
+  const baseByName = new Map();
+  
+  initialRestaurants.forEach((r) => {
+    if (r.id != null) {
+      baseBySourceId.set(String(r.id), r);
+    }
+    if (r.name) {
+      baseByName.set(String(r.name).toLowerCase().trim(), r);
+    }
+  });
 
   return (data || []).map((restaurant) => {
-    const sourceRestaurant = baseBySourceId.get(String(restaurant.source_restaurant_id)) || baseBySourceId.get(String(restaurant.id)) || {};
+    let sourceRestaurant = null;
+    if (restaurant.source_restaurant_id != null) {
+      sourceRestaurant = baseBySourceId.get(String(restaurant.source_restaurant_id));
+    }
+    if (!sourceRestaurant && restaurant.id != null) {
+      sourceRestaurant = baseBySourceId.get(String(restaurant.id));
+    }
+    if (!sourceRestaurant && restaurant.name) {
+      sourceRestaurant = baseByName.get(String(restaurant.name).toLowerCase().trim());
+    }
+    sourceRestaurant = sourceRestaurant || {};
+    
     const extraDetails = restaurant.extra_details || {};
     return {
       ...sourceRestaurant,
@@ -51,6 +71,7 @@ export const getAdminRestaurants = async () => {
       // Give precedence to the hard columns
       name: restaurant.name || extraDetails.name || sourceRestaurant.name || sourceRestaurant.desc || '',
       name_en: extraDetails.name_en || sourceRestaurant.name_en || sourceRestaurant.desc2 || '',
+      area: restaurant.area || extraDetails.area || sourceRestaurant.area || '',
       category: restaurant.category || extraDetails.category || sourceRestaurant.categories?.join(' | ') || '',
       address: restaurant.address || extraDetails.address || sourceRestaurant.address || '',
       image_url: restaurant.image_url || extraDetails.image_url || extraDetails.image || sourceRestaurant.image || '',
@@ -80,6 +101,7 @@ export const updateAdminRestaurant = async (restaurantId, payload) => {
     ...extraDetails,
     name: data.name || extraDetails.name || '',
     category: data.category || extraDetails.category || '',
+    area: data.area || extraDetails.area || '',
     address: data.address || extraDetails.address || '',
     image_url: data.image_url || extraDetails.image_url || extraDetails.image || '',
   };
@@ -106,6 +128,7 @@ export const createAdminRestaurant = async (payload) => {
     ...extraDetails,
     name: data.name || extraDetails.name || '',
     category: data.category || extraDetails.category || '',
+    area: data.area || extraDetails.area || '',
     address: data.address || extraDetails.address || '',
     image_url: data.image_url || extraDetails.image_url || extraDetails.image || '',
   };

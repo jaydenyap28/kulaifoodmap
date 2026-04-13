@@ -1,15 +1,21 @@
 import React, { useState, useEffect } from 'react';
 import { supabase } from '../lib/supabaseClient';
 import { getSiteSettings } from '../services/siteSettingsService';
-import { MessageCircle, X, Coffee, ExternalLink, ChevronRight } from 'lucide-react';
+import { MessageCircle, X, Coffee, ExternalLink, ChevronRight, Trophy, Flame } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
 
-const RightSidebar = ({ onSupportClick }) => {
+const RightSidebar = ({ restaurants = [], onRestaurantClick, onSupportClick }) => {
   const [ads, setAds] = useState([]);
   const [loading, setLoading] = useState(true);
   const [settings, setSettings] = useState(null);
   const [currentIndex, setCurrentIndex] = useState(0);
   const [showCommunity, setShowCommunity] = useState(true);
+
+  // Derive hot rank Top 5
+  const topRestaurants = [...restaurants]
+    .filter(r => (r.hot_score || 0) > 0)
+    .sort((a, b) => (b.hot_score || 0) - (a.hot_score || 0))
+    .slice(0, 5);
 
   useEffect(() => {
     const fetchAds = async () => {
@@ -45,6 +51,17 @@ const RightSidebar = ({ onSupportClick }) => {
 
   const currentAd = ads[currentIndex];
 
+  const getValidUrl = (url) => {
+    if (!url) return '#';
+    const trimmed = url.trim();
+    if (trimmed.startsWith('http://') || trimmed.startsWith('https://')) return trimmed;
+    // assume https if no protocol
+    return `https://${trimmed}`;
+  };
+
+  const isCommunityEnabled = settings?.community_enabled !== false;
+  const isSupportEnabled = settings?.support_enabled !== false;
+
   return (
     <aside className="flex w-full flex-col gap-5">
       {/* 侧边栏广告模块 */}
@@ -56,7 +73,7 @@ const RightSidebar = ({ onSupportClick }) => {
             animate={{ opacity: 1, scale: 1 }}
             exit={{ opacity: 0, scale: 0.95 }}
             transition={{ duration: 0.4 }}
-            href={currentAd.target_url}
+            href={getValidUrl(currentAd.target_url)}
             target="_blank"
             rel="noopener noreferrer"
             className="group relative block w-full aspect-square overflow-hidden rounded-[20px] bg-[#1e1e1e] shadow-xl border border-white/10 transition-all hover:border-white/20 hover:shadow-2xl hover:shadow-white/5"
@@ -89,8 +106,64 @@ const RightSidebar = ({ onSupportClick }) => {
         </AnimatePresence>
       )}
 
+      {/* 排行榜的热推模块 */}
+      {topRestaurants.length > 0 && (
+        <div className="relative overflow-hidden rounded-[20px] bg-[#1a1a1a] p-5 shadow-lg border border-orange-500/10">
+          <div className="flex items-center gap-2 mb-4 border-b border-white/5 pb-3">
+             <Trophy size={18} className="text-orange-400" />
+             <h4 className="text-base font-bold text-white">热推排行榜</h4>
+          </div>
+          
+          <div className="flex flex-col gap-3">
+             {topRestaurants.map((restaurant, index) => {
+               // Design colors for top 3
+               let rankStyles = "bg-white/5 text-gray-400 border-white/5";
+               let rankBadge = "bg-[#2d2d2d] text-gray-400";
+               
+               if (index === 0) {
+                 rankStyles = "bg-gradient-to-r from-amber-500/10 to-orange-500/5 border-amber-500/20";
+                 rankBadge = "bg-gradient-to-br from-yellow-300 to-amber-500 text-amber-950 shadow-md shadow-amber-500/20";
+               } else if (index === 1) {
+                 rankStyles = "bg-gradient-to-r from-slate-400/10 to-slate-300/5 border-slate-400/20";
+                 rankBadge = "bg-gradient-to-br from-slate-200 to-slate-400 text-slate-800 shadow-md";
+               } else if (index === 2) {
+                 rankStyles = "bg-gradient-to-r from-orange-800/20 to-orange-800/5 border-orange-800/30";
+                 rankBadge = "bg-gradient-to-br from-orange-400 to-orange-600 text-white shadow-md";
+               }
+
+               return (
+                 <div 
+                   key={restaurant.id || Math.random()}
+                   onClick={() => onRestaurantClick?.(restaurant)}
+                   className={`group cursor-pointer flex items-center gap-3 p-2.5 rounded-xl border transition-all hover:scale-[1.02] active:scale-95 ${rankStyles}`}
+                 >
+                   <div className={`flex w-6 h-6 shrink-0 items-center justify-center rounded-full text-xs font-black ${rankBadge}`}>
+                      {index + 1}
+                   </div>
+                   
+                   <div className="flex-1 min-w-0">
+                      <h5 className="text-sm font-bold text-white truncate group-hover:text-amber-400 transition-colors">
+                        {restaurant.name}
+                      </h5>
+                      <div className="flex items-center gap-1.5 mt-0.5 text-[10px] text-gray-400">
+                         <span className="truncate">{restaurant.category || restaurant.area}</span>
+                         <span className="flex items-center gap-0.5 text-orange-400/80 font-mono">
+                           <Flame size={10} /> {restaurant.hot_score || 0}
+                         </span>
+                      </div>
+                   </div>
+
+                   <div className="w-10 h-10 shrink-0 rounded-lg overflow-hidden bg-gray-800">
+                      <img src={restaurant.image || restaurant.image_url} alt={restaurant.name} className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" />
+                   </div>
+                 </div>
+               );
+             })}
+          </div>
+        </div>
+      )}
       {/* 加入社群模块 */}
-      {showCommunity && (
+      {showCommunity && isCommunityEnabled && (
         <div className="relative overflow-hidden rounded-[20px] bg-gradient-to-br from-emerald-600 to-green-800 p-5 shadow-lg border border-emerald-500/30">
           <button 
             onClick={() => setShowCommunity(false)}
@@ -103,10 +176,10 @@ const RightSidebar = ({ onSupportClick }) => {
               <MessageCircle size={22} className="fill-current" />
             </div>
             <div>
-              <h4 className="text-[15px] font-bold text-white mb-1 drop-shadow-sm">加入古来吃货群!</h4>
-              <p className="text-xs text-emerald-100/90 leading-tight mb-3">不定期搞活动送福利，还能一起拼桌约饭。</p>
+              <h4 className="text-[15px] font-bold text-white mb-1 drop-shadow-sm">{settings?.community_title || '加入古来吃货群!'}</h4>
+              <p className="text-xs text-emerald-100/90 leading-tight mb-3">{settings?.community_desc || '不定期搞活动送福利，还能一起拼桌约饭。'}</p>
               <a 
-                href={settings?.whatsapp_link || "#"}
+                href={getValidUrl(settings?.whatsapp_link)}
                 onClick={(e) => {
                     if (!settings?.whatsapp_link) {
                       e.preventDefault();
@@ -124,24 +197,26 @@ const RightSidebar = ({ onSupportClick }) => {
       )}
 
       {/* 支持站长模块 */}
-      <div className="relative overflow-hidden rounded-[20px] bg-[#1e1e1e] p-5 shadow-lg border border-white/5 group hover:border-amber-500/30 transition-colors">
-        <div className="absolute -right-6 -top-6 h-24 w-24 rounded-full bg-gradient-to-br from-amber-500/20 to-orange-600/10 blur-xl group-hover:scale-125 transition-transform duration-700" />
-        <div className="relative flex items-start gap-4">
-          <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-full bg-gradient-to-tr from-amber-500 to-orange-500 text-white shadow-lg">
-            <Coffee size={20} className="drop-shadow-sm" />
-          </div>
-          <div>
-            <h4 className="text-[15px] font-bold text-white mb-1">请站长喝杯 Kopi ☕</h4>
-            <p className="text-[11px] text-gray-400 leading-tight mb-3">网站好用？随心赞助一杯咖啡，支持服务器续费！</p>
-            <button 
-              onClick={onSupportClick}
-              className="inline-flex items-center gap-1.5 rounded-full bg-white/10 px-4 py-1.5 text-xs font-bold text-amber-500 border border-amber-500/30 transition-all hover:bg-amber-500/20 hover:text-white group-hover:bg-amber-500 group-hover:text-amber-950 group-hover:border-amber-500 shadow-sm"
-            >
-              打赏支持
-            </button>
+      {isSupportEnabled && (
+        <div className="relative overflow-hidden rounded-[20px] bg-[#1e1e1e] p-5 shadow-lg border border-white/5 group hover:border-amber-500/30 transition-colors">
+          <div className="absolute -right-6 -top-6 h-24 w-24 rounded-full bg-gradient-to-br from-amber-500/20 to-orange-600/10 blur-xl group-hover:scale-125 transition-transform duration-700" />
+          <div className="relative flex items-start gap-4">
+            <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-full bg-gradient-to-tr from-amber-500 to-orange-500 text-white shadow-lg">
+              <Coffee size={20} className="drop-shadow-sm" />
+            </div>
+            <div>
+              <h4 className="text-[15px] font-bold text-white mb-1">{settings?.support_title || '请站长喝杯 Kopi ☕'}</h4>
+              <p className="text-[11px] text-gray-400 leading-tight mb-3">{settings?.support_desc || '网站好用？随心赞助一杯咖啡，支持服务器续费！'}</p>
+              <button 
+                onClick={onSupportClick}
+                className="inline-flex items-center gap-1.5 rounded-full bg-white/10 px-4 py-1.5 text-xs font-bold text-amber-500 border border-amber-500/30 transition-all hover:bg-amber-500/20 hover:text-white group-hover:bg-amber-500 group-hover:text-amber-950 group-hover:border-amber-500 shadow-sm"
+              >
+                打赏支持
+              </button>
+            </div>
           </div>
         </div>
-      </div>
+      )}
     </aside>
   );
 };

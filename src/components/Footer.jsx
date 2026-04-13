@@ -27,16 +27,8 @@ const Footer = ({ onAdminLogin }) => {
 
         <div className="w-full h-px bg-[#333]"></div>
 
-        <div className="flex flex-col md:flex-row justify-between items-center w-full gap-4 text-sm text-gray-500">
+        <div className="flex flex-col md:flex-row justify-center items-center w-full gap-4 text-sm text-gray-500">
              <span>© 2026 Kulaifoodmap Made by JNQ Media</span>
-             
-             <button 
-                onClick={onAdminLogin}
-                className="flex items-center gap-1.5 hover:text-gray-300 transition-colors"
-             >
-                <Lock size={14} />
-                {t('footer.admin_login')}
-             </button>
         </div>
 
       </div>

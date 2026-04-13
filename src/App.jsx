@@ -695,7 +695,7 @@ function App() {
 
         <header className="mb-6 flex flex-col gap-4 px-4 md:flex-row md:items-start md:justify-between">
           <div>
-            <h1 onClick={handleAdminLoginClick} className="cursor-pointer text-4xl font-black tracking-tight text-white transition-opacity hover:opacity-90 md:text-5xl" style={{ textShadow: '2px 2px 4px rgba(0,0,0,0.7)' }}>
+            <h1 className="text-4xl font-black tracking-tight text-white transition-opacity md:text-5xl" style={{ textShadow: '2px 2px 4px rgba(0,0,0,0.7)' }}>
               {siteSettings.hero_title || t('app_title')}
             </h1>
             <p className="mt-1 text-2xl text-orange-400 drop-shadow-md md:text-3xl" style={{ fontFamily: '"Lobster", cursive' }}>
@@ -811,6 +811,8 @@ function App() {
 
           <aside className="w-full lg:w-[320px] xl:w-[340px] shrink-0 mt-8 lg:mt-0">
              <RightSidebar 
+                restaurants={filteredRestaurants}
+                onRestaurantClick={handleRestaurantClick}
                 onSupportClick={() => {
                   trackEvent('support_click', { source: 'sidebar_support_button' });
                   setShowSupportModal(true);
@@ -830,7 +832,7 @@ function App() {
         <AiFoodAssistant isOpen={showAiAssistant} onClose={() => setShowAiAssistant(false)} restaurants={restaurants} onRestaurantClick={handleRestaurantClick} />
       </Suspense>
 
-      <Footer onAdminLogin={() => setShowLoginModal(true)} />
+      <Footer />
 
       <Suspense fallback={null}>
         {selectedRestaurant && (

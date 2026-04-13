@@ -203,7 +203,15 @@ const AdminRestaurantsPage = ({ onRestaurantsSaved }) => {
                       {row.name_en && (
                         <p className="truncate text-xs text-gray-400">{row.name_en}</p>
                       )}
-                      <p className="mt-0.5 truncate text-[11px] text-gray-500">{row.category || '暂无分类'}</p>
+                      <div className="mt-0.5 flex items-center gap-1.5 truncate text-[11px] text-gray-500">
+                         <span>{row.category || '暂无分类'}</span>
+                         {row.area && (
+                            <>
+                               <span className="text-gray-700">•</span>
+                               <span className="text-orange-400/80">{row.area}</span>
+                            </>
+                         )}
+                      </div>
                     </div>
 
                     <div className="flex justify-center text-orange-300 font-mono text-xs">{row.hot_score ?? 0}</div>

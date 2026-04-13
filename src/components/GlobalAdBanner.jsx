@@ -50,6 +50,14 @@ const GlobalAdBanner = ({ position = 'under_wheel' }) => {
 
   const currentAd = ads[currentIndex];
 
+  const getValidUrl = (url) => {
+    if (!url) return '#';
+    const trimmed = url.trim();
+    if (trimmed.startsWith('http://') || trimmed.startsWith('https://')) return trimmed;
+    // assume https if no protocol
+    return `https://${trimmed}`;
+  };
+
   return (
     <div className="w-full max-w-5xl mx-auto px-4 mb-4 mt-2">
       <AnimatePresence mode="wait">
@@ -59,7 +67,7 @@ const GlobalAdBanner = ({ position = 'under_wheel' }) => {
           animate={{ opacity: 1, y: 0 }}
           exit={{ opacity: 0, y: -10 }}
           transition={{ duration: 0.5 }}
-          href={currentAd.target_url}
+          href={getValidUrl(currentAd.target_url)}
           target="_blank"
           rel="noopener noreferrer"
           className="block relative w-full aspect-[3/1] md:aspect-[4.5/1] bg-[#1e1e1e] rounded-[24px] overflow-hidden shadow-2xl border border-white/5 group transition-all duration-500 hover:border-white/20"

@@ -134,29 +134,7 @@ const AdminSettingsPage = ({ onSettingsSaved }) => {
               />
             </label>
 
-            <div className="mt-4 pt-4 border-t border-white/10 grid gap-5">
-              <label className="grid gap-2">
-                <span className="text-sm font-semibold text-white/80">WhatsApp 社群链接 (WhatsApp Join Link)</span>
-                <input
-                  type="text"
-                  value={form.whatsapp_link || ''}
-                  onChange={(event) => handleChange('whatsapp_link', event.target.value)}
-                  className="rounded-xl border border-emerald-500/30 bg-[#121212] px-4 py-3 text-sm text-white outline-none transition focus:border-emerald-500 focus:ring-1 focus:ring-emerald-500/50"
-                  placeholder="https://chat.whatsapp.com/..."
-                />
-              </label>
 
-              <label className="grid gap-2">
-                <span className="text-sm font-semibold text-white/80">打赏二维码图片链接 (TNG QR URL)</span>
-                <input
-                  type="text"
-                  value={form.tng_qr_url || ''}
-                  onChange={(event) => handleChange('tng_qr_url', event.target.value)}
-                  className="rounded-xl border border-amber-500/30 bg-[#121212] px-4 py-3 text-sm text-white outline-none transition focus:border-amber-500 focus:ring-1 focus:ring-amber-500/50"
-                  placeholder="https://i.ibb.co/.../tng.jpg"
-                />
-              </label>
-            </div>
           </div>
 
           <div className="mt-6 flex justify-end">
