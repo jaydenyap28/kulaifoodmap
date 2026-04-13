@@ -153,7 +153,11 @@ const HeroCardStack = ({ restaurants, onChoose, onRefreshRestaurants }) => {
     setIsSettlingReward(true);
 
     try {
-      markGuestSpinUsed();
+      if (!hasGuestSpinUsed()) {
+        markGuestSpinUsed();
+        const resolvedId = finalWinner.database_id ?? finalWinner.id;
+        incrementRestaurantHotScore(resolvedId).catch(err => console.error(err));
+      }
       window.dispatchEvent(new CustomEvent('spin-status-refresh'));
       await refreshSpinStatus(null);
       toast.info('试玩完成啦，登录后就能正式转盘、累计积分、助力喜欢的店。');
@@ -220,9 +224,8 @@ const HeroCardStack = ({ restaurants, onChoose, onRefreshRestaurants }) => {
 
       if (finalWinner) {
         analytics.incrementPick(finalWinner.id);
-        
+
         const resolvedId = finalWinner.database_id ?? finalWinner.id;
-        incrementRestaurantHotScore(resolvedId).catch(err => console.error(err));
 
         trackEvent('random_pick_result', {
           restaurant_id: String(resolvedId),

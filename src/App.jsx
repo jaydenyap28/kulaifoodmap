@@ -37,6 +37,7 @@ const AuthUserPanel = lazy(() => import('./components/AuthUserPanel'));
 const AdminSettingsPage = lazy(() => import('./components/AdminSettingsPage'));
 const AdminRestaurantsPage = lazy(() => import('./components/AdminRestaurantsPage'));
 const AdminAdsPage = lazy(() => import('./components/AdminAdsPage'));
+const AdminLogsPage = lazy(() => import('./components/AdminLogsPage'));
 import RightSidebar from './components/RightSidebar';
 
 const initializeCategories = (sourceRestaurants) => {
@@ -630,6 +631,13 @@ function App() {
             >
               <span className="inline-flex items-center gap-2">📢 广告管理</span>
             </button>
+            <button
+              type="button"
+              onClick={() => navigate('/admin/logs')}
+              className={`rounded-full px-4 py-2 text-sm font-semibold transition ${location.pathname === '/admin/logs' ? 'bg-white text-black' : 'border border-white/15 bg-white/5 text-white/75 hover:bg-white/10 hover:text-white'}`}
+            >
+              <span className="inline-flex items-center gap-2">📜 记录报表</span>
+            </button>
           </div>
         </div>
 
@@ -638,6 +646,8 @@ function App() {
             ? <AdminSettingsPage onSettingsSaved={setSiteSettings} />
             : location.pathname === '/admin/ads'
             ? <AdminAdsPage />
+            : location.pathname === '/admin/logs'
+            ? <AdminLogsPage />
             : <AdminRestaurantsPage onRestaurantsSaved={() => refreshRestaurants()} />}
         </Suspense>
       </div>
