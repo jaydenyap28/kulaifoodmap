@@ -1,12 +1,23 @@
 import { supabase } from '../lib/supabaseClient';
-import { v4 as uuidv4 } from 'uuid';
 
 const SESSION_KEY = 'kulaifood_session_id';
+
+const generateFallbackUUID = () => {
+    try {
+        if (typeof crypto !== 'undefined' && crypto.randomUUID) {
+            return crypto.randomUUID();
+        }
+    } catch (e) {}
+    return 'xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx'.replace(/[xy]/g, function(c) {
+        var r = Math.random() * 16 | 0, v = c === 'x' ? r : (r & 0x3 | 0x8);
+        return v.toString(16);
+    });
+};
 
 const getSessionId = () => {
     let sessionId = localStorage.getItem(SESSION_KEY);
     if (!sessionId) {
-        sessionId = uuidv4();
+        sessionId = generateFallbackUUID();
         localStorage.setItem(SESSION_KEY, sessionId);
     }
     return sessionId;
