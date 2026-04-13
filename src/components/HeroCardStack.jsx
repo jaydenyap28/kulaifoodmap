@@ -155,8 +155,6 @@ const HeroCardStack = ({ restaurants, onChoose, onRefreshRestaurants }) => {
     try {
       if (!hasGuestSpinUsed()) {
         markGuestSpinUsed();
-        const resolvedId = finalWinner.database_id ?? finalWinner.id;
-        incrementRestaurantHotScore(resolvedId).catch(err => console.error(err));
       }
       window.dispatchEvent(new CustomEvent('spin-status-refresh'));
       await refreshSpinStatus(null);
