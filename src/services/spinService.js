@@ -55,7 +55,7 @@ export const incrementRestaurantHotScore = async (restaurantId) => {
     
     if (selectError) throw selectError;
     
-    const newScore = (data?.hot_score || 0) + 1;
+    const newScore = (data?.hot_score || 0) + 10;
     
     const { error: updateError } = await supabase
       .from('restaurants')

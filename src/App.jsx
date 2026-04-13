@@ -780,6 +780,18 @@ function App() {
               </button>
             </div>
 
+            {/* Mobile Sidebar (Shows AFTER Filter/AI, BEFORE Restaurant List) */}
+            <div className="block lg:hidden w-full mb-8">
+               <RightSidebar 
+                  restaurants={filteredRestaurants}
+                  onRestaurantClick={handleRestaurantClick}
+                  onSupportClick={() => {
+                    trackEvent('support_click', { source: 'sidebar_support_button_mobile' });
+                    setShowSupportModal(true);
+                  }} 
+               />
+            </div>
+
             <RestaurantList
               restaurants={filteredRestaurants}
               allRestaurants={restaurants}
@@ -795,12 +807,12 @@ function App() {
             />
           </main>
 
-          <aside className="order-first lg:order-last w-full lg:w-[320px] xl:w-[340px] shrink-0 mb-2 lg:mb-0">
+          <aside className="hidden lg:block w-[320px] xl:w-[340px] shrink-0">
              <RightSidebar 
                 restaurants={filteredRestaurants}
                 onRestaurantClick={handleRestaurantClick}
                 onSupportClick={() => {
-                  trackEvent('support_click', { source: 'sidebar_support_button' });
+                  trackEvent('support_click', { source: 'sidebar_support_button_desktop' });
                   setShowSupportModal(true);
                 }} 
              />
