@@ -38,12 +38,13 @@ const AdminSettingsPage = lazy(() => import('./components/AdminSettingsPage'));
 const AdminRestaurantsPage = lazy(() => import('./components/AdminRestaurantsPage'));
 const AdminAdsPage = lazy(() => import('./components/AdminAdsPage'));
 const AdminLogsPage = lazy(() => import('./components/AdminLogsPage'));
+const AdminReportsPage = lazy(() => import('./components/AdminReportsPage'));
 import RightSidebar from './components/RightSidebar';
 
 const initializeCategories = (sourceRestaurants) => {
   const finalCategories = [];
   const processedCats = new Set();
-  const deprecatedCats = new Set(['Pizza', '鐐搁浮', '涓��', '鏃犳嫑鐗岀編椋?', '椹�潵椁?', '鍗板害妗?', '鐢滃搧楗�枡', '闈㈤�', '闈㈢被', '鍜栧暋搴?']);
+  const deprecatedCats = new Set(['Pizza', '鐐搁浮', '涓', '鏃犳嫑鐗岀編椋?', '椹潵椁?', '鍗板害妗?', '鐢滃搧楗?枡', '闈㈤?', '闈㈢被', '鍜栧暋搴?']);
 
   try {
     const storedCats = localStorage.getItem(CATEGORY_STORAGE_KEY) || localStorage.getItem(LEGACY_CATEGORY_STORAGE_KEY);
@@ -117,6 +118,7 @@ function App() {
   const [authSession, setAuthSession] = useState(null);
   const [authProfile, setAuthProfile] = useState(null);
   const [isAuthLoading, setIsAuthLoading] = useState(hasSupabaseConfig);
+  const [adminTab, setAdminTab] = useState('restaurants');
 
   const restaurantsRef = useRef([]);
   const sourceRestaurantsRef = useRef([]);
@@ -194,6 +196,8 @@ function App() {
       return fallbackBaseRestaurants;
     }
   }, []);
+
+  const forceRefresh = () => refreshRestaurants();
 
   const hydrateAuthSession = useCallback(async (nextSession) => {
     setAuthSession(nextSession);
@@ -610,45 +614,24 @@ function App() {
       <div className="min-h-screen bg-[#121212]">
         <div className="sticky top-0 z-40 border-b border-white/10 bg-[#121212]/90 px-4 py-4 backdrop-blur">
           <div className="mx-auto flex max-w-6xl flex-wrap items-center gap-3">
-            <button
-              type="button"
-              onClick={() => navigate('/admin/settings')}
-              className={`rounded-full px-4 py-2 text-sm font-semibold transition ${location.pathname === '/admin/settings' ? 'bg-white text-black' : 'border border-white/15 bg-white/5 text-white/75 hover:bg-white/10 hover:text-white'}`}
-            >
-              <span className="inline-flex items-center gap-2"><Settings2 size={15} />首页设置</span>
-            </button>
-            <button
-              type="button"
-              onClick={() => navigate('/admin/restaurants')}
-              className={`rounded-full px-4 py-2 text-sm font-semibold transition ${location.pathname === '/admin/restaurants' ? 'bg-white text-black' : 'border border-white/15 bg-white/5 text-white/75 hover:bg-white/10 hover:text-white'}`}
-            >
-              <span className="inline-flex items-center gap-2"><Store size={15} />商家管理</span>
-            </button>
-            <button
-              type="button"
-              onClick={() => navigate('/admin/ads')}
-              className={`rounded-full px-4 py-2 text-sm font-semibold transition ${location.pathname === '/admin/ads' ? 'bg-white text-black' : 'border border-white/15 bg-white/5 text-white/75 hover:bg-white/10 hover:text-white'}`}
-            >
-              <span className="inline-flex items-center gap-2">📢 广告管理</span>
-            </button>
-            <button
-              type="button"
-              onClick={() => navigate('/admin/logs')}
-              className={`rounded-full px-4 py-2 text-sm font-semibold transition ${location.pathname === '/admin/logs' ? 'bg-white text-black' : 'border border-white/15 bg-white/5 text-white/75 hover:bg-white/10 hover:text-white'}`}
-            >
-              <span className="inline-flex items-center gap-2">📜 记录报表</span>
-            </button>
+            <div className="flex z-20 w-fit">
+              <button onClick={() => setAdminTab('restaurants')} className={`px-4 py-2 text-sm font-bold border-b-2 transition-colors ${adminTab === 'restaurants' ? 'border-orange-500 text-orange-500 bg-white/5' : 'border-transparent text-gray-400 hover:text-white hover:bg-white/5'}`}>商家管理</button>
+              <button onClick={() => setAdminTab('ads')} className={`px-4 py-2 text-sm font-bold border-b-2 transition-colors ${adminTab === 'ads' ? 'border-cyan-500 text-cyan-500 bg-white/5' : 'border-transparent text-gray-400 hover:text-white hover:bg-white/5'}`}>全球广告管理</button>
+              <button onClick={() => setAdminTab('reports')} className={`px-4 py-2 text-sm font-bold border-b-2 transition-colors ${adminTab === 'reports' ? 'border-blue-500 text-blue-500 bg-white/5' : 'border-transparent text-gray-400 hover:text-white hover:bg-white/5'}`}>追踪报表</button>
+              <button onClick={() => setAdminTab('logs')} className={`px-4 py-2 text-sm font-bold border-b-2 transition-colors ${adminTab === 'logs' ? 'border-yellow-500 text-yellow-500 bg-white/5' : 'border-transparent text-gray-400 hover:text-white hover:bg-white/5'}`}>转盘与打赏记录</button>
+              <button onClick={() => setAdminTab('settings')} className={`px-4 py-2 text-sm font-bold border-b-2 transition-colors ${adminTab === 'settings' ? 'border-green-500 text-green-500 bg-white/5' : 'border-transparent text-gray-400 hover:text-white hover:bg-white/5'}`}>安全与全局设置</button>
+            </div>
           </div>
         </div>
 
         <Suspense fallback={null}>
-          {location.pathname === '/admin/settings'
-            ? <AdminSettingsPage onSettingsSaved={setSiteSettings} />
-            : location.pathname === '/admin/ads'
-            ? <AdminAdsPage />
-            : location.pathname === '/admin/logs'
-            ? <AdminLogsPage />
-            : <AdminRestaurantsPage onRestaurantsSaved={() => refreshRestaurants()} />}
+          <div className="flex-1 w-full relative z-10 w-full overflow-x-hidden">
+            {adminTab === 'restaurants' && <AdminRestaurantsPage onRestaurantsSaved={forceRefresh} />}
+            {adminTab === 'ads' && <AdminAdsPage />}
+            {adminTab === 'reports' && <AdminReportsPage />}
+            {adminTab === 'logs' && <AdminLogsPage />}
+            {adminTab === 'settings' && <AdminSettingsPage onSettingsSaved={setSiteSettings} />}
+          </div>
         </Suspense>
       </div>
     );

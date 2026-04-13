@@ -133,3 +133,18 @@ export const createAdminRestaurant = async (payload) => {
     image_url: data.image_url || extraDetails.image_url || extraDetails.image || '',
   };
 };
+
+export const deleteAdminRestaurant = async (restaurantId) => {
+  if (!supabase) {
+    throw new Error('Supabase is not configured');
+  }
+
+  const { error } = await supabase
+    .from('restaurants')
+    .delete()
+    .eq('id', restaurantId);
+
+  if (error) {
+    throw error;
+  }
+};

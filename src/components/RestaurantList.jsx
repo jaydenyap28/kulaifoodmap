@@ -440,17 +440,7 @@ const RestaurantCard = ({
             </div>
           )}
 
-          {restaurant.affiliate_url && (
-            <a
-              href={restaurant.affiliate_url}
-              target="_blank"
-              rel="noopener noreferrer"
-              onClick={(e) => e.stopPropagation()}
-              className="mt-1 flex w-full items-center justify-center gap-2 rounded-xl bg-gradient-to-r from-orange-500 to-red-600 py-2.5 text-xs font-bold text-white shadow-lg transition-all hover:scale-[1.02] hover:shadow-orange-500/20 active:scale-95"
-            >
-              🛵 叫外卖 (ShopeeFood)
-            </a>
-          )}
+          {/* Affiliate URL in list removed upon user request */}
 
           <div className="flex items-start text-xs text-gray-400 mt-2">
             <MapPin size={12} className="mr-1.5 mt-0.5 shrink-0 opacity-70" />

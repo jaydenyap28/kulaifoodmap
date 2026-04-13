@@ -1,8 +1,9 @@
 import React, { useEffect, useMemo, useState } from 'react';
-import { Loader2, Save, Search, Store, Edit, ArrowDown, ArrowUp } from 'lucide-react';
+import { Loader2, Save, Search, Store, Edit, ArrowDown, ArrowUp, Trash2 } from 'lucide-react';
 import { useToast } from './toast/ToastProvider';
-import { getAdminRestaurants, updateAdminRestaurant, createAdminRestaurant } from '../services/adminRestaurantService';
+import { getAdminRestaurants, updateAdminRestaurant, createAdminRestaurant, deleteAdminRestaurant } from '../services/adminRestaurantService';
 import AdminRestaurantEditModal from './AdminRestaurantEditModal';
+
 import { AVAILABLE_AREAS } from '../data/constants';
 
 const EMPTY_EDITING_ROW = {
@@ -165,6 +166,22 @@ const AdminRestaurantsPage = ({ onRestaurantsSaved }) => {
         delete next[restaurant.id];
         return next;
       });
+    }
+  };
+
+  const handleDelete = async (id, name) => {
+    if (!window.confirm(`确定要永久删除商家 "${name}" 吗？此操作不可逆！`)) {
+      return;
+    }
+    
+    try {
+      await deleteAdminRestaurant(id);
+      setRestaurants(current => current.filter(r => r.id !== id));
+      toast.success(`已删除商家: ${name}`);
+      onRestaurantsSaved?.();
+    } catch (error) {
+      console.error('Failed to delete restaurant', error);
+      toast.error('删除商家失败: ' + error.message);
     }
   };
 
@@ -335,13 +352,18 @@ const AdminRestaurantsPage = ({ onRestaurantsSaved }) => {
                               </label>
                           </div>
 
-                          <div className="flex xl:flex-col gap-2 w-full mt-auto">
+                          <div className="flex flex-col gap-2 w-full mt-auto">
                               <button onClick={() => handleOpenEditModal(row)} className="flex items-center justify-center gap-1.5 w-full bg-[#2a2a2a] text-gray-300 px-3 py-2 rounded-lg text-sm font-bold border border-white/10 hover:bg-white/10 transition">
                                 <Edit size={14} />详细表单
                               </button>
-                              <button onClick={() => handleSave(row)} disabled={isSaving} className="flex items-center justify-center gap-1.5 w-full bg-cyan-600/90 text-white px-3 py-2 rounded-lg text-sm font-bold border border-cyan-500/50 hover:bg-cyan-500 transition shadow-[0_0_15px_rgba(34,211,238,0.15)] disabled:opacity-50">
-                                {isSaving ? <Loader2 size={14} className="animate-spin" /> : <Save size={14} />}保存修改
-                              </button>
+                              <div className="flex items-center justify-between gap-2 w-full">
+                                  <button onClick={() => handleSave(row)} disabled={isSaving} className="flex flex-1 items-center justify-center gap-1.5 bg-cyan-600/90 text-white px-3 py-2 rounded-lg text-sm font-bold border border-cyan-500/50 hover:bg-cyan-500 transition shadow-[0_0_15px_rgba(34,211,238,0.15)] disabled:opacity-50">
+                                    {isSaving ? <Loader2 size={14} className="animate-spin" /> : <Save size={14} />}保存修改
+                                  </button>
+                                  <button onClick={() => handleDelete(row.id, row.name)} className="flex shrink-0 items-center justify-center gap-1 bg-red-900/40 text-red-300 px-3 py-2 rounded-lg text-sm font-bold border border-red-500/30 hover:bg-red-500/30 hover:text-red-200 transition" title="永久删除此商家">
+                                    <Trash2 size={14} /> 删除
+                                  </button>
+                              </div>
                           </div>
                      </div>
                   </div>

@@ -4,6 +4,7 @@ import { X, Star, MapPin, ExternalLink, Save, Clock, Info, UtensilsCrossed, Uplo
 import { motion, AnimatePresence } from 'framer-motion';
 import { useTranslation } from 'react-i18next';
 import { trackEvent } from '../utils/trackEvent';
+import { analyticsService } from '../services/analyticsService';
 import ImageWithFallback from './ImageWithFallback';
 import BranchSelector from './BranchSelector';
 import { checkOpenStatus } from '../utils/businessHours';
@@ -17,6 +18,12 @@ const ResultModal = ({ restaurant, onClose, isAdmin, onUpdateRestaurant, categor
 
   // State for Lightbox (Sub-stalls)
   const [selectedStallIndex, setSelectedStallIndex] = useState(null);
+
+  useEffect(() => {
+    if (restaurant?.id) {
+       analyticsService.logRestaurantView(restaurant.id, restaurant.name);
+    }
+  }, [restaurant?.id, restaurant?.name]);
 
   // Facebook 导流链接（有商家贴文优先，没有则回流到主页/合集）
   const hasFbPost = Boolean(restaurant?.fb_post_link);
@@ -140,7 +147,10 @@ const ResultModal = ({ restaurant, onClose, isAdmin, onUpdateRestaurant, categor
                       href={restaurant.affiliate_url} 
                       target="_blank" 
                       rel="noopener noreferrer" 
-                      onClick={() => trackEvent('affiliate_click', { type: 'shopeefood', restaurant_id: String(restaurant.id), restaurant_name: restaurant.name })} 
+                      onClick={() => {
+                          trackEvent('affiliate_click', { type: 'shopeefood', restaurant_id: String(restaurant.id), restaurant_name: restaurant.name });
+                          analyticsService.logDeliveryClick(restaurant.id, restaurant.affiliate_url);
+                      }} 
                       className="flex items-center justify-center gap-3 w-full py-4 bg-gradient-to-r from-orange-500 to-red-600 rounded-2xl text-white font-black shadow-xl hover:scale-[1.02] transition-transform active:scale-95 mb-4"
                     >
                         <Bike size={24}/>
@@ -326,7 +336,10 @@ const ResultModal = ({ restaurant, onClose, isAdmin, onUpdateRestaurant, categor
                     </a>
                  )}
                  {restaurant.delivery_link && (
-                    <a href={restaurant.delivery_link} target="_blank" rel="noopener noreferrer" onClick={() => trackEvent('external_link_click', { type: 'delivery', restaurant_id: String(restaurant.id), restaurant_name: restaurant.name })} className="flex-1 flex flex-col items-center justify-center py-3 bg-[#2d2d2d] hover:bg-[#3d3d3d] rounded-xl text-white transition border border-gray-700">
+                    <a href={restaurant.delivery_link} target="_blank" rel="noopener noreferrer" onClick={() => {
+                        trackEvent('external_link_click', { type: 'delivery', restaurant_id: String(restaurant.id), restaurant_name: restaurant.name });
+                        analyticsService.logDeliveryClick(restaurant.id, restaurant.delivery_link);
+                    }} className="flex-1 flex flex-col items-center justify-center py-3 bg-[#2d2d2d] hover:bg-[#3d3d3d] rounded-xl text-white transition border border-gray-700">
                         <Bike size={18} className="mb-1 text-green-400"/>
                         <span className="text-[10px] font-bold">{t('modal.delivery', '外卖 (Order)')}</span>
                     </a>
