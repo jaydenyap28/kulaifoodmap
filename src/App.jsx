@@ -121,7 +121,7 @@ function App() {
   const restaurantsRef = useRef([]);
   const sourceRestaurantsRef = useRef([]);
   const selectedRestaurantRef = useRef(null);
-  const isAdminRoute = location.pathname === '/admin/settings' || location.pathname === '/admin/restaurants' || location.pathname === '/admin/ads';
+  const isAdminRoute = location.pathname.startsWith('/admin/');
   const isBackendAdmin = authProfile?.role === 'admin';
 
   useEffect(() => {
